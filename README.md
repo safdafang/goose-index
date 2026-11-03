@@ -130,7 +130,7 @@ _Data formats: JSON, YAML, ASN.1, binary layouts, bit packing._
   `import yaml from "github.com/SorinS/yamlgoose@main";`
 - **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 48 · 🏷 main-fab5723e3e62
 - **[greylag](https://github.com/bearing-research/greylag)** — An early XML parser written in Goose and exported to C through integer handles, compared against libxml2 and expat. ⚠️ no license · ✅ ✅ ✅
-- **[ideatoapp](https://github.com/mg3994/ideatoapp)** — An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript. ⚠️ no license
+- **[ideatoapp](https://github.com/mg3994/ideatoapp)** — An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript. ⚠️ no license · ✅ ✅ ✅
 
 ## Text and templates
 
@@ -218,7 +218,7 @@ _Libraries that add programming models on top of Goose: effects, SIMD, generics 
 
 - **[goosimd](https://github.com/sstadick/goosimd)** — Compares 16 or 32 bytes at once and turns the results into position masks; the author marks it an experimental placeholder whose API will change. 🏷 v0.1.1 · ❌ ❌ ❌
   `import goosimd from "github.com/sstadick/goosimd@v0.1.1";`
-- **[okay-goose](https://github.com/okay-effects/okay-goose)** _tool_ — Brings the okay language's typed algebraic effects to Goose: effects in function types, handlers and resumable functions lowered to flat values, with the front end itself written in Goose. ✅ ✅ 🟡
+- **[okay-goose](https://github.com/okay-effects/okay-goose)** _tool_ — Brings the okay language's typed algebraic effects to Goose: effects in function types, handlers and resumable functions lowered to flat values, with the front end itself written in Goose.
 
 ## Interop with other languages
 
@@ -313,21 +313,21 @@ _Programs written in Goose: tools, games, servers, simulations._
 - **[beads-goose](https://github.com/Swoorup/beads-goose)** — The start of a Goose rewrite of the beads issue tracker: the issue model and its JSON already match the Go version byte for byte, with the storage and most commands still to come. ⚠️ no license · ❌ ❌ ❌
 - **[brainfuck-goose](https://github.com/xvolks/brainfuck-goose)** — A small hand-written Brainfuck interpreter, a compact example of a complete Goose program. ⚠️ no license · ✅ ✅ ✅
 - **[c4-goose](https://github.com/jesper-olsen/c4-goose)** — John Tromp's Fhourstones Connect Four solver ported to Goose; it reads positions on stdin and reports scores and timing. ✅ ✅ ✅
-- **[Campfire in Goose](https://github.com/aardappel/once-campfire-goose)** — The Goose author's experimental port of the Campfire group chat server onto goose-http, checked against Rust and Jai versions of the same app. ★ 2
+- **[Campfire in Goose](https://github.com/aardappel/once-campfire-goose)** — The Goose author's experimental port of the Campfire group chat server onto goose-http, checked against Rust and Jai versions of the same app. ★ 2 · ❌ ❌ ❌
 - **[football-scores](https://github.com/salahraja/football-scores)** — A static Serie A results site whose data step is a small Goose program that reshapes the raw feed into the site's JSON, run natively or as WebAssembly.
 - **[gander](https://github.com/AnugunjNaman/gander)** — A telemetry recorder for robots and vehicles that logs IMU, CAN, GNSS and LiDAR events compactly and loses at most two seconds of data on a crash. 🟡 🟡 🟡
 - **[gffs](https://github.com/felipecruz/gffs)** — A recursive file searcher with ripgrep-style options, ported to Goose from the author's ffs, using PCRE2 for regular expressions. ⚠️ no license · ✅ ✅ 🟡
 - **[glog](https://github.com/badman594/glog)** — A command-line counter and grouper for web server access logs in Common Log Format, written to be faster than the usual shell tools. ✅ ✅ ✅
-- **[goose-mini-browser](https://github.com/Grumbash/goose-mini-browser)** — A toy graphical web browser that renders simple HTML in an SDL3 and Nuklear window, fetching pages through a small Rust networking library loaded at run time.
-- **[goose-pong](https://github.com/flakesonnix/goose-pong)** — Two-paddle Pong against a simple computer opponent, drawn with a system-installed raylib. ⚠️ no license
+- **[goose-mini-browser](https://github.com/Grumbash/goose-mini-browser)** — A toy graphical web browser that renders simple HTML in an SDL3 and Nuklear window, fetching pages through a small Rust networking library loaded at run time. ❌ ❌ ❌
+- **[goose-pong](https://github.com/flakesonnix/goose-pong)** — Two-paddle Pong against a simple computer opponent, drawn with a system-installed raylib. ⚠️ no license · 🟡 🟡 🟡
 - **[goose-sql-p2p](https://github.com/innomon/goose-sql-p2p)** — A peer-to-peer replication engine for SQLite databases that aims for compatibility with the Pear/Hypercore stack and with sqlite-p2p configuration. ❌ ❌ ❌
 - **[goose_sharp_x68000](https://github.com/manymids/goose_sharp_x68000)** — A Sharp X68000 emulator for Windows with the CPU, memory, devices and drawing written in Goose, a Win32 interface, and an MCP server for driving it from external tools. 🟡 🟡 ✅
 - **[goosecode](https://github.com/pleseisanidiot/goosecode)** — A terminal coding agent that talks to OpenRouter after an OAuth login, streams replies and asks before running write or shell tools. 🟡 🟡 🟡
 - **[GooseCraft](https://github.com/kokasikhorik-bot/GooseCraft)** — A Windows-only voxel game client and launcher that works toward Minecraft-like behaviour, with greedy meshing and save files; documentation is in Russian.
 - **[goosedex](https://github.com/Decryptu/goosedex)** — Prints a random Pokémon sprite in the terminal with every sprite embedded; a byte-for-byte port of a Zig tool, used to compare the two languages. ★ 2 · 🏷 v0.1.0 · ❌ ❌ ❌
-- **[goosestrike](https://github.com/yujieteo/goosestrike)** — An explicit-dynamics finite-element simulation of a bird hitting an aircraft fuselage panel, compiled to WebAssembly with an optional WebGPU solver, running live in the browser.
+- **[goosestrike](https://github.com/yujieteo/goosestrike)** — An explicit-dynamics finite-element simulation of a bird hitting an aircraft fuselage panel, compiled to WebAssembly with an optional WebGPU solver, running live in the browser. ✅ ✅ ✅
 - **[llama-goose](https://github.com/aguspiza/llama-goose)** — A work-in-progress port of llama.cpp and its ggml tensor library to Goose, built with goose build instead of CMake, tracking upstream llama.cpp commit by commit. ⚠️ no license
-- **[mandelbrot-goose](https://github.com/jesper-olsen/mandelbrot-goose)** — Renders the Mandelbrot set as terminal ASCII or as gnuplot data, in single-threaded and threaded versions, as one entry in the author's cross-language Mandelbrot suite. ⚠️ no license
+- **[mandelbrot-goose](https://github.com/jesper-olsen/mandelbrot-goose)** — Renders the Mandelbrot set as terminal ASCII or as gnuplot data, in single-threaded and threaded versions, as one entry in the author's cross-language Mandelbrot suite. ⚠️ no license · ✅ ✅ ✅
 - **[marklove-web](https://github.com/yujieteo/marklove-web)** — A browser Markdown editor whose Goose core, compiled to WebAssembly, produces slides, articles, EPUB books, subtitles and narration from one file. ⚠️ no license
 - **[meta-os](https://github.com/mrfentmen/meta-os)** — A hackathon platform where AI agents work in dedicated systems; its services layer (audit, logging, boards, agent hosts) is written in Goose, alongside Rust and web parts. 🏷 opencode1-500-final · ⚠️ no license
 - **[moon-goose](https://github.com/tacf/moon-goose)** — An unfinished interpreter with a lexer, a parser and a stack virtual machine; the repository has no README yet. ⚠️ no license · ✅ ✅ ✅
@@ -341,10 +341,10 @@ _Programs written in Goose: tools, games, servers, simulations._
 
 _Performance comparisons of Goose against other languages._
 
-- **[goose-commands](https://github.com/lazychicken/goose-commands)** — Goose rewrites of commands from a Rust command collection, starting with a merge sort tool, checked byte for byte against the Rust originals and benchmarked against them. ⚠️ no license
+- **[goose-commands](https://github.com/lazychicken/goose-commands)** — Goose rewrites of commands from a Rust command collection, starting with a merge sort tool, checked byte for byte against the Rust originals and benchmarked against them. ⚠️ no license · ✅ ✅ ✅
 - **[goose-poc](https://github.com/ks250206/goose-poc)** — A proof of concept computing crystal structure factors from CIF files on a worker pool, timed against Rust, plain Python and NumPy versions of the same direct sum. ⚠️ no license · ✅ ✅ ✅
 - **[Goose_feedguard](https://github.com/cyberskat/Goose_feedguard)** — A Windows prototype that records exchange order-book data and compares order-book engines written in C++ and in Goose on the same recorded messages. ⚠️ no license
-- **[symidx](https://github.com/artsensiva/symidx)** — A symbol index for Python code bases built three ways to compare Goose with Rust on save and near-instant load of a binary image. ★ 1 · 🏷 v0.1-experiment
+- **[symidx](https://github.com/artsensiva/symidx)** — A symbol index for Python code bases built three ways to compare Goose with Rust on save and near-instant load of a binary image. ★ 1 · 🏷 v0.1-experiment · ✅ ✅ 🟡
 - **[goose-evaluations](https://github.com/calpeyser/goose-evaluations)** _learning_ — Four parsing workloads (a Ninja build graph, JSON, YAML and a jq core) written in Goose and measured against common and best-in-class C, C++ and Rust programs, with the generated C and harnesses included. ★ 8
 - **[goose-lab](https://github.com/inuverse44/goose-lab)** _learning_ — Small experiments and two benchmarks against idiomatic Rust (order parsing and totals, a lattice heat simulation), with written notes on the language and the results.
 - **[LangArena](https://github.com/kostya/LangArena)** _learning_ — A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page. ★ 60 · 🏷 2026-10-21
@@ -372,4 +372,4 @@ _Tutorials, guides, articles, notes, starter templates and example collections._
 - **Data for tools.** [`index.json`](index.json) (also at https://safdafang.github.io/goose-index/index.json) holds every entry with its import line, native requirements and build results. Its format is documented in [docs/index-json.md](docs/index-json.md) and versioned.
 - **Licenses.** The code here is MIT; the entry data and descriptions are CC0. Listed projects keep their own licenses.
 
-<sub>Generated 2026-11-03T23:01:37Z.</sub>
+<sub>Generated 2026-11-03T23:08:43Z.</sub>

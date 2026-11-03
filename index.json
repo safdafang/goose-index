@@ -2,12 +2,12 @@
  "$schema": "https://safdafang.github.io/goose-index/schema/index.schema.json",
  "format": "goose-index",
  "version": 1,
- "generated_at": "2026-11-03T23:01:37Z",
+ "generated_at": "2026-11-03T23:08:43Z",
  "meta_fetched_at": "2026-11-03T10:34:08Z",
  "compat": {
   "goose": "v2026.3",
-  "ran_at": "2026-11-03T23:01:37Z",
-  "run_url": "https://github.com/safdafang/goose-index/actions/runs/41734849212"
+  "ran_at": "2026-11-03T23:08:43Z",
+  "run_url": "https://github.com/safdafang/goose-index/actions/runs/41736229018"
  },
  "site": "https://safdafang.github.io/goose-index/",
  "source": "https://github.com/safdafang/goose-index",
@@ -543,19 +543,19 @@
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/ldapgoose/asn1goose.git is not a directory (/tmp/goose-compat-56fx3dmy/home/pkg/github.com/SorinS/ldapgoose/asn1goose.git/)"
+     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/ldapgoose/asn1goose.git is not a directory (github.com/SorinS/ldapgoose/asn1goose.git/)"
     },
     "macos": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-omxsvc22/home/pkg/github.com/SorinS/ldapgoose/asn1goose.git is not a directory (/var/folders/n6/hn37q6pj7sj"
+     "detail": "probe.goose:2: error: the package asn1's source ../../../../../../../..github.com/SorinS/ldapgoose/asn1goose.git is not a directory (/private/..github.com/SorinS/ldapgoose/asn1goose.git/)"
     },
     "windows": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/ldapgoose/asn1goose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-111wippa/home/pkg/github.com/SorinS/ldapgoose/asn1goose.git/)"
+     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/ldapgoose/asn1goose.git is not a directory (github.com/SorinS/ldapgoose/asn1goose.git/)"
     }
    },
    "requires": [
@@ -779,19 +779,19 @@
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:1: error: /tmp/goose-compat-rvo8mecd/home/pkg/github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_source"
+     "detail": "probe.goose:1: error: github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include,"
     },
     "macos": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/home/pkg/github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exc"
+     "detail": "probe.goose:1: error: github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include,"
     },
     "windows": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-mjx22wrm/home/pkg/github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sour"
+     "detail": "probe.goose:1: error: github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include,"
     }
    },
    "requires": [],
@@ -1054,19 +1054,19 @@
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:1: error: /tmp/goose-compat-rvo8mecd/home/pkg/github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux"
+     "detail": "probe.goose:1: error: github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_incl"
     },
     "macos": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/home/pkg/github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c"
+     "detail": "probe.goose:1: error: github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_incl"
     },
     "windows": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-mjx22wrm/home/pkg/github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_"
+     "detail": "probe.goose:1: error: github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_incl"
     }
    },
    "requires": [],
@@ -1122,33 +1122,33 @@
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (/tmp/goose-compat-rvo8mecd/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git/)"
+     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (github.com/SorinS/sshgoose/bigmongoose.git/)"
     },
     "macos": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (/var/folders/n6/hn37q6pj"
+     "detail": "probe.goose:2: error: the package bignum's source ../../../../../../../..github.com/SorinS/sshgoose/bigmongoose.git is not a directory (/private/..github.com/SorinS/sshgoose/bigmongoose.git/)"
     },
     "windows": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-mjx22wrm/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git/)"
+     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (github.com/SorinS/sshgoose/bigmongoose.git/)"
     }
    },
    "requires": [
     {
      "name": "asn1",
-     "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/home/pkg/github.com/SorinS/sshgoose/asn1goose.git"
+     "source": "../../../../../../../..github.com/SorinS/sshgoose/asn1goose.git"
     },
     {
      "name": "bignum",
-     "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git"
+     "source": "../../../../../../../..github.com/SorinS/sshgoose/bigmongoose.git"
     },
     {
      "name": "x509",
-     "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/home/pkg/github.com/SorinS/sshgoose/x509goose.git"
+     "source": "../../../../../../../..github.com/SorinS/sshgoose/x509goose.git"
     }
    ],
    "import": {
@@ -1204,19 +1204,19 @@
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (/tmp/goose-compat-56fx3dmy/home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git/)"
+     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (github.com/SorinS/tlsgoose/bigmongoose.git/)"
     },
     "macos": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-omxsvc22/home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (/var/folders/n6/hn37q6pj"
+     "detail": "probe.goose:2: error: the package bignum's source ../../../../../../../..github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (/private/..github.com/SorinS/tlsgoose/bigmongoose.git/)"
     },
     "windows": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-111wippa/home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git/)"
+     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (github.com/SorinS/tlsgoose/bigmongoose.git/)"
     }
    },
    "requires": [
@@ -1285,29 +1285,29 @@
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (/tmp/goose-compat-b19s5kct/home/pkg/github.com/SorinS/x509goose/asn1goose.git/)"
+     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (github.com/SorinS/x509goose/asn1goose.git/)"
     },
     "macos": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-4ldj5sa7/home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (/var/folders/n6/hn37q6pj7sj"
+     "detail": "probe.goose:2: error: the package asn1's source ../../../../../../../..github.com/SorinS/x509goose/asn1goose.git is not a directory (/private/..github.com/SorinS/x509goose/asn1goose.git/)"
     },
     "windows": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-8qqelbk0/home/pkg/github.com/SorinS/x509goose/asn1goose.git/)"
+     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (github.com/SorinS/x509goose/asn1goose.git/)"
     }
    },
    "requires": [
     {
      "name": "asn1",
-     "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-4ldj5sa7/home/pkg/github.com/SorinS/x509goose/asn1goose.git"
+     "source": "../../../../../../../..github.com/SorinS/x509goose/asn1goose.git"
     },
     {
      "name": "bignum",
-     "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-4ldj5sa7/home/pkg/github.com/SorinS/x509goose/bigmongoose.git"
+     "source": "../../../../../../../..github.com/SorinS/x509goose/bigmongoose.git"
     }
    ],
    "import": {
@@ -2493,19 +2493,19 @@
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "/tmp/goose-compat-rvo8mecd/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of"
+     "detail": "github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of"
     },
     "macos": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of"
+     "detail": "github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of"
     },
     "windows": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-mjx22wrm/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of"
+     "detail": "github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of"
     }
    },
    "requires": [],
@@ -2672,22 +2672,22 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "skip",
+     "status": "pass",
      "ref": "goose-wasm-schema-org-14436079612921043283",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "src/goose/schema_ld.goose"
     },
     "macos": {
-     "status": "skip",
+     "status": "pass",
      "ref": "goose-wasm-schema-org-14436079612921043283",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "src/goose/schema_ld.goose"
     },
     "windows": {
-     "status": "skip",
+     "status": "pass",
      "ref": "goose-wasm-schema-org-14436079612921043283",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "src/goose/schema_ld.goose"
     }
    },
    "requires": [],
@@ -2871,19 +2871,19 @@
      "status": "fail",
      "ref": "v0.2.1",
      "stage": "check",
-     "detail": "probe.goose:1: error: /tmp/goose-compat-56fx3dmy/home/pkg/github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_li"
+     "detail": "probe.goose:1: error: github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.2.1",
      "stage": "check",
-     "detail": "probe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-omxsvc22/home/pkg/github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude"
+     "detail": "probe.goose:1: error: github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.2.1",
      "stage": "check",
-     "detail": "probe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-111wippa/home/pkg/github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources,"
+     "detail": "probe.goose:1: error: github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
     }
    },
    "requires": [],
@@ -3067,19 +3067,19 @@
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "/tmp/goose-compat-b19s5kct/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add"
+     "detail": "github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-4ldj5sa7/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add"
+     "detail": "github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-8qqelbk0/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add"
+     "detail": "github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add"
     }
    },
    "requires": [],
@@ -3205,19 +3205,19 @@
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "/tmp/goose-compat-rvo8mecd/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite"
+     "detail": "github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite"
+     "detail": "github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-mjx22wrm/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite"
+     "detail": "github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite"
     }
    },
    "requires": [],
@@ -3870,19 +3870,19 @@
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "/tmp/goose-compat-56fx3dmy/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:989: error: expected ';' in extern declaration, found '='"
+     "detail": "github.com/lamweilun/raygoose/v0.1.0/raylib.goose:989: error: expected ';' in extern declaration, found '='"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-omxsvc22/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:989: error: expected ';' in extern declaration, found '='"
+     "detail": "github.com/lamweilun/raygoose/v0.1.0/raylib.goose:989: error: expected ';' in extern declaration, found '='"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-111wippa/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:989: error: expected ';' in extern declaration, found '='"
+     "detail": "github.com/lamweilun/raygoose/v0.1.0/raylib.goose:989: error: expected ';' in extern declaration, found '='"
     }
    },
    "requires": [],
@@ -3944,19 +3944,19 @@
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "/tmp/goose-compat-b19s5kct/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'"
+     "detail": "github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'"
     },
     "macos": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-4ldj5sa7/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'"
+     "detail": "github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'"
     },
     "windows": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
-     "detail": "C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-8qqelbk0/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'"
+     "detail": "github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'"
     }
    },
    "requires": [],
@@ -4079,19 +4079,19 @@
      "status": "skip",
      "ref": "v0.1.0",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "v0.1.0",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "v0.1.0",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -4282,19 +4282,19 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -4545,19 +4545,19 @@
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: /tmp/goose-compat-56fx3dmy/home/pkg/github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_li"
+     "detail": "probe.goose:1: error: github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-omxsvc22/home/pkg/github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude"
+     "detail": "probe.goose:1: error: github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-111wippa/home/pkg/github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources,"
+     "detail": "probe.goose:1: error: github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
     }
    },
    "requires": [],
@@ -4803,19 +4803,19 @@
      "status": "fail",
      "ref": "v0.1.1",
      "stage": "check",
-     "detail": "probe.goose:1: error: /tmp/goose-compat-b19s5kct/home/pkg/github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_"
+     "detail": "probe.goose:1: error: github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.1.1",
      "stage": "check",
-     "detail": "probe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-4ldj5sa7/home/pkg/github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclu"
+     "detail": "probe.goose:1: error: github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.1.1",
      "stage": "check",
-     "detail": "probe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-8qqelbk0/home/pkg/github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_source"
+     "detail": "probe.goose:1: error: github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c"
     }
    },
    "requires": [],
@@ -4868,23 +4868,22 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "pass",
+     "status": "skip",
      "ref": "master",
-     "stage": "build",
-     "entry": "src/okgc.goose"
+     "stage": "entry",
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
-     "status": "pass",
+     "status": "skip",
      "ref": "master",
-     "stage": "build",
-     "entry": "src/okgc.goose"
+     "stage": "entry",
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
-     "status": "check",
+     "status": "skip",
      "ref": "master",
-     "stage": "build",
-     "detail": "compiling C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-8qqelbk0/okay-effects-okay-goose/repo/src/okay_run.c for the package okgc failed (exit 1):",
-     "entry": "src/okgc.goose"
+     "stage": "entry",
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -4937,19 +4936,19 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -4999,19 +4998,19 @@
      "status": "skip",
      "ref": "master",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "master",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "master",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -5059,19 +5058,19 @@
      "status": "fail",
      "ref": "v0.2.1",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (/tmp/goose-compat-56fx3dmy/home/pkg/github.com/Macho0x/goose-ethereum/crypto/)"
+     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (github.com/Macho0x/goose-ethereum/crypto/)"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.2.1",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-omxsvc22/home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (/var/folders/n6/hn37q6pj7s"
+     "detail": "probe.goose:2: error: the package crypto's source ../../../../../../../..github.com/Macho0x/goose-ethereum/crypto is not a directory (/private/..github.com/Macho0x/goose-ethereum/crypto/)"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.2.1",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-111wippa/home/pkg/github.com/Macho0x/goose-ethereum/crypto/)"
+     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (github.com/Macho0x/goose-ethereum/crypto/)"
     }
    },
    "requires": [
@@ -5199,25 +5198,25 @@
      "status": "fail",
      "ref": "v0.3",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (/tmp/goose-compat-rvo8mecd/home/pkg/github.com/Macho0x/goose-signature/crypto/)"
+     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (github.com/Macho0x/goose-signature/crypto/)"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.3",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (/var/folders/n6/hn37q6pj7"
+     "detail": "probe.goose:2: error: the package crypto's source ../../../../../../../..github.com/Macho0x/goose-signature/crypto is not a directory (/private/..github.com/Macho0x/goose-signature/crypto/)"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.3",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-mjx22wrm/home/pkg/github.com/Macho0x/goose-signature/crypto/)"
+     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (github.com/Macho0x/goose-signature/crypto/)"
     }
    },
    "requires": [
     {
      "name": "crypto",
-     "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/home/pkg/github.com/Macho0x/goose-signature/crypto"
+     "source": "../../../../../../../..github.com/Macho0x/goose-signature/crypto"
     }
    ],
    "import": {
@@ -5400,19 +5399,19 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -5522,7 +5521,7 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "compiling /tmp/goose-compat-b19s5kct/rx-bob-goosetest/repo/native/process.c for the package main failed (exit 1):",
+     "detail": "/rx-bob-goosetest/repo/native/process.c:12:10: fatal error: sys/proc.h: No such file or directory",
      "entry": "main.goose"
     },
     "macos": {
@@ -5535,7 +5534,7 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "compiling C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-8qqelbk0/rx-bob-goosetest/repo/native/filesystem.c for the package main failed (exit 1):",
+     "detail": "/rx-bob-goosetest/repo/native/filesystem.c(5,10): fatal error: 'dirent.h' file not found",
      "entry": "main.goose"
     }
    },
@@ -5656,7 +5655,7 @@
      "status": "check",
      "ref": "v0.1.4",
      "stage": "build",
-     "detail": "compiling C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-111wippa/home/pkg/github.com/shetautnetjer/goose-treesitter/v0.1.4/ts_shim.c for the package treesitter failed (exit 1):"
+     "detail": "github.com/shetautnetjer/goose-treesitter/v0.1.4/ts_shim.c(151,10): fatal error: 'pthread.h' file not found"
     }
    },
    "requires": [],
@@ -5712,19 +5711,19 @@
      "status": "skip",
      "ref": "v0.2.1",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "v0.2.1",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "v0.2.1",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -5831,21 +5830,21 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "compiling /tmp/goose-compat-rvo8mecd/shetautnetjer-swan/repo/build/golsp.c for the package swan failed (exit 1):",
+     "detail": "cc1: fatal error: /shetautnetjer-swan/repo/build/golsp.c: No such file or directory",
      "entry": "src/swan.goose"
     },
     "macos": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "compiling /private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/shetautnetjer-swan/repo/native/swan_sys.c for the package swan failed (exit 1):",
+     "detail": "/private/shetautnetjer-swan/repo/native/swan_sys.c:28:24: error: no member named 'st_mtim' in 'struct stat'",
      "entry": "src/swan.goose"
     },
     "windows": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "compiling C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-mjx22wrm/shetautnetjer-swan/repo/native/swan_sys.c for the package swan failed (exit 1):",
+     "detail": "/shetautnetjer-swan/repo/native/swan_sys.c(28,24): error: no member named 'st_mtim' in 'struct stat'",
      "entry": "src/swan.goose"
     }
    },
@@ -5897,19 +5896,19 @@
      "status": "skip",
      "ref": "v0.1.3",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "v0.1.3",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "v0.1.3",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -7278,21 +7277,21 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "building /tmp/goose-compat-rvo8mecd/noonien-alchemistssort/out failed (exit 1):",
+     "detail": "main.c:(.text+0x1bf03): undefined reference to `alch_dec_open'",
      "entry": "src/main.goose"
     },
     "macos": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "building /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/noonien-alchemistssort/out failed (exit 1):",
+     "detail": "clang: error: linker command failed with exit code 1 (use -v to see invocation)",
      "entry": "src/main.goose"
     },
     "windows": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "building C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\goose-compat-mjx22wrm\\noonien-alchemistssort\\out.exe failed (exit 1):",
+     "detail": "lld-link: error: undefined symbol: alch_music_open",
      "entry": "src/main.goose"
     }
    },
@@ -7526,22 +7525,25 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "skip",
+     "status": "fail",
      "ref": "codex/campfire-experiment",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "check",
+     "detail": "campfire.goose:11: error: the package sqlite's source ./build/sqlite is not a directory (/aardappel-once-campfire-goose/repo/build/sqlite/)",
+     "entry": "campfire.goose"
     },
     "macos": {
-     "status": "skip",
+     "status": "fail",
      "ref": "codex/campfire-experiment",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "check",
+     "detail": "campfire.goose:11: error: the package sqlite's source ./build/sqlite is not a directory (/private/aardappel-once-campfire-goose/repo/build/sqlite/)",
+     "entry": "campfire.goose"
     },
     "windows": {
-     "status": "skip",
+     "status": "fail",
      "ref": "codex/campfire-experiment",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "check",
+     "detail": "campfire.goose:11: error: the package sqlite's source ./build/sqlite is not a directory (/aardappel-once-campfire-goose/repo/build/sqlite/)",
+     "entry": "campfire.goose"
     }
    },
    "requires": [],
@@ -7645,21 +7647,21 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "building /tmp/goose-compat-b19s5kct/anugunjnaman-gander/out failed (exit 1):",
+     "detail": "gander.c:(.text+0x1d90): undefined reference to `gander_write'",
      "entry": "src/gander.goose"
     },
     "macos": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "building /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-4ldj5sa7/anugunjnaman-gander/out failed (exit 1):",
+     "detail": "clang: error: linker command failed with exit code 1 (use -v to see invocation)",
      "entry": "src/gander.goose"
     },
     "windows": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "building C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\goose-compat-8qqelbk0\\anugunjnaman-gander\\out.exe failed (exit 1):",
+     "detail": "lld-link: error: undefined symbol: gander_open",
      "entry": "src/gander.goose"
     }
    },
@@ -7727,7 +7729,7 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "compiling C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-111wippa/felipecruz-gffs/repo/native.c for the package gffs failed (exit 1):",
+     "detail": "/felipecruz-gffs/repo/native.c(10,10): fatal error: 'dirent.h' file not found",
      "entry": "gffs.goose"
     }
    },
@@ -7843,22 +7845,25 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "skip",
+     "status": "fail",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "check",
+     "detail": "mini_browser.build: unknown key dylibs_macos (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_maco",
+     "entry": "browser/mini_browser.goose"
     },
     "macos": {
-     "status": "skip",
+     "status": "fail",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "check",
+     "detail": "mini_browser.build: unknown key dylibs_macos (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_maco",
+     "entry": "browser/mini_browser.goose"
     },
     "windows": {
-     "status": "skip",
+     "status": "fail",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "check",
+     "detail": "mini_browser.build: unknown key dylibs_macos (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_maco",
+     "entry": "browser/mini_browser.goose"
     }
    },
    "requires": [],
@@ -7909,22 +7914,25 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "skip",
+     "status": "check",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "detail": "pong.c:(.text.startup+0x3b): undefined reference to `InitWindow'",
+     "entry": "pong.goose"
     },
     "macos": {
-     "status": "skip",
+     "status": "check",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "detail": "clang: error: linker command failed with exit code 1 (use -v to see invocation)",
+     "entry": "pong.goose"
     },
     "windows": {
-     "status": "skip",
+     "status": "check",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "detail": "lld-link: error: undefined symbol: InitWindow",
+     "entry": "pong.goose"
     }
    },
    "requires": [],
@@ -8038,14 +8046,14 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "compiling /tmp/goose-compat-rvo8mecd/manymids-goose-sharp-x68000/repo/src/x68k_bridge.c for the package main failed (exit 1):",
+     "detail": "/manymids-goose-sharp-x68000/repo/src/x68k_bridge.c:2:10: fatal error: windows.h: No such file or directory",
      "entry": "src/main.goose"
     },
     "macos": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "compiling /private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-7dli2zz1/manymids-goose-sharp-x68000/repo/src/x68k_bridge.c for the package main failed (exit 1):",
+     "detail": "/private/manymids-goose-sharp-x68000/repo/src/x68k_bridge.c:2:10: fatal error: 'windows.h' file not found",
      "entry": "src/main.goose"
     },
     "windows": {
@@ -8109,21 +8117,21 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "building /tmp/goose-compat-56fx3dmy/pleseisanidiot-goosecode/out failed (exit 1):",
+     "detail": "goosecode.c:(.text+0x371f): undefined reference to `gc_ask'",
      "entry": "goosecode.goose"
     },
     "macos": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "building /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-omxsvc22/pleseisanidiot-goosecode/out failed (exit 1):",
+     "detail": "clang: error: linker command failed with exit code 1 (use -v to see invocation)",
      "entry": "goosecode.goose"
     },
     "windows": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "building C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\goose-compat-111wippa\\pleseisanidiot-goosecode\\out.exe failed (exit 1):",
+     "detail": "lld-link: error: undefined symbol: gc_init_signals",
      "entry": "goosecode.goose"
     }
    },
@@ -8174,19 +8182,19 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -8293,22 +8301,22 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "skip",
+     "status": "pass",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "sim/validate.goose"
     },
     "macos": {
-     "status": "skip",
+     "status": "pass",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "sim/validate.goose"
     },
     "windows": {
-     "status": "skip",
+     "status": "pass",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "sim/validate.goose"
     }
    },
    "requires": [],
@@ -8357,19 +8365,19 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -8415,22 +8423,22 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "skip",
+     "status": "pass",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "mandelbrot.goose"
     },
     "macos": {
-     "status": "skip",
+     "status": "pass",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "mandelbrot.goose"
     },
     "windows": {
-     "status": "skip",
+     "status": "pass",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "mandelbrot.goose"
     }
    },
    "requires": [],
@@ -8479,19 +8487,19 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -8653,19 +8661,19 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -8717,19 +8725,19 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -8955,22 +8963,22 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "skip",
+     "status": "pass",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "commands/msort/msort.goose"
     },
     "macos": {
-     "status": "skip",
+     "status": "pass",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "commands/msort/msort.goose"
     },
     "windows": {
-     "status": "skip",
+     "status": "pass",
      "ref": "main",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "commands/msort/msort.goose"
     }
    },
    "requires": [],
@@ -9083,19 +9091,19 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
     }
    },
    "requires": [],
@@ -9142,22 +9150,23 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "skip",
+     "status": "pass",
      "ref": "v0.1-experiment",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "goose/symidx.goose"
     },
     "macos": {
-     "status": "skip",
+     "status": "pass",
      "ref": "v0.1-experiment",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "entry": "goose/symidx.goose"
     },
     "windows": {
-     "status": "skip",
+     "status": "check",
      "ref": "v0.1-experiment",
-     "stage": "entry",
-     "reason": "no single entry file with `fn main` at the root or in src/; set compat.entry in the entry file"
+     "stage": "build",
+     "detail": "/artsensiva-symidx/repo/goose/walk.c(4,10): fatal error: 'dirent.h' file not found",
+     "entry": "goose/symidx.goose"
     }
    },
    "requires": [],
