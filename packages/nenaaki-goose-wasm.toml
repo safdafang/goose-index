@@ -1,0 +1,16 @@
+id = "nenaaki-goose-wasm"
+name = "goose-wasm"
+kind = "tool"
+category = "compilers-and-runtimes"
+tags = ["wasm", "webassembly", "backend"]
+repo = "https://github.com/nenaaki/goose-wasm"
+description = "An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule."
+platforms = []
+
+[native]
+c = false
+cmake = false
+tools = ["cmake", "ninja", "clang"]
+
+[compat]
+skip = "a compiler backend, not a package"

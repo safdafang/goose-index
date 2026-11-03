@@ -1,0 +1,15 @@
+id = "goose-pond-phonelib"
+name = "phonelib"
+kind = "package"
+category = "domain-specific"
+tags = ["phone-numbers", "e164", "validation", "pure-goose"]
+repo = "https://github.com/goose-pond/phonelib"
+description = "Parses, validates and normalizes phone numbers to E.164 using numbering-plan data compiled into the program, so nothing is downloaded or deployed at run time."
+platforms = []
+
+[import]
+name = "phonelib"
+
+[native]
+c = false
+cmake = false

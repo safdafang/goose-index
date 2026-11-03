@@ -1,0 +1,12 @@
+id = "aciru4l-barn"
+name = "barn"
+kind = "tool"
+category = "package-management"
+tags = ["package-manager", "semver", "dependencies", "eggs"]
+repo = "https://github.com/aciru4L/barn"
+description = "A third-party package manager with a barn.json manifest, semantic versions resolved by minimal version selection, checksummed downloads and project scaffolding. It works alongside goose rather than through import lines."
+platforms = ["linux", "macos", "windows"]
+
+[native]
+c = true
+cmake = false

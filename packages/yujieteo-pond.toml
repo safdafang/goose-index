@@ -1,0 +1,12 @@
+id = "yujieteo-pond"
+name = "pond"
+kind = "app"
+category = "applications"
+tags = ["journal", "server", "ios", "openbsd", "signing"]
+repo = "https://github.com/yujieteo/pond"
+description = "A signed media and experiment journal: an iOS app in Swift with a save, read and sync server written in Goose for OpenBSD, Linux and macOS."
+platforms = ["linux", "macos"]
+
+[native]
+c = false
+cmake = false

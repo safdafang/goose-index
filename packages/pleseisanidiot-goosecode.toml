@@ -1,0 +1,14 @@
+id = "pleseisanidiot-goosecode"
+name = "goosecode"
+kind = "app"
+category = "applications"
+tags = ["ai", "coding-agent", "terminal", "openrouter", "oauth"]
+repo = "https://github.com/pleseisanidiot/goosecode"
+description = "A terminal coding agent that talks to OpenRouter after an OAuth login, streams replies and asks before running write or shell tools."
+platforms = []
+
+[native]
+c = false
+cmake = false
+system_libs.linux = ["libcurl4-openssl-dev", "libssl-dev", "libreadline-dev"]
+system_libs.macos = ["curl", "openssl@3", "readline"]

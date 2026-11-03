@@ -1,0 +1,12 @@
+id = "anugunjnaman-gander"
+name = "gander"
+kind = "app"
+category = "applications"
+tags = ["robotics", "telemetry", "logging", "crash-safe"]
+repo = "https://github.com/AnugunjNaman/gander"
+description = "A telemetry recorder for robots and vehicles that logs IMU, CAN, GNSS and LiDAR events compactly and loses at most two seconds of data on a crash."
+platforms = ["linux"]
+
+[native]
+c = false
+cmake = false

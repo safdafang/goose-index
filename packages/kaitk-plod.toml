@@ -1,0 +1,15 @@
+id = "kaitk-plod"
+name = "plod"
+kind = "package"
+category = "networking"
+tags = ["rest", "web-framework", "openapi", "middleware", "goose-http"]
+repo = "https://github.com/kaitk/plod"
+description = "An Actix-inspired REST framework on goose-http with scopes, extractors and middleware, plus a generator that produces types, JSON codecs and a router from an OpenAPI 3.1 spec."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "plod"
+
+[native]
+c = false
+cmake = false

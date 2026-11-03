@@ -1,0 +1,12 @@
+id = "mg3994-ideatoapp"
+name = "ideatoapp"
+kind = "app"
+category = "encoding-and-serialization"
+tags = ["json-ld", "schema-org", "wasm"]
+repo = "https://github.com/mg3994/ideatoapp"
+description = "An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript."
+platforms = []
+
+[native]
+c = false
+cmake = false

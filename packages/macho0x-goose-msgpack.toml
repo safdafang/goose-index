@@ -1,0 +1,15 @@
+id = "macho0x-goose-msgpack"
+name = "goose-msgpack"
+kind = "package"
+category = "encoding-and-serialization"
+tags = ["msgpack", "serialization", "binary"]
+repo = "https://github.com/Macho0x/goose-msgpack"
+description = "MessagePack reading and writing that picks the shortest integer forms and keeps map pairs in insertion order."
+platforms = []
+
+[import]
+name = "msgpack"
+
+[native]
+c = false
+cmake = false

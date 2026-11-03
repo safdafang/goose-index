@@ -1,0 +1,15 @@
+id = "aardappel-goose"
+name = "Goose"
+kind = "tool"
+category = "compilers-and-runtimes"
+tags = ["compiler", "stdlib", "lsp", "official"]
+repo = "https://github.com/aardappel/goose"
+description = "The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on."
+platforms = ["linux", "macos", "windows"]
+
+[native]
+c = false
+cmake = true
+
+[compat]
+skip = "the compiler itself"

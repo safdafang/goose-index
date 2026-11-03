@@ -1,0 +1,15 @@
+id = "macho0x-goose-hyperliquid"
+name = "goose-hyperliquid"
+kind = "package"
+category = "domain-specific"
+tags = ["hyperliquid", "trading", "eip-712", "signing"]
+repo = "https://github.com/Macho0x/goose-hyperliquid"
+description = "A client library for the Hyperliquid exchange that signs HyperCore orders and transfers the way the official SDKs do and reads market data, over goose-http and goose-tls."
+platforms = []
+
+[import]
+name = "hyperliquid"
+
+[native]
+c = false
+cmake = false

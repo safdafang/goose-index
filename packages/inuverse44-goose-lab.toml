@@ -1,0 +1,15 @@
+id = "inuverse44-goose-lab"
+name = "goose-lab"
+kind = "learning-resource"
+category = "benchmarks"
+tags = ["benchmarks", "rust-comparison", "notes"]
+repo = "https://github.com/inuverse44/goose-lab"
+description = "Small experiments and two benchmarks against idiomatic Rust (order parsing and totals, a lattice heat simulation), with written notes on the language and the results."
+platforms = ["macos"]
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a benchmark repository, not a package"

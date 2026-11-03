@@ -1,0 +1,18 @@
+id = "elcharitas-goose-bio"
+name = "goose_bio"
+kind = "package"
+category = "math-and-science"
+tags = ["bioinformatics", "sequences", "alignment", "htslib", "phylogenetics"]
+repo = "https://github.com/elcharitas/goose_bio"
+description = "A broad bioinformatics library in the spirit of Biopython: sequence handling, alignment, file formats, statistics and trees, with optional htslib, SQLite and libcurl adapters."
+platforms = []
+
+[import]
+name = "bio"
+modules = ["bio.hts"]
+
+[native]
+c = true
+cmake = false
+system_libs.linux = ["libhts-dev", "zlib1g-dev", "libsqlite3-dev", "libcurl4-openssl-dev"]
+system_libs.macos = ["htslib", "sqlite", "curl"]

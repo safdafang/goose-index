@@ -1,0 +1,15 @@
+id = "robtandy-goose-go"
+name = "goose.go"
+kind = "tool"
+category = "compilers-and-runtimes"
+tags = ["go", "backend", "cgo-free"]
+repo = "https://github.com/robtandy/goose.go"
+description = "A backend that keeps the upstream Goose frontend and emits plain Go with a pure-Go data stack runtime, so Goose code can live in Go services without cgo."
+platforms = []
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a compiler backend, not a package"

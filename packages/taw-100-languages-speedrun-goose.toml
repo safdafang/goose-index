@@ -1,0 +1,16 @@
+id = "taw-100-languages-speedrun-goose"
+name = "100 Languages Speedrun: Goose episode"
+kind = "learning-resource"
+category = "learning"
+tags = ["tour", "examples", "blog"]
+repo = "https://github.com/taw/100-languages-speedrun"
+url = "https://github.com/taw/100-languages-speedrun/tree/main/episode-103-goose"
+description = "The Goose episode of a long-running blog series that tries one language per post, with its example programs."
+platforms = []
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "example code for a blog post"

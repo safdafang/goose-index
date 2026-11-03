@@ -1,0 +1,16 @@
+id = "lamweilun-raygoose"
+name = "raygoose"
+kind = "binding"
+category = "graphics-and-games"
+tags = ["raylib", "generated", "cmake", "games"]
+repo = "https://github.com/lamweilun/raygoose"
+description = "raylib bindings generated from raylib's headers, with raylib built from a pinned submodule by CMake so its platform link settings come along; the binding raylib's own list points to."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "raylib"
+
+[native]
+c = false
+cmake = true
+system_libs.linux = ["libx11-dev", "libxrandr-dev", "libxinerama-dev", "libxcursor-dev", "libxi-dev", "libgl1-mesa-dev"]

@@ -1,0 +1,12 @@
+id = "akari-iku-goose-playground"
+name = "goose-playground"
+kind = "learning-resource"
+category = "learning"
+tags = ["experiments", "lifetimes", "japanese"]
+repo = "https://github.com/akari-iku/goose-playground"
+description = "Small Japanese-language experiments that probe Goose's lifetime rules: which dangling references the compiler rejects, plus an L-system written in Goose, Rust and C++ side by side."
+platforms = ["windows"]
+
+[native]
+c = false
+cmake = false

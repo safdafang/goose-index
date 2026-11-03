@@ -1,0 +1,12 @@
+id = "a55uka-zed-goose"
+name = "zed-goose"
+kind = "editor"
+category = "editor-support"
+tags = ["zed", "tree-sitter", "highlighting"]
+repo = "https://github.com/a55uka/zed-goose"
+description = "A Zed extension giving Goose files syntax highlighting and snippets, using the grammar from the Goose repository."
+platforms = []
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,16 @@
+id = "alexxzz-raylib-goose"
+name = "raylib-goose"
+kind = "binding"
+category = "graphics-and-games"
+tags = ["raylib", "games", "2d", "3d"]
+repo = "https://github.com/Alexxzz/raylib-goose"
+description = "Bindings to the whole raylib 6.2 API under the rl namespace, loaded from a raylib shared library at run time rather than compiled in."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "rl"
+
+[native]
+c = false
+cmake = false
+system_libs.macos = ["raylib"]

@@ -1,0 +1,12 @@
+id = "jesper-olsen-c4-goose"
+name = "c4-goose"
+kind = "app"
+category = "applications"
+tags = ["game", "connect-four", "solver", "fhourstones", "benchmark"]
+repo = "https://github.com/jesper-olsen/c4-goose"
+description = "John Tromp's Fhourstones Connect Four solver ported to Goose; it reads positions on stdin and reports scores and timing."
+platforms = []
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,12 @@
+id = "lazychicken-goose-commands"
+name = "goose-commands"
+kind = "app"
+category = "benchmarks"
+tags = ["sort", "cli", "rust-comparison", "differential-testing"]
+repo = "https://github.com/lazychicken/goose-commands"
+description = "Goose rewrites of commands from a Rust command collection, starting with a merge sort tool, checked byte for byte against the Rust originals and benchmarked against them."
+platforms = []
+
+[native]
+c = false
+cmake = false

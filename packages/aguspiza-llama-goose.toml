@@ -1,0 +1,12 @@
+id = "aguspiza-llama-goose"
+name = "llama-goose"
+kind = "app"
+category = "applications"
+tags = ["llm", "inference", "ggml", "port", "llama.cpp"]
+repo = "https://github.com/aguspiza/llama-goose"
+description = "A work-in-progress port of llama.cpp and its ggml tensor library to Goose, built with goose build instead of CMake, tracking upstream llama.cpp commit by commit."
+platforms = []
+
+[native]
+c = true
+cmake = false

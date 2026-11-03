@@ -1,0 +1,12 @@
+id = "zhengsy-goose-zed"
+name = "goose-zed"
+kind = "editor"
+category = "editor-support"
+tags = ["zed", "tree-sitter", "lsp", "snippets", "tasks"]
+repo = "https://github.com/ZHENGSY/goose-zed"
+description = "A Zed extension with its own grammar packaging, goose lsp integration, snippets and run tasks, published with prebuilt archives."
+platforms = []
+
+[native]
+c = false
+cmake = false

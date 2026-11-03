@@ -1,0 +1,12 @@
+id = "artsensiva-symidx"
+name = "symidx"
+kind = "app"
+category = "benchmarks"
+tags = ["index", "serialization", "rust-comparison"]
+repo = "https://github.com/artsensiva/symidx"
+description = "A symbol index for Python code bases built three ways to compare Goose with Rust on save and near-instant load of a binary image."
+platforms = ["linux", "macos"]
+
+[native]
+c = true
+cmake = false

@@ -1,0 +1,15 @@
+id = "clintecker-goose-layout"
+name = "goose-layout"
+kind = "package"
+category = "encoding-and-serialization"
+tags = ["binary", "endianness", "headers", "structs"]
+repo = "https://github.com/clintecker/goose-layout"
+description = "Reads and writes fixed-layout binary headers straight into Goose structs field by field, big- or little-endian, all-or-nothing."
+platforms = []
+
+[import]
+name = "layout"
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,15 @@
+id = "shetautnetjer-goose-treesitter"
+name = "goose-treesitter"
+kind = "package"
+category = "code-quality"
+tags = ["tree-sitter", "structural-search", "rewrite", "ast-grep"]
+repo = "https://github.com/shetautnetjer/goose-treesitter"
+description = "Structural code search and rewrite over tree-sitter grammars for about fifteen languages, matching ast-grep's pattern results."
+platforms = []
+
+[import]
+name = "treesitter"
+
+[native]
+c = true
+cmake = false

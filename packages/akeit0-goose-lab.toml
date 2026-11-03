@@ -1,0 +1,12 @@
+id = "akeit0-goose-lab"
+name = "goose-lab"
+kind = "learning-resource"
+category = "learning"
+tags = ["experiments", "ecs", "json", "windows"]
+repo = "https://github.com/akeit0/goose-lab"
+description = "A Windows-centred sandbox of libraries and small apps for learning which designs suit Goose's value semantics; it builds with the author's own compiler branch."
+platforms = ["windows"]
+
+[native]
+c = false
+cmake = true

@@ -1,0 +1,17 @@
+id = "aardappel-goose-gfx"
+name = "goose_gfx"
+kind = "binding"
+category = "graphics-and-games"
+tags = ["sdl3", "gpu", "audio", "nuklear", "blessed"]
+repo = "https://github.com/aardappel/goose_gfx"
+description = "The official graphics package: windows, input and SDL3 GPU pipelines in gfx, procedural sound in audio, and Nuklear immediate-mode widgets in ui. Prebuilt Goose releases include it."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "gfx"
+modules = ["audio", "ui"]
+
+[native]
+c = false
+cmake = true
+system_libs.linux = ["libasound2-dev", "libpulse-dev", "libx11-dev", "libxext-dev", "libxrandr-dev", "libxcursor-dev", "libxfixes-dev", "libxi-dev", "libxss-dev", "libxkbcommon-dev", "libwayland-dev", "libdecor-0-dev", "libdrm-dev", "libgbm-dev", "libudev-dev", "libdbus-1-dev", "libpipewire-0.3-dev", "libvulkan1", "mesa-vulkan-drivers"]

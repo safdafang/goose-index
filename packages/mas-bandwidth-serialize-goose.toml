@@ -1,0 +1,16 @@
+id = "mas-bandwidth-serialize-goose"
+name = "serialize.goose"
+kind = "package"
+category = "encoding-and-serialization"
+tags = ["bitpacking", "networking", "games", "wire-format"]
+repo = "https://github.com/mas-bandwidth/serialize.goose"
+description = "A bit-packing serializer for game and network messages that produces exactly the same bytes as the C and C++ serialize libraries, covering every field type they support."
+platforms = []
+
+[import]
+name = "serialize"
+subdir = "src"
+
+[native]
+c = false
+cmake = false

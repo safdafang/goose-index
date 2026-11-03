@@ -1,0 +1,16 @@
+id = "korolenkowork-honk"
+name = "honk"
+kind = "package"
+category = "networking"
+tags = ["web-framework", "openapi", "swagger", "validation"]
+repo = "https://github.com/korolenkowork/honk"
+description = "A web framework where routes declare typed structs and the request parsing, validation, JSON responses and OpenAPI schema with Swagger UI follow from those types."
+platforms = ["linux", "windows"]
+
+[import]
+name = "honk"
+subdir = "honk"
+
+[native]
+c = true
+cmake = false

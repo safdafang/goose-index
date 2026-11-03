@@ -1,0 +1,12 @@
+id = "flakesonnix-goose-collatz-explorer"
+name = "goose-collatz-explorer"
+kind = "learning-resource"
+category = "learning"
+tags = ["example", "recursion", "beginner"]
+repo = "https://github.com/flakesonnix/goose-collatz-explorer"
+description = "A beginner example that searches a range for the number with the longest Collatz sequence."
+platforms = []
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,15 @@
+id = "kaitk-goose-compress"
+name = "goose-compress"
+kind = "package"
+category = "compression-and-archives"
+tags = ["gzip", "zlib", "deflate", "zstd", "encoder", "streaming"]
+repo = "https://github.com/kaitk/goose-compress"
+description = "Compression encoders for gzip, zlib, raw DEFLATE and zstd, mostly Goose with a few C hot loops, including a flushing streaming mode; goose-http uses it for responses."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "compress"
+
+[native]
+c = true
+cmake = false

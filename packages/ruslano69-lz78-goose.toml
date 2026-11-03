@@ -1,0 +1,15 @@
+id = "ruslano69-lz78-goose"
+name = "lz78-goose"
+kind = "package"
+category = "compression-and-archives"
+tags = ["lz78", "bwt", "archiver", "learning-project"]
+repo = "https://github.com/ruslano69/lz78-goose"
+description = "A small LZ78 compressor with a documented format, a Python cross-check and a Windows archiver CLI; the author presents it as a learning project about Goose's memory model."
+platforms = ["windows", "linux", "macos"]
+
+[import]
+name = "lz78"
+
+[native]
+c = false
+cmake = false

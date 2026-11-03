@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://safdafang.github.io/goose-index/schema/entry.schema.json",
+  "title": "Goose index entry",
+  "description": "One hand-written file, packages/<id>.toml. Facts that change on their own (tags, stars, dates, archived, detected license) are not written here: scripts/fetch_meta.py fetches them into data/meta.json. See schema/README.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "kind", "category", "tags", "description", "platforms", "native"],
+  "properties": {
+    "id": {
+      "description": "Equals the file name without .toml. Lowercase owner and repository joined by '-', e.g. kaitk-goose-sqlite. Never changes once published, since index.json consumers key on it.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 80
+    },
+    "name": {
+      "description": "Display name, usually the repository name.",
+      "type": "string", "minLength": 1, "maxLength": 60
+    },
+    "kind": {
+      "description": "package: a Goose library imported with `import x from \"...\"`. binding: a Goose library whose work is done by a library in another language (C, Rust...). tool: a program for Goose developers. editor: editor or IDE support. app: a program written in Goose. fork: a fork or derivative of the Goose compiler. learning-resource: tutorials, guides, articles, examples, benchmarks.",
+      "enum": ["package", "tool", "editor", "binding", "app", "fork", "learning-resource"]
+    },
+    "category": {
+      "description": "Exactly one; see schema/categories.toml for each one's title and scope.",
+      "enum": [
+        "networking", "crypto-and-security", "databases", "compression-and-archives",
+        "encoding-and-serialization", "text-and-templates", "math-and-science",
+        "graphics-and-games", "gui-and-terminal", "os-and-system", "language-extensions",
+        "interop", "domain-specific", "package-management", "testing", "documentation",
+        "code-quality", "editor-support", "compilers-and-runtimes", "applications",
+        "benchmarks", "learning"
+      ]
+    },
+    "tags": {
+      "description": "Lowercase search keywords, most specific first.",
+      "type": "array", "maxItems": 10, "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9+.-]*$", "maxLength": 30 }
+    },
+    "repo": {
+      "description": "The git repository, as an https URL without .git. Required unless kind is learning-resource and url is given.",
+      "type": "string",
+      "pattern": "^https://(github\\.com|gitlab\\.com|codeberg\\.org|git\\.sr\\.ht)/[A-Za-z0-9._-]+/[A-Za-z0-9._-]+$"
+    },
+    "url": {
+      "description": "For a learning-resource that is not a repository (an article, a video): its address.",
+      "type": "string", "pattern": "^https://"
+    },
+    "description": {
+      "description": "One or two sentences in the index's own words, never copied from the project's README or GitHub description. scripts/validate.py rejects six or more words in a row shared with the project's own description.",
+      "type": "string", "minLength": 20, "maxLength": 320
+    },
+    "import": {
+      "description": "Required for package and binding. The index builds the import line from it and the latest tag in data/meta.json: import <name> from \"<path>@<tag>\";",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": { "description": "The name the package is imported as (its root namespace).", "type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]*$" },
+        "path": { "description": "Only when it differs from the repository: what goes before @ in the import string.", "type": "string" },
+        "subdir": { "description": "The package's folder inside the repository, when it is not the root. Goose cannot fetch such a package by URL yet (upstream docs/design/packages.md §11), so the site shows how to copy the folder instead of an import line.", "type": "string", "pattern": "^[A-Za-z0-9._-]+(/[A-Za-z0-9._-]+)*$" },
+        "modules": { "description": "Further modules users import by name after declaring the package, e.g. net.http.", "type": "array", "items": { "type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.]*$" } }
+      }
+    },
+    "native": {
+      "description": "What building it needs besides Goose, so CI can install it. c and cmake come from the project's .build sidecars.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["c", "cmake"],
+      "properties": {
+        "c": { "description": "Compiles C sources (c_sources in a sidecar).", "type": "boolean" },
+        "cmake": { "description": "Builds a CMake project (cmake_target in a sidecar).", "type": "boolean" },
+        "system_libs": {
+          "description": "Packages a machine must have installed, named as that platform's package manager names them: apt (Debian/Ubuntu) for linux, Homebrew for macos, vcpkg or a short note for windows.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "linux": { "$ref": "#/$defs/libs" },
+            "macos": { "$ref": "#/$defs/libs" },
+            "windows": { "$ref": "#/$defs/libs" }
+          }
+        },
+        "tools": { "description": "Other programs the build runs (python3, cargo...).", "$ref": "#/$defs/libs" }
+      }
+    },
+    "platforms": {
+      "description": "Platforms the author says it supports. Empty when the author does not say.",
+      "type": "array", "uniqueItems": true,
+      "items": { "enum": ["linux", "macos", "windows"] }
+    },
+    "license_override": {
+      "description": "Only when GitHub's license detection is wrong or missing but the project does state a license: its SPDX id.",
+      "type": "string", "pattern": "^[A-Za-z0-9.+-]+( (AND|OR) [A-Za-z0-9.+-]+)*$"
+    },
+    "upstream_fork": {
+      "description": "For kind fork: what the fork adds, in a few words, shown on its page.",
+      "type": "string", "maxLength": 200
+    },
+    "compat": {
+      "description": "For the compatibility runner. skip: never build it (an app needing hardware, a fork). entry: the file to check, when it is not <import.name>.goose at the root.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "skip": { "type": "string", "description": "Why it is not built." },
+        "entry": { "type": "string" }
+      }
+    }
+  },
+  "allOf": [
+    { "if": { "properties": { "kind": { "enum": ["package", "binding"] } } }, "then": { "required": ["import", "repo"] } },
+    { "if": { "properties": { "kind": { "const": "learning-resource" } } },
+      "then": { "anyOf": [ { "required": ["repo"] }, { "required": ["url"] } ] },
+      "else": { "required": ["repo"] } },
+    { "if": { "properties": { "kind": { "const": "fork" } } }, "then": { "required": ["upstream_fork"] } }
+  ],
+  "$defs": {
+    "libs": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 60 } }
+  }
+}

@@ -1,0 +1,16 @@
+id = "appdoze-gust"
+name = "gust"
+kind = "fork"
+category = "compilers-and-runtimes"
+tags = ["fork", "language", "performance"]
+repo = "https://github.com/appdoze/gust"
+description = "A renamed fork of the Goose language that aims to beat Rust on speed through better code generation, C library access and parallelism."
+platforms = ["linux", "windows"]
+upstream_fork = "Renamed language; roadmap of faster codegen, large C libraries and safe parallelism."
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a fork of the compiler"

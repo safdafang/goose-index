@@ -1,0 +1,16 @@
+id = "jtenner-goose"
+name = "goose (jtenner's fork)"
+kind = "fork"
+category = "compilers-and-runtimes"
+tags = ["fork", "const-functions", "records", "serialization"]
+repo = "https://github.com/jtenner/goose"
+description = "A fork adding compile-time scalar functions and checked little-endian record snapshots, each change documented with acceptance evidence."
+platforms = []
+upstream_fork = "Compile-time scalar const functions; checked little-endian record snapshots."
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a fork of the compiler"

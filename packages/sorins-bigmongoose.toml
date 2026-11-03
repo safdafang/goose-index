@@ -1,0 +1,15 @@
+id = "sorins-bigmongoose"
+name = "bigmongoose"
+kind = "package"
+category = "crypto-and-security"
+tags = ["bignum", "elliptic-curves", "constant-time", "pure-goose"]
+repo = "https://github.com/SorinS/bigmongoose"
+description = "Big-number arithmetic and cryptographic primitives in Goose, modelled on Go's crypto packages and tested against Wycheproof vectors; it underlies the author's TLS stack."
+platforms = ["linux", "macos"]
+
+[import]
+name = "bignum"
+
+[native]
+c = false
+cmake = false

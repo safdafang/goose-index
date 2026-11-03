@@ -1,0 +1,15 @@
+id = "sorins-gslib"
+name = "gslib"
+kind = "package"
+category = "crypto-and-security"
+tags = ["batteries", "crypto", "tls", "ssh", "http", "ldap", "yaml", "compress"]
+repo = "https://github.com/SorinS/gslib"
+description = "A batteries-included collection modelled on Go's standard library: big numbers and crypto, X.509, TLS, SSH, Kerberos, HTTP/1.1 and HTTP/2, LDAP, ASN.1, YAML and compression, versioned as one package. Supersedes the author's separate repositories."
+platforms = ["linux", "macos"]
+
+[import]
+name = "gslib"
+
+[native]
+c = true
+cmake = false

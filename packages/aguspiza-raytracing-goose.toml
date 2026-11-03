@@ -1,0 +1,12 @@
+id = "aguspiza-raytracing-goose"
+name = "raytracing-goose"
+kind = "app"
+category = "applications"
+tags = ["raytracing", "port", "graphics"]
+repo = "https://github.com/aguspiza/raytracing-goose"
+description = "The Ray Tracing in One Weekend renderer in Goose, carried over from a chain of earlier ports and tuned for auto-vectorized hit tests."
+platforms = ["linux", "windows"]
+
+[native]
+c = false
+cmake = false

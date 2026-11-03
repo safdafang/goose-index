@@ -1,0 +1,12 @@
+id = "dan-stowell-rules-goose"
+name = "rules_goose"
+kind = "tool"
+category = "package-management"
+tags = ["bazel", "build", "rules"]
+repo = "https://github.com/dan-stowell/rules_goose"
+description = "Bazel rules goose_binary and goose_test that compile a Goose program to one C file with a pinned compiler and build it with Bazel's C toolchain."
+platforms = []
+
+[native]
+c = false
+cmake = false

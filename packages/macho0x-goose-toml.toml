@@ -1,0 +1,15 @@
+id = "macho0x-goose-toml"
+name = "goose-toml"
+kind = "package"
+category = "encoding-and-serialization"
+tags = ["toml", "config", "parser"]
+repo = "https://github.com/Macho0x/goose-toml"
+description = "A TOML 1.0 reader that fills a caller-owned node tree and reports a bad document as an error message."
+platforms = []
+
+[import]
+name = "toml"
+
+[native]
+c = false
+cmake = false

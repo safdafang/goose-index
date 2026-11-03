@@ -1,0 +1,15 @@
+id = "paulosuzart-gooseneck"
+name = "gooseneck"
+kind = "package"
+category = "text-and-templates"
+tags = ["handlebars", "templates", "html", "json"]
+repo = "https://github.com/paulosuzart/gooseneck"
+description = "A Handlebars-compatible template engine in pure Goose: compile a template once, then render it from typed structs or JSON with output tested against handlebars.js."
+platforms = []
+
+[import]
+name = "gooseneck"
+
+[native]
+c = false
+cmake = false

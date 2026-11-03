@@ -1,0 +1,16 @@
+id = "guillochon-goose-linalg"
+name = "goose-linalg"
+kind = "package"
+category = "math-and-science"
+tags = ["linear-algebra", "lu", "qr", "svd", "eigen", "pure-goose"]
+repo = "https://github.com/guillochon/goose-linalg"
+description = "Dense real matrices in pure Goose: solving systems, determinants and the LU, Cholesky, QR, symmetric eigen and SVD factorizations, with optional multithreaded products."
+platforms = []
+
+[import]
+name = "linalg"
+modules = ["linalg.parallel"]
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,12 @@
+id = "shetautnetjer-goose-lsp"
+name = "goose-lsp"
+kind = "tool"
+category = "editor-support"
+tags = ["lsp", "language-server", "client", "diagnostics"]
+repo = "https://github.com/shetautnetjer/goose-lsp"
+description = "A language server client written in Goose and built as a standalone C library: it keeps one server such as rust-analyzer or pyright running and returns fresh diagnostics soon after an edit."
+platforms = ["linux", "macos"]
+
+[native]
+c = false
+cmake = false

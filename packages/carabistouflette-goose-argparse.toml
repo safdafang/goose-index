@@ -1,0 +1,15 @@
+id = "carabistouflette-goose-argparse"
+name = "goose-argparse"
+kind = "package"
+category = "os-and-system"
+tags = ["cli", "arguments", "flags", "parser"]
+repo = "https://github.com/carabistouflette/goose-argparse"
+description = "A dependency-free command-line parser handling long and short options, grouped flags, attached values, positionals and the -- separator, with predictable errors."
+platforms = []
+
+[import]
+name = "argparse"
+
+[native]
+c = false
+cmake = false

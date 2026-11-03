@@ -1,0 +1,15 @@
+id = "sorins-x509goose"
+name = "x509goose"
+kind = "package"
+category = "crypto-and-security"
+tags = ["x509", "certificates", "pki", "crl"]
+repo = "https://github.com/SorinS/x509goose"
+description = "X.509 certificate parsing and chain verification for TLS: names and SANs, host matching, name constraints, policies and CRLs, built on the author's ASN.1 and bignum packages."
+platforms = []
+
+[import]
+name = "x509"
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,15 @@
+id = "sorins-tlsgoose"
+name = "tlsgoose"
+kind = "package"
+category = "crypto-and-security"
+tags = ["tls", "tls1.3", "tls1.2", "sans-io", "ech"]
+repo = "https://github.com/SorinS/tlsgoose"
+description = "TLS 1.3 and 1.2 clients and servers with no I/O of their own: the caller feeds received bytes and sends what comes back; it builds on the same author's bignum, x509 and asn1 packages checked out beside it."
+platforms = []
+
+[import]
+name = "tls"
+
+[native]
+c = false
+cmake = false

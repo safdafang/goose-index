@@ -1,0 +1,16 @@
+id = "joshuarli-goose"
+name = "goose (joshuarli's fork)"
+kind = "fork"
+category = "compilers-and-runtimes"
+tags = ["fork", "lint", "lean", "runtime", "huge-pages"]
+repo = "https://github.com/joshuarli/goose"
+description = "A heavily diverged fork, thousands of commits ahead, with a linter, Lean proof work on the compiler's root analysis and Linux runtime changes, regularly reconciled with upstream."
+platforms = []
+upstream_fork = "Linter, Lean proofs of root analysis, Linux data-stack runtime changes; periodically merges upstream."
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a fork of the compiler"

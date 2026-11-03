@@ -1,0 +1,15 @@
+id = "sstadick-goosopt"
+name = "goosopt"
+kind = "package"
+category = "os-and-system"
+tags = ["cli", "arguments", "flags", "help"]
+repo = "https://github.com/sstadick/goosopt"
+description = "Describes command-line options as fields of a struct and parses flags, values and positionals into it, generating help text from the field descriptions."
+platforms = ["linux"]
+
+[import]
+name = "goosopt"
+
+[native]
+c = false
+cmake = false

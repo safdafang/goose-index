@@ -1,0 +1,12 @@
+id = "yujieteo-goosestrike"
+name = "goosestrike"
+kind = "app"
+category = "applications"
+tags = ["finite-element", "simulation", "wasm", "webgpu"]
+repo = "https://github.com/yujieteo/goosestrike"
+description = "An explicit-dynamics finite-element simulation of a bird hitting an aircraft fuselage panel, compiled to WebAssembly with an optional WebGPU solver, running live in the browser."
+platforms = []
+
+[native]
+c = false
+cmake = false

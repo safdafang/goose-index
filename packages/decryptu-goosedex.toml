@@ -1,0 +1,12 @@
+id = "decryptu-goosedex"
+name = "goosedex"
+kind = "app"
+category = "applications"
+tags = ["terminal", "pokemon", "zig-comparison"]
+repo = "https://github.com/Decryptu/goosedex"
+description = "Prints a random Pokémon sprite in the terminal with every sprite embedded; a byte-for-byte port of a Zig tool, used to compare the two languages."
+platforms = []
+
+[native]
+c = false
+cmake = false

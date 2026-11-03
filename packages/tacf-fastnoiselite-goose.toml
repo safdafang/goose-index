@@ -1,0 +1,15 @@
+id = "tacf-fastnoiselite-goose"
+name = "fastnoiselite-goose"
+kind = "package"
+category = "graphics-and-games"
+tags = ["noise", "procedural", "perlin", "simplex", "cellular"]
+repo = "https://github.com/tacf/fastnoiselite-goose"
+description = "A full port of FastNoise Lite 1.1.1, covering every noise type, fractal mode and domain warp in 2D and 3D, checked value for value against the original."
+platforms = []
+
+[import]
+name = "fastnoise"
+
+[native]
+c = false
+cmake = false

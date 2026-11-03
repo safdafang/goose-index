@@ -1,0 +1,12 @@
+id = "flakesonnix-goose-collatz"
+name = "goose-collatz"
+kind = "learning-resource"
+category = "learning"
+tags = ["example", "recursion", "beginner"]
+repo = "https://github.com/flakesonnix/goose-collatz"
+description = "A beginner example counting Collatz steps with a recursive function, with a matching test program."
+platforms = []
+
+[native]
+c = false
+cmake = false

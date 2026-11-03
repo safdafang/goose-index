@@ -1,0 +1,15 @@
+id = "nurysso-terence"
+name = "terence"
+kind = "package"
+category = "math-and-science"
+tags = ["math", "go-port", "float", "wip"]
+repo = "https://github.com/Nurysso/terence"
+description = "An early, partly empty port of Go's math package (float decomposition, rounding, roots) written as a learning project; its README lists what works."
+platforms = []
+
+[import]
+name = "terence"
+
+[native]
+c = true
+cmake = false

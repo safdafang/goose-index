@@ -1,0 +1,15 @@
+id = "macho0x-goose-uuid"
+name = "goose-uuid"
+kind = "package"
+category = "encoding-and-serialization"
+tags = ["uuid", "rfc9562", "uuidv7"]
+repo = "https://github.com/Macho0x/goose-uuid"
+description = "Generates, parses and formats RFC 9562 UUIDs of versions 1 through 8, accepting the common text forms including URNs."
+platforms = []
+
+[import]
+name = "uuid"
+
+[native]
+c = false
+cmake = false

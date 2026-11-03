@@ -1,0 +1,16 @@
+id = "podikoglou-goose"
+name = "goose (podikoglou's fork)"
+kind = "fork"
+category = "compilers-and-runtimes"
+tags = ["fork", "property-testing", "stdlib"]
+repo = "https://github.com/podikoglou/goose"
+description = "A fork that adds declarative property-based checks for the standard library and a command to discover properties and generate harnesses."
+platforms = []
+upstream_fork = "Declarative property verification of the stdlib with a prop harness generator."
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a fork of the compiler"

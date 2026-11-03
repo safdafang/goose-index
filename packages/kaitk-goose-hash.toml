@@ -1,0 +1,15 @@
+id = "kaitk-goose-hash"
+name = "goose-hash"
+kind = "package"
+category = "crypto-and-security"
+tags = ["sha1", "sha256", "hmac", "pbkdf2", "random"]
+repo = "https://github.com/kaitk/goose-hash"
+description = "SHA-1, SHA-256, HMAC, PBKDF2, constant-time comparison and OS random bytes, using CPU SHA instructions where they exist."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "hash"
+
+[native]
+c = true
+cmake = false

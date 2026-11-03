@@ -1,0 +1,12 @@
+id = "exaroth-coc-goose"
+name = "coc-goose"
+kind = "editor"
+category = "editor-support"
+tags = ["neovim", "vim", "coc", "lsp"]
+repo = "https://github.com/exaroth/coc-goose"
+description = "A coc.nvim extension that connects Vim and Neovim to goose lsp for diagnostics, hover and navigation."
+platforms = []
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,12 @@
+id = "romanpro100-goose-zed-extension"
+name = "goose-zed-extension"
+kind = "editor"
+category = "editor-support"
+tags = ["zed", "tree-sitter", "lsp"]
+repo = "https://github.com/RomanPro100/goose-zed-extension"
+description = "A Zed extension for Goose with highlighting from a tree-sitter grammar fork and language-server support through the goose binary on PATH."
+platforms = []
+
+[native]
+c = false
+cmake = false

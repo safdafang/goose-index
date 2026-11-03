@@ -1,0 +1,12 @@
+id = "yujieteo-toybox"
+name = "toybox"
+kind = "app"
+category = "graphics-and-games"
+tags = ["3d", "wasm", "agents", "video", "narration"]
+repo = "https://github.com/yujieteo/toybox"
+description = "A browser 3D sandbox where an agent builds animated explainer scenes with narration, exported as MP4 or a reloadable scene file; the engine is Goose compiled to WebAssembly."
+platforms = []
+
+[native]
+c = false
+cmake = false

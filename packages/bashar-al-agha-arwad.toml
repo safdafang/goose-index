@@ -1,0 +1,15 @@
+id = "bashar-al-agha-arwad"
+name = "arwad"
+kind = "tool"
+category = "compilers-and-runtimes"
+tags = ["r", "statistics", "compiler"]
+repo = "https://github.com/bashar-al-agha/arwad"
+description = "An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R."
+platforms = ["linux", "macos", "windows"]
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "an R package; Goose is its backend"

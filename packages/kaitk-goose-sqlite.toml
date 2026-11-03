@@ -1,0 +1,15 @@
+id = "kaitk-goose-sqlite"
+name = "goose-sqlite"
+kind = "binding"
+category = "databases"
+tags = ["sqlite", "sql", "amalgamation"]
+repo = "https://github.com/kaitk/goose-sqlite"
+description = "SQLite with the amalgamation built in, so no system SQLite is needed. Errors surface through Goose's return-from, and the compiler checks every call runs inside a transaction or run block."
+platforms = ["linux", "macos"]
+
+[import]
+name = "sqlite"
+
+[native]
+c = true
+cmake = false

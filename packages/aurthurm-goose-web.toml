@@ -1,0 +1,18 @@
+id = "aurthurm-goose-web"
+name = "goose-web"
+kind = "package"
+category = "networking"
+tags = ["web-framework", "sqlite", "templates", "json", "streaming"]
+repo = "https://github.com/aurthurm/goose-web"
+description = "A web framework built on a non-blocking readiness loop, with typed routes, JSON validation, HTML templates, streaming responses and an optional SQLite layer."
+platforms = []
+
+[import]
+name = "goose_web"
+modules = ["goose_web_db"]
+
+[native]
+c = true
+cmake = false
+system_libs.linux = ["libsqlite3-dev"]
+system_libs.macos = ["sqlite"]

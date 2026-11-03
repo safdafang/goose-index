@@ -1,0 +1,12 @@
+id = "swoorup-beads-goose"
+name = "beads-goose"
+kind = "app"
+category = "applications"
+tags = ["issue-tracker", "cli", "port", "json"]
+repo = "https://github.com/Swoorup/beads-goose"
+description = "The start of a Goose rewrite of the beads issue tracker: the issue model and its JSON already match the Go version byte for byte, with the storage and most commands still to come."
+platforms = []
+
+[native]
+c = true
+cmake = false

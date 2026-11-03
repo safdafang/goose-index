@@ -1,0 +1,12 @@
+id = "yujieteo-marklove-web"
+name = "marklove-web"
+kind = "app"
+category = "applications"
+tags = ["markdown", "slides", "epub", "wasm", "editor"]
+repo = "https://github.com/yujieteo/marklove-web"
+description = "A browser Markdown editor whose Goose core, compiled to WebAssembly, produces slides, articles, EPUB books, subtitles and narration from one file."
+platforms = []
+
+[native]
+c = false
+cmake = false

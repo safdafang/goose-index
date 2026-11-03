@@ -1,0 +1,15 @@
+id = "aardappel-goose-physics"
+name = "goose_physics"
+kind = "binding"
+category = "graphics-and-games"
+tags = ["physics", "box3d", "rigid-body", "blessed"]
+repo = "https://github.com/aardappel/goose_physics"
+description = "The official physics package, a layer over Box3D for rigid bodies, joints, shape queries and a character controller, with recording and replay."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "physics"
+
+[native]
+c = false
+cmake = true

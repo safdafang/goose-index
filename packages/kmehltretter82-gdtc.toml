@@ -1,0 +1,12 @@
+id = "kmehltretter82-gdtc"
+name = "gdtc"
+kind = "app"
+category = "os-and-system"
+tags = ["device-tree", "dtc", "linux", "compiler"]
+repo = "https://github.com/kmehltretter82/gdtc"
+description = "An experimental memory-safe rewrite of dtc, the tool that compiles device tree source for Linux; it handles a growing subset and emits version 17 blobs, checked against the original."
+platforms = []
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,16 @@
+id = "binji-goose"
+name = "goose (binji's WebAssembly fork)"
+kind = "fork"
+category = "compilers-and-runtimes"
+tags = ["wasm", "webassembly", "playground", "backend"]
+repo = "https://github.com/binji/goose"
+description = "A Goose co-maintainer's fork adding a WebAssembly backend over the interpreter's bytecode and a browser playground running the compiler as WASI."
+platforms = []
+upstream_fork = "WebAssembly backend from the interpreter's bytecode; WASI browser playground."
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a fork of the compiler"

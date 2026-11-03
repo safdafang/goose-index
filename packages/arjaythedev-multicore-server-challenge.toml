@@ -1,0 +1,15 @@
+id = "arjaythedev-multicore-server-challenge"
+name = "Multicore Server Challenge"
+kind = "learning-resource"
+category = "benchmarks"
+tags = ["benchmarks", "web-server", "postgres", "epoll", "multi-language"]
+repo = "https://github.com/arjaythedev/multicore-server-challenge"
+description = "A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers."
+platforms = ["linux"]
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a multi-language benchmark, not a package"

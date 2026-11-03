@@ -1,0 +1,12 @@
+id = "flakesonnix-goose-fibonacci"
+name = "goose-fibonacci"
+kind = "learning-resource"
+category = "learning"
+tags = ["example", "recursion", "beginner"]
+repo = "https://github.com/flakesonnix/goose-fibonacci"
+description = "A beginner example of a recursive Fibonacci function with a small test."
+platforms = []
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,12 @@
+id = "yujieteo-neurons"
+name = "neurons"
+kind = "app"
+category = "applications"
+tags = ["llm", "interpretability", "webgpu", "wasm"]
+repo = "https://github.com/yujieteo/neurons"
+description = "An in-browser explorer of SmolLM2-135M's MLP neurons with steering, running the model in Goose compiled to WebAssembly, on WebGPU when available."
+platforms = []
+
+[native]
+c = false
+cmake = false

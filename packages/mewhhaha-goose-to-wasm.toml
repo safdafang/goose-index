@@ -1,0 +1,15 @@
+id = "mewhhaha-goose-to-wasm"
+name = "goose-to-wasm"
+kind = "tool"
+category = "compilers-and-runtimes"
+tags = ["wasm", "webassembly", "backend", "wasmtime", "v8"]
+repo = "https://github.com/mewhhaha/goose-to-wasm"
+description = "A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime."
+platforms = []
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a compiler backend, not a package"

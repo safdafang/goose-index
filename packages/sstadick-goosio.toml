@@ -1,0 +1,15 @@
+id = "sstadick-goosio"
+name = "goosio"
+kind = "package"
+category = "os-and-system"
+tags = ["files", "io", "buffered", "lines"]
+repo = "https://github.com/sstadick/goosio"
+description = "Synchronous file handles with buffered readers and writers and line reads that borrow from the buffer, tested with several C compilers on each OS."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "goosio"
+
+[native]
+c = true
+cmake = false

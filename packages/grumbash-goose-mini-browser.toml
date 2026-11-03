@@ -1,0 +1,13 @@
+id = "grumbash-goose-mini-browser"
+name = "goose-mini-browser"
+kind = "app"
+category = "applications"
+tags = ["browser", "html", "sdl3", "nuklear", "rust-ffi"]
+repo = "https://github.com/Grumbash/goose-mini-browser"
+description = "A toy graphical web browser that renders simple HTML in an SDL3 and Nuklear window, fetching pages through a small Rust networking library loaded at run time."
+platforms = ["linux", "macos", "windows"]
+
+[native]
+c = false
+cmake = false
+tools = ["cargo"]

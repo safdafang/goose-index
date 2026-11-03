@@ -1,0 +1,13 @@
+id = "aardappel-once-campfire-goose"
+name = "Campfire in Goose"
+kind = "app"
+category = "applications"
+tags = ["chat", "web", "goose-http", "port"]
+repo = "https://github.com/aardappel/once-campfire-goose"
+description = "The Goose author's experimental port of the Campfire group chat server onto goose-http, checked against Rust and Jai versions of the same app."
+platforms = ["linux"]
+
+[native]
+c = true
+cmake = false
+system_libs.linux = ["libqrencode-dev", "liburing-dev"]

@@ -1,0 +1,12 @@
+id = "cyberskat-goose-feedguard"
+name = "Goose_feedguard"
+kind = "app"
+category = "benchmarks"
+tags = ["order-book", "market-data", "cpp-comparison", "windows"]
+repo = "https://github.com/cyberskat/Goose_feedguard"
+description = "A Windows prototype that records exchange order-book data and compares order-book engines written in C++ and in Goose on the same recorded messages."
+platforms = ["windows"]
+
+[native]
+c = true
+cmake = false

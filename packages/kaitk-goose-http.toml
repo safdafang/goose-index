@@ -1,0 +1,16 @@
+id = "kaitk-goose-http"
+name = "goose-http"
+kind = "package"
+category = "networking"
+tags = ["http", "server", "websocket", "http2", "http3", "io-uring", "iocp"]
+repo = "https://github.com/kaitk/goose-http"
+description = "The most complete HTTP server stack for Goose: per-worker event loops on io_uring, epoll, kqueue or IOCP, with WebSockets, HTTP/2, HTTP/3, static files and an outbound client. Upstream benchmarks against it."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "http"
+
+[native]
+c = true
+cmake = false
+system_libs.linux = ["liburing-dev"]

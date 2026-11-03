@@ -1,0 +1,15 @@
+id = "yujieteo-site"
+name = "site"
+kind = "app"
+category = "applications"
+tags = ["website", "wasm", "engineering", "diagrams"]
+repo = "https://github.com/yujieteo/site"
+description = "A personal website whose interactive tools, a beam diagram creator and a wallpaper maker, are Goose programs compiled to WebAssembly."
+platforms = []
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a website; its Goose programs build to WebAssembly"

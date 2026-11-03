@@ -1,0 +1,12 @@
+id = "tobiolo-goose-term"
+name = "goose-term"
+kind = "app"
+category = "gui-and-terminal"
+tags = ["terminal", "vt-parser", "scrollback", "benchmarks"]
+repo = "https://github.com/tobiolo/goose-term"
+description = "A headless terminal core (VT parser, screen grids, scrollback) that follows alacritty's screen rules and is timed against the terminal cores of alacritty and Neovim, plus a small terminal window built on it."
+platforms = []
+
+[native]
+c = true
+cmake = false

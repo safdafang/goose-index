@@ -1,0 +1,12 @@
+id = "exaroth-goose-lang-vim"
+name = "goose-lang.vim"
+kind = "editor"
+category = "editor-support"
+tags = ["vim", "neovim", "highlighting", "indent"]
+repo = "https://github.com/exaroth/goose-lang.vim"
+description = "Vim and Neovim filetype plugin with highlighting, indentation and a compiler setting for running goose from the editor."
+platforms = []
+
+[native]
+c = false
+cmake = false
