@@ -1,0 +1,2345 @@
+{
+ "version": 1,
+ "results": {
+  "a55uka-zed-goose": {
+   "macos": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   }
+  },
+  "aardappel-goose": {
+   "macos": {
+    "status": "skip",
+    "reason": "the compiler itself"
+   }
+  },
+  "aardappel-goose-gfx": {
+   "macos": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 1.5
+   }
+  },
+  "aardappel-goose-physics": {
+   "macos": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "aardappel-once-campfire-goose": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/aardappel-once-campfire-goose')"
+   }
+  },
+  "aciru4l-barn": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/aciru4l-barn')"
+   }
+  },
+  "aguspiza-llama-goose": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/aguspiza-llama-goose')"
+   }
+  },
+  "aguspiza-raytracing-goose": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/aguspiza-raytracing-goose')"
+   }
+  },
+  "akari-iku-goose-playground": {
+   "linux": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   }
+  },
+  "akeit0-goose-lab": {
+   "macos": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   }
+  },
+  "akeit0-mygoose": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.1.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 2.4
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.1.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 14.0
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.1.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 1.9
+   }
+  },
+  "alexxzz-raylib-goose": {
+   "linux": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "/tmp/goose-compat-c8p_4csy/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'",
+    "log": "fetching the package rl from github.com/Alexxzz/raylib-goose@main\n/tmp/goose-compat-c8p_4csy/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'\nextern \"raylib\" {\n                ^\n/tmp/goose-compat-c8p_4csy/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:10: error: cannot find the module ffi, looked for\n    /tmp/goose-compat-c8p_4csy/home/pkg/github.com/Alexxzz/raylib-goose/main/ffi.goose\n    /home/runner/work/_temp/goose/goose-v2026.3-linux-x64/stdlib/ffi.goose\n/tmp/goose-compat-c8p_4csy/home/pkg/github.com/Alexxzz/raylib-goose/main/rl_extras.goose:15: error: expected 'fn' in function declaration, found '{'\nextern \"raylib\" {\n                ^\n",
+    "requires": []
+   },
+   "windows": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'",
+    "log": "fetching the package rl from github.com/Alexxzz/raylib-goose@main\nC:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'\nextern \"raylib\" {\n                ^\nC:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:10: error: cannot find the module ffi, looked for\n    C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/Alexxzz/raylib-goose/main/ffi.goose\n    D:/a/_temp/goose/goose-v2026.3-windows-x64/stdlib/ffi.goose\nC:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/Alexxzz/raylib-goose/main/rl_extras.goose:15: error: expected 'fn' in function declaration, found '{'\nextern \"raylib\" {\n                ^\n",
+    "requires": []
+   },
+   "macos": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'",
+    "log": "fetching the package rl from github.com/Alexxzz/raylib-goose@main\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'\nextern \"raylib\" {\n                ^\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/Alexxzz/raylib-goose/main/rl.goose:10: error: cannot find the module ffi, looked for\n    /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/Alexxzz/raylib-goose/main/ffi.goose\n    /Users/runner/work/_temp/goose/goose-v2026.3-macos-arm64/stdlib/ffi.goose\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/Alexxzz/raylib-goose/main/rl_extras.goose:15: error: expected 'fn' in function declaration, found '{'\nextern \"raylib\" {\n                ^\n",
+    "requires": []
+   }
+  },
+  "anugunjnaman-gander": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/anugunjnaman-gander')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/anugunjnaman-gander')"
+   }
+  },
+  "appdoze-gust": {
+   "linux": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   }
+  },
+  "arjaythedev-multicore-server-challenge": {
+   "macos": {
+    "status": "skip",
+    "reason": "a multi-language benchmark, not a package"
+   }
+  },
+  "artsensiva-symidx": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/artsensiva-symidx')"
+   }
+  },
+  "aurthurm-goose-web": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.6.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 1.2
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.6.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 3.1
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.6.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.7
+   }
+  },
+  "badman594-glog": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/badman594-glog')"
+   }
+  },
+  "bashar-al-agha-arwad": {
+   "linux": {
+    "status": "skip",
+    "reason": "an R package; Goose is its backend"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "an R package; Goose is its backend"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "an R package; Goose is its backend"
+   }
+  },
+  "bearing-research-greylag": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/bearing-research-greylag')"
+   }
+  },
+  "bhare1985-goose-libdeflate": {
+   "macos": {
+    "status": "pass",
+    "ref": "v1.26",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "binji-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   }
+  },
+  "binji-goose-gfx2d": {
+   "linux": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 1.8
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 11.6
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 1.1
+   }
+  },
+  "calpeyser-goose-evaluations": {
+   "linux": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   }
+  },
+  "carabistouflette-goose-argparse": {
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "clintecker-goose-date": {
+   "linux": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "clintecker-goose-file": {
+   "linux": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "clintecker-goose-inflate": {
+   "linux": {
+    "status": "pass",
+    "ref": "v3",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.2
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v3",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v3",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "clintecker-goose-layout": {
+   "macos": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "clintecker-goose-sha256": {
+   "linux": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "clintecker-goose-tar": {
+   "linux": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "clintecker-goose-zip": {
+   "linux": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "compusophy-goose-wasm": {
+   "macos": {
+    "status": "skip",
+    "reason": "a runtime port, not a package"
+   }
+  },
+  "cyberskat-goose-feedguard": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/cyberskat-goose-feedguard')"
+   }
+  },
+  "dan-stowell-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   }
+  },
+  "dan-stowell-rules-goose": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/dan-stowell-rules-goose')"
+   }
+  },
+  "dantje-weld": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/dantje-weld')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/dantje-weld')"
+   }
+  },
+  "decryptu-goosedex": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-grnmp8k2/decryptu-goosedex')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/decryptu-goosedex')"
+   }
+  },
+  "elcharitas-goose-bio": {
+   "linux": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.5
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   }
+  },
+  "epidemicz-fresh-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   }
+  },
+  "exaroth-coc-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   }
+  },
+  "exaroth-goose-lang-vim": {
+   "linux": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   }
+  },
+  "felipecruz-gffs": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/felipecruz-gffs')"
+   }
+  },
+  "flakesonnix-goose-collatz": {
+   "macos": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   }
+  },
+  "flakesonnix-goose-collatz-explorer": {
+   "linux": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   }
+  },
+  "flakesonnix-goose-fibonacci": {
+   "linux": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   }
+  },
+  "flakesonnix-goose-pong": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/flakesonnix-goose-pong')"
+   }
+  },
+  "flakesonnix-goose-raylib": {
+   "linux": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "flisk-goose-101": {
+   "linux": {
+    "status": "skip",
+    "reason": "not a repository"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "not a repository"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "not a repository"
+   }
+  },
+  "flisk-sh-codeql-goose": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/flisk-sh-codeql-goose')"
+   }
+  },
+  "goose-pond-phonelib": {
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.2
+   }
+  },
+  "grumbash-goose-mini-browser": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/grumbash-goose-mini-browser')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/grumbash-goose-mini-browser')"
+   }
+  },
+  "guillochon-goose-fft": {
+   "linux": {
+    "status": "fail",
+    "ref": "v0.1.0",
+    "stage": "check",
+    "detail": "/tmp/goose-compat-c8p_4csy/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add",
+    "log": "fetching the package fft from github.com/guillochon/goose-fft@v0.1.0\nparsed ok: 284 top-level declarations, 5 file(s)\n/tmp/goose-compat-c8p_4csy/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add\n    v4 { mul_add(a.a, b.a, c.a), mul_add(a.b, b.b, c.b), mul_add(a.c, b.c, c.c), mul_add(a.d, b.d, c.d) }\n  in fn fft::fma4(fft::v4, fft::v4, fft::v4) instantiated from /tmp/goose-compat-c8p_4csy/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:47\n/tmp/goose-compat-c8p_4csy/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:51: error: unknown function: mul_add\n    v4 { mul_add(a.a, b.a, -c.a), mul_add(a.b, b.b, -c.b), mul_add(a.c, b.c, -c.c), mul_add(a.d, b.d, -c.d) }\n  in fn fft::fms4(fft::v4, fft::v4, fft::v4) instantiated from /tmp/goose-compat-c8p_4csy/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:50\n/tmp/goose-compat-c8p_4csy/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:54: error: unknown function: mul_add\n    v4 { mul_add(-a.a, b.a, c.a), mul_add(-a.b, b.b, c.b), mul_add(-a.c, b.c, c.c), mul_add(-a.d, b.d, c.d) }\n  in fn fft::fnma4(fft::v4, fft::v4, fft::v4) instantiated from /tmp/goose-compat-c8p_4csy/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:53\n",
+    "requires": []
+   },
+   "windows": {
+    "status": "fail",
+    "ref": "v0.1.0",
+    "stage": "check",
+    "detail": "C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add",
+    "log": "fetching the package fft from github.com/guillochon/goose-fft@v0.1.0\nparsed ok: 284 top-level declarations, 5 file(s)\nC:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add\n    v4 { mul_add(a.a, b.a, c.a), mul_add(a.b, b.b, c.b), mul_add(a.c, b.c, c.c), mul_add(a.d, b.d, c.d) }\n  in fn fft::fma4(fft::v4, fft::v4, fft::v4) instantiated from C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:47\nC:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:51: error: unknown function: mul_add\n    v4 { mul_add(a.a, b.a, -c.a), mul_add(a.b, b.b, -c.b), mul_add(a.c, b.c, -c.c), mul_add(a.d, b.d, -c.d) }\n  in fn fft::fms4(fft::v4, fft::v4, fft::v4) instantiated from C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:50\nC:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:54: error: unknown function: mul_add\n    v4 { mul_add(-a.a, b.a, c.a), mul_add(-a.b, b.b, c.b), mul_add(-a.c, b.c, c.c), mul_add(-a.d, b.d, c.d) }\n  in fn fft::fnma4(fft::v4, fft::v4, fft::v4) instantiated from C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:53\n",
+    "requires": []
+   },
+   "macos": {
+    "status": "fail",
+    "ref": "v0.1.0",
+    "stage": "check",
+    "detail": "/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add",
+    "log": "fetching the package fft from github.com/guillochon/goose-fft@v0.1.0\nparsed ok: 284 top-level declarations, 5 file(s)\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add\n    v4 { mul_add(a.a, b.a, c.a), mul_add(a.b, b.b, c.b), mul_add(a.c, b.c, c.c), mul_add(a.d, b.d, c.d) }\n  in fn fft::fma4(fft::v4, fft::v4, fft::v4) instantiated from /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:47\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:51: error: unknown function: mul_add\n    v4 { mul_add(a.a, b.a, -c.a), mul_add(a.b, b.b, -c.b), mul_add(a.c, b.c, -c.c), mul_add(a.d, b.d, -c.d) }\n  in fn fft::fms4(fft::v4, fft::v4, fft::v4) instantiated from /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:50\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:54: error: unknown function: mul_add\n    v4 { mul_add(-a.a, b.a, c.a), mul_add(-a.b, b.b, c.b), mul_add(-a.c, b.c, c.c), mul_add(-a.d, b.d, c.d) }\n  in fn fft::fnma4(fft::v4, fft::v4, fft::v4) instantiated from /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/guillochon/goose-fft/v0.1.0/fft.goose:53\n",
+    "requires": []
+   }
+  },
+  "guillochon-goose-linalg": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.3.3",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.3.3",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.3.3",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "guillochon-goose-random": {
+   "linux": {
+    "status": "fail",
+    "ref": "v0.1.0",
+    "stage": "check",
+    "detail": "/tmp/goose-compat-grnmp8k2/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite",
+    "log": "fetching the package random from github.com/guillochon/goose-random@v0.1.0\nparsed ok: 332 top-level declarations, 7 file(s)\n/tmp/goose-compat-grnmp8k2/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite\n    if !is_finite(u) { return u; }\n  in fn random::expm1(f64) instantiated from /tmp/goose-compat-grnmp8k2/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:322\n",
+    "requires": []
+   },
+   "windows": {
+    "status": "fail",
+    "ref": "v0.1.0",
+    "stage": "check",
+    "detail": "C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite",
+    "log": "fetching the package random from github.com/guillochon/goose-random@v0.1.0\nparsed ok: 332 top-level declarations, 7 file(s)\nC:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite\n    if !is_finite(u) { return u; }\n  in fn random::expm1(f64) instantiated from C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:322\n",
+    "requires": []
+   },
+   "macos": {
+    "status": "fail",
+    "ref": "v0.1.0",
+    "stage": "check",
+    "detail": "/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite",
+    "log": "fetching the package random from github.com/guillochon/goose-random@v0.1.0\nparsed ok: 332 top-level declarations, 7 file(s)\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite\n    if !is_finite(u) { return u; }\n  in fn random::expm1(f64) instantiated from /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/guillochon/goose-random/v0.1.0/random.goose:322\n",
+    "requires": []
+   }
+  },
+  "innomon-goose-sql-p2p": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/innomon-goose-sql-p2p')"
+   }
+  },
+  "inuverse44-goose-lab": {
+   "linux": {
+    "status": "skip",
+    "reason": "a benchmark repository, not a package"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a benchmark repository, not a package"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a benchmark repository, not a package"
+   }
+  },
+  "jdrobertso-net": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.2.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "jesper-olsen-c4-goose": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/jesper-olsen-c4-goose')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/jesper-olsen-c4-goose')"
+   }
+  },
+  "jesper-olsen-mandelbrot-goose": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/jesper-olsen-mandelbrot-goose')"
+   }
+  },
+  "joshuarli-goose": {
+   "macos": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   }
+  },
+  "jtenner-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   }
+  },
+  "kaitk-goose-acme": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.0.4",
+    "stage": "build",
+    "requires": [
+     {
+      "name": "hash",
+      "source": "github.com/kaitk/goose-hash@v0.0.4"
+     },
+     {
+      "name": "tls",
+      "source": "github.com/kaitk/goose-tls@v0.0.5"
+     }
+    ],
+    "seconds": 0.6
+   }
+  },
+  "kaitk-goose-compress": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.1.4",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.5
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.1.4",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.6
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.1.4",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.2
+   }
+  },
+  "kaitk-goose-hash": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.0.4",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.0.4",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.0.4",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "kaitk-goose-http": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.5.16",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.4
+   }
+  },
+  "kaitk-goose-ngfx": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.2.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.2.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.2.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "kaitk-goose-postgres": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.0.10",
+    "stage": "build",
+    "requires": [
+     {
+      "name": "hash",
+      "source": "github.com/kaitk/goose-hash@v0.0.4"
+     }
+    ],
+    "seconds": 0.2
+   }
+  },
+  "kaitk-goose-sqlite": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.0.3",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "kaitk-goose-tls": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.0.6",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.2
+   }
+  },
+  "kaitk-plod": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.5.11",
+    "stage": "build",
+    "requires": [
+     {
+      "name": "http",
+      "source": "github.com/kaitk/goose-http@v0.5.16"
+     }
+    ],
+    "seconds": 1.1
+   }
+  },
+  "kmehltretter82-gdtc": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-grnmp8k2/kmehltretter82-gdtc')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/kmehltretter82-gdtc')"
+   }
+  },
+  "kmehltretter82-gobjtool": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/kmehltretter82-gobjtool')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/kmehltretter82-gobjtool')"
+   }
+  },
+  "kokasikhorik-bot-goosecraft": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/kokasikhorik-bot-goosecraft')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/kokasikhorik-bot-goosecraft')"
+   }
+  },
+  "korolenkowork-honk": {
+   "linux": {
+    "status": "skip",
+    "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet"
+   }
+  },
+  "kostya-langarena": {
+   "linux": {
+    "status": "skip",
+    "reason": "a multi-language benchmark suite, not a package"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a multi-language benchmark suite, not a package"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a multi-language benchmark suite, not a package"
+   }
+  },
+  "ks250206-goose-poc": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/ks250206-goose-poc')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/ks250206-goose-poc')"
+   }
+  },
+  "kyambuthia-ur-goose-is-cooked": {
+   "macos": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   }
+  },
+  "lamweilun-raygoose": {
+   "macos": {
+    "status": "fail",
+    "ref": "v0.1.0",
+    "stage": "check",
+    "detail": "/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:989: error: expected ';' in extern declaration, found '='",
+    "log": "                                         ^\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:1673: error: expected ';' in extern declaration, found '='\nextern fn AttachAudioStreamProcessor(stream: AudioStream&, processor: u64) = \"rg_AttachAudioStreamProcessor\";\n                                                                           ^\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:1674: error: expected ';' in extern declaration, found '='\nextern fn DetachAudioStreamProcessor(stream: AudioStream&, processor: u64) = \"rg_DetachAudioStreamProcessor\";\n                                                                           ^\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:1843: error: expected ';' in extern declaration, found '='\nextern fn rg_trace_log(level: i32, text: const u8&) = \"rg_trace_log\";\n                                                    ^\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:1851: error: expected ';' in extern declaration, found '='\nextern fn rg_load_font_path(path: const u8&, size: i32) -> Font = \"rg_load_font_path\";\n                                                                ^\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:1911: error: expected ';' in extern declaration, found '='\nextern fn rg_set_trace_log_callback() = \"rg_set_trace_log_callback\";\n                                      ^\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:1914: error: expected ';' in extern declaration, found '='\nextern fn rg_set_load_file_data_callback() = \"rg_set_load_file_data_callback\";\n                                           ^\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:1917: error: expected ';' in extern declaration, found '='\nextern fn rg_set_save_file_data_callback() = \"rg_set_save_file_data_callback\";\n                                           ^\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:1920: error: expected ';' in extern declaration, found '='\nextern fn rg_set_load_file_text_callback() = \"rg_set_load_file_text_callback\";\n                                           ^\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/lamweilun/raygoose/v0.1.0/raylib.goose:1923: error: expected ';' in extern declaration, found '='\nextern fn rg_set_save_file_text_callback() = \"rg_set_save_file_text_callback\";\n                                           ^\n",
+    "requires": []
+   }
+  },
+  "lazychicken-goose-commands": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/lazychicken-goose-commands')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/lazychicken-goose-commands')"
+   }
+  },
+  "lenstr-project-frontier": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/lenstr-project-frontier')"
+   }
+  },
+  "lightspeedc-20261101-research-goose-language": {
+   "linux": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   }
+  },
+  "macho0x-goose-bigint": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.2",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.2
+   }
+  },
+  "macho0x-goose-crypto": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.18.1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.18.1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.18.1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "macho0x-goose-decimal": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.2.1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.2.1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.2.1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "macho0x-goose-deflate": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.2.1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.2
+   }
+  },
+  "macho0x-goose-ethereum": {
+   "macos": {
+    "status": "fail",
+    "ref": "v0.2.1",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package crypto's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (/var/folders/n6/hn37q6pj7s",
+    "log": "probe.goose:2: error: the package crypto's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/Macho0x/goose-ethereum/crypto/)\n",
+    "requires": [
+     {
+      "name": "crypto",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/Macho0x/goose-ethereum/crypto"
+     }
+    ]
+   }
+  },
+  "macho0x-goose-hyperliquid": {
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.2
+   }
+  },
+  "macho0x-goose-logger": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.3.3",
+    "stage": "build",
+    "requires": [],
+    "seconds": 1.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.3.3",
+    "stage": "build",
+    "requires": [],
+    "seconds": 1.0
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.3.3",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.6
+   }
+  },
+  "macho0x-goose-msgpack": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.2.1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.2.1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.2.1",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "macho0x-goose-signature": {
+   "linux": {
+    "status": "fail",
+    "ref": "v0.3",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (/tmp/goose-compat-grnmp8k2/home/pkg/github.com/Macho0x/goose-signature/crypto/)",
+    "log": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (/tmp/goose-compat-grnmp8k2/home/pkg/github.com/Macho0x/goose-signature/crypto/)\n",
+    "requires": [
+     {
+      "name": "crypto",
+      "source": "../home/pkg/github.com/Macho0x/goose-signature/crypto"
+     }
+    ]
+   },
+   "windows": {
+    "status": "fail",
+    "ref": "v0.3",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/Macho0x/goose-signature/crypto/)",
+    "log": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/Macho0x/goose-signature/crypto/)\n",
+    "requires": [
+     {
+      "name": "crypto",
+      "source": "../home/pkg/github.com/Macho0x/goose-signature/crypto"
+     }
+    ]
+   },
+   "macos": {
+    "status": "fail",
+    "ref": "v0.3",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package crypto's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (/var/folders/n6/hn37q6pj7",
+    "log": "probe.goose:2: error: the package crypto's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/Macho0x/goose-signature/crypto/)\n",
+    "requires": [
+     {
+      "name": "crypto",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/Macho0x/goose-signature/crypto"
+     }
+    ]
+   }
+  },
+  "macho0x-goose-toml": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.2",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.2",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.2",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "macho0x-goose-uuid": {
+   "linux": {
+    "status": "pass",
+    "ref": "v0.4",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "v0.4",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "v0.4",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "manymids-goose-sharp-x68000": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-grnmp8k2/manymids-goose-sharp-x68000')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/manymids-goose-sharp-x68000')"
+   }
+  },
+  "mas-bandwidth-schema": {
+   "linux": {
+    "status": "skip",
+    "reason": "a code generator written in Go"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a code generator written in Go"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a code generator written in Go"
+   }
+  },
+  "mas-bandwidth-serialize-goose": {
+   "macos": {
+    "status": "skip",
+    "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet"
+   }
+  },
+  "mewhhaha-goose-to-wasm": {
+   "macos": {
+    "status": "skip",
+    "reason": "a compiler backend, not a package"
+   }
+  },
+  "mg3994-ideatoapp": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/mg3994-ideatoapp')"
+   }
+  },
+  "mgasner-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   }
+  },
+  "mrfentmen-meta-os": {
+   "macos": {
+    "status": "skip",
+    "reason": "a multi-language platform; its Goose services have no single entry point"
+   }
+  },
+  "nandi-conda-quack": {
+   "linux": {
+    "status": "skip",
+    "reason": "a packaging sample"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a packaging sample"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a packaging sample"
+   }
+  },
+  "nenaaki-goose-wasm": {
+   "linux": {
+    "status": "skip",
+    "reason": "a compiler backend, not a package"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a compiler backend, not a package"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a compiler backend, not a package"
+   }
+  },
+  "noonien-alchemistssort": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-grnmp8k2/noonien-alchemistssort')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/noonien-alchemistssort')"
+   }
+  },
+  "nurupoga-goose-core2": {
+   "linux": {
+    "status": "skip",
+    "reason": "firmware for ESP32 hardware"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "firmware for ESP32 hardware"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "firmware for ESP32 hardware"
+   }
+  },
+  "nurysso-terence": {
+   "linux": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "okay-effects-okay-goose": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/okay-effects-okay-goose')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/okay-effects-okay-goose')"
+   }
+  },
+  "paulosuzart-gooseneck": {
+   "linux": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.9
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 3.2
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.6
+   }
+  },
+  "pleseisanidiot-goosecode": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/pleseisanidiot-goosecode')"
+   }
+  },
+  "podikoglou-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   }
+  },
+  "robtandy-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   }
+  },
+  "robtandy-goose-go": {
+   "macos": {
+    "status": "skip",
+    "reason": "a compiler backend, not a package"
+   }
+  },
+  "romanpro100-goose-zed-extension": {
+   "macos": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   }
+  },
+  "ruslano69-lz78-goose": {
+   "linux": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "rx-bob-goosefmt": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/rx-bob-goosefmt')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/rx-bob-goosefmt')"
+   }
+  },
+  "rx-bob-goosetest": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/rx-bob-goosetest')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/rx-bob-goosetest')"
+   }
+  },
+  "salahraja-football-scores": {
+   "macos": {
+    "status": "skip",
+    "reason": "a web site; its Goose part is a build step"
+   }
+  },
+  "scottc-goose-roc": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/scottc-goose-roc')"
+   }
+  },
+  "shetautnetjer-goose-lsp": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/shetautnetjer-goose-lsp')"
+   }
+  },
+  "shetautnetjer-goose-sqlite": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.1.2",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.2
+   }
+  },
+  "shetautnetjer-goose-treesitter": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.1.4",
+    "stage": "build",
+    "requires": [],
+    "seconds": 21.8
+   }
+  },
+  "shetautnetjer-swan": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-grnmp8k2/shetautnetjer-swan')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/shetautnetjer-swan')"
+   }
+  },
+  "sorins-asn1goose": {
+   "linux": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "sorins-bigmongoose": {
+   "linux": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:1: error: /tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_source",
+    "log": "fetching the package bignum from github.com/SorinS/bigmongoose@main\nprobe.goose:1: error: /tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   },
+   "windows": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sour",
+    "log": "fetching the package bignum from github.com/SorinS/bigmongoose@main\nprobe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   },
+   "macos": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exc",
+    "log": "fetching the package bignum from github.com/SorinS/bigmongoose@main\nprobe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   }
+  },
+  "sorins-gslib": {
+   "linux": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:1: error: /tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux",
+    "log": "fetching the package gslib from github.com/SorinS/gslib@main\nprobe.goose:1: error: /tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   },
+   "windows": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_",
+    "log": "fetching the package gslib from github.com/SorinS/gslib@main\nprobe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   },
+   "macos": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c",
+    "log": "fetching the package gslib from github.com/SorinS/gslib@main\nprobe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   }
+  },
+  "sorins-httpgoose": {
+   "linux": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "sorins-ldapgoose": {
+   "macos": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package asn1's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/ldapgoose/asn1goose.git is not a directory (/var/folders/n6/hn37q6pj7sj",
+    "log": "probe.goose:2: error: the package asn1's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/ldapgoose/asn1goose.git is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/ldapgoose/asn1goose.git/)\nprobe.goose:3: error: the package bignum's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/ldapgoose/bigmongoose.git is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/ldapgoose/bigmongoose.git/)\n",
+    "requires": [
+     {
+      "name": "asn1",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/ldapgoose/asn1goose.git"
+     },
+     {
+      "name": "bignum",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/ldapgoose/bigmongoose.git"
+     }
+    ]
+   }
+  },
+  "sorins-sshgoose": {
+   "linux": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (/tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git/)",
+    "log": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (/tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git/)\nprobe.goose:3: error: the package asn1's source ../home/pkg/github.com/SorinS/sshgoose/asn1goose.git is not a directory (/tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/sshgoose/asn1goose.git/)\nprobe.goose:4: error: the package x509's source ../home/pkg/github.com/SorinS/sshgoose/x509goose.git is not a directory (/tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/sshgoose/x509goose.git/)\n",
+    "requires": [
+     {
+      "name": "bignum",
+      "source": "../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git"
+     },
+     {
+      "name": "asn1",
+      "source": "../home/pkg/github.com/SorinS/sshgoose/asn1goose.git"
+     },
+     {
+      "name": "x509",
+      "source": "../home/pkg/github.com/SorinS/sshgoose/x509goose.git"
+     }
+    ]
+   },
+   "windows": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git/)",
+    "log": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git/)\nprobe.goose:3: error: the package asn1's source ../home/pkg/github.com/SorinS/sshgoose/asn1goose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/sshgoose/asn1goose.git/)\nprobe.goose:4: error: the package x509's source ../home/pkg/github.com/SorinS/sshgoose/x509goose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/sshgoose/x509goose.git/)\n",
+    "requires": [
+     {
+      "name": "bignum",
+      "source": "../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git"
+     },
+     {
+      "name": "asn1",
+      "source": "../home/pkg/github.com/SorinS/sshgoose/asn1goose.git"
+     },
+     {
+      "name": "x509",
+      "source": "../home/pkg/github.com/SorinS/sshgoose/x509goose.git"
+     }
+    ]
+   },
+   "macos": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package bignum's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (/var/folders/n6/hn37q6pj",
+    "log": "probe.goose:2: error: the package bignum's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git/)\nprobe.goose:3: error: the package asn1's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/sshgoose/asn1goose.git is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/sshgoose/asn1goose.git/)\nprobe.goose:4: error: the package x509's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/sshgoose/x509goose.git is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/sshgoose/x509goose.git/)\n",
+    "requires": [
+     {
+      "name": "bignum",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/sshgoose/bigmongoose.git"
+     },
+     {
+      "name": "asn1",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/sshgoose/asn1goose.git"
+     },
+     {
+      "name": "x509",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/sshgoose/x509goose.git"
+     }
+    ]
+   }
+  },
+  "sorins-tlsgoose": {
+   "macos": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package bignum's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (/var/folders/n6/hn37q6pj",
+    "log": "probe.goose:2: error: the package bignum's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git/)\nprobe.goose:3: error: the package asn1's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/tlsgoose/asn1goose.git is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/tlsgoose/asn1goose.git/)\nprobe.goose:4: error: the package x509's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/tlsgoose/x509goose.git is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/tlsgoose/x509goose.git/)\n",
+    "requires": [
+     {
+      "name": "bignum",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git"
+     },
+     {
+      "name": "asn1",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/tlsgoose/asn1goose.git"
+     },
+     {
+      "name": "x509",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/SorinS/tlsgoose/x509goose.git"
+     }
+    ]
+   }
+  },
+  "sorins-x509goose": {
+   "linux": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (/tmp/goose-compat-c8p_4csy/home/pkg/github.com/SorinS/x509goose/asn1goose.git/)",
+    "log": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (/tmp/goose-compat-c8p_4csy/home/pkg/github.com/SorinS/x509goose/asn1goose.git/)\nprobe.goose:3: error: the package bignum's source ../home/pkg/github.com/SorinS/x509goose/bigmongoose.git is not a directory (/tmp/goose-compat-c8p_4csy/home/pkg/github.com/SorinS/x509goose/bigmongoose.git/)\n",
+    "requires": [
+     {
+      "name": "asn1",
+      "source": "../home/pkg/github.com/SorinS/x509goose/asn1goose.git"
+     },
+     {
+      "name": "bignum",
+      "source": "../home/pkg/github.com/SorinS/x509goose/bigmongoose.git"
+     }
+    ]
+   },
+   "windows": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/SorinS/x509goose/asn1goose.git/)",
+    "log": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/SorinS/x509goose/asn1goose.git/)\nprobe.goose:3: error: the package bignum's source ../home/pkg/github.com/SorinS/x509goose/bigmongoose.git is not a directory (C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/SorinS/x509goose/bigmongoose.git/)\n",
+    "requires": [
+     {
+      "name": "asn1",
+      "source": "../home/pkg/github.com/SorinS/x509goose/asn1goose.git"
+     },
+     {
+      "name": "bignum",
+      "source": "../home/pkg/github.com/SorinS/x509goose/bigmongoose.git"
+     }
+    ]
+   },
+   "macos": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "probe.goose:2: error: the package asn1's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (/var/folders/n6/hn37q6pj7sj",
+    "log": "probe.goose:2: error: the package asn1's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/SorinS/x509goose/asn1goose.git/)\nprobe.goose:3: error: the package bignum's source ../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/SorinS/x509goose/bigmongoose.git is not a directory (/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/SorinS/x509goose/bigmongoose.git/)\n",
+    "requires": [
+     {
+      "name": "asn1",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/SorinS/x509goose/asn1goose.git"
+     },
+     {
+      "name": "bignum",
+      "source": "../../../../../../../../var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/SorinS/x509goose/bigmongoose.git"
+     }
+    ]
+   }
+  },
+  "sorins-yamlgoose": {
+   "linux": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "/tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of",
+    "log": "fetching the package yaml from github.com/SorinS/yamlgoose@main\nparsed ok: 477 top-level declarations, 4 file(s)\n/tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of\n        Float f => { return MergeKey { set: set, kind: 5, bits: float_text::bits_of(f.v), text: \"\" }; },\n  in fn yaml::merge_key(i64, yaml::Node&) instantiated from /tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2727\n  in fn yaml::unmarshal_mapping(yaml::Check&, yaml::Node&) instantiated from /tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2707\n  in fn yaml::unmarshal(yaml::Check&, yaml::Node&) instantiated from /tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2648\n  in fn yaml::check(yaml::Node&) instantiated from /tmp/goose-compat-grnmp8k2/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2642\n",
+    "requires": []
+   },
+   "windows": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of",
+    "log": "fetching the package yaml from github.com/SorinS/yamlgoose@main\nparsed ok: 477 top-level declarations, 4 file(s)\nC:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of\n        Float f => { return MergeKey { set: set, kind: 5, bits: float_text::bits_of(f.v), text: \"\" }; },\n  in fn yaml::merge_key(i64, yaml::Node&) instantiated from C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2727\n  in fn yaml::unmarshal_mapping(yaml::Check&, yaml::Node&) instantiated from C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2707\n  in fn yaml::unmarshal(yaml::Check&, yaml::Node&) instantiated from C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2648\n  in fn yaml::check(yaml::Node&) instantiated from C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-7ds4nxol/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2642\n",
+    "requires": []
+   },
+   "macos": {
+    "status": "fail",
+    "ref": "main",
+    "stage": "check",
+    "detail": "/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of",
+    "log": "fetching the package yaml from github.com/SorinS/yamlgoose@main\nparsed ok: 477 top-level declarations, 4 file(s)\n/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of\n        Float f => { return MergeKey { set: set, kind: 5, bits: float_text::bits_of(f.v), text: \"\" }; },\n  in fn yaml::merge_key(i64, yaml::Node&) instantiated from /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2727\n  in fn yaml::unmarshal_mapping(yaml::Check&, yaml::Node&) instantiated from /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2707\n  in fn yaml::unmarshal(yaml::Check&, yaml::Node&) instantiated from /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2648\n  in fn yaml::check(yaml::Node&) instantiated from /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/home/pkg/github.com/SorinS/yamlgoose/main/yaml.goose:2642\n",
+    "requires": []
+   }
+  },
+  "sstadick-goosdoc": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-grnmp8k2/sstadick-goosdoc')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/sstadick-goosdoc')"
+   }
+  },
+  "sstadick-goosimd": {
+   "linux": {
+    "status": "fail",
+    "ref": "v0.1.1",
+    "stage": "check",
+    "detail": "probe.goose:1: error: /tmp/goose-compat-c8p_4csy/home/pkg/github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_",
+    "log": "fetching the package goosimd from github.com/sstadick/goosimd@v0.1.1\nprobe.goose:1: error: /tmp/goose-compat-c8p_4csy/home/pkg/github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   },
+   "windows": {
+    "status": "fail",
+    "ref": "v0.1.1",
+    "stage": "check",
+    "detail": "probe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_source",
+    "log": "fetching the package goosimd from github.com/sstadick/goosimd@v0.1.1\nprobe.goose:1: error: C:/Users/RUNNER~1/AppData/Local/Temp/goose-compat-vhooqnbv/home/pkg/github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   },
+   "macos": {
+    "status": "fail",
+    "ref": "v0.1.1",
+    "stage": "check",
+    "detail": "probe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclu",
+    "log": "fetching the package goosimd from github.com/sstadick/goosimd@v0.1.1\nprobe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/home/pkg/github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   }
+  },
+  "sstadick-goosio": {
+   "macos": {
+    "status": "fail",
+    "ref": "v0.1.0",
+    "stage": "check",
+    "detail": "probe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude",
+    "log": "fetching the package goosio from github.com/sstadick/goosio@v0.1.0\nprobe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   }
+  },
+  "sstadick-goosopt": {
+   "linux": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "sstadick-goostr": {
+   "macos": {
+    "status": "fail",
+    "ref": "v0.2.1",
+    "stage": "check",
+    "detail": "probe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude",
+    "log": "fetching the package goostr from github.com/sstadick/goostr@v0.2.1\nprobe.goose:1: error: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/home/pkg/github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_macos, c_defines, c_defines_windows, c_defines_linux, c_defines_macos, c_flags_cc, c_flags_cc_windows, c_flags_cc_linux, c_flags_cc_macos, c_flags_msvc, c_flags_msvc_windows, c_flags_msvc_linux, c_flags_msvc_macos, c_libs, c_libs_windows, c_libs_linux, c_libs_macos)\n",
+    "requires": []
+   }
+  },
+  "subhdotsol-goose-guide": {
+   "linux": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a learning resource is not built"
+   }
+  },
+  "swoorup-beads-goose": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-grnmp8k2/swoorup-beads-goose')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/swoorup-beads-goose')"
+   }
+  },
+  "swoorup-ferrous-goose": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/swoorup-ferrous-goose')"
+   }
+  },
+  "tacf-fastnoiselite-goose": {
+   "linux": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 1.0
+   },
+   "windows": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.3
+   },
+   "macos": {
+    "status": "pass",
+    "ref": "main",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.1
+   }
+  },
+  "tacf-moon-goose": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/tacf-moon-goose')"
+   }
+  },
+  "taw-100-languages-speedrun-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "example code for a blog post"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "example code for a blog post"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "example code for a blog post"
+   }
+  },
+  "tobiolo-goose-term": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/tobiolo-goose-term')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/tobiolo-goose-term')"
+   }
+  },
+  "vietnt-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "a fork of the compiler"
+   }
+  },
+  "vpagani-zed-goose": {
+   "linux": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   }
+  },
+  "xvolks-brainfuck-goose": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/xvolks-brainfuck-goose')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/xvolks-brainfuck-goose')"
+   }
+  },
+  "yujieteo-goosestrike": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/yujieteo-goosestrike')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/yujieteo-goosestrike')"
+   }
+  },
+  "yujieteo-marklove-web": {
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-i45tow28/yujieteo-marklove-web')"
+   }
+  },
+  "yujieteo-neurons": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-grnmp8k2/yujieteo-neurons')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/yujieteo-neurons')"
+   }
+  },
+  "yujieteo-pond": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-grnmp8k2/yujieteo-pond')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/yujieteo-pond')"
+   }
+  },
+  "yujieteo-site": {
+   "macos": {
+    "status": "skip",
+    "reason": "a website; its Goose programs build to WebAssembly"
+   }
+  },
+  "yujieteo-skein": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-grnmp8k2/yujieteo-skein')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-oj10d66m/yujieteo-skein')"
+   }
+  },
+  "yujieteo-toybox": {
+   "linux": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/tmp/goose-compat-c8p_4csy/yujieteo-toybox')"
+   },
+   "windows": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [WinError 267] The directory name is invalid"
+   },
+   "macos": {
+    "status": "fail",
+    "stage": "runner",
+    "detail": "runner error: [Errno 2] No such file or directory: PosixPath('/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/goose-compat-b23shyvn/yujieteo-toybox')"
+   }
+  },
+  "zhengsy-goose-tui": {
+   "macos": {
+    "status": "pass",
+    "ref": "v0.1.0",
+    "stage": "build",
+    "requires": [],
+    "seconds": 0.2
+   }
+  },
+  "zhengsy-goose-zed": {
+   "linux": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   },
+   "windows": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   },
+   "macos": {
+    "status": "skip",
+    "reason": "an editor is not built"
+   }
+  }
+ },
+ "goose": "v2026.3",
+ "ran_at": "2026-11-03T22:55:15Z",
+ "run_url": "https://github.com/safdafang/goose-index/actions/runs/41734476972"
+}
