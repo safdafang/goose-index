@@ -90,7 +90,7 @@ jobs:
 
   merge:
     needs: [plan, test]
-    if: always() && needs.plan.outputs.run == 'true'
+    if: ${{ !cancelled() && needs.plan.outputs.run == 'true' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write

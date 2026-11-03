@@ -213,6 +213,7 @@ def find_entry(repo_dir, e):
 
 def run_program(e, ref, work, env, exe):
     repo_dir = work / "repo"
+    work.mkdir(parents=True, exist_ok=True)
     rc, log, _ = sh(["git", "clone", "--depth", "1", "--branch", ref, "--recurse-submodules",
                      "--shallow-submodules", e["repo"] + ".git", str(repo_dir)], work, env, 600)
     if rc != 0:
