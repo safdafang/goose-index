@@ -1,0 +1,15 @@
+id = "kostya-langarena"
+name = "LangArena"
+kind = "learning-resource"
+category = "benchmarks"
+tags = ["benchmarks", "multi-language", "runtime", "memory", "compile-time"]
+repo = "https://github.com/kostya/LangArena"
+description = "A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page."
+platforms = ["linux"]
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a multi-language benchmark suite, not a package"

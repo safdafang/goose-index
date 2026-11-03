@@ -1,0 +1,12 @@
+id = "rx-bob-goosefmt"
+name = "goosefmt"
+kind = "tool"
+category = "code-quality"
+tags = ["formatter", "linter", "cli"]
+repo = "https://github.com/rx-bob/goosefmt"
+description = "A formatter and linter for Goose written in Goose, with format, lint and check commands that walk a directory tree."
+platforms = []
+
+[native]
+c = false
+cmake = false

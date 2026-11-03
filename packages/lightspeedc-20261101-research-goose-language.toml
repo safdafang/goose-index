@@ -1,0 +1,12 @@
+id = "lightspeedc-20261101-research-goose-language"
+name = "Goose language research notes (Japanese)"
+kind = "learning-resource"
+category = "learning"
+tags = ["japanese", "overview", "comparison"]
+repo = "https://github.com/LightSpeedC/20261101-research-goose-language"
+description = "A long Japanese write-up of how Goose works: the heapless memory model, data layout, threads and C interop, how it compares with C++, Rust, Go and JavaScript, and how to read its performance claims."
+platforms = []
+
+[native]
+c = false
+cmake = false

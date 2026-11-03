@@ -1,0 +1,18 @@
+id = "kaitk-goose-tls"
+name = "goose-tls"
+kind = "binding"
+category = "crypto-and-security"
+tags = ["tls", "openssl", "ktls", "tls13"]
+repo = "https://github.com/kaitk/goose-tls"
+description = "TLS on OpenSSL 3: a TLS 1.3 server whose protocol layer is Goose (with OpenSSL's libcrypto for primitives) and OpenSSL's own client, both byte-in, byte-out with kTLS support."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "tls"
+
+[native]
+c = true
+cmake = true
+system_libs.linux = ["libssl-dev"]
+system_libs.macos = ["openssl@3"]
+system_libs.windows = ["openssl"]

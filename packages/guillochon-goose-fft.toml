@@ -1,0 +1,15 @@
+id = "guillochon-goose-fft"
+name = "goose-fft"
+kind = "package"
+category = "math-and-science"
+tags = ["fft", "signal-processing", "convolution", "pure-goose"]
+repo = "https://github.com/guillochon/goose-fft"
+description = "Pure-Goose FFTs for any input length, complex and real, in one and two dimensions, with convolution and NumPy-style frequency helpers."
+platforms = []
+
+[import]
+name = "fft"
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,16 @@
+id = "vietnt-goose"
+name = "goose (vietnt's rome fork)"
+kind = "fork"
+category = "compilers-and-runtimes"
+tags = ["fork", "spir-v", "vulkan", "gfx"]
+repo = "https://github.com/vietnt/goose"
+description = "A fork that keeps its own release line with SPIR-V and Vulkan fixes, extra file functions, and gfx, audio and ui packages pinned from the author's goose_gfx fork."
+platforms = []
+upstream_fork = "Own 'rome' release line: SPIR-V fixes, os.read_file_at, blessed gfx/audio/ui from vietnt/goose_gfx."
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a fork of the compiler"

@@ -1,0 +1,12 @@
+id = "kyambuthia-ur-goose-is-cooked"
+name = "ur-goose-is-cooked"
+kind = "learning-resource"
+category = "learning"
+tags = ["starter", "template", "graphics"]
+repo = "https://github.com/kyambuthia/ur-goose-is-cooked"
+description = "A minimal starter: a hello-world, a window opened through gfx and a low-poly retro graphics demo that shows a program with its own C."
+platforms = ["linux", "macos"]
+
+[native]
+c = true
+cmake = false

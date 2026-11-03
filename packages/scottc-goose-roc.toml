@@ -1,0 +1,12 @@
+id = "scottc-goose-roc"
+name = "goose-roc"
+kind = "tool"
+category = "interop"
+tags = ["roc", "platform", "host", "musl"]
+repo = "https://github.com/scottc/goose-roc"
+description = "A template for writing Roc platform hosts in Goose, in a pure-Goose flavour and a C-bridge flavour; tested only on Linux x64 with musl."
+platforms = ["linux"]
+
+[native]
+c = true
+cmake = false

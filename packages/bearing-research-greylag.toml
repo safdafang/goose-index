@@ -1,0 +1,12 @@
+id = "bearing-research-greylag"
+name = "greylag"
+kind = "app"
+category = "encoding-and-serialization"
+tags = ["xml", "parser", "c-api", "libxml2"]
+repo = "https://github.com/bearing-research/greylag"
+description = "An early XML parser written in Goose and exported to C through integer handles, compared against libxml2 and expat."
+platforms = []
+
+[native]
+c = false
+cmake = false

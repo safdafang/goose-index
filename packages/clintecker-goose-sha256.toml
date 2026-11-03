@@ -1,0 +1,15 @@
+id = "clintecker-goose-sha256"
+name = "goose-sha256"
+kind = "package"
+category = "crypto-and-security"
+tags = ["sha256", "hash", "streaming", "pure-goose"]
+repo = "https://github.com/clintecker/goose-sha256"
+description = "Incremental SHA-256 in pure Goose with caller-owned state; an optional module hashes files through goose-file."
+platforms = []
+
+[import]
+name = "sha256"
+
+[native]
+c = false
+cmake = false

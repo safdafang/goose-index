@@ -1,0 +1,16 @@
+id = "kaitk-goose-ngfx"
+name = "goose-ngfx"
+kind = "package"
+category = "graphics-and-games"
+tags = ["graphics", "gpu", "metal", "vulkan", "slang", "shaders"]
+repo = "https://github.com/kaitk/goose-ngfx"
+description = "A GPU graphics package following Sebastian Aaltonen's NoGraphicsAPI design over Metal 4 and Vulkan 1.4: draws read a root struct by GPU address and shaders are written in Slang; window and input come from Goose gfx."
+platforms = ["macos", "windows"]
+
+[import]
+name = "ngfx"
+
+[native]
+c = false
+cmake = true
+tools = ["cmake", "vulkan-sdk", "slang"]

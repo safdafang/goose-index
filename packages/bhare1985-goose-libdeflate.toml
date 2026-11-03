@@ -1,0 +1,15 @@
+id = "bhare1985-goose-libdeflate"
+name = "goose-libdeflate"
+kind = "binding"
+category = "compression-and-archives"
+tags = ["deflate", "zlib", "gzip", "crc32", "adler32"]
+repo = "https://github.com/BHare1985/goose-libdeflate"
+description = "libdeflate compiled into the package: fast whole-buffer zlib, gzip and raw DEFLATE in both directions, plus CRC-32 and Adler-32. Tags track the libdeflate version."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "deflate"
+
+[native]
+c = true
+cmake = false

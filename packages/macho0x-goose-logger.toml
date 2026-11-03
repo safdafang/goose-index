@@ -1,0 +1,16 @@
+id = "macho0x-goose-logger"
+name = "goose-logger"
+kind = "package"
+category = "text-and-templates"
+tags = ["logging", "structured-logs", "masking"]
+repo = "https://github.com/Macho0x/goose-logger"
+description = "Writes one structured line per event with a UTC timestamp, level, call site and key=value fields, quoting where needed and masking secrets."
+platforms = []
+
+[import]
+name = "logger"
+modules = ["logger.emit"]
+
+[native]
+c = false
+cmake = false

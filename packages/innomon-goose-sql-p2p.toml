@@ -1,0 +1,12 @@
+id = "innomon-goose-sql-p2p"
+name = "goose-sql-p2p"
+kind = "app"
+category = "applications"
+tags = ["sqlite", "replication", "p2p", "hypercore"]
+repo = "https://github.com/innomon/goose-sql-p2p"
+description = "A peer-to-peer replication engine for SQLite databases that aims for compatibility with the Pear/Hypercore stack and with sqlite-p2p configuration."
+platforms = []
+
+[native]
+c = false
+cmake = false

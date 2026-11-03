@@ -1,0 +1,15 @@
+id = "clintecker-goose-file"
+name = "goose-file"
+kind = "package"
+category = "os-and-system"
+tags = ["files", "streaming", "stdin", "posix", "lstat"]
+repo = "https://github.com/clintecker/goose-file"
+description = "Chunked reading of files and stdin, for inputs too big to load whole, plus lstat, permission bits and links through a small C layer. POSIX paths only."
+platforms = ["linux", "macos"]
+
+[import]
+name = "file"
+
+[native]
+c = true
+cmake = false

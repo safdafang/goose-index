@@ -1,0 +1,12 @@
+id = "vpagani-zed-goose"
+name = "zed-goose"
+kind = "editor"
+category = "editor-support"
+tags = ["zed", "tree-sitter", "lsp", "outline"]
+repo = "https://github.com/VPagani/zed-goose"
+description = "A Zed extension using the upstream tree-sitter grammar and goose lsp, adding an outline, bracket and indent rules, comment toggling and Vim text objects."
+platforms = []
+
+[native]
+c = false
+cmake = false

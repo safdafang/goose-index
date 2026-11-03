@@ -1,0 +1,12 @@
+id = "lenstr-project-frontier"
+name = "project-frontier"
+kind = "app"
+category = "graphics-and-games"
+tags = ["game", "3d", "automation", "colony"]
+repo = "https://github.com/lenstr/project-frontier"
+description = "A third-person 3D game about mining an alien world and automating a colony with rails and robots, scaled to thousands of entities; native builds for macOS and Linux."
+platforms = ["macos", "linux"]
+
+[native]
+c = false
+cmake = false

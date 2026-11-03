@@ -1,0 +1,12 @@
+id = "kokasikhorik-bot-goosecraft"
+name = "GooseCraft"
+kind = "app"
+category = "applications"
+tags = ["voxel", "game", "windows", "russian"]
+repo = "https://github.com/kokasikhorik-bot/GooseCraft"
+description = "A Windows-only voxel game client and launcher that works toward Minecraft-like behaviour, with greedy meshing and save files; documentation is in Russian."
+platforms = ["windows"]
+
+[native]
+c = true
+cmake = false

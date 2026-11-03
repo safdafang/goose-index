@@ -1,0 +1,13 @@
+id = "noonien-alchemistssort"
+name = "AlchemistsSort"
+kind = "app"
+category = "applications"
+tags = ["game", "puzzle", "sdl3", "nix", "browser"]
+repo = "https://github.com/noonien/AlchemistsSort"
+description = "A relaxed color-sorting puzzle game with a campaign, seeded levels and a hint solver, drawn with gfx and also playable in the browser; the toolchain comes from a Nix flake."
+platforms = []
+
+[native]
+c = false
+cmake = false
+tools = ["nix"]

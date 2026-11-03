@@ -1,0 +1,12 @@
+id = "tacf-moon-goose"
+name = "moon-goose"
+kind = "app"
+category = "applications"
+tags = ["interpreter", "lexer", "parser", "vm"]
+repo = "https://github.com/tacf/moon-goose"
+description = "An unfinished interpreter with a lexer, a parser and a stack virtual machine; the repository has no README yet."
+platforms = []
+
+[native]
+c = false
+cmake = false

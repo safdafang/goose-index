@@ -1,0 +1,12 @@
+id = "badman594-glog"
+name = "glog"
+kind = "app"
+category = "applications"
+tags = ["logs", "cli", "common-log-format"]
+repo = "https://github.com/badman594/glog"
+description = "A command-line counter and grouper for web server access logs in Common Log Format, written to be faster than the usual shell tools."
+platforms = ["linux", "macos", "windows"]
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,15 @@
+id = "macho0x-goose-signature"
+name = "goose-signature"
+kind = "package"
+category = "domain-specific"
+tags = ["ethereum", "bitcoin", "solana", "signing", "eip-191", "bip-322"]
+repo = "https://github.com/Macho0x/goose-signature"
+description = "Message and typed-data signing for Ethereum, Bitcoin and Solana built on goose-crypto; it expects goose-crypto checked out beside it."
+platforms = []
+
+[import]
+name = "signature"
+
+[native]
+c = false
+cmake = false

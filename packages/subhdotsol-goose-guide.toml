@@ -1,0 +1,12 @@
+id = "subhdotsol-goose-guide"
+name = "goose-guide"
+kind = "learning-resource"
+category = "learning"
+tags = ["notes", "syntax", "examples"]
+repo = "https://github.com/subhdotsol/goose-guide"
+description = "A learner's numbered walk through Goose, from program structure to the memory model, modules and calling C, with a runnable example for each topic."
+platforms = []
+
+[native]
+c = true
+cmake = false

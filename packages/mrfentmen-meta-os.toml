@@ -1,0 +1,15 @@
+id = "mrfentmen-meta-os"
+name = "meta-os"
+kind = "app"
+category = "applications"
+tags = ["agents", "platform", "hackathon", "services"]
+repo = "https://github.com/mrfentmen/meta-os"
+description = "A hackathon platform where AI agents work in dedicated systems; its services layer (audit, logging, boards, agent hosts) is written in Goose, alongside Rust and web parts."
+platforms = []
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a multi-language platform; its Goose services have no single entry point"

@@ -1,0 +1,25 @@
+# Pull requests: check every entry and that the outputs still generate.
+name: validate
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      # fetched only to check here (a new repository exists, its description isn't copied); not committed
+      - name: Fetch GitHub facts for the entries
+        run: python scripts/fetch_meta.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: python scripts/validate.py
+      - run: python scripts/build.py --site _site

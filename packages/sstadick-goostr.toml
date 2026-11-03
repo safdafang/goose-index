@@ -1,0 +1,15 @@
+id = "sstadick-goostr"
+name = "goostr"
+kind = "package"
+category = "text-and-templates"
+tags = ["strings", "bytes", "search", "utf8", "simd"]
+repo = "https://github.com/sstadick/goostr"
+description = "Byte-string searching, splitting and transforming that works on arbitrary bytes, NUL and broken UTF-8 included, following Rust's bstr; uses goosimd for fast search."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "goostr"
+
+[native]
+c = false
+cmake = false

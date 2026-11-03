@@ -1,0 +1,15 @@
+id = "macho0x-goose-bigint"
+name = "goose-bigint"
+kind = "package"
+category = "math-and-science"
+tags = ["bigint", "arbitrary-precision", "integers"]
+repo = "https://github.com/Macho0x/goose-bigint"
+description = "Arbitrary-size signed integers stored as a sign and 32-bit limbs, with truncating and floor division and two's-complement bit operations matching common big-integer libraries."
+platforms = []
+
+[import]
+name = "bigint"
+
+[native]
+c = false
+cmake = false

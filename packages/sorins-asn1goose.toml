@@ -1,0 +1,15 @@
+id = "sorins-asn1goose"
+name = "asn1goose"
+kind = "package"
+category = "encoding-and-serialization"
+tags = ["asn1", "der", "pem", "x509"]
+repo = "https://github.com/SorinS/asn1goose"
+description = "A strict, zero-copy ASN.1 DER reader and writer with typed decoders and PEM support; the base of the same author's X.509 and TLS packages."
+platforms = []
+
+[import]
+name = "asn1"
+
+[native]
+c = false
+cmake = false

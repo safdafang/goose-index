@@ -1,0 +1,12 @@
+id = "epidemicz-fresh-goose"
+name = "fresh-goose"
+kind = "editor"
+category = "editor-support"
+tags = ["fresh", "lsp", "highlighting", "format"]
+repo = "https://github.com/epidemicz/fresh-goose"
+description = "Plugin for the Fresh terminal editor that wires up highlighting, the goose lsp language server and goose format."
+platforms = []
+
+[native]
+c = false
+cmake = false

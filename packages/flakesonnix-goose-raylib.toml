@@ -1,0 +1,16 @@
+id = "flakesonnix-goose-raylib"
+name = "goose-raylib"
+kind = "binding"
+category = "graphics-and-games"
+tags = ["raylib", "3d", "nix", "cmake"]
+repo = "https://github.com/flakesonnix/goose-raylib"
+description = "Builds raylib 6.2 from source with CMake and exposes a growing subset, focused on 3D cameras, meshes, models and render textures, through a C adapter. Nix flake included."
+platforms = ["linux"]
+
+[import]
+name = "raylib"
+
+[native]
+c = false
+cmake = true
+system_libs.linux = ["libx11-dev", "libxrandr-dev", "libxinerama-dev", "libxcursor-dev", "libxi-dev", "libgl1-mesa-dev", "libwayland-dev", "libxkbcommon-dev"]

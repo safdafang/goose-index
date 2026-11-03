@@ -1,0 +1,12 @@
+id = "xvolks-brainfuck-goose"
+name = "brainfuck-goose"
+kind = "app"
+category = "applications"
+tags = ["interpreter", "brainfuck", "esolang"]
+repo = "https://github.com/xvolks/brainfuck-goose"
+description = "A small hand-written Brainfuck interpreter, a compact example of a complete Goose program."
+platforms = []
+
+[native]
+c = false
+cmake = false

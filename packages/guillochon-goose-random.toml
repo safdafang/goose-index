@@ -1,0 +1,15 @@
+id = "guillochon-goose-random"
+name = "goose-random"
+kind = "package"
+category = "math-and-science"
+tags = ["random", "prng", "xoshiro", "distributions", "pure-goose"]
+repo = "https://github.com/guillochon/goose-random"
+description = "Seedable random generators and around thirty exact distribution samplers in pure Goose, with shuffling, sampling and independent streams for worker threads."
+platforms = []
+
+[import]
+name = "random"
+
+[native]
+c = false
+cmake = false

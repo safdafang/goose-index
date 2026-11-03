@@ -1,0 +1,16 @@
+id = "kaitk-goose-acme"
+name = "goose-acme"
+kind = "package"
+category = "networking"
+tags = ["acme", "lets-encrypt", "certificates", "tls-alpn-01"]
+repo = "https://github.com/kaitk/goose-acme"
+description = "Obtains and renews TLS certificates from Let's Encrypt or another ACME authority via TLS-ALPN-01, so a goose-http server can serve HTTPS with no reverse proxy."
+platforms = ["linux", "macos"]
+
+[import]
+name = "acme"
+modules = ["acme.socket"]
+
+[native]
+c = true
+cmake = false

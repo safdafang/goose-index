@@ -1,0 +1,15 @@
+id = "macho0x-goose-crypto"
+name = "goose-crypto"
+kind = "package"
+category = "crypto-and-security"
+tags = ["hashes", "ciphers", "public-key", "pure-goose"]
+repo = "https://github.com/Macho0x/goose-crypto"
+description = "Hash functions, ciphers and public-key algorithms implemented in Goose alone, with no foreign calls, each tested against published vectors."
+platforms = []
+
+[import]
+name = "crypto"
+
+[native]
+c = false
+cmake = false

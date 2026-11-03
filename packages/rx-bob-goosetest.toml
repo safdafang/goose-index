@@ -1,0 +1,13 @@
+id = "rx-bob-goosetest"
+name = "goosetest"
+kind = "tool"
+category = "testing"
+tags = ["test-runner", "assertions", "fixtures", "discovery"]
+repo = "https://github.com/rx-bob/goosetest"
+description = "Finds test_* functions by convention, generates the runner and runs unit and integration suites, with assertion helpers, fixtures and before and after hooks."
+platforms = ["linux", "macos"]
+
+[native]
+c = true
+cmake = false
+tools = ["clang", "task"]

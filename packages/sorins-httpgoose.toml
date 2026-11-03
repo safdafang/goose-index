@@ -1,0 +1,15 @@
+id = "sorins-httpgoose"
+name = "httpgoose"
+kind = "package"
+category = "networking"
+tags = ["http", "http2", "url", "sans-io"]
+repo = "https://github.com/SorinS/httpgoose"
+description = "HTTP/1.1 and HTTP/2 protocol code with no I/O of its own (parsing, framing, chunked bodies, URLs), so the caller owns the sockets; HTTPS comes from tlsgoose. Also part of gslib."
+platforms = []
+
+[import]
+name = "http"
+
+[native]
+c = true
+cmake = false

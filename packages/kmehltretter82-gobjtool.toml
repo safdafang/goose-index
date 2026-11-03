@@ -1,0 +1,12 @@
+id = "kmehltretter82-gobjtool"
+name = "gobjtool"
+kind = "app"
+category = "os-and-system"
+tags = ["elf", "x86-64", "objtool", "linux-kernel", "disassembler"]
+repo = "https://github.com/kmehltretter82/gobjtool"
+description = "An experimental rewrite of the Linux kernel's objtool for x86-64: it parses ELF64 relocatable objects and decodes their instructions without libelf, as a first step toward stack validation and ORC data."
+platforms = []
+
+[native]
+c = false
+cmake = false

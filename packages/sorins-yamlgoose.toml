@@ -1,0 +1,15 @@
+id = "sorins-yamlgoose"
+name = "yamlgoose"
+kind = "package"
+category = "encoding-and-serialization"
+tags = ["yaml", "parser", "go-yaml"]
+repo = "https://github.com/SorinS/yamlgoose"
+description = "A YAML 1.2 reader and writer ported from Go's yaml.v3 (and its libyaml core), accepting and rejecting exactly what yaml.v3 does; the API mirrors the standard json module."
+platforms = []
+
+[import]
+name = "yaml"
+
+[native]
+c = false
+cmake = false

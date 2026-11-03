@@ -1,0 +1,66 @@
+# Regenerate README.md, index.json and the site, and publish the site to GitHub Pages.
+# Runs on every push to main, daily (refreshing tags, stars, dates and licenses first),
+# and after each build test on main.
+name: update
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+  workflow_run:
+    workflows: [compat]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: Refresh tags, stars, dates and licenses
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: python scripts/fetch_meta.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: python scripts/validate.py
+      - run: python scripts/build.py --site _site
+      - name: Commit the generated files
+        run: |
+          git add README.md index.json data/meta.json
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Regenerate the index"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

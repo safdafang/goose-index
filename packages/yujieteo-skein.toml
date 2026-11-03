@@ -1,0 +1,12 @@
+id = "yujieteo-skein"
+name = "skein"
+kind = "tool"
+category = "compilers-and-runtimes"
+tags = ["dsl", "units", "finite-element", "simulation", "compiler"]
+repo = "https://github.com/yujieteo/skein"
+description = "A units-checked modelling language for finite-element and finite-volume simulation whose compiler, written in Goose, emits Goose and can produce a browser page via WebAssembly."
+platforms = []
+
+[native]
+c = false
+cmake = false

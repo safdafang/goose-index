@@ -1,0 +1,12 @@
+id = "okay-effects-okay-goose"
+name = "okay-goose"
+kind = "tool"
+category = "language-extensions"
+tags = ["effects", "algebraic-effects", "handlers", "compiler"]
+repo = "https://github.com/okay-effects/okay-goose"
+description = "Brings the okay language's typed algebraic effects to Goose: effects in function types, handlers and resumable functions lowered to flat values, with the front end itself written in Goose."
+platforms = []
+
+[native]
+c = true
+cmake = false

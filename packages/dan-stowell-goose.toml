@@ -1,0 +1,16 @@
+id = "dan-stowell-goose"
+name = "goose (self-hosting experiment)"
+kind = "fork"
+category = "compilers-and-runtimes"
+tags = ["self-hosting", "bootstrap", "experiment"]
+repo = "https://github.com/dan-stowell/goose"
+description = "A paused experiment toward a Goose compiler written in Goose, with its bootstrap and the plan recording which gaps remained."
+platforms = []
+upstream_fork = "Self-hosting (goose_in_goose) bootstrap experiment; paused."
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a fork of the compiler"

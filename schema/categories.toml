@@ -1,0 +1,112 @@
+# The index's categories: one per entry, in the order README.md and the site list them.
+# The ids must match the enum in entry.schema.json; scripts/validate.py checks both ways.
+
+[[category]]
+id = "networking"
+title = "Networking and web"
+scope = "Sockets, HTTP clients and servers, web frameworks, URLs, ACME."
+
+[[category]]
+id = "crypto-and-security"
+title = "Cryptography and security"
+scope = "TLS, hashes, ciphers, X.509, SSH, big-number arithmetic for crypto."
+
+[[category]]
+id = "databases"
+title = "Databases"
+scope = "Database bindings, drivers and engines."
+
+[[category]]
+id = "compression-and-archives"
+title = "Compression and archives"
+scope = "DEFLATE, gzip, zstd and friends; tar and zip."
+
+[[category]]
+id = "encoding-and-serialization"
+title = "Encoding and serialization"
+scope = "Data formats: JSON, YAML, ASN.1, binary layouts, bit packing."
+
+[[category]]
+id = "text-and-templates"
+title = "Text and templates"
+scope = "Template engines, string utilities, parsing helpers, logging formats."
+
+[[category]]
+id = "math-and-science"
+title = "Math and science"
+scope = "Numerics, linear algebra, FFT, random numbers, domain science libraries."
+
+[[category]]
+id = "graphics-and-games"
+title = "Graphics, audio and games"
+scope = "Rendering, windowing, game libraries and their bindings, procedural noise."
+
+[[category]]
+id = "gui-and-terminal"
+title = "GUI and terminal UI"
+scope = "Widget toolkits, desktop UI, terminal UI frameworks."
+
+[[category]]
+id = "os-and-system"
+title = "OS, files and time"
+scope = "Files and streams, processes, dates and times, command-line arguments, logging to the system."
+
+[[category]]
+id = "language-extensions"
+title = "Language extensions"
+scope = "Libraries that add programming models on top of Goose: effects, SIMD, generics helpers."
+
+[[category]]
+id = "interop"
+title = "Interop with other languages"
+scope = "Calling other languages from Goose, or Goose from them."
+
+[[category]]
+id = "domain-specific"
+title = "Domain-specific"
+scope = "Libraries for one field that fits no other category: finance, blockchains, telephony."
+
+[[category]]
+id = "package-management"
+title = "Build and package management"
+scope = "Package managers, dependency tools and build-system integrations (Bazel, Nix) for Goose."
+
+[[category]]
+id = "testing"
+title = "Testing"
+scope = "Test runners, assertion libraries, property testing, fuzzing."
+
+[[category]]
+id = "documentation"
+title = "Documentation tools"
+scope = "API reference generators and doc testing."
+
+[[category]]
+id = "code-quality"
+title = "Formatting, linting and analysis"
+scope = "Formatters, linters, static analysis outside the compiler."
+
+[[category]]
+id = "editor-support"
+title = "Editor support"
+scope = "Editor plugins, syntax grammars, LSP clients."
+
+[[category]]
+id = "compilers-and-runtimes"
+title = "Compilers, forks and runtimes"
+scope = "Forks of the Goose compiler, other backends, languages derived from Goose."
+
+[[category]]
+id = "applications"
+title = "Applications"
+scope = "Programs written in Goose: tools, games, servers, simulations."
+
+[[category]]
+id = "benchmarks"
+title = "Benchmarks"
+scope = "Performance comparisons of Goose against other languages."
+
+[[category]]
+id = "learning"
+title = "Learning"
+scope = "Tutorials, guides, articles, notes, starter templates and example collections."

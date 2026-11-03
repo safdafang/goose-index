@@ -1,0 +1,12 @@
+id = "manymids-goose-sharp-x68000"
+name = "goose_sharp_x68000"
+kind = "app"
+category = "applications"
+tags = ["emulator", "x68000", "m68k", "win32", "mcp"]
+repo = "https://github.com/manymids/goose_sharp_x68000"
+description = "A Sharp X68000 emulator for Windows with the CPU, memory, devices and drawing written in Goose, a Win32 interface, and an MCP server for driving it from external tools."
+platforms = ["windows"]
+
+[native]
+c = true
+cmake = false

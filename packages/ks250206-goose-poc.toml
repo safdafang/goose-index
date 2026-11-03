@@ -1,0 +1,12 @@
+id = "ks250206-goose-poc"
+name = "goose-poc"
+kind = "app"
+category = "benchmarks"
+tags = ["crystallography", "cif", "structure-factor", "rust-comparison", "python-comparison"]
+repo = "https://github.com/ks250206/goose-poc"
+description = "A proof of concept computing crystal structure factors from CIF files on a worker pool, timed against Rust, plain Python and NumPy versions of the same direct sum."
+platforms = ["linux"]
+
+[native]
+c = false
+cmake = false

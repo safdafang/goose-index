@@ -1,0 +1,16 @@
+id = "akeit0-mygoose"
+name = "mygoose"
+kind = "package"
+category = "gui-and-terminal"
+tags = ["gui", "desktop", "widgets", "direct2d", "cairo", "appkit"]
+repo = "https://github.com/akeit0/mygoose"
+description = "A retained desktop UI toolkit whose layout, controls, focus handling and text editing are all Goose, drawn by a thin native layer: Direct2D on Windows, Cairo and Pango on Linux, AppKit on macOS."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "mygoose"
+
+[native]
+c = true
+cmake = true
+system_libs.linux = ["libx11-dev", "libcairo2-dev", "libpango1.0-dev"]

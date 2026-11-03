@@ -1,0 +1,16 @@
+id = "robtandy-goose"
+name = "goose (robtandy's fork)"
+kind = "fork"
+category = "compilers-and-runtimes"
+tags = ["fork", "handles", "resources", "generics"]
+repo = "https://github.com/robtandy/goose"
+description = "A fork working on typed resource handles whose kinds the checker tracks through generic instances."
+platforms = []
+upstream_fork = "Typed resource handles (pkg_resource) with kinds tracked through codegen."
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a fork of the compiler"

@@ -1,0 +1,12 @@
+id = "flisk-goose-101"
+name = "Goose lang and Flisk.sh 101 (dev.to series)"
+kind = "learning-resource"
+category = "learning"
+tags = ["tutorial", "article-series", "beginner"]
+url = "https://dev.to/flisk/what-the-goose-language-is-and-where-the-101-starts-544c"
+description = "An introductory article series on dev.to that explains what Goose is and walks through first programs, published by the Flisk.sh team."
+platforms = []
+
+[native]
+c = false
+cmake = false

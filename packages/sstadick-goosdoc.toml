@@ -1,0 +1,13 @@
+id = "sstadick-goosdoc"
+name = "goosdoc"
+kind = "tool"
+category = "documentation"
+tags = ["api-docs", "markdown", "doctest", "ci"]
+repo = "https://github.com/sstadick/goosdoc"
+description = "Builds a Markdown API reference from doc comments, with signatures and source links, and runs the code examples in those comments as tests; a check mode keeps the committed reference current in CI."
+platforms = []
+
+[native]
+c = false
+cmake = false
+tools = ["python3"]

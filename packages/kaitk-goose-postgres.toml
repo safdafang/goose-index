@@ -1,0 +1,15 @@
+id = "kaitk-goose-postgres"
+name = "goose-postgres"
+kind = "package"
+category = "databases"
+tags = ["postgres", "sql", "wire-protocol", "scram", "pipelining", "sans-io"]
+repo = "https://github.com/kaitk/goose-postgres"
+description = "A PostgreSQL client that speaks protocol 3.0 as bytes in and bytes out, leaving sockets to the caller's event loop; it handles SCRAM login, pipelined queries and result decoding, and pairs with goose-http's loop."
+platforms = []
+
+[import]
+name = "pg"
+
+[native]
+c = false
+cmake = false

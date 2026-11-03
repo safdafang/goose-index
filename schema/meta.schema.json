@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://safdafang.github.io/goose-index/schema/meta.schema.json",
+  "title": "Fetched facts about index entries",
+  "description": "data/meta.json, written only by scripts/fetch_meta.py from the GitHub API. Never hand-edited.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "fetched_at", "entries"],
+  "properties": {
+    "version": { "const": 1 },
+    "fetched_at": { "type": "string", "format": "date-time" },
+    "entries": {
+      "type": "object",
+      "propertyNames": { "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["exists"],
+        "properties": {
+          "exists": { "description": "false when the repository is gone or private: the site flags the entry.", "type": "boolean" },
+          "canonical_repo": { "description": "The repository's current URL, when it was renamed or moved.", "type": "string" },
+          "default_branch": { "type": "string" },
+          "latest_tag": { "description": "Newest tag by commit date; null when untagged, in which case the import line pins the default branch.", "type": ["string", "null"] },
+          "tag_count": { "type": "integer", "minimum": 0 },
+          "last_commit": { "description": "Commit date at the head of the default branch.", "type": "string", "format": "date-time" },
+          "created": { "type": "string", "format": "date-time" },
+          "stars": { "type": "integer", "minimum": 0 },
+          "archived": { "type": "boolean" },
+          "license": { "description": "SPDX id GitHub detects; 'none' when there is no license file, 'other' when GitHub cannot name it.", "type": "string" },
+          "upstream_description": { "description": "The project's own GitHub description, kept only so validate.py can check ours is not copied from it.", "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

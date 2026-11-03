@@ -1,0 +1,15 @@
+id = "clintecker-goose-tar"
+name = "goose-tar"
+kind = "package"
+category = "compression-and-archives"
+tags = ["tar", "ustar", "pax", "streaming"]
+repo = "https://github.com/clintecker/goose-tar"
+description = "A push-style tar reader for ustar, GNU and PAX archives that takes input in arbitrary chunks and reports headers and data through a callback; decompression is left to you."
+platforms = []
+
+[import]
+name = "tar"
+
+[native]
+c = false
+cmake = false

@@ -1,0 +1,7298 @@
+{
+ "$schema": "https://safdafang.github.io/goose-index/schema/index.schema.json",
+ "format": "goose-index",
+ "version": 1,
+ "generated_at": "2026-11-03T10:34:08Z",
+ "meta_fetched_at": "2026-11-03T10:34:08Z",
+ "compat": null,
+ "site": "https://safdafang.github.io/goose-index/",
+ "source": "https://github.com/safdafang/goose-index",
+ "categories": [
+  {
+   "id": "networking",
+   "title": "Networking and web",
+   "scope": "Sockets, HTTP clients and servers, web frameworks, URLs, ACME.",
+   "count": 8
+  },
+  {
+   "id": "crypto-and-security",
+   "title": "Cryptography and security",
+   "scope": "TLS, hashes, ciphers, X.509, SSH, big-number arithmetic for crypto.",
+   "count": 9
+  },
+  {
+   "id": "databases",
+   "title": "Databases",
+   "scope": "Database bindings, drivers and engines.",
+   "count": 3
+  },
+  {
+   "id": "compression-and-archives",
+   "title": "Compression and archives",
+   "scope": "DEFLATE, gzip, zstd and friends; tar and zip.",
+   "count": 7
+  },
+  {
+   "id": "encoding-and-serialization",
+   "title": "Encoding and serialization",
+   "scope": "Data formats: JSON, YAML, ASN.1, binary layouts, bit packing.",
+   "count": 10
+  },
+  {
+   "id": "text-and-templates",
+   "title": "Text and templates",
+   "scope": "Template engines, string utilities, parsing helpers, logging formats.",
+   "count": 3
+  },
+  {
+   "id": "math-and-science",
+   "title": "Math and science",
+   "scope": "Numerics, linear algebra, FFT, random numbers, domain science libraries.",
+   "count": 7
+  },
+  {
+   "id": "graphics-and-games",
+   "title": "Graphics, audio and games",
+   "scope": "Rendering, windowing, game libraries and their bindings, procedural noise.",
+   "count": 10
+  },
+  {
+   "id": "gui-and-terminal",
+   "title": "GUI and terminal UI",
+   "scope": "Widget toolkits, desktop UI, terminal UI frameworks.",
+   "count": 3
+  },
+  {
+   "id": "os-and-system",
+   "title": "OS, files and time",
+   "scope": "Files and streams, processes, dates and times, command-line arguments, logging to the system.",
+   "count": 7
+  },
+  {
+   "id": "language-extensions",
+   "title": "Language extensions",
+   "scope": "Libraries that add programming models on top of Goose: effects, SIMD, generics helpers.",
+   "count": 2
+  },
+  {
+   "id": "interop",
+   "title": "Interop with other languages",
+   "scope": "Calling other languages from Goose, or Goose from them.",
+   "count": 2
+  },
+  {
+   "id": "domain-specific",
+   "title": "Domain-specific",
+   "scope": "Libraries for one field that fits no other category: finance, blockchains, telephony.",
+   "count": 4
+  },
+  {
+   "id": "package-management",
+   "title": "Build and package management",
+   "scope": "Package managers, dependency tools and build-system integrations (Bazel, Nix) for Goose.",
+   "count": 3
+  },
+  {
+   "id": "testing",
+   "title": "Testing",
+   "scope": "Test runners, assertion libraries, property testing, fuzzing.",
+   "count": 1
+  },
+  {
+   "id": "documentation",
+   "title": "Documentation tools",
+   "scope": "API reference generators and doc testing.",
+   "count": 1
+  },
+  {
+   "id": "code-quality",
+   "title": "Formatting, linting and analysis",
+   "scope": "Formatters, linters, static analysis outside the compiler.",
+   "count": 4
+  },
+  {
+   "id": "editor-support",
+   "title": "Editor support",
+   "scope": "Editor plugins, syntax grammars, LSP clients.",
+   "count": 8
+  },
+  {
+   "id": "compilers-and-runtimes",
+   "title": "Compilers, forks and runtimes",
+   "scope": "Forks of the Goose compiler, other backends, languages derived from Goose.",
+   "count": 17
+  },
+  {
+   "id": "applications",
+   "title": "Applications",
+   "scope": "Programs written in Goose: tools, games, servers, simulations.",
+   "count": 27
+  },
+  {
+   "id": "benchmarks",
+   "title": "Benchmarks",
+   "scope": "Performance comparisons of Goose against other languages.",
+   "count": 8
+  },
+  {
+   "id": "learning",
+   "title": "Learning",
+   "scope": "Tutorials, guides, articles, notes, starter templates and example collections.",
+   "count": 10
+  }
+ ],
+ "entries": [
+  {
+   "id": "kaitk-goose-acme",
+   "name": "goose-acme",
+   "kind": "package",
+   "category": "networking",
+   "tags": [
+    "acme",
+    "lets-encrypt",
+    "certificates",
+    "tls-alpn-01"
+   ],
+   "description": "Obtains and renews TLS certificates from Let's Encrypt or another ACME authority via TLS-ALPN-01, so a goose-http server can serve HTTPS with no reverse proxy.",
+   "repo": "https://github.com/kaitk/goose-acme",
+   "url": "https://github.com/kaitk/goose-acme",
+   "page": "https://safdafang.github.io/goose-index/p/kaitk-goose-acme/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.0.4",
+   "tag_count": 4,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T08:13:40Z",
+   "created": "2026-10-22T18:15:28Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "acme",
+    "source": "github.com/kaitk/goose-acme",
+    "ref": "v0.0.4",
+    "pinned": true,
+    "line": "import acme from \"github.com/kaitk/goose-acme@v0.0.4\";",
+    "modules": [
+     "acme.socket"
+    ],
+    "subdir": null
+   }
+  },
+  {
+   "id": "kaitk-goose-http",
+   "name": "goose-http",
+   "kind": "package",
+   "category": "networking",
+   "tags": [
+    "http",
+    "server",
+    "websocket",
+    "http2",
+    "http3",
+    "io-uring",
+    "iocp"
+   ],
+   "description": "The most complete HTTP server stack for Goose: per-worker event loops on io_uring, epoll, kqueue or IOCP, with WebSockets, HTTP/2, HTTP/3, static files and an outbound client. Upstream benchmarks against it.",
+   "repo": "https://github.com/kaitk/goose-http",
+   "url": "https://github.com/kaitk/goose-http",
+   "page": "https://safdafang.github.io/goose-index/p/kaitk-goose-http/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.5.16",
+   "tag_count": 35,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T15:46:40Z",
+   "created": "2026-10-10T14:28:54Z",
+   "stars": 18,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [
+      "liburing-dev"
+     ],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "http",
+    "source": "github.com/kaitk/goose-http",
+    "ref": "v0.5.16",
+    "pinned": true,
+    "line": "import http from \"github.com/kaitk/goose-http@v0.5.16\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "aurthurm-goose-web",
+   "name": "goose-web",
+   "kind": "package",
+   "category": "networking",
+   "tags": [
+    "web-framework",
+    "sqlite",
+    "templates",
+    "json",
+    "streaming"
+   ],
+   "description": "A web framework built on a non-blocking readiness loop, with typed routes, JSON validation, HTML templates, streaming responses and an optional SQLite layer.",
+   "repo": "https://github.com/aurthurm/goose-web",
+   "url": "https://github.com/aurthurm/goose-web",
+   "page": "https://safdafang.github.io/goose-index/p/aurthurm-goose-web/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.6.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-29T04:50:46Z",
+   "created": "2026-10-22T12:21:41Z",
+   "stars": 1,
+   "license": "other",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [
+      "libsqlite3-dev"
+     ],
+     "macos": [
+      "sqlite"
+     ],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "goose_web",
+    "source": "github.com/aurthurm/goose-web",
+    "ref": "v0.6.0",
+    "pinned": true,
+    "line": "import goose_web from \"github.com/aurthurm/goose-web@v0.6.0\";",
+    "modules": [
+     "goose_web_db"
+    ],
+    "subdir": null
+   }
+  },
+  {
+   "id": "korolenkowork-honk",
+   "name": "honk",
+   "kind": "package",
+   "category": "networking",
+   "tags": [
+    "web-framework",
+    "openapi",
+    "swagger",
+    "validation"
+   ],
+   "description": "A web framework where routes declare typed structs and the request parsing, validation, JSON responses and OpenAPI schema with Swagger UI follow from those types.",
+   "repo": "https://github.com/korolenkowork/honk",
+   "url": "https://github.com/korolenkowork/honk",
+   "page": "https://safdafang.github.io/goose-index/p/korolenkowork-honk/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T18:16:02Z",
+   "created": "2026-11-02T16:29:59Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "honk",
+    "source": "github.com/korolenkowork/honk",
+    "ref": "main",
+    "pinned": false,
+    "line": null,
+    "modules": [],
+    "subdir": "honk"
+   }
+  },
+  {
+   "id": "sorins-httpgoose",
+   "name": "httpgoose",
+   "kind": "package",
+   "category": "networking",
+   "tags": [
+    "http",
+    "http2",
+    "url",
+    "sans-io"
+   ],
+   "description": "HTTP/1.1 and HTTP/2 protocol code with no I/O of its own (parsing, framing, chunked bodies, URLs), so the caller owns the sockets; HTTPS comes from tlsgoose. Also part of gslib.",
+   "repo": "https://github.com/SorinS/httpgoose",
+   "url": "https://github.com/SorinS/httpgoose",
+   "page": "https://safdafang.github.io/goose-index/p/sorins-httpgoose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-31T09:37:15Z",
+   "created": "2026-10-29T16:07:34Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "http",
+    "source": "github.com/SorinS/httpgoose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import http from \"github.com/SorinS/httpgoose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "sorins-ldapgoose",
+   "name": "ldapgoose",
+   "kind": "package",
+   "category": "networking",
+   "tags": [
+    "ldap",
+    "ber",
+    "directory",
+    "sans-io"
+   ],
+   "description": "An LDAPv3 client modelled on go-ldap that encodes requests and decodes responses without touching sockets, with command-line tools mirroring the OpenLDAP utilities.",
+   "repo": "https://github.com/SorinS/ldapgoose",
+   "url": "https://github.com/SorinS/ldapgoose",
+   "page": "https://safdafang.github.io/goose-index/p/sorins-ldapgoose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T15:02:48Z",
+   "created": "2026-10-27T15:01:58Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "ldap",
+    "source": "github.com/SorinS/ldapgoose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import ldap from \"github.com/SorinS/ldapgoose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "jdrobertso-net",
+   "name": "net",
+   "kind": "package",
+   "category": "networking",
+   "tags": [
+    "tcp",
+    "tls",
+    "http-client",
+    "url",
+    "cookies",
+    "windows"
+   ],
+   "description": "General networking: TCP clients and servers with client-side TLS, URL handling, and a full-featured HTTP/1.1 client with cookies, redirects and a non-blocking threaded mode. TLS uses Schannel on Windows and OpenSSL elsewhere.",
+   "repo": "https://github.com/jdrobertso/net",
+   "url": "https://github.com/jdrobertso/net",
+   "page": "https://safdafang.github.io/goose-index/p/jdrobertso-net/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2.0",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-10-26T20:39:12Z",
+   "created": "2026-10-26T02:59:58Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [
+      "libssl3"
+     ],
+     "macos": [
+      "openssl@3"
+     ],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "net",
+    "source": "github.com/jdrobertso/net",
+    "ref": "v0.2.0",
+    "pinned": true,
+    "line": "import net from \"github.com/jdrobertso/net@v0.2.0\";",
+    "modules": [
+     "net.http",
+     "net.url",
+     "net.client",
+     "net.cookie",
+     "net.compress"
+    ],
+    "subdir": null
+   }
+  },
+  {
+   "id": "kaitk-plod",
+   "name": "plod",
+   "kind": "package",
+   "category": "networking",
+   "tags": [
+    "rest",
+    "web-framework",
+    "openapi",
+    "middleware",
+    "goose-http"
+   ],
+   "description": "An Actix-inspired REST framework on goose-http with scopes, extractors and middleware, plus a generator that produces types, JSON codecs and a router from an OpenAPI 3.1 spec.",
+   "repo": "https://github.com/kaitk/plod",
+   "url": "https://github.com/kaitk/plod",
+   "page": "https://safdafang.github.io/goose-index/p/kaitk-plod/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.5.11",
+   "tag_count": 24,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T16:09:17Z",
+   "created": "2026-10-13T15:28:33Z",
+   "stars": 16,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "plod",
+    "source": "github.com/kaitk/plod",
+    "ref": "v0.5.11",
+    "pinned": true,
+    "line": "import plod from \"github.com/kaitk/plod@v0.5.11\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "sorins-bigmongoose",
+   "name": "bigmongoose",
+   "kind": "package",
+   "category": "crypto-and-security",
+   "tags": [
+    "bignum",
+    "elliptic-curves",
+    "constant-time",
+    "pure-goose"
+   ],
+   "description": "Big-number arithmetic and cryptographic primitives in Goose, modelled on Go's crypto packages and tested against Wycheproof vectors; it underlies the author's TLS stack.",
+   "repo": "https://github.com/SorinS/bigmongoose",
+   "url": "https://github.com/SorinS/bigmongoose",
+   "page": "https://safdafang.github.io/goose-index/p/sorins-bigmongoose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T06:13:36Z",
+   "created": "2026-10-25T22:09:24Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "bignum",
+    "source": "github.com/SorinS/bigmongoose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import bignum from \"github.com/SorinS/bigmongoose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "macho0x-goose-crypto",
+   "name": "goose-crypto",
+   "kind": "package",
+   "category": "crypto-and-security",
+   "tags": [
+    "hashes",
+    "ciphers",
+    "public-key",
+    "pure-goose"
+   ],
+   "description": "Hash functions, ciphers and public-key algorithms implemented in Goose alone, with no foreign calls, each tested against published vectors.",
+   "repo": "https://github.com/Macho0x/goose-crypto",
+   "url": "https://github.com/Macho0x/goose-crypto",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-crypto/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.18.1",
+   "tag_count": 10,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:10:49Z",
+   "created": "2026-10-27T07:37:26Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "crypto",
+    "source": "github.com/Macho0x/goose-crypto",
+    "ref": "v0.18.1",
+    "pinned": true,
+    "line": "import crypto from \"github.com/Macho0x/goose-crypto@v0.18.1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "kaitk-goose-hash",
+   "name": "goose-hash",
+   "kind": "package",
+   "category": "crypto-and-security",
+   "tags": [
+    "sha1",
+    "sha256",
+    "hmac",
+    "pbkdf2",
+    "random"
+   ],
+   "description": "SHA-1, SHA-256, HMAC, PBKDF2, constant-time comparison and OS random bytes, using CPU SHA instructions where they exist.",
+   "repo": "https://github.com/kaitk/goose-hash",
+   "url": "https://github.com/kaitk/goose-hash",
+   "page": "https://safdafang.github.io/goose-index/p/kaitk-goose-hash/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.0.4",
+   "tag_count": 4,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T08:13:48Z",
+   "created": "2026-10-19T12:42:55Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "hash",
+    "source": "github.com/kaitk/goose-hash",
+    "ref": "v0.0.4",
+    "pinned": true,
+    "line": "import hash from \"github.com/kaitk/goose-hash@v0.0.4\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "clintecker-goose-sha256",
+   "name": "goose-sha256",
+   "kind": "package",
+   "category": "crypto-and-security",
+   "tags": [
+    "sha256",
+    "hash",
+    "streaming",
+    "pure-goose"
+   ],
+   "description": "Incremental SHA-256 in pure Goose with caller-owned state; an optional module hashes files through goose-file.",
+   "repo": "https://github.com/clintecker/goose-sha256",
+   "url": "https://github.com/clintecker/goose-sha256",
+   "page": "https://safdafang.github.io/goose-index/p/clintecker-goose-sha256/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v1",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-29T22:40:29Z",
+   "created": "2026-10-29T22:38:00Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "sha256",
+    "source": "github.com/clintecker/goose-sha256",
+    "ref": "v1",
+    "pinned": true,
+    "line": "import sha256 from \"github.com/clintecker/goose-sha256@v1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "sorins-gslib",
+   "name": "gslib",
+   "kind": "package",
+   "category": "crypto-and-security",
+   "tags": [
+    "batteries",
+    "crypto",
+    "tls",
+    "ssh",
+    "http",
+    "ldap",
+    "yaml",
+    "compress"
+   ],
+   "description": "A batteries-included collection modelled on Go's standard library: big numbers and crypto, X.509, TLS, SSH, Kerberos, HTTP/1.1 and HTTP/2, LDAP, ASN.1, YAML and compression, versioned as one package. Supersedes the author's separate repositories.",
+   "repo": "https://github.com/SorinS/gslib",
+   "url": "https://github.com/SorinS/gslib",
+   "page": "https://safdafang.github.io/goose-index/p/sorins-gslib/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T17:46:23Z",
+   "created": "2026-10-31T10:47:22Z",
+   "stars": 3,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "gslib",
+    "source": "github.com/SorinS/gslib",
+    "ref": "main",
+    "pinned": false,
+    "line": "import gslib from \"github.com/SorinS/gslib@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "sorins-sshgoose",
+   "name": "sshgoose",
+   "kind": "package",
+   "category": "crypto-and-security",
+   "tags": [
+    "ssh",
+    "sftp",
+    "scp",
+    "sans-io"
+   ],
+   "description": "The SSH protocol after Go's x/crypto/ssh, with no I/O of its own, shipped with a client, server, scp, an SFTP server and a key generator built on it.",
+   "repo": "https://github.com/SorinS/sshgoose",
+   "url": "https://github.com/SorinS/sshgoose",
+   "page": "https://safdafang.github.io/goose-index/p/sorins-sshgoose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T13:49:10Z",
+   "created": "2026-10-27T09:08:22Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "ssh",
+    "source": "github.com/SorinS/sshgoose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import ssh from \"github.com/SorinS/sshgoose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "sorins-tlsgoose",
+   "name": "tlsgoose",
+   "kind": "package",
+   "category": "crypto-and-security",
+   "tags": [
+    "tls",
+    "tls1.3",
+    "tls1.2",
+    "sans-io",
+    "ech"
+   ],
+   "description": "TLS 1.3 and 1.2 clients and servers with no I/O of their own: the caller feeds received bytes and sends what comes back; it builds on the same author's bignum, x509 and asn1 packages checked out beside it.",
+   "repo": "https://github.com/SorinS/tlsgoose",
+   "url": "https://github.com/SorinS/tlsgoose",
+   "page": "https://safdafang.github.io/goose-index/p/sorins-tlsgoose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T06:24:18Z",
+   "created": "2026-10-26T19:25:07Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "tls",
+    "source": "github.com/SorinS/tlsgoose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import tls from \"github.com/SorinS/tlsgoose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "sorins-x509goose",
+   "name": "x509goose",
+   "kind": "package",
+   "category": "crypto-and-security",
+   "tags": [
+    "x509",
+    "certificates",
+    "pki",
+    "crl"
+   ],
+   "description": "X.509 certificate parsing and chain verification for TLS: names and SANs, host matching, name constraints, policies and CRLs, built on the author's ASN.1 and bignum packages.",
+   "repo": "https://github.com/SorinS/x509goose",
+   "url": "https://github.com/SorinS/x509goose",
+   "page": "https://safdafang.github.io/goose-index/p/sorins-x509goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T06:13:36Z",
+   "created": "2026-10-26T19:26:44Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "x509",
+    "source": "github.com/SorinS/x509goose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import x509 from \"github.com/SorinS/x509goose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "kaitk-goose-tls",
+   "name": "goose-tls",
+   "kind": "binding",
+   "category": "crypto-and-security",
+   "tags": [
+    "tls",
+    "openssl",
+    "ktls",
+    "tls13"
+   ],
+   "description": "TLS on OpenSSL 3: a TLS 1.3 server whose protocol layer is Goose (with OpenSSL's libcrypto for primitives) and OpenSSL's own client, both byte-in, byte-out with kTLS support.",
+   "repo": "https://github.com/kaitk/goose-tls",
+   "url": "https://github.com/kaitk/goose-tls",
+   "page": "https://safdafang.github.io/goose-index/p/kaitk-goose-tls/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.0.6",
+   "tag_count": 6,
+   "default_branch": "main",
+   "last_commit": "2026-10-28T09:25:43Z",
+   "created": "2026-10-19T13:08:23Z",
+   "stars": 1,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": true,
+    "system_libs": {
+     "linux": [
+      "libssl-dev"
+     ],
+     "macos": [
+      "openssl@3"
+     ],
+     "windows": [
+      "openssl"
+     ]
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "tls",
+    "source": "github.com/kaitk/goose-tls",
+    "ref": "v0.0.6",
+    "pinned": true,
+    "line": "import tls from \"github.com/kaitk/goose-tls@v0.0.6\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "kaitk-goose-postgres",
+   "name": "goose-postgres",
+   "kind": "package",
+   "category": "databases",
+   "tags": [
+    "postgres",
+    "sql",
+    "wire-protocol",
+    "scram",
+    "pipelining",
+    "sans-io"
+   ],
+   "description": "A PostgreSQL client that speaks protocol 3.0 as bytes in and bytes out, leaving sockets to the caller's event loop; it handles SCRAM login, pipelined queries and result decoding, and pairs with goose-http's loop.",
+   "repo": "https://github.com/kaitk/goose-postgres",
+   "url": "https://github.com/kaitk/goose-postgres",
+   "page": "https://safdafang.github.io/goose-index/p/kaitk-goose-postgres/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.0.10",
+   "tag_count": 10,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T16:03:13Z",
+   "created": "2026-10-19T16:57:28Z",
+   "stars": 2,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "pg",
+    "source": "github.com/kaitk/goose-postgres",
+    "ref": "v0.0.10",
+    "pinned": true,
+    "line": "import pg from \"github.com/kaitk/goose-postgres@v0.0.10\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "kaitk-goose-sqlite",
+   "name": "goose-sqlite",
+   "kind": "binding",
+   "category": "databases",
+   "tags": [
+    "sqlite",
+    "sql",
+    "amalgamation"
+   ],
+   "description": "SQLite with the amalgamation built in, so no system SQLite is needed. Errors surface through Goose's return-from, and the compiler checks every call runs inside a transaction or run block.",
+   "repo": "https://github.com/kaitk/goose-sqlite",
+   "url": "https://github.com/kaitk/goose-sqlite",
+   "page": "https://safdafang.github.io/goose-index/p/kaitk-goose-sqlite/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.0.3",
+   "tag_count": 3,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T08:13:55Z",
+   "created": "2026-10-19T12:48:15Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "sqlite",
+    "source": "github.com/kaitk/goose-sqlite",
+    "ref": "v0.0.3",
+    "pinned": true,
+    "line": "import sqlite from \"github.com/kaitk/goose-sqlite@v0.0.3\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "shetautnetjer-goose-sqlite",
+   "name": "goose-sqlite",
+   "kind": "binding",
+   "category": "databases",
+   "tags": [
+    "sqlite",
+    "sql",
+    "amalgamation"
+   ],
+   "description": "A second SQLite binding with the amalgamation vendored in, written for and used by the Swan code-map tool, with a small self-contained test script.",
+   "repo": "https://github.com/shetautnetjer/goose-sqlite",
+   "url": "https://github.com/shetautnetjer/goose-sqlite",
+   "page": "https://safdafang.github.io/goose-index/p/shetautnetjer-goose-sqlite/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.2",
+   "tag_count": 3,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T05:34:01Z",
+   "created": "2026-10-26T09:42:27Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "sqlite",
+    "source": "github.com/shetautnetjer/goose-sqlite",
+    "ref": "v0.1.2",
+    "pinned": true,
+    "line": "import sqlite from \"github.com/shetautnetjer/goose-sqlite@v0.1.2\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "kaitk-goose-compress",
+   "name": "goose-compress",
+   "kind": "package",
+   "category": "compression-and-archives",
+   "tags": [
+    "gzip",
+    "zlib",
+    "deflate",
+    "zstd",
+    "encoder",
+    "streaming"
+   ],
+   "description": "Compression encoders for gzip, zlib, raw DEFLATE and zstd, mostly Goose with a few C hot loops, including a flushing streaming mode; goose-http uses it for responses.",
+   "repo": "https://github.com/kaitk/goose-compress",
+   "url": "https://github.com/kaitk/goose-compress",
+   "page": "https://safdafang.github.io/goose-index/p/kaitk-goose-compress/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.4",
+   "tag_count": 5,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T08:13:44Z",
+   "created": "2026-10-12T15:36:55Z",
+   "stars": 1,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "compress",
+    "source": "github.com/kaitk/goose-compress",
+    "ref": "v0.1.4",
+    "pinned": true,
+    "line": "import compress from \"github.com/kaitk/goose-compress@v0.1.4\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "macho0x-goose-deflate",
+   "name": "goose-deflate",
+   "kind": "package",
+   "category": "compression-and-archives",
+   "tags": [
+    "deflate",
+    "zlib",
+    "gzip",
+    "inflate"
+   ],
+   "description": "DEFLATE decoding of all block types plus a simple encoder (fixed Huffman or stored blocks), with zlib and gzip framing.",
+   "repo": "https://github.com/Macho0x/goose-deflate",
+   "url": "https://github.com/Macho0x/goose-deflate",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-deflate/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2.1",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:10:49Z",
+   "created": "2026-11-01T06:36:04Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "deflate",
+    "source": "github.com/Macho0x/goose-deflate",
+    "ref": "v0.2.1",
+    "pinned": true,
+    "line": "import deflate from \"github.com/Macho0x/goose-deflate@v0.2.1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "clintecker-goose-inflate",
+   "name": "goose-inflate",
+   "kind": "package",
+   "category": "compression-and-archives",
+   "tags": [
+    "deflate",
+    "gzip",
+    "crc32",
+    "streaming",
+    "pure-goose"
+   ],
+   "description": "A streaming DEFLATE and gzip decoder in pure Goose that you feed compressed chunks of any size, with caller-owned fixed-size state and CRC-32.",
+   "repo": "https://github.com/clintecker/goose-inflate",
+   "url": "https://github.com/clintecker/goose-inflate",
+   "page": "https://safdafang.github.io/goose-index/p/clintecker-goose-inflate/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v3",
+   "tag_count": 3,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T20:07:46Z",
+   "created": "2026-10-29T22:58:32Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "inflate",
+    "source": "github.com/clintecker/goose-inflate",
+    "ref": "v3",
+    "pinned": true,
+    "line": "import inflate from \"github.com/clintecker/goose-inflate@v3\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "clintecker-goose-tar",
+   "name": "goose-tar",
+   "kind": "package",
+   "category": "compression-and-archives",
+   "tags": [
+    "tar",
+    "ustar",
+    "pax",
+    "streaming"
+   ],
+   "description": "A push-style tar reader for ustar, GNU and PAX archives that takes input in arbitrary chunks and reports headers and data through a callback; decompression is left to you.",
+   "repo": "https://github.com/clintecker/goose-tar",
+   "url": "https://github.com/clintecker/goose-tar",
+   "page": "https://safdafang.github.io/goose-index/p/clintecker-goose-tar/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v1",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T21:17:27Z",
+   "created": "2026-10-30T21:12:38Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "tar",
+    "source": "github.com/clintecker/goose-tar",
+    "ref": "v1",
+    "pinned": true,
+    "line": "import tar from \"github.com/clintecker/goose-tar@v1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "clintecker-goose-zip",
+   "name": "goose-zip",
+   "kind": "package",
+   "category": "compression-and-archives",
+   "tags": [
+    "zip",
+    "archives",
+    "zero-copy"
+   ],
+   "description": "Walks a ZIP file held in memory and hands back entry names and payloads as slices into it; pair it with a DEFLATE decoder for compressed entries.",
+   "repo": "https://github.com/clintecker/goose-zip",
+   "url": "https://github.com/clintecker/goose-zip",
+   "page": "https://safdafang.github.io/goose-index/p/clintecker-goose-zip/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v1",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T23:10:00Z",
+   "created": "2026-10-30T23:06:59Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "zip",
+    "source": "github.com/clintecker/goose-zip",
+    "ref": "v1",
+    "pinned": true,
+    "line": "import zip from \"github.com/clintecker/goose-zip@v1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "ruslano69-lz78-goose",
+   "name": "lz78-goose",
+   "kind": "package",
+   "category": "compression-and-archives",
+   "tags": [
+    "lz78",
+    "bwt",
+    "archiver",
+    "learning-project"
+   ],
+   "description": "A small LZ78 compressor with a documented format, a Python cross-check and a Windows archiver CLI; the author presents it as a learning project about Goose's memory model.",
+   "repo": "https://github.com/ruslano69/lz78-goose",
+   "url": "https://github.com/ruslano69/lz78-goose",
+   "page": "https://safdafang.github.io/goose-index/p/ruslano69-lz78-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T10:04:11Z",
+   "created": "2026-10-23T06:21:39Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "windows",
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "lz78",
+    "source": "github.com/ruslano69/lz78-goose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import lz78 from \"github.com/ruslano69/lz78-goose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "bhare1985-goose-libdeflate",
+   "name": "goose-libdeflate",
+   "kind": "binding",
+   "category": "compression-and-archives",
+   "tags": [
+    "deflate",
+    "zlib",
+    "gzip",
+    "crc32",
+    "adler32"
+   ],
+   "description": "libdeflate compiled into the package: fast whole-buffer zlib, gzip and raw DEFLATE in both directions, plus CRC-32 and Adler-32. Tags track the libdeflate version.",
+   "repo": "https://github.com/BHare1985/goose-libdeflate",
+   "url": "https://github.com/BHare1985/goose-libdeflate",
+   "page": "https://safdafang.github.io/goose-index/p/bhare1985-goose-libdeflate/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v1.26",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-31T17:03:49Z",
+   "created": "2026-10-31T16:45:40Z",
+   "stars": 0,
+   "license": "other",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "deflate",
+    "source": "github.com/BHare1985/goose-libdeflate",
+    "ref": "v1.26",
+    "pinned": true,
+    "line": "import deflate from \"github.com/BHare1985/goose-libdeflate@v1.26\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "sorins-asn1goose",
+   "name": "asn1goose",
+   "kind": "package",
+   "category": "encoding-and-serialization",
+   "tags": [
+    "asn1",
+    "der",
+    "pem",
+    "x509"
+   ],
+   "description": "A strict, zero-copy ASN.1 DER reader and writer with typed decoders and PEM support; the base of the same author's X.509 and TLS packages.",
+   "repo": "https://github.com/SorinS/asn1goose",
+   "url": "https://github.com/SorinS/asn1goose",
+   "page": "https://safdafang.github.io/goose-index/p/sorins-asn1goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T18:18:45Z",
+   "created": "2026-10-26T19:20:01Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "asn1",
+    "source": "github.com/SorinS/asn1goose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import asn1 from \"github.com/SorinS/asn1goose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "clintecker-goose-layout",
+   "name": "goose-layout",
+   "kind": "package",
+   "category": "encoding-and-serialization",
+   "tags": [
+    "binary",
+    "endianness",
+    "headers",
+    "structs"
+   ],
+   "description": "Reads and writes fixed-layout binary headers straight into Goose structs field by field, big- or little-endian, all-or-nothing.",
+   "repo": "https://github.com/clintecker/goose-layout",
+   "url": "https://github.com/clintecker/goose-layout",
+   "page": "https://safdafang.github.io/goose-index/p/clintecker-goose-layout/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v1",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T23:23:59Z",
+   "created": "2026-11-01T23:23:31Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "layout",
+    "source": "github.com/clintecker/goose-layout",
+    "ref": "v1",
+    "pinned": true,
+    "line": "import layout from \"github.com/clintecker/goose-layout@v1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "macho0x-goose-msgpack",
+   "name": "goose-msgpack",
+   "kind": "package",
+   "category": "encoding-and-serialization",
+   "tags": [
+    "msgpack",
+    "serialization",
+    "binary"
+   ],
+   "description": "MessagePack reading and writing that picks the shortest integer forms and keeps map pairs in insertion order.",
+   "repo": "https://github.com/Macho0x/goose-msgpack",
+   "url": "https://github.com/Macho0x/goose-msgpack",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-msgpack/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2.1",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:10:49Z",
+   "created": "2026-11-01T06:36:54Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "msgpack",
+    "source": "github.com/Macho0x/goose-msgpack",
+    "ref": "v0.2.1",
+    "pinned": true,
+    "line": "import msgpack from \"github.com/Macho0x/goose-msgpack@v0.2.1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "macho0x-goose-toml",
+   "name": "goose-toml",
+   "kind": "package",
+   "category": "encoding-and-serialization",
+   "tags": [
+    "toml",
+    "config",
+    "parser"
+   ],
+   "description": "A TOML 1.0 reader that fills a caller-owned node tree and reports a bad document as an error message.",
+   "repo": "https://github.com/Macho0x/goose-toml",
+   "url": "https://github.com/Macho0x/goose-toml",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-toml/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:10:49Z",
+   "created": "2026-11-01T15:11:56Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "toml",
+    "source": "github.com/Macho0x/goose-toml",
+    "ref": "v0.2",
+    "pinned": true,
+    "line": "import toml from \"github.com/Macho0x/goose-toml@v0.2\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "macho0x-goose-uuid",
+   "name": "goose-uuid",
+   "kind": "package",
+   "category": "encoding-and-serialization",
+   "tags": [
+    "uuid",
+    "rfc9562",
+    "uuidv7"
+   ],
+   "description": "Generates, parses and formats RFC 9562 UUIDs of versions 1 through 8, accepting the common text forms including URNs.",
+   "repo": "https://github.com/Macho0x/goose-uuid",
+   "url": "https://github.com/Macho0x/goose-uuid",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-uuid/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.4",
+   "tag_count": 3,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:10:49Z",
+   "created": "2026-11-01T05:16:14Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "uuid",
+    "source": "github.com/Macho0x/goose-uuid",
+    "ref": "v0.4",
+    "pinned": true,
+    "line": "import uuid from \"github.com/Macho0x/goose-uuid@v0.4\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "mas-bandwidth-serialize-goose",
+   "name": "serialize.goose",
+   "kind": "package",
+   "category": "encoding-and-serialization",
+   "tags": [
+    "bitpacking",
+    "networking",
+    "games",
+    "wire-format"
+   ],
+   "description": "A bit-packing serializer for game and network messages that produces exactly the same bytes as the C and C++ serialize libraries, covering every field type they support.",
+   "repo": "https://github.com/mas-bandwidth/serialize.goose",
+   "url": "https://github.com/mas-bandwidth/serialize.goose",
+   "page": "https://safdafang.github.io/goose-index/p/mas-bandwidth-serialize-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v2.1.2",
+   "tag_count": 5,
+   "default_branch": "main",
+   "last_commit": "2026-10-29T16:40:53Z",
+   "created": "2026-10-19T17:26:13Z",
+   "stars": 0,
+   "license": "BSD-3-Clause",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "serialize",
+    "source": "github.com/mas-bandwidth/serialize.goose",
+    "ref": "v2.1.2",
+    "pinned": true,
+    "line": null,
+    "modules": [],
+    "subdir": "src"
+   }
+  },
+  {
+   "id": "sorins-yamlgoose",
+   "name": "yamlgoose",
+   "kind": "package",
+   "category": "encoding-and-serialization",
+   "tags": [
+    "yaml",
+    "parser",
+    "go-yaml"
+   ],
+   "description": "A YAML 1.2 reader and writer ported from Go's yaml.v3 (and its libyaml core), accepting and rejecting exactly what yaml.v3 does; the API mirrors the standard json module.",
+   "repo": "https://github.com/SorinS/yamlgoose",
+   "url": "https://github.com/SorinS/yamlgoose",
+   "page": "https://safdafang.github.io/goose-index/p/sorins-yamlgoose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T22:31:41Z",
+   "created": "2026-10-28T10:06:45Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "yaml",
+    "source": "github.com/SorinS/yamlgoose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import yaml from \"github.com/SorinS/yamlgoose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "mas-bandwidth-schema",
+   "name": "schema",
+   "kind": "tool",
+   "category": "encoding-and-serialization",
+   "tags": [
+    "codegen",
+    "schema",
+    "games",
+    "networking",
+    "multi-language"
+   ],
+   "description": "A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests.",
+   "repo": "https://github.com/mas-bandwidth/schema",
+   "url": "https://github.com/mas-bandwidth/schema",
+   "page": "https://safdafang.github.io/goose-index/p/mas-bandwidth-schema/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "main-fab5723e3e62",
+   "tag_count": 328,
+   "default_branch": "main",
+   "last_commit": "2026-11-03T09:56:13Z",
+   "created": "2026-08-05T04:40:51Z",
+   "stars": 48,
+   "license": "other",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "bearing-research-greylag",
+   "name": "greylag",
+   "kind": "app",
+   "category": "encoding-and-serialization",
+   "tags": [
+    "xml",
+    "parser",
+    "c-api",
+    "libxml2"
+   ],
+   "description": "An early XML parser written in Goose and exported to C through integer handles, compared against libxml2 and expat.",
+   "repo": "https://github.com/bearing-research/greylag",
+   "url": "https://github.com/bearing-research/greylag",
+   "page": "https://safdafang.github.io/goose-index/p/bearing-research-greylag/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-11-03T08:11:21Z",
+   "created": "2026-10-27T07:02:28Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "mg3994-ideatoapp",
+   "name": "ideatoapp",
+   "kind": "app",
+   "category": "encoding-and-serialization",
+   "tags": [
+    "json-ld",
+    "schema-org",
+    "wasm"
+   ],
+   "description": "An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript.",
+   "repo": "https://github.com/mg3994/ideatoapp",
+   "url": "https://github.com/mg3994/ideatoapp",
+   "page": "https://safdafang.github.io/goose-index/p/mg3994-ideatoapp/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "goose-wasm-schema-org-14436079612921043283",
+   "last_commit": "2026-11-02T19:55:47Z",
+   "created": "2026-11-02T14:11:23Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "macho0x-goose-logger",
+   "name": "goose-logger",
+   "kind": "package",
+   "category": "text-and-templates",
+   "tags": [
+    "logging",
+    "structured-logs",
+    "masking"
+   ],
+   "description": "Writes one structured line per event with a UTC timestamp, level, call site and key=value fields, quoting where needed and masking secrets.",
+   "repo": "https://github.com/Macho0x/goose-logger",
+   "url": "https://github.com/Macho0x/goose-logger",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-logger/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.3.3",
+   "tag_count": 5,
+   "default_branch": "main",
+   "last_commit": "2026-11-03T05:36:05Z",
+   "created": "2026-11-01T13:01:23Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "logger",
+    "source": "github.com/Macho0x/goose-logger",
+    "ref": "v0.3.3",
+    "pinned": true,
+    "line": "import logger from \"github.com/Macho0x/goose-logger@v0.3.3\";",
+    "modules": [
+     "logger.emit"
+    ],
+    "subdir": null
+   }
+  },
+  {
+   "id": "paulosuzart-gooseneck",
+   "name": "gooseneck",
+   "kind": "package",
+   "category": "text-and-templates",
+   "tags": [
+    "handlebars",
+    "templates",
+    "html",
+    "json"
+   ],
+   "description": "A Handlebars-compatible template engine in pure Goose: compile a template once, then render it from typed structs or JSON with output tested against handlebars.js.",
+   "repo": "https://github.com/paulosuzart/gooseneck",
+   "url": "https://github.com/paulosuzart/gooseneck",
+   "page": "https://safdafang.github.io/goose-index/p/paulosuzart-gooseneck/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T04:09:58Z",
+   "created": "2026-10-29T01:33:49Z",
+   "stars": 2,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "gooseneck",
+    "source": "github.com/paulosuzart/gooseneck",
+    "ref": "main",
+    "pinned": false,
+    "line": "import gooseneck from \"github.com/paulosuzart/gooseneck@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "sstadick-goostr",
+   "name": "goostr",
+   "kind": "package",
+   "category": "text-and-templates",
+   "tags": [
+    "strings",
+    "bytes",
+    "search",
+    "utf8",
+    "simd"
+   ],
+   "description": "Byte-string searching, splitting and transforming that works on arbitrary bytes, NUL and broken UTF-8 included, following Rust's bstr; uses goosimd for fast search.",
+   "repo": "https://github.com/sstadick/goostr",
+   "url": "https://github.com/sstadick/goostr",
+   "page": "https://safdafang.github.io/goose-index/p/sstadick-goostr/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2.1",
+   "tag_count": 3,
+   "default_branch": "main",
+   "last_commit": "2026-11-03T02:59:32Z",
+   "created": "2026-10-29T13:52:08Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "goostr",
+    "source": "github.com/sstadick/goostr",
+    "ref": "v0.2.1",
+    "pinned": true,
+    "line": "import goostr from \"github.com/sstadick/goostr@v0.2.1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "macho0x-goose-bigint",
+   "name": "goose-bigint",
+   "kind": "package",
+   "category": "math-and-science",
+   "tags": [
+    "bigint",
+    "arbitrary-precision",
+    "integers"
+   ],
+   "description": "Arbitrary-size signed integers stored as a sign and 32-bit limbs, with truncating and floor division and two's-complement bit operations matching common big-integer libraries.",
+   "repo": "https://github.com/Macho0x/goose-bigint",
+   "url": "https://github.com/Macho0x/goose-bigint",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-bigint/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:10:48Z",
+   "created": "2026-11-01T07:57:07Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "bigint",
+    "source": "github.com/Macho0x/goose-bigint",
+    "ref": "v0.2",
+    "pinned": true,
+    "line": "import bigint from \"github.com/Macho0x/goose-bigint@v0.2\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "macho0x-goose-decimal",
+   "name": "goose-decimal",
+   "kind": "package",
+   "category": "math-and-science",
+   "tags": [
+    "decimal",
+    "fixed-point",
+    "money"
+   ],
+   "description": "A 96-bit decimal with a scale of 0 to 28 in the layout rust_decimal uses, with parsing, formatting that keeps the scale, and normalization.",
+   "repo": "https://github.com/Macho0x/goose-decimal",
+   "url": "https://github.com/Macho0x/goose-decimal",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-decimal/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2.1",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:10:49Z",
+   "created": "2026-11-01T07:18:48Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "decimal",
+    "source": "github.com/Macho0x/goose-decimal",
+    "ref": "v0.2.1",
+    "pinned": true,
+    "line": "import decimal from \"github.com/Macho0x/goose-decimal@v0.2.1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "guillochon-goose-fft",
+   "name": "goose-fft",
+   "kind": "package",
+   "category": "math-and-science",
+   "tags": [
+    "fft",
+    "signal-processing",
+    "convolution",
+    "pure-goose"
+   ],
+   "description": "Pure-Goose FFTs for any input length, complex and real, in one and two dimensions, with convolution and NumPy-style frequency helpers.",
+   "repo": "https://github.com/guillochon/goose-fft",
+   "url": "https://github.com/guillochon/goose-fft",
+   "page": "https://safdafang.github.io/goose-index/p/guillochon-goose-fft/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T01:23:53Z",
+   "created": "2026-10-25T08:11:03Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "fft",
+    "source": "github.com/guillochon/goose-fft",
+    "ref": "v0.1.0",
+    "pinned": true,
+    "line": "import fft from \"github.com/guillochon/goose-fft@v0.1.0\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "guillochon-goose-linalg",
+   "name": "goose-linalg",
+   "kind": "package",
+   "category": "math-and-science",
+   "tags": [
+    "linear-algebra",
+    "lu",
+    "qr",
+    "svd",
+    "eigen",
+    "pure-goose"
+   ],
+   "description": "Dense real matrices in pure Goose: solving systems, determinants and the LU, Cholesky, QR, symmetric eigen and SVD factorizations, with optional multithreaded products.",
+   "repo": "https://github.com/guillochon/goose-linalg",
+   "url": "https://github.com/guillochon/goose-linalg",
+   "page": "https://safdafang.github.io/goose-index/p/guillochon-goose-linalg/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.3.3",
+   "tag_count": 9,
+   "default_branch": "main",
+   "last_commit": "2026-10-25T05:07:36Z",
+   "created": "2026-10-24T20:12:28Z",
+   "stars": 1,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "linalg",
+    "source": "github.com/guillochon/goose-linalg",
+    "ref": "v0.3.3",
+    "pinned": true,
+    "line": "import linalg from \"github.com/guillochon/goose-linalg@v0.3.3\";",
+    "modules": [
+     "linalg.parallel"
+    ],
+    "subdir": null
+   }
+  },
+  {
+   "id": "guillochon-goose-random",
+   "name": "goose-random",
+   "kind": "package",
+   "category": "math-and-science",
+   "tags": [
+    "random",
+    "prng",
+    "xoshiro",
+    "distributions",
+    "pure-goose"
+   ],
+   "description": "Seedable random generators and around thirty exact distribution samplers in pure Goose, with shuffling, sampling and independent streams for worker threads.",
+   "repo": "https://github.com/guillochon/goose-random",
+   "url": "https://github.com/guillochon/goose-random",
+   "page": "https://safdafang.github.io/goose-index/p/guillochon-goose-random/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-31T19:18:40Z",
+   "created": "2026-10-31T16:17:17Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "random",
+    "source": "github.com/guillochon/goose-random",
+    "ref": "v0.1.0",
+    "pinned": true,
+    "line": "import random from \"github.com/guillochon/goose-random@v0.1.0\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "elcharitas-goose-bio",
+   "name": "goose_bio",
+   "kind": "package",
+   "category": "math-and-science",
+   "tags": [
+    "bioinformatics",
+    "sequences",
+    "alignment",
+    "htslib",
+    "phylogenetics"
+   ],
+   "description": "A broad bioinformatics library in the spirit of Biopython: sequence handling, alignment, file formats, statistics and trees, with optional htslib, SQLite and libcurl adapters.",
+   "repo": "https://github.com/elcharitas/goose_bio",
+   "url": "https://github.com/elcharitas/goose_bio",
+   "page": "https://safdafang.github.io/goose-index/p/elcharitas-goose-bio/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T14:12:46Z",
+   "created": "2026-11-01T01:36:27Z",
+   "stars": 1,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [
+      "libhts-dev",
+      "zlib1g-dev",
+      "libsqlite3-dev",
+      "libcurl4-openssl-dev"
+     ],
+     "macos": [
+      "htslib",
+      "sqlite",
+      "curl"
+     ],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "bio",
+    "source": "github.com/elcharitas/goose_bio",
+    "ref": "main",
+    "pinned": false,
+    "line": "import bio from \"github.com/elcharitas/goose_bio@main\";",
+    "modules": [
+     "bio.hts"
+    ],
+    "subdir": null
+   }
+  },
+  {
+   "id": "nurysso-terence",
+   "name": "terence",
+   "kind": "package",
+   "category": "math-and-science",
+   "tags": [
+    "math",
+    "go-port",
+    "float",
+    "wip"
+   ],
+   "description": "An early, partly empty port of Go's math package (float decomposition, rounding, roots) written as a learning project; its README lists what works.",
+   "repo": "https://github.com/Nurysso/terence",
+   "url": "https://github.com/Nurysso/terence",
+   "page": "https://safdafang.github.io/goose-index/p/nurysso-terence/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T18:03:01Z",
+   "created": "2026-10-23T09:19:17Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "terence",
+    "source": "github.com/Nurysso/terence",
+    "ref": "main",
+    "pinned": false,
+    "line": "import terence from \"github.com/Nurysso/terence@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "tacf-fastnoiselite-goose",
+   "name": "fastnoiselite-goose",
+   "kind": "package",
+   "category": "graphics-and-games",
+   "tags": [
+    "noise",
+    "procedural",
+    "perlin",
+    "simplex",
+    "cellular"
+   ],
+   "description": "A full port of FastNoise Lite 1.1.1, covering every noise type, fractal mode and domain warp in 2D and 3D, checked value for value against the original.",
+   "repo": "https://github.com/tacf/fastnoiselite-goose",
+   "url": "https://github.com/tacf/fastnoiselite-goose",
+   "page": "https://safdafang.github.io/goose-index/p/tacf-fastnoiselite-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-26T13:31:58Z",
+   "created": "2026-10-26T13:32:55Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "fastnoise",
+    "source": "github.com/tacf/fastnoiselite-goose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import fastnoise from \"github.com/tacf/fastnoiselite-goose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "kaitk-goose-ngfx",
+   "name": "goose-ngfx",
+   "kind": "package",
+   "category": "graphics-and-games",
+   "tags": [
+    "graphics",
+    "gpu",
+    "metal",
+    "vulkan",
+    "slang",
+    "shaders"
+   ],
+   "description": "A GPU graphics package following Sebastian Aaltonen's NoGraphicsAPI design over Metal 4 and Vulkan 1.4: draws read a root struct by GPU address and shaders are written in Slang; window and input come from Goose gfx.",
+   "repo": "https://github.com/kaitk/goose-ngfx",
+   "url": "https://github.com/kaitk/goose-ngfx",
+   "page": "https://safdafang.github.io/goose-index/p/kaitk-goose-ngfx/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2.0",
+   "tag_count": 4,
+   "default_branch": "main",
+   "last_commit": "2026-10-14T12:45:19Z",
+   "created": "2026-10-10T14:01:09Z",
+   "stars": 1,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": true,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": [
+     "cmake",
+     "vulkan-sdk",
+     "slang"
+    ]
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "ngfx",
+    "source": "github.com/kaitk/goose-ngfx",
+    "ref": "v0.2.0",
+    "pinned": true,
+    "line": "import ngfx from \"github.com/kaitk/goose-ngfx@v0.2.0\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "binji-goose-gfx2d",
+   "name": "goose_gfx2d",
+   "kind": "package",
+   "category": "graphics-and-games",
+   "tags": [
+    "2d",
+    "vector",
+    "sdf-text",
+    "gradients",
+    "goose-gfx"
+   ],
+   "description": "Anti-aliased 2D vector drawing on top of goose_gfx: shapes and Bézier paths, gradient and image paints, transforms, clipping and resolution-independent SDF text.",
+   "repo": "https://github.com/binji/goose_gfx2d",
+   "url": "https://github.com/binji/goose_gfx2d",
+   "page": "https://safdafang.github.io/goose-index/p/binji-goose-gfx2d/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T06:15:16Z",
+   "created": "2026-10-15T20:03:38Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": true,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "gfx2d",
+    "source": "github.com/binji/goose_gfx2d",
+    "ref": "main",
+    "pinned": false,
+    "line": "import gfx2d from \"github.com/binji/goose_gfx2d@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "flakesonnix-goose-raylib",
+   "name": "goose-raylib",
+   "kind": "binding",
+   "category": "graphics-and-games",
+   "tags": [
+    "raylib",
+    "3d",
+    "nix",
+    "cmake"
+   ],
+   "description": "Builds raylib 6.2 from source with CMake and exposes a growing subset, focused on 3D cameras, meshes, models and render textures, through a C adapter. Nix flake included.",
+   "repo": "https://github.com/flakesonnix/goose-raylib",
+   "url": "https://github.com/flakesonnix/goose-raylib",
+   "page": "https://safdafang.github.io/goose-index/p/flakesonnix-goose-raylib/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-22T16:13:38Z",
+   "created": "2026-10-21T19:33:04Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": false,
+    "cmake": true,
+    "system_libs": {
+     "linux": [
+      "libx11-dev",
+      "libxrandr-dev",
+      "libxinerama-dev",
+      "libxcursor-dev",
+      "libxi-dev",
+      "libgl1-mesa-dev",
+      "libwayland-dev",
+      "libxkbcommon-dev"
+     ],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "raylib",
+    "source": "github.com/flakesonnix/goose-raylib",
+    "ref": "main",
+    "pinned": false,
+    "line": "import raylib from \"github.com/flakesonnix/goose-raylib@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "aardappel-goose-gfx",
+   "name": "goose_gfx",
+   "kind": "binding",
+   "category": "graphics-and-games",
+   "tags": [
+    "sdl3",
+    "gpu",
+    "audio",
+    "nuklear",
+    "blessed"
+   ],
+   "description": "The official graphics package: windows, input and SDL3 GPU pipelines in gfx, procedural sound in audio, and Nuklear immediate-mode widgets in ui. Prebuilt Goose releases include it.",
+   "repo": "https://github.com/aardappel/goose_gfx",
+   "url": "https://github.com/aardappel/goose_gfx",
+   "page": "https://safdafang.github.io/goose-index/p/aardappel-goose-gfx/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v1",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T01:10:58Z",
+   "created": "2026-10-11T04:29:32Z",
+   "stars": 10,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": true,
+    "system_libs": {
+     "linux": [
+      "libasound2-dev",
+      "libpulse-dev",
+      "libx11-dev",
+      "libxext-dev",
+      "libxrandr-dev",
+      "libxcursor-dev",
+      "libxfixes-dev",
+      "libxi-dev",
+      "libxss-dev",
+      "libxkbcommon-dev",
+      "libwayland-dev",
+      "libdecor-0-dev",
+      "libdrm-dev",
+      "libgbm-dev",
+      "libudev-dev",
+      "libdbus-1-dev",
+      "libpipewire-0.3-dev",
+      "libvulkan1",
+      "mesa-vulkan-drivers"
+     ],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "gfx",
+    "source": "github.com/aardappel/goose_gfx",
+    "ref": "v1",
+    "pinned": true,
+    "line": "import gfx from \"github.com/aardappel/goose_gfx@v1\";",
+    "modules": [
+     "audio",
+     "ui"
+    ],
+    "subdir": null
+   }
+  },
+  {
+   "id": "aardappel-goose-physics",
+   "name": "goose_physics",
+   "kind": "binding",
+   "category": "graphics-and-games",
+   "tags": [
+    "physics",
+    "box3d",
+    "rigid-body",
+    "blessed"
+   ],
+   "description": "The official physics package, a layer over Box3D for rigid bodies, joints, shape queries and a character controller, with recording and replay.",
+   "repo": "https://github.com/aardappel/goose_physics",
+   "url": "https://github.com/aardappel/goose_physics",
+   "page": "https://safdafang.github.io/goose-index/p/aardappel-goose-physics/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v1",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-11T04:36:56Z",
+   "created": "2026-10-11T04:30:55Z",
+   "stars": 6,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": true,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "physics",
+    "source": "github.com/aardappel/goose_physics",
+    "ref": "v1",
+    "pinned": true,
+    "line": "import physics from \"github.com/aardappel/goose_physics@v1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "lamweilun-raygoose",
+   "name": "raygoose",
+   "kind": "binding",
+   "category": "graphics-and-games",
+   "tags": [
+    "raylib",
+    "generated",
+    "cmake",
+    "games"
+   ],
+   "description": "raylib bindings generated from raylib's headers, with raylib built from a pinned submodule by CMake so its platform link settings come along; the binding raylib's own list points to.",
+   "repo": "https://github.com/lamweilun/raygoose",
+   "url": "https://github.com/lamweilun/raygoose",
+   "page": "https://safdafang.github.io/goose-index/p/lamweilun-raygoose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T11:17:11Z",
+   "created": "2026-10-31T08:14:16Z",
+   "stars": 0,
+   "license": "other",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": true,
+    "system_libs": {
+     "linux": [
+      "libx11-dev",
+      "libxrandr-dev",
+      "libxinerama-dev",
+      "libxcursor-dev",
+      "libxi-dev",
+      "libgl1-mesa-dev"
+     ],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "raylib",
+    "source": "github.com/lamweilun/raygoose",
+    "ref": "v0.1.0",
+    "pinned": true,
+    "line": "import raylib from \"github.com/lamweilun/raygoose@v0.1.0\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "alexxzz-raylib-goose",
+   "name": "raylib-goose",
+   "kind": "binding",
+   "category": "graphics-and-games",
+   "tags": [
+    "raylib",
+    "games",
+    "2d",
+    "3d"
+   ],
+   "description": "Bindings to the whole raylib 6.2 API under the rl namespace, loaded from a raylib shared library at run time rather than compiled in.",
+   "repo": "https://github.com/Alexxzz/raylib-goose",
+   "url": "https://github.com/Alexxzz/raylib-goose",
+   "page": "https://safdafang.github.io/goose-index/p/alexxzz-raylib-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-26T15:08:18Z",
+   "created": "2026-10-26T11:33:49Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [
+      "raylib"
+     ],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "rl",
+    "source": "github.com/Alexxzz/raylib-goose",
+    "ref": "main",
+    "pinned": false,
+    "line": "import rl from \"github.com/Alexxzz/raylib-goose@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "lenstr-project-frontier",
+   "name": "project-frontier",
+   "kind": "app",
+   "category": "graphics-and-games",
+   "tags": [
+    "game",
+    "3d",
+    "automation",
+    "colony"
+   ],
+   "description": "A third-person 3D game about mining an alien world and automating a colony with rails and robots, scaled to thousands of entities; native builds for macOS and Linux.",
+   "repo": "https://github.com/lenstr/project-frontier",
+   "url": "https://github.com/lenstr/project-frontier",
+   "page": "https://safdafang.github.io/goose-index/p/lenstr-project-frontier/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-28T08:01:19Z",
+   "created": "2026-10-26T11:32:03Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "macos",
+    "linux"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "yujieteo-toybox",
+   "name": "toybox",
+   "kind": "app",
+   "category": "graphics-and-games",
+   "tags": [
+    "3d",
+    "wasm",
+    "agents",
+    "video",
+    "narration"
+   ],
+   "description": "A browser 3D sandbox where an agent builds animated explainer scenes with narration, exported as MP4 or a reloadable scene file; the engine is Goose compiled to WebAssembly.",
+   "repo": "https://github.com/yujieteo/toybox",
+   "url": "https://github.com/yujieteo/toybox",
+   "page": "https://safdafang.github.io/goose-index/p/yujieteo-toybox/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T05:37:15Z",
+   "created": "2026-10-28T00:20:46Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "zhengsy-goose-tui",
+   "name": "goose-tui",
+   "kind": "package",
+   "category": "gui-and-terminal",
+   "tags": [
+    "tui",
+    "terminal",
+    "immediate-mode",
+    "widgets"
+   ],
+   "description": "An immediate-mode terminal UI library: widgets are function calls each frame over a cell grid, and only the changed cells are redrawn. POSIX terminals only.",
+   "repo": "https://github.com/ZHENGSY/goose-tui",
+   "url": "https://github.com/ZHENGSY/goose-tui",
+   "page": "https://safdafang.github.io/goose-index/p/zhengsy-goose-tui/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-28T04:04:35Z",
+   "created": "2026-10-28T03:56:31Z",
+   "stars": 1,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "tui",
+    "source": "github.com/ZHENGSY/goose-tui",
+    "ref": "v0.1.0",
+    "pinned": true,
+    "line": "import tui from \"github.com/ZHENGSY/goose-tui@v0.1.0\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "akeit0-mygoose",
+   "name": "mygoose",
+   "kind": "package",
+   "category": "gui-and-terminal",
+   "tags": [
+    "gui",
+    "desktop",
+    "widgets",
+    "direct2d",
+    "cairo",
+    "appkit"
+   ],
+   "description": "A retained desktop UI toolkit whose layout, controls, focus handling and text editing are all Goose, drawn by a thin native layer: Direct2D on Windows, Cairo and Pango on Linux, AppKit on macOS.",
+   "repo": "https://github.com/akeit0/mygoose",
+   "url": "https://github.com/akeit0/mygoose",
+   "page": "https://safdafang.github.io/goose-index/p/akeit0-mygoose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-24T15:20:34Z",
+   "created": "2026-10-21T11:37:56Z",
+   "stars": 3,
+   "license": "other",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": true,
+    "system_libs": {
+     "linux": [
+      "libx11-dev",
+      "libcairo2-dev",
+      "libpango1.0-dev"
+     ],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "mygoose",
+    "source": "github.com/akeit0/mygoose",
+    "ref": "v0.1.0",
+    "pinned": true,
+    "line": "import mygoose from \"github.com/akeit0/mygoose@v0.1.0\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "tobiolo-goose-term",
+   "name": "goose-term",
+   "kind": "app",
+   "category": "gui-and-terminal",
+   "tags": [
+    "terminal",
+    "vt-parser",
+    "scrollback",
+    "benchmarks"
+   ],
+   "description": "A headless terminal core (VT parser, screen grids, scrollback) that follows alacritty's screen rules and is timed against the terminal cores of alacritty and Neovim, plus a small terminal window built on it.",
+   "repo": "https://github.com/tobiolo/goose-term",
+   "url": "https://github.com/tobiolo/goose-term",
+   "page": "https://safdafang.github.io/goose-index/p/tobiolo-goose-term/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-20T19:09:43Z",
+   "created": "2026-10-20T18:19:19Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "carabistouflette-goose-argparse",
+   "name": "goose-argparse",
+   "kind": "package",
+   "category": "os-and-system",
+   "tags": [
+    "cli",
+    "arguments",
+    "flags",
+    "parser"
+   ],
+   "description": "A dependency-free command-line parser handling long and short options, grouped flags, attached values, positionals and the -- separator, with predictable errors.",
+   "repo": "https://github.com/carabistouflette/goose-argparse",
+   "url": "https://github.com/carabistouflette/goose-argparse",
+   "page": "https://safdafang.github.io/goose-index/p/carabistouflette-goose-argparse/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T15:13:26Z",
+   "created": "2026-11-02T14:56:19Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "argparse",
+    "source": "github.com/carabistouflette/goose-argparse",
+    "ref": "main",
+    "pinned": false,
+    "line": "import argparse from \"github.com/carabistouflette/goose-argparse@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "clintecker-goose-date",
+   "name": "goose-date",
+   "kind": "package",
+   "category": "os-and-system",
+   "tags": [
+    "date",
+    "time",
+    "rfc3339",
+    "calendar"
+   ],
+   "description": "Pure-Goose calendar math on epoch seconds: converts to and from civil dates and formats and parses RFC 3339 timestamps with offsets, without allocating.",
+   "repo": "https://github.com/clintecker/goose-date",
+   "url": "https://github.com/clintecker/goose-date",
+   "page": "https://safdafang.github.io/goose-index/p/clintecker-goose-date/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v1",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-29T21:56:53Z",
+   "created": "2026-10-29T21:38:44Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "date",
+    "source": "github.com/clintecker/goose-date",
+    "ref": "v1",
+    "pinned": true,
+    "line": "import date from \"github.com/clintecker/goose-date@v1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "clintecker-goose-file",
+   "name": "goose-file",
+   "kind": "package",
+   "category": "os-and-system",
+   "tags": [
+    "files",
+    "streaming",
+    "stdin",
+    "posix",
+    "lstat"
+   ],
+   "description": "Chunked reading of files and stdin, for inputs too big to load whole, plus lstat, permission bits and links through a small C layer. POSIX paths only.",
+   "repo": "https://github.com/clintecker/goose-file",
+   "url": "https://github.com/clintecker/goose-file",
+   "page": "https://safdafang.github.io/goose-index/p/clintecker-goose-file/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v1",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-29T22:19:37Z",
+   "created": "2026-10-29T22:17:28Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "file",
+    "source": "github.com/clintecker/goose-file",
+    "ref": "v1",
+    "pinned": true,
+    "line": "import file from \"github.com/clintecker/goose-file@v1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "sstadick-goosio",
+   "name": "goosio",
+   "kind": "package",
+   "category": "os-and-system",
+   "tags": [
+    "files",
+    "io",
+    "buffered",
+    "lines"
+   ],
+   "description": "Synchronous file handles with buffered readers and writers and line reads that borrow from the buffer, tested with several C compilers on each OS.",
+   "repo": "https://github.com/sstadick/goosio",
+   "url": "https://github.com/sstadick/goosio",
+   "page": "https://safdafang.github.io/goose-index/p/sstadick-goosio/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T20:18:36Z",
+   "created": "2026-11-02T20:15:16Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "goosio",
+    "source": "github.com/sstadick/goosio",
+    "ref": "v0.1.0",
+    "pinned": true,
+    "line": "import goosio from \"github.com/sstadick/goosio@v0.1.0\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "sstadick-goosopt",
+   "name": "goosopt",
+   "kind": "package",
+   "category": "os-and-system",
+   "tags": [
+    "cli",
+    "arguments",
+    "flags",
+    "help"
+   ],
+   "description": "Describes command-line options as fields of a struct and parses flags, values and positionals into it, generating help text from the field descriptions.",
+   "repo": "https://github.com/sstadick/goosopt",
+   "url": "https://github.com/sstadick/goosopt",
+   "page": "https://safdafang.github.io/goose-index/p/sstadick-goosopt/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T13:04:19Z",
+   "created": "2026-10-31T11:05:14Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "goosopt",
+    "source": "github.com/sstadick/goosopt",
+    "ref": "main",
+    "pinned": false,
+    "line": "import goosopt from \"github.com/sstadick/goosopt@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "kmehltretter82-gdtc",
+   "name": "gdtc",
+   "kind": "app",
+   "category": "os-and-system",
+   "tags": [
+    "device-tree",
+    "dtc",
+    "linux",
+    "compiler"
+   ],
+   "description": "An experimental memory-safe rewrite of dtc, the tool that compiles device tree source for Linux; it handles a growing subset and emits version 17 blobs, checked against the original.",
+   "repo": "https://github.com/kmehltretter82/gdtc",
+   "url": "https://github.com/kmehltretter82/gdtc",
+   "page": "https://safdafang.github.io/goose-index/p/kmehltretter82-gdtc/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-25T23:44:07Z",
+   "created": "2026-10-25T23:32:11Z",
+   "stars": 0,
+   "license": "GPL-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "kmehltretter82-gobjtool",
+   "name": "gobjtool",
+   "kind": "app",
+   "category": "os-and-system",
+   "tags": [
+    "elf",
+    "x86-64",
+    "objtool",
+    "linux-kernel",
+    "disassembler"
+   ],
+   "description": "An experimental rewrite of the Linux kernel's objtool for x86-64: it parses ELF64 relocatable objects and decodes their instructions without libelf, as a first step toward stack validation and ORC data.",
+   "repo": "https://github.com/kmehltretter82/gobjtool",
+   "url": "https://github.com/kmehltretter82/gobjtool",
+   "page": "https://safdafang.github.io/goose-index/p/kmehltretter82-gobjtool/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-25T23:44:07Z",
+   "created": "2026-10-25T23:32:51Z",
+   "stars": 0,
+   "license": "GPL-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "sstadick-goosimd",
+   "name": "goosimd",
+   "kind": "package",
+   "category": "language-extensions",
+   "tags": [
+    "simd",
+    "avx2",
+    "bytes",
+    "masks"
+   ],
+   "description": "Compares 16 or 32 bytes at once and turns the results into position masks; the author marks it an experimental placeholder whose API will change.",
+   "repo": "https://github.com/sstadick/goosimd",
+   "url": "https://github.com/sstadick/goosimd",
+   "page": "https://safdafang.github.io/goose-index/p/sstadick-goosimd/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.1",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T23:26:34Z",
+   "created": "2026-10-29T20:19:43Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "goosimd",
+    "source": "github.com/sstadick/goosimd",
+    "ref": "v0.1.1",
+    "pinned": true,
+    "line": "import goosimd from \"github.com/sstadick/goosimd@v0.1.1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "okay-effects-okay-goose",
+   "name": "okay-goose",
+   "kind": "tool",
+   "category": "language-extensions",
+   "tags": [
+    "effects",
+    "algebraic-effects",
+    "handlers",
+    "compiler"
+   ],
+   "description": "Brings the okay language's typed algebraic effects to Goose: effects in function types, handlers and resumable functions lowered to flat values, with the front end itself written in Goose.",
+   "repo": "https://github.com/okay-effects/okay-goose",
+   "url": "https://github.com/okay-effects/okay-goose",
+   "page": "https://safdafang.github.io/goose-index/p/okay-effects-okay-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-10-28T11:19:41Z",
+   "created": "2026-10-28T08:19:38Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "swoorup-ferrous-goose",
+   "name": "ferrous-goose",
+   "kind": "tool",
+   "category": "interop",
+   "tags": [
+    "rust",
+    "ffi",
+    "cargo",
+    "codegen"
+   ],
+   "description": "A cargo subcommand that turns attributed Rust crate APIs into Goose modules, and lets Rust embed Goose, with no hand-written C glue or unsafe code.",
+   "repo": "https://github.com/Swoorup/ferrous-goose",
+   "url": "https://github.com/Swoorup/ferrous-goose",
+   "page": "https://safdafang.github.io/goose-index/p/swoorup-ferrous-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-26T15:48:22Z",
+   "created": "2026-10-25T14:54:13Z",
+   "stars": 6,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": [
+     "cargo"
+    ]
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "scottc-goose-roc",
+   "name": "goose-roc",
+   "kind": "tool",
+   "category": "interop",
+   "tags": [
+    "roc",
+    "platform",
+    "host",
+    "musl"
+   ],
+   "description": "A template for writing Roc platform hosts in Goose, in a pure-Goose flavour and a C-bridge flavour; tested only on Linux x64 with musl.",
+   "repo": "https://github.com/scottc/goose-roc",
+   "url": "https://github.com/scottc/goose-roc",
+   "page": "https://safdafang.github.io/goose-index/p/scottc-goose-roc/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-11-02T11:43:42Z",
+   "created": "2026-10-27T09:26:45Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "macho0x-goose-ethereum",
+   "name": "goose-ethereum",
+   "kind": "package",
+   "category": "domain-specific",
+   "tags": [
+    "ethereum",
+    "u256",
+    "abi",
+    "json-rpc"
+   ],
+   "description": "Ethereum building blocks with no networking or signing: 256-bit integers, ABI call encoding with function selectors, and JSON-RPC request and response bytes. Expects goose-crypto checked out beside it.",
+   "repo": "https://github.com/Macho0x/goose-ethereum",
+   "url": "https://github.com/Macho0x/goose-ethereum",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-ethereum/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2.1",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:10:49Z",
+   "created": "2026-11-01T06:39:57Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "ethereum",
+    "source": "github.com/Macho0x/goose-ethereum",
+    "ref": "v0.2.1",
+    "pinned": true,
+    "line": "import ethereum from \"github.com/Macho0x/goose-ethereum@v0.2.1\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "macho0x-goose-hyperliquid",
+   "name": "goose-hyperliquid",
+   "kind": "package",
+   "category": "domain-specific",
+   "tags": [
+    "hyperliquid",
+    "trading",
+    "eip-712",
+    "signing"
+   ],
+   "description": "A client library for the Hyperliquid exchange that signs HyperCore orders and transfers the way the official SDKs do and reads market data, over goose-http and goose-tls.",
+   "repo": "https://github.com/Macho0x/goose-hyperliquid",
+   "url": "https://github.com/Macho0x/goose-hyperliquid",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-hyperliquid/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:10:49Z",
+   "created": "2026-11-02T13:10:56Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "hyperliquid",
+    "source": "github.com/Macho0x/goose-hyperliquid",
+    "ref": "main",
+    "pinned": false,
+    "line": "import hyperliquid from \"github.com/Macho0x/goose-hyperliquid@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "macho0x-goose-signature",
+   "name": "goose-signature",
+   "kind": "package",
+   "category": "domain-specific",
+   "tags": [
+    "ethereum",
+    "bitcoin",
+    "solana",
+    "signing",
+    "eip-191",
+    "bip-322"
+   ],
+   "description": "Message and typed-data signing for Ethereum, Bitcoin and Solana built on goose-crypto; it expects goose-crypto checked out beside it.",
+   "repo": "https://github.com/Macho0x/goose-signature",
+   "url": "https://github.com/Macho0x/goose-signature",
+   "page": "https://safdafang.github.io/goose-index/p/macho0x-goose-signature/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.3",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:10:49Z",
+   "created": "2026-11-01T06:15:29Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "signature",
+    "source": "github.com/Macho0x/goose-signature",
+    "ref": "v0.3",
+    "pinned": true,
+    "line": "import signature from \"github.com/Macho0x/goose-signature@v0.3\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "goose-pond-phonelib",
+   "name": "phonelib",
+   "kind": "package",
+   "category": "domain-specific",
+   "tags": [
+    "phone-numbers",
+    "e164",
+    "validation",
+    "pure-goose"
+   ],
+   "description": "Parses, validates and normalizes phone numbers to E.164 using numbering-plan data compiled into the program, so nothing is downloaded or deployed at run time.",
+   "repo": "https://github.com/goose-pond/phonelib",
+   "url": "https://github.com/goose-pond/phonelib",
+   "page": "https://safdafang.github.io/goose-index/p/goose-pond-phonelib/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T18:46:13Z",
+   "created": "2026-11-01T18:10:59Z",
+   "stars": 1,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "phonelib",
+    "source": "github.com/goose-pond/phonelib",
+    "ref": "main",
+    "pinned": false,
+    "line": "import phonelib from \"github.com/goose-pond/phonelib@main\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "aciru4l-barn",
+   "name": "barn",
+   "kind": "tool",
+   "category": "package-management",
+   "tags": [
+    "package-manager",
+    "semver",
+    "dependencies",
+    "eggs"
+   ],
+   "description": "A third-party package manager with a barn.json manifest, semantic versions resolved by minimal version selection, checksummed downloads and project scaffolding. It works alongside goose rather than through import lines.",
+   "repo": "https://github.com/aciru4L/barn",
+   "url": "https://github.com/aciru4L/barn",
+   "page": "https://safdafang.github.io/goose-index/p/aciru4l-barn/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T19:02:00Z",
+   "created": "2026-10-29T21:17:01Z",
+   "stars": 2,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "dan-stowell-rules-goose",
+   "name": "rules_goose",
+   "kind": "tool",
+   "category": "package-management",
+   "tags": [
+    "bazel",
+    "build",
+    "rules"
+   ],
+   "description": "Bazel rules goose_binary and goose_test that compile a Goose program to one C file with a pinned compiler and build it with Bazel's C toolchain.",
+   "repo": "https://github.com/dan-stowell/rules_goose",
+   "url": "https://github.com/dan-stowell/rules_goose",
+   "page": "https://safdafang.github.io/goose-index/p/dan-stowell-rules-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-25T03:19:42Z",
+   "created": "2026-10-25T00:22:51Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "nandi-conda-quack",
+   "name": "quack",
+   "kind": "learning-resource",
+   "category": "package-management",
+   "tags": [
+    "pixi",
+    "conda",
+    "install",
+    "audio"
+   ],
+   "description": "A sample pixi project that installs the Goose compiler as a conda package and runs four programs with it, including a realtime audio visualizer.",
+   "repo": "https://github.com/nandi-conda/quack",
+   "url": "https://github.com/nandi-conda/quack",
+   "page": "https://safdafang.github.io/goose-index/p/nandi-conda-quack/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-26T07:00:29Z",
+   "created": "2026-10-27T02:47:26Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "rx-bob-goosetest",
+   "name": "goosetest",
+   "kind": "tool",
+   "category": "testing",
+   "tags": [
+    "test-runner",
+    "assertions",
+    "fixtures",
+    "discovery"
+   ],
+   "description": "Finds test_* functions by convention, generates the runner and runs unit and integration suites, with assertion helpers, fixtures and before and after hooks.",
+   "repo": "https://github.com/rx-bob/goosetest",
+   "url": "https://github.com/rx-bob/goosetest",
+   "page": "https://safdafang.github.io/goose-index/p/rx-bob-goosetest/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T17:38:35Z",
+   "created": "2026-11-01T17:05:04Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": [
+     "clang",
+     "task"
+    ]
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "sstadick-goosdoc",
+   "name": "goosdoc",
+   "kind": "tool",
+   "category": "documentation",
+   "tags": [
+    "api-docs",
+    "markdown",
+    "doctest",
+    "ci"
+   ],
+   "description": "Builds a Markdown API reference from doc comments, with signatures and source links, and runs the code examples in those comments as tests; a check mode keeps the committed reference current in CI.",
+   "repo": "https://github.com/sstadick/goosdoc",
+   "url": "https://github.com/sstadick/goosdoc",
+   "page": "https://safdafang.github.io/goose-index/p/sstadick-goosdoc/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2.0",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-10-31T11:56:55Z",
+   "created": "2026-10-31T11:21:33Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": [
+     "python3"
+    ]
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "shetautnetjer-goose-treesitter",
+   "name": "goose-treesitter",
+   "kind": "package",
+   "category": "code-quality",
+   "tags": [
+    "tree-sitter",
+    "structural-search",
+    "rewrite",
+    "ast-grep"
+   ],
+   "description": "Structural code search and rewrite over tree-sitter grammars for about fifteen languages, matching ast-grep's pattern results.",
+   "repo": "https://github.com/shetautnetjer/goose-treesitter",
+   "url": "https://github.com/shetautnetjer/goose-treesitter",
+   "page": "https://safdafang.github.io/goose-index/p/shetautnetjer-goose-treesitter/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.4",
+   "tag_count": 5,
+   "default_branch": "main",
+   "last_commit": "2026-10-28T04:50:24Z",
+   "created": "2026-10-26T09:42:16Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "treesitter",
+    "source": "github.com/shetautnetjer/goose-treesitter",
+    "ref": "v0.1.4",
+    "pinned": true,
+    "line": "import treesitter from \"github.com/shetautnetjer/goose-treesitter@v0.1.4\";",
+    "modules": [],
+    "subdir": null
+   }
+  },
+  {
+   "id": "flisk-sh-codeql-goose",
+   "name": "codeql-goose",
+   "kind": "tool",
+   "category": "code-quality",
+   "tags": [
+    "static-analysis",
+    "sarif",
+    "github-actions",
+    "code-scanning"
+   ],
+   "description": "A GitHub Action that lexes Goose sources, applies a small rule set and uploads findings to Code Scanning as SARIF. Despite the name it does not use CodeQL.",
+   "repo": "https://github.com/flisk-sh/codeql-goose",
+   "url": "https://github.com/flisk-sh/codeql-goose",
+   "page": "https://safdafang.github.io/goose-index/p/flisk-sh-codeql-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.2.1",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-10-23T22:29:51Z",
+   "created": "2026-10-23T20:19:20Z",
+   "stars": 2,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "rx-bob-goosefmt",
+   "name": "goosefmt",
+   "kind": "tool",
+   "category": "code-quality",
+   "tags": [
+    "formatter",
+    "linter",
+    "cli"
+   ],
+   "description": "A formatter and linter for Goose written in Goose, with format, lint and check commands that walk a directory tree.",
+   "repo": "https://github.com/rx-bob/goosefmt",
+   "url": "https://github.com/rx-bob/goosefmt",
+   "page": "https://safdafang.github.io/goose-index/p/rx-bob-goosefmt/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T17:47:22Z",
+   "created": "2026-11-01T17:47:42Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "shetautnetjer-swan",
+   "name": "Swan",
+   "kind": "app",
+   "category": "code-quality",
+   "tags": [
+    "mcp",
+    "code-intelligence",
+    "agents",
+    "references"
+   ],
+   "description": "A local code-intelligence server for AI agents, speaking MCP: definitions, references, change impact, related tests and live errors, built on goose-sqlite, goose-lsp and goose-treesitter.",
+   "repo": "https://github.com/shetautnetjer/Swan",
+   "url": "https://github.com/shetautnetjer/Swan",
+   "page": "https://safdafang.github.io/goose-index/p/shetautnetjer-swan/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T15:36:33Z",
+   "created": "2026-10-25T21:55:46Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "shetautnetjer-goose-lsp",
+   "name": "goose-lsp",
+   "kind": "tool",
+   "category": "editor-support",
+   "tags": [
+    "lsp",
+    "language-server",
+    "client",
+    "diagnostics"
+   ],
+   "description": "A language server client written in Goose and built as a standalone C library: it keeps one server such as rust-analyzer or pyright running and returns fresh diagnostics soon after an edit.",
+   "repo": "https://github.com/shetautnetjer/goose-lsp",
+   "url": "https://github.com/shetautnetjer/goose-lsp",
+   "page": "https://safdafang.github.io/goose-index/p/shetautnetjer-goose-lsp/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.3",
+   "tag_count": 4,
+   "default_branch": "main",
+   "last_commit": "2026-10-28T04:50:55Z",
+   "created": "2026-10-26T09:42:21Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "exaroth-coc-goose",
+   "name": "coc-goose",
+   "kind": "editor",
+   "category": "editor-support",
+   "tags": [
+    "neovim",
+    "vim",
+    "coc",
+    "lsp"
+   ],
+   "description": "A coc.nvim extension that connects Vim and Neovim to goose lsp for diagnostics, hover and navigation.",
+   "repo": "https://github.com/exaroth/coc-goose",
+   "url": "https://github.com/exaroth/coc-goose",
+   "page": "https://safdafang.github.io/goose-index/p/exaroth-coc-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "0.1.1",
+   "tag_count": 2,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T03:39:44Z",
+   "created": "2026-11-01T18:04:43Z",
+   "stars": 2,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "epidemicz-fresh-goose",
+   "name": "fresh-goose",
+   "kind": "editor",
+   "category": "editor-support",
+   "tags": [
+    "fresh",
+    "lsp",
+    "highlighting",
+    "format"
+   ],
+   "description": "Plugin for the Fresh terminal editor that wires up highlighting, the goose lsp language server and goose format.",
+   "repo": "https://github.com/epidemicz/fresh-goose",
+   "url": "https://github.com/epidemicz/fresh-goose",
+   "page": "https://safdafang.github.io/goose-index/p/epidemicz-fresh-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-10-30T02:21:55Z",
+   "created": "2026-10-30T02:05:02Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "exaroth-goose-lang-vim",
+   "name": "goose-lang.vim",
+   "kind": "editor",
+   "category": "editor-support",
+   "tags": [
+    "vim",
+    "neovim",
+    "highlighting",
+    "indent"
+   ],
+   "description": "Vim and Neovim filetype plugin with highlighting, indentation and a compiler setting for running goose from the editor.",
+   "repo": "https://github.com/exaroth/goose-lang.vim",
+   "url": "https://github.com/exaroth/goose-lang.vim",
+   "page": "https://safdafang.github.io/goose-index/p/exaroth-goose-lang-vim/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "0.1.5",
+   "tag_count": 6,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T19:55:14Z",
+   "created": "2026-10-25T15:08:24Z",
+   "stars": 3,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "zhengsy-goose-zed",
+   "name": "goose-zed",
+   "kind": "editor",
+   "category": "editor-support",
+   "tags": [
+    "zed",
+    "tree-sitter",
+    "lsp",
+    "snippets",
+    "tasks"
+   ],
+   "description": "A Zed extension with its own grammar packaging, goose lsp integration, snippets and run tasks, published with prebuilt archives.",
+   "repo": "https://github.com/ZHENGSY/goose-zed",
+   "url": "https://github.com/ZHENGSY/goose-zed",
+   "page": "https://safdafang.github.io/goose-index/p/zhengsy-goose-zed/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-29T14:57:26Z",
+   "created": "2026-10-29T14:57:01Z",
+   "stars": 2,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "romanpro100-goose-zed-extension",
+   "name": "goose-zed-extension",
+   "kind": "editor",
+   "category": "editor-support",
+   "tags": [
+    "zed",
+    "tree-sitter",
+    "lsp"
+   ],
+   "description": "A Zed extension for Goose with highlighting from a tree-sitter grammar fork and language-server support through the goose binary on PATH.",
+   "repo": "https://github.com/RomanPro100/goose-zed-extension",
+   "url": "https://github.com/RomanPro100/goose-zed-extension",
+   "page": "https://safdafang.github.io/goose-index/p/romanpro100-goose-zed-extension/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-22T11:41:15Z",
+   "created": "2026-10-22T11:29:45Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "a55uka-zed-goose",
+   "name": "zed-goose",
+   "kind": "editor",
+   "category": "editor-support",
+   "tags": [
+    "zed",
+    "tree-sitter",
+    "highlighting"
+   ],
+   "description": "A Zed extension giving Goose files syntax highlighting and snippets, using the grammar from the Goose repository.",
+   "repo": "https://github.com/a55uka/zed-goose",
+   "url": "https://github.com/a55uka/zed-goose",
+   "page": "https://safdafang.github.io/goose-index/p/a55uka-zed-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-22T14:33:05Z",
+   "created": "2026-10-22T14:28:32Z",
+   "stars": 1,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "vpagani-zed-goose",
+   "name": "zed-goose",
+   "kind": "editor",
+   "category": "editor-support",
+   "tags": [
+    "zed",
+    "tree-sitter",
+    "lsp",
+    "outline"
+   ],
+   "description": "A Zed extension using the upstream tree-sitter grammar and goose lsp, adding an outline, bracket and indent rules, comment toggling and Vim text objects.",
+   "repo": "https://github.com/VPagani/zed-goose",
+   "url": "https://github.com/VPagani/zed-goose",
+   "page": "https://safdafang.github.io/goose-index/p/vpagani-zed-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-25T19:32:52Z",
+   "created": "2026-10-25T00:52:31Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "bashar-al-agha-arwad",
+   "name": "arwad",
+   "kind": "tool",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "r",
+    "statistics",
+    "compiler"
+   ],
+   "description": "An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R.",
+   "repo": "https://github.com/bashar-al-agha/arwad",
+   "url": "https://github.com/bashar-al-agha/arwad",
+   "page": "https://safdafang.github.io/goose-index/p/bashar-al-agha-arwad/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-11-03T08:35:28Z",
+   "created": "2026-10-24T10:31:46Z",
+   "stars": 1,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "aardappel-goose",
+   "name": "Goose",
+   "kind": "tool",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "compiler",
+    "stdlib",
+    "lsp",
+    "official"
+   ],
+   "description": "The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on.",
+   "repo": "https://github.com/aardappel/goose",
+   "url": "https://github.com/aardappel/goose",
+   "page": "https://safdafang.github.io/goose-index/p/aardappel-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v2026.3",
+   "tag_count": 4,
+   "default_branch": "master",
+   "last_commit": "2026-11-02T19:43:41Z",
+   "created": "2026-08-30T21:10:01Z",
+   "stars": 2899,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": true,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "nurupoga-goose-core2",
+   "name": "goose-core2",
+   "kind": "tool",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "embedded",
+    "esp32",
+    "esp-idf",
+    "m5stack",
+    "freertos"
+   ],
+   "description": "An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device.",
+   "repo": "https://github.com/nurupoga/goose-core2",
+   "url": "https://github.com/nurupoga/goose-core2",
+   "page": "https://safdafang.github.io/goose-index/p/nurupoga-goose-core2/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T07:02:45Z",
+   "created": "2026-10-27T05:06:26Z",
+   "stars": 1,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "mewhhaha-goose-to-wasm",
+   "name": "goose-to-wasm",
+   "kind": "tool",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "wasm",
+    "webassembly",
+    "backend",
+    "wasmtime",
+    "v8"
+   ],
+   "description": "A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.",
+   "repo": "https://github.com/mewhhaha/goose-to-wasm",
+   "url": "https://github.com/mewhhaha/goose-to-wasm",
+   "page": "https://safdafang.github.io/goose-index/p/mewhhaha-goose-to-wasm/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-03T09:03:27Z",
+   "created": "2026-10-26T07:56:00Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "nenaaki-goose-wasm",
+   "name": "goose-wasm",
+   "kind": "tool",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "wasm",
+    "webassembly",
+    "backend"
+   ],
+   "description": "An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.",
+   "repo": "https://github.com/nenaaki/goose-wasm",
+   "url": "https://github.com/nenaaki/goose-wasm",
+   "page": "https://safdafang.github.io/goose-index/p/nenaaki-goose-wasm/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T14:28:52Z",
+   "created": "2026-10-31T09:11:58Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": [
+     "cmake",
+     "ninja",
+     "clang"
+    ]
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "robtandy-goose-go",
+   "name": "goose.go",
+   "kind": "tool",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "go",
+    "backend",
+    "cgo-free"
+   ],
+   "description": "A backend that keeps the upstream Goose frontend and emits plain Go with a pure-Go data stack runtime, so Goose code can live in Go services without cgo.",
+   "repo": "https://github.com/robtandy/goose.go",
+   "url": "https://github.com/robtandy/goose.go",
+   "page": "https://safdafang.github.io/goose-index/p/robtandy-goose-go/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T16:59:55Z",
+   "created": "2026-11-01T14:00:32Z",
+   "stars": 2,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "yujieteo-skein",
+   "name": "skein",
+   "kind": "tool",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "dsl",
+    "units",
+    "finite-element",
+    "simulation",
+    "compiler"
+   ],
+   "description": "A units-checked modelling language for finite-element and finite-volume simulation whose compiler, written in Goose, emits Goose and can produce a browser page via WebAssembly.",
+   "repo": "https://github.com/yujieteo/skein",
+   "url": "https://github.com/yujieteo/skein",
+   "page": "https://safdafang.github.io/goose-index/p/yujieteo-skein/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-03T08:35:30Z",
+   "created": "2026-10-29T14:19:42Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "binji-goose",
+   "name": "goose (binji's WebAssembly fork)",
+   "kind": "fork",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "wasm",
+    "webassembly",
+    "playground",
+    "backend"
+   ],
+   "description": "A Goose co-maintainer's fork adding a WebAssembly backend over the interpreter's bytecode and a browser playground running the compiler as WASI.",
+   "repo": "https://github.com/binji/goose",
+   "url": "https://github.com/binji/goose",
+   "page": "https://safdafang.github.io/goose-index/p/binji-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-10-19T23:45:26Z",
+   "created": "2026-10-19T05:01:30Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": "WebAssembly backend from the interpreter's bytecode; WASI browser playground.",
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "joshuarli-goose",
+   "name": "goose (joshuarli's fork)",
+   "kind": "fork",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "fork",
+    "lint",
+    "lean",
+    "runtime",
+    "huge-pages"
+   ],
+   "description": "A heavily diverged fork, thousands of commits ahead, with a linter, Lean proof work on the compiler's root analysis and Linux runtime changes, regularly reconciled with upstream.",
+   "repo": "https://github.com/joshuarli/goose",
+   "url": "https://github.com/joshuarli/goose",
+   "page": "https://safdafang.github.io/goose-index/p/joshuarli-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-10-27T14:27:37Z",
+   "created": "2026-10-09T00:34:48Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": "Linter, Lean proofs of root analysis, Linux data-stack runtime changes; periodically merges upstream.",
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "jtenner-goose",
+   "name": "goose (jtenner's fork)",
+   "kind": "fork",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "fork",
+    "const-functions",
+    "records",
+    "serialization"
+   ],
+   "description": "A fork adding compile-time scalar functions and checked little-endian record snapshots, each change documented with acceptance evidence.",
+   "repo": "https://github.com/jtenner/goose",
+   "url": "https://github.com/jtenner/goose",
+   "page": "https://safdafang.github.io/goose-index/p/jtenner-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v2026.3",
+   "tag_count": 4,
+   "default_branch": "master",
+   "last_commit": "2026-11-01T17:48:46Z",
+   "created": "2026-10-23T13:31:42Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": "Compile-time scalar const functions; checked little-endian record snapshots.",
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "mgasner-goose",
+   "name": "goose (mgasner's fork)",
+   "kind": "fork",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "fork",
+    "https",
+    "mbedtls",
+    "graphql",
+    "tinycc"
+   ],
+   "description": "A fork adding deferred calls, a GraphQL module, HTTPS for the http module over Mbed TLS, and arm64 fixes to the bundled TinyCC.",
+   "repo": "https://github.com/mgasner/goose",
+   "url": "https://github.com/mgasner/goose",
+   "page": "https://safdafang.github.io/goose-index/p/mgasner-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-10-19T19:44:56Z",
+   "created": "2026-10-09T22:22:20Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": "Deferred calls, graphql module, HTTPS over Mbed TLS, sqlite as a package, arm64 TinyCC fixes.",
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "podikoglou-goose",
+   "name": "goose (podikoglou's fork)",
+   "kind": "fork",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "fork",
+    "property-testing",
+    "stdlib"
+   ],
+   "description": "A fork that adds declarative property-based checks for the standard library and a command to discover properties and generate harnesses.",
+   "repo": "https://github.com/podikoglou/goose",
+   "url": "https://github.com/podikoglou/goose",
+   "page": "https://safdafang.github.io/goose-index/p/podikoglou-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-10-25T22:36:56Z",
+   "created": "2026-10-24T09:22:45Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": "Declarative property verification of the stdlib with a prop harness generator.",
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "robtandy-goose",
+   "name": "goose (robtandy's fork)",
+   "kind": "fork",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "fork",
+    "handles",
+    "resources",
+    "generics"
+   ],
+   "description": "A fork working on typed resource handles whose kinds the checker tracks through generic instances.",
+   "repo": "https://github.com/robtandy/goose",
+   "url": "https://github.com/robtandy/goose",
+   "page": "https://safdafang.github.io/goose-index/p/robtandy-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-11-02T23:37:03Z",
+   "created": "2026-11-01T14:53:33Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": "Typed resource handles (pkg_resource) with kinds tracked through codegen.",
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "dan-stowell-goose",
+   "name": "goose (self-hosting experiment)",
+   "kind": "fork",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "self-hosting",
+    "bootstrap",
+    "experiment"
+   ],
+   "description": "A paused experiment toward a Goose compiler written in Goose, with its bootstrap and the plan recording which gaps remained.",
+   "repo": "https://github.com/dan-stowell/goose",
+   "url": "https://github.com/dan-stowell/goose",
+   "page": "https://safdafang.github.io/goose-index/p/dan-stowell-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-11-02T19:43:41Z",
+   "created": "2026-10-24T22:19:36Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": "Self-hosting (goose_in_goose) bootstrap experiment; paused.",
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "vietnt-goose",
+   "name": "goose (vietnt's rome fork)",
+   "kind": "fork",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "fork",
+    "spir-v",
+    "vulkan",
+    "gfx"
+   ],
+   "description": "A fork that keeps its own release line with SPIR-V and Vulkan fixes, extra file functions, and gfx, audio and ui packages pinned from the author's goose_gfx fork.",
+   "repo": "https://github.com/vietnt/goose",
+   "url": "https://github.com/vietnt/goose",
+   "page": "https://safdafang.github.io/goose-index/p/vietnt-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v2026.1-rome.7",
+   "tag_count": 12,
+   "default_branch": "rome",
+   "last_commit": "2026-10-23T11:35:08Z",
+   "created": "2026-10-16T00:50:06Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": "Own 'rome' release line: SPIR-V fixes, os.read_file_at, blessed gfx/audio/ui from vietnt/goose_gfx.",
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "compusophy-goose-wasm",
+   "name": "goose-wasm",
+   "kind": "fork",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "wasm",
+    "webassembly",
+    "browser",
+    "benchmarks"
+   ],
+   "description": "Runs Goose programs on bare wasm32 without WASI or libc and races them against Rust in the browser on Goose's own benchmark set.",
+   "repo": "https://github.com/compusophy/goose-wasm",
+   "url": "https://github.com/compusophy/goose-wasm",
+   "page": "https://safdafang.github.io/goose-index/p/compusophy-goose-wasm/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-08T22:16:31Z",
+   "created": "2026-10-08T22:15:11Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": "Runtime ported to wasm32-unknown-unknown; live benchmark page.",
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "appdoze-gust",
+   "name": "gust",
+   "kind": "fork",
+   "category": "compilers-and-runtimes",
+   "tags": [
+    "fork",
+    "language",
+    "performance"
+   ],
+   "description": "A renamed fork of the Goose language that aims to beat Rust on speed through better code generation, C library access and parallelism.",
+   "repo": "https://github.com/appdoze/gust",
+   "url": "https://github.com/appdoze/gust",
+   "page": "https://safdafang.github.io/goose-index/p/appdoze-gust/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-03T01:06:20Z",
+   "created": "2026-10-22T21:58:50Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": "Renamed language; roadmap of faster codegen, large C libraries and safe parallelism.",
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "noonien-alchemistssort",
+   "name": "AlchemistsSort",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "game",
+    "puzzle",
+    "sdl3",
+    "nix",
+    "browser"
+   ],
+   "description": "A relaxed color-sorting puzzle game with a campaign, seeded levels and a hint solver, drawn with gfx and also playable in the browser; the toolchain comes from a Nix flake.",
+   "repo": "https://github.com/noonien/AlchemistsSort",
+   "url": "https://github.com/noonien/AlchemistsSort",
+   "page": "https://safdafang.github.io/goose-index/p/noonien-alchemistssort/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T12:52:11Z",
+   "created": "2026-10-08T18:47:15Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": [
+     "nix"
+    ]
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "swoorup-beads-goose",
+   "name": "beads-goose",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "issue-tracker",
+    "cli",
+    "port",
+    "json"
+   ],
+   "description": "The start of a Goose rewrite of the beads issue tracker: the issue model and its JSON already match the Go version byte for byte, with the storage and most commands still to come.",
+   "repo": "https://github.com/Swoorup/beads-goose",
+   "url": "https://github.com/Swoorup/beads-goose",
+   "page": "https://safdafang.github.io/goose-index/p/swoorup-beads-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-22T22:50:57Z",
+   "created": "2026-10-22T13:14:11Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "xvolks-brainfuck-goose",
+   "name": "brainfuck-goose",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "interpreter",
+    "brainfuck",
+    "esolang"
+   ],
+   "description": "A small hand-written Brainfuck interpreter, a compact example of a complete Goose program.",
+   "repo": "https://github.com/xvolks/brainfuck-goose",
+   "url": "https://github.com/xvolks/brainfuck-goose",
+   "page": "https://safdafang.github.io/goose-index/p/xvolks-brainfuck-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-10-25T16:51:44Z",
+   "created": "2026-10-24T20:38:45Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "jesper-olsen-c4-goose",
+   "name": "c4-goose",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "game",
+    "connect-four",
+    "solver",
+    "fhourstones",
+    "benchmark"
+   ],
+   "description": "John Tromp's Fhourstones Connect Four solver ported to Goose; it reads positions on stdin and reports scores and timing.",
+   "repo": "https://github.com/jesper-olsen/c4-goose",
+   "url": "https://github.com/jesper-olsen/c4-goose",
+   "page": "https://safdafang.github.io/goose-index/p/jesper-olsen-c4-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-29T06:50:24Z",
+   "created": "2026-10-28T21:30:14Z",
+   "stars": 0,
+   "license": "other",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "aardappel-once-campfire-goose",
+   "name": "Campfire in Goose",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "chat",
+    "web",
+    "goose-http",
+    "port"
+   ],
+   "description": "The Goose author's experimental port of the Campfire group chat server onto goose-http, checked against Rust and Jai versions of the same app.",
+   "repo": "https://github.com/aardappel/once-campfire-goose",
+   "url": "https://github.com/aardappel/once-campfire-goose",
+   "page": "https://safdafang.github.io/goose-index/p/aardappel-once-campfire-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "codex/campfire-experiment",
+   "last_commit": "2026-10-29T22:14:32Z",
+   "created": "2026-10-28T04:20:45Z",
+   "stars": 2,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [
+      "libqrencode-dev",
+      "liburing-dev"
+     ],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "salahraja-football-scores",
+   "name": "football-scores",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "web",
+    "wasm",
+    "json",
+    "vue"
+   ],
+   "description": "A static Serie A results site whose data step is a small Goose program that reshapes the raw feed into the site's JSON, run natively or as WebAssembly.",
+   "repo": "https://github.com/salahraja/football-scores",
+   "url": "https://github.com/salahraja/football-scores",
+   "page": "https://safdafang.github.io/goose-index/p/salahraja-football-scores/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-29T04:49:56Z",
+   "created": "2023-04-30T01:09:26Z",
+   "stars": 0,
+   "license": "MPL-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "anugunjnaman-gander",
+   "name": "gander",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "robotics",
+    "telemetry",
+    "logging",
+    "crash-safe"
+   ],
+   "description": "A telemetry recorder for robots and vehicles that logs IMU, CAN, GNSS and LiDAR events compactly and loses at most two seconds of data on a crash.",
+   "repo": "https://github.com/AnugunjNaman/gander",
+   "url": "https://github.com/AnugunjNaman/gander",
+   "page": "https://safdafang.github.io/goose-index/p/anugunjnaman-gander/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-21T15:06:49Z",
+   "created": "2026-10-21T14:50:27Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "felipecruz-gffs",
+   "name": "gffs",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "search",
+    "grep",
+    "pcre2",
+    "cli"
+   ],
+   "description": "A recursive file searcher with ripgrep-style options, ported to Goose from the author's ffs, using PCRE2 for regular expressions.",
+   "repo": "https://github.com/felipecruz/gffs",
+   "url": "https://github.com/felipecruz/gffs",
+   "page": "https://safdafang.github.io/goose-index/p/felipecruz-gffs/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-22T20:13:13Z",
+   "created": "2026-10-22T19:42:23Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [
+      "libpcre2-dev"
+     ],
+     "macos": [
+      "pcre2"
+     ],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "badman594-glog",
+   "name": "glog",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "logs",
+    "cli",
+    "common-log-format"
+   ],
+   "description": "A command-line counter and grouper for web server access logs in Common Log Format, written to be faster than the usual shell tools.",
+   "repo": "https://github.com/badman594/glog",
+   "url": "https://github.com/badman594/glog",
+   "page": "https://safdafang.github.io/goose-index/p/badman594-glog/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T11:37:28Z",
+   "created": "2026-10-27T11:29:52Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "grumbash-goose-mini-browser",
+   "name": "goose-mini-browser",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "browser",
+    "html",
+    "sdl3",
+    "nuklear",
+    "rust-ffi"
+   ],
+   "description": "A toy graphical web browser that renders simple HTML in an SDL3 and Nuklear window, fetching pages through a small Rust networking library loaded at run time.",
+   "repo": "https://github.com/Grumbash/goose-mini-browser",
+   "url": "https://github.com/Grumbash/goose-mini-browser",
+   "page": "https://safdafang.github.io/goose-index/p/grumbash-goose-mini-browser/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-31T12:28:02Z",
+   "created": "2026-10-29T16:11:01Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": [
+     "cargo"
+    ]
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "flakesonnix-goose-pong",
+   "name": "goose-pong",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "game",
+    "pong",
+    "raylib"
+   ],
+   "description": "Two-paddle Pong against a simple computer opponent, drawn with a system-installed raylib.",
+   "repo": "https://github.com/flakesonnix/goose-pong",
+   "url": "https://github.com/flakesonnix/goose-pong",
+   "page": "https://safdafang.github.io/goose-index/p/flakesonnix-goose-pong/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-22T10:55:29Z",
+   "created": "2026-10-21T19:09:55Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [
+      "libraylib-dev"
+     ],
+     "macos": [
+      "raylib"
+     ],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "innomon-goose-sql-p2p",
+   "name": "goose-sql-p2p",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "sqlite",
+    "replication",
+    "p2p",
+    "hypercore"
+   ],
+   "description": "A peer-to-peer replication engine for SQLite databases that aims for compatibility with the Pear/Hypercore stack and with sqlite-p2p configuration.",
+   "repo": "https://github.com/innomon/goose-sql-p2p",
+   "url": "https://github.com/innomon/goose-sql-p2p",
+   "page": "https://safdafang.github.io/goose-index/p/innomon-goose-sql-p2p/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-10-31T04:38:11Z",
+   "created": "2026-10-31T04:38:50Z",
+   "stars": 0,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "manymids-goose-sharp-x68000",
+   "name": "goose_sharp_x68000",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "emulator",
+    "x68000",
+    "m68k",
+    "win32",
+    "mcp"
+   ],
+   "description": "A Sharp X68000 emulator for Windows with the CPU, memory, devices and drawing written in Goose, a Win32 interface, and an MCP server for driving it from external tools.",
+   "repo": "https://github.com/manymids/goose_sharp_x68000",
+   "url": "https://github.com/manymids/goose_sharp_x68000",
+   "page": "https://safdafang.github.io/goose-index/p/manymids-goose-sharp-x68000/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:08:58Z",
+   "created": "2026-10-31T16:08:45Z",
+   "stars": 0,
+   "license": "GPL-2.0",
+   "license_source": "github",
+   "platforms": [
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "pleseisanidiot-goosecode",
+   "name": "goosecode",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "ai",
+    "coding-agent",
+    "terminal",
+    "openrouter",
+    "oauth"
+   ],
+   "description": "A terminal coding agent that talks to OpenRouter after an OAuth login, streams replies and asks before running write or shell tools.",
+   "repo": "https://github.com/pleseisanidiot/goosecode",
+   "url": "https://github.com/pleseisanidiot/goosecode",
+   "page": "https://safdafang.github.io/goose-index/p/pleseisanidiot-goosecode/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T12:18:22Z",
+   "created": "2026-11-02T12:12:25Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [
+      "libcurl4-openssl-dev",
+      "libssl-dev",
+      "libreadline-dev"
+     ],
+     "macos": [
+      "curl",
+      "openssl@3",
+      "readline"
+     ],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "kokasikhorik-bot-goosecraft",
+   "name": "GooseCraft",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "voxel",
+    "game",
+    "windows",
+    "russian"
+   ],
+   "description": "A Windows-only voxel game client and launcher that works toward Minecraft-like behaviour, with greedy meshing and save files; documentation is in Russian.",
+   "repo": "https://github.com/kokasikhorik-bot/GooseCraft",
+   "url": "https://github.com/kokasikhorik-bot/GooseCraft",
+   "page": "https://safdafang.github.io/goose-index/p/kokasikhorik-bot-goosecraft/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T20:22:20Z",
+   "created": "2026-10-29T20:16:59Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "decryptu-goosedex",
+   "name": "goosedex",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "terminal",
+    "pokemon",
+    "zig-comparison"
+   ],
+   "description": "Prints a random Pokémon sprite in the terminal with every sprite embedded; a byte-for-byte port of a Zig tool, used to compare the two languages.",
+   "repo": "https://github.com/Decryptu/goosedex",
+   "url": "https://github.com/Decryptu/goosedex",
+   "page": "https://safdafang.github.io/goose-index/p/decryptu-goosedex/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-25T11:48:33Z",
+   "created": "2026-10-25T10:48:30Z",
+   "stars": 2,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "yujieteo-goosestrike",
+   "name": "goosestrike",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "finite-element",
+    "simulation",
+    "wasm",
+    "webgpu"
+   ],
+   "description": "An explicit-dynamics finite-element simulation of a bird hitting an aircraft fuselage panel, compiled to WebAssembly with an optional WebGPU solver, running live in the browser.",
+   "repo": "https://github.com/yujieteo/goosestrike",
+   "url": "https://github.com/yujieteo/goosestrike",
+   "page": "https://safdafang.github.io/goose-index/p/yujieteo-goosestrike/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T01:53:09Z",
+   "created": "2026-10-26T10:48:43Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "aguspiza-llama-goose",
+   "name": "llama-goose",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "llm",
+    "inference",
+    "ggml",
+    "port",
+    "llama.cpp"
+   ],
+   "description": "A work-in-progress port of llama.cpp and its ggml tensor library to Goose, built with goose build instead of CMake, tracking upstream llama.cpp commit by commit.",
+   "repo": "https://github.com/aguspiza/llama-goose",
+   "url": "https://github.com/aguspiza/llama-goose",
+   "page": "https://safdafang.github.io/goose-index/p/aguspiza-llama-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-03T07:32:16Z",
+   "created": "2026-11-02T19:22:29Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "jesper-olsen-mandelbrot-goose",
+   "name": "mandelbrot-goose",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "mandelbrot",
+    "threads",
+    "simd",
+    "ascii",
+    "gnuplot"
+   ],
+   "description": "Renders the Mandelbrot set as terminal ASCII or as gnuplot data, in single-threaded and threaded versions, as one entry in the author's cross-language Mandelbrot suite.",
+   "repo": "https://github.com/jesper-olsen/mandelbrot-goose",
+   "url": "https://github.com/jesper-olsen/mandelbrot-goose",
+   "page": "https://safdafang.github.io/goose-index/p/jesper-olsen-mandelbrot-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-23T23:28:07Z",
+   "created": "2026-10-21T21:22:38Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "yujieteo-marklove-web",
+   "name": "marklove-web",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "markdown",
+    "slides",
+    "epub",
+    "wasm",
+    "editor"
+   ],
+   "description": "A browser Markdown editor whose Goose core, compiled to WebAssembly, produces slides, articles, EPUB books, subtitles and narration from one file.",
+   "repo": "https://github.com/yujieteo/marklove-web",
+   "url": "https://github.com/yujieteo/marklove-web",
+   "page": "https://safdafang.github.io/goose-index/p/yujieteo-marklove-web/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T14:49:35Z",
+   "created": "2026-10-28T14:00:50Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "mrfentmen-meta-os",
+   "name": "meta-os",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "agents",
+    "platform",
+    "hackathon",
+    "services"
+   ],
+   "description": "A hackathon platform where AI agents work in dedicated systems; its services layer (audit, logging, boards, agent hosts) is written in Goose, alongside Rust and web parts.",
+   "repo": "https://github.com/mrfentmen/meta-os",
+   "url": "https://github.com/mrfentmen/meta-os",
+   "page": "https://safdafang.github.io/goose-index/p/mrfentmen-meta-os/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "opencode1-500-final",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-11-03T09:45:26Z",
+   "created": "2026-10-28T10:47:33Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "tacf-moon-goose",
+   "name": "moon-goose",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "interpreter",
+    "lexer",
+    "parser",
+    "vm"
+   ],
+   "description": "An unfinished interpreter with a lexer, a parser and a stack virtual machine; the repository has no README yet.",
+   "repo": "https://github.com/tacf/moon-goose",
+   "url": "https://github.com/tacf/moon-goose",
+   "page": "https://safdafang.github.io/goose-index/p/tacf-moon-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T21:10:27Z",
+   "created": "2026-10-25T22:37:39Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "yujieteo-neurons",
+   "name": "neurons",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "llm",
+    "interpretability",
+    "webgpu",
+    "wasm"
+   ],
+   "description": "An in-browser explorer of SmolLM2-135M's MLP neurons with steering, running the model in Goose compiled to WebAssembly, on WebGPU when available.",
+   "repo": "https://github.com/yujieteo/neurons",
+   "url": "https://github.com/yujieteo/neurons",
+   "page": "https://safdafang.github.io/goose-index/p/yujieteo-neurons/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T01:37:57Z",
+   "created": "2026-10-28T11:49:58Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "yujieteo-pond",
+   "name": "pond",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "journal",
+    "server",
+    "ios",
+    "openbsd",
+    "signing"
+   ],
+   "description": "A signed media and experiment journal: an iOS app in Swift with a save, read and sync server written in Goose for OpenBSD, Linux and macOS.",
+   "repo": "https://github.com/yujieteo/pond",
+   "url": "https://github.com/yujieteo/pond",
+   "page": "https://safdafang.github.io/goose-index/p/yujieteo-pond/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T02:16:16Z",
+   "created": "2026-10-28T05:49:06Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "aguspiza-raytracing-goose",
+   "name": "raytracing-goose",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "raytracing",
+    "port",
+    "graphics"
+   ],
+   "description": "The Ray Tracing in One Weekend renderer in Goose, carried over from a chain of earlier ports and tuned for auto-vectorized hit tests.",
+   "repo": "https://github.com/aguspiza/raytracing-goose",
+   "url": "https://github.com/aguspiza/raytracing-goose",
+   "page": "https://safdafang.github.io/goose-index/p/aguspiza-raytracing-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-11-02T12:06:52Z",
+   "created": "2026-10-25T11:49:11Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "yujieteo-site",
+   "name": "site",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "website",
+    "wasm",
+    "engineering",
+    "diagrams"
+   ],
+   "description": "A personal website whose interactive tools, a beam diagram creator and a wallpaper maker, are Goose programs compiled to WebAssembly.",
+   "repo": "https://github.com/yujieteo/site",
+   "url": "https://github.com/yujieteo/site",
+   "page": "https://safdafang.github.io/goose-index/p/yujieteo-site/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "old-site",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T13:44:14Z",
+   "created": "2026-10-09T13:11:11Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "dantje-weld",
+   "name": "weld",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "linker",
+    "elf",
+    "x86-64",
+    "threads"
+   ],
+   "description": "A parallel x86-64 ELF linker that accepts GNU ld's command line and links static, PIE and shared outputs, built around worker threads and typed queues.",
+   "repo": "https://github.com/dantje/weld",
+   "url": "https://github.com/dantje/weld",
+   "page": "https://safdafang.github.io/goose-index/p/dantje-weld/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T19:40:33Z",
+   "created": "2026-10-27T18:44:47Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "lazychicken-goose-commands",
+   "name": "goose-commands",
+   "kind": "app",
+   "category": "benchmarks",
+   "tags": [
+    "sort",
+    "cli",
+    "rust-comparison",
+    "differential-testing"
+   ],
+   "description": "Goose rewrites of commands from a Rust command collection, starting with a merge sort tool, checked byte for byte against the Rust originals and benchmarked against them.",
+   "repo": "https://github.com/lazychicken/goose-commands",
+   "url": "https://github.com/lazychicken/goose-commands",
+   "page": "https://safdafang.github.io/goose-index/p/lazychicken-goose-commands/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-30T06:13:15Z",
+   "created": "2026-10-30T06:13:25Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "ks250206-goose-poc",
+   "name": "goose-poc",
+   "kind": "app",
+   "category": "benchmarks",
+   "tags": [
+    "crystallography",
+    "cif",
+    "structure-factor",
+    "rust-comparison",
+    "python-comparison"
+   ],
+   "description": "A proof of concept computing crystal structure factors from CIF files on a worker pool, timed against Rust, plain Python and NumPy versions of the same direct sum.",
+   "repo": "https://github.com/ks250206/goose-poc",
+   "url": "https://github.com/ks250206/goose-poc",
+   "page": "https://safdafang.github.io/goose-index/p/ks250206-goose-poc/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-27T06:30:13Z",
+   "created": "2026-10-27T06:11:38Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "cyberskat-goose-feedguard",
+   "name": "Goose_feedguard",
+   "kind": "app",
+   "category": "benchmarks",
+   "tags": [
+    "order-book",
+    "market-data",
+    "cpp-comparison",
+    "windows"
+   ],
+   "description": "A Windows prototype that records exchange order-book data and compares order-book engines written in C++ and in Goose on the same recorded messages.",
+   "repo": "https://github.com/cyberskat/Goose_feedguard",
+   "url": "https://github.com/cyberskat/Goose_feedguard",
+   "page": "https://safdafang.github.io/goose-index/p/cyberskat-goose-feedguard/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-28T09:53:45Z",
+   "created": "2026-10-28T09:42:35Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "artsensiva-symidx",
+   "name": "symidx",
+   "kind": "app",
+   "category": "benchmarks",
+   "tags": [
+    "index",
+    "serialization",
+    "rust-comparison"
+   ],
+   "description": "A symbol index for Python code bases built three ways to compare Goose with Rust on save and near-instant load of a binary image.",
+   "repo": "https://github.com/artsensiva/symidx",
+   "url": "https://github.com/artsensiva/symidx",
+   "page": "https://safdafang.github.io/goose-index/p/artsensiva-symidx/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v0.1-experiment",
+   "tag_count": 1,
+   "default_branch": "main",
+   "last_commit": "2026-11-01T18:56:59Z",
+   "created": "2026-11-01T11:25:47Z",
+   "stars": 1,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "calpeyser-goose-evaluations",
+   "name": "goose-evaluations",
+   "kind": "learning-resource",
+   "category": "benchmarks",
+   "tags": [
+    "benchmarks",
+    "json",
+    "yaml",
+    "jq",
+    "ninja",
+    "rust",
+    "c"
+   ],
+   "description": "Four parsing workloads (a Ninja build graph, JSON, YAML and a jq core) written in Goose and measured against common and best-in-class C, C++ and Rust programs, with the generated C and harnesses included.",
+   "repo": "https://github.com/calpeyser/goose-evaluations",
+   "url": "https://github.com/calpeyser/goose-evaluations",
+   "page": "https://safdafang.github.io/goose-index/p/calpeyser-goose-evaluations/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-26T11:13:40Z",
+   "created": "2026-10-20T09:44:40Z",
+   "stars": 8,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "inuverse44-goose-lab",
+   "name": "goose-lab",
+   "kind": "learning-resource",
+   "category": "benchmarks",
+   "tags": [
+    "benchmarks",
+    "rust-comparison",
+    "notes"
+   ],
+   "description": "Small experiments and two benchmarks against idiomatic Rust (order parsing and totals, a lattice heat simulation), with written notes on the language and the results.",
+   "repo": "https://github.com/inuverse44/goose-lab",
+   "url": "https://github.com/inuverse44/goose-lab",
+   "page": "https://safdafang.github.io/goose-index/p/inuverse44-goose-lab/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-29T15:08:26Z",
+   "created": "2026-10-29T15:08:28Z",
+   "stars": 0,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "macos"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "kostya-langarena",
+   "name": "LangArena",
+   "kind": "learning-resource",
+   "category": "benchmarks",
+   "tags": [
+    "benchmarks",
+    "multi-language",
+    "runtime",
+    "memory",
+    "compile-time"
+   ],
+   "description": "A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page.",
+   "repo": "https://github.com/kostya/LangArena",
+   "url": "https://github.com/kostya/LangArena",
+   "page": "https://safdafang.github.io/goose-index/p/kostya-langarena/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "2026-10-21",
+   "tag_count": 17,
+   "default_branch": "master",
+   "last_commit": "2026-11-01T03:19:11Z",
+   "created": "2026-01-25T17:56:43Z",
+   "stars": 60,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "arjaythedev-multicore-server-challenge",
+   "name": "Multicore Server Challenge",
+   "kind": "learning-resource",
+   "category": "benchmarks",
+   "tags": [
+    "benchmarks",
+    "web-server",
+    "postgres",
+    "epoll",
+    "multi-language"
+   ],
+   "description": "A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers.",
+   "repo": "https://github.com/arjaythedev/multicore-server-challenge",
+   "url": "https://github.com/arjaythedev/multicore-server-challenge",
+   "page": "https://safdafang.github.io/goose-index/p/arjaythedev-multicore-server-challenge/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-03T09:43:02Z",
+   "created": "2026-10-14T13:35:09Z",
+   "stars": 73,
+   "license": "MIT",
+   "license_source": "github",
+   "platforms": [
+    "linux"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "taw-100-languages-speedrun-goose",
+   "name": "100 Languages Speedrun: Goose episode",
+   "kind": "learning-resource",
+   "category": "learning",
+   "tags": [
+    "tour",
+    "examples",
+    "blog"
+   ],
+   "description": "The Goose episode of a long-running blog series that tries one language per post, with its example programs.",
+   "repo": "https://github.com/taw/100-languages-speedrun",
+   "url": "https://github.com/taw/100-languages-speedrun/tree/main/episode-103-goose",
+   "page": "https://safdafang.github.io/goose-index/p/taw-100-languages-speedrun-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "master",
+   "last_commit": "2026-10-23T19:25:52Z",
+   "created": "2021-11-21T21:24:56Z",
+   "stars": 21,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "flisk-goose-101",
+   "name": "Goose lang and Flisk.sh 101 (dev.to series)",
+   "kind": "learning-resource",
+   "category": "learning",
+   "tags": [
+    "tutorial",
+    "article-series",
+    "beginner"
+   ],
+   "description": "An introductory article series on dev.to that explains what Goose is and walks through first programs, published by the Flisk.sh team.",
+   "repo": null,
+   "url": "https://dev.to/flisk/what-the-goose-language-is-and-where-the-101-starts-544c",
+   "page": "https://safdafang.github.io/goose-index/p/flisk-goose-101/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": null,
+   "default_branch": null,
+   "last_commit": null,
+   "created": null,
+   "stars": null,
+   "license": null,
+   "license_source": null,
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "lightspeedc-20261101-research-goose-language",
+   "name": "Goose language research notes (Japanese)",
+   "kind": "learning-resource",
+   "category": "learning",
+   "tags": [
+    "japanese",
+    "overview",
+    "comparison"
+   ],
+   "description": "A long Japanese write-up of how Goose works: the heapless memory model, data layout, threads and C interop, how it compares with C++, Rust, Go and JavaScript, and how to read its performance claims.",
+   "repo": "https://github.com/LightSpeedC/20261101-research-goose-language",
+   "url": "https://github.com/LightSpeedC/20261101-research-goose-language",
+   "page": "https://safdafang.github.io/goose-index/p/lightspeedc-20261101-research-goose-language/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "develop",
+   "last_commit": "2026-11-01T12:41:36Z",
+   "created": "2026-11-01T12:45:44Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "flakesonnix-goose-collatz",
+   "name": "goose-collatz",
+   "kind": "learning-resource",
+   "category": "learning",
+   "tags": [
+    "example",
+    "recursion",
+    "beginner"
+   ],
+   "description": "A beginner example counting Collatz steps with a recursive function, with a matching test program.",
+   "repo": "https://github.com/flakesonnix/goose-collatz",
+   "url": "https://github.com/flakesonnix/goose-collatz",
+   "page": "https://safdafang.github.io/goose-index/p/flakesonnix-goose-collatz/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-22T10:55:26Z",
+   "created": "2026-10-21T19:09:44Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "flakesonnix-goose-collatz-explorer",
+   "name": "goose-collatz-explorer",
+   "kind": "learning-resource",
+   "category": "learning",
+   "tags": [
+    "example",
+    "recursion",
+    "beginner"
+   ],
+   "description": "A beginner example that searches a range for the number with the longest Collatz sequence.",
+   "repo": "https://github.com/flakesonnix/goose-collatz-explorer",
+   "url": "https://github.com/flakesonnix/goose-collatz-explorer",
+   "page": "https://safdafang.github.io/goose-index/p/flakesonnix-goose-collatz-explorer/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-22T10:55:28Z",
+   "created": "2026-10-21T19:09:49Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "flakesonnix-goose-fibonacci",
+   "name": "goose-fibonacci",
+   "kind": "learning-resource",
+   "category": "learning",
+   "tags": [
+    "example",
+    "recursion",
+    "beginner"
+   ],
+   "description": "A beginner example of a recursive Fibonacci function with a small test.",
+   "repo": "https://github.com/flakesonnix/goose-fibonacci",
+   "url": "https://github.com/flakesonnix/goose-fibonacci",
+   "page": "https://safdafang.github.io/goose-index/p/flakesonnix-goose-fibonacci/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-22T10:55:25Z",
+   "created": "2026-10-21T19:09:39Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "subhdotsol-goose-guide",
+   "name": "goose-guide",
+   "kind": "learning-resource",
+   "category": "learning",
+   "tags": [
+    "notes",
+    "syntax",
+    "examples"
+   ],
+   "description": "A learner's numbered walk through Goose, from program structure to the memory model, modules and calling C, with a runnable example for each topic.",
+   "repo": "https://github.com/subhdotsol/goose-guide",
+   "url": "https://github.com/subhdotsol/goose-guide",
+   "page": "https://safdafang.github.io/goose-index/p/subhdotsol-goose-guide/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-11-02T03:25:17Z",
+   "created": "2026-10-26T22:22:21Z",
+   "stars": 1,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "akeit0-goose-lab",
+   "name": "goose-lab",
+   "kind": "learning-resource",
+   "category": "learning",
+   "tags": [
+    "experiments",
+    "ecs",
+    "json",
+    "windows"
+   ],
+   "description": "A Windows-centred sandbox of libraries and small apps for learning which designs suit Goose's value semantics; it builds with the author's own compiler branch.",
+   "repo": "https://github.com/akeit0/goose-lab",
+   "url": "https://github.com/akeit0/goose-lab",
+   "page": "https://safdafang.github.io/goose-index/p/akeit0-goose-lab/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-11T14:36:07Z",
+   "created": "2026-10-09T15:31:22Z",
+   "stars": 4,
+   "license": "Apache-2.0",
+   "license_source": "github",
+   "platforms": [
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": true,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "akari-iku-goose-playground",
+   "name": "goose-playground",
+   "kind": "learning-resource",
+   "category": "learning",
+   "tags": [
+    "experiments",
+    "lifetimes",
+    "japanese"
+   ],
+   "description": "Small Japanese-language experiments that probe Goose's lifetime rules: which dangling references the compiler rejects, plus an L-system written in Goose, Rust and C++ side by side.",
+   "repo": "https://github.com/akari-iku/goose-playground",
+   "url": "https://github.com/akari-iku/goose-playground",
+   "page": "https://safdafang.github.io/goose-index/p/akari-iku-goose-playground/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-28T16:14:27Z",
+   "created": "2026-10-28T16:12:45Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "kyambuthia-ur-goose-is-cooked",
+   "name": "ur-goose-is-cooked",
+   "kind": "learning-resource",
+   "category": "learning",
+   "tags": [
+    "starter",
+    "template",
+    "graphics"
+   ],
+   "description": "A minimal starter: a hello-world, a window opened through gfx and a low-poly retro graphics demo that shows a program with its own C.",
+   "repo": "https://github.com/kyambuthia/ur-goose-is-cooked",
+   "url": "https://github.com/kyambuthia/ur-goose-is-cooked",
+   "page": "https://safdafang.github.io/goose-index/p/kyambuthia-ur-goose-is-cooked/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "main",
+   "last_commit": "2026-10-25T17:52:11Z",
+   "created": "2026-10-25T16:48:09Z",
+   "stars": 0,
+   "license": "none",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": null
+  }
+ ]
+}

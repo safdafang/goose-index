@@ -1,0 +1,15 @@
+id = "nandi-conda-quack"
+name = "quack"
+kind = "learning-resource"
+category = "package-management"
+tags = ["pixi", "conda", "install", "audio"]
+repo = "https://github.com/nandi-conda/quack"
+description = "A sample pixi project that installs the Goose compiler as a conda package and runs four programs with it, including a realtime audio visualizer."
+platforms = ["linux"]
+
+[native]
+c = true
+cmake = false
+
+[compat]
+skip = "a packaging sample"

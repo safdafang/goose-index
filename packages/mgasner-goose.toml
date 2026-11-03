@@ -1,0 +1,16 @@
+id = "mgasner-goose"
+name = "goose (mgasner's fork)"
+kind = "fork"
+category = "compilers-and-runtimes"
+tags = ["fork", "https", "mbedtls", "graphql", "tinycc"]
+repo = "https://github.com/mgasner/goose"
+description = "A fork adding deferred calls, a GraphQL module, HTTPS for the http module over Mbed TLS, and arm64 fixes to the bundled TinyCC."
+platforms = []
+upstream_fork = "Deferred calls, graphql module, HTTPS over Mbed TLS, sqlite as a package, arm64 TinyCC fixes."
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a fork of the compiler"

@@ -1,0 +1,15 @@
+id = "macho0x-goose-ethereum"
+name = "goose-ethereum"
+kind = "package"
+category = "domain-specific"
+tags = ["ethereum", "u256", "abi", "json-rpc"]
+repo = "https://github.com/Macho0x/goose-ethereum"
+description = "Ethereum building blocks with no networking or signing: 256-bit integers, ABI call encoding with function selectors, and JSON-RPC request and response bytes. Expects goose-crypto checked out beside it."
+platforms = []
+
+[import]
+name = "ethereum"
+
+[native]
+c = false
+cmake = false

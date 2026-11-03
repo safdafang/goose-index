@@ -1,0 +1,15 @@
+id = "clintecker-goose-zip"
+name = "goose-zip"
+kind = "package"
+category = "compression-and-archives"
+tags = ["zip", "archives", "zero-copy"]
+repo = "https://github.com/clintecker/goose-zip"
+description = "Walks a ZIP file held in memory and hands back entry names and payloads as slices into it; pair it with a DEFLATE decoder for compressed entries."
+platforms = []
+
+[import]
+name = "zip"
+
+[native]
+c = false
+cmake = false

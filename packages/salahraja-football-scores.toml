@@ -1,0 +1,15 @@
+id = "salahraja-football-scores"
+name = "football-scores"
+kind = "app"
+category = "applications"
+tags = ["web", "wasm", "json", "vue"]
+repo = "https://github.com/salahraja/football-scores"
+description = "A static Serie A results site whose data step is a small Goose program that reshapes the raw feed into the site's JSON, run natively or as WebAssembly."
+platforms = []
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a web site; its Goose part is a build step"

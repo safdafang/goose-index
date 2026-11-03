@@ -1,0 +1,12 @@
+id = "flisk-sh-codeql-goose"
+name = "codeql-goose"
+kind = "tool"
+category = "code-quality"
+tags = ["static-analysis", "sarif", "github-actions", "code-scanning"]
+repo = "https://github.com/flisk-sh/codeql-goose"
+description = "A GitHub Action that lexes Goose sources, applies a small rule set and uploads findings to Code Scanning as SARIF. Despite the name it does not use CodeQL."
+platforms = []
+
+[native]
+c = false
+cmake = false

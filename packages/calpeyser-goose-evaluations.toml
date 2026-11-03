@@ -1,0 +1,12 @@
+id = "calpeyser-goose-evaluations"
+name = "goose-evaluations"
+kind = "learning-resource"
+category = "benchmarks"
+tags = ["benchmarks", "json", "yaml", "jq", "ninja", "rust", "c"]
+repo = "https://github.com/calpeyser/goose-evaluations"
+description = "Four parsing workloads (a Ninja build graph, JSON, YAML and a jq core) written in Goose and measured against common and best-in-class C, C++ and Rust programs, with the generated C and harnesses included."
+platforms = ["linux"]
+
+[native]
+c = true
+cmake = false

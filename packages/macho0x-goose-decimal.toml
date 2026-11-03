@@ -1,0 +1,15 @@
+id = "macho0x-goose-decimal"
+name = "goose-decimal"
+kind = "package"
+category = "math-and-science"
+tags = ["decimal", "fixed-point", "money"]
+repo = "https://github.com/Macho0x/goose-decimal"
+description = "A 96-bit decimal with a scale of 0 to 28 in the layout rust_decimal uses, with parsing, formatting that keeps the scale, and normalization."
+platforms = []
+
+[import]
+name = "decimal"
+
+[native]
+c = false
+cmake = false

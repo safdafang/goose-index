@@ -1,0 +1,15 @@
+id = "mas-bandwidth-schema"
+name = "schema"
+kind = "tool"
+category = "encoding-and-serialization"
+tags = ["codegen", "schema", "games", "networking", "multi-language"]
+repo = "https://github.com/mas-bandwidth/schema"
+description = "A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests."
+platforms = []
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a code generator written in Go"

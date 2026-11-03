@@ -1,0 +1,13 @@
+id = "swoorup-ferrous-goose"
+name = "ferrous-goose"
+kind = "tool"
+category = "interop"
+tags = ["rust", "ffi", "cargo", "codegen"]
+repo = "https://github.com/Swoorup/ferrous-goose"
+description = "A cargo subcommand that turns attributed Rust crate APIs into Goose modules, and lets Rust embed Goose, with no hand-written C glue or unsafe code."
+platforms = ["linux", "macos"]
+
+[native]
+c = false
+cmake = false
+tools = ["cargo"]

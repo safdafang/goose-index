@@ -1,0 +1,15 @@
+id = "zhengsy-goose-tui"
+name = "goose-tui"
+kind = "package"
+category = "gui-and-terminal"
+tags = ["tui", "terminal", "immediate-mode", "widgets"]
+repo = "https://github.com/ZHENGSY/goose-tui"
+description = "An immediate-mode terminal UI library: widgets are function calls each frame over a cell grid, and only the changed cells are redrawn. POSIX terminals only."
+platforms = ["linux", "macos"]
+
+[import]
+name = "tui"
+
+[native]
+c = true
+cmake = false

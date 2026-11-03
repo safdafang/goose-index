@@ -1,0 +1,15 @@
+id = "binji-goose-gfx2d"
+name = "goose_gfx2d"
+kind = "package"
+category = "graphics-and-games"
+tags = ["2d", "vector", "sdf-text", "gradients", "goose-gfx"]
+repo = "https://github.com/binji/goose_gfx2d"
+description = "Anti-aliased 2D vector drawing on top of goose_gfx: shapes and Bézier paths, gradient and image paints, transforms, clipping and resolution-independent SDF text."
+platforms = []
+
+[import]
+name = "gfx2d"
+
+[native]
+c = false
+cmake = true

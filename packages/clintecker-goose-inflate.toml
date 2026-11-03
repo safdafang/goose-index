@@ -1,0 +1,15 @@
+id = "clintecker-goose-inflate"
+name = "goose-inflate"
+kind = "package"
+category = "compression-and-archives"
+tags = ["deflate", "gzip", "crc32", "streaming", "pure-goose"]
+repo = "https://github.com/clintecker/goose-inflate"
+description = "A streaming DEFLATE and gzip decoder in pure Goose that you feed compressed chunks of any size, with caller-owned fixed-size state and CRC-32."
+platforms = []
+
+[import]
+name = "inflate"
+
+[native]
+c = false
+cmake = false

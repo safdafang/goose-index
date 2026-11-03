@@ -1,0 +1,12 @@
+id = "dantje-weld"
+name = "weld"
+kind = "app"
+category = "applications"
+tags = ["linker", "elf", "x86-64", "threads"]
+repo = "https://github.com/dantje/weld"
+description = "A parallel x86-64 ELF linker that accepts GNU ld's command line and links static, PIE and shared outputs, built around worker threads and typed queues."
+platforms = ["linux"]
+
+[native]
+c = true
+cmake = false

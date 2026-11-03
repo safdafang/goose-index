@@ -1,0 +1,15 @@
+id = "sorins-ldapgoose"
+name = "ldapgoose"
+kind = "package"
+category = "networking"
+tags = ["ldap", "ber", "directory", "sans-io"]
+repo = "https://github.com/SorinS/ldapgoose"
+description = "An LDAPv3 client modelled on go-ldap that encodes requests and decodes responses without touching sockets, with command-line tools mirroring the OpenLDAP utilities."
+platforms = []
+
+[import]
+name = "ldap"
+
+[native]
+c = true
+cmake = false

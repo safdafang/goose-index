@@ -1,0 +1,15 @@
+id = "sstadick-goosimd"
+name = "goosimd"
+kind = "package"
+category = "language-extensions"
+tags = ["simd", "avx2", "bytes", "masks"]
+repo = "https://github.com/sstadick/goosimd"
+description = "Compares 16 or 32 bytes at once and turns the results into position masks; the author marks it an experimental placeholder whose API will change."
+platforms = ["linux"]
+
+[import]
+name = "goosimd"
+
+[native]
+c = false
+cmake = false

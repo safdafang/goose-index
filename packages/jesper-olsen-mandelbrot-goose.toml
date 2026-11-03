@@ -1,0 +1,12 @@
+id = "jesper-olsen-mandelbrot-goose"
+name = "mandelbrot-goose"
+kind = "app"
+category = "applications"
+tags = ["mandelbrot", "threads", "simd", "ascii", "gnuplot"]
+repo = "https://github.com/jesper-olsen/mandelbrot-goose"
+description = "Renders the Mandelbrot set as terminal ASCII or as gnuplot data, in single-threaded and threaded versions, as one entry in the author's cross-language Mandelbrot suite."
+platforms = []
+
+[native]
+c = false
+cmake = false

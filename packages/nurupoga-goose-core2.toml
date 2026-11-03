@@ -1,0 +1,15 @@
+id = "nurupoga-goose-core2"
+name = "goose-core2"
+kind = "tool"
+category = "compilers-and-runtimes"
+tags = ["embedded", "esp32", "esp-idf", "m5stack", "freertos"]
+repo = "https://github.com/nurupoga/goose-core2"
+description = "An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device."
+platforms = []
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "firmware for ESP32 hardware"

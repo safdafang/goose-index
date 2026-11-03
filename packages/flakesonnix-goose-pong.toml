@@ -1,0 +1,14 @@
+id = "flakesonnix-goose-pong"
+name = "goose-pong"
+kind = "app"
+category = "applications"
+tags = ["game", "pong", "raylib"]
+repo = "https://github.com/flakesonnix/goose-pong"
+description = "Two-paddle Pong against a simple computer opponent, drawn with a system-installed raylib."
+platforms = ["linux", "macos"]
+
+[native]
+c = false
+cmake = false
+system_libs.linux = ["libraylib-dev"]
+system_libs.macos = ["raylib"]

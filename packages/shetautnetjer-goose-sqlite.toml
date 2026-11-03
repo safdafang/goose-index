@@ -1,0 +1,15 @@
+id = "shetautnetjer-goose-sqlite"
+name = "goose-sqlite"
+kind = "binding"
+category = "databases"
+tags = ["sqlite", "sql", "amalgamation"]
+repo = "https://github.com/shetautnetjer/goose-sqlite"
+description = "A second SQLite binding with the amalgamation vendored in, written for and used by the Swan code-map tool, with a small self-contained test script."
+platforms = []
+
+[import]
+name = "sqlite"
+
+[native]
+c = true
+cmake = false

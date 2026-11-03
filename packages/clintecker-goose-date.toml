@@ -1,0 +1,15 @@
+id = "clintecker-goose-date"
+name = "goose-date"
+kind = "package"
+category = "os-and-system"
+tags = ["date", "time", "rfc3339", "calendar"]
+repo = "https://github.com/clintecker/goose-date"
+description = "Pure-Goose calendar math on epoch seconds: converts to and from civil dates and formats and parses RFC 3339 timestamps with offsets, without allocating."
+platforms = []
+
+[import]
+name = "date"
+
+[native]
+c = false
+cmake = false

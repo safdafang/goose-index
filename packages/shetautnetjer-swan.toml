@@ -1,0 +1,12 @@
+id = "shetautnetjer-swan"
+name = "Swan"
+kind = "app"
+category = "code-quality"
+tags = ["mcp", "code-intelligence", "agents", "references"]
+repo = "https://github.com/shetautnetjer/Swan"
+description = "A local code-intelligence server for AI agents, speaking MCP: definitions, references, change impact, related tests and live errors, built on goose-sqlite, goose-lsp and goose-treesitter."
+platforms = []
+
+[native]
+c = true
+cmake = false

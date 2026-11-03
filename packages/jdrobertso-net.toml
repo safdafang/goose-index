@@ -1,0 +1,18 @@
+id = "jdrobertso-net"
+name = "net"
+kind = "package"
+category = "networking"
+tags = ["tcp", "tls", "http-client", "url", "cookies", "windows"]
+repo = "https://github.com/jdrobertso/net"
+description = "General networking: TCP clients and servers with client-side TLS, URL handling, and a full-featured HTTP/1.1 client with cookies, redirects and a non-blocking threaded mode. TLS uses Schannel on Windows and OpenSSL elsewhere."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "net"
+modules = ["net.http", "net.url", "net.client", "net.cookie", "net.compress"]
+
+[native]
+c = true
+cmake = false
+system_libs.linux = ["libssl3"]
+system_libs.macos = ["openssl@3"]

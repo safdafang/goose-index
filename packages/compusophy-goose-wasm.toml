@@ -1,0 +1,16 @@
+id = "compusophy-goose-wasm"
+name = "goose-wasm"
+kind = "fork"
+category = "compilers-and-runtimes"
+tags = ["wasm", "webassembly", "browser", "benchmarks"]
+repo = "https://github.com/compusophy/goose-wasm"
+description = "Runs Goose programs on bare wasm32 without WASI or libc and races them against Rust in the browser on Goose's own benchmark set."
+platforms = []
+upstream_fork = "Runtime ported to wasm32-unknown-unknown; live benchmark page."
+
+[native]
+c = false
+cmake = false
+
+[compat]
+skip = "a runtime port, not a package"

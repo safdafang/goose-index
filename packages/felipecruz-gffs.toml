@@ -1,0 +1,14 @@
+id = "felipecruz-gffs"
+name = "gffs"
+kind = "app"
+category = "applications"
+tags = ["search", "grep", "pcre2", "cli"]
+repo = "https://github.com/felipecruz/gffs"
+description = "A recursive file searcher with ripgrep-style options, ported to Goose from the author's ffs, using PCRE2 for regular expressions."
+platforms = ["linux", "macos"]
+
+[native]
+c = true
+cmake = false
+system_libs.linux = ["libpcre2-dev"]
+system_libs.macos = ["pcre2"]
