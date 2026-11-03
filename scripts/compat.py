@@ -52,6 +52,7 @@ UPSTREAM = "aardappel/goose"
 HINT = re.compile(r'^\s*import ([A-Za-z_]\w*) from "([^"]+)";\s*$', re.M)
 ANSI = re.compile(r"\x1b\[[0-9;]*[A-Za-z]")
 CHECK_TIMEOUT, BUILD_TIMEOUT = 600, 1500
+BASE = None  # the run's temporary directory, cut out of logs
 
 
 def entries():
@@ -124,15 +125,26 @@ def sh(cmd, cwd, env, timeout):
             out = out.decode("utf-8", "replace")
         out += f"\n(timed out after {timeout}s)"
         rc = -1
-    return rc, ANSI.sub("", out), round(time.time() - t0, 1)
+    out = ANSI.sub("", out)
+    return rc, (tidy(out, BASE) if BASE else out), round(time.time() - t0, 1)
 
 
 def first_error(log):
-    for line in log.splitlines():
-        if re.search(r"\berror\b|timed out|fatal|not found|cannot|failed", line, re.I):
-            return line.strip()[:240]
+    """The line a reader needs: the first real error, not the 'building … failed' header."""
     lines = [l.strip() for l in log.splitlines() if l.strip()]
+    for pat in (r"undefined reference|unresolved external|\berror\b\s*[:A-Z]|fatal error",
+                r"timed out|not found|cannot|no such", r"failed"):
+        for line in lines:
+            if re.search(pat, line, re.I) and not re.match(r"(building|compiling) .* failed", line):
+                return line[:240]
     return lines[-1][:240] if lines else ""
+
+
+def tidy(log, base):
+    """Drop the runner's temporary paths, so a log reads the same on every machine."""
+    for b in {str(base), str(base).replace("\\", "/"), os.path.realpath(base)}:
+        log = log.replace(b + "/home/pkg/", "").replace(b + "\\home\\pkg\\", "").replace(b, "")
+    return re.sub(r"(/private)?/var/folders/[^ ]*?/goose-compat-[^/ ]+|[A-Z]:[\\/]Users[\\/][^ ]*?goose-compat-[^\\/ ]+", "", log)
 
 
 def result(status, ref, stage, log="", **extra):
@@ -195,20 +207,36 @@ def req(added):
     return [{"name": n, "source": s} for n, s in added]
 
 
+NOT_ENTRY = re.compile(r"(^|[/_.-])(tests?|examples?|samples?|bench(mark)?s?|spike|experiments?|conformance|"
+                       r"results|vendor|third_party|deps|docs?|fixtures?|scratch|tools?)([/_.-]|$)", re.I)
+
+
 def find_entry(repo_dir, e):
-    pref = [e["repo"].rsplit("/", 1)[-1].lower() + ".goose", "main.goose"]
-    for where in (repo_dir, repo_dir / "src"):
-        if not where.is_dir():
+    """The program's root file: a .goose with `fn main`, outside tests and examples, at most
+    two directories down. Several candidates are ranked: named like the repository, then
+    main.goose or app.goose, then the shallowest; a tie is no answer."""
+    words = set(re.split(r"[^a-z0-9]+", e["repo"].rsplit("/", 1)[-1].lower())) - {"goose", ""}
+    cands = []
+    for p in repo_dir.rglob("*.goose"):
+        rel = p.relative_to(repo_dir).as_posix()
+        if rel.count("/") > 2 or NOT_ENTRY.search(rel) or rel.startswith("."):
             continue
-        mains = [p for p in sorted(where.glob("*.goose"))
-                 if re.search(r"^\s*fn main\s*\(", p.read_text(encoding="utf-8", errors="replace"), re.M)]
-        if len(mains) == 1:
-            return mains[0]
-        for name in pref:
-            for p in mains:
-                if p.name.lower() == name:
-                    return p
-    return None
+        try:
+            text = p.read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            continue
+        if re.search(r"^\s*(export\s+)?fn main\s*\(", text, re.M):
+            cands.append(p)
+    if len(cands) <= 1:
+        return cands[0] if cands else None
+
+    def rank(p):
+        stem = p.stem.lower()
+        return (0 if stem in words or stem.replace("_", "-") in e["repo"].lower() else
+                1 if stem in ("main", "app") else 2,
+                p.relative_to(repo_dir).as_posix().count("/"))
+    cands.sort(key=rank)
+    return cands[0] if rank(cands[0]) != rank(cands[1]) else None
 
 
 def run_program(e, ref, work, env, exe):
@@ -221,8 +249,9 @@ def run_program(e, ref, work, env, exe):
     entry = (e.get("compat") or {}).get("entry")
     path = repo_dir / entry if entry else find_entry(repo_dir, e)
     if not path or not path.exists():
-        return result("skip", ref, "entry", reason="no single entry file with `fn main` at the root or in src/; "
-                                                   "set compat.entry in the entry file")
+        return result("skip", ref, "entry", reason="no single program file with `fn main` was found "
+                                                   "(a library, a WebAssembly module, or several programs); "
+                                                   "compat.entry in the entry file can name one")
     rel = path.relative_to(repo_dir).as_posix()
     rc, log, _ = sh([exe, "check", path.name], path.parent, env, CHECK_TIMEOUT)
     if rc != 0:
@@ -244,7 +273,8 @@ def run(out_path, shard, only):
     ids = {i.strip() for i in only.split(",") if i.strip()} if only else None
     es, ms = entries(), meta()
     todo = [i for i in es if (ids is None or i in ids) and shard_of(i, n) == k]
-    base = pathlib.Path(tempfile.mkdtemp(prefix="goose-compat-"))
+    global BASE
+    base = BASE = pathlib.Path(tempfile.mkdtemp(prefix="goose-compat-"))
     env = dict(os.environ, GOOSE_HOME=str(base / "home"))
     results = {}
     for num, id_ in enumerate(todo, 1):
