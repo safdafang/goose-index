@@ -330,8 +330,11 @@ def page(root, title, body, desc="", active=None, cls=""):
 <link rel="stylesheet" href="{root}assets/style.css">
 </head>
 <body class="{cls}">
-<svg class="defs" aria-hidden="true" focusable="false" width="0" height="0"><filter id="rough" x="-3%" y="-3%" width="106%" height="106%">
-<feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="7"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter></svg>
+<svg class="defs" aria-hidden="true" focusable="false" width="0" height="0">
+<filter id="torn" x="-4%" y="-4%" width="108%" height="108%"><feTurbulence type="fractalNoise" baseFrequency="0.055" numOctaves="4" seed="7"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter>
+<filter id="wobble" x="-4%" y="-6%" width="108%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.011 0.03" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="7"/></filter>
+<filter id="leafy" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="3" seed="11"/><feDisplacementMap in="SourceGraphic" scale="30"/></filter>
+</svg>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap top-in">
 <a class="plank brand" href="{root}">{art(root, "foot", "logo")}<span>Goose-index</span></a>
@@ -451,7 +454,7 @@ def mini(x, root):
 
 def empty_state(root):
     return f"""<div class="empty" id="empty" hidden>
-<div class="bed-scene">{art(root, "bed", "bed")}<p class="bed-sign plank"><span id="empty-what">No entries found</span></p>
+<div class="bed-scene">{art(root, "bed", "bed")}<span class="bed-post"></span><p class="bed-sign plank"><span id="empty-what">No entries found</span></p>
 {goose(root, "goose", "flip empty-goose")}{art(root, "pot", "pot")}</div>
 <p class="empty-hint">Try another word, or add the project you were looking for.</p>
 <a class="btn" href="{CONTRIBUTE}">Add a project {art(root, "foot", "i")}</a>
@@ -482,7 +485,7 @@ def home(cats, entries, ref_time, compat_doc):
 <div class="hero-text">
 <h1><span class="strip">Every Goose project.</span><br><span class="strip">Stolen into one place.</span></h1>
 <p class="sub"><span class="strip">The community index of projects written in Goose.</span></p>
-<form class="sign" role="search" action="./#index">
+<form class="sign" role="search" action="./#index"><span class="post l"></span><span class="post r"></span>
 <label class="sr" for="q">Search the index</label>
 <input id="q" name="q" type="search" placeholder="Search packages…" autocomplete="off">
 <button type="submit" class="sign-go" aria-label="Search">{art(root, "i-search")}</button>
@@ -499,9 +502,9 @@ def home(cats, entries, ref_time, compat_doc):
 {todo(root, [("find", "find a Goose package", True), ("copy", "copy its import line", False), ("honk", "honk", False)], "To-Do", "hero-todo")}
 </section>
 <div class="planters">
-<div class="planter"><div class="planter-box"><p class="planter-label">{art(root, "i-box")}{len(entries)} entries</p></div></div>
-<div class="planter"><div class="planter-box"><p class="planter-label">{art(root, "i-people")}{authors} authors</p></div></div>
-<div class="planter"><div class="planter-box"><p class="planter-label">{art(root, "i-clock")}Updated daily</p></div></div>
+<div class="planter"><div class="planter-box"><p class="planter-label plank">{art(root, "i-box")}{len(entries)} entries</p></div></div>
+<div class="planter"><div class="planter-box"><p class="planter-label plank">{art(root, "i-people")}{authors} authors</p></div></div>
+<div class="planter"><div class="planter-box"><p class="planter-label plank">{art(root, "i-clock")}Updated daily</p></div></div>
 </div>
 <section class="paper panel fresh" id="fresh"><h2 class="rule">Fresh from the pond</h2>
 <ul class="minis">{''.join(mini(x, root) for x in fresh)}</ul></section>
@@ -796,7 +799,7 @@ def not_found():
     footprints = "".join(f'<span class="fp" style="--x:{x}%;--y:{y}%;--r:{r}deg">{art(root, "foot", "i")}</span>'
                          for x, y, r in ((8, 82, 100), (15, 78, 112), (22, 82, 100), (29, 76, 112), (36, 80, 100), (43, 74, 110)))
     body = f"""<section class="lost">
-<h1 class="plank lost-sign">The goose took this page.</h1>
+<h1 class="paper lost-sign">The goose took this page.</h1>
 <div class="lost-scene">{art(root, "path", "scene-path")}{footprints}
 {goose(root, "goose-card", "lost-goose")}
 {art(root, "stone", "stone s1")}{art(root, "stone", "stone s2")}{art(root, "tulip", "tulip t1")}</div>
