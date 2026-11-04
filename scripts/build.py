@@ -265,16 +265,57 @@ def write_readme(cats, entries, compat_doc, at, ref_time):
 
 
 # ---------------------------------------------------------------- the site
+#
+# The look is a garden: wooden planks for the header, paper notes pinned to a hedge
+# for the entries, a to-do list for the filters, and a goose. All art is in
+# web/img/ (sprite.svg holds the goose, the seed packets and the icons).
 
-ICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" '
-        'fill="#1c1a17"/><path d="M22 46c0-9 6-14 13-14h3c2 0 3-1 3-3v-4c0-4 3-7 7-7s7 3 7 7c0 2-1 3-2 4l-5 '
-        '1v6c0 9-7 16-16 16h-6c-2 0-4-2-4-4z" fill="#f4efe6"/><path d="M55 25l7 2-7 2z" fill="#f29f05"/>'
-        '<circle cx="48" cy="24" r="1.8" fill="#1c1a17"/></svg>')
+ICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#8DB580"/>'
+        '<path d="M32 56L19.8 37.6L8 18.2Q6.6 11 13.8 12.8L24.8 23.4L27.1 6.4Q32 0 36.9 6.4L39.2 23.4L50.2 12.8Q57.4 11 '
+        '56 18.2L44.2 37.6Z" fill="#F28C28" stroke="#F28C28" stroke-width="4" stroke-linejoin="round" '
+        'transform="translate(32 33) scale(.82) translate(-32 -30)"/></svg>')
+CONTRIBUTE = f"{SOURCE}/blob/main/CONTRIBUTING.md"
+PER_PAGE = 18
 
 
-def page(root, title, body, desc="", active=""):
-    nav = [("", "Browse"), ("compat/", "Compatibility"), ("about/", "About")]
+def art(root, name, cls="i", label=""):
+    """An image from the sprite. Decorative unless it gets a label."""
+    a11y = f'role="img" aria-label="{esc(label)}"' if label else 'aria-hidden="true" focusable="false"'
+    title = f"<title>{esc(label)}</title>" if label else ""
+    return f'<svg class="{cls}" {a11y}>{title}<use href="{root}assets/img/sprite.svg#{name}"/></svg>'
+
+
+def packet(root, kind, cls="packet"):
+    return art(root, f"k-{kind}", cls, KINDS[kind][0])
+
+
+def goose(root, pose="goose", cls="", honk=True):
+    lines = art(root, "honk", "honk-lines") if honk else ""
+    return (f'<button type="button" class="goose {cls}" aria-label="Honk" title="Honk">'
+            f'{art(root, pose, "goose-art")}{lines}</button>')
+
+
+def owner(x):
+    u = x["repo"] or x["url"] or ""
+    parts = u.removeprefix("https://").removeprefix("http://").split("/")
+    if parts[0] in ("github.com", "gitlab.com", "codeberg.org") and len(parts) > 1:
+        return parts[1]
+    return parts[0]
+
+
+def todo(root, items, title="To-Do list:", cls=""):
+    """A pinned to-do note. items: (key, text, done_by_default). The page script ticks items off."""
+    lis = "".join(f'<li><button type="button" class="todo-item{" done" if done else ""}" data-todo="{k}"'
+                  f'{" data-auto" if done else ""} aria-pressed="{str(done).lower()}"><span class="box"></span>'
+                  f'<span class="t">{t}</span></button></li>' for k, t, done in items)
+    return (f'<div class="todo paper {cls}">{art(root, "pin", "pin")}<h2 class="hand">{title}</h2>'
+            f'<ul class="todo-list">{lis}</ul></div>')
+
+
+def page(root, title, body, desc="", active=None, cls=""):
+    nav = [("", "Index"), ("compat/", "Compatibility"), ("about/", "About")]
     links = "".join(f'<a href="{root}{h}"{" aria-current=page" if active == h else ""}>{t}</a>' for h, t in nav)
+    links += f'<a href="{CONTRIBUTE}">Add a project</a>'
     full = "Goose Package Index" if not title else f"{title} · Goose Package Index"
     return f"""<!doctype html>
 <html lang="en">
@@ -283,23 +324,28 @@ def page(root, title, body, desc="", active=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(full)}</title>
 <meta name="description" content="{esc(desc or 'An index of libraries, tools and programs for the Goose programming language.')}">
+<meta name="theme-color" content="#8DB580">
 <link rel="icon" href="{root}assets/icon.svg" type="image/svg+xml">
+<link rel="preload" href="{root}assets/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{root}assets/style.css">
-<script>try{{const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 </head>
-<body>
+<body class="{cls}">
+<svg class="defs" aria-hidden="true" focusable="false" width="0" height="0"><filter id="rough" x="-3%" y="-3%" width="106%" height="106%">
+<feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="7"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter></svg>
+<a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap top-in">
-<a class="brand" href="{root}"><img src="{root}assets/icon.svg" alt="" width="28" height="28"><span>Goose Package Index</span></a>
-<nav>{links}<a href="{root}index.json">index.json</a><a href="{SOURCE}">GitHub</a>
-<button class="theme" type="button" aria-label="Switch light and dark theme" title="Theme">◐</button></nav>
+<a class="plank brand" href="{root}">{art(root, "foot", "logo")}<span>Goose-index</span></a>
+<nav class="plank nav" aria-label="Site">{links}</nav>
+<a class="plank gh" href="{SOURCE}" aria-label="The index on GitHub" title="The index on GitHub">{art(root, "i-github", "i")}</a>
 </div></header>
-<main class="wrap">
+<main class="wrap" id="main">
 {body}
 </main>
-<footer class="wrap foot">
+<footer class="wrap foot"><div class="foot-in paper">
 <p>An index of links: every project lives in its author's repository, and nothing is hosted or mirrored here.
-Data is regenerated daily from <a href="{SOURCE}/tree/main/packages">packages/</a>. Not affiliated with the Goose project.</p>
-</footer>
+Data is regenerated daily from <a href="{SOURCE}/tree/main/packages">packages/</a>, and all of it is in
+<a href="{root}index.json">index.json</a>. Not affiliated with the Goose project.</p>
+</div></footer>
 <script src="{root}assets/app.js" defer></script>
 </body>
 </html>
@@ -332,7 +378,15 @@ def license_html(x):
     return f"<span>{esc(x['license'])}</span>" if x["license"] else ""
 
 
-def import_block(x, big=False):
+def code_html(line):
+    m = re.fullmatch(r'import (\S+) from "(.*)";', line)
+    if not m:
+        return esc(line)
+    return (f'<span class="kw">import</span> {esc(m[1])} <span class="kw">from</span> '
+            f'<span class="str">"{esc(m[2])}"</span>;')
+
+
+def import_block(root, x, big=False):
     imp = x["import"]
     if not imp:
         return ""
@@ -340,14 +394,13 @@ def import_block(x, big=False):
         return (f'<div class="import note">Lives in <code>{esc(imp["subdir"])}/</code> of its repository, which Goose '
                 f'cannot import by URL yet: copy that folder next to your program and '
                 f'<code>import {esc(imp["name"])} from "./{esc(imp["subdir"].rsplit("/", 1)[-1])}";</code></div>')
-    warn = "" if imp["pinned"] else (' <span class="unpinned" title="No tags yet: a branch moves, so builds can '
-                                     'change under you">untagged</span>')
-    return (f'<div class="import{" big" if big else ""}"><code>{esc(imp["line"])}</code>'
-            f'<button type="button" class="copy" data-copy="{esc(imp["line"])}">Copy</button>{warn}</div>')
+    warn = "" if imp["pinned"] else ('<p class="unpinned">No tags yet, so this pins a branch: builds can change under you.</p>')
+    return (f'<div class="code{" big" if big else ""}"><code>{code_html(imp["line"])}</code>'
+            f'<button type="button" class="copy" data-copy="{esc(imp["line"])}">{art(root, "i-clip")}<span>Copy</span></button></div>{warn}')
 
 
 def card(x, root, cats_by_id, ref_time):
-    text = " ".join([x["name"], x["id"], x["description"], " ".join(x["tags"]), x["kind"],
+    text = " ".join([x["name"], x["id"], x["description"], " ".join(x["tags"]), x["kind"], owner(x),
                      cats_by_id[x["category"]]["title"], (x["import"] or {}).get("name") or ""]).lower()
     data = {
         "id": x["id"], "kind": x["kind"], "cat": x["category"], "text": text, "name": x["name"].lower(),
@@ -362,70 +415,131 @@ def card(x, root, cats_by_id, ref_time):
         facts.append('<span class="flag">repository unavailable</span>')
     if x["archived"]:
         facts.append('<span class="flag soft">archived</span>')
-    if x["stars"]:
-        facts.append(f'<span title="GitHub stars">★ {x["stars"]}</span>')
-    if x["latest_tag"]:
-        facts.append(f'<span class="tag" title="Latest tag">{esc(x["latest_tag"])}</span>')
+    if x["repo"]:
+        facts.append(f'<span title="GitHub stars">{art(root, "i-star", "i star")}{x["stars"] or 0}</span>')
     if x["last_commit"]:
-        facts.append(f'<span title="Last commit {esc(x["last_commit"][:10])}">updated {ago(x["last_commit"], ref_time)}</span>')
-    lic = license_html(x)
-    if lic:
-        facts.append(lic)
+        facts.append(f'<span title="Last commit {esc(x["last_commit"][:10])}">{art(root, "i-calendar", "i")}{ago(x["last_commit"], ref_time)}</span>')
+    if x["latest_tag"]:
+        facts.append(f'<span class="tag" title="Latest tag">{art(root, "i-tag", "i")}{esc(x["latest_tag"])}</span>')
+    if x["license"] == "none":
+        facts.append(license_html(x))
+    tags = "".join(f'<span class="sprout">{esc(t)}</span>' for t in x["tags"][:2])
+    copy = ""
+    if x["import"] and x["import"]["line"]:
+        copy = (f'<button type="button" class="copy pinbtn" data-copy="{esc(x["import"]["line"])}" '
+                f'title="Copy: {esc(x["import"]["line"])}">{art(root, "i-clip")}<span class="sr">Copy the import line</span></button>')
     cat = cats_by_id[x["category"]]
     return f"""<li class="card" {attrs}>
-<div class="card-head"><a class="card-title" href="{root}p/{x['id']}/">{esc(x['name'])}</a>
-<span class="kind k-{x['kind']}">{KINDS[x['kind']][0]}</span>
-<a class="cat" href="{root}c/{cat['id']}/">{esc(cat['title'])}</a></div>
+<a class="card-pic" href="{root}p/{x['id']}/" tabindex="-1">{packet(root, x['kind'])}</a>
+<div class="card-body">
+<a class="card-title" href="{root}p/{x['id']}/">{esc(x['name'])}</a>
+<span class="by">by {esc(owner(x))} · <a href="{root}c/{cat['id']}/" title="{esc(cat['title'])}">{KINDS[x['kind']][0].lower()}</a></span>
 <p class="desc">{esc(x['description'])}</p>
-{import_block(x)}
+{f'<div class="sprouts">{tags}</div>' if tags else ''}
 <div class="facts">{''.join(facts)}{compat_badges(x, compact=True)}</div>
+</div>{copy}
 </li>"""
+
+
+def mini(x, root):
+    tags = "".join(f'<span class="sprout">{esc(t)}</span>' for t in x["tags"][:2])
+    stars = f'<span class="stars">{art(root, "i-star", "i star")}{x["stars"] or 0}</span>' if x["repo"] else ""
+    return (f'<li class="mini">{art(root, "pin", "pin")}<a class="mini-pic" href="{root}p/{x["id"]}/" tabindex="-1">{packet(root, x["kind"])}</a>'
+            f'<div><a class="card-title" href="{root}p/{x["id"]}/">{esc(x["name"])}</a>'
+            f'<p class="desc">{esc(x["description"])}</p><div class="mini-foot"><span class="sprouts">{tags}</span>{stars}</div></div></li>')
+
+
+def empty_state(root):
+    return f"""<div class="empty" id="empty" hidden>
+<div class="bed-scene">{art(root, "bed", "bed")}<p class="bed-sign plank"><span id="empty-what">No entries found</span></p>
+{goose(root, "goose", "flip empty-goose")}{art(root, "pot", "pot")}</div>
+<p class="empty-hint">Try another word, or add the project you were looking for.</p>
+<a class="btn" href="{CONTRIBUTE}">Add a project {art(root, "foot", "i")}</a>
+</div>"""
+
+
+def radio(name, value, text, count=None, checked=False):
+    n = f'<span class="n">{count}</span>' if count is not None else ""
+    return (f'<label class="opt"><input type="radio" name="{name}" value="{value}"{" checked" if checked else ""}>'
+            f'<span class="box"></span><span class="t">{text}</span>{n}</label>')
 
 
 def home(cats, entries, ref_time, compat_doc):
     root = ""
     cats_by_id = {c["id"]: c for c in cats}
-    n_pkg = sum(1 for x in entries if x["kind"] in ("package", "binding"))
-    kinds = "".join(f'<button type="button" class="chip" data-kind="{k}">{v[1]} '
-                    f'<span>{sum(1 for x in entries if x["kind"] == k)}</span></button>'
-                    for k, v in KINDS.items())
-    side = "".join(f'<li><a href="c/{c["id"]}/" data-cat="{c["id"]}">{esc(c["title"])}<span>{c["count"]}</span></a></li>'
-                   for c in cats if c["count"])
-    tested = f"tested against Goose {esc(compat_doc['goose'])}" if compat_doc else "build tests run weekly"
+    authors = len({owner(x) for x in entries if x["repo"]})
+    kinds = radio("kind", "", "Anything", len(entries), True) + "".join(
+        radio("kind", k, v[1], sum(1 for x in entries if x["kind"] == k)) for k, v in KINDS.items())
+    catr = radio("cat", "", "Every category", len(entries), True) + "".join(
+        radio("cat", c["id"], esc(c["title"]), c["count"]) for c in cats if c["count"])
+    sorts = "".join(radio("sort", v, t, checked=(v == "relevance")) for v, t in
+                    (("relevance", "Best match"), ("updated", "Recently updated"), ("stars", "Stars"), ("name", "Name")))
+    tested = f"whether it builds with Goose {esc(compat_doc['goose'])}" if compat_doc else "build tests run weekly"
+    fresh = sorted((x for x in entries if x["created"] and x["available"]), key=lambda x: x["created"], reverse=True)[:3]
+    footprints = "".join(f'<span class="fp" style="--x:{x}%;--y:{y}%;--r:{r}deg">{art(root, "foot", "i")}</span>'
+                         for x, y, r in ((62, 70, -70), (69, 64, -58), (75, 56, -64), (81, 50, -52), (87, 42, -60), (93, 36, -48)))
     body = f"""<section class="hero">
-<h1>Every Goose project we could find, in one place.</h1>
-<p class="lede">{len(entries)} libraries, tools, editor plugins, programs and guides for the
-<a href="{UPSTREAM}">Goose programming language</a>: {n_pkg} importable packages, each with the line to paste,
-the native libraries it needs, and whether it builds, {tested}.</p>
+<div class="hero-text">
+<h1><span class="strip">Every Goose project.</span><br><span class="strip">Stolen into one place.</span></h1>
+<p class="sub"><span class="strip">The community index of projects written in Goose.</span></p>
+<form class="sign" role="search" action="./#index">
+<label class="sr" for="q">Search the index</label>
+<input id="q" name="q" type="search" placeholder="Search packages…" autocomplete="off">
+<button type="submit" class="sign-go" aria-label="Search">{art(root, "i-search")}</button>
+</form>
+<p class="hint paper">Each entry links to its author's repository, with the import line to paste and {tested}. Press <kbd>/</kbd> to search.</p>
+</div>
+<div class="hero-scene">
+{art(root, "path", "scene-path")}
+{art(root, "stone", "stone s1")}{art(root, "stone", "stone s2")}{art(root, "stone", "stone s3")}
+{footprints}
+{goose(root, "goose-card", "flip hero-goose")}
+{art(root, "tulip", "tulip t1")}{art(root, "tulip", "tulip t2")}
+</div>
+{todo(root, [("find", "find a Goose package", True), ("copy", "copy its import line", False), ("honk", "honk", False)], "To-Do", "hero-todo")}
 </section>
-<section class="finder" aria-label="Search and filter">
-<div class="search"><input id="q" type="search" placeholder="Search names, descriptions, tags…  (press /)" autocomplete="off" aria-label="Search">
-<select id="sort" aria-label="Sort"><option value="relevance">Best match</option><option value="updated">Recently updated</option><option value="stars">Most stars</option><option value="name">Name</option></select></div>
-<div class="chips"><button type="button" class="chip on" data-kind="">All <span>{len(entries)}</span></button>{kinds}</div>
-<div class="toggles">
-<label>Builds on <select id="os"><option value="">any OS</option><option value="linux">Linux</option><option value="macos">macOS</option><option value="windows">Windows</option></select></label>
-<label><input type="checkbox" id="tagged"> tagged releases only</label>
-<label><input type="checkbox" id="licensed"> has a license</label>
-<span id="count" aria-live="polite"></span></div>
-</section>
-<div class="layout">
-<aside class="side"><h2>Categories</h2><ul id="cats"><li><a href="./" data-cat="" class="on">All categories<span>{len(entries)}</span></a></li>{side}</ul></aside>
-<section><ol class="cards" id="cards">
+<div class="planters">
+<div class="planter"><div class="planter-box"><p class="planter-label">{art(root, "i-box")}{len(entries)} entries</p></div></div>
+<div class="planter"><div class="planter-box"><p class="planter-label">{art(root, "i-people")}{authors} authors</p></div></div>
+<div class="planter"><div class="planter-box"><p class="planter-label">{art(root, "i-clock")}Updated daily</p></div></div>
+</div>
+<section class="paper panel fresh" id="fresh"><h2 class="rule">Fresh from the pond</h2>
+<ul class="minis">{''.join(mini(x, root) for x in fresh)}</ul></section>
+{art(root, "pond", "pond")}
+<section class="yard" id="index" aria-label="All entries">
+<aside class="todo paper filters">{art(root, "pin", "pin")}
+<h2 class="hand">To-Do list</h2>
+<p class="hand count" id="count" aria-live="polite">{len(entries)} entries</p>
+<fieldset class="strike"><legend class="hand">Kind:</legend>{kinds}</fieldset>
+<fieldset><legend class="hand">Sort by:</legend>{sorts}</fieldset>
+<fieldset><legend class="hand">Builds on:</legend>
+<select id="os" aria-label="Builds on"><option value="">any OS</option><option value="linux">Linux</option><option value="macos">macOS</option><option value="windows">Windows</option></select></fieldset>
+<fieldset><legend class="hand">Only:</legend>
+<label class="opt"><input type="checkbox" id="tagged"><span class="box"></span><span class="t">tagged releases</span></label>
+<label class="opt"><input type="checkbox" id="licensed"><span class="box"></span><span class="t">has a license</span></label></fieldset>
+<details class="cats"><summary class="hand">Category:</summary><fieldset class="strike">{catr}</fieldset></details>
+</aside>
+<div class="board-wrap">
+{goose(root, "goose", "flip board-goose")}
+<div class="board"><ol class="cards" id="cards" data-per-page="{PER_PAGE}">
 {''.join(card(x, root, cats_by_id, ref_time) for x in entries)}
-</ol><p class="empty" id="empty" hidden>Nothing matches. Try fewer words, or <a href="{SOURCE}/blob/main/CONTRIBUTING.md">add the project you were looking for</a>.</p></section>
-</div>"""
-    return page(root, "", body, active="")
+</ol>{empty_state(root)}</div>
+<nav class="stones" id="pager" aria-label="Pages" hidden></nav>
+</div>
+</section>"""
+    return page(root, "", body, active="", cls="home")
 
 
 def category_page(c, cats, entries, ref_time):
     root = "../../"
     cats_by_id = {k["id"]: k for k in cats}
     items = [x for x in entries if x["category"] == c["id"]]
-    body = f"""<p class="crumbs"><a href="{root}">All entries</a> / {esc(c['title'])}</p>
-<h1>{esc(c['title'])}</h1>
-<p class="lede">{esc(c['scope'])} {len(items)} {'entry' if len(items) == 1 else 'entries'}.</p>
-<ol class="cards">{''.join(card(x, root, cats_by_id, ref_time) for x in items)}</ol>"""
-    return page(root, c["title"], body, desc=c["scope"])
+    body = f"""<p class="crumbs"><span class="strip"><a href="{root}">All entries</a> / {esc(c['title'])}</span></p>
+<h1><span class="strip">{esc(c['title'])}</span></h1>
+<p class="sub"><span class="strip">{esc(c['scope'])} {len(items)} {'entry' if len(items) == 1 else 'entries'}.</span></p>
+<div class="board-wrap solo">{goose(root, "goose", "flip board-goose")}
+<div class="board"><ol class="cards">{''.join(card(x, root, cats_by_id, ref_time) for x in items)}</ol></div></div>"""
+    return page(root, c["title"], body, desc=c["scope"], cls="category")
 
 
 def entry_page(x, cats, entries, ref_time, compat_doc):
@@ -448,7 +562,7 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
     if x["archived"]:
         row("Status", '<span class="flag soft">Archived by its author: read-only, no further changes.</span>')
     row("Latest tag", esc(x["latest_tag"] or "") + (f' <span class="muted">of {x["tag_count"]}</span>' if (x["tag_count"] or 0) > 1 else "")
-        if x["latest_tag"] else ('<span class="unpinned">untagged</span>' if x["repo"] else ""))
+        if x["latest_tag"] else ('<span class="flag warn">untagged</span>' if x["repo"] else ""))
     row("Default branch", esc(x["default_branch"] or ""))
     if x["last_commit"]:
         row("Last commit", f'{x["last_commit"][:10]} <span class="muted">({ago(x["last_commit"], ref_time)})</span>')
@@ -461,8 +575,6 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
     row("Platforms claimed", ", ".join(OSES[p] for p in x["platforms"]) or ('<span class="muted">not stated</span>' if x["kind"] not in ("learning-resource", "editor") else ""))
     if x["upstream_fork"]:
         row("Adds", esc(x["upstream_fork"]))
-    if x["tags"]:
-        row("Tags", " ".join(f'<span class="tagword">{esc(t)}</span>' for t in x["tags"]))
 
     native = []
     nat = x["native"]
@@ -484,8 +596,13 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
             hit = known.get(src)
             name = f'<a href="{root}p/{hit["id"]}/">{esc(q["name"])}</a>' if hit else esc(q["name"])
             lis.append(f"<li>{name} <code>{esc(q['source'])}</code></li>")
-        native.append("<p>Requires these packages (found by the build test; declare them in your root file too):</p><ul>"
+        native.append("<p>Requires these packages (found by the build test; declare them in your root file too):</p><ul class=\"reqs\">"
                       + "".join(lis) + "</ul>")
+    native_html = ""
+    if native:
+        native_html = "<h2>Needs</h2>" + "".join(native)
+    elif x["import"]:
+        native_html = '<h2>Needs</h2><p class="muted">Pure Goose: nothing to install besides Goose.</p>'
 
     compat_html = ""
     if x["compat"]:
@@ -498,55 +615,103 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
             note = r.get("detail") or r.get("reason") or STATUS[s][2]
             trs.append(f'<tr><th>{label}</th><td><span class="os s-{s}">{STATUS[s][1]} {STATUS[s][0]}</span></td>'
                        f'<td class="muted">{esc(r.get("ref") or "")}{" · " + esc(r["entry"]) if r.get("entry") else ""}</td>'
-                       f'<td>{esc(note)}</td></tr>')
+                       f'<td class="note">{esc(note)}</td></tr>')
         when = f' Last run {compat_doc["ran_at"][:10]}' + (f', <a href="{compat_doc["run_url"]}">logs</a>' if compat_doc.get("run_url") else "") + "." if compat_doc else ""
         compat_html = (f'<h2>Builds with Goose {esc(compat_doc["goose"]) if compat_doc else ""}</h2>'
-                       f'<table class="compat-one">{"".join(trs)}</table><p class="muted small">'
+                       f'<div class="scroll"><table class="compat-one">{"".join(trs)}</table></div><p class="muted small">'
                        f'Checked by importing it into an empty program, or by building the program, on GitHub\'s runners.{when}</p>')
     elif x["repo"] and compat_doc:
         compat_html = '<h2>Builds</h2><p class="muted">Not tested yet.</p>'
 
-    similar = [e for e in entries if e["category"] == x["category"] and e["id"] != x["id"]][:6]
+    use_html = ""
+    if x["import"]:
+        mods = (f'<p class="muted small">Other modules: {", ".join(f"<code>import {esc(m)};</code>" for m in x["import"]["modules"])}</p>'
+                if x["import"]["modules"] else "")
+        use_html = f'<h2>Use it</h2>{import_block(root, x, big=True)}{mods}'
+
+    signs = []
+    if x["repo"]:
+        signs.append(f'<li title="GitHub stars">{art(root, "i-star", "i")}{x["stars"] or 0}</li>')
+    if x["latest_tag"]:
+        signs.append(f'<li title="Latest tag">{art(root, "i-tag", "i")}{esc(x["latest_tag"])}</li>')
+    elif x["repo"]:
+        signs.append(f'<li title="No tags yet">{art(root, "i-tag", "i")}untagged</li>')
+    if x["last_commit"]:
+        signs.append(f'<li title="Last commit {x["last_commit"][:10]}">{art(root, "i-clock", "i")}{ago(x["last_commit"], ref_time)}</li>')
+    if x["license"]:
+        lic = {"none": "no license", "other": "custom"}.get(x["license"], x["license"])
+        signs.append(f'<li title="License">{art(root, "i-scale", "i")}{esc(lic)}</li>')
+
+    link = x["repo"] or x["url"]
+    on_gh = (link or "").startswith("https://github.com/")
+    buttons = ""
+    if link:
+        buttons += (f'<a class="btn" href="{esc(link)}" data-todo-hit="visit">{art(root, "i-github" if on_gh else "i-house", "i")}'
+                    f'{"View on GitHub" if on_gh else "Open the site"}</a>')
+    if x["import"] and x["import"]["line"]:
+        buttons += (f'<button type="button" class="btn ghost copy" data-copy="{esc(x["import"]["line"])}">'
+                    f'{art(root, "i-clip", "i")}<span>Copy import</span></button>')
+
+    tags = "".join(f'<a class="sprout" href="{root}?q={esc(t)}#index">{art(root, "i-sprout", "i")}{esc(t)}</a>' for t in x["tags"])
+    similar = [e for e in entries if e["category"] == x["category"] and e["id"] != x["id"]][:4]
     sim = ""
     if similar:
-        sim = '<h2>Also in ' + esc(cat["title"]) + '</h2><ul class="similar">' + "".join(
-            f'<li><a href="{root}p/{e["id"]}/">{esc(e["name"])}</a> <span class="muted">{esc(e["description"][:110])}{"…" if len(e["description"]) > 110 else ""}</span></li>'
-            for e in similar) + "</ul>"
+        sim = (f'<div class="paper side-note"><h2>Also in {esc(cat["title"])}</h2><ul class="similar">' + "".join(
+            f'<li><a href="{root}p/{e["id"]}/">{packet(root, e["kind"], "packet sm")}<span><b>{esc(e["name"])}</b>'
+            f'<span class="muted">{esc(e["description"][:70])}{"…" if len(e["description"]) > 70 else ""}</span></span></a></li>'
+            for e in similar) + "</ul></div>")
+    items = [("find", f"find {esc(x['name'])}", True)]
+    if x["import"] and x["import"]["line"]:
+        items.append(("copy", "copy the import line", False))
+    if link:
+        items.append(("visit", "visit the repository" if x["repo"] else "open the link", False))
+    items.append(("honk", "cause chaos", False))
 
     edit = f"{SOURCE}/edit/main/packages/{x['id']}.toml"
-    body = f"""<p class="crumbs"><a href="{root}">All entries</a> / <a href="{root}c/{cat['id']}/">{esc(cat['title'])}</a></p>
+    body = f"""<p class="crumbs"><span class="strip"><a href="{root}">All entries</a> / <a href="{root}c/{cat['id']}/">{esc(cat['title'])}</a></span></p>
 <article class="entry">
-<h1>{esc(x['name'])} <span class="kind k-{x['kind']}">{KINDS[x['kind']][0]}</span></h1>
-<p class="lede">{esc(x['description'])}</p>
-{import_block(x, big=True)}
-{f'<p class="muted small">Other modules: {", ".join(f"<code>import {esc(m)};</code>" for m in x["import"]["modules"])}</p>' if x["import"] and x["import"]["modules"] else ""}
-<div class="cols">
-<div><h2>Facts</h2><table class="facts-t">{''.join(rows)}</table></div>
-<div>{'<h2>Native requirements</h2>' + ''.join(native) if native else '<h2>Native requirements</h2><p class="muted">Pure Goose: nothing to install besides Goose.</p>' if x['import'] else ''}
-{compat_html}</div>
+<div class="entry-main">
+<header class="paper entry-head">
+{packet(root, x['kind'], "packet lg")}
+<div class="entry-title"><h1>{esc(x['name'])}</h1><p class="by">by {esc(owner(x))} · {KINDS[x['kind']][0].lower()}</p>
+<p class="lede">{esc(x['description'])}</p></div>
+<div class="entry-btns">{buttons}</div>
+</header>
+{f'<ul class="signs">{"".join(signs)}</ul>' if signs else ''}
+<div class="sheet-wrap">{goose(root, "goose", "entry-goose")}
+<section class="paper sheet">{art(root, "pin", "pin")}
+{use_html}
+{compat_html}
+{native_html}
+<h2>Facts</h2><div class="scroll"><table class="facts-t">{''.join(rows)}</table></div>
+<p class="small muted edit">Something wrong here? <a href="{edit}">Edit this entry</a> or <a href="{SOURCE}/issues/new?title={esc(x['id'])}">open an issue</a>. {art(root, "foot", "i foot-mark")}</p>
+</section></div>
 </div>
+<aside class="entry-side">
+{f'<div class="paper side-note"><h2>Tags</h2><div class="sprouts big">{tags}</div></div>' if tags else ''}
 {sim}
-<p class="small muted">Something wrong here? <a href="{edit}">Edit this entry</a> or <a href="{SOURCE}/issues/new?title={esc(x['id'])}">open an issue</a>.</p>
+{todo(root, items)}
+</aside>
 </article>"""
-    return page(root, x["name"], body, desc=x["description"])
+    return page(root, x["name"], body, desc=x["description"], cls="entry-page")
 
 
 def compat_page(cats, entries, compat_doc):
     root = "../"
     tested = [x for x in entries if x["compat"] and any(r["status"] != "skip" for r in x["compat"].values())]
     if not compat_doc:
-        body = """<h1>Compatibility</h1><p class="lede">The first build test has not run yet. It builds every package
-and program against the latest Goose release on Linux, macOS and Windows, weekly.</p>"""
-        return page(root, "Compatibility", body, active="compat/")
+        body = """<h1><span class="strip">Compatibility</span></h1><p class="sub"><span class="strip">The first build test has not run yet. It builds every package
+and program against the latest Goose release on Linux, macOS and Windows, weekly.</span></p>"""
+        return page(root, "Compatibility", body, active="compat/", cls="compat")
     counts = {o: {s: 0 for s in STATUS} for o in OSES}
     for x in entries:
         for o in OSES:
             s = compat_status(x, o)
             if s:
                 counts[o][s] += 1
-    summ = "".join(f'<div class="stat"><b>{label}</b>' + "".join(
+    summ = "".join(f'<li><b>{label}</b>' + "".join(
         f'<span class="os s-{s}">{STATUS[s][1]} {counts[o][s]} {STATUS[s][0]}</span>' for s in ("pass", "check", "fail"))
-        + "</div>" for o, label in OSES.items())
+        + "</li>" for o, label in OSES.items())
     rows = []
     for x in tested:
         cells = []
@@ -555,33 +720,36 @@ and program against the latest Goose release on Linux, macOS and Windows, weekly
             s = r.get("status")
             if s:
                 tip = r.get("detail") or r.get("reason") or STATUS[s][2]
-                cells.append(f'<td class="c s-{s}" title="{esc(tip)}">{STATUS[s][1]}</td>')
+                cells.append(f'<td class="c"><span class="dot s-{s}" title="{esc(tip)}">{STATUS[s][1]}</span></td>')
             else:
                 cells.append('<td class="c"></td>')
         claims = "".join(OSES[p][0] for p in x["platforms"])
         ref = next((r.get("ref") for r in x["compat"].values() if r.get("ref")), "")
-        rows.append(f'<tr data-text="{esc((x["name"] + " " + x["id"]).lower())}"><td><a href="{root}p/{x["id"]}/">{esc(x["name"])}</a>'
-                    f' <span class="kind k-{x["kind"]}">{KINDS[x["kind"]][0]}</span></td><td class="muted">{esc(ref)}</td>'
+        rows.append(f'<tr data-text="{esc((x["name"] + " " + x["id"]).lower())}"><td class="nm">{packet(root, x["kind"], "packet xs")}<a href="{root}p/{x["id"]}/">{esc(x["name"])}</a></td>'
+                    f'<td class="muted">{esc(ref)}</td>'
                     f'{"".join(cells)}<td class="muted" title="Platforms the author claims">{claims}</td></tr>')
     run = f' (<a href="{compat_doc["run_url"]}">run logs</a>)' if compat_doc.get("run_url") else ""
-    body = f"""<h1>Compatibility</h1>
-<p class="lede">Every package and program with a buildable entry point, built against Goose {esc(compat_doc['goose'])}
-on GitHub's Linux, macOS and Windows runners on {esc((compat_doc.get('ran_at') or '')[:10])}{run}.
-A package is imported into an empty program, its requirements added as the compiler asks for them, then built.</p>
-<div class="stats">{summ}</div>
+    body = f"""<h1><span class="strip">Compatibility</span></h1>
+<p class="sub"><span class="strip">Every package and program with a buildable entry point, built against Goose {esc(compat_doc['goose'])}
+on GitHub's Linux, macOS and Windows runners on {esc((compat_doc.get('ran_at') or '')[:10])}{run}.</span>
+<span class="strip">A package is imported into an empty program, its requirements added as the compiler asks for them, then built.</span></p>
+<ul class="signs os-signs">{summ}</ul>
+<section class="paper sheet matrix-sheet">{art(root, "pin", "pin")}
 <p class="legend"><span class="os s-pass">✓ builds</span> <span class="os s-check">◐ typechecks, native build failed</span>
-<span class="os s-fail">✕ fails to fetch or typecheck</span> <span class="os s-skip">– not built</span> · hover a cell for the first error</p>
-<input id="cq" type="search" placeholder="Filter by name…" aria-label="Filter">
-<table class="matrix" id="matrix"><thead><tr><th>Entry</th><th>Ref</th><th>Linux</th><th>macOS</th><th>Windows</th><th title="Platforms the author claims">Claims</th></tr></thead>
-<tbody>{''.join(rows)}</tbody></table>"""
-    return page(root, "Compatibility", body, desc="Which Goose packages build on Linux, macOS and Windows.", active="compat/")
+<span class="os s-fail">✕ fails to fetch or typecheck</span> <span class="os s-skip">– not built</span> <span class="muted">· hover a mark for the first error</span></p>
+<div class="sign small-sign"><label class="sr" for="cq">Filter by name</label><input id="cq" type="search" placeholder="Filter by name…" autocomplete="off">{art(root, "i-search")}</div>
+<div class="scroll"><table class="matrix" id="matrix"><thead><tr><th>Entry</th><th>Ref</th><th>Linux</th><th>macOS</th><th>Windows</th><th title="Platforms the author claims">Claims</th></tr></thead>
+<tbody>{''.join(rows)}</tbody></table></div>
+</section>"""
+    return page(root, "Compatibility", body, desc="Which Goose packages build on Linux, macOS and Windows.", active="compat/", cls="compat")
 
 
 def about_page(entries):
     root = "../"
     cand = ROOT / "discovery" / "candidates.csv"
     n_cand = sum(1 for _ in cand.open(encoding="utf-8")) - 1 if cand.exists() else 0
-    body = f"""<article class="prose">
+    body = f"""<div class="about">
+<article class="paper sheet prose">{art(root, "pin", "pin")}
 <h1>About the index</h1>
 <p class="lede">A searchable list of what people are building with and for <a href="{UPSTREAM}">Goose</a>,
 the memory-safe systems language with no heap. Goose has no package registry on purpose: a package is a git
@@ -604,7 +772,7 @@ any that repeats the project's own wording.</p>
 <li>By pull request only: what an entry is, its description, category and native requirements.</li></ul>
 <h2>Add or fix an entry</h2>
 <p>Add a file <code>packages/&lt;owner&gt;-&lt;repo&gt;.toml</code> in a pull request; the
-<a href="{SOURCE}/blob/main/CONTRIBUTING.md">contributing guide</a> has a template. Checks run on the pull request,
+<a href="{CONTRIBUTE}" data-todo-hit="add">contributing guide</a> has a template. Checks run on the pull request,
 including a build test of the new entry.</p>
 <h2>For tools</h2>
 <p><a href="{root}index.json"><code>index.json</code></a> holds every entry with its import line, native requirements,
@@ -614,17 +782,35 @@ versioned and described by a <a href="{root}schema/index.schema.json">JSON Schem
 <p>The index's code is MIT licensed and its data, descriptions included, is CC0. Each listed project has its own
 license; entries without one are flagged, because without a license nobody may legally reuse that code.</p>
 <p class="muted">Not affiliated with the Goose project or its authors.</p>
-</article>"""
-    return page(root, "About", body, active="about/")
+</article>
+<aside class="about-side">
+{todo(root, [("read", "read about the index", True), ("add", "add your project", False), ("honk", "honk", False)])}
+{goose(root, "goose", "flip about-goose")}
+</aside>
+</div>"""
+    return page(root, "About", body, active="about/", cls="about-page")
+
+
+def not_found():
+    root = "/goose-index/"  # same origin on Pages, which sprite <use> needs
+    footprints = "".join(f'<span class="fp" style="--x:{x}%;--y:{y}%;--r:{r}deg">{art(root, "foot", "i")}</span>'
+                         for x, y, r in ((8, 82, 100), (15, 78, 112), (22, 82, 100), (29, 76, 112), (36, 80, 100), (43, 74, 110)))
+    body = f"""<section class="lost">
+<h1 class="plank lost-sign">The goose took this page.</h1>
+<div class="lost-scene">{art(root, "path", "scene-path")}{footprints}
+{goose(root, "goose-card", "lost-goose")}
+{art(root, "stone", "stone s1")}{art(root, "stone", "stone s2")}{art(root, "tulip", "tulip t1")}</div>
+<p class="lost-hint"><span class="strip">Nothing lives at this address, or it waddled off.</span></p>
+<a class="btn" href="{SITE}">Back to the index {art(root, "foot", "i")}</a>
+</section>"""
+    return page(root, "Not found", body, cls="lost-page")
 
 
 def write_site(out, cats, entries, compat_doc, index_text, ref_time):
     out = pathlib.Path(out)
     if out.exists():
         shutil.rmtree(out)
-    (out / "assets").mkdir(parents=True)
-    for f in (ROOT / "web").iterdir():
-        shutil.copy(f, out / "assets" / f.name)
+    shutil.copytree(ROOT / "web", out / "assets")
     (out / "assets" / "icon.svg").write_text(ICON, encoding="utf-8")
     (out / "schema").mkdir()
     for f in (ROOT / "schema").glob("*.json"):
@@ -640,8 +826,7 @@ def write_site(out, cats, entries, compat_doc, index_text, ref_time):
             w(f"c/{c['id']}/index.html", category_page(c, cats, entries, ref_time))
     for x in entries:
         w(f"p/{x['id']}/index.html", entry_page(x, cats, entries, ref_time, compat_doc))
-    w("404.html", page(SITE, "Not found", '<h1>Not here</h1><p class="lede">That page does not exist. '
-                       f'<a href="{SITE}">Search the index</a>.</p>'))
+    w("404.html", not_found())
     return sum(1 for _ in out.rglob("*.html"))
 
 
