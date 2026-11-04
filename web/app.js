@@ -1,69 +1,10 @@
 // Goose Package Index: search, filters and pages over the cards the page already holds,
-// copy buttons, the to-do notes and the goose. Without JavaScript every page still lists every entry.
+// and copy buttons. Without JavaScript every page still lists every entry.
 (function () {
   "use strict";
 
-  // ------------------------------------------------------------ to-do notes
-  // Items tick themselves off as you do them (copy a line, open a repository, honk); the list is
-  // remembered per browser, so a done thing stays done on every page.
-  const KEY = "goose-index-todo";
-  let done = {};
-  try { done = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) {}
-  function paint() {
-    document.querySelectorAll(".todo-item").forEach((b) => {
-      const on = b.hasAttribute("data-auto") || !!done[b.dataset.todo];
-      b.classList.toggle("done", on);
-      b.setAttribute("aria-pressed", String(on));
-    });
-  }
-  function tick(key, on) {
-    done[key] = on === undefined ? true : on;
-    try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {}
-    paint();
-  }
-  paint();
-
-  // ------------------------------------------------------------ the goose
-  let audio;
-  function honkSound() {
-    try {
-      const A = window.AudioContext || window.webkitAudioContext;
-      if (!A) return;
-      audio = audio || new A();
-      const t = audio.currentTime;
-      const out = audio.createGain();
-      out.gain.setValueAtTime(0.0001, t);
-      out.gain.exponentialRampToValueAtTime(0.22, t + 0.03);
-      out.gain.exponentialRampToValueAtTime(0.0001, t + 0.34);
-      const band = audio.createBiquadFilter();
-      band.type = "bandpass"; band.frequency.value = 1150; band.Q.value = 2.2;
-      band.connect(out); out.connect(audio.destination);
-      [["sawtooth", 1], ["square", 1.012]].forEach(([type, k]) => {
-        const o = audio.createOscillator();
-        o.type = type;
-        o.frequency.setValueAtTime(430 * k, t);
-        o.frequency.exponentialRampToValueAtTime(330 * k, t + 0.3);
-        o.connect(band); o.start(t); o.stop(t + 0.36);
-      });
-    } catch (e) {}
-  }
+  // ------------------------------------------------------------ copy buttons
   document.addEventListener("click", (ev) => {
-    const g = ev.target.closest(".goose");
-    if (!g) return;
-    g.classList.remove("honking");
-    void g.offsetWidth; // restart the animation
-    g.classList.add("honking");
-    setTimeout(() => g.classList.remove("honking"), 600);
-    honkSound();
-    tick("honk");
-  });
-
-  // ------------------------------------------------------------ copy buttons and links that tick items
-  document.addEventListener("click", (ev) => {
-    const item = ev.target.closest(".todo-item");
-    if (item && !item.hasAttribute("data-auto")) tick(item.dataset.todo, !done[item.dataset.todo]);
-    const hit = ev.target.closest("[data-todo-hit]");
-    if (hit) tick(hit.dataset.todoHit);
     const b = ev.target.closest(".copy");
     if (!b || !navigator.clipboard) return;
     const label = b.querySelector("span:not(.sr)");
@@ -71,7 +12,6 @@
     navigator.clipboard.writeText(b.dataset.copy).then(() => {
       b.classList.add("done");
       if (label) label.textContent = "Copied!";
-      tick("copy");
       setTimeout(() => { b.classList.remove("done"); if (label) label.textContent = was; }, 1600);
     }, () => {});
   });
@@ -134,7 +74,7 @@
       if (s && os.value && d["c-" + os.value] !== "pass") s = 0;
       if (s && tagged.checked && d.tagged !== "1") s = 0;
       if (s && licensed.checked && d.licensed !== "1") s = 0;
-      c.hidden = !s;
+      if (c.hidden !== !s) c.hidden = !s;
       if (s) shown.push([s, c]);
     }
     if (by === "relevance" && words.length) shown.sort((a, b) => b[0] - a[0]);
@@ -145,24 +85,34 @@
 
     const pages = Math.max(1, Math.ceil(shown.length / per));
     page = Math.min(Math.max(1, page), pages);
-    const frag = document.createDocumentFragment();
-    shown.forEach(([, c], i) => {
-      c.classList.toggle("off", i < (page - 1) * per || i >= page * per);
-      frag.appendChild(c);
-    });
-    original.filter((c) => c.hidden).forEach((c) => frag.appendChild(c));
-    list.appendChild(frag);
+    shown.forEach(([, c], i) => c.classList.toggle("off", i < (page - 1) * per || i >= page * per));
+    // Only this page's cards are displayed, so only their order in the DOM matters (it is also the
+    // tab order). Move them only when they are out of order: a move is costly, since every moved
+    // card's icons are rebuilt. Hidden and off-page cards stay wherever they are.
+    const want = shown.slice((page - 1) * per, page * per).map(([, c]) => c);
+    const have = Array.prototype.filter.call(list.children, (c) => !c.hidden && !c.classList.contains("off"));
+    if (want.some((c, i) => have[i] !== c)) {
+      const frag = document.createDocumentFragment();
+      want.forEach((c) => frag.appendChild(c));
+      list.appendChild(frag);
+    }
     stones(pages);
 
-    count.textContent = shown.length === original.length ? original.length + " entries" : shown.length + " of " + original.length;
+    setText(count, shown.length === original.length ? original.length + " entries" : shown.length + " of " + original.length);
     empty.hidden = shown.length > 0;
     list.hidden = shown.length === 0;
-    if (!shown.length) emptyWhat.textContent = words.length ? `No entries found for '${q.value.trim()}'` : "No entries match these filters";
+    if (!shown.length) setText(emptyWhat, words.length ? `No entries found for '${q.value.trim()}'` : "No entries match these filters");
     document.body.classList.toggle("searching", words.length > 0);
     if (push) save();
   }
 
+  // writing the same text again still repaints, so skip it
+  function setText(el, text) { if (el.textContent !== text) el.textContent = text; }
+
+  let drawn = "";
   function stones(pages) {
+    if (drawn === pages + "/" + page) return; // the stones already show this
+    drawn = pages + "/" + page;
     pager.hidden = pages < 2;
     pager.textContent = "";
     if (pages < 2) return;
