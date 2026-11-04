@@ -42,10 +42,10 @@ Libraries, tools, editor plugins, programs and guides for the [Goose programming
 
 _Sockets, HTTP clients and servers, web frameworks, URLs, ACME._
 
-- **[goose-acme](https://github.com/kaitk/goose-acme)** — Obtains and renews TLS certificates from Let's Encrypt or another ACME authority via TLS-ALPN-01, so a goose-http server can serve HTTPS with no reverse proxy. 🏷 v0.0.4 · ✅ ✅ ✅
-  `import acme from "github.com/kaitk/goose-acme@v0.0.4";`
-- **[goose-http](https://github.com/kaitk/goose-http)** — The most complete HTTP server stack for Goose: per-worker event loops on io_uring, epoll, kqueue or IOCP, with WebSockets, HTTP/2, HTTP/3, static files and an outbound client. Upstream benchmarks against it. ★ 18 · 🏷 v0.5.16 · ✅ ✅ ✅
-  `import http from "github.com/kaitk/goose-http@v0.5.16";`
+- **[goose-acme](https://github.com/kaitk/goose-acme)** — Obtains and renews TLS certificates from Let's Encrypt or another ACME authority via TLS-ALPN-01, so a goose-http server can serve HTTPS with no reverse proxy. 🏷 v0.0.5 · ✅ ✅ ✅
+  `import acme from "github.com/kaitk/goose-acme@v0.0.5";`
+- **[goose-http](https://github.com/kaitk/goose-http)** — The most complete HTTP server stack for Goose: per-worker event loops on io_uring, epoll, kqueue or IOCP, with WebSockets, HTTP/2, HTTP/3, static files and an outbound client. Upstream benchmarks against it. ★ 18 · 🏷 v0.5.18 · ✅ ✅ ✅
+  `import http from "github.com/kaitk/goose-http@v0.5.18";`
 - **[goose-web](https://github.com/aurthurm/goose-web)** — A web framework built on a non-blocking readiness loop, with typed routes, JSON validation, HTML templates, streaming responses and an optional SQLite layer. ★ 1 · 🏷 v0.6.0 · ✅ ✅ ✅
   `import goose_web from "github.com/aurthurm/goose-web@v0.6.0";`
 - **[honk](https://github.com/korolenkowork/honk)** — A web framework where routes declare typed structs and the request parsing, validation, JSON responses and OpenAPI schema with Swagger UI follow from those types.
@@ -136,8 +136,8 @@ _Data formats: JSON, YAML, ASN.1, binary layouts, bit packing._
 
 _Template engines, string utilities, parsing helpers, logging formats._
 
-- **[goose-logger](https://github.com/Macho0x/goose-logger)** — Writes one structured line per event with a UTC timestamp, level, call site and key=value fields, quoting where needed and masking secrets. 🏷 v0.3.3 · ✅ ✅ ✅
-  `import logger from "github.com/Macho0x/goose-logger@v0.3.3";`
+- **[goose-logger](https://github.com/Macho0x/goose-logger)** — Writes one structured line per event with a UTC timestamp, level, call site and key=value fields, quoting where needed and masking secrets. 🏷 v0.3.4 · ✅ ✅ ✅
+  `import logger from "github.com/Macho0x/goose-logger@v0.3.4";`
 - **[gooseneck](https://github.com/paulosuzart/gooseneck)** — A Handlebars-compatible template engine in pure Goose: compile a template once, then render it from typed structs or JSON with output tested against handlebars.js. ★ 2 · ✅ ✅ ✅
   `import gooseneck from "github.com/paulosuzart/gooseneck@main";`
 - **[goostr](https://github.com/sstadick/goostr)** — Byte-string searching, splitting and transforming that works on arbitrary bytes, NUL and broken UTF-8 included, following Rust's bstr; uses goosimd for fast search. 🏷 v0.2.1 · ❌ ❌ ❌
@@ -189,7 +189,7 @@ _Rendering, windowing, game libraries and their bindings, procedural noise._
 
 _Widget toolkits, desktop UI, terminal UI frameworks._
 
-- **[goose-tui](https://github.com/ZHENGSY/goose-tui)** — An immediate-mode terminal UI library: widgets are function calls each frame over a cell grid, and only the changed cells are redrawn. POSIX terminals only. ★ 1 · 🏷 v0.1.0 · ✅ ✅ ✅
+- **[goose-tui](https://github.com/ZHENGSY/goose-tui)** — An immediate-mode terminal UI library: widgets are function calls each frame over a cell grid, and only the changed cells are redrawn. POSIX terminals only. ★ 2 · 🏷 v0.1.0 · ✅ ✅ ✅
   `import tui from "github.com/ZHENGSY/goose-tui@v0.1.0";`
 - **[mygoose](https://github.com/akeit0/mygoose)** — A retained desktop UI toolkit whose layout, controls, focus handling and text editing are all Goose, drawn by a thin native layer: Direct2D on Windows, Cairo and Pango on Linux, AppKit on macOS. ★ 3 · 🏷 v0.1.0 · ✅ ✅ ✅
   `import mygoose from "github.com/akeit0/mygoose@v0.1.0";`
@@ -287,8 +287,8 @@ _Editor plugins, syntax grammars, LSP clients._
 
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
-- **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 1 · 🏷 v0.1.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 2899 · 🏷 v2026.3
+- **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 4 · 🏷 v0.1.0
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 2977 · 🏷 v2026.3
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
 - **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
@@ -321,7 +321,7 @@ _Programs written in Goose: tools, games, servers, simulations._
 - **[goose-mini-browser](https://github.com/Grumbash/goose-mini-browser)** — A toy graphical web browser that renders simple HTML in an SDL3 and Nuklear window, fetching pages through a small Rust networking library loaded at run time. ❌ ❌ ❌
 - **[goose-pong](https://github.com/flakesonnix/goose-pong)** — Two-paddle Pong against a simple computer opponent, drawn with a system-installed raylib. ⚠️ no license · 🟡 🟡 🟡
 - **[goose-sql-p2p](https://github.com/innomon/goose-sql-p2p)** — A peer-to-peer replication engine for SQLite databases that aims for compatibility with the Pear/Hypercore stack and with sqlite-p2p configuration. ❌ ❌ ❌
-- **[goose_sharp_x68000](https://github.com/manymids/goose_sharp_x68000)** — A Sharp X68000 emulator for Windows with the CPU, memory, devices and drawing written in Goose, a Win32 interface, and an MCP server for driving it from external tools. 🟡 🟡 ✅
+- **[goose_sharp_x68000](https://github.com/manymids/goose_sharp_x68000)** — A Sharp X68000 emulator for Windows with the CPU, memory, devices and drawing written in Goose, a Win32 interface, and an MCP server for driving it from external tools. ★ 1 · 🟡 🟡 ✅
 - **[goosecode](https://github.com/pleseisanidiot/goosecode)** — A terminal coding agent that talks to OpenRouter after an OAuth login, streams replies and asks before running write or shell tools. 🟡 🟡 🟡
 - **[GooseCraft](https://github.com/kokasikhorik-bot/GooseCraft)** — A Windows-only voxel game client and launcher that works toward Minecraft-like behaviour, with greedy meshing and save files; documentation is in Russian.
 - **[goosedex](https://github.com/Decryptu/goosedex)** — Prints a random Pokémon sprite in the terminal with every sprite embedded; a byte-for-byte port of a Zig tool, used to compare the two languages. ★ 2 · 🏷 v0.1.0 · ❌ ❌ ❌
@@ -344,10 +344,10 @@ _Performance comparisons of Goose against other languages._
 - **[goose-commands](https://github.com/lazychicken/goose-commands)** — Goose rewrites of commands from a Rust command collection, starting with a merge sort tool, checked byte for byte against the Rust originals and benchmarked against them. ⚠️ no license · ✅ ✅ ✅
 - **[goose-poc](https://github.com/ks250206/goose-poc)** — A proof of concept computing crystal structure factors from CIF files on a worker pool, timed against Rust, plain Python and NumPy versions of the same direct sum. ⚠️ no license · ✅ ✅ ✅
 - **[Goose_feedguard](https://github.com/cyberskat/Goose_feedguard)** — A Windows prototype that records exchange order-book data and compares order-book engines written in C++ and in Goose on the same recorded messages. ⚠️ no license
-- **[symidx](https://github.com/artsensiva/symidx)** — A symbol index for Python code bases built three ways to compare Goose with Rust on save and near-instant load of a binary image. ★ 1 · 🏷 v0.1-experiment · ✅ ✅ 🟡
+- **[symidx](https://github.com/artsensiva/symidx)** — A symbol index for Python code bases built three ways to compare Goose with Rust on save and near-instant load of a binary image. ★ 1 · 🏷 v1.2.1 · ✅ ✅ 🟡
 - **[goose-evaluations](https://github.com/calpeyser/goose-evaluations)** _learning_ — Four parsing workloads (a Ninja build graph, JSON, YAML and a jq core) written in Goose and measured against common and best-in-class C, C++ and Rust programs, with the generated C and harnesses included. ★ 8
 - **[goose-lab](https://github.com/inuverse44/goose-lab)** _learning_ — Small experiments and two benchmarks against idiomatic Rust (order parsing and totals, a lattice heat simulation), with written notes on the language and the results.
-- **[LangArena](https://github.com/kostya/LangArena)** _learning_ — A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page. ★ 60 · 🏷 2026-10-21
+- **[LangArena](https://github.com/kostya/LangArena)** _learning_ — A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page. ★ 60 · 🏷 2026-11-04
 - **[Multicore Server Challenge](https://github.com/arjaythedev/multicore-server-challenge)** _learning_ — A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers. ★ 73
 
 ## Learning
@@ -372,4 +372,4 @@ _Tutorials, guides, articles, notes, starter templates and example collections._
 - **Data for tools.** [`index.json`](index.json) (also at https://safdafang.github.io/goose-index/index.json) holds every entry with its import line, native requirements and build results. Its format is documented in [docs/index-json.md](docs/index-json.md) and versioned.
 - **Licenses.** The code here is MIT; the entry data and descriptions are CC0. Listed projects keep their own licenses.
 
-<sub>Generated 2026-11-03T23:08:43Z.</sub>
+<sub>Generated 2026-11-04T13:02:24Z.</sub>
