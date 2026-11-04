@@ -439,7 +439,7 @@ def mini(x, root):
 
 def empty_state(root):
     return f"""<div class="empty" id="empty" hidden>
-<div class="bed-scene">{art(root, "bed", "bed")}<span class="bed-post"></span><p class="bed-sign plank"><span id="empty-what">No entries found</span></p></div>
+<p class="empty-sign plank"><span id="empty-what">No entries found</span></p>
 <p class="empty-hint">Try another word, or add the project you were looking for.</p>
 <a class="btn" href="{CONTRIBUTE}">Add a project {art(root, "foot", "i")}</a>
 </div>"""
