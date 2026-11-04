@@ -266,9 +266,9 @@ def write_readme(cats, entries, compat_doc, at, ref_time):
 
 # ---------------------------------------------------------------- the site
 #
-# The look is a garden: wooden planks for the header, paper notes pinned to a hedge
-# for the entries, a to-do list for the filters, and a goose. All art is in
-# web/img/ (sprite.svg holds the goose, the seed packets and the icons).
+# The look is a garden: wooden planks for the header, paper notes pegged to a hedge
+# for the entries, a pinned note for the filters. All art is in web/img/
+# (sprite.svg holds the seed packets, the icons and the push pin).
 
 ICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#8DB580"/>'
         '<path d="M32 56L19.8 37.6L8 18.2Q6.6 11 13.8 12.8L24.8 23.4L27.1 6.4Q32 0 36.9 6.4L39.2 23.4L50.2 12.8Q57.4 11 '
@@ -289,12 +289,6 @@ def packet(root, kind, cls="packet"):
     return art(root, f"k-{kind}", cls, KINDS[kind][0])
 
 
-def goose(root, pose="goose", cls="", honk=True):
-    lines = art(root, "honk", "honk-lines") if honk else ""
-    return (f'<button type="button" class="goose {cls}" aria-label="Honk" title="Honk">'
-            f'{art(root, pose, "goose-art")}{lines}</button>')
-
-
 def owner(x):
     u = x["repo"] or x["url"] or ""
     parts = u.removeprefix("https://").removeprefix("http://").split("/")
@@ -303,16 +297,7 @@ def owner(x):
     return parts[0]
 
 
-def todo(root, items, title="To-Do list:", cls=""):
-    """A pinned to-do note. items: (key, text, done_by_default). The page script ticks items off."""
-    lis = "".join(f'<li><button type="button" class="todo-item{" done" if done else ""}" data-todo="{k}"'
-                  f'{" data-auto" if done else ""} aria-pressed="{str(done).lower()}"><span class="box"></span>'
-                  f'<span class="t">{t}</span></button></li>' for k, t, done in items)
-    return (f'<div class="todo paper {cls}">{art(root, "pin", "pin")}<h2 class="hand">{title}</h2>'
-            f'<ul class="todo-list">{lis}</ul></div>')
-
-
-def page(root, title, body, desc="", active=None, cls=""):
+def page(root, title, body, desc="", active=None, cls="", head=""):
     nav = [("", "Index"), ("compat/", "Compatibility"), ("about/", "About")]
     links = "".join(f'<a href="{root}{h}"{" aria-current=page" if active == h else ""}>{t}</a>' for h, t in nav)
     links += f'<a href="{CONTRIBUTE}">Add a project</a>'
@@ -327,7 +312,7 @@ def page(root, title, body, desc="", active=None, cls=""):
 <meta name="theme-color" content="#8DB580">
 <link rel="icon" href="{root}assets/icon.svg" type="image/svg+xml">
 <link rel="preload" href="{root}assets/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{root}assets/style.css">
+<link rel="stylesheet" href="{root}assets/style.css">{head}
 </head>
 <body class="{cls}">
 <svg class="defs" aria-hidden="true" focusable="false" width="0" height="0">
@@ -402,7 +387,7 @@ def import_block(root, x, big=False):
             f'<button type="button" class="copy" data-copy="{esc(imp["line"])}">{art(root, "i-clip")}<span>Copy</span></button></div>{warn}')
 
 
-def card(x, root, cats_by_id, ref_time):
+def card(x, root, cats_by_id, ref_time, off=False):
     text = " ".join([x["name"], x["id"], x["description"], " ".join(x["tags"]), x["kind"], owner(x),
                      cats_by_id[x["category"]]["title"], (x["import"] or {}).get("name") or ""]).lower()
     data = {
@@ -432,7 +417,7 @@ def card(x, root, cats_by_id, ref_time):
         copy = (f'<button type="button" class="copy pinbtn" data-copy="{esc(x["import"]["line"])}" '
                 f'title="Copy: {esc(x["import"]["line"])}">{art(root, "i-clip")}<span class="sr">Copy the import line</span></button>')
     cat = cats_by_id[x["category"]]
-    return f"""<li class="card" {attrs}>
+    return f"""<li class="card{' off' if off else ''}" {attrs}>
 <a class="card-pic" href="{root}p/{x['id']}/" tabindex="-1">{packet(root, x['kind'])}</a>
 <div class="card-body">
 <a class="card-title" href="{root}p/{x['id']}/">{esc(x['name'])}</a>
@@ -454,8 +439,7 @@ def mini(x, root):
 
 def empty_state(root):
     return f"""<div class="empty" id="empty" hidden>
-<div class="bed-scene">{art(root, "bed", "bed")}<span class="bed-post"></span><p class="bed-sign plank"><span id="empty-what">No entries found</span></p>
-{goose(root, "goose", "flip empty-goose")}{art(root, "pot", "pot")}</div>
+<div class="bed-scene">{art(root, "bed", "bed")}<span class="bed-post"></span><p class="bed-sign plank"><span id="empty-what">No entries found</span></p></div>
 <p class="empty-hint">Try another word, or add the project you were looking for.</p>
 <a class="btn" href="{CONTRIBUTE}">Add a project {art(root, "foot", "i")}</a>
 </div>"""
@@ -479,8 +463,6 @@ def home(cats, entries, ref_time, compat_doc):
                     (("relevance", "Best match"), ("updated", "Recently updated"), ("stars", "Stars"), ("name", "Name")))
     tested = f"whether it builds with Goose {esc(compat_doc['goose'])}" if compat_doc else "build tests run weekly"
     fresh = sorted((x for x in entries if x["created"] and x["available"]), key=lambda x: x["created"], reverse=True)[:3]
-    footprints = "".join(f'<span class="fp" style="--x:{x}%;--y:{y}%;--r:{r}deg">{art(root, "foot", "i")}</span>'
-                         for x, y, r in ((62, 70, -70), (69, 64, -58), (75, 56, -64), (81, 50, -52), (87, 42, -60), (93, 36, -48)))
     body = f"""<section class="hero">
 <div class="hero-text">
 <h1><span class="strip">Every Goose project.</span><br><span class="strip">Stolen into one place.</span></h1>
@@ -492,45 +474,37 @@ def home(cats, entries, ref_time, compat_doc):
 </form>
 <p class="hint paper">Each entry links to its author's repository, with the import line to paste and {tested}. Press <kbd>/</kbd> to search.</p>
 </div>
-<div class="hero-scene">
-{art(root, "path", "scene-path")}
-{art(root, "stone", "stone s1")}{art(root, "stone", "stone s2")}{art(root, "stone", "stone s3")}
-{footprints}
-{goose(root, "goose-card", "flip hero-goose")}
-{art(root, "tulip", "tulip t1")}{art(root, "tulip", "tulip t2")}
-</div>
-{todo(root, [("find", "find a Goose package", True), ("copy", "copy its import line", False), ("honk", "honk", False)], "To-Do", "hero-todo")}
 </section>
 <div class="planters">
 <div class="planter"><div class="planter-box"><p class="planter-label plank">{art(root, "i-box")}{len(entries)} entries</p></div></div>
 <div class="planter"><div class="planter-box"><p class="planter-label plank">{art(root, "i-people")}{authors} authors</p></div></div>
 <div class="planter"><div class="planter-box"><p class="planter-label plank">{art(root, "i-clock")}Updated daily</p></div></div>
 </div>
-<section class="paper panel fresh" id="fresh"><h2 class="rule">Fresh from the pond</h2>
+<section class="paper panel fresh" id="fresh"><h2 class="rule">Freshly planted</h2>
 <ul class="minis">{''.join(mini(x, root) for x in fresh)}</ul></section>
-{art(root, "pond", "pond")}
 <section class="yard" id="index" aria-label="All entries">
-<aside class="todo paper filters">{art(root, "pin", "pin")}
-<h2 class="hand">To-Do list</h2>
+<aside class="note paper filters">{art(root, "pin", "pin")}
+<h2 class="hand">Filter</h2>
 <p class="hand count" id="count" aria-live="polite">{len(entries)} entries</p>
-<fieldset class="strike"><legend class="hand">Kind:</legend>{kinds}</fieldset>
+<fieldset><legend class="hand">Kind:</legend>{kinds}</fieldset>
 <fieldset><legend class="hand">Sort by:</legend>{sorts}</fieldset>
 <fieldset><legend class="hand">Builds on:</legend>
 <select id="os" aria-label="Builds on"><option value="">any OS</option><option value="linux">Linux</option><option value="macos">macOS</option><option value="windows">Windows</option></select></fieldset>
 <fieldset><legend class="hand">Only:</legend>
 <label class="opt"><input type="checkbox" id="tagged"><span class="box"></span><span class="t">tagged releases</span></label>
 <label class="opt"><input type="checkbox" id="licensed"><span class="box"></span><span class="t">has a license</span></label></fieldset>
-<details class="cats"><summary class="hand">Category:</summary><fieldset class="strike">{catr}</fieldset></details>
+<details class="cats"><summary class="hand">Category:</summary><fieldset>{catr}</fieldset></details>
 </aside>
 <div class="board-wrap">
-{goose(root, "goose", "flip board-goose")}
 <div class="board"><ol class="cards" id="cards" data-per-page="{PER_PAGE}">
-{''.join(card(x, root, cats_by_id, ref_time) for x in entries)}
+{''.join(card(x, root, cats_by_id, ref_time, off=i >= PER_PAGE) for i, x in enumerate(entries))}
 </ol>{empty_state(root)}</div>
 <nav class="stones" id="pager" aria-label="Pages" hidden></nav>
 </div>
 </section>"""
-    return page(root, "", body, active="", cls="home")
+    # only the first page of cards is laid out at load; the script pages the rest, and
+    # without a script every card shows
+    return page(root, "", body, active="", cls="home", head="\n<noscript><style>.card.off { display: flex; }</style></noscript>")
 
 
 def category_page(c, cats, entries, ref_time):
@@ -540,7 +514,7 @@ def category_page(c, cats, entries, ref_time):
     body = f"""<p class="crumbs"><span class="strip"><a href="{root}">All entries</a> / {esc(c['title'])}</span></p>
 <h1><span class="strip">{esc(c['title'])}</span></h1>
 <p class="sub"><span class="strip">{esc(c['scope'])} {len(items)} {'entry' if len(items) == 1 else 'entries'}.</span></p>
-<div class="board-wrap solo">{goose(root, "goose", "flip board-goose")}
+<div class="board-wrap solo">
 <div class="board"><ol class="cards">{''.join(card(x, root, cats_by_id, ref_time) for x in items)}</ol></div></div>"""
     return page(root, c["title"], body, desc=c["scope"], cls="category")
 
@@ -649,7 +623,7 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
     on_gh = (link or "").startswith("https://github.com/")
     buttons = ""
     if link:
-        buttons += (f'<a class="btn" href="{esc(link)}" data-todo-hit="visit">{art(root, "i-github" if on_gh else "i-house", "i")}'
+        buttons += (f'<a class="btn" href="{esc(link)}">{art(root, "i-github" if on_gh else "i-house", "i")}'
                     f'{"View on GitHub" if on_gh else "Open the site"}</a>')
     if x["import"] and x["import"]["line"]:
         buttons += (f'<button type="button" class="btn ghost copy" data-copy="{esc(x["import"]["line"])}">'
@@ -663,13 +637,6 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
             f'<li><a href="{root}p/{e["id"]}/">{packet(root, e["kind"], "packet sm")}<span><b>{esc(e["name"])}</b>'
             f'<span class="muted">{esc(e["description"][:70])}{"…" if len(e["description"]) > 70 else ""}</span></span></a></li>'
             for e in similar) + "</ul></div>")
-    items = [("find", f"find {esc(x['name'])}", True)]
-    if x["import"] and x["import"]["line"]:
-        items.append(("copy", "copy the import line", False))
-    if link:
-        items.append(("visit", "visit the repository" if x["repo"] else "open the link", False))
-    items.append(("honk", "cause chaos", False))
-
     edit = f"{SOURCE}/edit/main/packages/{x['id']}.toml"
     body = f"""<p class="crumbs"><span class="strip"><a href="{root}">All entries</a> / <a href="{root}c/{cat['id']}/">{esc(cat['title'])}</a></span></p>
 <article class="entry">
@@ -681,7 +648,7 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
 <div class="entry-btns">{buttons}</div>
 </header>
 {f'<ul class="signs">{"".join(signs)}</ul>' if signs else ''}
-<div class="sheet-wrap">{goose(root, "goose", "entry-goose")}
+<div class="sheet-wrap">
 <section class="paper sheet">{art(root, "pin", "pin")}
 {use_html}
 {compat_html}
@@ -693,7 +660,6 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
 <aside class="entry-side">
 {f'<div class="paper side-note"><h2>Tags</h2><div class="sprouts big">{tags}</div></div>' if tags else ''}
 {sim}
-{todo(root, items)}
 </aside>
 </article>"""
     return page(root, x["name"], body, desc=x["description"], cls="entry-page")
@@ -775,7 +741,7 @@ any that repeats the project's own wording.</p>
 <li>By pull request only: what an entry is, its description, category and native requirements.</li></ul>
 <h2>Add or fix an entry</h2>
 <p>Add a file <code>packages/&lt;owner&gt;-&lt;repo&gt;.toml</code> in a pull request; the
-<a href="{CONTRIBUTE}" data-todo-hit="add">contributing guide</a> has a template. Checks run on the pull request,
+<a href="{CONTRIBUTE}">contributing guide</a> has a template. Checks run on the pull request,
 including a build test of the new entry.</p>
 <h2>For tools</h2>
 <p><a href="{root}index.json"><code>index.json</code></a> holds every entry with its import line, native requirements,
@@ -786,23 +752,14 @@ versioned and described by a <a href="{root}schema/index.schema.json">JSON Schem
 license; entries without one are flagged, because without a license nobody may legally reuse that code.</p>
 <p class="muted">Not affiliated with the Goose project or its authors.</p>
 </article>
-<aside class="about-side">
-{todo(root, [("read", "read about the index", True), ("add", "add your project", False), ("honk", "honk", False)])}
-{goose(root, "goose", "flip about-goose")}
-</aside>
 </div>"""
     return page(root, "About", body, active="about/", cls="about-page")
 
 
 def not_found():
     root = "/goose-index/"  # same origin on Pages, which sprite <use> needs
-    footprints = "".join(f'<span class="fp" style="--x:{x}%;--y:{y}%;--r:{r}deg">{art(root, "foot", "i")}</span>'
-                         for x, y, r in ((8, 82, 100), (15, 78, 112), (22, 82, 100), (29, 76, 112), (36, 80, 100), (43, 74, 110)))
     body = f"""<section class="lost">
-<h1 class="paper lost-sign">The goose took this page.</h1>
-<div class="lost-scene">{art(root, "path", "scene-path")}{footprints}
-{goose(root, "goose-card", "lost-goose")}
-{art(root, "stone", "stone s1")}{art(root, "stone", "stone s2")}{art(root, "tulip", "tulip t1")}</div>
+<div class="paper lost-sign">{art(root, "pin", "pin")}<h1>The goose took this page.</h1></div>
 <p class="lost-hint"><span class="strip">Nothing lives at this address, or it waddled off.</span></p>
 <a class="btn" href="{SITE}">Back to the index {art(root, "foot", "i")}</a>
 </section>"""
