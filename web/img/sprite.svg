@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<!-- Goose Package Index art: one sprite, used as <svg><use href="sprite.svg#id"/></svg>. Drawn for this site. -->
+<defs>
+  <!-- the goose, facing right, in a 230 x 220 box; legs are separate so the poses can share the rest -->
+  <g id="g-shadow"><ellipse cx="92" cy="208" rx="66" ry="8" fill="#3C5A28" opacity=".18"/></g>
+  <g id="g-body">
+    <polygon points="14,104 40,96 32,118" fill="#F4F4EF"/>
+    <polygon points="40,96 72,91 62,120 32,118" fill="#FFFFFF"/>
+    <polygon points="72,91 104,95 96,122 62,120" fill="#F8F8F4"/>
+    <polygon points="104,95 124,103 140,124 96,122" fill="#FFFFFF"/>
+    <polygon points="14,104 32,118 30,140 18,124" fill="#E1E1DA"/>
+    <polygon points="32,118 62,120 54,160 30,140" fill="#EAEAE4"/>
+    <polygon points="62,120 96,122 82,166 54,160" fill="#E3E3DC"/>
+    <polygon points="96,122 140,124 134,148 112,162 82,166" fill="#EEEEE8"/>
+    <polygon points="30,140 54,160 82,166 112,162 100,171 66,172 40,159" fill="#D3D3CA"/>
+    <polygon points="34,110 66,101 100,108 92,124" fill="#F0F0EA"/>
+    <polygon points="34,110 92,124 70,137 40,128" fill="#DFDFD7"/>
+    <polygon points="34,110 40,128 14,113" fill="#D2D2C9"/>
+    <polygon points="106,100 126,72 144,76 140,120" fill="#FFFFFF"/>
+    <polygon points="126,72 136,50 156,50 144,76" fill="#F2F2ED"/>
+    <polygon points="144,76 156,50 154,70 146,104 140,120" fill="#E5E5DF"/>
+    <polygon points="134,46 136,30 147,21 152,37" fill="#FFFFFF"/>
+    <polygon points="147,21 159,21 167,30 152,37" fill="#F4F4EF"/>
+    <polygon points="167,30 169,41 160,51 152,37" fill="#E8E8E2"/>
+    <polygon points="134,46 152,37 160,51 139,53" fill="#EFEFEA"/>
+  </g>
+  <g id="g-beak">
+    <polygon points="165,31 192,38 189,43 167,42" fill="#F28C28"/>
+    <polygon points="167,42 189,43 183,48 165,47" fill="#D8701A"/>
+    <polygon points="165,31 170,32 169,46 165,47" fill="#E07A1E"/>
+  </g>
+  <g id="g-eye"><circle cx="157" cy="32" r="2.7" fill="#222"/><circle cx="157.9" cy="31.1" r=".9" fill="#fff"/></g>
+  <g id="g-legs-stand">
+    <polygon points="76,164 82,164 81,199 76,199" fill="#E98522"/>
+    <polygon points="98,162 104,162 104,198 99,198" fill="#F28C28"/>
+    <polygon points="61,207 78,196 82,197 90,207" fill="#E07A1E"/>
+    <polygon points="87,207 100,195 105,196 116,207" fill="#F28C28"/>
+  </g>
+  <g id="g-legs-walk">
+    <polygon points="73,163 80,164 66,196 60,194" fill="#E07A1E"/>
+    <polygon points="46,203 60,191 67,195 72,205" fill="#D8701A"/>
+    <polygon points="98,162 104,162 120,192 114,195" fill="#F28C28"/>
+    <polygon points="108,203 113,191 120,192 134,201" fill="#F28C28"/>
+  </g>
+  <g id="g-card">
+    <polygon points="172,46 203,34 215,74 184,85" fill="#F6F0E2" stroke="#CDBF9F" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M181 55l20-8M183 63l21-8M185 71l14-5" stroke="#A39880" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+</defs>
+
+<symbol id="goose" viewBox="0 0 230 220"><use href="#g-shadow"/><use href="#g-legs-stand"/><use href="#g-body"/><use href="#g-beak"/><use href="#g-eye"/></symbol>
+<symbol id="goose-walk" viewBox="0 0 230 220"><use href="#g-shadow"/><use href="#g-legs-walk"/><use href="#g-body"/><use href="#g-beak"/><use href="#g-eye"/></symbol>
+<symbol id="goose-card" viewBox="0 0 230 220"><use href="#g-shadow"/><use href="#g-legs-walk"/><use href="#g-body"/><use href="#g-card"/><use href="#g-beak"/><use href="#g-eye"/></symbol>
+
+<symbol id="honk" viewBox="0 0 40 40"><path d="M6 30L1 22M14 24l-1-12M22 27l9-9" stroke="#F28C28" stroke-width="4.5" stroke-linecap="round" fill="none"/></symbol>
+<symbol id="foot" viewBox="0 0 32 32"><path d="M16 30L9.6 20.5L3.4 10.4Q2.6 6.6 6.4 7.6L12.2 13.2L13.4 4.2Q16 .8 18.6 4.2L19.8 13.2L25.6 7.6Q29.4 6.6 28.6 10.4L22.4 20.5Z" fill="currentColor" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+
+<!-- seed packets: one per kind of entry, 64 x 72 -->
+<defs>
+  <g id="packet-hole"><circle cx="32" cy="9" r="2.2" fill="#F3EDE0"/><path d="M6 15h52" stroke="#fff" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="3 3"/></g>
+</defs>
+<symbol id="k-package" viewBox="0 0 64 72">
+  <rect x="4" y="3" width="56" height="66" rx="6" fill="#8DB580"/><rect x="4" y="3" width="56" height="12" rx="4" fill="#76A06A"/><use href="#packet-hole"/>
+  <rect x="11" y="21" width="42" height="40" rx="6" fill="#EAF1DC"/>
+  <rect x="18" y="29" width="28" height="25" rx="2" fill="#C08A50" stroke="#7A5530" stroke-width="2.2"/>
+  <path d="M18 37.5h28M18 46h28M20 53l24-22" stroke="#7A5530" stroke-width="2.2"/>
+</symbol>
+<symbol id="k-binding" viewBox="0 0 64 72">
+  <rect x="4" y="3" width="56" height="66" rx="6" fill="#A9C6D9"/><rect x="4" y="3" width="56" height="12" rx="4" fill="#8FB1C7"/><use href="#packet-hole"/>
+  <rect x="11" y="21" width="42" height="40" rx="6" fill="#E6F0F4"/>
+  <circle cx="26" cy="41" r="8.5" fill="none" stroke="#3D6378" stroke-width="4.5"/><circle cx="38" cy="41" r="8.5" fill="none" stroke="#6E9CB3" stroke-width="4.5"/>
+  <path d="M30 34.2a8.5 8.5 0 0 1 4.3 1.3" stroke="#3D6378" stroke-width="4.5" fill="none"/>
+</symbol>
+<symbol id="k-tool" viewBox="0 0 64 72">
+  <rect x="4" y="3" width="56" height="66" rx="6" fill="#9CC07F"/><rect x="4" y="3" width="56" height="12" rx="4" fill="#84AD68"/><use href="#packet-hole"/>
+  <rect x="11" y="21" width="42" height="40" rx="6" fill="#EAF1DC"/>
+  <rect x="15" y="27" width="34" height="28" rx="5" fill="#2E2E2C"/>
+  <path d="M21 35l6 5-6 5" stroke="#A8D88A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 47h11" stroke="#A8D88A" stroke-width="3" stroke-linecap="round"/>
+</symbol>
+<symbol id="k-editor" viewBox="0 0 64 72">
+  <rect x="4" y="3" width="56" height="66" rx="6" fill="#EBC66A"/><rect x="4" y="3" width="56" height="12" rx="4" fill="#DDB253"/><use href="#packet-hole"/>
+  <rect x="11" y="21" width="42" height="40" rx="6" fill="#FBF2DA"/>
+  <polygon points="21,49 39,30 45,36 27,55" fill="#F2A33D" stroke="#9A6420" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="21,49 27,55 17,59" fill="#EED3AE" stroke="#9A6420" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="17,59 19,54.5 21.6,57" fill="#2E2E2C"/>
+  <polygon points="39,30 42,27 48,33 45,36" fill="#E88C8C" stroke="#9A6420" stroke-width="1.8" stroke-linejoin="round"/>
+</symbol>
+<symbol id="k-app" viewBox="0 0 64 72">
+  <rect x="4" y="3" width="56" height="66" rx="6" fill="#E9AB84"/><rect x="4" y="3" width="56" height="12" rx="4" fill="#DC956C"/><use href="#packet-hole"/>
+  <rect x="11" y="21" width="42" height="40" rx="6" fill="#DCEBF0"/>
+  <rect x="11" y="49" width="42" height="12" rx="0" fill="#9CC07F"/><rect x="11" y="55" width="42" height="6" rx="0" fill="#8DB580"/>
+  <rect x="21" y="38" width="22" height="15" fill="#F6F0E2" stroke="#8B4A3A" stroke-width="2"/>
+  <polygon points="17,40 32,27 47,40" fill="#C9584A" stroke="#8B4A3A" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="29" y="44" width="7" height="9" fill="#8B4A3A"/><rect x="38" y="42" width="3" height="3" fill="#A9C6D9"/>
+</symbol>
+<symbol id="k-fork" viewBox="0 0 64 72">
+  <rect x="4" y="3" width="56" height="66" rx="6" fill="#C9785A"/><rect x="4" y="3" width="56" height="12" rx="4" fill="#B56649"/><use href="#packet-hole"/>
+  <rect x="11" y="21" width="42" height="40" rx="6" fill="#F6E6DA"/>
+  <path d="M32 25v17" stroke="#A8743F" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M23.5 56V44.5Q23.5 41 27 41h10q3.5 0 3.5 3.5V56M29 56V42M35 56V42" stroke="#7C8790" stroke-width="3" fill="none" stroke-linecap="round"/>
+</symbol>
+<symbol id="k-learning-resource" viewBox="0 0 64 72">
+  <rect x="4" y="3" width="56" height="66" rx="6" fill="#D9C79F"/><rect x="4" y="3" width="56" height="12" rx="4" fill="#C8B387"/><use href="#packet-hole"/>
+  <rect x="11" y="21" width="42" height="40" rx="6" fill="#F6F0E2"/>
+  <path d="M32 33Q24 28 15 30v21q9-2 17 3zM32 33q8-5 17-3v21q-9-2-17 3z" fill="#FFFFFF" stroke="#6B5B3E" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M19 36q5-1 9 1M19 41q5-1 9 1M36 37q4-2 9-1M36 42q4-2 9-1" stroke="#B4A889" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+</symbol>
+
+<!-- small icons, 24 x 24 -->
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z" fill="currentColor" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g><path d="M7 13h2v2H7zM11 13h2v2h-2zM15 13h2v2h-2zM7 16.5h2v2H7zM11 16.5h2v2h-2z" fill="currentColor"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="8.8"/><path d="M12 7v5.4l3.4 2"/></g></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v17M7 20.5h10M4.5 7h15M12 4.5"/><path d="M4.5 7L2 13.5h5zM19.5 7L17 13.5h5z"/></g><path d="M2 13.5a2.5 2.2 0 0 0 5 0zM17 13.5a2.5 2.2 0 0 0 5 0z" fill="currentColor"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.5 4.5v7.2l8.8 8.8 8.2-8.2-8.8-8.8H4.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="8" cy="8.5" r="1.7" fill="currentColor"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2.8l8.5 4.6v9.2L12 21.2l-8.5-4.6V7.4z"/><path d="M3.5 7.4L12 12l8.5-4.6M12 12v9.2"/></g><path d="M12 12l8.5-4.6v9.2L12 21.2z" fill="currentColor" opacity=".25"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><g fill="currentColor"><circle cx="9" cy="8" r="3.6"/><path d="M2.5 20c0-3.9 2.9-6.4 6.5-6.4s6.5 2.5 6.5 6.4z"/><circle cx="16.8" cy="9" r="2.9" opacity=".75"/><path d="M15.6 13.8c3.4-.6 6.4 1.6 6.4 5.6h-5c0-2.3-.5-4.1-1.4-5.6z" opacity=".75"/></g></symbol>
+<symbol id="i-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.8"/><path d="M15.6 15.6l5.4 5.4"/></g></symbol>
+<symbol id="i-clip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M8.5 4.5H6.2Q4.5 4.5 4.5 6.2v14q0 1.7 1.7 1.7h11.6q1.7 0 1.7-1.7v-14q0-1.7-1.7-1.7h-2.3"/><rect x="8.5" y="2.5" width="7" height="4" rx="1.2"/><path d="M8 11.5h8M8 15h8M8 18.5h5" stroke-linecap="round"/></g></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-8.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M12 13C12 8 8.6 5.6 3.6 6c0 4.8 3.4 7.4 8.4 7zM12 11.4c.4-4.4 3.6-6.6 8.4-6.2-.2 4.4-3.4 6.6-8.4 6.2z" fill="currentColor"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M3.5 12.8l5.2 5.6L21 4.6" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-house" viewBox="0 0 24 24"><path d="M3 11.5L12 4l9 7.5M5.5 9.6V20h13V9.6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="10" y="14" width="4" height="6" fill="currentColor"/></symbol>
+
+<!-- garden things -->
+<symbol id="pin" viewBox="0 0 30 40"><path d="M15 18L9 37" stroke="#8C8C86" stroke-width="2.4" stroke-linecap="round"/><circle cx="16" cy="12" r="9.5" fill="#D9473B"/><circle cx="16" cy="12" r="9.5" fill="none" stroke="#A8332A" stroke-width="1.5"/><circle cx="12.6" cy="8.6" r="3" fill="#fff" opacity=".55"/></symbol>
+<symbol id="daisy" viewBox="0 0 20 20"><g fill="#fff"><ellipse cx="10" cy="4.2" rx="3" ry="4"/><ellipse cx="15.6" cy="8.2" rx="4" ry="3"/><ellipse cx="13.5" cy="14.8" rx="3.2" ry="3.8" transform="rotate(-36 13.5 14.8)"/><ellipse cx="6.5" cy="14.8" rx="3.2" ry="3.8" transform="rotate(36 6.5 14.8)"/><ellipse cx="4.4" cy="8.2" rx="4" ry="3"/></g><circle cx="10" cy="10" r="3.2" fill="#F4C542"/></symbol>
+<symbol id="tulip" viewBox="0 0 24 40"><path d="M12 39V18" stroke="#5E8C5C" stroke-width="2.4"/><path d="M12 30Q5 28 3 20q7 1 9 10z" fill="#6E9E67"/><path d="M5 6l3.5 4L12 3l3.5 7L19 6q1 11-7 13Q4 17 5 6z" fill="#F28C28"/><path d="M12 3l3.5 7L19 6q1 11-7 13z" fill="#D8701A"/></symbol>
+<symbol id="bush" viewBox="0 0 160 100"><g><circle cx="40" cy="64" r="34" fill="#557F55"/><circle cx="82" cy="50" r="42" fill="#5E8C5C"/><circle cx="124" cy="66" r="32" fill="#557F55"/><circle cx="70" cy="40" r="24" fill="#6E9E67"/><circle cx="104" cy="44" r="18" fill="#76A670"/><circle cx="34" cy="54" r="16" fill="#6E9E67"/><circle cx="62" cy="30" r="10" fill="#86B57D"/></g><use href="#daisy" x="46" y="44" width="14" height="14"/><use href="#daisy" x="98" y="58" width="12" height="12"/><use href="#daisy" x="120" y="44" width="13" height="13"/></symbol>
+<symbol id="stone" viewBox="0 0 80 40"><ellipse cx="40" cy="22" rx="38" ry="16" fill="#9A988F"/><ellipse cx="38" cy="18" rx="34" ry="13" fill="#B9B7AE"/><ellipse cx="30" cy="14" rx="14" ry="5" fill="#CBC9C0"/></symbol>
+<symbol id="pond" viewBox="0 0 320 170">
+  <ellipse cx="160" cy="92" rx="156" ry="74" fill="#8E8B80"/>
+  <ellipse cx="160" cy="88" rx="146" ry="68" fill="#7FB0C8"/>
+  <ellipse cx="160" cy="92" rx="138" ry="60" fill="#A9CFE0"/>
+  <path d="M60 80q40-14 80 0M170 112q40-12 76 0M110 124q22-7 44 0" stroke="#D4E8F0" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M232 72a18 11 0 1 0 2-1l-12 8z" fill="#6E9E67"/><path d="M86 108a14 9 0 1 0 2-1l-10 6z" fill="#76A670"/>
+  <use href="#daisy" x="226" y="64" width="12" height="12"/>
+  <use href="#stone" x="0" y="54" width="54" height="27"/><use href="#stone" x="268" y="104" width="50" height="25"/><use href="#stone" x="130" y="146" width="44" height="22"/>
+</symbol>
+<symbol id="path" viewBox="0 0 600 400" preserveAspectRatio="none">
+  <path d="M600 30C470 40 420 120 330 160S170 210 110 290S40 380 0 400H170C220 340 260 300 340 260S520 200 600 140Z" fill="#D9C59B"/>
+  <path d="M600 30C470 40 420 120 330 160S170 210 110 290S40 380 0 400" fill="none" stroke="#C7B184" stroke-width="6"/>
+</symbol>
+<symbol id="bed" viewBox="0 0 520 200">
+  <path d="M26 40h468l20 118H6z" fill="#5A3F28"/>
+  <path d="M40 52h440l16 96H24z" fill="#6E4C2E"/>
+  <g fill="#7FAF6C"><path d="M110 120q-12-20 0-34 12 14 0 34zM110 120q4-22 22-24-2 20-22 24z"/><path d="M250 104q-12-20 0-34 12 14 0 34zM250 104q4-22 22-24-2 20-22 24z"/><path d="M390 124q-12-20 0-34 12 14 0 34zM390 124q4-22 22-24-2 20-22 24z"/><path d="M180 140q-8-14 0-24 8 10 0 24z"/><path d="M330 142q-8-14 0-24 8 10 0 24z"/></g>
+  <g fill="#B98552" stroke="#7A5530" stroke-width="3"><rect x="0" y="150" width="520" height="34" rx="4"/><rect x="10" y="22" width="500" height="26" rx="4"/><rect x="0" y="22" width="30" height="168" rx="4"/><rect x="490" y="22" width="30" height="168" rx="4"/></g>
+  <path d="M40 162h180M260 172h200M60 32h160M280 36h180" stroke="#8E6438" stroke-width="2.4" stroke-linecap="round" opacity=".6"/>
+</symbol>
+<symbol id="pot" viewBox="0 0 150 90">
+  <path d="M8 74q30-18 66-6 30 10 66 0v14H8z" fill="#6E4C2E"/>
+  <path d="M84 30l52 10-10 44-46-12z" fill="#C9785A"/><path d="M78 24l62 12-3 10-62-12z" fill="#B56649"/>
+  <ellipse cx="78" cy="40" rx="6" ry="17" transform="rotate(12 78 40)" fill="#5A3F28"/>
+  <path d="M74 44q-26-6-40 10" stroke="#5E8C5C" stroke-width="3" fill="none"/>
+  <use href="#daisy" x="22" y="44" width="18" height="18"/><use href="#daisy" x="44" y="56" width="14" height="14"/>
+  <path d="M50 50q-6-12 6-14 2 10-6 14z" fill="#6E9E67"/>
+</symbol>
+</svg>
