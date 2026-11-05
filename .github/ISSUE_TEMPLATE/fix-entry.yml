@@ -1,0 +1,27 @@
+name: Fix an entry
+description: A wrong description, category, import line, build result or a dead link
+title: "Fix: "
+labels: [bug]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry
+      description: Its name or `packages/<id>.toml`.
+      placeholder: kaitk-goose-http
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong
+      options: [description, category or tags, import line, build status, repository moved or gone, something else]
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What it says now and what it should say.
+    validations:
+      required: true
