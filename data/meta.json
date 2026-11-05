@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-04T13:02:24Z",
+ "fetched_at": "2026-11-05T13:15:42Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -20,7 +20,7 @@
    "latest_tag": "v2026.3",
    "tag_count": 4,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 2977,
+   "stars": 3031,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
@@ -44,7 +44,7 @@
    "latest_tag": "v1",
    "tag_count": 1,
    "created": "2026-10-11T04:30:55Z",
-   "stars": 6,
+   "stars": 7,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
@@ -84,7 +84,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": null,
-   "last_commit": "2026-11-04T07:36:05Z"
+   "last_commit": "2026-11-05T06:43:20Z"
   },
   "aguspiza-raytracing-goose": {
    "exists": true,
@@ -140,7 +140,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-26T11:33:49Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "none",
    "upstream_description": "Goose language bindings for RayLib",
@@ -176,11 +176,11 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-14T13:35:09Z",
-   "stars": 73,
+   "stars": 77,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-04T12:52:10Z"
+   "last_commit": "2026-11-05T12:25:30Z"
   },
   "artsensiva-symidx": {
    "exists": true,
@@ -192,7 +192,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-04T12:08:43Z"
+   "last_commit": "2026-11-05T12:23:59Z"
   },
   "aurthurm-goose-web": {
    "exists": true,
@@ -200,7 +200,7 @@
    "latest_tag": "v0.6.0",
    "tag_count": 1,
    "created": "2026-10-22T12:21:41Z",
-   "stars": 1,
+   "stars": 2,
    "archived": false,
    "license": "other",
    "upstream_description": null,
@@ -248,7 +248,7 @@
    "latest_tag": "v1.26",
    "tag_count": 1,
    "created": "2026-10-31T16:45:40Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "other",
    "upstream_description": "libdeflate (DEFLATE, zlib, gzip, CRC-32, Adler-32) for the Goose language",
@@ -332,7 +332,7 @@
    "latest_tag": "v3",
    "tag_count": 3,
    "created": "2026-10-29T22:58:32Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "MIT",
    "upstream_description": "DEFLATE and gzip decoding, and CRC-32, for Goose: a decoder the caller pulls from, in bounded memory",
@@ -368,7 +368,7 @@
    "latest_tag": "v1",
    "tag_count": 1,
    "created": "2026-10-30T21:12:38Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "MIT",
    "upstream_description": "Tar archives (ustar, GNU, PAX) read from pieces of any size, for Goose: no allocation, no I/O",
@@ -380,7 +380,7 @@
    "latest_tag": "v1",
    "tag_count": 1,
    "created": "2026-10-30T23:06:59Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "MIT",
    "upstream_description": "ZIP archives read in place for Goose: the central directory and each entry's bytes as views, nothing allocated",
@@ -464,7 +464,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-11-01T01:36:27Z",
-   "stars": 1,
+   "stars": 2,
    "archived": false,
    "license": "MIT",
    "upstream_description": "Bioinformatics and computational biology for Goose",
@@ -572,7 +572,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-21T19:33:04Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose bindings for raylib (subset) — native raylib backend via extern fn, with Nix flakes",
@@ -620,7 +620,7 @@
    "latest_tag": "v0.1.0",
    "tag_count": 1,
    "created": "2026-10-25T08:11:03Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Fast Fourier transforms for the Goose programming language, in pure Goose: complex and real, any length, 2-D, convolution",
@@ -632,7 +632,7 @@
    "latest_tag": "v0.3.3",
    "tag_count": 9,
    "created": "2026-10-24T20:12:28Z",
-   "stars": 1,
+   "stars": 2,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Dense real linear algebra for the Goose programming language, in pure Goose: LU, Cholesky, QR, symmetric eigen, SVD",
@@ -732,7 +732,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-01T17:48:46Z"
+   "last_commit": "2026-11-04T19:53:48Z"
   },
   "kaitk-goose-acme": {
    "exists": true,
@@ -752,7 +752,7 @@
    "latest_tag": "v0.1.4",
    "tag_count": 5,
    "created": "2026-10-12T15:36:55Z",
-   "stars": 1,
+   "stars": 2,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Experimental gzip and deflate compression in Goose",
@@ -776,7 +776,7 @@
    "latest_tag": "v0.5.18",
    "tag_count": 37,
    "created": "2026-10-10T14:28:54Z",
-   "stars": 18,
+   "stars": 19,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "An experimental HTTP/1.1 server in Goose",
@@ -788,7 +788,7 @@
    "latest_tag": "v0.2.0",
    "tag_count": 4,
    "created": "2026-10-10T14:01:09Z",
-   "stars": 1,
+   "stars": 2,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": " Graphics for Goose programs on NoGraphicsAPI (Metal 4 / Vulkan 1.4), with Slang shaders and four ported samples.",
@@ -836,7 +836,7 @@
    "latest_tag": "v0.5.11",
    "tag_count": 24,
    "created": "2026-10-13T15:28:33Z",
-   "stars": 16,
+   "stars": 17,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "A REST framework for Goose, on goose-http: Actix-style scopes, extractors and middleware, with an OpenAPI 3.1 generator. Takes its time, not yours. Mascot: Ari, a banana slug (genus Ariolimax).",
@@ -884,7 +884,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-11-02T16:29:59Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
@@ -932,7 +932,7 @@
    "latest_tag": "v0.1.0",
    "tag_count": 1,
    "created": "2026-10-31T08:14:16Z",
-   "stars": 0,
+   "stars": 2,
    "archived": false,
    "license": "other",
    "upstream_description": "raylib bindings for Goose Programming Language",
@@ -980,7 +980,7 @@
    "latest_tag": "v0.2",
    "tag_count": 2,
    "created": "2026-11-01T07:57:07Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Signed integers with no fixed width in Goose",
@@ -1004,7 +1004,7 @@
    "latest_tag": "v0.2.1",
    "tag_count": 2,
    "created": "2026-11-01T07:18:48Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
@@ -1016,7 +1016,7 @@
    "latest_tag": "v0.2.1",
    "tag_count": 2,
    "created": "2026-11-01T06:36:04Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Raw DEFLATE, zlib, and gzip in Goose",
@@ -1116,19 +1116,19 @@
    "archived": false,
    "license": "GPL-2.0",
    "upstream_description": "Goose 言語で CPU・メモリ・周辺機器・描画を実装した、Windows 向けの Sharp X68000 エミュレータです。Win32 GUI と、stdio 経由で外部ツールから操作する ARCL MCP に対応します。",
-   "last_commit": "2026-11-02T13:08:58Z"
+   "last_commit": "2026-11-04T15:03:50Z"
   },
   "mas-bandwidth-schema": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "main-fab5723e3e62",
-   "tag_count": 328,
+   "latest_tag": "main-e70e5e99a73f",
+   "tag_count": 335,
    "created": "2026-08-05T04:40:51Z",
-   "stars": 48,
+   "stars": 49,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
-   "last_commit": "2026-11-03T09:56:13Z"
+   "last_commit": "2026-11-04T20:16:17Z"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
@@ -1152,19 +1152,10 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-04T11:03:33Z"
+   "last_commit": "2026-11-05T09:49:26Z"
   },
   "mg3994-ideatoapp": {
-   "exists": true,
-   "default_branch": "goose-wasm-schema-org-14436079612921043283",
-   "latest_tag": null,
-   "tag_count": 0,
-   "created": "2026-11-02T14:11:23Z",
-   "stars": 0,
-   "archived": false,
-   "license": "none",
-   "upstream_description": null,
-   "last_commit": "2026-11-02T19:55:47Z"
+   "exists": false
   },
   "mgasner-goose": {
    "exists": true,
@@ -1181,14 +1172,14 @@
   "mrfentmen-meta-os": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "opencode1-500-final",
-   "tag_count": 1,
+   "latest_tag": "v1.0.0",
+   "tag_count": 2,
    "created": "2026-10-28T10:47:33Z",
    "stars": 0,
    "archived": false,
    "license": "none",
    "upstream_description": "Meta OS. A platform that never sleeps. Systems that watch, learn, build, and play. Meta Global AI Developer Hackathon 2026.",
-   "last_commit": "2026-11-04T11:48:59Z"
+   "last_commit": "2026-11-04T22:36:34Z"
   },
   "nandi-conda-quack": {
    "exists": true,
@@ -1340,7 +1331,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-23T06:21:39Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "MIT",
    "upstream_description": "LZ78 Compression on Goose",
@@ -1352,7 +1343,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-11-01T17:47:42Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "none",
    "upstream_description": "Formatter & Linter for Goose",
@@ -1380,7 +1371,7 @@
    "archived": false,
    "license": "MPL-2.0",
    "upstream_description": null,
-   "last_commit": "2026-10-29T04:49:56Z"
+   "last_commit": "2026-11-04T19:09:14Z"
   },
   "scottc-goose-roc": {
    "exists": true,
@@ -1392,7 +1383,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Goose lang as a host implementation for a roc platform.",
-   "last_commit": "2026-11-04T12:44:47Z"
+   "last_commit": "2026-11-05T09:16:13Z"
   },
   "shetautnetjer-goose-lsp": {
    "exists": true,
@@ -1740,7 +1731,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Bird strike simulation on a stiffened aluminium fuselage panel: explicit dynamics finite element solver in Goose, WebAssembly and WebGPU, runs in the browser",
-   "last_commit": "2026-11-04T00:05:16Z"
+   "last_commit": "2026-11-05T11:59:54Z"
   },
   "yujieteo-marklove-web": {
    "exists": true,
@@ -1752,7 +1743,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Marklove for the web: Markdown editor and converter to slides, article, EPUB, subtitles and narration. Goose and C compiled to WebAssembly, runs in the browser",
-   "last_commit": "2026-11-03T16:43:29Z"
+   "last_commit": "2026-11-05T09:49:16Z"
   },
   "yujieteo-neurons": {
    "exists": true,
@@ -1764,7 +1755,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Neuron explorer for SmolLM2-135M in the browser: interpretability of MLP neurons, steering and Jacobian lens. Goose to WebAssembly and WebGPU",
-   "last_commit": "2026-11-04T00:10:28Z"
+   "last_commit": "2026-11-04T14:47:49Z"
   },
   "yujieteo-pond": {
    "exists": true,
@@ -1776,7 +1767,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Low-energy media and experiments companion: iOS app in Swift, signed log, stream on teoyujie.org/log. Server in Goose for OpenBSD, Linux, macOS",
-   "last_commit": "2026-11-03T15:12:47Z"
+   "last_commit": "2026-11-05T13:11:06Z"
   },
   "yujieteo-site": {
    "exists": true,
@@ -1788,7 +1779,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source of teoyujie.org: personal website with a WebAssembly beam diagram tool, essays and a log",
-   "last_commit": "2026-11-03T16:20:48Z"
+   "last_commit": "2026-11-05T10:16:36Z"
   },
   "yujieteo-skein": {
    "exists": true,
@@ -1800,7 +1791,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Skein: a typed, units-checked language for numerical simulation (finite element, finite volume) that compiles to Goose, C and WebAssembly",
-   "last_commit": "2026-11-04T06:36:25Z"
+   "last_commit": "2026-11-04T14:05:32Z"
   },
   "yujieteo-toybox": {
    "exists": true,
@@ -1812,7 +1803,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Mobile-first 3D sandbox in the browser: an AI agent builds animated 3D explainer scenes, with narration and MP4 export. Goose compiled to WebAssembly",
-   "last_commit": "2026-11-03T21:41:32Z"
+   "last_commit": "2026-11-05T12:08:57Z"
   },
   "zhengsy-goose-tui": {
    "exists": true,

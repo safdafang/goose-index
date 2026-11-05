@@ -44,18 +44,18 @@ _Sockets, HTTP clients and servers, web frameworks, URLs, ACME._
 
 - **[goose-acme](https://github.com/kaitk/goose-acme)** — Obtains and renews TLS certificates from Let's Encrypt or another ACME authority via TLS-ALPN-01, so a goose-http server can serve HTTPS with no reverse proxy. 🏷 v0.0.5 · ✅ ✅ ✅
   `import acme from "github.com/kaitk/goose-acme@v0.0.5";`
-- **[goose-http](https://github.com/kaitk/goose-http)** — The most complete HTTP server stack for Goose: per-worker event loops on io_uring, epoll, kqueue or IOCP, with WebSockets, HTTP/2, HTTP/3, static files and an outbound client. Upstream benchmarks against it. ★ 18 · 🏷 v0.5.18 · ✅ ✅ ✅
+- **[goose-http](https://github.com/kaitk/goose-http)** — The most complete HTTP server stack for Goose: per-worker event loops on io_uring, epoll, kqueue or IOCP, with WebSockets, HTTP/2, HTTP/3, static files and an outbound client. Upstream benchmarks against it. ★ 19 · 🏷 v0.5.18 · ✅ ✅ ✅
   `import http from "github.com/kaitk/goose-http@v0.5.18";`
-- **[goose-web](https://github.com/aurthurm/goose-web)** — A web framework built on a non-blocking readiness loop, with typed routes, JSON validation, HTML templates, streaming responses and an optional SQLite layer. ★ 1 · 🏷 v0.6.0 · ✅ ✅ ✅
+- **[goose-web](https://github.com/aurthurm/goose-web)** — A web framework built on a non-blocking readiness loop, with typed routes, JSON validation, HTML templates, streaming responses and an optional SQLite layer. ★ 2 · 🏷 v0.6.0 · ✅ ✅ ✅
   `import goose_web from "github.com/aurthurm/goose-web@v0.6.0";`
-- **[honk](https://github.com/korolenkowork/honk)** — A web framework where routes declare typed structs and the request parsing, validation, JSON responses and OpenAPI schema with Swagger UI follow from those types.
+- **[honk](https://github.com/korolenkowork/honk)** — A web framework where routes declare typed structs and the request parsing, validation, JSON responses and OpenAPI schema with Swagger UI follow from those types. ★ 1
 - **[httpgoose](https://github.com/SorinS/httpgoose)** — HTTP/1.1 and HTTP/2 protocol code with no I/O of its own (parsing, framing, chunked bodies, URLs), so the caller owns the sockets; HTTPS comes from tlsgoose. Also part of gslib. ⚠️ no license · ✅ ✅ ✅
   `import http from "github.com/SorinS/httpgoose@main";`
 - **[ldapgoose](https://github.com/SorinS/ldapgoose)** — An LDAPv3 client modelled on go-ldap that encodes requests and decodes responses without touching sockets, with command-line tools mirroring the OpenLDAP utilities. ⚠️ no license · ❌ ❌ ❌
   `import ldap from "github.com/SorinS/ldapgoose@main";`
 - **[net](https://github.com/jdrobertso/net)** — General networking: TCP clients and servers with client-side TLS, URL handling, and a full-featured HTTP/1.1 client with cookies, redirects and a non-blocking threaded mode. TLS uses Schannel on Windows and OpenSSL elsewhere. 🏷 v0.2.0 · ✅ ✅ ✅
   `import net from "github.com/jdrobertso/net@v0.2.0";`
-- **[plod](https://github.com/kaitk/plod)** — An Actix-inspired REST framework on goose-http with scopes, extractors and middleware, plus a generator that produces types, JSON codecs and a router from an OpenAPI 3.1 spec. ★ 16 · 🏷 v0.5.11 · ✅ ✅ ✅
+- **[plod](https://github.com/kaitk/plod)** — An Actix-inspired REST framework on goose-http with scopes, extractors and middleware, plus a generator that produces types, JSON codecs and a router from an OpenAPI 3.1 spec. ★ 17 · 🏷 v0.5.11 · ✅ ✅ ✅
   `import plod from "github.com/kaitk/plod@v0.5.11";`
 
 ## Cryptography and security
@@ -96,19 +96,19 @@ _Database bindings, drivers and engines._
 
 _DEFLATE, gzip, zstd and friends; tar and zip._
 
-- **[goose-compress](https://github.com/kaitk/goose-compress)** — Compression encoders for gzip, zlib, raw DEFLATE and zstd, mostly Goose with a few C hot loops, including a flushing streaming mode; goose-http uses it for responses. ★ 1 · 🏷 v0.1.4 · ✅ ✅ ✅
+- **[goose-compress](https://github.com/kaitk/goose-compress)** — Compression encoders for gzip, zlib, raw DEFLATE and zstd, mostly Goose with a few C hot loops, including a flushing streaming mode; goose-http uses it for responses. ★ 2 · 🏷 v0.1.4 · ✅ ✅ ✅
   `import compress from "github.com/kaitk/goose-compress@v0.1.4";`
-- **[goose-deflate](https://github.com/Macho0x/goose-deflate)** — DEFLATE decoding of all block types plus a simple encoder (fixed Huffman or stored blocks), with zlib and gzip framing. 🏷 v0.2.1 · ✅ ✅ ✅
+- **[goose-deflate](https://github.com/Macho0x/goose-deflate)** — DEFLATE decoding of all block types plus a simple encoder (fixed Huffman or stored blocks), with zlib and gzip framing. ★ 1 · 🏷 v0.2.1 · ✅ ✅ ✅
   `import deflate from "github.com/Macho0x/goose-deflate@v0.2.1";`
-- **[goose-inflate](https://github.com/clintecker/goose-inflate)** — A streaming DEFLATE and gzip decoder in pure Goose that you feed compressed chunks of any size, with caller-owned fixed-size state and CRC-32. 🏷 v3 · ✅ ✅ ✅
+- **[goose-inflate](https://github.com/clintecker/goose-inflate)** — A streaming DEFLATE and gzip decoder in pure Goose that you feed compressed chunks of any size, with caller-owned fixed-size state and CRC-32. ★ 1 · 🏷 v3 · ✅ ✅ ✅
   `import inflate from "github.com/clintecker/goose-inflate@v3";`
-- **[goose-tar](https://github.com/clintecker/goose-tar)** — A push-style tar reader for ustar, GNU and PAX archives that takes input in arbitrary chunks and reports headers and data through a callback; decompression is left to you. 🏷 v1 · ✅ ✅ ✅
+- **[goose-tar](https://github.com/clintecker/goose-tar)** — A push-style tar reader for ustar, GNU and PAX archives that takes input in arbitrary chunks and reports headers and data through a callback; decompression is left to you. ★ 1 · 🏷 v1 · ✅ ✅ ✅
   `import tar from "github.com/clintecker/goose-tar@v1";`
-- **[goose-zip](https://github.com/clintecker/goose-zip)** — Walks a ZIP file held in memory and hands back entry names and payloads as slices into it; pair it with a DEFLATE decoder for compressed entries. 🏷 v1 · ✅ ✅ ✅
+- **[goose-zip](https://github.com/clintecker/goose-zip)** — Walks a ZIP file held in memory and hands back entry names and payloads as slices into it; pair it with a DEFLATE decoder for compressed entries. ★ 1 · 🏷 v1 · ✅ ✅ ✅
   `import zip from "github.com/clintecker/goose-zip@v1";`
-- **[lz78-goose](https://github.com/ruslano69/lz78-goose)** — A small LZ78 compressor with a documented format, a Python cross-check and a Windows archiver CLI; the author presents it as a learning project about Goose's memory model. ✅ ✅ ✅
+- **[lz78-goose](https://github.com/ruslano69/lz78-goose)** — A small LZ78 compressor with a documented format, a Python cross-check and a Windows archiver CLI; the author presents it as a learning project about Goose's memory model. ★ 1 · ✅ ✅ ✅
   `import lz78 from "github.com/ruslano69/lz78-goose@main";`
-- **[goose-libdeflate](https://github.com/BHare1985/goose-libdeflate)** _binding_ — libdeflate compiled into the package: fast whole-buffer zlib, gzip and raw DEFLATE in both directions, plus CRC-32 and Adler-32. Tags track the libdeflate version. 🏷 v1.26 · ✅ ✅ ✅
+- **[goose-libdeflate](https://github.com/BHare1985/goose-libdeflate)** _binding_ — libdeflate compiled into the package: fast whole-buffer zlib, gzip and raw DEFLATE in both directions, plus CRC-32 and Adler-32. Tags track the libdeflate version. ★ 1 · 🏷 v1.26 · ✅ ✅ ✅
   `import deflate from "github.com/BHare1985/goose-libdeflate@v1.26";`
 
 ## Encoding and serialization
@@ -128,9 +128,9 @@ _Data formats: JSON, YAML, ASN.1, binary layouts, bit packing._
 - **[serialize.goose](https://github.com/mas-bandwidth/serialize.goose)** — A bit-packing serializer for game and network messages that produces exactly the same bytes as the C and C++ serialize libraries, covering every field type they support. 🏷 v2.1.2
 - **[yamlgoose](https://github.com/SorinS/yamlgoose)** — A YAML 1.2 reader and writer ported from Go's yaml.v3 (and its libyaml core), accepting and rejecting exactly what yaml.v3 does; the API mirrors the standard json module. ⚠️ no license · ❌ ❌ ❌
   `import yaml from "github.com/SorinS/yamlgoose@main";`
-- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 48 · 🏷 main-fab5723e3e62
+- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 49 · 🏷 main-e70e5e99a73f
 - **[greylag](https://github.com/bearing-research/greylag)** — An early XML parser written in Goose and exported to C through integer handles, compared against libxml2 and expat. ⚠️ no license · ✅ ✅ ✅
-- **[ideatoapp](https://github.com/mg3994/ideatoapp)** — An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript. ⚠️ no license · ✅ ✅ ✅
+- **[ideatoapp](https://github.com/mg3994/ideatoapp)** — An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript. **repository unavailable** · ✅ ✅ ✅
 
 ## Text and templates
 
@@ -147,17 +147,17 @@ _Template engines, string utilities, parsing helpers, logging formats._
 
 _Numerics, linear algebra, FFT, random numbers, domain science libraries._
 
-- **[goose-bigint](https://github.com/Macho0x/goose-bigint)** — Arbitrary-size signed integers stored as a sign and 32-bit limbs, with truncating and floor division and two's-complement bit operations matching common big-integer libraries. 🏷 v0.2 · ✅ ✅ ✅
+- **[goose-bigint](https://github.com/Macho0x/goose-bigint)** — Arbitrary-size signed integers stored as a sign and 32-bit limbs, with truncating and floor division and two's-complement bit operations matching common big-integer libraries. ★ 1 · 🏷 v0.2 · ✅ ✅ ✅
   `import bigint from "github.com/Macho0x/goose-bigint@v0.2";`
-- **[goose-decimal](https://github.com/Macho0x/goose-decimal)** — A 96-bit decimal with a scale of 0 to 28 in the layout rust_decimal uses, with parsing, formatting that keeps the scale, and normalization. 🏷 v0.2.1 · ✅ ✅ ✅
+- **[goose-decimal](https://github.com/Macho0x/goose-decimal)** — A 96-bit decimal with a scale of 0 to 28 in the layout rust_decimal uses, with parsing, formatting that keeps the scale, and normalization. ★ 1 · 🏷 v0.2.1 · ✅ ✅ ✅
   `import decimal from "github.com/Macho0x/goose-decimal@v0.2.1";`
-- **[goose-fft](https://github.com/guillochon/goose-fft)** — Pure-Goose FFTs for any input length, complex and real, in one and two dimensions, with convolution and NumPy-style frequency helpers. 🏷 v0.1.0 · ❌ ❌ ❌
+- **[goose-fft](https://github.com/guillochon/goose-fft)** — Pure-Goose FFTs for any input length, complex and real, in one and two dimensions, with convolution and NumPy-style frequency helpers. ★ 1 · 🏷 v0.1.0 · ❌ ❌ ❌
   `import fft from "github.com/guillochon/goose-fft@v0.1.0";`
-- **[goose-linalg](https://github.com/guillochon/goose-linalg)** — Dense real matrices in pure Goose: solving systems, determinants and the LU, Cholesky, QR, symmetric eigen and SVD factorizations, with optional multithreaded products. ★ 1 · 🏷 v0.3.3 · ✅ ✅ ✅
+- **[goose-linalg](https://github.com/guillochon/goose-linalg)** — Dense real matrices in pure Goose: solving systems, determinants and the LU, Cholesky, QR, symmetric eigen and SVD factorizations, with optional multithreaded products. ★ 2 · 🏷 v0.3.3 · ✅ ✅ ✅
   `import linalg from "github.com/guillochon/goose-linalg@v0.3.3";`
 - **[goose-random](https://github.com/guillochon/goose-random)** — Seedable random generators and around thirty exact distribution samplers in pure Goose, with shuffling, sampling and independent streams for worker threads. 🏷 v0.1.0 · ❌ ❌ ❌
   `import random from "github.com/guillochon/goose-random@v0.1.0";`
-- **[goose_bio](https://github.com/elcharitas/goose_bio)** — A broad bioinformatics library in the spirit of Biopython: sequence handling, alignment, file formats, statistics and trees, with optional htslib, SQLite and libcurl adapters. ★ 1 · ✅ ✅ ✅
+- **[goose_bio](https://github.com/elcharitas/goose_bio)** — A broad bioinformatics library in the spirit of Biopython: sequence handling, alignment, file formats, statistics and trees, with optional htslib, SQLite and libcurl adapters. ★ 2 · ✅ ✅ ✅
   `import bio from "github.com/elcharitas/goose_bio@main";`
 - **[terence](https://github.com/Nurysso/terence)** — An early, partly empty port of Go's math package (float decomposition, rounding, roots) written as a learning project; its README lists what works. ✅ ✅ ✅
   `import terence from "github.com/Nurysso/terence@main";`
@@ -168,19 +168,19 @@ _Rendering, windowing, game libraries and their bindings, procedural noise._
 
 - **[fastnoiselite-goose](https://github.com/tacf/fastnoiselite-goose)** — A full port of FastNoise Lite 1.1.1, covering every noise type, fractal mode and domain warp in 2D and 3D, checked value for value against the original. ✅ ✅ ✅
   `import fastnoise from "github.com/tacf/fastnoiselite-goose@main";`
-- **[goose-ngfx](https://github.com/kaitk/goose-ngfx)** — A GPU graphics package following Sebastian Aaltonen's NoGraphicsAPI design over Metal 4 and Vulkan 1.4: draws read a root struct by GPU address and shaders are written in Slang; window and input come from Goose gfx. ★ 1 · 🏷 v0.2.0 · ✅ ✅ ✅
+- **[goose-ngfx](https://github.com/kaitk/goose-ngfx)** — A GPU graphics package following Sebastian Aaltonen's NoGraphicsAPI design over Metal 4 and Vulkan 1.4: draws read a root struct by GPU address and shaders are written in Slang; window and input come from Goose gfx. ★ 2 · 🏷 v0.2.0 · ✅ ✅ ✅
   `import ngfx from "github.com/kaitk/goose-ngfx@v0.2.0";`
 - **[goose_gfx2d](https://github.com/binji/goose_gfx2d)** — Anti-aliased 2D vector drawing on top of goose_gfx: shapes and Bézier paths, gradient and image paints, transforms, clipping and resolution-independent SDF text. ✅ ✅ ✅
   `import gfx2d from "github.com/binji/goose_gfx2d@main";`
-- **[goose-raylib](https://github.com/flakesonnix/goose-raylib)** _binding_ — Builds raylib 6.2 from source with CMake and exposes a growing subset, focused on 3D cameras, meshes, models and render textures, through a C adapter. Nix flake included. ✅ ✅ ✅
+- **[goose-raylib](https://github.com/flakesonnix/goose-raylib)** _binding_ — Builds raylib 6.2 from source with CMake and exposes a growing subset, focused on 3D cameras, meshes, models and render textures, through a C adapter. Nix flake included. ★ 1 · ✅ ✅ ✅
   `import raylib from "github.com/flakesonnix/goose-raylib@main";`
 - **[goose_gfx](https://github.com/aardappel/goose_gfx)** _binding_ — The official graphics package: windows, input and SDL3 GPU pipelines in gfx, procedural sound in audio, and Nuklear immediate-mode widgets in ui. Prebuilt Goose releases include it. ★ 10 · 🏷 v1 · ✅ ✅ ✅
   `import gfx from "github.com/aardappel/goose_gfx@v1";`
-- **[goose_physics](https://github.com/aardappel/goose_physics)** _binding_ — The official physics package, a layer over Box3D for rigid bodies, joints, shape queries and a character controller, with recording and replay. ★ 6 · 🏷 v1 · ✅ ✅ ✅
+- **[goose_physics](https://github.com/aardappel/goose_physics)** _binding_ — The official physics package, a layer over Box3D for rigid bodies, joints, shape queries and a character controller, with recording and replay. ★ 7 · 🏷 v1 · ✅ ✅ ✅
   `import physics from "github.com/aardappel/goose_physics@v1";`
-- **[raygoose](https://github.com/lamweilun/raygoose)** _binding_ — raylib bindings generated from raylib's headers, with raylib built from a pinned submodule by CMake so its platform link settings come along; the binding raylib's own list points to. 🏷 v0.1.0 · ❌ ❌ ❌
+- **[raygoose](https://github.com/lamweilun/raygoose)** _binding_ — raylib bindings generated from raylib's headers, with raylib built from a pinned submodule by CMake so its platform link settings come along; the binding raylib's own list points to. ★ 2 · 🏷 v0.1.0 · ❌ ❌ ❌
   `import raylib from "github.com/lamweilun/raygoose@v0.1.0";`
-- **[raylib-goose](https://github.com/Alexxzz/raylib-goose)** _binding_ — Bindings to the whole raylib 6.2 API under the rl namespace, loaded from a raylib shared library at run time rather than compiled in. ⚠️ no license · ❌ ❌ ❌
+- **[raylib-goose](https://github.com/Alexxzz/raylib-goose)** _binding_ — Bindings to the whole raylib 6.2 API under the rl namespace, loaded from a raylib shared library at run time rather than compiled in. ★ 1 · ⚠️ no license · ❌ ❌ ❌
   `import rl from "github.com/Alexxzz/raylib-goose@main";`
 - **[project-frontier](https://github.com/lenstr/project-frontier)** — A third-person 3D game about mining an alien world and automating a colony with rails and robots, scaled to thousands of entities; native builds for macOS and Linux. ⚠️ no license · ❌ ❌ ❌
 - **[toybox](https://github.com/yujieteo/toybox)** — A browser 3D sandbox where an agent builds animated explainer scenes with narration, exported as MP4 or a reloadable scene file; the engine is Goose compiled to WebAssembly. 🏷 v0.1.0 · ⚠️ no license
@@ -267,7 +267,7 @@ _Formatters, linters, static analysis outside the compiler._
 - **[goose-treesitter](https://github.com/shetautnetjer/goose-treesitter)** — Structural code search and rewrite over tree-sitter grammars for about fifteen languages, matching ast-grep's pattern results. 🏷 v0.1.4 · ✅ ✅ 🟡
   `import treesitter from "github.com/shetautnetjer/goose-treesitter@v0.1.4";`
 - **[codeql-goose](https://github.com/flisk-sh/codeql-goose)** _tool_ — A GitHub Action that lexes Goose sources, applies a small rule set and uploads findings to Code Scanning as SARIF. Despite the name it does not use CodeQL. ★ 2 · 🏷 v0.2.1
-- **[goosefmt](https://github.com/rx-bob/goosefmt)** _tool_ — A formatter and linter for Goose written in Goose, with format, lint and check commands that walk a directory tree. ⚠️ no license · ✅ ✅ ✅
+- **[goosefmt](https://github.com/rx-bob/goosefmt)** _tool_ — A formatter and linter for Goose written in Goose, with format, lint and check commands that walk a directory tree. ★ 1 · ⚠️ no license · ✅ ✅ ✅
 - **[Swan](https://github.com/shetautnetjer/Swan)** — A local code-intelligence server for AI agents, speaking MCP: definitions, references, change impact, related tests and live errors, built on goose-sqlite, goose-lsp and goose-treesitter. 🟡 🟡 🟡
 
 ## Editor support
@@ -288,7 +288,7 @@ _Editor plugins, syntax grammars, LSP clients._
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
 - **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 4 · 🏷 v0.1.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 2977 · 🏷 v2026.3
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3031 · 🏷 v2026.3
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
 - **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
@@ -329,7 +329,7 @@ _Programs written in Goose: tools, games, servers, simulations._
 - **[llama-goose](https://github.com/aguspiza/llama-goose)** — A work-in-progress port of llama.cpp and its ggml tensor library to Goose, built with goose build instead of CMake, tracking upstream llama.cpp commit by commit. ⚠️ no license
 - **[mandelbrot-goose](https://github.com/jesper-olsen/mandelbrot-goose)** — Renders the Mandelbrot set as terminal ASCII or as gnuplot data, in single-threaded and threaded versions, as one entry in the author's cross-language Mandelbrot suite. ⚠️ no license · ✅ ✅ ✅
 - **[marklove-web](https://github.com/yujieteo/marklove-web)** — A browser Markdown editor whose Goose core, compiled to WebAssembly, produces slides, articles, EPUB books, subtitles and narration from one file. ⚠️ no license
-- **[meta-os](https://github.com/mrfentmen/meta-os)** — A hackathon platform where AI agents work in dedicated systems; its services layer (audit, logging, boards, agent hosts) is written in Goose, alongside Rust and web parts. 🏷 opencode1-500-final · ⚠️ no license
+- **[meta-os](https://github.com/mrfentmen/meta-os)** — A hackathon platform where AI agents work in dedicated systems; its services layer (audit, logging, boards, agent hosts) is written in Goose, alongside Rust and web parts. 🏷 v1.0.0 · ⚠️ no license
 - **[moon-goose](https://github.com/tacf/moon-goose)** — An unfinished interpreter with a lexer, a parser and a stack virtual machine; the repository has no README yet. ⚠️ no license · ✅ ✅ ✅
 - **[neurons](https://github.com/yujieteo/neurons)** — An in-browser explorer of SmolLM2-135M's MLP neurons with steering, running the model in Goose compiled to WebAssembly, on WebGPU when available.
 - **[pond](https://github.com/yujieteo/pond)** — A signed media and experiment journal: an iOS app in Swift with a save, read and sync server written in Goose for OpenBSD, Linux and macOS. ⚠️ no license
@@ -348,7 +348,7 @@ _Performance comparisons of Goose against other languages._
 - **[goose-evaluations](https://github.com/calpeyser/goose-evaluations)** _learning_ — Four parsing workloads (a Ninja build graph, JSON, YAML and a jq core) written in Goose and measured against common and best-in-class C, C++ and Rust programs, with the generated C and harnesses included. ★ 8
 - **[goose-lab](https://github.com/inuverse44/goose-lab)** _learning_ — Small experiments and two benchmarks against idiomatic Rust (order parsing and totals, a lattice heat simulation), with written notes on the language and the results.
 - **[LangArena](https://github.com/kostya/LangArena)** _learning_ — A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page. ★ 60 · 🏷 2026-11-04
-- **[Multicore Server Challenge](https://github.com/arjaythedev/multicore-server-challenge)** _learning_ — A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers. ★ 73
+- **[Multicore Server Challenge](https://github.com/arjaythedev/multicore-server-challenge)** _learning_ — A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers. ★ 77
 
 ## Learning
 
@@ -372,4 +372,4 @@ _Tutorials, guides, articles, notes, starter templates and example collections._
 - **Data for tools.** [`index.json`](index.json) (also at https://safdafang.github.io/goose-index/index.json) holds every entry with its import line, native requirements and build results. Its format is documented in [docs/index-json.md](docs/index-json.md) and versioned.
 - **Licenses.** The code here is MIT; the entry data and descriptions are CC0. Listed projects keep their own licenses.
 
-<sub>Generated 2026-11-04T13:02:24Z.</sub>
+<sub>Generated 2026-11-05T13:15:42Z.</sub>
