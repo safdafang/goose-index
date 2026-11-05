@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Search the index
+    url: https://safdafang.github.io/goose-index/
+    about: Check whether a project is listed already.
+  - name: Report a malicious listed project or a security issue
+    url: https://github.com/safdafang/goose-index/security/advisories/new
+    about: Report privately; see SECURITY.md.

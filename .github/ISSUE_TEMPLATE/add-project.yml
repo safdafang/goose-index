@@ -1,0 +1,41 @@
+name: Suggest a project
+description: A Goose library, tool, editor plugin, program or guide that is not listed yet
+title: "Add: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The quickest way in is a pull request adding `packages/<id>.toml` (see
+        [CONTRIBUTING.md](https://github.com/safdafang/goose-index/blob/main/CONTRIBUTING.md)).
+        If you would rather not, fill this in and a maintainer writes the entry.
+  - type: input
+    id: repo
+    attributes:
+      label: Repository URL
+      placeholder: https://github.com/owner/name
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [package, binding, tool, editor, app, fork, learning-resource, not sure]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What it does
+      description: One or two sentences in your own words. What sets it apart from similar entries?
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Checklist
+      options:
+        - label: It is written in or for the Goose programming language (not `pressly/goose` or `block/goose`).
+          required: true
+        - label: It has real code to look at, not an empty or hello-world repository.
+          required: true
