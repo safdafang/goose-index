@@ -1,10 +1,6 @@
-"""Validate every packages/<id>.toml, and data/meta.json when present.
+"""Validate packages/*.toml and data/meta.json.
 
-Checks the JSON Schema, then what a schema cannot: the file name is the id, no
-two entries share a repository, the category list matches schema/categories.toml,
-and a description shares no run of six words with the project's own description.
-
-    .venv/Scripts/python scripts/validate.py      exit 1 on any error
+    python scripts/validate.py
 """
 
 import json
@@ -76,7 +72,7 @@ def main():
                 warnings.append(f"{rel}: repository not found")
             elif m.get("license") == "none" and "license_override" not in e:
                 warnings.append(f"{rel}: no license (flagged on the site)")
-        elif meta and e.get("repo"):  # an article with only a url has nothing to fetch
+        elif meta and e.get("repo"):
             warnings.append(f"{rel}: no fetched metadata yet (run scripts/fetch_meta.py)")
 
     for w in warnings:

@@ -1,7 +1,3 @@
-# Build-test entries against the latest Goose release on Linux, macOS and Windows.
-# Weekly for everything (results go to data/compat.json, then `update` republishes);
-# on pull requests for the entries they add or change (results in the run summary only).
-# See scripts/compat.py for what "builds" means.
 name: compat
 
 on:

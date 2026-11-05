@@ -1,9 +1,4 @@
-"""Thin wrapper over the `gh` CLI: REST, paginated REST and GraphQL, with retries.
-
-Uses whatever account `gh auth` is logged in as. Search endpoints are rate
-limited (30/min for repos, 10/min for code), so callers pass `search=True` to
-space those requests out.
-"""
+"""Wrapper over the `gh` CLI: REST, paginated REST and GraphQL, with retries."""
 
 import json
 import subprocess
@@ -40,7 +35,7 @@ def _run(args, stdin=None):
 
 
 def _until_reset():
-    """Seconds until the exhausted rate limit resets (the rate_limit endpoint itself is free)."""
+    """Seconds until the rate limit resets."""
     p = subprocess.run(["gh", "api", "rate_limit"], capture_output=True, text=True, encoding="utf-8")
     try:
         res = json.loads(p.stdout)["resources"]
@@ -100,9 +95,7 @@ def paginate(path, params=None):
 
 
 def graphql(query, partial=False, **variables):
-    """With partial=True, a response that has data and per-field errors (a repository
-    that doesn't exist, in a batch of aliased lookups) is returned as is instead of
-    raising, so one bad name doesn't fail its whole batch."""
+    """With partial=True, return data that has per-field errors instead of raising."""
     args = ["api", "graphql", "-f", f"query={query}"]
     for k, v in variables.items():
         args += ["-F" if isinstance(v, int) else "-f", f"{k}={v}"]

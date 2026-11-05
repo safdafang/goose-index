@@ -1,10 +1,6 @@
-"""Phase 1c: sort verified signals into automatic exclusions and a list for human review.
+"""Split verified signals into automatic exclusions and discovery/raw/review.txt.
 
-Automatic exclusions are only the mechanical ones (missing, empty, a fork with no
-commits of its own, no Goose source and no mention of the language). Everything
-with Goose evidence goes to discovery/raw/review.txt to be judged by reading it.
-
-    .venv/Scripts/python scripts/triage.py
+    python scripts/triage.py
 """
 
 import json
@@ -22,7 +18,7 @@ BLOCK = re.compile(r"block/goose|block\.github\.io/goose|goose (ai )?agent|coden
 def goose_sidecars(s):
     """A Goose sidecar is foo.build beside foo.goose; meson.build and the like are not."""
     goose = set(s.get("goose_paths", []))
-    truncated = s.get("n_goose", 0) > len(goose)  # older signals kept only 40 paths
+    truncated = s.get("n_goose", 0) > len(goose)
     return {p: kv for p, kv in (s.get("sidecars") or {}).items()
             if truncated or p[:-len(".build")] + ".goose" in goose}
 
@@ -33,14 +29,13 @@ def auto_reason(s, forks):
         return s["error"]
     fork = s.get("fork_of_goose")
     if fork is not None:
-        # signals written before forks.json had this fork carry an empty record
         fork = fork or forks.get(s["meta"]["nameWithOwner"].lower(), {})
         s["fork_of_goose"] = fork
         if not fork.get("ahead_by"):
             return "fork of aardappel/goose with no commits of its own on its default branch"
         return None
     goose_ok = any(c["goose"] for c in s.get("goose_checked", []))
-    # Dockerfile.goose is pressly/goose's or the agent's image recipe, not Goose source
+    # Dockerfile.goose belongs to pressly/goose or the agent, not Goose
     real = [p for p in s.get("goose_paths", []) if not p.rsplit("/", 1)[-1].lower().startswith("dockerfile")]
     text = (s.get("readme_head") or "") + " " + ((s.get("meta") or {}).get("description") or "")
     if goose_ok or real or LANG.search(text):

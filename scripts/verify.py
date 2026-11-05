@@ -1,11 +1,6 @@
-"""Phase 1b: read each candidate's files and record evidence of Goose.
+"""Check each candidate's files for Goose and write discovery/raw/signals.json.
 
-Reads discovery/raw/collected.json, writes discovery/raw/signals.json. Each repo gets:
-metadata (GraphQL), its file tree, the first lines of up to two .goose files
-checked for Goose syntax, every sidecar's keys, and the GitHub links in its
-README. --snowball adds those README links as new candidates and repeats.
-
-    .venv/Scripts/python scripts/verify.py [--snowball 2]
+    python scripts/verify.py [--snowball 2]
 """
 
 import argparse
@@ -35,7 +30,7 @@ FIELDS = """
   top: object(expression: "HEAD:") { ... on Tree { entries { name type } } }
 """
 
-# Goose syntax: one strong line form, or two weaker ones. Checked on file content, never on names.
+# one strong line form, or two weaker ones
 STRONG = [re.compile(p, re.M) for p in (
     r'^\s*import [A-Za-z_][\w.]*( from "[^"]+")?;\s*$',
     r'^\s*namespace [A-Za-z_]\w*;\s*$',
@@ -83,8 +78,7 @@ def fetch_meta(names):
     except RuntimeError:
         return {n: FAILED for n in names}
     data = res.get("data") or {}
-    # only a NOT_FOUND error on that alias means the repository is gone; anything
-    # else leaves it FAILED, to be inspected again on the next run
+    # only NOT_FOUND means the repo is gone; anything else is retried next run
     missing = {e["path"][0] for e in res.get("errors", []) if e.get("type") == "NOT_FOUND" and e.get("path")}
     return {n: data.get(f"r{i}") if data.get(f"r{i}") is not None or f"r{i}" in missing else FAILED
             for i, n in enumerate(names)}
@@ -126,7 +120,7 @@ def inspect(full, meta, forks):
         r"aardappel/goose|aardappel\.github\.io/goose|Goose (programming )?language|goose-lang|\.goose\b", text, re.I))
     if full.lower() in forks or (meta.get("parent") or {}).get("nameWithOwner", "").lower() == "aardappel/goose":
         sig["fork_of_goose"] = forks.get(full.lower(), {})
-        return sig  # a compiler checkout; its tree says nothing about a package
+        return sig
     tree = ghapi.rest(f"repos/{full}/git/trees/{br}", {"recursive": "1"}) or {}
     paths = [t["path"] for t in tree.get("tree", []) if t["type"] == "blob"]
     sig["truncated_tree"] = tree.get("truncated", False)
@@ -141,7 +135,6 @@ def inspect(full, meta, forks):
     sig["has_cargo"] = "Cargo.toml" in paths
     sig["has_go_mod"] = "go.mod" in paths
     sig["sql_migrations"] = sum(1 for p in paths if p.endswith(".sql"))
-    # the shortest paths first: the package entry file is usually at the root
     checked = []
     for p in sorted(goose, key=lambda p: (p.count("/"), len(p)))[:2]:
         body = raw_file(full, p, br) or ""
@@ -167,7 +160,7 @@ def run(names, forks):
             n = futs[f]
             try:
                 out[n] = f.result()
-            except Exception as e:  # keep going; record the failure as evidence
+            except Exception as e:
                 out[n] = {"meta": metas.get(n), "error": f"inspect failed: {e}"}
             if i % 25 == 0:
                 print(f"  {i}/{len(names)}", flush=True)
@@ -191,7 +184,6 @@ def main():
     forks_path = RAW / "forks.json"
     forks = json.loads(forks_path.read_text(encoding="utf-8")) if forks_path.exists() else {}
     for rnd in range(a.snowball + 1):
-        # network failures are not evidence: inspect those again
         retry = ("inspect failed", "not found") if a.retry_missing else ("inspect failed",)
         todo = [e["name"] for k, e in collected.items() if not k.startswith("_")
                 and (k not in signals or signals[k].get("error", "").startswith(retry))]
@@ -205,9 +197,7 @@ def main():
             break
         new = 0
         for k, s in list(signals.items()):
-            # follow links only from repos whose own source is verified Goose: a README
-            # that merely mentions Goose (an awesome list, a raylib bindings table) links
-            # to hundreds of unrelated projects
+            # follow README links only from verified Goose repos
             if any(c["goose"] for c in s.get("goose_checked", [])):
                 for link in s.get("readme_links", []):
                     if link.lower() not in collected:
@@ -224,7 +214,6 @@ def refresh_sidecars():
     signals = json.loads(sig_path.read_text(encoding="utf-8"))
 
     def goose_side(s):
-        # only foo.build beside foo.goose is a Goose sidecar; meson.build and moz.build are not
         goose = set(s.get("goose_paths", []))
         truncated = s.get("n_goose", 0) > len(goose)
         return [p for p in s.get("sidecars") or {} if truncated or p[:-len(".build")] + ".goose" in goose]

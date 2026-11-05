@@ -1,6 +1,4 @@
 <!doctype html>
-<!-- The README banner, the logo and the social preview, drawn with the site's own materials
-     (web/img, web/fonts). scripts/bake_brand.py screenshots each #id into .github/assets/. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -15,11 +13,10 @@
 * { box-sizing: border-box; }
 body { margin: 0; padding: 40px; background: #555; font-family: "Nunito", sans-serif; color: var(--ink); display: grid; gap: 40px; justify-items: start; }
 .lawn { position: relative; overflow: hidden; isolation: isolate; background: var(--lawn); }
-.lawn::after { /* a soft vignette, so the edges sit quietly next to GitHub's page */
+.lawn::after {
   content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none;
   background: radial-gradient(120% 140% at 50% 45%, rgba(0,0,0,0) 55%, rgba(30, 55, 20, .22)); }
 
-/* the beam the planks are nailed to, as in the site header */
 .beam { position: absolute; left: -20px; right: -20px; height: 30px; z-index: 0;
   background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(0,0,0,0) 40%, rgba(0,0,0,.22)), url(../web/img/wood-dark.webp) 0 0 / 360px 160px;
   filter: url(#wobble) drop-shadow(0 6px 5px rgba(30, 45, 15, .3)); }
@@ -58,7 +55,6 @@ body { margin: 0; padding: 40px; background: #555; font-family: "Nunito", sans-s
 .signs svg { width: 22px; height: 22px; }
 .signs > :nth-child(odd) { transform: rotate(-1.2deg); } .signs > :nth-child(even) { transform: rotate(1deg); }
 
-/* ---- the README banner: 1280 x 400 */
 #banner { width: 1280px; height: 400px; }
 #banner .beam { top: 104px; }
 #banner .row { position: absolute; left: 0; right: 0; top: 46px; display: flex; justify-content: center; align-items: center; gap: 26px; }
@@ -69,7 +65,6 @@ body { margin: 0; padding: 40px; background: #555; font-family: "Nunito", sans-s
 #banner .tag .strip { font-size: 29px; padding: 6px 18px 9px; transform: rotate(-.8deg); }
 #banner .signs { position: absolute; left: 0; right: 0; top: 300px; justify-content: center; font-size: 21px; z-index: 2; }
 
-/* ---- the logo: 512 x 512, transparent */
 #logo { width: 512px; height: 512px; display: grid; place-items: center; background: transparent; }
 #logo .tile { width: 400px; height: 400px; transform: rotate(-3deg); }
 #logo .tile::before { border-radius: 40px 30px 44px 32px; box-shadow: inset 0 0 0 4px rgba(120, 80, 40, .5), inset 0 -14px 0 rgba(120, 80, 40, .2), inset 0 6px 0 rgba(255,255,255,.35);
@@ -78,7 +73,6 @@ body { margin: 0; padding: 40px; background: #555; font-family: "Nunito", sans-s
   background: var(--nail) 0 0 / 24px 24px no-repeat, var(--nail) 100% 0 / 24px 24px no-repeat, var(--nail) 0 100% / 24px 24px no-repeat, var(--nail) 100% 100% / 24px 24px no-repeat; }
 #logo .tile svg { width: 250px; height: 250px; filter: drop-shadow(0 8px 0 #B9651A) drop-shadow(0 14px 12px rgba(80, 45, 10, .25)); }
 
-/* ---- the social preview: 1280 x 640 (GitHub: Settings > Social preview) */
 #social { width: 1280px; height: 640px; }
 #social .beam { top: 230px; height: 34px; }
 #social .row { position: absolute; left: 0; right: 0; top: 160px; display: flex; justify-content: center; align-items: center; gap: 30px; }

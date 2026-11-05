@@ -1,10 +1,7 @@
-"""Generate README.md, index.json and the static site from packages/ and data/.
-
-Everything this writes is generated: change packages/<id>.toml (or the code
-here) and run it again, never edit the outputs.
+"""Generate README.md, index.json and the site from packages/ and data/.
 
     python scripts/build.py                 README.md and index.json
-    python scripts/build.py --site _site    also the site, ready for GitHub Pages
+    python scripts/build.py --site _site    also the site
 """
 
 import argparse
@@ -48,8 +45,6 @@ STATUS = {  # label, symbol, sentence
 esc = html.escape
 
 
-# ---------------------------------------------------------------- the model
-
 def now_utc():
     return datetime.datetime.now(datetime.timezone.utc)
 
@@ -75,7 +70,7 @@ def read_json(p):
 
 
 def model(e, m, compat):
-    """One entry as every output sees it: the hand-written file joined with fetched facts."""
+    """Merge an entry file with its fetched facts."""
     m = m or {}
     x = {
         "id": e["id"], "name": e["name"], "kind": e["kind"], "category": e["category"],
@@ -141,8 +136,6 @@ def ago(iso, ref):
     return f"{d / 365:.1f} years ago"
 
 
-# ---------------------------------------------------------------- index.json
-
 def write_index(cats, entries, meta_doc, compat_doc, at):
     doc = {
         "$schema": f"{SITE}schema/index.schema.json",
@@ -165,8 +158,6 @@ def write_index(cats, entries, meta_doc, compat_doc, at):
     (ROOT / "index.json").write_text(text, encoding="utf-8", newline="\n")
     return text
 
-
-# ---------------------------------------------------------------- README.md
 
 def md_escape(s):
     return s.replace("|", "\\|").replace("<", "&lt;")
@@ -303,12 +294,6 @@ def write_readme(cats, entries, compat_doc, at, ref_time):
     ]
     (ROOT / "README.md").write_text("\n".join(out), encoding="utf-8", newline="\n")
 
-
-# ---------------------------------------------------------------- the site
-#
-# The look is a garden: wooden planks for the header, paper notes pegged to a hedge
-# for the entries, a pinned note for the filters. All art is in web/img/
-# (sprite.svg holds the seed packets, the icons and the push pin).
 
 ICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#8DB580"/>'
         '<path d="M32 56L19.8 37.6L8 18.2Q6.6 11 13.8 12.8L24.8 23.4L27.1 6.4Q32 0 36.9 6.4L39.2 23.4L50.2 12.8Q57.4 11 '
@@ -542,8 +527,6 @@ def home(cats, entries, ref_time, compat_doc):
 <nav class="stones" id="pager" aria-label="Pages" hidden></nav>
 </div>
 </section>"""
-    # only the first page of cards is laid out at load; the script pages the rest, and
-    # without a script every card shows
     return page(root, "", body, active="", cls="home", head="\n<noscript><style>.card.off { display: flex; }</style></noscript>")
 
 
@@ -836,8 +819,7 @@ def main():
     a = ap.parse_args()
     cats, entries, meta_doc, compat_doc = load()
     ref_time = now_utc()
-    # one timestamp for everything, taken from the data rather than the clock, so a
-    # rebuild with no new data leaves README.md and index.json byte for byte the same
+    # from the data, not the clock, so a rebuild with no new data changes nothing
     stamps = [s for s in (meta_doc.get("fetched_at"), (compat_doc or {}).get("ran_at")) if s]
     at = max(stamps) if stamps else ref_time.strftime("%Y-%m-%dT%H:%M:%SZ")
     index_text = write_index(cats, entries, meta_doc, compat_doc, at)

@@ -1,13 +1,8 @@
-"""Render the README banner, the logo and the social preview from art/brand.html.
+"""Render the banner, logo and social preview from art/brand.html into .github/assets/.
 
-They are drawn with the site's own textures and fonts, so they match it. Output, at 2x:
+Needs playwright and pillow; uses Chrome from $CHROME or Playwright's Chromium.
 
-    .github/assets/banner.png   1280 x 400, the top of README.md
-    .github/assets/logo.png     512 x 512, transparent
-    .github/assets/social.png   1280 x 640, for Settings > Social preview (upload it by hand)
-
-Dev-only: needs Playwright and Pillow (pip install playwright pillow). Uses Chrome from $CHROME, or
-Playwright's own Chromium. Run: python scripts/bake_brand.py
+    python scripts/bake_brand.py
 """
 import io
 import os
@@ -31,7 +26,7 @@ def main():
         page = browser.new_page(viewport={"width": 1400, "height": 800}, device_scale_factor=SCALE)
         page.goto(SRC.as_uri())
         page.evaluate("document.fonts.ready")
-        page.evaluate("document.body.style.background = 'transparent'")  # the grey is for previewing only
+        page.evaluate("document.body.style.background = 'transparent'")
         page.wait_for_timeout(500)
         for name, (width, clear) in SHOTS.items():
             el = page.locator(f"#{name}")

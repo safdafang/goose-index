@@ -1,20 +1,8 @@
-"""Bake the site's expensive art into plain images, so the browser never runs a filter while painting.
+"""Render the art/*.svg textures and the paper and hedge edge masks into web/img/.
 
-Two kinds of output, all written to web/img/:
+Needs playwright and pillow; uses Chrome from $CHROME or Playwright's Chromium.
 
-* Textures. art/*.svg are noise textures (feTurbulence) and grass line art. Chrome re-runs an SVG's
-  filters every time it rasters a tile that shows it, so each one is rendered once here at 2x and
-  saved as WebP (opaque or soft) or PNG (thin lines on transparent). The CSS keeps the same tile sizes.
-
-* Edges. Paper notes have torn edges and the hedge has a bumpy outline; on the page these came from
-  live displacement filters (#torn, #leafy) plus drop shadows, recomputed on every repaint. Here the
-  same filters (same noise, scale and shadows) are applied once to a rounded rectangle and saved as
-  nine-slice images: a mask for the edge, a shadow, and for the hedge its inner shading. The CSS
-  stretches them over any box with -webkit-mask-box-image and border-image. The noise is tiled with
-  the period of the stretched middle slice, so repeated slices join without a seam.
-
-Dev-only: needs Playwright and Pillow (pip install playwright pillow). Uses Chrome from $CHROME, or
-Playwright's own Chromium. Run: python scripts/bake_art.py
+    python scripts/bake_art.py
 """
 import io
 import os
@@ -27,24 +15,18 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 ART, OUT = ROOT / "art", ROOT / "web" / "img"
 SCALE = 2
 
-# Edge sets. m: margin around the shape (room for the shadow), b: slice width, p: length of the
-# stretched middle slice (also the noise period). The CSS uses the same m and b (see style.css).
+# m: margin, b: slice width, p: middle slice length (the noise period); style.css uses the same m and b
 PAPER = dict(m=32, b=56, p=280, radii=(3, 3, 3, 3), turb=(".055", 4, 7), disp=9)
 HEDGE = dict(m=72, b=160, p=420, radii=(46, 38, 50, 40), turb=(".028", 3, 11), disp=30)
-# name: (format, scale, colour to flatten onto, warp). WebP for noise (lossy is invisible on noise), PNG
-# for crisp lines on transparent. The lawn's soft patches sit straight on the lawn colour, so they are
-# flattened onto it (an opaque image is a fraction of the size) and need no more than 1x. The hedge's
-# leaves were bent by #leafy along with its outline, so its tile is bent the same way here: 3x3 tiles
-# under noise that repeats every 3 tiles, which keeps the result seamless.
+# name: (format, scale, colour to flatten onto, warp)
 TEXTURES = {"paper": ("webp", 2, None, None), "wood-light": ("webp", 2, None, None), "wood-mid": ("webp", 2, None, None),
             "wood-dark": ("webp", 2, None, None), "stone": ("webp", 2, None, None), "hedge": ("webp", 2, None, HEDGE),
             "grass-c": ("webp", 1, "#9DC283", None), "grass-a": ("png", 2, None, None), "grass-b": ("png", 2, None, None)}
-# drop shadows as in the old filter chains: (dy, blur radius, colour, opacity); the second is cast by
-# the shape together with the first, as CSS chains them
+# (dy, blur, colour, opacity)
 PAPER_SHADOW = [(2, 0, "rgb(120,100,60)", .22), (8, 12, "rgb(46,70,24)", .24)]
 CARD_SHADOW = [(2, 0, "rgb(120,100,60)", .3), (10, 10, "rgb(15,40,15)", .4)]
 HEDGE_SHADOW = [(10, 0, "#3A5F3D", 1), (18, 16, "rgb(46,70,24)", .3)]
-# inset shadows of the hedge: (dy, blur radius, colour, opacity)
+# (dy, blur, colour, opacity)
 HEDGE_SHADE = [(-18, 30, "rgb(20,45,20)", .45), (14, 22, "#fff", .06)]
 
 
@@ -66,7 +48,6 @@ def shadow_chain(layers):
 
 
 def shade_chain(layers, disp):
-    # as on the page: the inset shadows are cast inside the smooth shape, then bent with it
     out, names = ['<feComponentTransfer in="SourceAlpha" result="inv"><feFuncA type="table" tableValues="1 0"/></feComponentTransfer>'], []
     for i, (dy, r, c, o) in enumerate(layers):
         out.append(f'<feOffset in="inv" dy="{dy}"/><feGaussianBlur stdDeviation="{r / 2}" result="b{i}"/>'

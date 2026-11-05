@@ -1,6 +1,3 @@
-# Regenerate README.md, index.json and the site, and publish the site to GitHub Pages.
-# Runs on every push to main, daily (refreshing tags, stars, dates and licenses first),
-# and after each build test on main.
 name: update
 
 on:

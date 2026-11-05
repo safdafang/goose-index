@@ -1,9 +1,7 @@
-// Goose Package Index: search, filters and pages over the cards the page already holds,
-// and copy buttons. Without JavaScript every page still lists every entry.
 (function () {
   "use strict";
 
-  // ------------------------------------------------------------ copy buttons
+  // copy buttons
   document.addEventListener("click", (ev) => {
     const b = ev.target.closest(".copy");
     if (!b || !navigator.clipboard) return;
@@ -16,7 +14,7 @@
     }, () => {});
   });
 
-  // ------------------------------------------------------------ compatibility page filter
+  // compatibility page filter
   const cq = document.getElementById("cq");
   if (cq) cq.addEventListener("input", () => {
     const words = cq.value.toLowerCase().split(/\s+/).filter(Boolean);
@@ -25,7 +23,7 @@
     });
   });
 
-  // ------------------------------------------------------------ the index
+  // the index
   const list = document.getElementById("cards");
   const q = document.getElementById("q");
   if (!list || !q) return;
@@ -86,9 +84,6 @@
     const pages = Math.max(1, Math.ceil(shown.length / per));
     page = Math.min(Math.max(1, page), pages);
     shown.forEach(([, c], i) => c.classList.toggle("off", i < (page - 1) * per || i >= page * per));
-    // Only this page's cards are displayed, so only their order in the DOM matters (it is also the
-    // tab order). Move them only when they are out of order: a move is costly, since every moved
-    // card's icons are rebuilt. Hidden and off-page cards stay wherever they are.
     const want = shown.slice((page - 1) * per, page * per).map(([, c]) => c);
     const have = Array.prototype.filter.call(list.children, (c) => !c.hidden && !c.classList.contains("off"));
     if (want.some((c, i) => have[i] !== c)) {
@@ -106,7 +101,6 @@
     if (push) save();
   }
 
-  // writing the same text again still repaints, so skip it
   function setText(el, text) { if (el.textContent !== text) el.textContent = text; }
 
   let drawn = "";

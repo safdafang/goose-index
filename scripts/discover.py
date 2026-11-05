@@ -1,9 +1,6 @@
-"""Phase 1a: collect candidate repositories for the index from every source.
+"""Collect candidate repositories into discovery/raw/collected.json.
 
-Writes discovery/raw/collected.json: {owner/repo (lowercase): {"name": ..., "sources": [...]}}.
-Nothing here decides inclusion; verify.py does that by reading each repo's files.
-
-    .venv/Scripts/python scripts/discover.py [--upstream ../upstream]
+    python scripts/discover.py [--upstream ../upstream]
 """
 
 import argparse
@@ -18,7 +15,7 @@ import ghapi  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 RAW = ROOT / "discovery" / "raw"
-SINCE = "2026-10-01"  # Goose went public in early October 2026; nothing older is pushed for it
+SINCE = "2026-10-01"  # Goose went public in October 2026
 
 REPO_QUERIES = [
     "goose language", "goose lang", "goose-lang", "goose programming language",
@@ -56,7 +53,6 @@ CODE_QUERIES = [
     '"import std;" extension:md',
     '"goose build" "goose run" extension:md',
 ]
-# Everything already named in GAPS.md / NOTES.md, so nothing found by hand gets lost.
 SEEDS = """
 kaitk/goose-http kaitk/plod kaitk/goose-tls kaitk/goose-sqlite kaitk/goose-postgres kaitk/goose-hash
 kaitk/goose-compress kaitk/goose-acme kaitk/goose-ngfx shetautnetjer/goose-sqlite SorinS/gslib
@@ -128,9 +124,7 @@ def from_code_search(found, save):
     _searches(found, "code", [(f"code-search:{q}", q) for q in CODE_QUERIES], save)
 
 
-# Code search caps a query at 1000 files, and a few big repos (the compiler, its forks,
-# large packages) fill that with their own files. Excluding them and slicing by file
-# size lets the small repos through.
+# code search caps a query at 1000 files: skip the big repos and slice by size
 HEAVY = ["aardappel/goose", "appdoze/gust", "kaitk/plod", "kaitk/goose-http", "SorinS/gslib",
          "elcharitas/goose_bio", "yujieteo/skein", "rx-bob/goosetest", "akeit0/goose-lab"]
 BANDS = ["<150", "150..300", "300..600", "600..1000", "1000..1600", "1600..2500", "2500..4000",

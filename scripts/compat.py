@@ -1,31 +1,12 @@
-"""Build-test entries against the latest Goose release: the compatibility matrix.
+"""Build-test entries against the latest Goose release.
 
-CI runs this once per operating system (split into shards); see
-.github/workflows/compat.yml. Nothing here is specific to CI, but it fetches and
-builds other people's code, so run it locally only in a throwaway machine.
+Results: pass (goose build works), check (goose check passes, the build fails),
+fail (cannot be fetched, resolved or typechecked), skip (not built).
 
-What is tested, per entry:
-
-  package, binding  A probe program `import <name> from "<repo>@<ref>"; fn main() {}`.
-                    Requirements are not written down anywhere: when the package
-                    needs another one, `goose check` names the import line to add,
-                    the runner adds it and tries again. The lines it had to add
-                    are recorded as the package's requirements.
-  app, tool         The repository is cloned at <ref> and its entry file (compat.entry,
-                    or the one root-level .goose file with `fn main`) is checked and built.
-  others            Not built (editors, forks, learning resources), unless compat.entry says so.
-
-<ref> is the latest tag, or the default branch for an untagged project. A result is
-
-  pass   `goose build` produced an executable
-  check  `goose check` passed but the build (C compile, native parts, linking) failed
-  fail   the package could not be fetched, resolved or typechecked
-  skip   not built, with the reason
-
-    python scripts/compat.py install DIR            download the latest Goose release into DIR, print its directory
-    python scripts/compat.py libs                   system packages the entries ask for on this OS, one per line
+    python scripts/compat.py install DIR
+    python scripts/compat.py libs
     python scripts/compat.py run --out F [--shard 0/3] [--only id,id]
-    python scripts/compat.py merge F... [--run-url URL]    fold results into data/compat.json
+    python scripts/compat.py merge F... [--run-url URL]
 """
 
 import argparse
@@ -48,11 +29,11 @@ import zipfile
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OS = {"Linux": "linux", "Darwin": "macos", "Windows": "windows"}[platform.system()]
 UPSTREAM = "aardappel/goose"
-# the error goose prints for a requirement the root does not declare ends in the line to add
+# goose ends this error with the import line to add
 HINT = re.compile(r'^\s*import ([A-Za-z_]\w*) from "([^"]+)";\s*$', re.M)
 ANSI = re.compile(r"\x1b\[[0-9;]*[A-Za-z]")
 CHECK_TIMEOUT, BUILD_TIMEOUT = 600, 1500
-BASE = None  # the run's temporary directory, cut out of logs
+BASE = None
 
 
 def entries():
@@ -130,7 +111,7 @@ def sh(cmd, cwd, env, timeout):
 
 
 def first_error(log):
-    """The line a reader needs: the first real error, not the 'building … failed' header."""
+    """The first real error line of a build log."""
     lines = [l.strip() for l in log.splitlines() if l.strip()]
     for pat in (r"undefined reference|unresolved external|\berror\b\s*[:A-Z]|fatal error",
                 r"timed out|not found|cannot|no such", r"failed"):
@@ -141,7 +122,7 @@ def first_error(log):
 
 
 def tidy(log, base):
-    """Drop the runner's temporary paths, so a log reads the same on every machine."""
+    """Strip the runner's temporary paths from a log."""
     for b in {str(base), str(base).replace("\\", "/"), os.path.realpath(base)}:
         log = log.replace(b + "/home/pkg/", "").replace(b + "\\home\\pkg\\", "").replace(b, "")
     return re.sub(r"(/private)?/var/folders/[^ ]*?/goose-compat-[^/ ]+|[A-Z]:[\\/]Users[\\/][^ ]*?goose-compat-[^\\/ ]+", "", log)
@@ -212,9 +193,7 @@ NOT_ENTRY = re.compile(r"(^|[/_.-])(tests?|examples?|samples?|bench(mark)?s?|spi
 
 
 def find_entry(repo_dir, e):
-    """The program's root file: a .goose with `fn main`, outside tests and examples, at most
-    two directories down. Several candidates are ranked: named like the repository, then
-    main.goose or app.goose, then the shallowest; a tie is no answer."""
+    """The program's root .goose file with `fn main`, or None when it is ambiguous."""
     words = set(re.split(r"[^a-z0-9]+", e["repo"].rsplit("/", 1)[-1].lower())) - {"goose", ""}
     cands = []
     for p in repo_dir.rglob("*.goose"):
@@ -288,7 +267,7 @@ def run(out_path, shard, only):
                 results[id_] = run_probe(e, arg, base / id_, env, exe)
             else:
                 results[id_] = run_program(e, arg, base / id_, env, exe)
-        except Exception as ex:  # one broken entry must not lose the others' results
+        except Exception as ex:
             results[id_] = {"status": "fail", "stage": "runner", "detail": f"runner error: {ex}"[:240]}
         r = results[id_]
         print(f"[{num}/{len(todo)}] {id_}: {r['status']} {r.get('detail') or r.get('reason') or ''}"[:300]

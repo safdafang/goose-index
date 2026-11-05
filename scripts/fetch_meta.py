@@ -1,11 +1,6 @@
-"""Fetch the facts that change on their own into data/meta.json.
+"""Fetch tags, stars, dates and licenses into data/meta.json.
 
-For every entry with a GitHub repo: default branch, its head commit date, the
-newest tag, stars, archived, GitHub's license detection and the project's own
-description (kept for validate.py's copy check). Run on a schedule; never edit
-data/meta.json by hand.
-
-    .venv/Scripts/python scripts/fetch_meta.py
+    python scripts/fetch_meta.py
 """
 
 import datetime
@@ -41,8 +36,7 @@ def fetch(batch):
     except RuntimeError:
         return {id_: FAILED for id_, _, _ in batch}
     data = res.get("data") or {}
-    # only a NOT_FOUND error on an alias means the repository is gone; any other
-    # gap is a network failure and must not be recorded as a fact
+    # only NOT_FOUND means the repo is gone; anything else is a network error
     missing = {e["path"][0] for e in res.get("errors", []) if e.get("type") == "NOT_FOUND" and e.get("path")}
     return {id_: data.get(f"r{i}") if data.get(f"r{i}") is not None or f"r{i}" in missing else FAILED
             for i, (id_, _, _) in enumerate(batch)}
@@ -86,7 +80,7 @@ def main():
         for id_, node in fetch(batch).items():
             if node == FAILED:
                 stale.append(id_)
-                if id_ in old:  # keep the last good facts rather than invent new ones
+                if id_ in old:
                     out[id_] = old[id_]
                 continue
             out[id_] = to_meta(entries[id_][1]["repo"], node)

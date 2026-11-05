@@ -4,6 +4,5 @@ _site/
 compat-*.json
 results/
 discovery/raw/
-# the one-time seed of packages/ (2026-11-03); packages/ is the source of truth now
 discovery/curation.toml
 scripts/bootstrap.py
