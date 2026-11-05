@@ -81,7 +81,7 @@ jobs:
           ONLY: ${{ needs.plan.outputs.only }}
           SHARD: ${{ matrix.shard }}
         run: python scripts/compat.py run --shard "$SHARD/3" --only "$ONLY" --out "compat-$RUNNER_OS-$SHARD.json"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: compat-${{ runner.os }}-${{ matrix.shard }}
