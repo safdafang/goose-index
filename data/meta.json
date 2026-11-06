@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-05T13:15:42Z",
+ "fetched_at": "2026-11-06T12:59:11Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -20,11 +20,11 @@
    "latest_tag": "v2026.3",
    "tag_count": 4,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3031,
+   "stars": 3120,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-04T08:17:00Z"
+   "last_commit": "2026-11-06T06:04:43Z"
   },
   "aardappel-goose-gfx": {
    "exists": true,
@@ -80,11 +80,11 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-11-02T19:22:29Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "none",
    "upstream_description": null,
-   "last_commit": "2026-11-05T06:43:20Z"
+   "last_commit": "2026-11-05T20:28:52Z"
   },
   "aguspiza-raytracing-goose": {
    "exists": true,
@@ -147,16 +147,7 @@
    "last_commit": "2026-10-26T15:08:18Z"
   },
   "anugunjnaman-gander": {
-   "exists": true,
-   "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
-   "created": "2026-10-21T14:50:27Z",
-   "stars": 0,
-   "archived": false,
-   "license": "Apache-2.0",
-   "upstream_description": "Crash-safe flight recorder for robot telemetry, written in Goose.",
-   "last_commit": "2026-10-21T15:06:49Z"
+   "exists": false
   },
   "appdoze-gust": {
    "exists": true,
@@ -176,11 +167,11 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-14T13:35:09Z",
-   "stars": 77,
+   "stars": 79,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-05T12:25:30Z"
+   "last_commit": "2026-11-06T03:25:32Z"
   },
   "artsensiva-symidx": {
    "exists": true,
@@ -192,7 +183,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-05T12:23:59Z"
+   "last_commit": "2026-11-05T18:57:21Z"
   },
   "aurthurm-goose-web": {
    "exists": true,
@@ -224,7 +215,7 @@
    "latest_tag": "v0.1.0",
    "tag_count": 1,
    "created": "2026-10-24T10:31:46Z",
-   "stars": 4,
+   "stars": 6,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Arwad: R, compiled. A statistical programming language that keeps R's syntax and CRAN, and compiles numerical work to native code with deterministic memory.",
@@ -300,7 +291,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-04T08:36:28Z"
+   "last_commit": "2026-11-05T20:50:09Z"
   },
   "clintecker-goose-date": {
    "exists": true,
@@ -896,7 +887,7 @@
    "latest_tag": "2026-11-04",
    "tag_count": 18,
    "created": "2026-01-25T17:56:43Z",
-   "stars": 60,
+   "stars": 61,
    "archived": false,
    "license": "MIT",
    "upstream_description": "LangArena: Programming Language Evaluation Suite",
@@ -1124,7 +1115,7 @@
    "latest_tag": "main-e70e5e99a73f",
    "tag_count": 335,
    "created": "2026-08-05T04:40:51Z",
-   "stars": 49,
+   "stars": 50,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
@@ -1152,7 +1143,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-05T09:49:26Z"
+   "last_commit": "2026-11-05T17:26:22Z"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1383,7 +1374,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Goose lang as a host implementation for a roc platform.",
-   "last_commit": "2026-11-05T09:16:13Z"
+   "last_commit": "2026-11-06T11:42:14Z"
   },
   "shetautnetjer-goose-lsp": {
    "exists": true,
@@ -1431,7 +1422,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-02T15:36:33Z"
+   "last_commit": "2026-11-06T12:44:33Z"
   },
   "sorins-asn1goose": {
    "exists": true,
@@ -1731,7 +1722,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Bird strike simulation on a stiffened aluminium fuselage panel: explicit dynamics finite element solver in Goose, WebAssembly and WebGPU, runs in the browser",
-   "last_commit": "2026-11-05T11:59:54Z"
+   "last_commit": "2026-11-05T13:34:54Z"
   },
   "yujieteo-marklove-web": {
    "exists": true,
@@ -1779,7 +1770,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source of teoyujie.org: personal website with a WebAssembly beam diagram tool, essays and a log",
-   "last_commit": "2026-11-05T10:16:36Z"
+   "last_commit": "2026-11-06T07:16:09Z"
   },
   "yujieteo-skein": {
    "exists": true,
@@ -1803,7 +1794,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Mobile-first 3D sandbox in the browser: an AI agent builds animated 3D explainer scenes, with narration and MP4 export. Goose compiled to WebAssembly",
-   "last_commit": "2026-11-05T12:08:57Z"
+   "last_commit": "2026-11-05T13:47:30Z"
   },
   "zhengsy-goose-tui": {
    "exists": true,
@@ -1823,7 +1814,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-29T14:57:01Z",
-   "stars": 2,
+   "stars": 3,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose language extension for Zed (grammar, highlighting, Goose LSP integration, snippets, tasks)",
