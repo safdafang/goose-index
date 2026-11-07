@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-06T12:59:11Z",
+ "fetched_at": "2026-11-07T11:45:47Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -17,14 +17,14 @@
   "aardappel-goose": {
    "exists": true,
    "default_branch": "master",
-   "latest_tag": "v2026.3",
-   "tag_count": 4,
+   "latest_tag": "v2026.4",
+   "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3120,
+   "stars": 3211,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-06T06:04:43Z"
+   "last_commit": "2026-11-06T23:13:54Z"
   },
   "aardappel-goose-gfx": {
    "exists": true,
@@ -36,7 +36,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-04T04:45:49Z"
+   "last_commit": "2026-11-06T22:47:13Z"
   },
   "aardappel-goose-physics": {
    "exists": true,
@@ -171,7 +171,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-06T03:25:32Z"
+   "last_commit": "2026-11-07T06:40:39Z"
   },
   "artsensiva-symidx": {
    "exists": true,
@@ -215,7 +215,7 @@
    "latest_tag": "v0.1.0",
    "tag_count": 1,
    "created": "2026-10-24T10:31:46Z",
-   "stars": 6,
+   "stars": 7,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Arwad: R, compiled. A statistical programming language that keeps R's syntax and CRAN, and compiles numerical work to native code with deterministic memory.",
@@ -723,7 +723,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-04T19:53:48Z"
+   "last_commit": "2026-11-06T19:18:03Z"
   },
   "kaitk-goose-acme": {
    "exists": true,
@@ -927,7 +927,7 @@
    "archived": false,
    "license": "other",
    "upstream_description": "raylib bindings for Goose Programming Language",
-   "last_commit": "2026-11-01T11:17:11Z"
+   "last_commit": "2026-11-07T01:53:08Z"
   },
   "lazychicken-goose-commands": {
    "exists": true,
@@ -1374,7 +1374,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Goose lang as a host implementation for a roc platform.",
-   "last_commit": "2026-11-06T11:42:14Z"
+   "last_commit": "2026-11-06T19:29:30Z"
   },
   "shetautnetjer-goose-lsp": {
    "exists": true,
@@ -1398,7 +1398,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-10-27T05:34:01Z"
+   "last_commit": "2026-11-06T14:34:19Z"
   },
   "shetautnetjer-goose-treesitter": {
    "exists": true,
@@ -1410,7 +1410,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-10-28T04:50:24Z"
+   "last_commit": "2026-11-06T14:20:50Z"
   },
   "shetautnetjer-swan": {
    "exists": true,
@@ -1422,7 +1422,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-06T12:44:33Z"
+   "last_commit": "2026-11-07T01:32:52Z"
   },
   "sorins-asn1goose": {
    "exists": true,
@@ -1566,7 +1566,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Synchronous file I/O, buffered readers and writers, and borrowed lines for Goose",
-   "last_commit": "2026-11-02T20:18:36Z"
+   "last_commit": "2026-11-07T11:43:50Z"
   },
   "sstadick-goosopt": {
    "exists": true,
@@ -1722,7 +1722,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Bird strike simulation on a stiffened aluminium fuselage panel: explicit dynamics finite element solver in Goose, WebAssembly and WebGPU, runs in the browser",
-   "last_commit": "2026-11-05T13:34:54Z"
+   "last_commit": "2026-11-07T05:56:23Z"
   },
   "yujieteo-marklove-web": {
    "exists": true,
@@ -1730,47 +1730,29 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-28T14:00:50Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "none",
    "upstream_description": "Marklove for the web: Markdown editor and converter to slides, article, EPUB, subtitles and narration. Goose and C compiled to WebAssembly, runs in the browser",
    "last_commit": "2026-11-05T09:49:16Z"
   },
   "yujieteo-neurons": {
-   "exists": true,
-   "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
-   "created": "2026-10-28T11:49:58Z",
-   "stars": 0,
-   "archived": false,
-   "license": "MIT",
-   "upstream_description": "Neuron explorer for SmolLM2-135M in the browser: interpretability of MLP neurons, steering and Jacobian lens. Goose to WebAssembly and WebGPU",
-   "last_commit": "2026-11-04T14:47:49Z"
+   "exists": false
   },
   "yujieteo-pond": {
-   "exists": true,
-   "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
-   "created": "2026-10-28T05:49:06Z",
-   "stars": 0,
-   "archived": false,
-   "license": "none",
-   "upstream_description": "Low-energy media and experiments companion: iOS app in Swift, signed log, stream on teoyujie.org/log. Server in Goose for OpenBSD, Linux, macOS",
-   "last_commit": "2026-11-05T13:11:06Z"
+   "exists": false
   },
   "yujieteo-site": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "old-site",
-   "tag_count": 1,
+   "latest_tag": null,
+   "tag_count": 0,
    "created": "2026-10-09T13:11:11Z",
    "stars": 0,
    "archived": false,
    "license": "none",
-   "upstream_description": "Source of teoyujie.org: personal website with a WebAssembly beam diagram tool, essays and a log",
-   "last_commit": "2026-11-06T07:16:09Z"
+   "upstream_description": "teoyujie.org",
+   "last_commit": "2026-11-07T11:34:13Z"
   },
   "yujieteo-skein": {
    "exists": true,
@@ -1787,14 +1769,14 @@
   "yujieteo-toybox": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "v0.1.0",
-   "tag_count": 1,
+   "latest_tag": "pre-rebuild",
+   "tag_count": 2,
    "created": "2026-10-28T00:20:46Z",
    "stars": 0,
    "archived": false,
-   "license": "none",
+   "license": "MIT",
    "upstream_description": "Mobile-first 3D sandbox in the browser: an AI agent builds animated 3D explainer scenes, with narration and MP4 export. Goose compiled to WebAssembly",
-   "last_commit": "2026-11-05T13:47:30Z"
+   "last_commit": "2026-11-07T11:28:58Z"
   },
   "zhengsy-goose-tui": {
    "exists": true,
@@ -1818,7 +1800,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose language extension for Zed (grammar, highlighting, Goose LSP integration, snippets, tasks)",
-   "last_commit": "2026-11-04T01:50:53Z"
+   "last_commit": "2026-11-07T05:12:39Z"
   }
  }
 }

@@ -202,7 +202,7 @@ _Rendering, windowing, game libraries and their bindings, procedural noise._
 - **[raylib-goose](https://github.com/Alexxzz/raylib-goose)** _binding_ — Bindings to the whole raylib 6.2 API under the rl namespace, loaded from a raylib shared library at run time rather than compiled in. ★ 1 · ⚠️ no license · ❌ ❌ ❌
   `import rl from "github.com/Alexxzz/raylib-goose@main";`
 - **[project-frontier](https://github.com/lenstr/project-frontier)** — A third-person 3D game about mining an alien world and automating a colony with rails and robots, scaled to thousands of entities; native builds for macOS and Linux. ⚠️ no license · ❌ ❌ ❌
-- **[toybox](https://github.com/yujieteo/toybox)** — A browser 3D sandbox where an agent builds animated explainer scenes with narration, exported as MP4 or a reloadable scene file; the engine is Goose compiled to WebAssembly. 🏷 v0.1.0 · ⚠️ no license
+- **[toybox](https://github.com/yujieteo/toybox)** — A browser 3D sandbox where an agent builds animated explainer scenes with narration, exported as MP4 or a reloadable scene file; the engine is Goose compiled to WebAssembly. 🏷 pre-rebuild
 
 ## GUI and terminal UI
 
@@ -306,8 +306,8 @@ _Editor plugins, syntax grammars, LSP clients._
 
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
-- **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 6 · 🏷 v0.1.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3120 · 🏷 v2026.3
+- **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 7 · 🏷 v0.1.0
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3211 · 🏷 v2026.4
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
 - **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
@@ -347,13 +347,13 @@ _Programs written in Goose: tools, games, servers, simulations._
 - **[goosestrike](https://github.com/yujieteo/goosestrike)** — An explicit-dynamics finite-element simulation of a bird hitting an aircraft fuselage panel, compiled to WebAssembly with an optional WebGPU solver, running live in the browser. ✅ ✅ ✅
 - **[llama-goose](https://github.com/aguspiza/llama-goose)** — A work-in-progress port of llama.cpp and its ggml tensor library to Goose, built with goose build instead of CMake, tracking upstream llama.cpp commit by commit. ★ 1 · ⚠️ no license
 - **[mandelbrot-goose](https://github.com/jesper-olsen/mandelbrot-goose)** — Renders the Mandelbrot set as terminal ASCII or as gnuplot data, in single-threaded and threaded versions, as one entry in the author's cross-language Mandelbrot suite. ⚠️ no license · ✅ ✅ ✅
-- **[marklove-web](https://github.com/yujieteo/marklove-web)** — A browser Markdown editor whose Goose core, compiled to WebAssembly, produces slides, articles, EPUB books, subtitles and narration from one file. ⚠️ no license
+- **[marklove-web](https://github.com/yujieteo/marklove-web)** — A browser Markdown editor whose Goose core, compiled to WebAssembly, produces slides, articles, EPUB books, subtitles and narration from one file. ★ 1 · ⚠️ no license
 - **[meta-os](https://github.com/mrfentmen/meta-os)** — A hackathon platform where AI agents work in dedicated systems; its services layer (audit, logging, boards, agent hosts) is written in Goose, alongside Rust and web parts. 🏷 v1.0.0 · ⚠️ no license
 - **[moon-goose](https://github.com/tacf/moon-goose)** — An unfinished interpreter with a lexer, a parser and a stack virtual machine; the repository has no README yet. ⚠️ no license · ✅ ✅ ✅
-- **[neurons](https://github.com/yujieteo/neurons)** — An in-browser explorer of SmolLM2-135M's MLP neurons with steering, running the model in Goose compiled to WebAssembly, on WebGPU when available.
-- **[pond](https://github.com/yujieteo/pond)** — A signed media and experiment journal: an iOS app in Swift with a save, read and sync server written in Goose for OpenBSD, Linux and macOS. ⚠️ no license
+- **[neurons](https://github.com/yujieteo/neurons)** — An in-browser explorer of SmolLM2-135M's MLP neurons with steering, running the model in Goose compiled to WebAssembly, on WebGPU when available. **repository unavailable**
+- **[pond](https://github.com/yujieteo/pond)** — A signed media and experiment journal: an iOS app in Swift with a save, read and sync server written in Goose for OpenBSD, Linux and macOS. **repository unavailable**
 - **[raytracing-goose](https://github.com/aguspiza/raytracing-goose)** — The Ray Tracing in One Weekend renderer in Goose, carried over from a chain of earlier ports and tuned for auto-vectorized hit tests. ⚠️ no license · ✅ ✅ ✅
-- **[site](https://github.com/yujieteo/site)** — A personal website whose interactive tools, a beam diagram creator and a wallpaper maker, are Goose programs compiled to WebAssembly. 🏷 old-site · ⚠️ no license
+- **[site](https://github.com/yujieteo/site)** — A personal website whose interactive tools, a beam diagram creator and a wallpaper maker, are Goose programs compiled to WebAssembly. ⚠️ no license
 - **[weld](https://github.com/dantje/weld)** — A parallel x86-64 ELF linker that accepts GNU ld's command line and links static, PIE and shared outputs, built around worker threads and typed queues. 🏷 v0.1 · ❌ ❌ ❌
 
 ## Benchmarks
@@ -398,4 +398,4 @@ Adding a project is one file, `packages/<id>.toml`, in a pull request: see [CONT
 
 The code here (`scripts/`, `web/`, `.github/`) is [MIT](LICENSE); the entry data and descriptions (`packages/`, `data/`, this README and `index.json`) are [CC0 1.0](LICENSE). Listed projects keep their own licenses. Goose is a project of its own authors; this index is not affiliated with it.
 
-<sub>Generated 2026-11-06T12:59:11Z.</sub>
+<sub>Generated 2026-11-07T11:45:47Z.</sub>
