@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-07T11:45:47Z",
+ "fetched_at": "2026-11-08T11:57:56Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -20,11 +20,11 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3211,
+   "stars": 3276,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-06T23:13:54Z"
+   "last_commit": "2026-11-07T19:26:19Z"
   },
   "aardappel-goose-gfx": {
    "exists": true,
@@ -84,7 +84,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": null,
-   "last_commit": "2026-11-05T20:28:52Z"
+   "last_commit": "2026-11-08T07:25:16Z"
   },
   "aguspiza-raytracing-goose": {
    "exists": true,
@@ -167,11 +167,11 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-14T13:35:09Z",
-   "stars": 79,
+   "stars": 80,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-07T06:40:39Z"
+   "last_commit": "2026-11-08T03:32:54Z"
   },
   "artsensiva-symidx": {
    "exists": true,
@@ -723,7 +723,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-06T19:18:03Z"
+   "last_commit": "2026-11-08T02:55:36Z"
   },
   "kaitk-goose-acme": {
    "exists": true,
@@ -767,11 +767,11 @@
    "latest_tag": "v0.5.18",
    "tag_count": 37,
    "created": "2026-10-10T14:28:54Z",
-   "stars": 19,
+   "stars": 20,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "An experimental HTTP/1.1 server in Goose",
-   "last_commit": "2026-11-04T07:42:37Z"
+   "last_commit": "2026-11-07T16:54:27Z"
   },
   "kaitk-goose-ngfx": {
    "exists": true,
@@ -920,14 +920,14 @@
   "lamweilun-raygoose": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "v0.1.0",
-   "tag_count": 1,
+   "latest_tag": "v0.1.1",
+   "tag_count": 2,
    "created": "2026-10-31T08:14:16Z",
    "stars": 2,
    "archived": false,
    "license": "other",
    "upstream_description": "raylib bindings for Goose Programming Language",
-   "last_commit": "2026-11-07T01:53:08Z"
+   "last_commit": "2026-11-08T03:29:30Z"
   },
   "lazychicken-goose-commands": {
    "exists": true,
@@ -1028,14 +1028,14 @@
   "macho0x-goose-hyperliquid": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.2.0",
+   "tag_count": 1,
    "created": "2026-11-02T13:10:56Z",
    "stars": 0,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "HyperCore signing, info, and HyperEVM reads for Goose",
-   "last_commit": "2026-11-02T13:10:49Z"
+   "last_commit": "2026-11-08T08:05:24Z"
   },
   "macho0x-goose-logger": {
    "exists": true,
@@ -1112,14 +1112,14 @@
   "mas-bandwidth-schema": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "main-e70e5e99a73f",
-   "tag_count": 335,
+   "latest_tag": "main-ffa9041aeece",
+   "tag_count": 399,
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
-   "last_commit": "2026-11-04T20:16:17Z"
+   "last_commit": "2026-11-08T07:36:41Z"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
@@ -1131,7 +1131,7 @@
    "archived": false,
    "license": "BSD-3-Clause",
    "upstream_description": "A simple bitpacking serializer for Goose, wire compatible with the C++ serialize library",
-   "last_commit": "2026-10-29T16:40:53Z"
+   "last_commit": "2026-11-07T15:58:03Z"
   },
   "mewhhaha-goose-to-wasm": {
    "exists": true,
@@ -1143,7 +1143,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-05T17:26:22Z"
+   "last_commit": "2026-11-08T08:06:07Z"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1194,7 +1194,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-01T14:28:52Z"
+   "last_commit": "2026-11-08T11:54:45Z"
   },
   "noonien-alchemistssort": {
    "exists": true,
@@ -1298,7 +1298,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-11-01T14:00:32Z",
-   "stars": 2,
+   "stars": 3,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Go backend and pure-Go mmap Data Stack runtime for the Goose programming language",
@@ -1338,7 +1338,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Formatter & Linter for Goose",
-   "last_commit": "2026-11-01T17:47:22Z"
+   "last_commit": "2026-11-07T20:47:58Z"
   },
   "rx-bob-goosetest": {
    "exists": true,
@@ -1350,7 +1350,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Test Runner for Goose",
-   "last_commit": "2026-11-01T17:38:35Z"
+   "last_commit": "2026-11-07T21:20:10Z"
   },
   "salahraja-football-scores": {
    "exists": true,
@@ -1362,7 +1362,7 @@
    "archived": false,
    "license": "MPL-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-04T19:09:14Z"
+   "last_commit": "2026-11-07T21:53:52Z"
   },
   "scottc-goose-roc": {
    "exists": true,
@@ -1374,7 +1374,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Goose lang as a host implementation for a roc platform.",
-   "last_commit": "2026-11-06T19:29:30Z"
+   "last_commit": "2026-11-07T14:26:49Z"
   },
   "shetautnetjer-goose-lsp": {
    "exists": true,
@@ -1422,7 +1422,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-07T01:32:52Z"
+   "last_commit": "2026-11-07T20:14:43Z"
   },
   "sorins-asn1goose": {
    "exists": true,
@@ -1535,62 +1535,67 @@
   "sstadick-goosdoc": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "v0.2.0",
-   "tag_count": 2,
+   "latest_tag": "v0.3.0",
+   "tag_count": 3,
    "created": "2026-10-31T11:21:33Z",
    "stars": 0,
    "archived": false,
    "license": "MIT",
    "upstream_description": "Markdown API references for Goose libraries",
-   "last_commit": "2026-10-31T11:56:55Z"
+   "last_commit": "2026-11-07T19:40:55Z",
+   "canonical_repo": "https://github.com/sstadick/goose-doc"
   },
   "sstadick-goosimd": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "v0.1.1",
-   "tag_count": 2,
+   "latest_tag": "v0.2.0",
+   "tag_count": 3,
    "created": "2026-10-29T20:19:43Z",
    "stars": 0,
    "archived": false,
    "license": "MIT",
    "upstream_description": "Placeholder Goose SIMD package for testing proposed c_headers support; implementation will be replaced.",
-   "last_commit": "2026-11-02T23:26:34Z"
+   "last_commit": "2026-11-07T19:40:58Z",
+   "canonical_repo": "https://github.com/sstadick/goose-simd"
   },
   "sstadick-goosio": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "v0.1.0",
-   "tag_count": 1,
+   "latest_tag": "v0.2.0",
+   "tag_count": 2,
    "created": "2026-11-02T20:15:16Z",
    "stars": 0,
    "archived": false,
    "license": "MIT",
    "upstream_description": "Synchronous file I/O, buffered readers and writers, and borrowed lines for Goose",
-   "last_commit": "2026-11-07T11:43:50Z"
+   "last_commit": "2026-11-07T19:41:03Z",
+   "canonical_repo": "https://github.com/sstadick/goose-io"
   },
   "sstadick-goosopt": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
    "created": "2026-10-31T11:05:14Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "MIT",
    "upstream_description": "Experimental struct-derived CLI options for Goose",
-   "last_commit": "2026-11-01T13:04:19Z"
+   "last_commit": "2026-11-07T19:41:06Z",
+   "canonical_repo": "https://github.com/sstadick/goose-opts"
   },
   "sstadick-goostr": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "v0.2.1",
-   "tag_count": 3,
+   "latest_tag": "v0.3.0",
+   "tag_count": 4,
    "created": "2026-10-29T13:52:08Z",
    "stars": 0,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-03T02:59:32Z"
+   "last_commit": "2026-11-07T19:41:00Z",
+   "canonical_repo": "https://github.com/sstadick/goose-bstr"
   },
   "subhdotsol-goose-guide": {
    "exists": true,
@@ -1610,7 +1615,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-22T13:14:11Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "none",
    "upstream_description": "beads rewrite in goose",
@@ -1622,7 +1627,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-25T14:54:13Z",
-   "stars": 6,
+   "stars": 7,
    "archived": false,
    "license": "MIT",
    "upstream_description": "Call Rust crates from Goose, or embed Goose in Rust, using generated binding",
@@ -1713,28 +1718,10 @@
    "last_commit": "2026-10-25T16:51:44Z"
   },
   "yujieteo-goosestrike": {
-   "exists": true,
-   "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
-   "created": "2026-10-26T10:48:43Z",
-   "stars": 0,
-   "archived": false,
-   "license": "MIT",
-   "upstream_description": "Bird strike simulation on a stiffened aluminium fuselage panel: explicit dynamics finite element solver in Goose, WebAssembly and WebGPU, runs in the browser",
-   "last_commit": "2026-11-07T05:56:23Z"
+   "exists": false
   },
   "yujieteo-marklove-web": {
-   "exists": true,
-   "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
-   "created": "2026-10-28T14:00:50Z",
-   "stars": 1,
-   "archived": false,
-   "license": "none",
-   "upstream_description": "Marklove for the web: Markdown editor and converter to slides, article, EPUB, subtitles and narration. Goose and C compiled to WebAssembly, runs in the browser",
-   "last_commit": "2026-11-05T09:49:16Z"
+   "exists": false
   },
   "yujieteo-neurons": {
    "exists": false
@@ -1747,36 +1734,18 @@
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
-   "created": "2026-10-09T13:11:11Z",
+   "created": "2026-11-08T09:17:48Z",
    "stars": 0,
    "archived": false,
    "license": "none",
    "upstream_description": "teoyujie.org",
-   "last_commit": "2026-11-07T11:34:13Z"
+   "last_commit": "2026-11-08T10:43:19Z"
   },
   "yujieteo-skein": {
-   "exists": true,
-   "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
-   "created": "2026-10-29T14:19:42Z",
-   "stars": 0,
-   "archived": false,
-   "license": "Apache-2.0",
-   "upstream_description": "Skein: a typed, units-checked language for numerical simulation (finite element, finite volume) that compiles to Goose, C and WebAssembly",
-   "last_commit": "2026-11-04T14:05:32Z"
+   "exists": false
   },
   "yujieteo-toybox": {
-   "exists": true,
-   "default_branch": "main",
-   "latest_tag": "pre-rebuild",
-   "tag_count": 2,
-   "created": "2026-10-28T00:20:46Z",
-   "stars": 0,
-   "archived": false,
-   "license": "MIT",
-   "upstream_description": "Mobile-first 3D sandbox in the browser: an AI agent builds animated 3D explainer scenes, with narration and MP4 export. Goose compiled to WebAssembly",
-   "last_commit": "2026-11-07T11:28:58Z"
+   "exists": false
   },
   "zhengsy-goose-tui": {
    "exists": true,
@@ -1800,7 +1769,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose language extension for Zed (grammar, highlighting, Goose LSP integration, snippets, tasks)",
-   "last_commit": "2026-11-07T05:12:39Z"
+   "last_commit": "2026-11-07T16:15:14Z"
   }
  }
 }
