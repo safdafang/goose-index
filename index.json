@@ -2,12 +2,12 @@
  "$schema": "https://safdafang.github.io/goose-index/schema/index.schema.json",
  "format": "goose-index",
  "version": 1,
- "generated_at": "2026-11-08T11:57:56Z",
+ "generated_at": "2026-11-09T12:10:31Z",
  "meta_fetched_at": "2026-11-08T11:57:56Z",
  "compat": {
-  "goose": "v2026.3",
-  "ran_at": "2026-11-03T23:08:43Z",
-  "run_url": "https://github.com/safdafang/goose-index/actions/runs/41736229018"
+  "goose": "v2026.4",
+  "ran_at": "2026-11-09T12:10:31Z",
+  "run_url": "https://github.com/safdafang/goose-index/actions/runs/42614245212"
  },
  "site": "https://safdafang.github.io/goose-index/",
  "source": "https://github.com/safdafang/goose-index",
@@ -189,17 +189,17 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.0.4",
+     "ref": "v0.0.5",
      "stage": "build"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.0.4",
+     "ref": "v0.0.5",
      "stage": "build"
     },
     "windows": {
      "status": "pass",
-     "ref": "v0.0.4",
+     "ref": "v0.0.5",
      "stage": "build"
     }
    },
@@ -210,7 +210,7 @@
     },
     {
      "name": "tls",
-     "source": "github.com/kaitk/goose-tls@v0.0.5"
+     "source": "github.com/kaitk/goose-tls@v0.0.6"
     }
    ],
    "import": {
@@ -274,17 +274,17 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.5.16",
+     "ref": "v0.5.18",
      "stage": "build"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.5.16",
+     "ref": "v0.5.18",
      "stage": "build"
     },
     "windows": {
      "status": "pass",
-     "ref": "v0.5.16",
+     "ref": "v0.5.18",
      "stage": "build"
     }
    },
@@ -776,22 +776,19 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:1: error: github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include,"
+     "stage": "build"
     },
     "macos": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:1: error: github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include,"
+     "stage": "build"
     },
     "windows": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:1: error: github.com/SorinS/bigmongoose/main/bignum.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include,"
+     "stage": "build"
     }
    },
    "requires": [],
@@ -1051,22 +1048,19 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:1: error: github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_incl"
+     "stage": "build"
     },
     "macos": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:1: error: github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_incl"
+     "stage": "build"
     },
     "windows": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:1: error: github.com/SorinS/gslib/main/gslib.build: unknown key dylibs_linux (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_incl"
+     "stage": "build"
     }
    },
    "requires": [],
@@ -2490,22 +2484,19 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of"
+     "stage": "build"
     },
     "macos": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of"
+     "stage": "build"
     },
     "windows": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "github.com/SorinS/yamlgoose/main/yaml.goose:2810: error: unknown function: float_text::bits_of"
+     "stage": "build"
     }
    },
    "requires": [],
@@ -2672,22 +2663,16 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "pass",
-     "ref": "goose-wasm-schema-org-14436079612921043283",
-     "stage": "build",
-     "entry": "src/goose/schema_ld.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     },
     "macos": {
-     "status": "pass",
-     "ref": "goose-wasm-schema-org-14436079612921043283",
-     "stage": "build",
-     "entry": "src/goose/schema_ld.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     },
     "windows": {
-     "status": "pass",
-     "ref": "goose-wasm-schema-org-14436079612921043283",
-     "stage": "build",
-     "entry": "src/goose/schema_ld.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     }
    },
    "requires": [],
@@ -2732,17 +2717,17 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.3.3",
+     "ref": "v0.3.4",
      "stage": "build"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.3.3",
+     "ref": "v0.3.4",
      "stage": "build"
     },
     "windows": {
      "status": "pass",
-     "ref": "v0.3.3",
+     "ref": "v0.3.4",
      "stage": "build"
     }
    },
@@ -2869,21 +2854,21 @@
    "compat": {
     "linux": {
      "status": "fail",
-     "ref": "v0.2.1",
+     "ref": "v0.3.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
+     "detail": "probe.goose:1: error: the package goostr at github.com/sstadick/goostr/v0.3.0/ has no goostr.goose"
     },
     "macos": {
      "status": "fail",
-     "ref": "v0.2.1",
+     "ref": "v0.3.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
+     "detail": "probe.goose:1: error: the package goostr at github.com/sstadick/goostr/v0.3.0/ has no goostr.goose"
     },
     "windows": {
      "status": "fail",
-     "ref": "v0.2.1",
+     "ref": "v0.3.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: github.com/sstadick/goostr/v0.2.1/goostr.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
+     "detail": "probe.goose:1: error: the package goostr at github.com/sstadick/goostr/v0.3.0/ has no goostr.goose"
     }
    },
    "requires": [],
@@ -3064,22 +3049,19 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
+     "status": "pass",
      "ref": "v0.1.0",
-     "stage": "check",
-     "detail": "github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add"
+     "stage": "build"
     },
     "macos": {
-     "status": "fail",
+     "status": "pass",
      "ref": "v0.1.0",
-     "stage": "check",
-     "detail": "github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add"
+     "stage": "build"
     },
     "windows": {
-     "status": "fail",
+     "status": "pass",
      "ref": "v0.1.0",
-     "stage": "check",
-     "detail": "github.com/guillochon/goose-fft/v0.1.0/fft.goose:48: error: unknown function: mul_add"
+     "stage": "build"
     }
    },
    "requires": [],
@@ -3202,22 +3184,19 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
+     "status": "pass",
      "ref": "v0.1.0",
-     "stage": "check",
-     "detail": "github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite"
+     "stage": "build"
     },
     "macos": {
-     "status": "fail",
+     "status": "pass",
      "ref": "v0.1.0",
-     "stage": "check",
-     "detail": "github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite"
+     "stage": "build"
     },
     "windows": {
-     "status": "fail",
+     "status": "pass",
      "ref": "v0.1.0",
-     "stage": "check",
-     "detail": "github.com/guillochon/goose-random/v0.1.0/random.goose:327: error: unknown function: is_finite"
+     "stage": "build"
     }
    },
    "requires": [],
@@ -3867,22 +3846,19 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
-     "ref": "v0.1.0",
-     "stage": "check",
-     "detail": "github.com/lamweilun/raygoose/v0.1.0/raylib.goose:989: error: expected ';' in extern declaration, found '='"
+     "status": "pass",
+     "ref": "v0.1.1",
+     "stage": "build"
     },
     "macos": {
-     "status": "fail",
-     "ref": "v0.1.0",
-     "stage": "check",
-     "detail": "github.com/lamweilun/raygoose/v0.1.0/raylib.goose:989: error: expected ';' in extern declaration, found '='"
+     "status": "pass",
+     "ref": "v0.1.1",
+     "stage": "build"
     },
     "windows": {
-     "status": "fail",
-     "ref": "v0.1.0",
-     "stage": "check",
-     "detail": "github.com/lamweilun/raygoose/v0.1.0/raylib.goose:989: error: expected ';' in extern declaration, found '='"
+     "status": "pass",
+     "ref": "v0.1.1",
+     "stage": "build"
     }
    },
    "requires": [],
@@ -3941,22 +3917,19 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'"
+     "stage": "build"
     },
     "macos": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'"
+     "stage": "build"
     },
     "windows": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "github.com/Alexxzz/raylib-goose/main/rl.goose:753: error: expected 'fn' in function declaration, found '{'"
+     "stage": "build"
     }
    },
    "requires": [],
@@ -4012,24 +3985,21 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "src/memory.goose:22: error: unknown function: trim_memory",
+     "stage": "build",
      "entry": "frontier.goose"
     },
     "macos": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "src/memory.goose:22: error: unknown function: trim_memory",
+     "stage": "build",
      "entry": "frontier.goose"
     },
     "windows": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "src/memory.goose:22: error: unknown function: trim_memory",
+     "stage": "build",
      "entry": "frontier.goose"
     }
    },
@@ -4077,21 +4047,15 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "ref": "v0.1.0",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     },
     "macos": {
      "status": "skip",
-     "ref": "v0.1.0",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     },
     "windows": {
      "status": "skip",
-     "ref": "v0.1.0",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     }
    },
    "requires": [],
@@ -4543,21 +4507,21 @@
    "compat": {
     "linux": {
      "status": "fail",
-     "ref": "v0.1.0",
+     "ref": "v0.2.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
+     "detail": "probe.goose:1: error: the package goosio at github.com/sstadick/goosio/v0.2.0/ has no goosio.goose"
     },
     "macos": {
      "status": "fail",
-     "ref": "v0.1.0",
+     "ref": "v0.2.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
+     "detail": "probe.goose:1: error: the package goosio at github.com/sstadick/goosio/v0.2.0/ has no goosio.goose"
     },
     "windows": {
      "status": "fail",
-     "ref": "v0.1.0",
+     "ref": "v0.2.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: github.com/sstadick/goosio/v0.1.0/goosio.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_i"
+     "detail": "probe.goose:1: error: the package goosio at github.com/sstadick/goosio/v0.2.0/ has no goosio.goose"
     }
    },
    "requires": [],
@@ -4612,19 +4576,22 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "status": "fail",
+     "ref": "v0.1.0",
+     "stage": "check",
+     "detail": "probe.goose:1: error: the package goosopt at github.com/sstadick/goosopt/v0.1.0/ has no goosopt.goose"
     },
     "macos": {
-     "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "status": "fail",
+     "ref": "v0.1.0",
+     "stage": "check",
+     "detail": "probe.goose:1: error: the package goosopt at github.com/sstadick/goosopt/v0.1.0/ has no goosopt.goose"
     },
     "windows": {
-     "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "status": "fail",
+     "ref": "v0.1.0",
+     "stage": "check",
+     "detail": "probe.goose:1: error: the package goosopt at github.com/sstadick/goosopt/v0.1.0/ has no goosopt.goose"
     }
    },
    "requires": [],
@@ -4801,21 +4768,21 @@
    "compat": {
     "linux": {
      "status": "fail",
-     "ref": "v0.1.1",
+     "ref": "v0.2.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c"
+     "detail": "probe.goose:1: error: the package goosimd at github.com/sstadick/goosimd/v0.2.0/ has no goosimd.goose"
     },
     "macos": {
      "status": "fail",
-     "ref": "v0.1.1",
+     "ref": "v0.2.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c"
+     "detail": "probe.goose:1: error: the package goosimd at github.com/sstadick/goosimd/v0.2.0/ has no goosimd.goose"
     },
     "windows": {
      "status": "fail",
-     "ref": "v0.1.1",
+     "ref": "v0.2.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: github.com/sstadick/goosimd/v0.1.1/goosimd.build: unknown key c_headers (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c"
+     "detail": "probe.goose:1: error: the package goosimd at github.com/sstadick/goosimd/v0.2.0/ has no goosimd.goose"
     }
    },
    "requires": [],
@@ -5129,17 +5096,17 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "main",
+     "ref": "v0.2.0",
      "stage": "build"
     },
     "macos": {
      "status": "pass",
-     "ref": "main",
+     "ref": "v0.2.0",
      "stage": "build"
     },
     "windows": {
      "status": "pass",
-     "ref": "main",
+     "ref": "v0.2.0",
      "stage": "build"
     }
    },
@@ -5518,10 +5485,9 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "check",
+     "status": "pass",
      "ref": "main",
      "stage": "build",
-     "detail": "/rx-bob-goosetest/repo/native/process.c:12:10: fatal error: sys/proc.h: No such file or directory",
      "entry": "main.goose"
     },
     "macos": {
@@ -5583,19 +5549,19 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.2.0",
+     "ref": "v0.3.0",
      "stage": "build",
      "entry": "main.goose"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.2.0",
+     "ref": "v0.3.0",
      "stage": "build",
      "entry": "main.goose"
     },
     "windows": {
      "status": "pass",
-     "ref": "v0.2.0",
+     "ref": "v0.3.0",
      "stage": "build",
      "entry": "main.goose"
     }
@@ -5837,14 +5803,14 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "/private/shetautnetjer-swan/repo/native/swan_sys.c:28:24: error: no member named 'st_mtim' in 'struct stat'",
+     "detail": "/private/shetautnetjer-swan/repo/native/swan_sys.c:29:24: error: no member named 'st_mtim' in 'struct stat'",
      "entry": "src/swan.goose"
     },
     "windows": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "/shetautnetjer-swan/repo/native/swan_sys.c(28,24): error: no member named 'st_mtim' in 'struct stat'",
+     "detail": "/shetautnetjer-swan/repo/native/swan_sys.c(29,24): error: no member named 'st_mtim' in 'struct stat'",
      "entry": "src/swan.goose"
     }
    },
@@ -6666,25 +6632,16 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "mesher/tet.goose:47: error: global name already declared: mesher::ALPHA_LONG",
-     "entry": "src/skein.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     },
     "macos": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "mesher/tet.goose:47: error: global name already declared: mesher::ALPHA_LONG",
-     "entry": "src/skein.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     },
     "windows": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "mesher/tet.goose:47: error: global name already declared: mesher::ALPHA_LONG",
-     "entry": "src/skein.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     }
    },
    "requires": [],
@@ -7277,7 +7234,7 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "main.c:(.text+0x1bf03): undefined reference to `alch_dec_open'",
+     "detail": "main.c:(.text+0x1e713): undefined reference to `alch_dec_open'",
      "entry": "src/main.goose"
     },
     "macos": {
@@ -7644,25 +7601,16 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "check",
-     "ref": "main",
-     "stage": "build",
-     "detail": "gander.c:(.text+0x1d90): undefined reference to `gander_write'",
-     "entry": "src/gander.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     },
     "macos": {
-     "status": "check",
-     "ref": "main",
-     "stage": "build",
-     "detail": "clang: error: linker command failed with exit code 1 (use -v to see invocation)",
-     "entry": "src/gander.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     },
     "windows": {
-     "status": "check",
-     "ref": "main",
-     "stage": "build",
-     "detail": "lld-link: error: undefined symbol: gander_open",
-     "entry": "src/gander.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     }
    },
    "requires": [],
@@ -7845,24 +7793,21 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "mini_browser.build: unknown key dylibs_macos (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_maco",
+     "stage": "build",
      "entry": "browser/mini_browser.goose"
     },
     "macos": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "mini_browser.build: unknown key dylibs_macos (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_maco",
+     "stage": "build",
      "entry": "browser/mini_browser.goose"
     },
     "windows": {
-     "status": "fail",
+     "status": "pass",
      "ref": "main",
-     "stage": "check",
-     "detail": "mini_browser.build: unknown key dylibs_macos (the keys are cmake_target, cmake_options, main_thread_only, exclude, c_sources, c_sources_windows, c_sources_linux, c_sources_macos, c_include, c_include_windows, c_include_linux, c_include_maco",
+     "stage": "build",
      "entry": "browser/mini_browser.goose"
     }
    },
@@ -7977,24 +7922,24 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
+     "status": "check",
      "ref": "master",
-     "stage": "check",
-     "detail": "mcp.goose:15: error: expected ';' in extern declaration, found '='",
+     "stage": "build",
+     "detail": "main.c:(.text+0x59): undefined reference to `gs_sock_close'",
      "entry": "src/main.goose"
     },
     "macos": {
-     "status": "fail",
+     "status": "check",
      "ref": "master",
-     "stage": "check",
-     "detail": "mcp.goose:15: error: expected ';' in extern declaration, found '='",
+     "stage": "build",
+     "detail": "clang: error: linker command failed with exit code 1 (use -v to see invocation)",
      "entry": "src/main.goose"
     },
     "windows": {
-     "status": "fail",
+     "status": "check",
      "ref": "master",
-     "stage": "check",
-     "detail": "mcp.goose:15: error: expected ';' in extern declaration, found '='",
+     "stage": "build",
+     "detail": "lld-link: error: undefined symbol: gs_db_open",
      "entry": "src/main.goose"
     }
    },
@@ -8117,7 +8062,7 @@
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "goosecode.c:(.text+0x371f): undefined reference to `gc_ask'",
+     "detail": "goosecode.c:(.text+0x27df): undefined reference to `gc_ask'",
      "entry": "goosecode.goose"
     },
     "macos": {
@@ -8301,22 +8246,16 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "pass",
-     "ref": "main",
-     "stage": "build",
-     "entry": "sim/validate.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     },
     "macos": {
-     "status": "pass",
-     "ref": "main",
-     "stage": "build",
-     "entry": "sim/validate.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     },
     "windows": {
-     "status": "pass",
-     "ref": "main",
-     "stage": "build",
-     "entry": "sim/validate.goose"
+     "status": "skip",
+     "reason": "the repository is unavailable"
     }
    },
    "requires": [],
@@ -8485,21 +8424,15 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "ref": "main",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     },
     "macos": {
      "status": "skip",
-     "ref": "main",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     },
     "windows": {
      "status": "skip",
-     "ref": "main",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     }
    },
    "requires": [],
@@ -8659,21 +8592,15 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "ref": "main",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     },
     "macos": {
      "status": "skip",
-     "ref": "main",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     },
     "windows": {
      "status": "skip",
-     "ref": "main",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     }
    },
    "requires": [],
@@ -8723,21 +8650,15 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "ref": "main",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     },
     "macos": {
      "status": "skip",
-     "ref": "main",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     },
     "windows": {
      "status": "skip",
-     "ref": "main",
-     "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "the repository is unavailable"
     }
    },
    "requires": [],
@@ -8900,24 +8821,23 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
+     "status": "pass",
      "ref": "v0.1",
-     "stage": "check",
-     "detail": "link.goose:817: error: ';' expected after expression, found 'if'",
+     "stage": "build",
      "entry": "src/weld.goose"
     },
     "macos": {
-     "status": "fail",
+     "status": "check",
      "ref": "v0.1",
-     "stage": "check",
-     "detail": "link.goose:817: error: ';' expected after expression, found 'if'",
+     "stage": "build",
+     "detail": "/private/dantje-weld/repo/src/io.c:8:10: fatal error: 'malloc.h' file not found",
      "entry": "src/weld.goose"
     },
     "windows": {
-     "status": "fail",
+     "status": "check",
      "ref": "v0.1",
-     "stage": "check",
-     "detail": "link.goose:817: error: ';' expected after expression, found 'if'",
+     "stage": "build",
+     "detail": "/dantje-weld/repo/src/io.c(9,10): fatal error: 'pthread.h' file not found",
      "entry": "src/weld.goose"
     }
    },
@@ -9151,19 +9071,19 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.1-experiment",
+     "ref": "v1.2.1",
      "stage": "build",
      "entry": "goose/symidx.goose"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.1-experiment",
+     "ref": "v1.2.1",
      "stage": "build",
      "entry": "goose/symidx.goose"
     },
     "windows": {
      "status": "check",
-     "ref": "v0.1-experiment",
+     "ref": "v1.2.1",
      "stage": "build",
      "detail": "/artsensiva-symidx/repo/goose/walk.c(4,10): fatal error: 'dirent.h' file not found",
      "entry": "goose/symidx.goose"
