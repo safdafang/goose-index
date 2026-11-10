@@ -147,7 +147,7 @@ _Data formats: JSON, YAML, ASN.1, binary layouts, bit packing._
 - **[serialize.goose](https://github.com/mas-bandwidth/serialize.goose)** — A bit-packing serializer for game and network messages that produces exactly the same bytes as the C and C++ serialize libraries, covering every field type they support. 🏷 v2.1.2
 - **[yamlgoose](https://github.com/SorinS/yamlgoose)** — A YAML 1.2 reader and writer ported from Go's yaml.v3 (and its libyaml core), accepting and rejecting exactly what yaml.v3 does; the API mirrors the standard json module. ⚠️ no license · ✅ ✅ ✅
   `import yaml from "github.com/SorinS/yamlgoose@main";`
-- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 50 · 🏷 main-ffbb0b498f1d
+- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 50 · 🏷 main-f004cb0727b8
 - **[greylag](https://github.com/bearing-research/greylag)** — An early XML parser written in Goose and exported to C through integer handles, compared against libxml2 and expat. ⚠️ no license · ✅ ✅ ✅
 - **[ideatoapp](https://github.com/mg3994/ideatoapp)** — An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript. **repository unavailable**
 
@@ -252,8 +252,8 @@ _Libraries for one field that fits no other category: finance, blockchains, tele
 
 - **[goose-ethereum](https://github.com/Macho0x/goose-ethereum)** — Ethereum building blocks with no networking or signing: 256-bit integers, ABI call encoding with function selectors, and JSON-RPC request and response bytes. Expects goose-crypto checked out beside it. 🏷 v0.2.1 · ❌ ❌ ❌
   `import ethereum from "github.com/Macho0x/goose-ethereum@v0.2.1";`
-- **[goose-hyperliquid](https://github.com/Macho0x/goose-hyperliquid)** — A client library for the Hyperliquid exchange that signs HyperCore orders and transfers the way the official SDKs do and reads market data, over goose-http and goose-tls. 🏷 v0.2.0 · ✅ ✅ ✅
-  `import hyperliquid from "github.com/Macho0x/goose-hyperliquid@v0.2.0";`
+- **[goose-hyperliquid](https://github.com/Macho0x/goose-hyperliquid)** — A client library for the Hyperliquid exchange that signs HyperCore orders and transfers the way the official SDKs do and reads market data, over goose-http and goose-tls. 🏷 v0.3.0 · ✅ ✅ ✅
+  `import hyperliquid from "github.com/Macho0x/goose-hyperliquid@v0.3.0";`
 - **[goose-signature](https://github.com/Macho0x/goose-signature)** — Message and typed-data signing for Ethereum, Bitcoin and Solana built on goose-crypto; it expects goose-crypto checked out beside it. 🏷 v0.3 · ❌ ❌ ❌
   `import signature from "github.com/Macho0x/goose-signature@v0.3";`
 - **[phonelib](https://github.com/goose-pond/phonelib)** — Parses, validates and normalizes phone numbers to E.164 using numbering-plan data compiled into the program, so nothing is downloaded or deployed at run time. ★ 1 · ✅ ✅ ✅
@@ -307,7 +307,7 @@ _Editor plugins, syntax grammars, LSP clients._
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
 - **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 7 · 🏷 v0.1.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3335 · 🏷 v2026.4
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3394 · 🏷 v2026.4
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
 - **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
@@ -398,4 +398,4 @@ Adding a project is one file, `packages/<id>.toml`, in a pull request: see [CONT
 
 The code here (`scripts/`, `web/`, `.github/`) is [MIT](LICENSE); the entry data and descriptions (`packages/`, `data/`, this README and `index.json`) are [CC0 1.0](LICENSE). Listed projects keep their own licenses. Goose is a project of its own authors; this index is not affiliated with it.
 
-<sub>Generated 2026-11-09T13:57:06Z.</sub>
+<sub>Generated 2026-11-10T13:30:31Z.</sub>

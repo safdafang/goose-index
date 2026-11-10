@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-09T13:57:06Z",
+ "fetched_at": "2026-11-10T13:30:31Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -20,7 +20,7 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3335,
+   "stars": 3394,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
@@ -1028,14 +1028,14 @@
   "macho0x-goose-hyperliquid": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "v0.2.0",
-   "tag_count": 1,
+   "latest_tag": "v0.3.0",
+   "tag_count": 2,
    "created": "2026-11-02T13:10:56Z",
    "stars": 0,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "HyperCore signing, info, and HyperEVM reads for Goose",
-   "last_commit": "2026-11-08T08:05:24Z"
+   "last_commit": "2026-11-10T08:33:49Z"
   },
   "macho0x-goose-logger": {
    "exists": true,
@@ -1112,14 +1112,14 @@
   "mas-bandwidth-schema": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "main-ffbb0b498f1d",
-   "tag_count": 615,
+   "latest_tag": "main-f004cb0727b8",
+   "tag_count": 663,
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
-   "last_commit": "2026-11-09T13:54:43Z"
+   "last_commit": "2026-11-10T08:30:45Z"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
@@ -1131,7 +1131,7 @@
    "archived": false,
    "license": "BSD-3-Clause",
    "upstream_description": "A simple bitpacking serializer for Goose, wire compatible with the C++ serialize library",
-   "last_commit": "2026-11-07T15:58:03Z"
+   "last_commit": "2026-11-10T05:27:20Z"
   },
   "mewhhaha-goose-to-wasm": {
    "exists": true,
@@ -1739,7 +1739,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-09T07:35:10Z"
+   "last_commit": "2026-11-10T13:28:51Z"
   },
   "yujieteo-skein": {
    "exists": false
