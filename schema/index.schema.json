@@ -14,7 +14,7 @@
     "compat": {
       "type": ["object", "null"],
       "properties": {
-        "goose": { "type": ["string", "null"], "description": "The Goose release the build test used, e.g. v2026.3." },
+        "goose": { "type": ["string", "null"], "description": "The Goose release the last build test used, e.g. v2026.3. A result made with another release says so in its own goose field." },
         "ran_at": { "type": ["string", "null"] },
         "run_url": { "type": ["string", "null"] }
       }
@@ -48,10 +48,10 @@
         "category": { "type": "string", "description": "One of categories[].id." },
         "tags": { "type": "array", "items": { "type": "string" } },
         "description": { "type": "string" },
-        "repo": { "type": ["string", "null"], "description": "The git repository (https, no .git); null for an article." },
+        "repo": { "type": ["string", "null"], "description": "The git repository (https, no .git), at its current address when it was renamed; null for an article." },
         "url": { "type": "string", "description": "Where a person should go: the repository, or the article." },
         "page": { "type": "string", "description": "The entry's page on the index site." },
-        "available": { "type": "boolean", "description": "false when the repository has been deleted or made private." },
+        "available": { "type": "boolean", "description": "false when the repository has been deleted or made private, or when a different repository now answers at its address." },
         "archived": { "type": "boolean" },
         "latest_tag": { "type": ["string", "null"] },
         "tag_count": { "type": ["integer", "null"] },
@@ -82,13 +82,14 @@
         "import": {
           "description": "For package and binding entries; null otherwise.",
           "type": ["object", "null"],
-          "required": ["name", "source", "ref", "pinned", "line", "modules", "subdir"],
+          "required": ["name", "source", "ref", "pinned", "commit", "line", "modules", "subdir"],
           "properties": {
             "name": { "type": "string" },
             "source": { "type": "string", "description": "What goes before @ in the import string, e.g. github.com/kaitk/goose-http." },
             "ref": { "type": "string", "description": "The latest tag, or the default branch when there is no tag." },
             "pinned": { "type": "boolean", "description": "true when ref is a tag." },
-            "line": { "type": ["string", "null"], "description": "The import line to paste; null when the package lives in a subdirectory Goose can't import by URL." },
+            "commit": { "type": ["string", "null"], "description": "The commit ref named when the index last looked, for tools that lock or verify what they fetch; null when ref is a branch or the commit is not known yet." },
+            "line": { "type": ["string", "null"], "description": "The import line to paste; null when the package lives in a subdirectory Goose can't import by URL, or when the repository is unavailable." },
             "modules": { "type": "array", "items": { "type": "string" } },
             "subdir": { "type": ["string", "null"] }
           }
@@ -106,7 +107,9 @@
               "stage": { "type": "string" },
               "detail": { "type": "string", "description": "The first error line, for fail and check." },
               "reason": { "type": "string", "description": "Why it was not built, for skip." },
-              "entry": { "type": "string" }
+              "entry": { "type": "string" },
+              "goose": { "type": "string", "description": "The Goose release this result was made with. Absent on results older than the field." },
+              "ran_at": { "$ref": "#/$defs/time", "description": "When this result was made." }
             }
           }
         },

@@ -13,13 +13,13 @@ import re
 import shutil
 import sys
 import tomllib
+import urllib.parse
 
 import jsonschema
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-from validate import load_entries  # noqa: E402
+from entries import ROOT, load_entries  # noqa: E402
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
 OWNER = "safdafang"
 SOURCE = f"https://github.com/{OWNER}/goose-index"
 SITE = f"https://{OWNER}.github.io/goose-index/"
@@ -72,10 +72,11 @@ def read_json(p):
 def model(e, m, compat):
     """Merge an entry file with its fetched facts."""
     m = m or {}
+    repo = m.get("canonical_repo") or e.get("repo")  # where a renamed repository lives now
     x = {
         "id": e["id"], "name": e["name"], "kind": e["kind"], "category": e["category"],
         "tags": e["tags"], "description": e["description"],
-        "repo": e.get("repo"), "url": e.get("url") or e.get("repo"),
+        "repo": repo, "url": e.get("url") or repo,
         "page": f"{SITE}p/{e['id']}/",
         "available": m.get("exists", True) if e.get("repo") else True,
         "archived": bool(m.get("archived")),
@@ -94,10 +95,12 @@ def model(e, m, compat):
     if e.get("import"):
         imp = e["import"]
         ref = x["latest_tag"] or x["default_branch"] or "main"
-        source = imp.get("path") or (e["repo"] or "").removeprefix("https://")
+        source = imp.get("path") or (repo or "").removeprefix("https://")
+        usable = x["available"] and not imp.get("subdir")  # no line to paste for a repository that is gone
         x["import"] = {
             "name": imp["name"], "source": source, "ref": ref, "pinned": bool(x["latest_tag"]),
-            "line": None if imp.get("subdir") else f'import {imp["name"]} from "{source}@{ref}";',
+            "commit": m.get("latest_tag_commit") if x["latest_tag"] else None,
+            "line": f'import {imp["name"]} from "{source}@{ref}";' if usable else None,
             "modules": imp.get("modules", []), "subdir": imp.get("subdir"),
         }
     else:
@@ -113,12 +116,18 @@ def model(e, m, compat):
 
 
 def slim(r):
-    keep = ("status", "ref", "stage", "detail", "reason", "entry")
+    keep = ("status", "ref", "stage", "detail", "reason", "entry", "goose", "ran_at")
     return {k: r[k] for k in keep if r.get(k)}
 
 
 def compat_status(x, o):
     return ((x["compat"] or {}).get(o) or {}).get("status")
+
+
+def older(r, goose):
+    """The Goose release a result was made with, when it is not the one the last run tested."""
+    g = (r or {}).get("goose")
+    return g if g and goose and g != goose and r.get("status") != "skip" else None
 
 
 def ago(iso, ref):
@@ -169,7 +178,7 @@ def anchor(title):
 
 def shield(text):
     """Escape text for a static shields.io badge path."""
-    return text.replace("-", "--").replace("_", "__").replace(" ", "%20")
+    return urllib.parse.quote(text.replace("-", "--").replace("_", "__"), safe="")
 
 
 def write_readme(cats, entries, compat_doc, at, ref_time):
@@ -219,8 +228,9 @@ def write_readme(cats, entries, compat_doc, at, ref_time):
         "| 🏷 | latest tag; untagged entries pin a branch, which moves |",
         "| ⚠️ | no license file: nobody may reuse the code until the author adds one |",
         "| 🗄 | archived by its author |",
-        *(["| ✅ 🟡 ❌ | build status against Goose " + compat_doc["goose"] + ", one mark each for Linux, macOS "
-           "and Windows: ✅ builds, 🟡 typechecks only, ❌ fails, ➖ not tested |"] if compat_doc
+        *(["| ✅ 🟡 ❌ | build status against Goose " + md_escape(compat_doc["goose"]) + ", one mark each for Linux, "
+           "macOS and Windows: ✅ builds, 🟡 typechecks only, ❌ fails, ➖ not tested, ⏳ after a mark: that result "
+           "is from an earlier Goose release |"] if compat_doc
           else ["| ✅ 🟡 ❌ | build status: not tested yet |"]),
         "",
         "## Contents",
@@ -248,10 +258,12 @@ def write_readme(cats, entries, compat_doc, at, ref_time):
             if x["stars"]:
                 facts.append(f"★ {x['stars']}")
             if x["latest_tag"]:
-                facts.append(f"🏷 {x['latest_tag']}")
+                facts.append(f"🏷 {md_escape(x['latest_tag'])}")
             if x["license"] == "none":
                 facts.append("⚠️ no license")
-            st = [icon.get(compat_status(x, o), "") for o in OSES]
+            goose = (compat_doc or {}).get("goose")
+            st = [icon.get(compat_status(x, o), "") + ("⏳" if older((x["compat"] or {}).get(o), goose) else "")
+                  if icon.get(compat_status(x, o)) else "" for o in OSES]
             if any(st):
                 facts.append(" ".join(s or "➖" for s in st))
             if facts:
@@ -365,7 +377,7 @@ Data is regenerated daily from <a href="{SOURCE}/tree/main/packages">packages/</
 """
 
 
-def compat_badges(x, compact=False):
+def compat_badges(x, compact=False, goose=None):
     if not x["compat"]:
         return ""
     out = []
@@ -376,8 +388,11 @@ def compat_badges(x, compact=False):
             continue
         lab, sym, sentence = STATUS[s]
         tip = f"{label}: {sentence}" + (f" ({r.get('reason')})" if s == "skip" and r.get("reason") else "")
+        old = older(r, goose)
+        if old:
+            tip += f". Last tested with Goose {old}"
         text = label[0] if compact else label
-        out.append(f'<span class="os s-{s}" title="{esc(tip)}">{sym} {text}</span>')
+        out.append(f'<span class="os s-{s}{" old" if old else ""}" title="{esc(tip)}">{sym} {text}</span>')
     if all("s-skip" in b for b in out):
         return ""
     return '<span class="oses">' + "".join(out) + "</span>"
@@ -403,6 +418,8 @@ def import_block(root, x, big=False):
     imp = x["import"]
     if not imp:
         return ""
+    if not x["available"]:
+        return '<div class="import note">The repository is unavailable, so there is nothing to import.</div>'
     if not imp["line"]:
         return (f'<div class="import note">Lives in <code>{esc(imp["subdir"])}/</code> of its repository, which Goose '
                 f'cannot import by URL yet: copy that folder next to your program and '
@@ -412,7 +429,7 @@ def import_block(root, x, big=False):
             f'<button type="button" class="copy" data-copy="{esc(imp["line"])}">{art(root, "i-clip")}<span>Copy</span></button></div>{warn}')
 
 
-def card(x, root, cats_by_id, ref_time, off=False):
+def card(x, root, cats_by_id, ref_time, goose=None, off=False):
     text = " ".join([x["name"], x["id"], x["description"], " ".join(x["tags"]), x["kind"], owner(x),
                      cats_by_id[x["category"]]["title"], (x["import"] or {}).get("name") or ""]).lower()
     data = {
@@ -449,7 +466,7 @@ def card(x, root, cats_by_id, ref_time, off=False):
 <span class="by">by {esc(owner(x))} · <a href="{root}c/{cat['id']}/" title="{esc(cat['title'])}">{KINDS[x['kind']][0].lower()}</a></span>
 <p class="desc">{esc(x['description'])}</p>
 {f'<div class="sprouts">{tags}</div>' if tags else ''}
-<div class="facts">{''.join(facts)}{compat_badges(x, compact=True)}</div>
+<div class="facts">{''.join(facts)}{compat_badges(x, compact=True, goose=goose)}</div>
 </div>{copy}
 </li>"""
 
@@ -522,7 +539,7 @@ def home(cats, entries, ref_time, compat_doc):
 </aside>
 <div class="board-wrap">
 <div class="board"><ol class="cards" id="cards" data-per-page="{PER_PAGE}">
-{''.join(card(x, root, cats_by_id, ref_time, off=i >= PER_PAGE) for i, x in enumerate(entries))}
+{''.join(card(x, root, cats_by_id, ref_time, (compat_doc or {}).get("goose"), off=i >= PER_PAGE) for i, x in enumerate(entries))}
 </ol>{empty_state(root)}</div>
 <nav class="stones" id="pager" aria-label="Pages" hidden></nav>
 </div>
@@ -530,7 +547,7 @@ def home(cats, entries, ref_time, compat_doc):
     return page(root, "", body, active="", cls="home", head="\n<noscript><style>.card.off { display: flex; }</style></noscript>")
 
 
-def category_page(c, cats, entries, ref_time):
+def category_page(c, cats, entries, ref_time, compat_doc):
     root = "../../"
     cats_by_id = {k["id"]: k for k in cats}
     items = [x for x in entries if x["category"] == c["id"]]
@@ -538,7 +555,7 @@ def category_page(c, cats, entries, ref_time):
 <h1><span class="strip">{esc(c['title'])}</span></h1>
 <p class="sub"><span class="strip">{esc(c['scope'])} {len(items)} {'entry' if len(items) == 1 else 'entries'}.</span></p>
 <div class="board-wrap solo">
-<div class="board"><ol class="cards">{''.join(card(x, root, cats_by_id, ref_time) for x in items)}</ol></div></div>"""
+<div class="board"><ol class="cards">{''.join(card(x, root, cats_by_id, ref_time, (compat_doc or {}).get("goose")) for x in items)}</ol></div></div>"""
     return page(root, c["title"], body, desc=c["scope"], cls="category")
 
 
@@ -558,7 +575,7 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
     elif x["url"]:
         row("Link", f'<a href="{esc(x["url"])}">{esc(x["url"])}</a>')
     if x["repo"] and not x["available"]:
-        row("Status", '<span class="flag">The repository is gone or private.</span>')
+        row("Status", '<span class="flag">The repository is gone, private, or replaced by a different one.</span>')
     if x["archived"]:
         row("Status", '<span class="flag soft">Archived by its author: read-only, no further changes.</span>')
     row("Latest tag", esc(x["latest_tag"] or "") + (f' <span class="muted">of {x["tag_count"]}</span>' if (x["tag_count"] or 0) > 1 else "")
@@ -613,10 +630,12 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
                 continue
             s = r["status"]
             note = r.get("detail") or r.get("reason") or STATUS[s][2]
-            trs.append(f'<tr><th>{label}</th><td><span class="os s-{s}">{STATUS[s][1]} {STATUS[s][0]}</span></td>'
-                       f'<td class="muted">{esc(r.get("ref") or "")}{" · " + esc(r["entry"]) if r.get("entry") else ""}</td>'
+            old = older(r, (compat_doc or {}).get("goose"))
+            trs.append(f'<tr><th>{label}</th><td><span class="os s-{s}{" old" if old else ""}">{STATUS[s][1]} {STATUS[s][0]}</span></td>'
+                       f'<td class="muted">{esc(r.get("ref") or "")}{" · " + esc(r["entry"]) if r.get("entry") else ""}'
+                       f'{" · last tested with Goose " + esc(old) if old else ""}</td>'
                        f'<td class="note">{esc(note)}</td></tr>')
-        when = f' Last run {compat_doc["ran_at"][:10]}' + (f', <a href="{compat_doc["run_url"]}">logs</a>' if compat_doc.get("run_url") else "") + "." if compat_doc else ""
+        when = f' Last run {esc(compat_doc["ran_at"][:10])}' + (f', <a href="{esc(compat_doc["run_url"])}">logs</a>' if compat_doc.get("run_url") else "") + "." if compat_doc else ""
         compat_html = (f'<h2>Builds with Goose {esc(compat_doc["goose"]) if compat_doc else ""}</h2>'
                        f'<div class="scroll"><table class="compat-one">{"".join(trs)}</table></div><p class="muted small">'
                        f'Checked by importing it into an empty program, or by building the program, on GitHub\'s runners.{when}</p>')
@@ -712,7 +731,10 @@ and program against the latest Goose release on Linux, macOS and Windows, weekly
             s = r.get("status")
             if s:
                 tip = r.get("detail") or r.get("reason") or STATUS[s][2]
-                cells.append(f'<td class="c"><span class="dot s-{s}" title="{esc(tip)}">{STATUS[s][1]}</span></td>')
+                old = older(r, compat_doc.get("goose"))
+                if old:
+                    tip = f"Last tested with Goose {old}. {tip}"
+                cells.append(f'<td class="c"><span class="dot s-{s}{" old" if old else ""}" title="{esc(tip)}">{STATUS[s][1]}</span></td>')
             else:
                 cells.append('<td class="c"></td>')
         claims = "".join(OSES[p][0] for p in x["platforms"])
@@ -720,7 +742,7 @@ and program against the latest Goose release on Linux, macOS and Windows, weekly
         rows.append(f'<tr data-text="{esc((x["name"] + " " + x["id"]).lower())}"><td class="nm">{packet(root, x["kind"], "packet xs")}<a href="{root}p/{x["id"]}/">{esc(x["name"])}</a></td>'
                     f'<td class="muted">{esc(ref)}</td>'
                     f'{"".join(cells)}<td class="muted" title="Platforms the author claims">{claims}</td></tr>')
-    run = f' (<a href="{compat_doc["run_url"]}">run logs</a>)' if compat_doc.get("run_url") else ""
+    run = f' (<a href="{esc(compat_doc["run_url"])}">run logs</a>)' if compat_doc.get("run_url") else ""
     body = f"""<h1><span class="strip">Compatibility</span></h1>
 <p class="sub"><span class="strip">Every package and program with a buildable entry point, built against Goose {esc(compat_doc['goose'])}
 on GitHub's Linux, macOS and Windows runners on {esc((compat_doc.get('ran_at') or '')[:10])}{run}.</span>
@@ -728,7 +750,8 @@ on GitHub's Linux, macOS and Windows runners on {esc((compat_doc.get('ran_at') o
 <ul class="signs os-signs">{summ}</ul>
 <section class="paper sheet matrix-sheet">{art(root, "pin", "pin")}
 <p class="legend"><span class="os s-pass">✓ builds</span> <span class="os s-check">◐ typechecks, native build failed</span>
-<span class="os s-fail">✕ fails to fetch or typecheck</span> <span class="os s-skip">– not built</span> <span class="muted">· hover a mark for the first error</span></p>
+<span class="os s-fail">✕ fails to fetch or typecheck</span> <span class="os s-skip">– not built</span>
+<span class="os s-pass old">faded</span> <span class="muted">a result from an earlier Goose release · hover a mark for the first error</span></p>
 <div class="sign small-sign"><label class="sr" for="cq">Filter by name</label><input id="cq" type="search" placeholder="Filter by name…" autocomplete="off">{art(root, "i-search")}</div>
 <div class="scroll"><table class="matrix" id="matrix"><thead><tr><th>Entry</th><th>Ref</th><th>Linux</th><th>macOS</th><th>Windows</th><th title="Platforms the author claims">Claims</th></tr></thead>
 <tbody>{''.join(rows)}</tbody></table></div>
@@ -806,7 +829,7 @@ def write_site(out, cats, entries, compat_doc, index_text, ref_time):
     w("about/index.html", about_page(entries))
     for c in cats:
         if c["count"]:
-            w(f"c/{c['id']}/index.html", category_page(c, cats, entries, ref_time))
+            w(f"c/{c['id']}/index.html", category_page(c, cats, entries, ref_time, compat_doc))
     for x in entries:
         w(f"p/{x['id']}/index.html", entry_page(x, cats, entries, ref_time, compat_doc))
     w("404.html", not_found())

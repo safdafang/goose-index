@@ -27,7 +27,7 @@ The whole index in one file, for package managers, editors and scripts.
 | `version` | integer | See above. |
 | `generated_at` | ISO time | When the data last changed: the later of the metadata fetch and the build test. |
 | `meta_fetched_at` | ISO time | When tags, stars, dates and licenses were fetched from GitHub. |
-| `compat` | object or null | The last build test: `goose` (release tested, e.g. `v2026.3`), `ran_at`, `run_url`. |
+| `compat` | object or null | The last build test: `goose` (release tested, e.g. `v2026.3`), `ran_at`, `run_url`. A run may not reach every entry, so each result carries its own `goose` and `ran_at`. |
 | `site`, `source` | URL | The index's site and its repository. |
 | `categories` | array | `{id, title, scope, count}`, in display order. |
 | `entries` | array | See below, sorted by category, then kind, then name. |
@@ -55,10 +55,13 @@ The whole index in one file, for package managers, editors and scripts.
               "system_libs": { "linux": ["liburing-dev"], "macos": [], "windows": [] }, "tools": [] },
   "upstream_fork": null,
   "import": { "name": "http", "source": "github.com/kaitk/goose-http", "ref": "v0.5.16", "pinned": true,
+              "commit": "3f1c9a7e0b5d4c2a8e6f1b0d9c7a5e3f2b4d6c8a",
               "line": "import http from \"github.com/kaitk/goose-http@v0.5.16\";",
               "modules": [], "subdir": null },
-  "compat": { "linux": { "status": "pass", "ref": "v0.5.16", "stage": "build" },
-              "windows": { "status": "check", "ref": "v0.5.16", "stage": "build", "detail": "…" } },
+  "compat": { "linux": { "status": "pass", "ref": "v0.5.16", "stage": "build",
+                         "goose": "v2026.4", "ran_at": "2026-11-09T12:10:31Z" },
+              "windows": { "status": "check", "ref": "v0.5.16", "stage": "build", "detail": "…",
+                           "goose": "v2026.4", "ran_at": "2026-11-09T12:10:31Z" } },
   "requires": [ { "name": "hash", "source": "github.com/kaitk/goose-hash@v0.0.4" } ]
 }
 ```
@@ -66,14 +69,17 @@ The whole index in one file, for package managers, editors and scripts.
 | Field | Meaning |
 |---|---|
 | `kind` | `package` and `binding` are importable (they have `import`); `tool`, `editor`, `app`, `fork`, `learning-resource` are not. |
-| `repo` | The git repository, or `null` for an article (then `url` is the article). |
-| `available` | `false` when the repository has been deleted or made private since it was listed. |
+| `repo` | The git repository, or `null` for an article (then `url` is the article). When the project was renamed or moved, this is its current address. |
+| `available` | `false` when the repository has been deleted or made private since it was listed, or when a different repository now answers at its address (the index tracks GitHub's repository id, so a name taken over by someone else is not passed off as the listed project). |
+| `latest_tag` | The highest release version among the tags (`v1.2.3`, `1.2`, `v2026.4`), not the most recently created: a backport or a pre-release tagged later does not win. When no tag is a version, the newest tag. |
 | `license` | An SPDX id, `"other"` when GitHub can't name the license, `"none"` when the repository has no license file. `none` means nobody may legally reuse the code; show it. |
 | `platforms` | What the author claims. `[]` means the author doesn't say, not "none". What actually builds is in `compat`. |
 | `native.system_libs` | What the machine must have installed, by package-manager name: apt for `linux`, Homebrew for `macos`. |
-| `import.line` | Ready to paste into a program's root file. `null` when the package lives in a subdirectory (`import.subdir`), which Goose can't fetch by URL yet. |
+| `import.line` | Ready to paste into a program's root file. `null` when the package lives in a subdirectory (`import.subdir`), which Goose can't fetch by URL yet, and when `available` is `false`. |
+| `import.commit` | The commit `ref` named when the index last looked, or `null` when `ref` is a branch. A tag can be moved by its author; record this to lock what you fetch, or compare it to notice a moved tag. |
 | `import.pinned` | `false` when the project has no tags and `ref` is a branch, which moves. |
 | `compat.<os>.status` | `pass`: built and linked. `check`: typechecked, but the C or native build failed. `fail`: could not be fetched, resolved or typechecked. `skip`: not built, with `reason`. A missing OS means not tested. |
+| `compat.<os>.goose`, `.ran_at` | The Goose release that produced this result, and when. Compare `goose` with the top-level `compat.goose`: a result from an earlier release has not been re-tested yet. Absent on results older than these fields. |
 | `requires` | The packages the build test had to declare in the root file before this one compiled, in the form the compiler printed them. Goose libraries state their requirements in their own import lines, so this is what a package manager would have to add. |
 
 ## Example: find a package to import

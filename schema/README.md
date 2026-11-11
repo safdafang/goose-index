@@ -109,7 +109,8 @@ without a license, nobody may legally reuse the code, whatever the README implie
 ```json
 { "version": 1, "fetched_at": "2026-11-02T21:00:00Z",
   "entries": { "kaitk-goose-sqlite": {
-      "exists": true, "default_branch": "main", "latest_tag": "v0.3.1", "tag_count": 9,
+      "exists": true, "repo_id": "R_kgDOExample", "default_branch": "main",
+      "latest_tag": "v0.3.1", "latest_tag_commit": "3f1c9a7e0b5d4c2a8e6f1b0d9c7a5e3f2b4d6c8a", "tag_count": 9,
       "last_commit": "2026-10-30T12:00:00Z", "created": "2026-10-19T08:00:00Z",
       "stars": 0, "archived": false, "license": "Apache-2.0",
       "upstream_description": "SQLite bindings for Goose, over the vendored amalgamation" } } }
@@ -118,10 +119,25 @@ without a license, nobody may legally reuse the code, whatever the README implie
 `exists: false` means the repository is gone or private. The site shows the entry as
 unavailable rather than dropping it silently, so a maintainer can decide.
 
+`latest_tag` is the highest release version among the tags, not the most recently
+created one, and `latest_tag_commit` is the commit it named when fetched.
+
+`repo_id` is GitHub's id of the repository, recorded the first time it is fetched. It
+follows the repository through renames and transfers:
+
+- A renamed or moved repository gets `canonical_repo`. The index links and imports from
+  the new address at once, and `validate.py` warns until the entry's `repo` is updated.
+- If the address later answers with a *different* id (the repository was deleted and
+  recreated, or someone else took the name), the record becomes `exists: false` with
+  `replaced_by`, and the entry is shown as unavailable with no import line. After
+  checking the new repository, delete that entry's record from `data/meta.json`: the
+  next fetch records the new id. This is the one hand edit the file allows.
+
 ## Checking
 
 ```sh
 python scripts/fetch_meta.py          # refresh data/meta.json (needs the GitHub CLI, logged in)
+python scripts/fetch_meta.py --only a,b   # only these entries
 python scripts/validate.py            # schema + cross-file rules; exit 1 on errors
 python scripts/build.py --site _site  # README.md, index.json, and the site
 ```

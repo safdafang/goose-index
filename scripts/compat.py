@@ -23,10 +23,11 @@ import sys
 import tarfile
 import tempfile
 import time
-import tomllib
 import zipfile
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+from entries import ROOT, load_entries, load_meta  # noqa: E402
+
 OS = {"Linux": "linux", "Darwin": "macos", "Windows": "windows"}[platform.system()]
 UPSTREAM = "aardappel/goose"
 # goose ends this error with the import line to add
@@ -37,16 +38,11 @@ BASE = None
 
 
 def entries():
-    out = {}
-    for p in sorted((ROOT / "packages").glob("*.toml")):
-        with p.open("rb") as f:
-            out[p.stem] = tomllib.load(f)
-    return out
+    return {id_: e for id_, (_, e) in load_entries().items()}
 
 
-def meta():
-    p = ROOT / "data" / "meta.json"
-    return json.loads(p.read_text(encoding="utf-8"))["entries"] if p.exists() else {}
+def utc_now():
+    return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def asset_suffix():
@@ -144,7 +140,9 @@ def plan(e, m):
         return "skip", c["skip"]
     if not e.get("repo"):
         return "skip", "not a repository"
-    if not m or not m.get("exists"):
+    if not m:
+        return "skip", "no fetched facts for the repository yet (run scripts/fetch_meta.py)"
+    if not m.get("exists"):
         return "skip", "the repository is unavailable"
     ref = m.get("latest_tag") or m.get("default_branch")
     if e["kind"] in ("package", "binding"):
@@ -250,7 +248,7 @@ def run(out_path, shard, only):
     exe, version = goose_version()
     k, n = (int(x) for x in shard.split("/"))
     ids = {i.strip() for i in only.split(",") if i.strip()} if only else None
-    es, ms = entries(), meta()
+    es, ms = entries(), load_meta()
     todo = [i for i in es if (ids is None or i in ids) and shard_of(i, n) == k]
     global BASE
     base = BASE = pathlib.Path(tempfile.mkdtemp(prefix="goose-compat-"))
@@ -258,6 +256,8 @@ def run(out_path, shard, only):
     results = {}
     for num, id_ in enumerate(todo, 1):
         e, m = es[id_], ms.get(id_)
+        if (m or {}).get("canonical_repo"):
+            e = dict(e, repo=m["canonical_repo"])  # the address it moved to, as the index prints it
         what, arg = plan(e, m)
         t0 = time.time()
         try:
@@ -270,6 +270,8 @@ def run(out_path, shard, only):
         except Exception as ex:
             results[id_] = {"status": "fail", "stage": "runner", "detail": f"runner error: {ex}"[:240]}
         r = results[id_]
+        # each result says what tested it and when: a later run may not reach this entry
+        r["goose"], r["ran_at"] = version, utc_now()
         print(f"[{num}/{len(todo)}] {id_}: {r['status']} {r.get('detail') or r.get('reason') or ''}"[:300]
               + f" ({time.time() - t0:.0f}s)", flush=True)
         shutil.rmtree(base / id_, ignore_errors=True)
@@ -277,19 +279,98 @@ def run(out_path, shard, only):
     pathlib.Path(out_path).write_text(json.dumps(doc, indent=1), encoding="utf-8")
 
 
+GOOSE_VERSION = re.compile(r"[A-Za-z0-9][A-Za-z0-9._+-]{0,39}")
+TIME = re.compile(r"\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ")
+REQ_NAME = re.compile(r"[A-Za-z_]\w{0,79}")
+REQ_SOURCE = re.compile(r"[\w./@+~-]{1,200}")
+STAGES = ("clone", "entry", "check", "build", "runner")
+CONTROL = re.compile(r"[\x00-\x08\x0b-\x1f\x7f]")
+
+
+def text(v, limit):
+    return CONTROL.sub("", v)[:limit] if isinstance(v, str) else ""
+
+
+def clean_result(r, goose, now):
+    """A result holding only what the runner writes, or None.
+
+    The shard files come from jobs that built other people's code, which could have
+    rewritten them, and what is kept here is committed and published.
+    """
+    if not isinstance(r, dict) or r.get("status") not in ("pass", "check", "fail", "skip"):
+        return None
+    out = {"status": r["status"]}
+    for key, limit in (("ref", 100), ("detail", 240), ("reason", 300), ("entry", 200)):
+        if text(r.get(key), limit):
+            out[key] = text(r[key], limit)
+    if r.get("stage") in STAGES:
+        out["stage"] = r["stage"]
+    if isinstance(r.get("log"), str):
+        log = CONTROL.sub("", r["log"])[-3000:]
+        if log:
+            out["log"] = log
+    if isinstance(r.get("requires"), list):
+        out["requires"] = [{"name": q["name"], "source": q["source"]} for q in r["requires"][:30]
+                           if isinstance(q, dict) and isinstance(q.get("name"), str) and isinstance(q.get("source"), str)
+                           and REQ_NAME.fullmatch(q["name"]) and REQ_SOURCE.fullmatch(q["source"])]
+    if isinstance(r.get("seconds"), (int, float)) and not isinstance(r["seconds"], bool) and 0 <= r["seconds"] < 1e6:
+        out["seconds"] = r["seconds"]
+    out["goose"] = goose
+    stamp = r.get("ran_at")
+    out["ran_at"] = stamp if isinstance(stamp, str) and TIME.fullmatch(stamp) and stamp <= now else now
+    return out
+
+
+def read_part(f, known, now):
+    """(os, goose, {id: result}) from one shard file; raises ValueError when it is not one."""
+    try:
+        part = json.loads(pathlib.Path(f).read_text(encoding="utf-8"))
+    except (OSError, ValueError) as ex:
+        raise ValueError(f"unreadable: {ex}") from None
+    if not isinstance(part, dict) or not isinstance(part.get("results"), dict):
+        raise ValueError("not a results file")
+    if part.get("os") not in ("linux", "macos", "windows"):
+        raise ValueError(f"unknown os {str(part.get('os'))[:40]!r}")
+    goose = part.get("goose")
+    if not isinstance(goose, str) or not GOOSE_VERSION.fullmatch(goose):
+        raise ValueError(f"bad goose version {str(goose)[:40]!r}")
+    results = {}
+    for id_, r in part["results"].items():
+        r = clean_result(r, goose, now) if id_ in known else None
+        if r is None:
+            print(f"::warning::{pathlib.Path(f).name}: dropped a malformed or unknown result")
+            continue
+        results[id_] = r
+    return part["os"], goose, results
+
+
 def merge(files, run_url):
     path = ROOT / "data" / "compat.json"
     doc = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"version": 1, "results": {}}
     known = set(entries())
     tested = set()
+    now = utc_now()
+    # results from before each one carried its own stamp: all the file says of them is its own
+    for r in (r for per_os in doc["results"].values() for r in per_os.values()):
+        if "goose" not in r and doc.get("goose"):
+            r["goose"] = doc["goose"]
+            if doc.get("ran_at"):
+                r["ran_at"] = doc["ran_at"]
     for f in files:
-        part = json.loads(pathlib.Path(f).read_text(encoding="utf-8"))
-        doc["goose"] = part["goose"]
-        for id_, r in part["results"].items():
-            doc["results"].setdefault(id_, {})[part["os"]] = r
+        try:
+            os_, goose, results = read_part(f, known, now)
+        except ValueError as ex:
+            print(f"::warning::{pathlib.Path(f).name} ignored: {ex}")
+            continue
+        doc["goose"] = goose
+        for id_, r in results.items():
+            doc["results"].setdefault(id_, {})[os_] = r
             tested.add(id_)
     doc["results"] = {k: v for k, v in sorted(doc["results"].items()) if k in known}
-    doc["ran_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    if not tested:
+        print("no usable results: data/compat.json is unchanged")
+        return
+    doc["ran_at"] = now
     if run_url:
         doc["run_url"] = run_url
     path.parent.mkdir(exist_ok=True)
