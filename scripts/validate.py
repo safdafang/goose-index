@@ -11,16 +11,10 @@ import tomllib
 
 import jsonschema
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+from entries import ROOT, load_entries  # noqa: E402
+
 RUN = 6  # words in a row that count as copying
-
-
-def load_entries():
-    entries = {}
-    for p in sorted((ROOT / "packages").glob("*.toml")):
-        with p.open("rb") as f:
-            entries[p.stem] = (p, tomllib.load(f))
-    return entries
 
 
 def shingles(text, n=RUN):
@@ -58,17 +52,24 @@ def main():
             errors.append(f"{rel}: {where}: {err.message}")
         if e.get("id") != stem:
             errors.append(f"{rel}: id {e.get('id')!r} must equal the file name {stem!r}")
-        repo = (e.get("repo") or "").lower()
-        if repo:
+        m = meta.get(stem)
+        moved = (m or {}).get("canonical_repo")
+        # a renamed repository answers at both addresses, so both count as taken
+        for repo in {u.lower() for u in (e.get("repo"), moved) if u}:
             if repo in repos:
                 errors.append(f"{rel}: repo {repo} is also {repos[repo]}")
             repos[repo] = rel
-        m = meta.get(stem)
+        if moved:
+            warnings.append(f"{rel}: the repository moved to {moved}: update repo (the index already links there)")
         if m:
             copied = shingles(e.get("description")) & shingles(m.get("upstream_description"))
             if copied:
                 errors.append(f"{rel}: description copies the project's own words: {sorted(copied)[0]!r}...")
-            if not m.get("exists"):
+            if m.get("replaced_by"):
+                warnings.append(f"{rel}: a different repository now answers at this address (deleted and "
+                                f"recreated, or the name was taken over). It is shown as unavailable; after "
+                                f"checking it, delete this entry's record from data/meta.json to accept it")
+            elif not m.get("exists"):
                 warnings.append(f"{rel}: repository not found")
             elif m.get("license") == "none" and "license_override" not in e:
                 warnings.append(f"{rel}: no license (flagged on the site)")

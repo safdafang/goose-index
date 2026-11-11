@@ -264,6 +264,7 @@ h2 { font-size: 1.3rem; margin: 1.6em 0 .6em; }
 .os { font-size: .76rem; font-weight: 800; padding: 1px 7px; border-radius: 6px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .s-pass { color: var(--pass); background: var(--pass-bg); } .s-check { color: var(--check); background: var(--check-bg); }
 .s-fail { color: var(--fail); background: var(--fail-bg); } .s-skip { color: var(--skip); background: var(--skip-bg); }
+.os.old, .dot.old { opacity: .55; }
 .pinbtn { position: absolute; top: 12px; right: 10px; width: 32px; height: 32px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 8px; background: none; color: var(--ink-2); cursor: pointer; }
 .pinbtn:hover { background: var(--paper-2); color: var(--ink); }
 .pinbtn .i { width: 20px; height: 20px; }

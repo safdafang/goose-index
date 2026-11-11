@@ -31,8 +31,9 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m pip install -r requirements.txt
+      # on every run, a push included: an entry merged a minute ago needs its tag and
+      # default branch before the index can print its import line
       - name: Refresh tags, stars, dates and licenses
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: python scripts/fetch_meta.py
         env:
           GH_TOKEN: ${{ github.token }}
