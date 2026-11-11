@@ -2,8 +2,8 @@
  "$schema": "https://safdafang.github.io/goose-index/schema/index.schema.json",
  "format": "goose-index",
  "version": 1,
- "generated_at": "2026-11-11T12:45:22Z",
- "meta_fetched_at": "2026-11-11T12:45:22Z",
+ "generated_at": "2026-11-11T20:11:56Z",
+ "meta_fetched_at": "2026-11-11T20:11:56Z",
  "compat": {
   "goose": "v2026.4",
   "ran_at": "2026-11-09T12:10:31Z",
@@ -218,6 +218,7 @@
     "source": "github.com/kaitk/goose-acme",
     "ref": "v0.0.5",
     "pinned": true,
+    "commit": "504b9354f7f5bf847ac75c6e1f6de47d737138eb",
     "line": "import acme from \"github.com/kaitk/goose-acme@v0.0.5\";",
     "modules": [
      "acme.socket"
@@ -294,6 +295,7 @@
     "source": "github.com/kaitk/goose-http",
     "ref": "v0.5.18",
     "pinned": true,
+    "commit": "86fdeec31d911d4394d797a397660d6fed96ae5d",
     "line": "import http from \"github.com/kaitk/goose-http@v0.5.18\";",
     "modules": [],
     "subdir": null
@@ -364,6 +366,7 @@
     "source": "github.com/aurthurm/goose-web",
     "ref": "v0.6.0",
     "pinned": true,
+    "commit": "ff6b3a192ba9c2bdc7682b121570b1ffe107f80c",
     "line": "import goose_web from \"github.com/aurthurm/goose-web@v0.6.0\";",
     "modules": [
      "goose_web_db"
@@ -431,6 +434,7 @@
     "source": "github.com/korolenkowork/honk",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": null,
     "modules": [],
     "subdir": "honk"
@@ -496,6 +500,7 @@
     "source": "github.com/SorinS/httpgoose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import http from \"github.com/SorinS/httpgoose@main\";",
     "modules": [],
     "subdir": null
@@ -573,6 +578,7 @@
     "source": "github.com/SorinS/ldapgoose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import ldap from \"github.com/SorinS/ldapgoose@main\";",
     "modules": [],
     "subdir": null
@@ -648,6 +654,7 @@
     "source": "github.com/jdrobertso/net",
     "ref": "v0.2.0",
     "pinned": true,
+    "commit": "becbaa1467ad24059ab96867ed2fdafecc0d194d",
     "line": "import net from \"github.com/jdrobertso/net@v0.2.0\";",
     "modules": [
      "net.http",
@@ -729,6 +736,7 @@
     "source": "github.com/kaitk/plod",
     "ref": "v0.5.11",
     "pinned": true,
+    "commit": "85b32199b4ca967a1d4d3744f9971190adf83b58",
     "line": "import plod from \"github.com/kaitk/plod@v0.5.11\";",
     "modules": [],
     "subdir": null
@@ -797,6 +805,7 @@
     "source": "github.com/SorinS/bigmongoose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import bignum from \"github.com/SorinS/bigmongoose@main\";",
     "modules": [],
     "subdir": null
@@ -862,6 +871,7 @@
     "source": "github.com/Macho0x/goose-crypto",
     "ref": "v0.18.1",
     "pinned": true,
+    "commit": "7e0152ae066d93d855f6d6fe7cf1e9a28c133a15",
     "line": "import crypto from \"github.com/Macho0x/goose-crypto@v0.18.1\";",
     "modules": [],
     "subdir": null
@@ -932,6 +942,7 @@
     "source": "github.com/kaitk/goose-hash",
     "ref": "v0.0.4",
     "pinned": true,
+    "commit": "ab31df5c62681a76673ae69cb28a2b6f95ba4422",
     "line": "import hash from \"github.com/kaitk/goose-hash@v0.0.4\";",
     "modules": [],
     "subdir": null
@@ -997,6 +1008,7 @@
     "source": "github.com/clintecker/goose-sha256",
     "ref": "v1",
     "pinned": true,
+    "commit": "e7e811f98d9a7aa902409ca6ea48956461610c39",
     "line": "import sha256 from \"github.com/clintecker/goose-sha256@v1\";",
     "modules": [],
     "subdir": null
@@ -1069,6 +1081,7 @@
     "source": "github.com/SorinS/gslib",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import gslib from \"github.com/SorinS/gslib@main\";",
     "modules": [],
     "subdir": null
@@ -1150,6 +1163,7 @@
     "source": "github.com/SorinS/sshgoose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import ssh from \"github.com/SorinS/sshgoose@main\";",
     "modules": [],
     "subdir": null
@@ -1232,6 +1246,7 @@
     "source": "github.com/SorinS/tlsgoose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import tls from \"github.com/SorinS/tlsgoose@main\";",
     "modules": [],
     "subdir": null
@@ -1309,6 +1324,7 @@
     "source": "github.com/SorinS/x509goose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import x509 from \"github.com/SorinS/x509goose@main\";",
     "modules": [],
     "subdir": null
@@ -1384,6 +1400,7 @@
     "source": "github.com/kaitk/goose-tls",
     "ref": "v0.0.6",
     "pinned": true,
+    "commit": "b7cc745a3f2eb782c18698a082a1526526cc19fb",
     "line": "import tls from \"github.com/kaitk/goose-tls@v0.0.6\";",
     "modules": [],
     "subdir": null
@@ -1456,6 +1473,7 @@
     "source": "github.com/kaitk/goose-postgres",
     "ref": "v0.0.10",
     "pinned": true,
+    "commit": "0ee6e6d55013b2cb8ffe697c8c31ef8a4fa991c0",
     "line": "import pg from \"github.com/kaitk/goose-postgres@v0.0.10\";",
     "modules": [],
     "subdir": null
@@ -1523,6 +1541,7 @@
     "source": "github.com/kaitk/goose-sqlite",
     "ref": "v0.0.3",
     "pinned": true,
+    "commit": "3f0deef9d4fb789577da73c304a53922aa162ec9",
     "line": "import sqlite from \"github.com/kaitk/goose-sqlite@v0.0.3\";",
     "modules": [],
     "subdir": null
@@ -1587,6 +1606,7 @@
     "source": "github.com/shetautnetjer/goose-sqlite",
     "ref": "v0.1.2",
     "pinned": true,
+    "commit": "e29f01b04f26409623c61ba72f1df948af63355a",
     "line": "import sqlite from \"github.com/shetautnetjer/goose-sqlite@v0.1.2\";",
     "modules": [],
     "subdir": null
@@ -1658,6 +1678,7 @@
     "source": "github.com/kaitk/goose-compress",
     "ref": "v0.1.4",
     "pinned": true,
+    "commit": "6f0c17ac4ceeca930cc7cd9c6b5d9293c8b09f50",
     "line": "import compress from \"github.com/kaitk/goose-compress@v0.1.4\";",
     "modules": [],
     "subdir": null
@@ -1723,6 +1744,7 @@
     "source": "github.com/Macho0x/goose-deflate",
     "ref": "v0.2.1",
     "pinned": true,
+    "commit": "c93f533c7f242512fa8bce4a05cd8264b01cbd73",
     "line": "import deflate from \"github.com/Macho0x/goose-deflate@v0.2.1\";",
     "modules": [],
     "subdir": null
@@ -1789,6 +1811,7 @@
     "source": "github.com/clintecker/goose-inflate",
     "ref": "v3",
     "pinned": true,
+    "commit": "0a30c7bd0c6ce6dd8cfc5dbca4802823b11f6b7b",
     "line": "import inflate from \"github.com/clintecker/goose-inflate@v3\";",
     "modules": [],
     "subdir": null
@@ -1854,6 +1877,7 @@
     "source": "github.com/clintecker/goose-tar",
     "ref": "v1",
     "pinned": true,
+    "commit": "f2208bfe2f9c35068435adb19c985994827b68b1",
     "line": "import tar from \"github.com/clintecker/goose-tar@v1\";",
     "modules": [],
     "subdir": null
@@ -1918,6 +1942,7 @@
     "source": "github.com/clintecker/goose-zip",
     "ref": "v1",
     "pinned": true,
+    "commit": "600e42b48c7777c037bce48e9bdd8b5a9cb00594",
     "line": "import zip from \"github.com/clintecker/goose-zip@v1\";",
     "modules": [],
     "subdir": null
@@ -1987,6 +2012,7 @@
     "source": "github.com/ruslano69/lz78-goose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import lz78 from \"github.com/ruslano69/lz78-goose@main\";",
     "modules": [],
     "subdir": null
@@ -2057,6 +2083,7 @@
     "source": "github.com/BHare1985/goose-libdeflate",
     "ref": "v1.26",
     "pinned": true,
+    "commit": "91eb299d974968acc969788cd9bd577b3a07105c",
     "line": "import deflate from \"github.com/BHare1985/goose-libdeflate@v1.26\";",
     "modules": [],
     "subdir": null
@@ -2122,6 +2149,7 @@
     "source": "github.com/SorinS/asn1goose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import asn1 from \"github.com/SorinS/asn1goose@main\";",
     "modules": [],
     "subdir": null
@@ -2187,6 +2215,7 @@
     "source": "github.com/clintecker/goose-layout",
     "ref": "v1",
     "pinned": true,
+    "commit": "4cbac4924c9b3ea70c8895ba22eb9ca69e365146",
     "line": "import layout from \"github.com/clintecker/goose-layout@v1\";",
     "modules": [],
     "subdir": null
@@ -2251,6 +2280,7 @@
     "source": "github.com/Macho0x/goose-msgpack",
     "ref": "v0.2.1",
     "pinned": true,
+    "commit": "ffd8b2555cf5addc38aa8bf3bf8bfbebd157957e",
     "line": "import msgpack from \"github.com/Macho0x/goose-msgpack@v0.2.1\";",
     "modules": [],
     "subdir": null
@@ -2315,6 +2345,7 @@
     "source": "github.com/Macho0x/goose-toml",
     "ref": "v0.2",
     "pinned": true,
+    "commit": "c2e147899e37a48fa365349bc97d7aaaa36ec6bc",
     "line": "import toml from \"github.com/Macho0x/goose-toml@v0.2\";",
     "modules": [],
     "subdir": null
@@ -2379,6 +2410,7 @@
     "source": "github.com/Macho0x/goose-uuid",
     "ref": "v0.4",
     "pinned": true,
+    "commit": "527a2074e91f22dab1142462538f8756186a3f31",
     "line": "import uuid from \"github.com/Macho0x/goose-uuid@v0.4\";",
     "modules": [],
     "subdir": null
@@ -2441,6 +2473,7 @@
     "source": "github.com/mas-bandwidth/serialize.goose",
     "ref": "v2.1.3",
     "pinned": true,
+    "commit": "2f65ef1f14c709133d199908620eaf05c39eb7cf",
     "line": null,
     "modules": [],
     "subdir": "src"
@@ -2505,6 +2538,7 @@
     "source": "github.com/SorinS/yamlgoose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import yaml from \"github.com/SorinS/yamlgoose@main\";",
     "modules": [],
     "subdir": null
@@ -2529,9 +2563,9 @@
    "available": true,
    "archived": false,
    "latest_tag": "main-fd0f25e073ed",
-   "tag_count": 720,
+   "tag_count": 735,
    "default_branch": "main",
-   "last_commit": "2026-11-11T05:24:38Z",
+   "last_commit": "2026-11-11T20:06:53Z",
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "license": "other",
@@ -2737,6 +2771,7 @@
     "source": "github.com/Macho0x/goose-logger",
     "ref": "v0.3.4",
     "pinned": true,
+    "commit": "50695a3df0eb5a1048a4b183538d59f43f5eb279",
     "line": "import logger from \"github.com/Macho0x/goose-logger@v0.3.4\";",
     "modules": [
      "logger.emit"
@@ -2804,6 +2839,7 @@
     "source": "github.com/paulosuzart/gooseneck",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import gooseneck from \"github.com/paulosuzart/gooseneck@main\";",
     "modules": [],
     "subdir": null
@@ -2822,8 +2858,8 @@
     "simd"
    ],
    "description": "Byte-string searching, splitting and transforming that works on arbitrary bytes, NUL and broken UTF-8 included, following Rust's bstr; uses goosimd for fast search.",
-   "repo": "https://github.com/sstadick/goostr",
-   "url": "https://github.com/sstadick/goostr",
+   "repo": "https://github.com/sstadick/goose-bstr",
+   "url": "https://github.com/sstadick/goose-bstr",
    "page": "https://safdafang.github.io/goose-index/p/sstadick-goostr/",
    "available": true,
    "archived": false,
@@ -2874,10 +2910,11 @@
    "requires": [],
    "import": {
     "name": "goostr",
-    "source": "github.com/sstadick/goostr",
+    "source": "github.com/sstadick/goose-bstr",
     "ref": "v0.3.1",
     "pinned": true,
-    "line": "import goostr from \"github.com/sstadick/goostr@v0.3.1\";",
+    "commit": "436c8a950ca6c0b3bc59d3b195881100c7bc99de",
+    "line": "import goostr from \"github.com/sstadick/goose-bstr@v0.3.1\";",
     "modules": [],
     "subdir": null
    }
@@ -2941,6 +2978,7 @@
     "source": "github.com/Macho0x/goose-bigint",
     "ref": "v0.2",
     "pinned": true,
+    "commit": "d2f48f1c5db331bd0005d1c8e9ec93c27fa44b49",
     "line": "import bigint from \"github.com/Macho0x/goose-bigint@v0.2\";",
     "modules": [],
     "subdir": null
@@ -3005,6 +3043,7 @@
     "source": "github.com/Macho0x/goose-decimal",
     "ref": "v0.2.1",
     "pinned": true,
+    "commit": "826d9a5fdf40ba848fed1e5dd690bd3454c0e28d",
     "line": "import decimal from \"github.com/Macho0x/goose-decimal@v0.2.1\";",
     "modules": [],
     "subdir": null
@@ -3070,6 +3109,7 @@
     "source": "github.com/guillochon/goose-fft",
     "ref": "v0.1.0",
     "pinned": true,
+    "commit": "82674dbea50eb8b4c9e1b47b264fdc0ccba67dbe",
     "line": "import fft from \"github.com/guillochon/goose-fft@v0.1.0\";",
     "modules": [],
     "subdir": null
@@ -3137,6 +3177,7 @@
     "source": "github.com/guillochon/goose-linalg",
     "ref": "v0.3.3",
     "pinned": true,
+    "commit": "bae34837510c83da4d8b77771f8794c3cc0d0941",
     "line": "import linalg from \"github.com/guillochon/goose-linalg@v0.3.3\";",
     "modules": [
      "linalg.parallel"
@@ -3205,6 +3246,7 @@
     "source": "github.com/guillochon/goose-random",
     "ref": "v0.1.0",
     "pinned": true,
+    "commit": "76ec1aa894fe38aee3601005b26258a04db25b66",
     "line": "import random from \"github.com/guillochon/goose-random@v0.1.0\";",
     "modules": [],
     "subdir": null
@@ -3280,6 +3322,7 @@
     "source": "github.com/elcharitas/goose_bio",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import bio from \"github.com/elcharitas/goose_bio@main\";",
     "modules": [
      "bio.hts"
@@ -3347,6 +3390,7 @@
     "source": "github.com/Nurysso/terence",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import terence from \"github.com/Nurysso/terence@main\";",
     "modules": [],
     "subdir": null
@@ -3413,6 +3457,7 @@
     "source": "github.com/tacf/fastnoiselite-goose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import fastnoise from \"github.com/tacf/fastnoiselite-goose@main\";",
     "modules": [],
     "subdir": null
@@ -3487,6 +3532,7 @@
     "source": "github.com/kaitk/goose-ngfx",
     "ref": "v0.5.0",
     "pinned": true,
+    "commit": "e952736b7f48ebfb5f88a577123573664c8a73a4",
     "line": "import ngfx from \"github.com/kaitk/goose-ngfx@v0.5.0\";",
     "modules": [],
     "subdir": null
@@ -3553,6 +3599,7 @@
     "source": "github.com/binji/goose_gfx2d",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import gfx2d from \"github.com/binji/goose_gfx2d@main\";",
     "modules": [],
     "subdir": null
@@ -3629,6 +3676,7 @@
     "source": "github.com/flakesonnix/goose-raylib",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import raylib from \"github.com/flakesonnix/goose-raylib@main\";",
     "modules": [],
     "subdir": null
@@ -3719,6 +3767,7 @@
     "source": "github.com/aardappel/goose_gfx",
     "ref": "v1",
     "pinned": true,
+    "commit": "6cfa3dec2ef2a6cb19ee71548b38151094e947bd",
     "line": "import gfx from \"github.com/aardappel/goose_gfx@v1\";",
     "modules": [
      "audio",
@@ -3791,6 +3840,7 @@
     "source": "github.com/aardappel/goose_physics",
     "ref": "v1",
     "pinned": true,
+    "commit": "8eec2739fc75016c2e19ff633e668d20260c4e1a",
     "line": "import physics from \"github.com/aardappel/goose_physics@v1\";",
     "modules": [],
     "subdir": null
@@ -3867,6 +3917,7 @@
     "source": "github.com/lamweilun/raygoose",
     "ref": "v0.1.1",
     "pinned": true,
+    "commit": "a45a370e24271f8d71703143414fd69c6eb82f18",
     "line": "import raylib from \"github.com/lamweilun/raygoose@v0.1.1\";",
     "modules": [],
     "subdir": null
@@ -3938,6 +3989,7 @@
     "source": "github.com/Alexxzz/raylib-goose",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import rl from \"github.com/Alexxzz/raylib-goose@main\";",
     "modules": [],
     "subdir": null
@@ -4124,6 +4176,7 @@
     "source": "github.com/ZHENGSY/goose-tui",
     "ref": "v0.1.0",
     "pinned": true,
+    "commit": "7fe12131c2815282cb7d6f64ae7b99eedc5498ae",
     "line": "import tui from \"github.com/ZHENGSY/goose-tui@v0.1.0\";",
     "modules": [],
     "subdir": null
@@ -4199,6 +4252,7 @@
     "source": "github.com/akeit0/mygoose",
     "ref": "v0.1.0",
     "pinned": true,
+    "commit": "1a2e0c858ce6e5634b6f2c33733d134f00ebd00a",
     "line": "import mygoose from \"github.com/akeit0/mygoose@v0.1.0\";",
     "modules": [],
     "subdir": null
@@ -4324,6 +4378,7 @@
     "source": "github.com/carabistouflette/goose-argparse",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import argparse from \"github.com/carabistouflette/goose-argparse@main\";",
     "modules": [],
     "subdir": null
@@ -4389,6 +4444,7 @@
     "source": "github.com/clintecker/goose-date",
     "ref": "v1",
     "pinned": true,
+    "commit": "0202ef82252d7b86cd9834a5a2bb207d11c06ee0",
     "line": "import date from \"github.com/clintecker/goose-date@v1\";",
     "modules": [],
     "subdir": null
@@ -4458,6 +4514,7 @@
     "source": "github.com/clintecker/goose-file",
     "ref": "v1",
     "pinned": true,
+    "commit": "6da3677cf3cbf10a12e026bd4c18ad3a9defdb2f",
     "line": "import file from \"github.com/clintecker/goose-file@v1\";",
     "modules": [],
     "subdir": null
@@ -4475,8 +4532,8 @@
     "lines"
    ],
    "description": "Synchronous file handles with buffered readers and writers and line reads that borrow from the buffer, tested with several C compilers on each OS.",
-   "repo": "https://github.com/sstadick/goosio",
-   "url": "https://github.com/sstadick/goosio",
+   "repo": "https://github.com/sstadick/goose-io",
+   "url": "https://github.com/sstadick/goose-io",
    "page": "https://safdafang.github.io/goose-index/p/sstadick-goosio/",
    "available": true,
    "archived": false,
@@ -4527,10 +4584,11 @@
    "requires": [],
    "import": {
     "name": "goosio",
-    "source": "github.com/sstadick/goosio",
+    "source": "github.com/sstadick/goose-io",
     "ref": "v0.2.2",
     "pinned": true,
-    "line": "import goosio from \"github.com/sstadick/goosio@v0.2.2\";",
+    "commit": "cdc47cbbb0ea3bbfafa436edfd0250585a038b2f",
+    "line": "import goosio from \"github.com/sstadick/goose-io@v0.2.2\";",
     "modules": [],
     "subdir": null
    }
@@ -4547,8 +4605,8 @@
     "help"
    ],
    "description": "Describes command-line options as fields of a struct and parses flags, values and positionals into it, generating help text from the field descriptions.",
-   "repo": "https://github.com/sstadick/goosopt",
-   "url": "https://github.com/sstadick/goosopt",
+   "repo": "https://github.com/sstadick/goose-opts",
+   "url": "https://github.com/sstadick/goose-opts",
    "page": "https://safdafang.github.io/goose-index/p/sstadick-goosopt/",
    "available": true,
    "archived": false,
@@ -4597,10 +4655,11 @@
    "requires": [],
    "import": {
     "name": "goosopt",
-    "source": "github.com/sstadick/goosopt",
+    "source": "github.com/sstadick/goose-opts",
     "ref": "v0.1.0",
     "pinned": true,
-    "line": "import goosopt from \"github.com/sstadick/goosopt@v0.1.0\";",
+    "commit": "e2149c4d924caf515a4db18882d75b49b99ffb1a",
+    "line": "import goosopt from \"github.com/sstadick/goose-opts@v0.1.0\";",
     "modules": [],
     "subdir": null
    }
@@ -4738,8 +4797,8 @@
     "masks"
    ],
    "description": "Compares 16 or 32 bytes at once and turns the results into position masks; the author marks it an experimental placeholder whose API will change.",
-   "repo": "https://github.com/sstadick/goosimd",
-   "url": "https://github.com/sstadick/goosimd",
+   "repo": "https://github.com/sstadick/goose-simd",
+   "url": "https://github.com/sstadick/goose-simd",
    "page": "https://safdafang.github.io/goose-index/p/sstadick-goosimd/",
    "available": true,
    "archived": false,
@@ -4788,10 +4847,11 @@
    "requires": [],
    "import": {
     "name": "goosimd",
-    "source": "github.com/sstadick/goosimd",
+    "source": "github.com/sstadick/goose-simd",
     "ref": "v0.2.0",
     "pinned": true,
-    "line": "import goosimd from \"github.com/sstadick/goosimd@v0.2.0\";",
+    "commit": "bef8b31dfa4f0c87a8d0180c1e7fa6cbb1e435e6",
+    "line": "import goosimd from \"github.com/sstadick/goose-simd@v0.2.0\";",
     "modules": [],
     "subdir": null
    }
@@ -5051,6 +5111,7 @@
     "source": "github.com/Macho0x/goose-ethereum",
     "ref": "v0.2.1",
     "pinned": true,
+    "commit": "3690e2ad0b09009914030133f83484b4242569e2",
     "line": "import ethereum from \"github.com/Macho0x/goose-ethereum@v0.2.1\";",
     "modules": [],
     "subdir": null
@@ -5116,6 +5177,7 @@
     "source": "github.com/Macho0x/goose-hyperliquid",
     "ref": "v0.3.0",
     "pinned": true,
+    "commit": "782c301a9c7dea3f3c41f5b93e5a3765c19c168a",
     "line": "import hyperliquid from \"github.com/Macho0x/goose-hyperliquid@v0.3.0\";",
     "modules": [],
     "subdir": null
@@ -5191,6 +5253,7 @@
     "source": "github.com/Macho0x/goose-signature",
     "ref": "v0.3",
     "pinned": true,
+    "commit": "38b38465a1725f65848c602ae20649db3f8e103b",
     "line": "import signature from \"github.com/Macho0x/goose-signature@v0.3\";",
     "modules": [],
     "subdir": null
@@ -5256,6 +5319,7 @@
     "source": "github.com/goose-pond/phonelib",
     "ref": "main",
     "pinned": false,
+    "commit": null,
     "line": "import phonelib from \"github.com/goose-pond/phonelib@main\";",
     "modules": [],
     "subdir": null
@@ -5519,8 +5583,8 @@
     "ci"
    ],
    "description": "Builds a Markdown API reference from doc comments, with signatures and source links, and runs the code examples in those comments as tests; a check mode keeps the committed reference current in CI.",
-   "repo": "https://github.com/sstadick/goosdoc",
-   "url": "https://github.com/sstadick/goosdoc",
+   "repo": "https://github.com/sstadick/goose-doc",
+   "url": "https://github.com/sstadick/goose-doc",
    "page": "https://safdafang.github.io/goose-index/p/sstadick-goosdoc/",
    "available": true,
    "archived": false,
@@ -5630,6 +5694,7 @@
     "source": "github.com/shetautnetjer/goose-treesitter",
     "ref": "v0.1.4",
     "pinned": true,
+    "commit": "443bb65439daf6b4ca20acdc9fb5fcbb7382dfc9",
     "line": "import treesitter from \"github.com/shetautnetjer/goose-treesitter@v0.1.4\";",
     "modules": [],
     "subdir": null
@@ -5954,7 +6019,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "default_branch": "master",
-   "last_commit": "2026-10-30T02:21:55Z",
+   "last_commit": "2026-11-11T15:43:16Z",
    "created": "2026-10-30T02:05:02Z",
    "stars": 0,
    "license": "none",
@@ -6336,7 +6401,7 @@
    "default_branch": "master",
    "last_commit": "2026-11-11T07:09:37Z",
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3420,
+   "stars": 3429,
    "license": "Apache-2.0",
    "license_source": "github",
    "platforms": [
@@ -6448,7 +6513,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "default_branch": "main",
-   "last_commit": "2026-11-08T08:06:07Z",
+   "last_commit": "2026-11-11T19:17:37Z",
    "created": "2026-10-26T07:56:00Z",
    "stars": 0,
    "license": "Apache-2.0",
@@ -8746,7 +8811,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "default_branch": "main",
-   "last_commit": "2026-11-11T12:42:32Z",
+   "last_commit": "2026-11-11T20:01:55Z",
    "created": "2026-11-08T09:17:48Z",
    "stars": 0,
    "license": "none",

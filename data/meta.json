@@ -1,9 +1,10 @@
 {
  "version": 1,
- "fetched_at": "2026-11-11T12:45:22Z",
+ "fetched_at": "2026-11-11T20:11:56Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVTnpHw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -16,18 +17,21 @@
   },
   "aardappel-goose": {
    "exists": true,
+   "repo_id": "R_kgDOUJINOw",
    "default_branch": "master",
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3420,
+   "stars": 3429,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-11T07:09:37Z"
+   "last_commit": "2026-11-11T07:09:37Z",
+   "latest_tag_commit": "6c1fbc788f6eb1f17db4cab998353d7540ed825d"
   },
   "aardappel-goose-gfx": {
    "exists": true,
+   "repo_id": "R_kgDOVEa-5A",
    "default_branch": "main",
    "latest_tag": "v1",
    "tag_count": 1,
@@ -36,10 +40,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-06T22:47:13Z"
+   "last_commit": "2026-11-06T22:47:13Z",
+   "latest_tag_commit": "6cfa3dec2ef2a6cb19ee71548b38151094e947bd"
   },
   "aardappel-goose-physics": {
    "exists": true,
+   "repo_id": "R_kgDOVEbB7A",
    "default_branch": "main",
    "latest_tag": "v1",
    "tag_count": 1,
@@ -48,10 +54,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-10-11T04:36:56Z"
+   "last_commit": "2026-10-11T04:36:56Z",
+   "latest_tag_commit": "8eec2739fc75016c2e19ff633e668d20260c4e1a"
   },
   "aardappel-once-campfire-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVaCl0A",
    "default_branch": "codex/campfire-experiment",
    "latest_tag": null,
    "tag_count": 0,
@@ -64,6 +72,7 @@
   },
   "aciru4l-barn": {
    "exists": true,
+   "repo_id": "R_kgDOVcTohA",
    "default_branch": "main",
    "latest_tag": "v0.1.0",
    "tag_count": 1,
@@ -72,10 +81,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Package manager for Goose, written in Goose",
-   "last_commit": "2026-11-03T20:03:03Z"
+   "last_commit": "2026-11-03T20:03:03Z",
+   "latest_tag_commit": "18bb2b32fb1e60c040fc4170a3412844ebd57363"
   },
   "aguspiza-llama-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVghdgw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -88,6 +99,7 @@
   },
   "aguspiza-raytracing-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVWv81g",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -100,6 +112,7 @@
   },
   "akari-iku-goose-playground": {
    "exists": true,
+   "repo_id": "R_kgDOVavbLw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -112,6 +125,7 @@
   },
   "akeit0-goose-lab": {
    "exists": true,
+   "repo_id": "R_kgDOVCp3Ng",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -124,6 +138,7 @@
   },
   "akeit0-mygoose": {
    "exists": true,
+   "repo_id": "R_kgDOVSIT4w",
    "default_branch": "main",
    "latest_tag": "v0.1.0",
    "tag_count": 1,
@@ -132,10 +147,12 @@
    "archived": false,
    "license": "other",
    "upstream_description": "Experimental native desktop UI toolkit in Goose, with Windows, Linux and macOS backends.",
-   "last_commit": "2026-10-24T15:20:34Z"
+   "last_commit": "2026-10-24T15:20:34Z",
+   "latest_tag_commit": "1a2e0c858ce6e5634b6f2c33733d134f00ebd00a"
   },
   "alexxzz-raylib-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVX2T8Q",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -151,6 +168,7 @@
   },
   "appdoze-gust": {
    "exists": true,
+   "repo_id": "R_kgDOVUDduA",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -163,6 +181,7 @@
   },
   "arjaythedev-multicore-server-challenge": {
    "exists": true,
+   "repo_id": "R_kgDOVJRVow",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -175,6 +194,7 @@
   },
   "artsensiva-symidx": {
    "exists": true,
+   "repo_id": "R_kgDOVe9QAQ",
    "default_branch": "main",
    "latest_tag": "v1.2.1",
    "tag_count": 5,
@@ -183,10 +203,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-05T18:57:21Z"
+   "last_commit": "2026-11-05T18:57:21Z",
+   "latest_tag_commit": "fe517a8408925e8f02f78e94387b9978568688c2"
   },
   "aurthurm-goose-web": {
    "exists": true,
+   "repo_id": "R_kgDOVTehlw",
    "default_branch": "main",
    "latest_tag": "v0.6.0",
    "tag_count": 1,
@@ -195,10 +217,12 @@
    "archived": false,
    "license": "other",
    "upstream_description": null,
-   "last_commit": "2026-10-29T04:50:46Z"
+   "last_commit": "2026-10-29T04:50:46Z",
+   "latest_tag_commit": "ff6b3a192ba9c2bdc7682b121570b1ffe107f80c"
   },
   "badman594-glog": {
    "exists": true,
+   "repo_id": "R_kgDOVZIYvg",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -211,6 +235,7 @@
   },
   "bashar-al-agha-arwad": {
    "exists": true,
+   "repo_id": "R_kgDOVVuh0A",
    "default_branch": "main",
    "latest_tag": "v0.1.0",
    "tag_count": 1,
@@ -219,10 +244,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Arwad: R, compiled. A statistical programming language that keeps R's syntax and CRAN, and compiles numerical work to native code with deterministic memory.",
-   "last_commit": "2026-11-03T08:35:28Z"
+   "last_commit": "2026-11-03T08:35:28Z",
+   "latest_tag_commit": "f005b0885819db99f7645b7f9c2fdb78613f3e9f"
   },
   "bearing-research-greylag": {
    "exists": true,
+   "repo_id": "R_kgDOVY4G3Q",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -235,6 +262,7 @@
   },
   "bhare1985-goose-libdeflate": {
    "exists": true,
+   "repo_id": "R_kgDOVeTM-g",
    "default_branch": "main",
    "latest_tag": "v1.26",
    "tag_count": 1,
@@ -243,10 +271,12 @@
    "archived": false,
    "license": "other",
    "upstream_description": "libdeflate (DEFLATE, zlib, gzip, CRC-32, Adler-32) for the Goose language",
-   "last_commit": "2026-10-31T17:03:49Z"
+   "last_commit": "2026-10-31T17:03:49Z",
+   "latest_tag_commit": "91eb299d974968acc969788cd9bd577b3a07105c"
   },
   "binji-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVPHFyg",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -259,6 +289,7 @@
   },
   "binji-goose-gfx2d": {
    "exists": true,
+   "repo_id": "R_kgDOVLbSBQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -271,6 +302,7 @@
   },
   "calpeyser-goose-evaluations": {
    "exists": true,
+   "repo_id": "R_kgDOVQuADQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -283,6 +315,7 @@
   },
   "carabistouflette-goose-argparse": {
    "exists": true,
+   "repo_id": "R_kgDOVgP53w",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -295,6 +328,7 @@
   },
   "clintecker-goose-date": {
    "exists": true,
+   "repo_id": "R_kgDOVcUtZw",
    "default_branch": "main",
    "latest_tag": "v1",
    "tag_count": 1,
@@ -303,10 +337,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Civil dates and RFC 3339 times for Goose, in UTC, with no allocation",
-   "last_commit": "2026-10-29T21:56:53Z"
+   "last_commit": "2026-10-29T21:56:53Z",
+   "latest_tag_commit": "0202ef82252d7b86cd9834a5a2bb207d11c06ee0"
   },
   "clintecker-goose-file": {
    "exists": true,
+   "repo_id": "R_kgDOVcWgGQ",
    "default_branch": "main",
    "latest_tag": "v1",
    "tag_count": 1,
@@ -315,10 +351,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Read files and stdin in pieces, lstat, chmod and links for Goose, over C stdio and POSIX",
-   "last_commit": "2026-10-29T22:19:37Z"
+   "last_commit": "2026-10-29T22:19:37Z",
+   "latest_tag_commit": "6da3677cf3cbf10a12e026bd4c18ad3a9defdb2f"
   },
   "clintecker-goose-inflate": {
    "exists": true,
+   "repo_id": "R_kgDOVcYQKQ",
    "default_branch": "main",
    "latest_tag": "v3",
    "tag_count": 3,
@@ -327,10 +365,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "DEFLATE and gzip decoding, and CRC-32, for Goose: a decoder the caller pulls from, in bounded memory",
-   "last_commit": "2026-11-01T20:07:46Z"
+   "last_commit": "2026-11-01T20:07:46Z",
+   "latest_tag_commit": "0a30c7bd0c6ce6dd8cfc5dbca4802823b11f6b7b"
   },
   "clintecker-goose-layout": {
    "exists": true,
+   "repo_id": "R_kgDOVff7ww",
    "default_branch": "main",
    "latest_tag": "v1",
    "tag_count": 1,
@@ -339,10 +379,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Fixed binary headers read into Goose structs and written from them, in either byte order",
-   "last_commit": "2026-11-01T23:23:59Z"
+   "last_commit": "2026-11-01T23:23:59Z",
+   "latest_tag_commit": "4cbac4924c9b3ea70c8895ba22eb9ca69e365146"
   },
   "clintecker-goose-sha256": {
    "exists": true,
+   "repo_id": "R_kgDOVcXYgA",
    "default_branch": "main",
    "latest_tag": "v1",
    "tag_count": 1,
@@ -351,10 +393,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "SHA-256 for Goose: bytes in pieces of any size, no allocation, no C; an optional module reads a file",
-   "last_commit": "2026-10-29T22:40:29Z"
+   "last_commit": "2026-10-29T22:40:29Z",
+   "latest_tag_commit": "e7e811f98d9a7aa902409ca6ea48956461610c39"
   },
   "clintecker-goose-tar": {
    "exists": true,
+   "repo_id": "R_kgDOVdhCqA",
    "default_branch": "main",
    "latest_tag": "v1",
    "tag_count": 1,
@@ -363,10 +407,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Tar archives (ustar, GNU, PAX) read from pieces of any size, for Goose: no allocation, no I/O",
-   "last_commit": "2026-10-30T21:17:27Z"
+   "last_commit": "2026-10-30T21:17:27Z",
+   "latest_tag_commit": "f2208bfe2f9c35068435adb19c985994827b68b1"
   },
   "clintecker-goose-zip": {
    "exists": true,
+   "repo_id": "R_kgDOVdlt9A",
    "default_branch": "main",
    "latest_tag": "v1",
    "tag_count": 1,
@@ -375,10 +421,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "ZIP archives read in place for Goose: the central directory and each entry's bytes as views, nothing allocated",
-   "last_commit": "2026-10-30T23:10:00Z"
+   "last_commit": "2026-10-30T23:10:00Z",
+   "latest_tag_commit": "600e42b48c7777c037bce48e9bdd8b5a9cb00594"
   },
   "compusophy-goose-wasm": {
    "exists": true,
+   "repo_id": "R_kgDOVBpEXg",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -391,6 +439,7 @@
   },
   "cyberskat-goose-feedguard": {
    "exists": true,
+   "repo_id": "R_kgDOVaUPrg",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -403,6 +452,7 @@
   },
   "dan-stowell-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVWRdQw",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -415,6 +465,7 @@
   },
   "dan-stowell-rules-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVWVWEw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -427,6 +478,7 @@
   },
   "dantje-weld": {
    "exists": true,
+   "repo_id": "R_kgDOVZnM7g",
    "default_branch": "main",
    "latest_tag": "v0.1",
    "tag_count": 1,
@@ -435,10 +487,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "a fast linker, written in goose",
-   "last_commit": "2026-10-27T19:40:33Z"
+   "last_commit": "2026-10-27T19:40:33Z",
+   "latest_tag_commit": "ab385f74b1a48ef3a73c51037359709c2036e041"
   },
   "decryptu-goosedex": {
    "exists": true,
+   "repo_id": "R_kgDOVWs8Hg",
    "default_branch": "main",
    "latest_tag": "v0.1.0",
    "tag_count": 1,
@@ -447,10 +501,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "A fast, lightweight Pokemon sprite viewer for your terminal written in Goose.",
-   "last_commit": "2026-10-25T11:48:33Z"
+   "last_commit": "2026-10-25T11:48:33Z",
+   "latest_tag_commit": "3a7192e5082c5270f61804b3f0436c4725931fc2"
   },
   "elcharitas-goose-bio": {
    "exists": true,
+   "repo_id": "R_kgDOVen0Kw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -463,6 +519,7 @@
   },
   "epidemicz-fresh-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVcf8KQ",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -471,10 +528,11 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Goose language support for Fresh - syntax highlighting, LSP and formatting for .goose files",
-   "last_commit": "2026-10-30T02:21:55Z"
+   "last_commit": "2026-11-11T15:43:16Z"
   },
   "exaroth-coc-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVfSg2w",
    "default_branch": "main",
    "latest_tag": "0.1.1",
    "tag_count": 2,
@@ -483,10 +541,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Goose LSP support for CoC",
-   "last_commit": "2026-11-02T03:39:44Z"
+   "last_commit": "2026-11-02T03:39:44Z",
+   "latest_tag_commit": "3a0f7140054aa25bc453a51696acaf1580437a12"
   },
   "exaroth-goose-lang-vim": {
    "exists": true,
+   "repo_id": "R_kgDOVW7GPA",
    "default_branch": "main",
    "latest_tag": "0.1.5",
    "tag_count": 6,
@@ -495,10 +555,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Vim support for Goose programming language",
-   "last_commit": "2026-10-30T19:55:14Z"
+   "last_commit": "2026-10-30T19:55:14Z",
+   "latest_tag_commit": "8998bdc4e9f02d3229777480d444feca6e3f46eb"
   },
   "felipecruz-gffs": {
    "exists": true,
+   "repo_id": "R_kgDOVT8fXA",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -511,6 +573,7 @@
   },
   "flakesonnix-goose-collatz": {
    "exists": true,
+   "repo_id": "R_kgDOVSoQiA",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -523,6 +586,7 @@
   },
   "flakesonnix-goose-collatz-explorer": {
    "exists": true,
+   "repo_id": "R_kgDOVSoQ3g",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -535,6 +599,7 @@
   },
   "flakesonnix-goose-fibonacci": {
    "exists": true,
+   "repo_id": "R_kgDOVSoQJw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -547,6 +612,7 @@
   },
   "flakesonnix-goose-pong": {
    "exists": true,
+   "repo_id": "R_kgDOVSoROQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -559,6 +625,7 @@
   },
   "flakesonnix-goose-raylib": {
    "exists": true,
+   "repo_id": "R_kgDOVSpq0g",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -571,6 +638,7 @@
   },
   "flisk-sh-codeql-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVVMctQ",
    "default_branch": "main",
    "latest_tag": "v0.2.1",
    "tag_count": 2,
@@ -579,10 +647,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Unofficial community Goose checks that report to GitHub Code scanning via SARIF. Not made or endorsed by GitHub, the CodeQL team or the Goose authors. https://github.com/marketplace/actions/goose-analyzer-for-code-scanning-unofficial",
-   "last_commit": "2026-10-23T22:29:51Z"
+   "last_commit": "2026-10-23T22:29:51Z",
+   "latest_tag_commit": "e02b72bd09abe8e94a724edfd1e8bb5560a949d0"
   },
   "goose-pond-phonelib": {
    "exists": true,
+   "repo_id": "R_kgDOVfS1dA",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -595,6 +665,7 @@
   },
   "grumbash-goose-mini-browser": {
    "exists": true,
+   "repo_id": "R_kgDOVcAr3Q",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -607,6 +678,7 @@
   },
   "guillochon-goose-fft": {
    "exists": true,
+   "repo_id": "R_kgDOVWlc2g",
    "default_branch": "main",
    "latest_tag": "v0.1.0",
    "tag_count": 1,
@@ -615,10 +687,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Fast Fourier transforms for the Goose programming language, in pure Goose: complex and real, any length, 2-D, convolution",
-   "last_commit": "2026-10-27T01:23:53Z"
+   "last_commit": "2026-10-27T01:23:53Z",
+   "latest_tag_commit": "82674dbea50eb8b4c9e1b47b264fdc0ccba67dbe"
   },
   "guillochon-goose-linalg": {
    "exists": true,
+   "repo_id": "R_kgDOVWMZBg",
    "default_branch": "main",
    "latest_tag": "v0.3.3",
    "tag_count": 9,
@@ -627,10 +701,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Dense real linear algebra for the Goose programming language, in pure Goose: LU, Cholesky, QR, symmetric eigen, SVD",
-   "last_commit": "2026-10-25T05:07:36Z"
+   "last_commit": "2026-10-25T05:07:36Z",
+   "latest_tag_commit": "bae34837510c83da4d8b77771f8794c3cc0d0941"
   },
   "guillochon-goose-random": {
    "exists": true,
+   "repo_id": "R_kgDOVeRskA",
    "default_branch": "main",
    "latest_tag": "v0.1.0",
    "tag_count": 1,
@@ -639,10 +715,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Random number generators and distributions for the Goose programming language, in pure Goose: xoshiro256++, ziggurat normal and exponential, 30-odd exact samplers",
-   "last_commit": "2026-10-31T19:18:40Z"
+   "last_commit": "2026-10-31T19:18:40Z",
+   "latest_tag_commit": "76ec1aa894fe38aee3601005b26258a04db25b66"
   },
   "innomon-goose-sql-p2p": {
    "exists": true,
+   "repo_id": "R_kgDOVdxnXQ",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -655,6 +733,7 @@
   },
   "inuverse44-goose-lab": {
    "exists": true,
+   "repo_id": "R_kgDOVb8Haw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -667,6 +746,7 @@
   },
   "jdrobertso-net": {
    "exists": true,
+   "repo_id": "R_kgDOVXak3Q",
    "default_branch": "main",
    "latest_tag": "v0.2.0",
    "tag_count": 2,
@@ -675,10 +755,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Networking for the Goose programming language at https://github.com/aardappel/goose",
-   "last_commit": "2026-10-26T20:39:12Z"
+   "last_commit": "2026-10-26T20:39:12Z",
+   "latest_tag_commit": "becbaa1467ad24059ab96867ed2fdafecc0d194d"
   },
   "jesper-olsen-c4-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVbDRJw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -691,6 +773,7 @@
   },
   "jesper-olsen-mandelbrot-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVSv36w",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -703,6 +786,7 @@
   },
   "joshuarli-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVBuqvg",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -715,6 +799,7 @@
   },
   "jtenner-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVUyn_Q",
    "default_branch": "master",
    "latest_tag": "v2026.3",
    "tag_count": 4,
@@ -723,10 +808,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-08T02:55:36Z"
+   "last_commit": "2026-11-08T02:55:36Z",
+   "latest_tag_commit": "8511ae34bdc9aabf77baaab80b4d659ea87835e2"
   },
   "kaitk-goose-acme": {
    "exists": true,
+   "repo_id": "R_kgDOVT3L-Q",
    "default_branch": "main",
    "latest_tag": "v0.0.5",
    "tag_count": 5,
@@ -735,10 +822,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "ACME for Goose: certificates from Let's Encrypt through TLS-ALPN-01, cached as rustls-acme caches them",
-   "last_commit": "2026-11-03T11:53:57Z"
+   "last_commit": "2026-11-03T11:53:57Z",
+   "latest_tag_commit": "504b9354f7f5bf847ac75c6e1f6de47d737138eb"
   },
   "kaitk-goose-compress": {
    "exists": true,
+   "repo_id": "R_kgDOVGNZGg",
    "default_branch": "main",
    "latest_tag": "v0.1.4",
    "tag_count": 5,
@@ -747,10 +836,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Experimental gzip and deflate compression in Goose",
-   "last_commit": "2026-10-27T08:13:44Z"
+   "last_commit": "2026-10-27T08:13:44Z",
+   "latest_tag_commit": "6f0c17ac4ceeca930cc7cd9c6b5d9293c8b09f50"
   },
   "kaitk-goose-hash": {
    "exists": true,
+   "repo_id": "R_kgDOVPjtCQ",
    "default_branch": "main",
    "latest_tag": "v0.0.4",
    "tag_count": 4,
@@ -759,10 +850,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "SHA-1, SHA-256, HMAC, and PBKDF2 in Goose",
-   "last_commit": "2026-10-27T08:13:48Z"
+   "last_commit": "2026-10-27T08:13:48Z",
+   "latest_tag_commit": "ab31df5c62681a76673ae69cb28a2b6f95ba4422"
   },
   "kaitk-goose-http": {
    "exists": true,
+   "repo_id": "R_kgDOVD0QHw",
    "default_branch": "main",
    "latest_tag": "v0.5.18",
    "tag_count": 37,
@@ -771,10 +864,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "An experimental HTTP/1.1 server in Goose",
-   "last_commit": "2026-11-07T16:54:27Z"
+   "last_commit": "2026-11-07T16:54:27Z",
+   "latest_tag_commit": "86fdeec31d911d4394d797a397660d6fed96ae5d"
   },
   "kaitk-goose-ngfx": {
    "exists": true,
+   "repo_id": "R_kgDOVDyXyQ",
    "default_branch": "main",
    "latest_tag": "v0.5.0",
    "tag_count": 7,
@@ -783,10 +878,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": " Graphics for Goose programs on NoGraphicsAPI (Metal 4 / Vulkan 1.4), with Slang shaders and four ported samples.",
-   "last_commit": "2026-11-11T10:14:50Z"
+   "last_commit": "2026-11-11T10:14:50Z",
+   "latest_tag_commit": "e952736b7f48ebfb5f88a577123573664c8a73a4"
   },
   "kaitk-goose-postgres": {
    "exists": true,
+   "repo_id": "R_kgDOVP3NRg",
    "default_branch": "main",
    "latest_tag": "v0.0.10",
    "tag_count": 10,
@@ -795,10 +892,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Postgres wire protocol in Goose, with no I/O: SCRAM, pipelined queries, and decoding",
-   "last_commit": "2026-10-30T16:03:13Z"
+   "last_commit": "2026-10-30T16:03:13Z",
+   "latest_tag_commit": "0ee6e6d55013b2cb8ffe697c8c31ef8a4fa991c0"
   },
   "kaitk-goose-sqlite": {
    "exists": true,
+   "repo_id": "R_kgDOVPkF-w",
    "default_branch": "main",
    "latest_tag": "v0.0.3",
    "tag_count": 3,
@@ -807,10 +906,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "SQLite bindings for Goose, over the vendored amalgamation",
-   "last_commit": "2026-10-27T08:13:55Z"
+   "last_commit": "2026-10-27T08:13:55Z",
+   "latest_tag_commit": "3f0deef9d4fb789577da73c304a53922aa162ec9"
   },
   "kaitk-goose-tls": {
    "exists": true,
+   "repo_id": "R_kgDOVPlsKQ",
    "default_branch": "main",
    "latest_tag": "v0.0.6",
    "tag_count": 6,
@@ -819,10 +920,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "TLS for Goose over OpenSSL 3: server, client, kTLS, and the hooks ACME needs",
-   "last_commit": "2026-10-28T09:25:43Z"
+   "last_commit": "2026-10-28T09:25:43Z",
+   "latest_tag_commit": "b7cc745a3f2eb782c18698a082a1526526cc19fb"
   },
   "kaitk-plod": {
    "exists": true,
+   "repo_id": "R_kgDOVHsOIw",
    "default_branch": "main",
    "latest_tag": "v0.5.11",
    "tag_count": 24,
@@ -831,10 +934,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "A REST framework for Goose, on goose-http: Actix-style scopes, extractors and middleware, with an OpenAPI 3.1 generator. Takes its time, not yours. Mascot: Ari, a banana slug (genus Ariolimax).",
-   "last_commit": "2026-11-03T13:25:38Z"
+   "last_commit": "2026-11-03T13:25:38Z",
+   "latest_tag_commit": "85b32199b4ca967a1d4d3744f9971190adf83b58"
   },
   "kmehltretter82-gdtc": {
    "exists": true,
+   "repo_id": "R_kgDOVXS5uw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -847,6 +952,7 @@
   },
   "kmehltretter82-gobjtool": {
    "exists": true,
+   "repo_id": "R_kgDOVXS7Fw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -859,6 +965,7 @@
   },
   "kokasikhorik-bot-goosecraft": {
    "exists": true,
+   "repo_id": "R_kgDOVcQW7w",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -871,6 +978,7 @@
   },
   "korolenkowork-honk": {
    "exists": true,
+   "repo_id": "R_kgDOVgWZuA",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -883,6 +991,7 @@
   },
   "kostya-langarena": {
    "exists": true,
+   "repo_id": "R_kgDORBDKNA",
    "default_branch": "master",
    "latest_tag": "2026-11-04",
    "tag_count": 18,
@@ -891,10 +1000,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "LangArena: Programming Language Evaluation Suite",
-   "last_commit": "2026-11-08T13:29:13Z"
+   "last_commit": "2026-11-08T13:29:13Z",
+   "latest_tag_commit": "6708df3248e0d51b2546c3a6f451cda0b8e0b51e"
   },
   "ks250206-goose-poc": {
    "exists": true,
+   "repo_id": "R_kgDOVY1Q4g",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -907,6 +1018,7 @@
   },
   "kyambuthia-ur-goose-is-cooked": {
    "exists": true,
+   "repo_id": "R_kgDOVXA7Ng",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -919,6 +1031,7 @@
   },
   "lamweilun-raygoose": {
    "exists": true,
+   "repo_id": "R_kgDOVd6Q0A",
    "default_branch": "main",
    "latest_tag": "v0.1.1",
    "tag_count": 2,
@@ -927,10 +1040,12 @@
    "archived": false,
    "license": "other",
    "upstream_description": "raylib bindings for Goose Programming Language",
-   "last_commit": "2026-11-08T03:29:30Z"
+   "last_commit": "2026-11-08T03:29:30Z",
+   "latest_tag_commit": "a45a370e24271f8d71703143414fd69c6eb82f18"
   },
   "lazychicken-goose-commands": {
    "exists": true,
+   "repo_id": "R_kgDOVcq0og",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -943,6 +1058,7 @@
   },
   "lenstr-project-frontier": {
    "exists": true,
+   "repo_id": "R_kgDOVX2NAg",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -955,6 +1071,7 @@
   },
   "lightspeedc-20261101-research-goose-language": {
    "exists": true,
+   "repo_id": "R_kgDOVfBGzg",
    "default_branch": "develop",
    "latest_tag": null,
    "tag_count": 0,
@@ -967,6 +1084,7 @@
   },
   "macho0x-goose-bigint": {
    "exists": true,
+   "repo_id": "R_kgDOVe0dEQ",
    "default_branch": "main",
    "latest_tag": "v0.2",
    "tag_count": 2,
@@ -975,10 +1093,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Signed integers with no fixed width in Goose",
-   "last_commit": "2026-11-02T13:10:48Z"
+   "last_commit": "2026-11-02T13:10:48Z",
+   "latest_tag_commit": "d2f48f1c5db331bd0005d1c8e9ec93c27fa44b49"
   },
   "macho0x-goose-crypto": {
    "exists": true,
+   "repo_id": "R_kgDOVY6GTQ",
    "default_branch": "main",
    "latest_tag": "v0.18.1",
    "tag_count": 10,
@@ -987,10 +1107,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Hashes, public-key cryptography, and transaction signing in Goose.",
-   "last_commit": "2026-11-02T13:10:49Z"
+   "last_commit": "2026-11-02T13:10:49Z",
+   "latest_tag_commit": "7e0152ae066d93d855f6d6fe7cf1e9a28c133a15"
   },
   "macho0x-goose-decimal": {
    "exists": true,
+   "repo_id": "R_kgDOVey9wg",
    "default_branch": "main",
    "latest_tag": "v0.2.1",
    "tag_count": 2,
@@ -999,10 +1121,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-02T13:10:49Z"
+   "last_commit": "2026-11-02T13:10:49Z",
+   "latest_tag_commit": "826d9a5fdf40ba848fed1e5dd690bd3454c0e28d"
   },
   "macho0x-goose-deflate": {
    "exists": true,
+   "repo_id": "R_kgDOVexYBw",
    "default_branch": "main",
    "latest_tag": "v0.2.1",
    "tag_count": 2,
@@ -1011,10 +1135,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Raw DEFLATE, zlib, and gzip in Goose",
-   "last_commit": "2026-11-02T13:10:49Z"
+   "last_commit": "2026-11-02T13:10:49Z",
+   "latest_tag_commit": "c93f533c7f242512fa8bce4a05cd8264b01cbd73"
   },
   "macho0x-goose-ethereum": {
    "exists": true,
+   "repo_id": "R_kgDOVexgsg",
    "default_branch": "main",
    "latest_tag": "v0.2.1",
    "tag_count": 2,
@@ -1023,10 +1149,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "256-bit integers, ABI, and Ethereum JSON-RPC bytes in Goose",
-   "last_commit": "2026-11-02T13:10:49Z"
+   "last_commit": "2026-11-02T13:10:49Z",
+   "latest_tag_commit": "3690e2ad0b09009914030133f83484b4242569e2"
   },
   "macho0x-goose-hyperliquid": {
    "exists": true,
+   "repo_id": "R_kgDOVgIm5A",
    "default_branch": "main",
    "latest_tag": "v0.3.0",
    "tag_count": 2,
@@ -1035,10 +1163,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "HyperCore signing, info, and HyperEVM reads for Goose",
-   "last_commit": "2026-11-10T08:33:49Z"
+   "last_commit": "2026-11-10T08:33:49Z",
+   "latest_tag_commit": "782c301a9c7dea3f3c41f5b93e5a3765c19c168a"
   },
   "macho0x-goose-logger": {
    "exists": true,
+   "repo_id": "R_kgDOVfB7Ng",
    "default_branch": "main",
    "latest_tag": "v0.3.4",
    "tag_count": 6,
@@ -1047,10 +1177,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Process log lines for Goose",
-   "last_commit": "2026-11-03T11:00:14Z"
+   "last_commit": "2026-11-03T11:00:14Z",
+   "latest_tag_commit": "50695a3df0eb5a1048a4b183538d59f43f5eb279"
   },
   "macho0x-goose-msgpack": {
    "exists": true,
+   "repo_id": "R_kgDOVexZ3Q",
    "default_branch": "main",
    "latest_tag": "v0.2.1",
    "tag_count": 2,
@@ -1059,10 +1191,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "MessagePack encode and decode in Goose",
-   "last_commit": "2026-11-02T13:10:49Z"
+   "last_commit": "2026-11-02T13:10:49Z",
+   "latest_tag_commit": "ffd8b2555cf5addc38aa8bf3bf8bfbebd157957e"
   },
   "macho0x-goose-signature": {
    "exists": true,
+   "repo_id": "R_kgDOVewpQQ",
    "default_branch": "main",
    "latest_tag": "v0.3",
    "tag_count": 2,
@@ -1071,10 +1205,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Transaction and typed-data signing in Goose",
-   "last_commit": "2026-11-02T13:10:49Z"
+   "last_commit": "2026-11-02T13:10:49Z",
+   "latest_tag_commit": "38b38465a1725f65848c602ae20649db3f8e103b"
   },
   "macho0x-goose-toml": {
    "exists": true,
+   "repo_id": "R_kgDOVfJJ3A",
    "default_branch": "main",
    "latest_tag": "v0.2",
    "tag_count": 1,
@@ -1083,10 +1219,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "A TOML 1.0 reader in Goose",
-   "last_commit": "2026-11-02T13:10:49Z"
+   "last_commit": "2026-11-02T13:10:49Z",
+   "latest_tag_commit": "c2e147899e37a48fa365349bc97d7aaaa36ec6bc"
   },
   "macho0x-goose-uuid": {
    "exists": true,
+   "repo_id": "R_kgDOVeuqOA",
    "default_branch": "main",
    "latest_tag": "v0.4",
    "tag_count": 3,
@@ -1095,10 +1233,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "UUIDs in Goose, as specified by RFC 9562.",
-   "last_commit": "2026-11-02T13:10:49Z"
+   "last_commit": "2026-11-02T13:10:49Z",
+   "latest_tag_commit": "527a2074e91f22dab1142462538f8756186a3f31"
   },
   "manymids-goose-sharp-x68000": {
    "exists": true,
+   "repo_id": "R_kgDOVeRPxQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1111,18 +1251,21 @@
   },
   "mas-bandwidth-schema": {
    "exists": true,
+   "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
    "latest_tag": "main-fd0f25e073ed",
-   "tag_count": 720,
+   "tag_count": 735,
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
-   "last_commit": "2026-11-11T05:24:38Z"
+   "last_commit": "2026-11-11T20:06:53Z",
+   "latest_tag_commit": "fd0f25e073edb43445657250cb3e82570865b198"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVP5Meg",
    "default_branch": "main",
    "latest_tag": "v2.1.3",
    "tag_count": 6,
@@ -1131,10 +1274,12 @@
    "archived": false,
    "license": "BSD-3-Clause",
    "upstream_description": "A simple bitpacking serializer for Goose, wire compatible with the C++ serialize library",
-   "last_commit": "2026-11-10T17:25:13Z"
+   "last_commit": "2026-11-10T17:25:13Z",
+   "latest_tag_commit": "2f65ef1f14c709133d199908620eaf05c39eb7cf"
   },
   "mewhhaha-goose-to-wasm": {
    "exists": true,
+   "repo_id": "R_kgDOVXov9w",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1143,13 +1288,14 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-08T08:06:07Z"
+   "last_commit": "2026-11-11T19:17:37Z"
   },
   "mg3994-ideatoapp": {
    "exists": false
   },
   "mgasner-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVDEqcg",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -1162,6 +1308,7 @@
   },
   "mrfentmen-meta-os": {
    "exists": true,
+   "repo_id": "R_kgDOVaYZRA",
    "default_branch": "main",
    "latest_tag": "v1.0.0",
    "tag_count": 2,
@@ -1170,10 +1317,12 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Meta OS. A platform that never sleeps. Systems that watch, learn, build, and play. Meta Global AI Developer Hackathon 2026.",
-   "last_commit": "2026-11-04T22:36:34Z"
+   "last_commit": "2026-11-04T22:36:34Z",
+   "latest_tag_commit": "25c2825ed30ba9d48a03f86ded3f7eef601eb697"
   },
   "nandi-conda-quack": {
    "exists": true,
+   "repo_id": "R_kgDOVYrzEQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1186,6 +1335,7 @@
   },
   "nenaaki-goose-wasm": {
    "exists": true,
+   "repo_id": "R_kgDOVd8xZA",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1198,6 +1348,7 @@
   },
   "noonien-alchemistssort": {
    "exists": true,
+   "repo_id": "R_kgDOVBdXzg",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1210,6 +1361,7 @@
   },
   "nurupoga-goose-core2": {
    "exists": true,
+   "repo_id": "R_kgDOVYyF3w",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1222,6 +1374,7 @@
   },
   "nurysso-terence": {
    "exists": true,
+   "repo_id": "R_kgDOVUi8pA",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1234,6 +1387,7 @@
   },
   "okay-effects-okay-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVaPAng",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -1246,6 +1400,7 @@
   },
   "paulosuzart-gooseneck": {
    "exists": true,
+   "repo_id": "R_kgDOVbNkFQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1258,6 +1413,7 @@
   },
   "pleseisanidiot-goosecode": {
    "exists": true,
+   "repo_id": "R_kgDOVgE-RQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1270,6 +1426,7 @@
   },
   "podikoglou-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVVrUyg",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -1282,6 +1439,7 @@
   },
   "robtandy-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVfIIOw",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -1294,6 +1452,7 @@
   },
   "robtandy-goose-go": {
    "exists": true,
+   "repo_id": "R_kgDOVfFMvA",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1306,6 +1465,7 @@
   },
   "romanpro100-goose-zed-extension": {
    "exists": true,
+   "repo_id": "R_kgDOVTbD0Q",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1318,6 +1478,7 @@
   },
   "ruslano69-lz78-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVUYflw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1330,6 +1491,7 @@
   },
   "rx-bob-goosefmt": {
    "exists": true,
+   "repo_id": "R_kgDOVfRpEw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1342,6 +1504,7 @@
   },
   "rx-bob-goosetest": {
    "exists": true,
+   "repo_id": "R_kgDOVfPZgw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1354,6 +1517,7 @@
   },
   "salahraja-football-scores": {
    "exists": true,
+   "repo_id": "R_kgDOJdAXkA",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1366,6 +1530,7 @@
   },
   "scottc-goose-roc": {
    "exists": true,
+   "repo_id": "R_kgDOVZAuXw",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -1378,6 +1543,7 @@
   },
   "shetautnetjer-goose-lsp": {
    "exists": true,
+   "repo_id": "R_kgDOVXvYag",
    "default_branch": "main",
    "latest_tag": "v0.1.3",
    "tag_count": 4,
@@ -1386,10 +1552,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-10-28T04:50:55Z"
+   "last_commit": "2026-10-28T04:50:55Z",
+   "latest_tag_commit": "d6868658975d41b34a46baa5ea881ac2ded05e0a"
   },
   "shetautnetjer-goose-sqlite": {
    "exists": true,
+   "repo_id": "R_kgDOVXvY1g",
    "default_branch": "main",
    "latest_tag": "v0.1.2",
    "tag_count": 3,
@@ -1398,10 +1566,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-06T14:34:19Z"
+   "last_commit": "2026-11-06T14:34:19Z",
+   "latest_tag_commit": "e29f01b04f26409623c61ba72f1df948af63355a"
   },
   "shetautnetjer-goose-treesitter": {
    "exists": true,
+   "repo_id": "R_kgDOVXvYAg",
    "default_branch": "main",
    "latest_tag": "v0.1.4",
    "tag_count": 5,
@@ -1410,10 +1580,12 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-06T14:20:50Z"
+   "last_commit": "2026-11-06T14:20:50Z",
+   "latest_tag_commit": "443bb65439daf6b4ca20acdc9fb5fcbb7382dfc9"
   },
   "shetautnetjer-swan": {
    "exists": true,
+   "repo_id": "R_kgDOVXPhPg",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1426,6 +1598,7 @@
   },
   "sorins-asn1goose": {
    "exists": true,
+   "repo_id": "R_kgDOVYXKQw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1438,6 +1611,7 @@
   },
   "sorins-bigmongoose": {
    "exists": true,
+   "repo_id": "R_kgDOVXQBcQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1450,6 +1624,7 @@
   },
   "sorins-gslib": {
    "exists": true,
+   "repo_id": "R_kgDOVeBBGg",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1462,6 +1637,7 @@
   },
   "sorins-httpgoose": {
    "exists": true,
+   "repo_id": "R_kgDOVcAcuQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1474,6 +1650,7 @@
   },
   "sorins-ldapgoose": {
    "exists": true,
+   "repo_id": "R_kgDOVZXf0A",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1486,6 +1663,7 @@
   },
   "sorins-sshgoose": {
    "exists": true,
+   "repo_id": "R_kgDOVY_i4A",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1498,6 +1676,7 @@
   },
   "sorins-tlsgoose": {
    "exists": true,
+   "repo_id": "R_kgDOVYXdlg",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1510,6 +1689,7 @@
   },
   "sorins-x509goose": {
    "exists": true,
+   "repo_id": "R_kgDOVYXj8A",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1522,6 +1702,7 @@
   },
   "sorins-yamlgoose": {
    "exists": true,
+   "repo_id": "R_kgDOVaV0UA",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1534,6 +1715,7 @@
   },
   "sstadick-goosdoc": {
    "exists": true,
+   "repo_id": "R_kgDOVeCjNQ",
    "default_branch": "main",
    "latest_tag": "v0.3.1",
    "tag_count": 4,
@@ -1543,10 +1725,12 @@
    "license": "MIT",
    "upstream_description": "Markdown API references for Goose libraries",
    "last_commit": "2026-11-10T15:06:26Z",
+   "latest_tag_commit": "bb399143866c0c42268f23c8dfda7a447173f93d",
    "canonical_repo": "https://github.com/sstadick/goose-doc"
   },
   "sstadick-goosimd": {
    "exists": true,
+   "repo_id": "R_kgDOVcQgSQ",
    "default_branch": "main",
    "latest_tag": "v0.2.0",
    "tag_count": 3,
@@ -1556,10 +1740,12 @@
    "license": "MIT",
    "upstream_description": "Placeholder Goose SIMD package for testing proposed c_headers support; implementation will be replaced.",
    "last_commit": "2026-11-07T19:40:58Z",
+   "latest_tag_commit": "bef8b31dfa4f0c87a8d0180c1e7fa6cbb1e435e6",
    "canonical_repo": "https://github.com/sstadick/goose-simd"
   },
   "sstadick-goosio": {
    "exists": true,
+   "repo_id": "R_kgDOVgkjsw",
    "default_branch": "main",
    "latest_tag": "v0.2.2",
    "tag_count": 4,
@@ -1569,10 +1755,12 @@
    "license": "MIT",
    "upstream_description": "Synchronous file I/O, buffered readers and writers, and borrowed lines for Goose",
    "last_commit": "2026-11-09T10:55:38Z",
+   "latest_tag_commit": "cdc47cbbb0ea3bbfafa436edfd0250585a038b2f",
    "canonical_repo": "https://github.com/sstadick/goose-io"
   },
   "sstadick-goosopt": {
    "exists": true,
+   "repo_id": "R_kgDOVeB0PA",
    "default_branch": "main",
    "latest_tag": "v0.1.0",
    "tag_count": 1,
@@ -1582,10 +1770,12 @@
    "license": "MIT",
    "upstream_description": "Experimental struct-derived CLI options for Goose",
    "last_commit": "2026-11-07T19:41:06Z",
+   "latest_tag_commit": "e2149c4d924caf515a4db18882d75b49b99ffb1a",
    "canonical_repo": "https://github.com/sstadick/goose-opts"
   },
   "sstadick-goostr": {
    "exists": true,
+   "repo_id": "R_kgDOVb2YjA",
    "default_branch": "main",
    "latest_tag": "v0.3.1",
    "tag_count": 5,
@@ -1595,10 +1785,12 @@
    "license": "MIT",
    "upstream_description": null,
    "last_commit": "2026-11-09T10:51:43Z",
+   "latest_tag_commit": "436c8a950ca6c0b3bc59d3b195881100c7bc99de",
    "canonical_repo": "https://github.com/sstadick/goose-bstr"
   },
   "subhdotsol-goose-guide": {
    "exists": true,
+   "repo_id": "R_kgDOVYg0dQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1611,6 +1803,7 @@
   },
   "swoorup-beads-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVTiL2g",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1623,6 +1816,7 @@
   },
   "swoorup-ferrous-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVW6Rbw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1635,6 +1829,7 @@
   },
   "tacf-fastnoiselite-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVX-boQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1647,6 +1842,7 @@
   },
   "tacf-moon-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVXRC2A",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1659,6 +1855,7 @@
   },
   "taw-100-languages-speedrun-goose": {
    "exists": true,
+   "repo_id": "R_kgDOGaipuA",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -1671,6 +1868,7 @@
   },
   "tobiolo-goose-term": {
    "exists": true,
+   "repo_id": "R_kgDOVRR3JQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1683,6 +1881,7 @@
   },
   "vietnt-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVLoNBw",
    "default_branch": "rome",
    "latest_tag": "v2026.1-rome.7",
    "tag_count": 12,
@@ -1691,10 +1890,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-10-23T11:35:08Z"
+   "last_commit": "2026-10-23T11:35:08Z",
+   "latest_tag_commit": "44afc11281b211439113346c6fa064dd7adc0592"
   },
   "vpagani-zed-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVWWMrw",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1707,6 +1908,7 @@
   },
   "xvolks-brainfuck-goose": {
    "exists": true,
+   "repo_id": "R_kgDOVWNg5g",
    "default_branch": "master",
    "latest_tag": null,
    "tag_count": 0,
@@ -1731,6 +1933,7 @@
   },
   "yujieteo-site": {
    "exists": true,
+   "repo_id": "R_kgDOVm9RaQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,
@@ -1739,7 +1942,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-11T12:42:32Z"
+   "last_commit": "2026-11-11T20:01:55Z"
   },
   "yujieteo-skein": {
    "exists": false
@@ -1749,6 +1952,7 @@
   },
   "zhengsy-goose-tui": {
    "exists": true,
+   "repo_id": "R_kgDOVaBjHQ",
    "default_branch": "main",
    "latest_tag": "v0.1.0",
    "tag_count": 1,
@@ -1757,10 +1961,12 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Terminal UI framework written in Goose: immediate-mode widgets over a diffed cell grid, no dependencies",
-   "last_commit": "2026-10-28T04:04:35Z"
+   "last_commit": "2026-10-28T04:04:35Z",
+   "latest_tag_commit": "7fe12131c2815282cb7d6f64ae7b99eedc5498ae"
   },
   "zhengsy-goose-zed": {
    "exists": true,
+   "repo_id": "R_kgDOVb7RVQ",
    "default_branch": "main",
    "latest_tag": null,
    "tag_count": 0,

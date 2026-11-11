@@ -30,7 +30,7 @@ Libraries, tools, editor plugins, programs and guides for the [Goose programming
 | 🏷 | latest tag; untagged entries pin a branch, which moves |
 | ⚠️ | no license file: nobody may reuse the code until the author adds one |
 | 🗄 | archived by its author |
-| ✅ 🟡 ❌ | build status against Goose v2026.4, one mark each for Linux, macOS and Windows: ✅ builds, 🟡 typechecks only, ❌ fails, ➖ not tested |
+| ✅ 🟡 ❌ | build status against Goose v2026.4, one mark each for Linux, macOS and Windows: ✅ builds, 🟡 typechecks only, ❌ fails, ➖ not tested, ⏳ after a mark: that result is from an earlier Goose release |
 
 ## Contents
 
@@ -159,8 +159,8 @@ _Template engines, string utilities, parsing helpers, logging formats._
   `import logger from "github.com/Macho0x/goose-logger@v0.3.4";`
 - **[gooseneck](https://github.com/paulosuzart/gooseneck)** — A Handlebars-compatible template engine in pure Goose: compile a template once, then render it from typed structs or JSON with output tested against handlebars.js. ★ 2 · ✅ ✅ ✅
   `import gooseneck from "github.com/paulosuzart/gooseneck@main";`
-- **[goostr](https://github.com/sstadick/goostr)** — Byte-string searching, splitting and transforming that works on arbitrary bytes, NUL and broken UTF-8 included, following Rust's bstr; uses goosimd for fast search. 🏷 v0.3.1 · ❌ ❌ ❌
-  `import goostr from "github.com/sstadick/goostr@v0.3.1";`
+- **[goostr](https://github.com/sstadick/goose-bstr)** — Byte-string searching, splitting and transforming that works on arbitrary bytes, NUL and broken UTF-8 included, following Rust's bstr; uses goosimd for fast search. 🏷 v0.3.1 · ❌ ❌ ❌
+  `import goostr from "github.com/sstadick/goose-bstr@v0.3.1";`
 
 ## Math and science
 
@@ -224,10 +224,10 @@ _Files and streams, processes, dates and times, command-line arguments, logging 
   `import date from "github.com/clintecker/goose-date@v1";`
 - **[goose-file](https://github.com/clintecker/goose-file)** — Chunked reading of files and stdin, for inputs too big to load whole, plus lstat, permission bits and links through a small C layer. POSIX paths only. 🏷 v1 · ✅ ✅ ✅
   `import file from "github.com/clintecker/goose-file@v1";`
-- **[goosio](https://github.com/sstadick/goosio)** — Synchronous file handles with buffered readers and writers and line reads that borrow from the buffer, tested with several C compilers on each OS. 🏷 v0.2.2 · ❌ ❌ ❌
-  `import goosio from "github.com/sstadick/goosio@v0.2.2";`
-- **[goosopt](https://github.com/sstadick/goosopt)** — Describes command-line options as fields of a struct and parses flags, values and positionals into it, generating help text from the field descriptions. ★ 1 · 🏷 v0.1.0 · ❌ ❌ ❌
-  `import goosopt from "github.com/sstadick/goosopt@v0.1.0";`
+- **[goosio](https://github.com/sstadick/goose-io)** — Synchronous file handles with buffered readers and writers and line reads that borrow from the buffer, tested with several C compilers on each OS. 🏷 v0.2.2 · ❌ ❌ ❌
+  `import goosio from "github.com/sstadick/goose-io@v0.2.2";`
+- **[goosopt](https://github.com/sstadick/goose-opts)** — Describes command-line options as fields of a struct and parses flags, values and positionals into it, generating help text from the field descriptions. ★ 1 · 🏷 v0.1.0 · ❌ ❌ ❌
+  `import goosopt from "github.com/sstadick/goose-opts@v0.1.0";`
 - **[gdtc](https://github.com/kmehltretter82/gdtc)** — An experimental memory-safe rewrite of dtc, the tool that compiles device tree source for Linux; it handles a growing subset and emits version 17 blobs, checked against the original. ✅ ✅ ✅
 - **[gobjtool](https://github.com/kmehltretter82/gobjtool)** — An experimental rewrite of the Linux kernel's objtool for x86-64: it parses ELF64 relocatable objects and decodes their instructions without libelf, as a first step toward stack validation and ORC data. ✅ ✅ ✅
 
@@ -235,8 +235,8 @@ _Files and streams, processes, dates and times, command-line arguments, logging 
 
 _Libraries that add programming models on top of Goose: effects, SIMD, generics helpers._
 
-- **[goosimd](https://github.com/sstadick/goosimd)** — Compares 16 or 32 bytes at once and turns the results into position masks; the author marks it an experimental placeholder whose API will change. 🏷 v0.2.0 · ❌ ❌ ❌
-  `import goosimd from "github.com/sstadick/goosimd@v0.2.0";`
+- **[goosimd](https://github.com/sstadick/goose-simd)** — Compares 16 or 32 bytes at once and turns the results into position masks; the author marks it an experimental placeholder whose API will change. 🏷 v0.2.0 · ❌ ❌ ❌
+  `import goosimd from "github.com/sstadick/goose-simd@v0.2.0";`
 - **[okay-goose](https://github.com/okay-effects/okay-goose)** _tool_ — Brings the okay language's typed algebraic effects to Goose: effects in function types, handlers and resumable functions lowered to flat values, with the front end itself written in Goose.
 
 ## Interop with other languages
@@ -277,7 +277,7 @@ _Test runners, assertion libraries, property testing, fuzzing._
 
 _API reference generators and doc testing._
 
-- **[goosdoc](https://github.com/sstadick/goosdoc)** _tool_ — Builds a Markdown API reference from doc comments, with signatures and source links, and runs the code examples in those comments as tests; a check mode keeps the committed reference current in CI. 🏷 v0.3.1 · ✅ ✅ ✅
+- **[goosdoc](https://github.com/sstadick/goose-doc)** _tool_ — Builds a Markdown API reference from doc comments, with signatures and source links, and runs the code examples in those comments as tests; a check mode keeps the committed reference current in CI. 🏷 v0.3.1 · ✅ ✅ ✅
 
 ## Formatting, linting and analysis
 
@@ -307,7 +307,7 @@ _Editor plugins, syntax grammars, LSP clients._
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
 - **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 7 · 🏷 v0.1.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3420 · 🏷 v2026.4
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3429 · 🏷 v2026.4
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
 - **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
@@ -398,4 +398,4 @@ Adding a project is one file, `packages/<id>.toml`, in a pull request: see [CONT
 
 The code here (`scripts/`, `web/`, `.github/`) is [MIT](LICENSE); the entry data and descriptions (`packages/`, `data/`, this README and `index.json`) are [CC0 1.0](LICENSE). Listed projects keep their own licenses. Goose is a project of its own authors; this index is not affiliated with it.
 
-<sub>Generated 2026-11-11T12:45:22Z.</sub>
+<sub>Generated 2026-11-11T20:11:56Z.</sub>
