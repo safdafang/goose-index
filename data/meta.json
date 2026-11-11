@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-10T13:30:31Z",
+ "fetched_at": "2026-11-11T12:45:22Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -20,11 +20,11 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3394,
+   "stars": 3420,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-08T20:54:12Z"
+   "last_commit": "2026-11-11T07:09:37Z"
   },
   "aardappel-goose-gfx": {
    "exists": true,
@@ -167,7 +167,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-14T13:35:09Z",
-   "stars": 80,
+   "stars": 81,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
@@ -699,7 +699,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Mandelbrot in Goose",
-   "last_commit": "2026-10-23T23:28:07Z"
+   "last_commit": "2026-11-10T20:00:19Z"
   },
   "joshuarli-goose": {
    "exists": true,
@@ -776,14 +776,14 @@
   "kaitk-goose-ngfx": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "v0.2.0",
-   "tag_count": 4,
+   "latest_tag": "v0.5.0",
+   "tag_count": 7,
    "created": "2026-10-10T14:01:09Z",
    "stars": 2,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": " Graphics for Goose programs on NoGraphicsAPI (Metal 4 / Vulkan 1.4), with Slang shaders and four ported samples.",
-   "last_commit": "2026-10-14T12:45:19Z"
+   "last_commit": "2026-11-11T10:14:50Z"
   },
   "kaitk-goose-postgres": {
    "exists": true,
@@ -827,7 +827,7 @@
    "latest_tag": "v0.5.11",
    "tag_count": 24,
    "created": "2026-10-13T15:28:33Z",
-   "stars": 19,
+   "stars": 20,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "A REST framework for Goose, on goose-http: Actix-style scopes, extractors and middleware, with an OpenAPI 3.1 generator. Takes its time, not yours. Mascot: Ari, a banana slug (genus Ariolimax).",
@@ -1112,26 +1112,26 @@
   "mas-bandwidth-schema": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "main-f004cb0727b8",
-   "tag_count": 663,
+   "latest_tag": "main-fd0f25e073ed",
+   "tag_count": 720,
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
-   "last_commit": "2026-11-10T08:30:45Z"
+   "last_commit": "2026-11-11T05:24:38Z"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "v2.1.2",
-   "tag_count": 5,
+   "latest_tag": "v2.1.3",
+   "tag_count": 6,
    "created": "2026-10-19T17:26:13Z",
    "stars": 0,
    "archived": false,
    "license": "BSD-3-Clause",
    "upstream_description": "A simple bitpacking serializer for Goose, wire compatible with the C++ serialize library",
-   "last_commit": "2026-11-10T05:27:20Z"
+   "last_commit": "2026-11-10T17:25:13Z"
   },
   "mewhhaha-goose-to-wasm": {
    "exists": true,
@@ -1374,7 +1374,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Goose lang as a host implementation for a roc platform.",
-   "last_commit": "2026-11-09T13:38:39Z"
+   "last_commit": "2026-11-11T07:37:34Z"
   },
   "shetautnetjer-goose-lsp": {
    "exists": true,
@@ -1535,14 +1535,14 @@
   "sstadick-goosdoc": {
    "exists": true,
    "default_branch": "main",
-   "latest_tag": "v0.3.0",
-   "tag_count": 3,
+   "latest_tag": "v0.3.1",
+   "tag_count": 4,
    "created": "2026-10-31T11:21:33Z",
    "stars": 0,
    "archived": false,
    "license": "MIT",
    "upstream_description": "Markdown API references for Goose libraries",
-   "last_commit": "2026-11-07T19:40:55Z",
+   "last_commit": "2026-11-10T15:06:26Z",
    "canonical_repo": "https://github.com/sstadick/goose-doc"
   },
   "sstadick-goosimd": {
@@ -1739,7 +1739,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-10T13:28:51Z"
+   "last_commit": "2026-11-11T12:42:32Z"
   },
   "yujieteo-skein": {
    "exists": false
