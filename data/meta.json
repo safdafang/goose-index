@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-11T20:11:56Z",
+ "fetched_at": "2026-11-12T13:48:23Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,7 +22,7 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3429,
+   "stars": 3459,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
@@ -95,7 +95,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": null,
-   "last_commit": "2026-11-08T17:35:58Z"
+   "last_commit": "2026-11-11T20:33:50Z"
   },
   "aguspiza-raytracing-goose": {
    "exists": true,
@@ -878,7 +878,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": " Graphics for Goose programs on NoGraphicsAPI (Metal 4 / Vulkan 1.4), with Slang shaders and four ported samples.",
-   "last_commit": "2026-11-11T10:14:50Z",
+   "last_commit": "2026-11-12T06:49:45Z",
    "latest_tag_commit": "e952736b7f48ebfb5f88a577123573664c8a73a4"
   },
   "kaitk-goose-postgres": {
@@ -1247,7 +1247,7 @@
    "archived": false,
    "license": "GPL-2.0",
    "upstream_description": "Goose 言語で CPU・メモリ・周辺機器・描画を実装した、Windows 向けの Sharp X68000 エミュレータです。Win32 GUI と、stdio 経由で外部ツールから操作する ARCL MCP に対応します。",
-   "last_commit": "2026-11-04T15:03:50Z"
+   "last_commit": "2026-11-12T12:24:47Z"
   },
   "mas-bandwidth-schema": {
    "exists": true,
@@ -1631,9 +1631,9 @@
    "created": "2026-10-31T10:47:22Z",
    "stars": 3,
    "archived": false,
-   "license": "none",
+   "license": "Apache-2.0",
    "upstream_description": "Goose Library",
-   "last_commit": "2026-11-02T17:46:23Z"
+   "last_commit": "2026-11-12T08:34:36Z"
   },
   "sorins-httpgoose": {
    "exists": true,
@@ -1724,7 +1724,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Markdown API references for Goose libraries",
-   "last_commit": "2026-11-10T15:06:26Z",
+   "last_commit": "2026-11-12T09:11:02Z",
    "latest_tag_commit": "bb399143866c0c42268f23c8dfda7a447173f93d",
    "canonical_repo": "https://github.com/sstadick/goose-doc"
   },
@@ -1739,7 +1739,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Placeholder Goose SIMD package for testing proposed c_headers support; implementation will be replaced.",
-   "last_commit": "2026-11-07T19:40:58Z",
+   "last_commit": "2026-11-12T09:16:53Z",
    "latest_tag_commit": "bef8b31dfa4f0c87a8d0180c1e7fa6cbb1e435e6",
    "canonical_repo": "https://github.com/sstadick/goose-simd"
   },
@@ -1754,7 +1754,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Synchronous file I/O, buffered readers and writers, and borrowed lines for Goose",
-   "last_commit": "2026-11-09T10:55:38Z",
+   "last_commit": "2026-11-12T09:47:30Z",
    "latest_tag_commit": "cdc47cbbb0ea3bbfafa436edfd0250585a038b2f",
    "canonical_repo": "https://github.com/sstadick/goose-io"
   },
@@ -1769,7 +1769,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Experimental struct-derived CLI options for Goose",
-   "last_commit": "2026-11-07T19:41:06Z",
+   "last_commit": "2026-11-12T09:41:51Z",
    "latest_tag_commit": "e2149c4d924caf515a4db18882d75b49b99ffb1a",
    "canonical_repo": "https://github.com/sstadick/goose-opts"
   },
@@ -1784,7 +1784,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-09T10:51:43Z",
+   "last_commit": "2026-11-12T09:33:00Z",
    "latest_tag_commit": "436c8a950ca6c0b3bc59d3b195881100c7bc99de",
    "canonical_repo": "https://github.com/sstadick/goose-bstr"
   },
@@ -1942,7 +1942,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-11T20:01:55Z"
+   "last_commit": "2026-11-12T12:22:44Z"
   },
   "yujieteo-skein": {
    "exists": false
