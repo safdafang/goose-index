@@ -63,8 +63,8 @@ _Sockets, HTTP clients and servers, web frameworks, URLs, ACME._
 
 - **[goose-acme](https://github.com/kaitk/goose-acme)** — Obtains and renews TLS certificates from Let's Encrypt or another ACME authority via TLS-ALPN-01, so a goose-http server can serve HTTPS with no reverse proxy. 🏷 v0.0.5 · ✅ ✅ ✅
   `import acme from "github.com/kaitk/goose-acme@v0.0.5";`
-- **[goose-http](https://github.com/kaitk/goose-http)** — The most complete HTTP server stack for Goose: per-worker event loops on io_uring, epoll, kqueue or IOCP, with WebSockets, HTTP/2, HTTP/3, static files and an outbound client. Upstream benchmarks against it. ★ 21 · 🏷 v0.5.18 · ✅ ✅ ✅
-  `import http from "github.com/kaitk/goose-http@v0.5.18";`
+- **[goose-http](https://github.com/kaitk/goose-http)** — The most complete HTTP server stack for Goose: per-worker event loops on io_uring, epoll, kqueue or IOCP, with WebSockets, HTTP/2, HTTP/3, static files and an outbound client. Upstream benchmarks against it. ★ 21 · 🏷 v0.5.19 · ✅ ✅ ✅
+  `import http from "github.com/kaitk/goose-http@v0.5.19";`
 - **[goose-web](https://github.com/aurthurm/goose-web)** — A web framework built on a non-blocking readiness loop, with typed routes, JSON validation, HTML templates, streaming responses and an optional SQLite layer. ★ 2 · 🏷 v0.6.0 · ✅ ✅ ✅
   `import goose_web from "github.com/aurthurm/goose-web@v0.6.0";`
 - **[honk](https://github.com/korolenkowork/honk)** — A web framework where routes declare typed structs and the request parsing, validation, JSON responses and OpenAPI schema with Swagger UI follow from those types. ★ 1
@@ -74,8 +74,8 @@ _Sockets, HTTP clients and servers, web frameworks, URLs, ACME._
   `import ldap from "github.com/SorinS/ldapgoose@main";`
 - **[net](https://github.com/jdrobertso/net)** — General networking: TCP clients and servers with client-side TLS, URL handling, and a full-featured HTTP/1.1 client with cookies, redirects and a non-blocking threaded mode. TLS uses Schannel on Windows and OpenSSL elsewhere. 🏷 v0.2.0 · ✅ ✅ ✅
   `import net from "github.com/jdrobertso/net@v0.2.0";`
-- **[plod](https://github.com/kaitk/plod)** — An Actix-inspired REST framework on goose-http with scopes, extractors and middleware, plus a generator that produces types, JSON codecs and a router from an OpenAPI 3.1 spec. ★ 20 · 🏷 v0.5.11 · ✅ ✅ ✅
-  `import plod from "github.com/kaitk/plod@v0.5.11";`
+- **[plod](https://github.com/kaitk/plod)** — An Actix-inspired REST framework on goose-http with scopes, extractors and middleware, plus a generator that produces types, JSON codecs and a router from an OpenAPI 3.1 spec. ★ 21 · 🏷 v0.5.12 · ✅ ✅ ✅
+  `import plod from "github.com/kaitk/plod@v0.5.12";`
 
 ## Cryptography and security
 
@@ -106,8 +106,8 @@ _Database bindings, drivers and engines._
 
 - **[goose-postgres](https://github.com/kaitk/goose-postgres)** — A PostgreSQL client that speaks protocol 3.0 as bytes in and bytes out, leaving sockets to the caller's event loop; it handles SCRAM login, pipelined queries and result decoding, and pairs with goose-http's loop. ★ 2 · 🏷 v0.0.10 · ✅ ✅ ✅
   `import pg from "github.com/kaitk/goose-postgres@v0.0.10";`
-- **[goose-sqlite](https://github.com/kaitk/goose-sqlite)** _binding_ — SQLite with the amalgamation built in, so no system SQLite is needed. Errors surface through Goose's return-from, and the compiler checks every call runs inside a transaction or run block. 🏷 v0.0.3 · ✅ ✅ ✅
-  `import sqlite from "github.com/kaitk/goose-sqlite@v0.0.3";`
+- **[goose-sqlite](https://github.com/kaitk/goose-sqlite)** _binding_ — SQLite with the amalgamation built in, so no system SQLite is needed. Errors surface through Goose's return-from, and the compiler checks every call runs inside a transaction or run block. 🏷 v0.0.4 · ✅ ✅ ✅
+  `import sqlite from "github.com/kaitk/goose-sqlite@v0.0.4";`
 - **[goose-sqlite](https://github.com/shetautnetjer/goose-sqlite)** _binding_ — A second SQLite binding with the amalgamation vendored in, written for and used by the Swan code-map tool, with a small self-contained test script. 🏷 v0.1.2 · ✅ ✅ ✅
   `import sqlite from "github.com/shetautnetjer/goose-sqlite@v0.1.2";`
 
@@ -224,8 +224,8 @@ _Files and streams, processes, dates and times, command-line arguments, logging 
   `import date from "github.com/clintecker/goose-date@v1";`
 - **[goose-file](https://github.com/clintecker/goose-file)** — Chunked reading of files and stdin, for inputs too big to load whole, plus lstat, permission bits and links through a small C layer. POSIX paths only. 🏷 v1 · ✅ ✅ ✅
   `import file from "github.com/clintecker/goose-file@v1";`
-- **[goosio](https://github.com/sstadick/goose-io)** — Synchronous file handles with buffered readers and writers and line reads that borrow from the buffer, tested with several C compilers on each OS. 🏷 v0.2.2 · ❌ ❌ ❌
-  `import goosio from "github.com/sstadick/goose-io@v0.2.2";`
+- **[goosio](https://github.com/sstadick/goose-io)** — Synchronous file handles with buffered readers and writers and line reads that borrow from the buffer, tested with several C compilers on each OS. 🏷 v0.3.0 · ❌ ❌ ❌
+  `import goosio from "github.com/sstadick/goose-io@v0.3.0";`
 - **[goosopt](https://github.com/sstadick/goose-opts)** — Describes command-line options as fields of a struct and parses flags, values and positionals into it, generating help text from the field descriptions. ★ 1 · 🏷 v0.1.0 · ❌ ❌ ❌
   `import goosopt from "github.com/sstadick/goose-opts@v0.1.0";`
 - **[gdtc](https://github.com/kmehltretter82/gdtc)** — An experimental memory-safe rewrite of dtc, the tool that compiles device tree source for Linux; it handles a growing subset and emits version 17 blobs, checked against the original. ✅ ✅ ✅
@@ -235,8 +235,8 @@ _Files and streams, processes, dates and times, command-line arguments, logging 
 
 _Libraries that add programming models on top of Goose: effects, SIMD, generics helpers._
 
-- **[goosimd](https://github.com/sstadick/goose-simd)** — Compares 16 or 32 bytes at once and turns the results into position masks; the author marks it an experimental placeholder whose API will change. 🏷 v0.2.0 · ❌ ❌ ❌
-  `import goosimd from "github.com/sstadick/goose-simd@v0.2.0";`
+- **[goosimd](https://github.com/sstadick/goose-simd)** — Compares 16 or 32 bytes at once and turns the results into position masks; the author marks it an experimental placeholder whose API will change. 🏷 v0.3.0 · ❌ ❌ ❌
+  `import goosimd from "github.com/sstadick/goose-simd@v0.3.0";`
 - **[okay-goose](https://github.com/okay-effects/okay-goose)** _tool_ — Brings the okay language's typed algebraic effects to Goose: effects in function types, handlers and resumable functions lowered to flat values, with the front end itself written in Goose.
 
 ## Interop with other languages
@@ -307,7 +307,7 @@ _Editor plugins, syntax grammars, LSP clients._
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
 - **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 7 · 🏷 v0.1.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3459 · 🏷 v2026.4
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3482 · 🏷 v2026.4
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
 - **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
@@ -367,7 +367,7 @@ _Performance comparisons of Goose against other languages._
 - **[goose-evaluations](https://github.com/calpeyser/goose-evaluations)** _learning_ — Four parsing workloads (a Ninja build graph, JSON, YAML and a jq core) written in Goose and measured against common and best-in-class C, C++ and Rust programs, with the generated C and harnesses included. ★ 9
 - **[goose-lab](https://github.com/inuverse44/goose-lab)** _learning_ — Small experiments and two benchmarks against idiomatic Rust (order parsing and totals, a lattice heat simulation), with written notes on the language and the results.
 - **[LangArena](https://github.com/kostya/LangArena)** _learning_ — A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page. ★ 61 · 🏷 2026-11-04
-- **[Multicore Server Challenge](https://github.com/arjaythedev/multicore-server-challenge)** _learning_ — A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers. ★ 81
+- **[Multicore Server Challenge](https://github.com/arjaythedev/multicore-server-challenge)** _learning_ — A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers. ★ 83
 
 ## Learning
 
@@ -398,4 +398,4 @@ Adding a project is one file, `packages/<id>.toml`, in a pull request: see [CONT
 
 The code here (`scripts/`, `web/`, `.github/`) is [MIT](LICENSE); the entry data and descriptions (`packages/`, `data/`, this README and `index.json`) are [CC0 1.0](LICENSE). Listed projects keep their own licenses. Goose is a project of its own authors; this index is not affiliated with it.
 
-<sub>Generated 2026-11-12T13:48:23Z.</sub>
+<sub>Generated 2026-11-13T13:10:21Z.</sub>
