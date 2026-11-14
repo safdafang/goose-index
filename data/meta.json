@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-13T13:10:21Z",
+ "fetched_at": "2026-11-14T12:14:24Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,11 +22,11 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3482,
+   "stars": 3519,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-13T07:35:23Z",
+   "last_commit": "2026-11-13T08:02:17Z",
    "latest_tag_commit": "6c1fbc788f6eb1f17db4cab998353d7540ed825d"
   },
   "aardappel-goose-gfx": {
@@ -36,11 +36,11 @@
    "latest_tag": "v1",
    "tag_count": 1,
    "created": "2026-10-11T04:29:32Z",
-   "stars": 10,
+   "stars": 11,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-06T22:47:13Z",
+   "last_commit": "2026-11-13T23:51:19Z",
    "latest_tag_commit": "6cfa3dec2ef2a6cb19ee71548b38151094e947bd"
   },
   "aardappel-goose-physics": {
@@ -50,7 +50,7 @@
    "latest_tag": "v1",
    "tag_count": 1,
    "created": "2026-10-11T04:30:55Z",
-   "stars": 7,
+   "stars": 8,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
@@ -95,7 +95,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": null,
-   "last_commit": "2026-11-11T20:33:50Z"
+   "last_commit": "2026-11-13T20:31:56Z"
   },
   "aguspiza-raytracing-goose": {
    "exists": true,
@@ -177,7 +177,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Gust: a memory-safe systems language with no heap allocator, GC or lifetime annotations. A fork of Goose aiming to beat Rust: Rust-grade safety, Goose-grade speed.",
-   "last_commit": "2026-11-04T00:05:15Z"
+   "last_commit": "2026-11-13T19:58:58Z"
   },
   "arjaythedev-multicore-server-challenge": {
    "exists": true,
@@ -186,7 +186,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-14T13:35:09Z",
-   "stars": 83,
+   "stars": 88,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
@@ -307,7 +307,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-20T09:44:40Z",
-   "stars": 9,
+   "stars": 10,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Four real-world benchmarks of the Goose language against common and expert C/C++/Rust implementations: Ninja build-graph load, JSON tree, YAML tree, a jq core. Programs, generated C, harnesses, results.",
@@ -657,7 +657,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-11-01T18:10:59Z",
-   "stars": 1,
+   "stars": 2,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
@@ -878,7 +878,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": " Graphics for Goose programs on NoGraphicsAPI (Metal 4 / Vulkan 1.4), with Slang shaders and four ported samples.",
-   "last_commit": "2026-11-12T21:28:00Z",
+   "last_commit": "2026-11-13T15:06:39Z",
    "latest_tag_commit": "e952736b7f48ebfb5f88a577123573664c8a73a4"
   },
   "kaitk-goose-postgres": {
@@ -934,7 +934,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "A REST framework for Goose, on goose-http: Actix-style scopes, extractors and middleware, with an OpenAPI 3.1 generator. Takes its time, not yours. Mascot: Ari, a banana slug (genus Ariolimax).",
-   "last_commit": "2026-11-12T20:44:01Z",
+   "last_commit": "2026-11-14T10:59:48Z",
    "latest_tag_commit": "0db1a1df32a025e65159b27f300348284efa61ab"
   },
   "kmehltretter82-gdtc": {
@@ -1247,21 +1247,21 @@
    "archived": false,
    "license": "GPL-2.0",
    "upstream_description": "Goose 言語で CPU・メモリ・周辺機器・描画を実装した、Windows 向けの Sharp X68000 エミュレータです。Win32 GUI と、stdio 経由で外部ツールから操作する ARCL MCP に対応します。",
-   "last_commit": "2026-11-13T11:37:07Z"
+   "last_commit": "2026-11-14T02:24:11Z"
   },
   "mas-bandwidth-schema": {
    "exists": true,
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
-   "latest_tag": "main-fd0f25e073ed",
-   "tag_count": 735,
+   "latest_tag": "main-69e1b5322dec",
+   "tag_count": 736,
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
-   "last_commit": "2026-11-11T20:06:53Z",
-   "latest_tag_commit": "fd0f25e073edb43445657250cb3e82570865b198"
+   "last_commit": "2026-11-13T18:03:33Z",
+   "latest_tag_commit": "69e1b5322decc02f31f86df5e8b0c11d94e8dab0"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
@@ -1396,7 +1396,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "okay's algebraic effects for Goose: effects in types (A ! F + G), handlers, resumable fns (stackless, their rest a flat value), okay's wire to other languages — the front end written in Goose",
-   "last_commit": "2026-10-28T11:19:41Z"
+   "last_commit": "2026-11-13T17:42:29Z"
   },
   "paulosuzart-gooseneck": {
    "exists": true,
@@ -1526,7 +1526,7 @@
    "archived": false,
    "license": "MPL-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-13T02:52:09Z"
+   "last_commit": "2026-11-14T04:56:28Z"
   },
   "scottc-goose-roc": {
    "exists": true,
@@ -1539,7 +1539,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Goose lang as a host implementation for a roc platform.",
-   "last_commit": "2026-11-11T07:37:34Z"
+   "last_commit": "2026-11-14T11:47:49Z"
   },
   "shetautnetjer-goose-lsp": {
    "exists": true,
@@ -1633,7 +1633,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose Library",
-   "last_commit": "2026-11-12T23:56:25Z"
+   "last_commit": "2026-11-14T08:07:52Z"
   },
   "sorins-httpgoose": {
    "exists": true,
@@ -1942,7 +1942,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-12T14:16:15Z"
+   "last_commit": "2026-11-14T04:56:11Z"
   },
   "yujieteo-skein": {
    "exists": false

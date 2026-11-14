@@ -147,7 +147,7 @@ _Data formats: JSON, YAML, ASN.1, binary layouts, bit packing._
 - **[serialize.goose](https://github.com/mas-bandwidth/serialize.goose)** — A bit-packing serializer for game and network messages that produces exactly the same bytes as the C and C++ serialize libraries, covering every field type they support. 🏷 v2.1.3
 - **[yamlgoose](https://github.com/SorinS/yamlgoose)** — A YAML 1.2 reader and writer ported from Go's yaml.v3 (and its libyaml core), accepting and rejecting exactly what yaml.v3 does; the API mirrors the standard json module. ⚠️ no license · ✅ ✅ ✅
   `import yaml from "github.com/SorinS/yamlgoose@main";`
-- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 50 · 🏷 main-fd0f25e073ed
+- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 50 · 🏷 main-69e1b5322dec
 - **[greylag](https://github.com/bearing-research/greylag)** — An early XML parser written in Goose and exported to C through integer handles, compared against libxml2 and expat. ⚠️ no license · ✅ ✅ ✅
 - **[ideatoapp](https://github.com/mg3994/ideatoapp)** — An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript. **repository unavailable**
 
@@ -193,9 +193,9 @@ _Rendering, windowing, game libraries and their bindings, procedural noise._
   `import gfx2d from "github.com/binji/goose_gfx2d@main";`
 - **[goose-raylib](https://github.com/flakesonnix/goose-raylib)** _binding_ — Builds raylib 6.2 from source with CMake and exposes a growing subset, focused on 3D cameras, meshes, models and render textures, through a C adapter. Nix flake included. ★ 1 · ✅ ✅ ✅
   `import raylib from "github.com/flakesonnix/goose-raylib@main";`
-- **[goose_gfx](https://github.com/aardappel/goose_gfx)** _binding_ — The official graphics package: windows, input and SDL3 GPU pipelines in gfx, procedural sound in audio, and Nuklear immediate-mode widgets in ui. Prebuilt Goose releases include it. ★ 10 · 🏷 v1 · ✅ ✅ ✅
+- **[goose_gfx](https://github.com/aardappel/goose_gfx)** _binding_ — The official graphics package: windows, input and SDL3 GPU pipelines in gfx, procedural sound in audio, and Nuklear immediate-mode widgets in ui. Prebuilt Goose releases include it. ★ 11 · 🏷 v1 · ✅ ✅ ✅
   `import gfx from "github.com/aardappel/goose_gfx@v1";`
-- **[goose_physics](https://github.com/aardappel/goose_physics)** _binding_ — The official physics package, a layer over Box3D for rigid bodies, joints, shape queries and a character controller, with recording and replay. ★ 7 · 🏷 v1 · ✅ ✅ ✅
+- **[goose_physics](https://github.com/aardappel/goose_physics)** _binding_ — The official physics package, a layer over Box3D for rigid bodies, joints, shape queries and a character controller, with recording and replay. ★ 8 · 🏷 v1 · ✅ ✅ ✅
   `import physics from "github.com/aardappel/goose_physics@v1";`
 - **[raygoose](https://github.com/lamweilun/raygoose)** _binding_ — raylib bindings generated from raylib's headers, with raylib built from a pinned submodule by CMake so its platform link settings come along; the binding raylib's own list points to. ★ 2 · 🏷 v0.1.1 · ✅ ✅ ✅
   `import raylib from "github.com/lamweilun/raygoose@v0.1.1";`
@@ -256,7 +256,7 @@ _Libraries for one field that fits no other category: finance, blockchains, tele
   `import hyperliquid from "github.com/Macho0x/goose-hyperliquid@v0.3.0";`
 - **[goose-signature](https://github.com/Macho0x/goose-signature)** — Message and typed-data signing for Ethereum, Bitcoin and Solana built on goose-crypto; it expects goose-crypto checked out beside it. 🏷 v0.3 · ❌ ❌ ❌
   `import signature from "github.com/Macho0x/goose-signature@v0.3";`
-- **[phonelib](https://github.com/goose-pond/phonelib)** — Parses, validates and normalizes phone numbers to E.164 using numbering-plan data compiled into the program, so nothing is downloaded or deployed at run time. ★ 1 · ✅ ✅ ✅
+- **[phonelib](https://github.com/goose-pond/phonelib)** — Parses, validates and normalizes phone numbers to E.164 using numbering-plan data compiled into the program, so nothing is downloaded or deployed at run time. ★ 2 · ✅ ✅ ✅
   `import phonelib from "github.com/goose-pond/phonelib@main";`
 
 ## Build and package management
@@ -307,7 +307,7 @@ _Editor plugins, syntax grammars, LSP clients._
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
 - **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 7 · 🏷 v0.1.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3482 · 🏷 v2026.4
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3519 · 🏷 v2026.4
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
 - **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
@@ -364,10 +364,10 @@ _Performance comparisons of Goose against other languages._
 - **[goose-poc](https://github.com/ks250206/goose-poc)** — A proof of concept computing crystal structure factors from CIF files on a worker pool, timed against Rust, plain Python and NumPy versions of the same direct sum. ⚠️ no license · ✅ ✅ ✅
 - **[Goose_feedguard](https://github.com/cyberskat/Goose_feedguard)** — A Windows prototype that records exchange order-book data and compares order-book engines written in C++ and in Goose on the same recorded messages. ⚠️ no license
 - **[symidx](https://github.com/artsensiva/symidx)** — A symbol index for Python code bases built three ways to compare Goose with Rust on save and near-instant load of a binary image. ★ 1 · 🏷 v1.2.1 · ✅ ✅ 🟡
-- **[goose-evaluations](https://github.com/calpeyser/goose-evaluations)** _learning_ — Four parsing workloads (a Ninja build graph, JSON, YAML and a jq core) written in Goose and measured against common and best-in-class C, C++ and Rust programs, with the generated C and harnesses included. ★ 9
+- **[goose-evaluations](https://github.com/calpeyser/goose-evaluations)** _learning_ — Four parsing workloads (a Ninja build graph, JSON, YAML and a jq core) written in Goose and measured against common and best-in-class C, C++ and Rust programs, with the generated C and harnesses included. ★ 10
 - **[goose-lab](https://github.com/inuverse44/goose-lab)** _learning_ — Small experiments and two benchmarks against idiomatic Rust (order parsing and totals, a lattice heat simulation), with written notes on the language and the results.
 - **[LangArena](https://github.com/kostya/LangArena)** _learning_ — A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page. ★ 61 · 🏷 2026-11-04
-- **[Multicore Server Challenge](https://github.com/arjaythedev/multicore-server-challenge)** _learning_ — A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers. ★ 83
+- **[Multicore Server Challenge](https://github.com/arjaythedev/multicore-server-challenge)** _learning_ — A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers. ★ 88
 
 ## Learning
 
@@ -398,4 +398,4 @@ Adding a project is one file, `packages/<id>.toml`, in a pull request: see [CONT
 
 The code here (`scripts/`, `web/`, `.github/`) is [MIT](LICENSE); the entry data and descriptions (`packages/`, `data/`, this README and `index.json`) are [CC0 1.0](LICENSE). Listed projects keep their own licenses. Goose is a project of its own authors; this index is not affiliated with it.
 
-<sub>Generated 2026-11-13T13:10:21Z.</sub>
+<sub>Generated 2026-11-14T12:14:24Z.</sub>
