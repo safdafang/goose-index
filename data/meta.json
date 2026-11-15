@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-14T12:14:24Z",
+ "fetched_at": "2026-11-15T12:46:47Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,11 +22,11 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3519,
+   "stars": 3551,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-13T08:02:17Z",
+   "last_commit": "2026-11-14T19:03:56Z",
    "latest_tag_commit": "6c1fbc788f6eb1f17db4cab998353d7540ed825d"
   },
   "aardappel-goose-gfx": {
@@ -64,7 +64,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-28T04:20:45Z",
-   "stars": 2,
+   "stars": 3,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
@@ -186,7 +186,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-14T13:35:09Z",
-   "stars": 88,
+   "stars": 89,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
@@ -265,13 +265,13 @@
    "repo_id": "R_kgDOVeTM-g",
    "default_branch": "main",
    "latest_tag": "v1.26",
-   "tag_count": 1,
+   "tag_count": 3,
    "created": "2026-10-31T16:45:40Z",
    "stars": 1,
    "archived": false,
    "license": "other",
    "upstream_description": "libdeflate (DEFLATE, zlib, gzip, CRC-32, Adler-32) for the Goose language",
-   "last_commit": "2026-10-31T17:03:49Z",
+   "last_commit": "2026-11-14T20:14:47Z",
    "latest_tag_commit": "91eb299d974968acc969788cd9bd577b3a07105c"
   },
   "binji-goose": {
@@ -822,7 +822,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "ACME for Goose: certificates from Let's Encrypt through TLS-ALPN-01, cached as rustls-acme caches them",
-   "last_commit": "2026-11-03T11:53:57Z",
+   "last_commit": "2026-11-14T17:17:49Z",
    "latest_tag_commit": "504b9354f7f5bf847ac75c6e1f6de47d737138eb"
   },
   "kaitk-goose-compress": {
@@ -836,7 +836,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Experimental gzip and deflate compression in Goose",
-   "last_commit": "2026-10-27T08:13:44Z",
+   "last_commit": "2026-11-14T17:12:19Z",
    "latest_tag_commit": "6f0c17ac4ceeca930cc7cd9c6b5d9293c8b09f50"
   },
   "kaitk-goose-hash": {
@@ -850,22 +850,22 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "SHA-1, SHA-256, HMAC, and PBKDF2 in Goose",
-   "last_commit": "2026-10-27T08:13:48Z",
+   "last_commit": "2026-11-14T17:12:20Z",
    "latest_tag_commit": "ab31df5c62681a76673ae69cb28a2b6f95ba4422"
   },
   "kaitk-goose-http": {
    "exists": true,
    "repo_id": "R_kgDOVD0QHw",
    "default_branch": "main",
-   "latest_tag": "v0.5.19",
-   "tag_count": 38,
+   "latest_tag": "v0.5.20",
+   "tag_count": 39,
    "created": "2026-10-10T14:28:54Z",
-   "stars": 21,
+   "stars": 22,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "An experimental HTTP/1.1 server in Goose",
-   "last_commit": "2026-11-12T19:18:53Z",
-   "latest_tag_commit": "75ac94fbd159709b2eb56c7d66f4faf946777759"
+   "last_commit": "2026-11-14T17:12:32Z",
+   "latest_tag_commit": "84e41383011e2e5d4ab2c141a68538fce67a2083"
   },
   "kaitk-goose-ngfx": {
    "exists": true,
@@ -920,22 +920,22 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "TLS for Goose over OpenSSL 3: server, client, kTLS, and the hooks ACME needs",
-   "last_commit": "2026-10-28T09:25:43Z",
+   "last_commit": "2026-11-14T17:12:26Z",
    "latest_tag_commit": "b7cc745a3f2eb782c18698a082a1526526cc19fb"
   },
   "kaitk-plod": {
    "exists": true,
    "repo_id": "R_kgDOVHsOIw",
    "default_branch": "main",
-   "latest_tag": "v0.5.12",
-   "tag_count": 25,
+   "latest_tag": "v0.5.13",
+   "tag_count": 26,
    "created": "2026-10-13T15:28:33Z",
    "stars": 21,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "A REST framework for Goose, on goose-http: Actix-style scopes, extractors and middleware, with an OpenAPI 3.1 generator. Takes its time, not yours. Mascot: Ari, a banana slug (genus Ariolimax).",
-   "last_commit": "2026-11-14T10:59:48Z",
-   "latest_tag_commit": "0db1a1df32a025e65159b27f300348284efa61ab"
+   "last_commit": "2026-11-14T20:59:39Z",
+   "latest_tag_commit": "c906d1551af49c2918d878005aaa19158a8bb5b3"
   },
   "kmehltretter82-gdtc": {
    "exists": true,
@@ -986,8 +986,8 @@
    "stars": 1,
    "archived": false,
    "license": "MIT",
-   "upstream_description": null,
-   "last_commit": "2026-11-02T18:16:02Z"
+   "upstream_description": "Typed, self-documenting web servers for the Goose programming language.",
+   "last_commit": "2026-11-14T12:53:59Z"
   },
   "kostya-langarena": {
    "exists": true,
@@ -1103,7 +1103,7 @@
    "latest_tag": "v0.18.1",
    "tag_count": 10,
    "created": "2026-10-27T07:37:26Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Hashes, public-key cryptography, and transaction signing in Goose.",
@@ -1247,21 +1247,21 @@
    "archived": false,
    "license": "GPL-2.0",
    "upstream_description": "Goose 言語で CPU・メモリ・周辺機器・描画を実装した、Windows 向けの Sharp X68000 エミュレータです。Win32 GUI と、stdio 経由で外部ツールから操作する ARCL MCP に対応します。",
-   "last_commit": "2026-11-14T02:24:11Z"
+   "last_commit": "2026-11-15T11:17:46Z"
   },
   "mas-bandwidth-schema": {
    "exists": true,
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
-   "latest_tag": "main-69e1b5322dec",
-   "tag_count": 736,
+   "latest_tag": "main-ff26446207dc",
+   "tag_count": 1041,
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
-   "last_commit": "2026-11-13T18:03:33Z",
-   "latest_tag_commit": "69e1b5322decc02f31f86df5e8b0c11d94e8dab0"
+   "last_commit": "2026-11-15T02:53:40Z",
+   "latest_tag_commit": "ff26446207dcf49cc235366665783e46507c786c"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
@@ -1288,7 +1288,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-11T19:17:37Z"
+   "last_commit": "2026-11-15T10:52:19Z"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1526,7 +1526,7 @@
    "archived": false,
    "license": "MPL-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-14T04:56:28Z"
+   "last_commit": "2026-11-15T04:54:34Z"
   },
   "scottc-goose-roc": {
    "exists": true,
@@ -1539,7 +1539,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Goose lang as a host implementation for a roc platform.",
-   "last_commit": "2026-11-14T11:47:49Z"
+   "last_commit": "2026-11-14T12:37:05Z"
   },
   "shetautnetjer-goose-lsp": {
    "exists": true,
@@ -1587,14 +1587,15 @@
    "exists": true,
    "repo_id": "R_kgDOVXPhPg",
    "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "baseline-2026-11-14",
+   "tag_count": 1,
    "created": "2026-10-25T21:55:46Z",
    "stars": 0,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-07T20:14:43Z"
+   "last_commit": "2026-11-14T22:27:58Z",
+   "latest_tag_commit": "65051272b79d3da6652b1b0ab7a1f53171b1d385"
   },
   "sorins-asn1goose": {
    "exists": true,
@@ -1633,7 +1634,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose Library",
-   "last_commit": "2026-11-14T08:07:52Z"
+   "last_commit": "2026-11-15T12:26:33Z"
   },
   "sorins-httpgoose": {
    "exists": true,
@@ -1724,7 +1725,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Markdown API references for Goose libraries",
-   "last_commit": "2026-11-13T09:11:30Z",
+   "last_commit": "2026-11-14T12:19:21Z",
    "latest_tag_commit": "bb399143866c0c42268f23c8dfda7a447173f93d",
    "canonical_repo": "https://github.com/sstadick/goose-doc"
   },
@@ -1739,7 +1740,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Placeholder Goose SIMD package for testing proposed c_headers support; implementation will be replaced.",
-   "last_commit": "2026-11-13T09:18:13Z",
+   "last_commit": "2026-11-14T12:26:31Z",
    "latest_tag_commit": "ec7cbc80e5af2af8266a3facb03144bc1c83721a",
    "canonical_repo": "https://github.com/sstadick/goose-simd"
   },
@@ -1754,7 +1755,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Synchronous file I/O, buffered readers and writers, and borrowed lines for Goose",
-   "last_commit": "2026-11-13T09:51:15Z",
+   "last_commit": "2026-11-14T13:02:59Z",
    "latest_tag_commit": "c3554678191cd3e1ff04d2c5207ddd526f3535fe",
    "canonical_repo": "https://github.com/sstadick/goose-io"
   },
@@ -1769,7 +1770,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Experimental struct-derived CLI options for Goose",
-   "last_commit": "2026-11-13T09:45:28Z",
+   "last_commit": "2026-11-14T12:56:08Z",
    "latest_tag_commit": "e2149c4d924caf515a4db18882d75b49b99ffb1a",
    "canonical_repo": "https://github.com/sstadick/goose-opts"
   },
@@ -1784,7 +1785,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-13T09:33:02Z",
+   "last_commit": "2026-11-14T12:37:09Z",
    "latest_tag_commit": "436c8a950ca6c0b3bc59d3b195881100c7bc99de",
    "canonical_repo": "https://github.com/sstadick/goose-bstr"
   },
@@ -1942,7 +1943,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-14T04:56:11Z"
+   "last_commit": "2026-11-15T08:03:02Z"
   },
   "yujieteo-skein": {
    "exists": false
