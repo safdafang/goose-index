@@ -2,12 +2,12 @@
  "$schema": "https://safdafang.github.io/goose-index/schema/index.schema.json",
  "format": "goose-index",
  "version": 1,
- "generated_at": "2026-11-15T12:46:47Z",
- "meta_fetched_at": "2026-11-15T12:46:47Z",
+ "generated_at": "2026-11-16T12:06:44Z",
+ "meta_fetched_at": "2026-11-16T12:06:44Z",
  "compat": {
   "goose": "v2026.4",
-  "ran_at": "2026-11-09T12:10:31Z",
-  "run_url": "https://github.com/safdafang/goose-index/actions/runs/42614245212"
+  "ran_at": "2026-11-16T12:06:01Z",
+  "run_url": "https://github.com/safdafang/goose-index/actions/runs/43862907256"
  },
  "site": "https://safdafang.github.io/goose-index/",
  "source": "https://github.com/safdafang/goose-index",
@@ -190,17 +190,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.0.5",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.0.5",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:58Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.0.5",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     }
    },
    "requires": [
@@ -275,18 +281,24 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.5.18",
-     "stage": "build"
+     "ref": "v0.5.20",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:29Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.5.18",
-     "stage": "build"
+     "ref": "v0.5.20",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:00Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "v0.5.18",
-     "stage": "build"
+     "ref": "v0.5.20",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:19Z"
     }
    },
    "requires": [],
@@ -347,17 +359,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.6.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.6.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:56Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.6.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:26Z"
     }
    },
    "requires": [],
@@ -417,15 +435,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet"
+     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:17Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet"
+     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:08Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet"
+     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:20Z"
     }
    },
    "requires": [],
@@ -457,13 +481,13 @@
    "page": "https://safdafang.github.io/goose-index/p/sorins-httpgoose/",
    "available": true,
    "archived": false,
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.7.0",
+   "tag_count": 1,
    "default_branch": "main",
-   "last_commit": "2026-10-31T09:37:15Z",
+   "last_commit": "2026-11-15T20:17:27Z",
    "created": "2026-10-29T16:07:34Z",
    "stars": 0,
-   "license": "none",
+   "license": "Apache-2.0",
    "license_source": "github",
    "platforms": [],
    "native": {
@@ -480,28 +504,59 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:58Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:09Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:59Z"
     }
    },
-   "requires": [],
+   "requires": [
+    {
+     "name": "asn1",
+     "source": "SorinS/asn1goose@v0.7.0"
+    },
+    {
+     "name": "bignum",
+     "source": "SorinS/bigmongoose@v0.7.0"
+    },
+    {
+     "name": "net",
+     "source": "SorinS/netgoose@v0.7.0"
+    },
+    {
+     "name": "ntlm",
+     "source": "SorinS/ntlmgoose@v0.7.0"
+    },
+    {
+     "name": "tls",
+     "source": "SorinS/tlsgoose@v0.7.0"
+    },
+    {
+     "name": "x509",
+     "source": "SorinS/x509goose@v0.7.0"
+    }
+   ],
    "import": {
     "name": "http",
     "source": "github.com/SorinS/httpgoose",
-    "ref": "main",
-    "pinned": false,
-    "commit": null,
-    "line": "import http from \"github.com/SorinS/httpgoose@main\";",
+    "ref": "v0.7.0",
+    "pinned": true,
+    "commit": "c4b864fd8fc355495f62ca806860b21e896b8a8b",
+    "line": "import http from \"github.com/SorinS/httpgoose@v0.7.0\";",
     "modules": [],
     "subdir": null
    }
@@ -523,13 +578,13 @@
    "page": "https://safdafang.github.io/goose-index/p/sorins-ldapgoose/",
    "available": true,
    "archived": false,
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.7.0",
+   "tag_count": 1,
    "default_branch": "main",
-   "last_commit": "2026-10-27T15:02:48Z",
+   "last_commit": "2026-11-15T20:19:53Z",
    "created": "2026-10-27T15:01:58Z",
    "stars": 0,
-   "license": "none",
+   "license": "Apache-2.0",
    "license_source": "github",
    "platforms": [],
    "native": {
@@ -545,41 +600,44 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/ldapgoose/asn1goose.git is not a directory (github.com/SorinS/ldapgoose/asn1goose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:36Z"
     },
     "macos": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../../../../../../../..github.com/SorinS/ldapgoose/asn1goose.git is not a directory (/private/..github.com/SorinS/ldapgoose/asn1goose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:29Z"
     },
     "windows": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/ldapgoose/asn1goose.git is not a directory (github.com/SorinS/ldapgoose/asn1goose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:35Z"
     }
    },
    "requires": [
     {
      "name": "asn1",
-     "source": "../home/pkg/github.com/SorinS/ldapgoose/asn1goose.git"
+     "source": "SorinS/asn1goose@v0.7.0"
     },
     {
      "name": "bignum",
-     "source": "../home/pkg/github.com/SorinS/ldapgoose/bigmongoose.git"
+     "source": "SorinS/bigmongoose@v0.7.0"
     }
    ],
    "import": {
     "name": "ldap",
     "source": "github.com/SorinS/ldapgoose",
-    "ref": "main",
-    "pinned": false,
-    "commit": null,
-    "line": "import ldap from \"github.com/SorinS/ldapgoose@main\";",
+    "ref": "v0.7.0",
+    "pinned": true,
+    "commit": "865a37fe622f64159c4c8702828360d32cb663c6",
+    "line": "import ldap from \"github.com/SorinS/ldapgoose@v0.7.0\";",
     "modules": [],
     "subdir": null
    }
@@ -635,17 +693,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.2.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:26Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.2.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:55Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.2.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:11Z"
     }
    },
    "requires": [],
@@ -711,24 +775,30 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.5.11",
-     "stage": "build"
+     "ref": "v0.5.13",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:32Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.5.11",
-     "stage": "build"
+     "ref": "v0.5.13",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:05Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "v0.5.11",
-     "stage": "build"
+     "ref": "v0.5.13",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:25Z"
     }
    },
    "requires": [
     {
      "name": "http",
-     "source": "github.com/kaitk/goose-http@v0.5.16"
+     "source": "github.com/kaitk/goose-http@v0.5.20"
     }
    ],
    "import": {
@@ -759,13 +829,13 @@
    "page": "https://safdafang.github.io/goose-index/p/sorins-bigmongoose/",
    "available": true,
    "archived": false,
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.7.0",
+   "tag_count": 1,
    "default_branch": "main",
-   "last_commit": "2026-10-30T06:13:36Z",
+   "last_commit": "2026-11-15T20:12:19Z",
    "created": "2026-10-25T22:09:24Z",
    "stars": 0,
-   "license": "none",
+   "license": "Apache-2.0",
    "license_source": "github",
    "platforms": [
     "linux",
@@ -785,28 +855,34 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:54Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:03Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:45Z"
     }
    },
    "requires": [],
    "import": {
     "name": "bignum",
     "source": "github.com/SorinS/bigmongoose",
-    "ref": "main",
-    "pinned": false,
-    "commit": null,
-    "line": "import bignum from \"github.com/SorinS/bigmongoose@main\";",
+    "ref": "v0.7.0",
+    "pinned": true,
+    "commit": "31b7353cdb0a69c5c672c755f2c13fa11cd956fa",
+    "line": "import bignum from \"github.com/SorinS/bigmongoose@v0.7.0\";",
     "modules": [],
     "subdir": null
    }
@@ -852,17 +928,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.18.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:25Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.18.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:15Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.18.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:54Z"
     }
    },
    "requires": [],
@@ -923,17 +1005,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.0.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:19Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.0.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:08Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.0.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:42Z"
     }
    },
    "requires": [],
@@ -989,17 +1077,23 @@
     "linux": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:12Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:57Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:59Z"
     }
    },
    "requires": [],
@@ -1035,10 +1129,10 @@
    "page": "https://safdafang.github.io/goose-index/p/sorins-gslib/",
    "available": true,
    "archived": false,
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.7.0",
+   "tag_count": 1,
    "default_branch": "main",
-   "last_commit": "2026-11-15T12:26:33Z",
+   "last_commit": "2026-11-16T07:22:00Z",
    "created": "2026-10-31T10:47:22Z",
    "stars": 3,
    "license": "Apache-2.0",
@@ -1061,28 +1155,34 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:55Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:05Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:51Z"
     }
    },
    "requires": [],
    "import": {
     "name": "gslib",
     "source": "github.com/SorinS/gslib",
-    "ref": "main",
-    "pinned": false,
-    "commit": null,
-    "line": "import gslib from \"github.com/SorinS/gslib@main\";",
+    "ref": "v0.7.0",
+    "pinned": true,
+    "commit": "dd0567a0a38714418266075cb419d29e6587235c",
+    "line": "import gslib from \"github.com/SorinS/gslib@v0.7.0\";",
     "modules": [],
     "subdir": null
    }
@@ -1104,13 +1204,13 @@
    "page": "https://safdafang.github.io/goose-index/p/sorins-sshgoose/",
    "available": true,
    "archived": false,
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.7.0",
+   "tag_count": 1,
    "default_branch": "main",
-   "last_commit": "2026-10-30T13:49:10Z",
+   "last_commit": "2026-11-15T20:21:19Z",
    "created": "2026-10-27T09:08:22Z",
    "stars": 0,
-   "license": "none",
+   "license": "Apache-2.0",
    "license_source": "github",
    "platforms": [],
    "native": {
@@ -1126,45 +1226,48 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (github.com/SorinS/sshgoose/bigmongoose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:58Z"
     },
     "macos": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../../../../../../../..github.com/SorinS/sshgoose/bigmongoose.git is not a directory (/private/..github.com/SorinS/sshgoose/bigmongoose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:11Z"
     },
     "windows": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/sshgoose/bigmongoose.git is not a directory (github.com/SorinS/sshgoose/bigmongoose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:01Z"
     }
    },
    "requires": [
     {
      "name": "asn1",
-     "source": "../../../../../../../..github.com/SorinS/sshgoose/asn1goose.git"
+     "source": "SorinS/asn1goose@v0.7.0"
     },
     {
      "name": "bignum",
-     "source": "../../../../../../../..github.com/SorinS/sshgoose/bigmongoose.git"
+     "source": "SorinS/bigmongoose@v0.7.0"
     },
     {
      "name": "x509",
-     "source": "../../../../../../../..github.com/SorinS/sshgoose/x509goose.git"
+     "source": "SorinS/x509goose@v0.7.0"
     }
    ],
    "import": {
     "name": "ssh",
     "source": "github.com/SorinS/sshgoose",
-    "ref": "main",
-    "pinned": false,
-    "commit": null,
-    "line": "import ssh from \"github.com/SorinS/sshgoose@main\";",
+    "ref": "v0.7.0",
+    "pinned": true,
+    "commit": "f5eaba38a9c498dfa3e85f4bf8cf1cd20ea1fabe",
+    "line": "import ssh from \"github.com/SorinS/sshgoose@v0.7.0\";",
     "modules": [],
     "subdir": null
    }
@@ -1187,13 +1290,13 @@
    "page": "https://safdafang.github.io/goose-index/p/sorins-tlsgoose/",
    "available": true,
    "archived": false,
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.7.0",
+   "tag_count": 1,
    "default_branch": "main",
-   "last_commit": "2026-10-30T06:24:18Z",
+   "last_commit": "2026-11-15T20:23:20Z",
    "created": "2026-10-26T19:25:07Z",
    "stars": 0,
-   "license": "none",
+   "license": "Apache-2.0",
    "license_source": "github",
    "platforms": [],
    "native": {
@@ -1209,45 +1312,48 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (github.com/SorinS/tlsgoose/bigmongoose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:37Z"
     },
     "macos": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../../../../../../../..github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (/private/..github.com/SorinS/tlsgoose/bigmongoose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:31Z"
     },
     "windows": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package bignum's source ../home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git is not a directory (github.com/SorinS/tlsgoose/bigmongoose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:38Z"
     }
    },
    "requires": [
     {
      "name": "asn1",
-     "source": "../home/pkg/github.com/SorinS/tlsgoose/asn1goose.git"
+     "source": "SorinS/asn1goose@v0.7.0"
     },
     {
      "name": "bignum",
-     "source": "../home/pkg/github.com/SorinS/tlsgoose/bigmongoose.git"
+     "source": "SorinS/bigmongoose@v0.7.0"
     },
     {
      "name": "x509",
-     "source": "../home/pkg/github.com/SorinS/tlsgoose/x509goose.git"
+     "source": "SorinS/x509goose@v0.7.0"
     }
    ],
    "import": {
     "name": "tls",
     "source": "github.com/SorinS/tlsgoose",
-    "ref": "main",
-    "pinned": false,
-    "commit": null,
-    "line": "import tls from \"github.com/SorinS/tlsgoose@main\";",
+    "ref": "v0.7.0",
+    "pinned": true,
+    "commit": "71cbd17582e091ec9a2c6c778504f4ddbaadcfdf",
+    "line": "import tls from \"github.com/SorinS/tlsgoose@v0.7.0\";",
     "modules": [],
     "subdir": null
    }
@@ -1269,13 +1375,13 @@
    "page": "https://safdafang.github.io/goose-index/p/sorins-x509goose/",
    "available": true,
    "archived": false,
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.7.0",
+   "tag_count": 1,
    "default_branch": "main",
-   "last_commit": "2026-10-30T06:13:36Z",
+   "last_commit": "2026-11-15T20:25:07Z",
    "created": "2026-10-26T19:26:44Z",
    "stars": 0,
-   "license": "none",
+   "license": "Apache-2.0",
    "license_source": "github",
    "platforms": [],
    "native": {
@@ -1291,41 +1397,44 @@
    "upstream_fork": null,
    "compat": {
     "linux": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (github.com/SorinS/x509goose/asn1goose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:41Z"
     },
     "macos": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../../../../../../../..github.com/SorinS/x509goose/asn1goose.git is not a directory (/private/..github.com/SorinS/x509goose/asn1goose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:37Z"
     },
     "windows": {
-     "status": "fail",
-     "ref": "main",
-     "stage": "check",
-     "detail": "probe.goose:2: error: the package asn1's source ../home/pkg/github.com/SorinS/x509goose/asn1goose.git is not a directory (github.com/SorinS/x509goose/asn1goose.git/)"
+     "status": "pass",
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:13Z"
     }
    },
    "requires": [
     {
      "name": "asn1",
-     "source": "../../../../../../../..github.com/SorinS/x509goose/asn1goose.git"
+     "source": "SorinS/asn1goose@v0.7.0"
     },
     {
      "name": "bignum",
-     "source": "../../../../../../../..github.com/SorinS/x509goose/bigmongoose.git"
+     "source": "SorinS/bigmongoose@v0.7.0"
     }
    ],
    "import": {
     "name": "x509",
     "source": "github.com/SorinS/x509goose",
-    "ref": "main",
-    "pinned": false,
-    "commit": null,
-    "line": "import x509 from \"github.com/SorinS/x509goose@main\";",
+    "ref": "v0.7.0",
+    "pinned": true,
+    "commit": "7574054a130f9ab12d234b109458ccffc310dc68",
+    "line": "import x509 from \"github.com/SorinS/x509goose@v0.7.0\";",
     "modules": [],
     "subdir": null
    }
@@ -1381,17 +1490,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.0.6",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:30Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.0.6",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:03Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.0.6",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:22Z"
     }
    },
    "requires": [],
@@ -1449,17 +1564,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.0.10",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:29Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.0.10",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:01Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.0.10",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:20Z"
     }
    },
    "requires": [
@@ -1521,18 +1642,24 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.0.3",
-     "stage": "build"
+     "ref": "v0.0.4",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:30Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.0.3",
-     "stage": "build"
+     "ref": "v0.0.4",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:03Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "v0.0.3",
-     "stage": "build"
+     "ref": "v0.0.4",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:22Z"
     }
    },
    "requires": [],
@@ -1587,17 +1714,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.1.2",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:51Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.1.2",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:30Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.1.2",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:57Z"
     }
    },
    "requires": [],
@@ -1659,17 +1792,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.1.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.1.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:04Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.1.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:12Z"
     }
    },
    "requires": [],
@@ -1725,17 +1864,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.2.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:47Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.2.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:24Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.2.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:47Z"
     }
    },
    "requires": [],
@@ -1792,17 +1937,23 @@
     "linux": {
      "status": "pass",
      "ref": "v3",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v3",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:57Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v3",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:27Z"
     }
    },
    "requires": [],
@@ -1858,17 +2009,23 @@
     "linux": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:58Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:28Z"
     }
    },
    "requires": [],
@@ -1923,17 +2080,23 @@
     "linux": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:54Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:58Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:29Z"
     }
    },
    "requires": [],
@@ -1993,17 +2156,23 @@
     "linux": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:29Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:27Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:04Z"
     }
    },
    "requires": [],
@@ -2064,17 +2233,23 @@
     "linux": {
      "status": "pass",
      "ref": "v1.26",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:20Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v1.26",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:41Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v1.26",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:57Z"
     }
    },
    "requires": [],
@@ -2106,13 +2281,13 @@
    "page": "https://safdafang.github.io/goose-index/p/sorins-asn1goose/",
    "available": true,
    "archived": false,
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.7.0",
+   "tag_count": 1,
    "default_branch": "main",
-   "last_commit": "2026-10-27T18:18:45Z",
+   "last_commit": "2026-11-15T20:13:56Z",
    "created": "2026-10-26T19:20:01Z",
    "stars": 0,
-   "license": "none",
+   "license": "Apache-2.0",
    "license_source": "github",
    "platforms": [],
    "native": {
@@ -2129,28 +2304,34 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:39Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:35Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:10Z"
     }
    },
    "requires": [],
    "import": {
     "name": "asn1",
     "source": "github.com/SorinS/asn1goose",
-    "ref": "main",
-    "pinned": false,
-    "commit": null,
-    "line": "import asn1 from \"github.com/SorinS/asn1goose@main\";",
+    "ref": "v0.7.0",
+    "pinned": true,
+    "commit": "8e06d8a6c00fcecd5e98bb1999b404c8a3cf6fc4",
+    "line": "import asn1 from \"github.com/SorinS/asn1goose@v0.7.0\";",
     "modules": [],
     "subdir": null
    }
@@ -2196,17 +2377,23 @@
     "linux": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:21Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:43Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:59Z"
     }
    },
    "requires": [],
@@ -2261,17 +2448,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.2.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:27Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.2.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:18Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.2.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:59Z"
     }
    },
    "requires": [],
@@ -2326,17 +2519,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.2",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.2",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:19Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.2",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:00Z"
     }
    },
    "requires": [],
@@ -2391,17 +2590,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:18Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:10Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:23Z"
     }
    },
    "requires": [],
@@ -2456,15 +2661,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet"
+     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:48Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet"
+     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:25Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet"
+     "reason": "the package lives in a subdirectory, which Goose cannot import by URL yet",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:49Z"
     }
    },
    "requires": [],
@@ -2495,13 +2706,13 @@
    "page": "https://safdafang.github.io/goose-index/p/sorins-yamlgoose/",
    "available": true,
    "archived": false,
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.7.0",
+   "tag_count": 1,
    "default_branch": "main",
-   "last_commit": "2026-10-27T22:31:41Z",
+   "last_commit": "2026-11-15T20:25:46Z",
    "created": "2026-10-28T10:06:45Z",
    "stars": 0,
-   "license": "none",
+   "license": "Apache-2.0",
    "license_source": "github",
    "platforms": [],
    "native": {
@@ -2518,28 +2729,34 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:59Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:12Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "main",
-     "stage": "build"
+     "ref": "v0.7.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:03Z"
     }
    },
    "requires": [],
    "import": {
     "name": "yaml",
     "source": "github.com/SorinS/yamlgoose",
-    "ref": "main",
-    "pinned": false,
-    "commit": null,
-    "line": "import yaml from \"github.com/SorinS/yamlgoose@main\";",
+    "ref": "v0.7.0",
+    "pinned": true,
+    "commit": "728663b3735497ab64599855edfb0a143fff3433",
+    "line": "import yaml from \"github.com/SorinS/yamlgoose@v0.7.0\";",
     "modules": [],
     "subdir": null
    }
@@ -2562,10 +2779,10 @@
    "page": "https://safdafang.github.io/goose-index/p/mas-bandwidth-schema/",
    "available": true,
    "archived": false,
-   "latest_tag": "main-ff26446207dc",
-   "tag_count": 1041,
+   "latest_tag": "main-fcfc6ba02654",
+   "tag_count": 1434,
    "default_branch": "main",
-   "last_commit": "2026-11-15T02:53:40Z",
+   "last_commit": "2026-11-16T08:08:09Z",
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "license": "other",
@@ -2585,15 +2802,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a code generator written in Go"
+     "reason": "a code generator written in Go",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:19Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a code generator written in Go"
+     "reason": "a code generator written in Go",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:11Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a code generator written in Go"
+     "reason": "a code generator written in Go",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:33Z"
     }
    },
    "requires": [],
@@ -2641,19 +2864,25 @@
      "status": "pass",
      "ref": "master",
      "stage": "build",
-     "entry": "src/parse_cli.goose"
+     "entry": "src/parse_cli.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:20Z"
     },
     "macos": {
      "status": "pass",
      "ref": "master",
      "stage": "build",
-     "entry": "src/parse_cli.goose"
+     "entry": "src/parse_cli.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:40Z"
     },
     "windows": {
      "status": "pass",
      "ref": "master",
      "stage": "build",
-     "entry": "src/parse_cli.goose"
+     "entry": "src/parse_cli.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:56Z"
     }
    },
    "requires": [],
@@ -2698,15 +2927,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:48Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:25Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:49Z"
     }
    },
    "requires": [],
@@ -2752,17 +2987,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.3.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:27Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.3.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:17Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.3.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:57Z"
     }
    },
    "requires": [],
@@ -2820,17 +3061,23 @@
     "linux": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:22Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:03Z"
     }
    },
    "requires": [],
@@ -2890,21 +3137,27 @@
    "compat": {
     "linux": {
      "status": "fail",
-     "ref": "v0.3.0",
+     "ref": "v0.3.1",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goostr at github.com/sstadick/goostr/v0.3.0/ has no goostr.goose"
+     "detail": "probe.goose:1: error: the package goostr at github.com/sstadick/goose-bstr/v0.3.1/ has no goostr.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:38Z"
     },
     "macos": {
      "status": "fail",
-     "ref": "v0.3.0",
+     "ref": "v0.3.1",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goostr at github.com/sstadick/goostr/v0.3.0/ has no goostr.goose"
+     "detail": "probe.goose:1: error: the package goostr at github.com/sstadick/goose-bstr/v0.3.1/ has no goostr.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:32Z"
     },
     "windows": {
      "status": "fail",
-     "ref": "v0.3.0",
+     "ref": "v0.3.1",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goostr at github.com/sstadick/goostr/v0.3.0/ has no goostr.goose"
+     "detail": "probe.goose:1: error: the package goostr at github.com/sstadick/goose-bstr/v0.3.1/ has no goostr.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:40Z"
     }
    },
    "requires": [],
@@ -2959,17 +3212,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.2",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:47Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.2",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:23Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.2",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:46Z"
     }
    },
    "requires": [],
@@ -3024,17 +3283,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.2.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:26Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.2.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:16Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.2.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:56Z"
     }
    },
    "requires": [],
@@ -3090,17 +3355,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:17Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:06Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:38Z"
     }
    },
    "requires": [],
@@ -3158,17 +3429,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.3.3",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:18Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.3.3",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:06Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.3.3",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:40Z"
     }
    },
    "requires": [],
@@ -3227,17 +3504,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:14Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:03Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:11Z"
     }
    },
    "requires": [],
@@ -3303,17 +3586,23 @@
     "linux": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:03Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:34Z"
     }
    },
    "requires": [],
@@ -3371,17 +3660,23 @@
     "linux": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:32Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:25Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     }
    },
    "requires": [],
@@ -3438,17 +3733,23 @@
     "linux": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:01Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:10Z"
     }
    },
    "requires": [],
@@ -3512,18 +3813,24 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.2.0",
-     "stage": "build"
+     "ref": "v0.5.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.2.0",
-     "stage": "build"
+     "ref": "v0.5.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:06Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "v0.2.0",
-     "stage": "build"
+     "ref": "v0.5.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:17Z"
     }
    },
    "requires": [],
@@ -3580,17 +3887,23 @@
     "linux": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:12Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:55Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:55Z"
     }
    },
    "requires": [],
@@ -3657,17 +3970,23 @@
     "linux": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:13Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:59Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:08Z"
     }
    },
    "requires": [],
@@ -3748,17 +4067,23 @@
     "linux": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:57Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:00Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:15Z"
     }
    },
    "requires": [],
@@ -3821,17 +4146,23 @@
     "linux": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:59Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:04Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:21Z"
     }
    },
    "requires": [],
@@ -3898,17 +4229,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.1.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:35Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.1.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:12Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.1.1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:33Z"
     }
    },
    "requires": [],
@@ -3970,17 +4307,23 @@
     "linux": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:52Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:55Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:24Z"
     }
    },
    "requires": [],
@@ -4040,19 +4383,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "frontier.goose"
+     "entry": "frontier.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:47Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "frontier.goose"
+     "entry": "frontier.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:22Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "frontier.goose"
+     "entry": "frontier.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:44Z"
     }
    },
    "requires": [],
@@ -4099,15 +4448,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:42Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:40Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     }
    },
    "requires": [],
@@ -4157,17 +4512,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:40Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:35Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:45Z"
     }
    },
    "requires": [],
@@ -4233,17 +4594,23 @@
     "linux": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:52Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:55Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.1.0",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:23Z"
     }
    },
    "requires": [],
@@ -4300,19 +4667,25 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:41Z"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:39Z"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     }
    },
    "requires": [],
@@ -4359,17 +4732,23 @@
     "linux": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:20Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:42Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:58Z"
     }
    },
    "requires": [],
@@ -4425,17 +4804,23 @@
     "linux": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:12Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:56Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:56Z"
     }
    },
    "requires": [],
@@ -4495,17 +4880,23 @@
     "linux": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:12Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:56Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v1",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:57Z"
     }
    },
    "requires": [],
@@ -4564,21 +4955,27 @@
    "compat": {
     "linux": {
      "status": "fail",
-     "ref": "v0.2.0",
+     "ref": "v0.3.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goosio at github.com/sstadick/goosio/v0.2.0/ has no goosio.goose"
+     "detail": "probe.goose:1: error: the package goosio at github.com/sstadick/goose-io/v0.3.0/ has no goosio.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:37Z"
     },
     "macos": {
      "status": "fail",
-     "ref": "v0.2.0",
+     "ref": "v0.3.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goosio at github.com/sstadick/goosio/v0.2.0/ has no goosio.goose"
+     "detail": "probe.goose:1: error: the package goosio at github.com/sstadick/goose-io/v0.3.0/ has no goosio.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:31Z"
     },
     "windows": {
      "status": "fail",
-     "ref": "v0.2.0",
+     "ref": "v0.3.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goosio at github.com/sstadick/goosio/v0.2.0/ has no goosio.goose"
+     "detail": "probe.goose:1: error: the package goosio at github.com/sstadick/goose-io/v0.3.0/ has no goosio.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:39Z"
     }
    },
    "requires": [],
@@ -4637,19 +5034,25 @@
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goosopt at github.com/sstadick/goosopt/v0.1.0/ has no goosopt.goose"
+     "detail": "probe.goose:1: error: the package goosopt at github.com/sstadick/goose-opts/v0.1.0/ has no goosopt.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:00Z"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goosopt at github.com/sstadick/goosopt/v0.1.0/ has no goosopt.goose"
+     "detail": "probe.goose:1: error: the package goosopt at github.com/sstadick/goose-opts/v0.1.0/ has no goosopt.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goosopt at github.com/sstadick/goosopt/v0.1.0/ has no goosopt.goose"
+     "detail": "probe.goose:1: error: the package goosopt at github.com/sstadick/goose-opts/v0.1.0/ has no goosopt.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:07Z"
     }
    },
    "requires": [],
@@ -4706,19 +5109,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/gdtc.goose"
+     "entry": "src/gdtc.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:17Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/gdtc.goose"
+     "entry": "src/gdtc.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:08Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/gdtc.goose"
+     "entry": "src/gdtc.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:20Z"
     }
    },
    "requires": [],
@@ -4767,19 +5176,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/gobjtool.goose"
+     "entry": "src/gobjtool.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:20Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/gobjtool.goose"
+     "entry": "src/gobjtool.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:09Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/gobjtool.goose"
+     "entry": "src/gobjtool.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:44Z"
     }
    },
    "requires": [],
@@ -4827,21 +5242,27 @@
    "compat": {
     "linux": {
      "status": "fail",
-     "ref": "v0.2.0",
+     "ref": "v0.3.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goosimd at github.com/sstadick/goosimd/v0.2.0/ has no goosimd.goose"
+     "detail": "probe.goose:1: error: the package goosimd at github.com/sstadick/goose-simd/v0.3.0/ has no goosimd.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:41Z"
     },
     "macos": {
      "status": "fail",
-     "ref": "v0.2.0",
+     "ref": "v0.3.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goosimd at github.com/sstadick/goosimd/v0.2.0/ has no goosimd.goose"
+     "detail": "probe.goose:1: error: the package goosimd at github.com/sstadick/goose-simd/v0.3.0/ has no goosimd.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:38Z"
     },
     "windows": {
      "status": "fail",
-     "ref": "v0.2.0",
+     "ref": "v0.3.0",
      "stage": "check",
-     "detail": "probe.goose:1: error: the package goosimd at github.com/sstadick/goosimd/v0.2.0/ has no goosimd.goose"
+     "detail": "probe.goose:1: error: the package goosimd at github.com/sstadick/goose-simd/v0.3.0/ has no goosimd.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:14Z"
     }
    },
    "requires": [],
@@ -4898,19 +5319,25 @@
      "status": "skip",
      "ref": "master",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "macos": {
      "status": "skip",
      "ref": "master",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:19Z"
     },
     "windows": {
      "status": "skip",
      "ref": "master",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:01Z"
     }
    },
    "requires": [],
@@ -4963,19 +5390,25 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:38Z"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:33Z"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:42Z"
     }
    },
    "requires": [],
@@ -5025,19 +5458,25 @@
      "status": "skip",
      "ref": "master",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:50Z"
     },
     "macos": {
      "status": "skip",
      "ref": "master",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:29Z"
     },
     "windows": {
      "status": "skip",
      "ref": "master",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:54Z"
     }
    },
    "requires": [],
@@ -5085,19 +5524,25 @@
      "status": "fail",
      "ref": "v0.2.1",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (github.com/Macho0x/goose-ethereum/crypto/)"
+     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (github.com/Macho0x/goose-ethereum/crypto/)",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:47Z"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.2.1",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../../../../../../../..github.com/Macho0x/goose-ethereum/crypto is not a directory (/private/..github.com/Macho0x/goose-ethereum/crypto/)"
+     "detail": "probe.goose:2: error: the package crypto's source ../../../../../../../..github.com/Macho0x/goose-ethereum/crypto is not a directory (/private/..github.com/Macho0x/goose-ethereum/crypto/)",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:24Z"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.2.1",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (github.com/Macho0x/goose-ethereum/crypto/)"
+     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-ethereum/crypto is not a directory (github.com/Macho0x/goose-ethereum/crypto/)",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:48Z"
     }
    },
    "requires": [
@@ -5157,18 +5602,24 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.2.0",
-     "stage": "build"
+     "ref": "v0.3.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:48Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.2.0",
-     "stage": "build"
+     "ref": "v0.3.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:25Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "v0.2.0",
-     "stage": "build"
+     "ref": "v0.3.0",
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:49Z"
     }
    },
    "requires": [],
@@ -5227,19 +5678,25 @@
      "status": "fail",
      "ref": "v0.3",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (github.com/Macho0x/goose-signature/crypto/)"
+     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (github.com/Macho0x/goose-signature/crypto/)",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:18Z"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.3",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../../../../../../../..github.com/Macho0x/goose-signature/crypto is not a directory (/private/..github.com/Macho0x/goose-signature/crypto/)"
+     "detail": "probe.goose:2: error: the package crypto's source ../../../../../../../..github.com/Macho0x/goose-signature/crypto is not a directory (/private/..github.com/Macho0x/goose-signature/crypto/)",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:09Z"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.3",
      "stage": "check",
-     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (github.com/Macho0x/goose-signature/crypto/)"
+     "detail": "probe.goose:2: error: the package crypto's source ../home/pkg/github.com/Macho0x/goose-signature/crypto is not a directory (github.com/Macho0x/goose-signature/crypto/)",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:21Z"
     }
    },
    "requires": [
@@ -5300,17 +5757,23 @@
     "linux": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:24Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:52Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:07Z"
     }
    },
    "requires": [],
@@ -5371,19 +5834,25 @@
      "status": "pass",
      "ref": "v0.1.0",
      "stage": "build",
-     "entry": "barn.goose"
+     "entry": "barn.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.1.0",
      "stage": "build",
-     "entry": "barn.goose"
+     "entry": "barn.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:29Z"
     },
     "windows": {
      "status": "pass",
      "ref": "v0.1.0",
      "stage": "build",
-     "entry": "barn.goose"
+     "entry": "barn.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:45Z"
     }
    },
    "requires": [],
@@ -5430,19 +5899,25 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:21Z"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:45Z"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:02Z"
     }
    },
    "requires": [],
@@ -5490,15 +5965,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a packaging sample"
+     "reason": "a packaging sample",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:19Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a packaging sample"
+     "reason": "a packaging sample",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:11Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a packaging sample"
+     "reason": "a packaging sample",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:33Z"
     }
    },
    "requires": [],
@@ -5552,20 +6033,26 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:39Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:34Z"
     },
     "windows": {
      "status": "check",
      "ref": "main",
      "stage": "build",
      "detail": "/rx-bob-goosetest/repo/native/filesystem.c(5,10): fatal error: 'dirent.h' file not found",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:08Z"
     }
    },
    "requires": [],
@@ -5613,21 +6100,27 @@
    "compat": {
     "linux": {
      "status": "pass",
-     "ref": "v0.3.0",
+     "ref": "v0.3.1",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:00Z"
     },
     "macos": {
      "status": "pass",
-     "ref": "v0.3.0",
+     "ref": "v0.3.1",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:14Z"
     },
     "windows": {
      "status": "pass",
-     "ref": "v0.3.0",
+     "ref": "v0.3.1",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:05Z"
     }
    },
    "requires": [],
@@ -5674,18 +6167,24 @@
     "linux": {
      "status": "pass",
      "ref": "v0.1.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:35Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v0.1.4",
-     "stage": "build"
+     "stage": "build",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:26Z"
     },
     "windows": {
      "status": "check",
      "ref": "v0.1.4",
      "stage": "build",
-     "detail": "github.com/shetautnetjer/goose-treesitter/v0.1.4/ts_shim.c(151,10): fatal error: 'pthread.h' file not found"
+     "detail": "github.com/shetautnetjer/goose-treesitter/v0.1.4/ts_shim.c(151,10): fatal error: 'pthread.h' file not found",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:31Z"
     }
    },
    "requires": [],
@@ -5720,7 +6219,7 @@
    "latest_tag": "v0.2.1",
    "tag_count": 2,
    "default_branch": "main",
-   "last_commit": "2026-10-23T22:29:51Z",
+   "last_commit": "2026-11-16T11:18:52Z",
    "created": "2026-10-23T20:19:20Z",
    "stars": 2,
    "license": "MIT",
@@ -5742,19 +6241,25 @@
      "status": "skip",
      "ref": "v0.2.1",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:24Z"
     },
     "macos": {
      "status": "skip",
      "ref": "v0.2.1",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:50Z"
     },
     "windows": {
      "status": "skip",
      "ref": "v0.2.1",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:05Z"
     }
    },
    "requires": [],
@@ -5801,19 +6306,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/goosefmt.goose"
+     "entry": "src/goosefmt.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:33Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/goosefmt.goose"
+     "entry": "src/goosefmt.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:30Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/goosefmt.goose"
+     "entry": "src/goosefmt.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:07Z"
     }
    },
    "requires": [],
@@ -5839,7 +6350,7 @@
    "latest_tag": "baseline-2026-11-14",
    "tag_count": 1,
    "default_branch": "main",
-   "last_commit": "2026-11-14T22:27:58Z",
+   "last_commit": "2026-11-16T08:45:40Z",
    "created": "2026-10-25T21:55:46Z",
    "stars": 0,
    "license": "MIT",
@@ -5859,24 +6370,30 @@
    "compat": {
     "linux": {
      "status": "check",
-     "ref": "main",
+     "ref": "baseline-2026-11-14",
      "stage": "build",
      "detail": "cc1: fatal error: /shetautnetjer-swan/repo/build/golsp.c: No such file or directory",
-     "entry": "src/swan.goose"
+     "entry": "src/swan.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:53Z"
     },
     "macos": {
      "status": "check",
-     "ref": "main",
+     "ref": "baseline-2026-11-14",
      "stage": "build",
-     "detail": "/private/shetautnetjer-swan/repo/native/swan_sys.c:29:24: error: no member named 'st_mtim' in 'struct stat'",
-     "entry": "src/swan.goose"
+     "detail": "/shetautnetjer-swan/repo/native/swan_sys.c:29:24: error: no member named 'st_mtim' in 'struct stat'",
+     "entry": "src/swan.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:02Z"
     },
     "windows": {
      "status": "check",
-     "ref": "main",
+     "ref": "baseline-2026-11-14",
      "stage": "build",
      "detail": "/shetautnetjer-swan/repo/native/swan_sys.c(29,24): error: no member named 'st_mtim' in 'struct stat'",
-     "entry": "src/swan.goose"
+     "entry": "src/swan.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:43Z"
     }
    },
    "requires": [],
@@ -5927,19 +6444,25 @@
      "status": "skip",
      "ref": "v0.1.3",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:51Z"
     },
     "macos": {
      "status": "skip",
      "ref": "v0.1.3",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:29Z"
     },
     "windows": {
      "status": "skip",
      "ref": "v0.1.3",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:55Z"
     }
    },
    "requires": [],
@@ -5985,15 +6508,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:13Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:58Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:04Z"
     }
    },
    "requires": [],
@@ -6039,15 +6568,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:03Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:34Z"
     }
    },
    "requires": [],
@@ -6093,15 +6628,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:03Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:34Z"
     }
    },
    "requires": [],
@@ -6148,15 +6689,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:42Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:40Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     }
    },
    "requires": [],
@@ -6201,15 +6748,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:50Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:52Z"
     }
    },
    "requires": [],
@@ -6254,15 +6807,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:52Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:50Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:47Z"
     }
    },
    "requires": [],
@@ -6308,15 +6867,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:41Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:39Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "an editor is not built"
+     "reason": "an editor is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     }
    },
    "requires": [],
@@ -6365,15 +6930,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "an R package; Goose is its backend"
+     "reason": "an R package; Goose is its backend",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:05Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "an R package; Goose is its backend"
+     "reason": "an R package; Goose is its backend",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:53Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "an R package; Goose is its backend"
+     "reason": "an R package; Goose is its backend",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:42Z"
     }
    },
    "requires": [],
@@ -6399,9 +6970,9 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "default_branch": "master",
-   "last_commit": "2026-11-14T19:03:56Z",
+   "last_commit": "2026-11-16T02:32:22Z",
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3551,
+   "stars": 3586,
    "license": "Apache-2.0",
    "license_source": "github",
    "platforms": [
@@ -6423,15 +6994,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the compiler itself"
+     "reason": "the compiler itself",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:59Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the compiler itself"
+     "reason": "the compiler itself",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:04Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the compiler itself"
+     "reason": "the compiler itself",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:21Z"
     }
    },
    "requires": [],
@@ -6478,15 +7055,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "firmware for ESP32 hardware"
+     "reason": "firmware for ESP32 hardware",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "firmware for ESP32 hardware"
+     "reason": "firmware for ESP32 hardware",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:19Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "firmware for ESP32 hardware"
+     "reason": "firmware for ESP32 hardware",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:00Z"
     }
    },
    "requires": [],
@@ -6513,7 +7096,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "default_branch": "main",
-   "last_commit": "2026-11-15T10:52:19Z",
+   "last_commit": "2026-11-16T07:49:48Z",
    "created": "2026-10-26T07:56:00Z",
    "stars": 0,
    "license": "Apache-2.0",
@@ -6533,15 +7116,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a compiler backend, not a package"
+     "reason": "a compiler backend, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:48Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a compiler backend, not a package"
+     "reason": "a compiler backend, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:25Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a compiler backend, not a package"
+     "reason": "a compiler backend, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:49Z"
     }
    },
    "requires": [],
@@ -6590,15 +7179,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a compiler backend, not a package"
+     "reason": "a compiler backend, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a compiler backend, not a package"
+     "reason": "a compiler backend, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:19Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a compiler backend, not a package"
+     "reason": "a compiler backend, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:00Z"
     }
    },
    "requires": [],
@@ -6643,15 +7238,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a compiler backend, not a package"
+     "reason": "a compiler backend, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:50Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a compiler backend, not a package"
+     "reason": "a compiler backend, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a compiler backend, not a package"
+     "reason": "a compiler backend, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:52Z"
     }
    },
    "requires": [],
@@ -6698,15 +7299,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:01Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:10Z"
     }
    },
    "requires": [],
@@ -6752,15 +7359,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:56Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:26Z"
     }
    },
    "requires": [],
@@ -6807,15 +7420,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:27Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:57Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:13Z"
     }
    },
    "requires": [],
@@ -6861,15 +7480,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:18Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:07Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:41Z"
     }
    },
    "requires": [],
@@ -6916,15 +7541,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:19Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:00Z"
     }
    },
    "requires": [],
@@ -6969,15 +7600,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:32Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:25Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     }
    },
    "requires": [],
@@ -7023,15 +7660,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:32Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:25Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     }
    },
    "requires": [],
@@ -7076,15 +7719,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:54Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:58Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:29Z"
     }
    },
    "requires": [],
@@ -7130,15 +7779,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:41Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:39Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     }
    },
    "requires": [],
@@ -7184,15 +7839,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a runtime port, not a package"
+     "reason": "a runtime port, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:21Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a runtime port, not a package"
+     "reason": "a runtime port, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:43Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a runtime port, not a package"
+     "reason": "a runtime port, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:59Z"
     }
    },
    "requires": [],
@@ -7240,15 +7901,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:52Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:55Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a fork of the compiler"
+     "reason": "a fork of the compiler",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:24Z"
     }
    },
    "requires": [],
@@ -7300,21 +7967,27 @@
      "ref": "main",
      "stage": "build",
      "detail": "main.c:(.text+0x1e713): undefined reference to `alch_dec_open'",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:32Z"
     },
     "macos": {
      "status": "check",
      "ref": "main",
      "stage": "build",
      "detail": "clang: error: linker command failed with exit code 1 (use -v to see invocation)",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:24Z"
     },
     "windows": {
      "status": "check",
      "ref": "main",
      "stage": "build",
      "detail": "lld-link: error: undefined symbol: alch_music_open",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:51Z"
     }
    },
    "requires": [],
@@ -7363,21 +8036,27 @@
      "ref": "main",
      "stage": "check",
      "detail": "bd.goose:15: error: cannot find the module build.build_info, looked for",
-     "entry": "bd.goose"
+     "entry": "bd.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:00Z"
     },
     "macos": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
      "detail": "bd.goose:15: error: cannot find the module build.build_info, looked for",
-     "entry": "bd.goose"
+     "entry": "bd.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "windows": {
      "status": "fail",
      "ref": "main",
      "stage": "check",
      "detail": "bd.goose:15: error: cannot find the module build.build_info, looked for",
-     "entry": "bd.goose"
+     "entry": "bd.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:08Z"
     }
    },
    "requires": [],
@@ -7424,19 +8103,25 @@
      "status": "pass",
      "ref": "master",
      "stage": "build",
-     "entry": "bf.goose"
+     "entry": "bf.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:42Z"
     },
     "macos": {
      "status": "pass",
      "ref": "master",
      "stage": "build",
-     "entry": "bf.goose"
+     "entry": "bf.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:40Z"
     },
     "windows": {
      "status": "pass",
      "ref": "master",
      "stage": "build",
-     "entry": "bf.goose"
+     "entry": "bf.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     }
    },
    "requires": [],
@@ -7485,19 +8170,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "c4_solve.goose"
+     "entry": "c4_solve.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:18Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "c4_solve.goose"
+     "entry": "c4_solve.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:07Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "c4_solve.goose"
+     "entry": "c4_solve.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:41Z"
     }
    },
    "requires": [],
@@ -7551,21 +8242,27 @@
      "ref": "codex/campfire-experiment",
      "stage": "check",
      "detail": "campfire.goose:11: error: the package sqlite's source ./build/sqlite is not a directory (/aardappel-once-campfire-goose/repo/build/sqlite/)",
-     "entry": "campfire.goose"
+     "entry": "campfire.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:02Z"
     },
     "macos": {
      "status": "fail",
      "ref": "codex/campfire-experiment",
      "stage": "check",
-     "detail": "campfire.goose:11: error: the package sqlite's source ./build/sqlite is not a directory (/private/aardappel-once-campfire-goose/repo/build/sqlite/)",
-     "entry": "campfire.goose"
+     "detail": "campfire.goose:11: error: the package sqlite's source ./build/sqlite is not a directory (/aardappel-once-campfire-goose/repo/build/sqlite/)",
+     "entry": "campfire.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:08Z"
     },
     "windows": {
      "status": "fail",
      "ref": "codex/campfire-experiment",
      "stage": "check",
      "detail": "campfire.goose:11: error: the package sqlite's source ./build/sqlite is not a directory (/aardappel-once-campfire-goose/repo/build/sqlite/)",
-     "entry": "campfire.goose"
+     "entry": "campfire.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:29Z"
     }
    },
    "requires": [],
@@ -7591,7 +8288,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "default_branch": "main",
-   "last_commit": "2026-11-15T04:54:34Z",
+   "last_commit": "2026-11-16T02:23:59Z",
    "created": "2023-04-30T01:09:26Z",
    "stars": 0,
    "license": "MPL-2.0",
@@ -7611,15 +8308,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a web site; its Goose part is a build step"
+     "reason": "a web site; its Goose part is a build step",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:50Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a web site; its Goose part is a build step"
+     "reason": "a web site; its Goose part is a build step",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a web site; its Goose part is a build step"
+     "reason": "a web site; its Goose part is a build step",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:52Z"
     }
    },
    "requires": [],
@@ -7667,15 +8370,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:52Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:55Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:24Z"
     }
    },
    "requires": [],
@@ -7730,20 +8439,26 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "gffs.goose"
+     "entry": "gffs.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:23Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "gffs.goose"
+     "entry": "gffs.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:48Z"
     },
     "windows": {
      "status": "check",
      "ref": "main",
      "stage": "build",
      "detail": "/felipecruz-gffs/repo/native.c(10,10): fatal error: 'dirent.h' file not found",
-     "entry": "gffs.goose"
+     "entry": "gffs.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:03Z"
     }
    },
    "requires": [],
@@ -7794,19 +8509,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "glog.goose"
+     "entry": "glog.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:19Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "glog.goose"
+     "entry": "glog.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:38Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "glog.goose"
+     "entry": "glog.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:54Z"
     }
    },
    "requires": [],
@@ -7861,19 +8582,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "browser/mini_browser.goose"
+     "entry": "browser/mini_browser.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:17Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "browser/mini_browser.goose"
+     "entry": "browser/mini_browser.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:05Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "browser/mini_browser.goose"
+     "entry": "browser/mini_browser.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:37Z"
     }
    },
    "requires": [],
@@ -7928,21 +8655,27 @@
      "ref": "main",
      "stage": "build",
      "detail": "pong.c:(.text.startup+0x3b): undefined reference to `InitWindow'",
-     "entry": "pong.goose"
+     "entry": "pong.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:24Z"
     },
     "macos": {
      "status": "check",
      "ref": "main",
      "stage": "build",
      "detail": "clang: error: linker command failed with exit code 1 (use -v to see invocation)",
-     "entry": "pong.goose"
+     "entry": "pong.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:49Z"
     },
     "windows": {
      "status": "check",
      "ref": "main",
      "stage": "build",
      "detail": "lld-link: error: undefined symbol: InitWindow",
-     "entry": "pong.goose"
+     "entry": "pong.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:05Z"
     }
    },
    "requires": [],
@@ -7991,21 +8724,27 @@
      "ref": "master",
      "stage": "build",
      "detail": "main.c:(.text+0x59): undefined reference to `gs_sock_close'",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:26Z"
     },
     "macos": {
      "status": "check",
      "ref": "master",
      "stage": "build",
      "detail": "clang: error: linker command failed with exit code 1 (use -v to see invocation)",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:55Z"
     },
     "windows": {
      "status": "check",
      "ref": "master",
      "stage": "build",
      "detail": "lld-link: error: undefined symbol: gs_db_open",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:09Z"
     }
    },
    "requires": [],
@@ -8032,7 +8771,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "default_branch": "main",
-   "last_commit": "2026-11-15T11:17:46Z",
+   "last_commit": "2026-11-16T05:29:33Z",
    "created": "2026-10-31T16:08:45Z",
    "stars": 1,
    "license": "GPL-2.0",
@@ -8057,20 +8796,26 @@
      "ref": "main",
      "stage": "build",
      "detail": "/manymids-goose-sharp-x68000/repo/src/x68k_bridge.c:2:10: fatal error: windows.h: No such file or directory",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:19Z"
     },
     "macos": {
      "status": "check",
      "ref": "main",
      "stage": "build",
-     "detail": "/private/manymids-goose-sharp-x68000/repo/src/x68k_bridge.c:2:10: fatal error: 'windows.h' file not found",
-     "entry": "src/main.goose"
+     "detail": "/manymids-goose-sharp-x68000/repo/src/x68k_bridge.c:2:10: fatal error: 'windows.h' file not found",
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:11Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:33Z"
     }
    },
    "requires": [],
@@ -8128,21 +8873,27 @@
      "ref": "main",
      "stage": "build",
      "detail": "goosecode.c:(.text+0x27df): undefined reference to `gc_ask'",
-     "entry": "goosecode.goose"
+     "entry": "goosecode.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:50Z"
     },
     "macos": {
      "status": "check",
      "ref": "main",
      "stage": "build",
      "detail": "clang: error: linker command failed with exit code 1 (use -v to see invocation)",
-     "entry": "goosecode.goose"
+     "entry": "goosecode.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:28Z"
     },
     "windows": {
      "status": "check",
      "ref": "main",
      "stage": "build",
      "detail": "lld-link: error: undefined symbol: gc_init_signals",
-     "entry": "goosecode.goose"
+     "entry": "goosecode.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:52Z"
     }
    },
    "requires": [],
@@ -8192,19 +8943,25 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:22Z"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:12Z"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:47Z"
     }
    },
    "requires": [],
@@ -8252,21 +9009,27 @@
      "ref": "v0.1.0",
      "stage": "check",
      "detail": "sprites.goose:6: error: cannot find the module gen.embedded_sprites, looked for",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:13Z"
     },
     "macos": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
      "detail": "sprites.goose:6: error: cannot find the module gen.embedded_sprites, looked for",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:58Z"
     },
     "windows": {
      "status": "fail",
      "ref": "v0.1.0",
      "stage": "check",
      "detail": "sprites.goose:6: error: cannot find the module gen.embedded_sprites, looked for",
-     "entry": "src/main.goose"
+     "entry": "src/main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:03Z"
     }
    },
    "requires": [],
@@ -8312,15 +9075,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:42Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:40Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     }
    },
    "requires": [],
@@ -8369,19 +9138,25 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:32Z"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:49Z"
     }
    },
    "requires": [],
@@ -8430,19 +9205,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "mandelbrot.goose"
+     "entry": "mandelbrot.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:27Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "mandelbrot.goose"
+     "entry": "mandelbrot.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:57Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "mandelbrot.goose"
+     "entry": "mandelbrot.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:13Z"
     }
    },
    "requires": [],
@@ -8489,15 +9270,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:39Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:34Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:43Z"
     }
    },
    "requires": [],
@@ -8543,15 +9330,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a multi-language platform; its Goose services have no single entry point"
+     "reason": "a multi-language platform; its Goose services have no single entry point",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:48Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a multi-language platform; its Goose services have no single entry point"
+     "reason": "a multi-language platform; its Goose services have no single entry point",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:25Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a multi-language platform; its Goose services have no single entry point"
+     "reason": "a multi-language platform; its Goose services have no single entry point",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:49Z"
     }
    },
    "requires": [],
@@ -8599,19 +9392,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:39Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:34Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:43Z"
     }
    },
    "requires": [],
@@ -8657,15 +9456,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:01Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:10Z"
     }
    },
    "requires": [],
@@ -8715,15 +9520,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:01Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "the repository is unavailable"
+     "reason": "the repository is unavailable",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:10Z"
     }
    },
    "requires": [],
@@ -8773,19 +9584,25 @@
      "status": "pass",
      "ref": "master",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     },
     "macos": {
      "status": "pass",
      "ref": "master",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:34Z"
     },
     "windows": {
      "status": "pass",
      "ref": "master",
      "stage": "build",
-     "entry": "main.goose"
+     "entry": "main.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:51Z"
     }
    },
    "requires": [],
@@ -8831,15 +9648,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a website; its Goose programs build to WebAssembly"
+     "reason": "a website; its Goose programs build to WebAssembly",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:39Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a website; its Goose programs build to WebAssembly"
+     "reason": "a website; its Goose programs build to WebAssembly",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:34Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a website; its Goose programs build to WebAssembly"
+     "reason": "a website; its Goose programs build to WebAssembly",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:05:43Z"
     }
    },
    "requires": [],
@@ -8889,21 +9712,27 @@
      "status": "pass",
      "ref": "v0.1",
      "stage": "build",
-     "entry": "src/weld.goose"
+     "entry": "src/weld.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "macos": {
      "status": "check",
      "ref": "v0.1",
      "stage": "build",
      "detail": "/private/dantje-weld/repo/src/io.c:8:10: fatal error: 'malloc.h' file not found",
-     "entry": "src/weld.goose"
+     "entry": "src/weld.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:01Z"
     },
     "windows": {
      "status": "check",
      "ref": "v0.1",
      "stage": "build",
      "detail": "/dantje-weld/repo/src/io.c(9,10): fatal error: 'pthread.h' file not found",
-     "entry": "src/weld.goose"
+     "entry": "src/weld.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:32Z"
     }
    },
    "requires": [],
@@ -8951,19 +9780,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "commands/msort/msort.goose"
+     "entry": "commands/msort/msort.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:25Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "commands/msort/msort.goose"
+     "entry": "commands/msort/msort.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:15Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "commands/msort/msort.goose"
+     "entry": "commands/msort/msort.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     }
    },
    "requires": [],
@@ -9014,19 +9849,25 @@
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/sf.goose"
+     "entry": "src/sf.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:23Z"
     },
     "macos": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/sf.goose"
+     "entry": "src/sf.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:13Z"
     },
     "windows": {
      "status": "pass",
      "ref": "main",
      "stage": "build",
-     "entry": "src/sf.goose"
+     "entry": "src/sf.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:51Z"
     }
    },
    "requires": [],
@@ -9076,19 +9917,25 @@
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:21Z"
     },
     "macos": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:44Z"
     },
     "windows": {
      "status": "skip",
      "ref": "main",
      "stage": "entry",
-     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one"
+     "reason": "no single program file with `fn main` was found (a library, a WebAssembly module, or several programs); compat.entry in the entry file can name one",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:01Z"
     }
    },
    "requires": [],
@@ -9138,20 +9985,26 @@
      "status": "pass",
      "ref": "v1.2.1",
      "stage": "build",
-     "entry": "goose/symidx.goose"
+     "entry": "goose/symidx.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:18Z"
     },
     "macos": {
      "status": "pass",
      "ref": "v1.2.1",
      "stage": "build",
-     "entry": "goose/symidx.goose"
+     "entry": "goose/symidx.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:37Z"
     },
     "windows": {
      "status": "check",
      "ref": "v1.2.1",
      "stage": "build",
      "detail": "/artsensiva-symidx/repo/goose/walk.c(4,10): fatal error: 'dirent.h' file not found",
-     "entry": "goose/symidx.goose"
+     "entry": "goose/symidx.goose",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     }
    },
    "requires": [],
@@ -9202,15 +10055,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:56Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:26Z"
     }
    },
    "requires": [],
@@ -9257,15 +10116,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a benchmark repository, not a package"
+     "reason": "a benchmark repository, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:14Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a benchmark repository, not a package"
+     "reason": "a benchmark repository, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:03Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a benchmark repository, not a package"
+     "reason": "a benchmark repository, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:11Z"
     }
    },
    "requires": [],
@@ -9294,7 +10159,7 @@
    "default_branch": "master",
    "last_commit": "2026-11-08T13:29:13Z",
    "created": "2026-01-25T17:56:43Z",
-   "stars": 61,
+   "stars": 62,
    "license": "MIT",
    "license_source": "github",
    "platforms": [
@@ -9314,15 +10179,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a multi-language benchmark suite, not a package"
+     "reason": "a multi-language benchmark suite, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:17Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a multi-language benchmark suite, not a package"
+     "reason": "a multi-language benchmark suite, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:08Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a multi-language benchmark suite, not a package"
+     "reason": "a multi-language benchmark suite, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:20Z"
     }
    },
    "requires": [],
@@ -9371,15 +10242,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a multi-language benchmark, not a package"
+     "reason": "a multi-language benchmark, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a multi-language benchmark, not a package"
+     "reason": "a multi-language benchmark, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:34Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a multi-language benchmark, not a package"
+     "reason": "a multi-language benchmark, not a package",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:51Z"
     }
    },
    "requires": [],
@@ -9424,15 +10301,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "example code for a blog post"
+     "reason": "example code for a blog post",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:41Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "example code for a blog post"
+     "reason": "example code for a blog post",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:38Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "example code for a blog post"
+     "reason": "example code for a blog post",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:14Z"
     }
    },
    "requires": [],
@@ -9477,15 +10360,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "not a repository"
+     "reason": "not a repository",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "not a repository"
+     "reason": "not a repository",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:03Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "not a repository"
+     "reason": "not a repository",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:34Z"
     }
    },
    "requires": [],
@@ -9530,15 +10419,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:25Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:15Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:53Z"
     }
    },
    "requires": [],
@@ -9583,15 +10478,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:23Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:48Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:03Z"
     }
    },
    "requires": [],
@@ -9636,15 +10537,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:03Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:34Z"
     }
    },
    "requires": [],
@@ -9689,15 +10596,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:15Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:03Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:34Z"
     }
    },
    "requires": [],
@@ -9742,15 +10655,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:41Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:38Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:14Z"
     }
    },
    "requires": [],
@@ -9798,15 +10717,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:16Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:34Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:03:51Z"
     }
    },
    "requires": [],
@@ -9853,15 +10778,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:05Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:53Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:02:42Z"
     }
    },
    "requires": [],
@@ -9909,15 +10840,21 @@
    "compat": {
     "linux": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:32Z"
     },
     "macos": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:05Z"
     },
     "windows": {
      "status": "skip",
-     "reason": "a learning resource is not built"
+     "reason": "a learning resource is not built",
+     "goose": "v2026.4",
+     "ran_at": "2026-11-16T12:04:25Z"
     }
    },
    "requires": [],

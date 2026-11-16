@@ -68,10 +68,10 @@ _Sockets, HTTP clients and servers, web frameworks, URLs, ACME._
 - **[goose-web](https://github.com/aurthurm/goose-web)** — A web framework built on a non-blocking readiness loop, with typed routes, JSON validation, HTML templates, streaming responses and an optional SQLite layer. ★ 2 · 🏷 v0.6.0 · ✅ ✅ ✅
   `import goose_web from "github.com/aurthurm/goose-web@v0.6.0";`
 - **[honk](https://github.com/korolenkowork/honk)** — A web framework where routes declare typed structs and the request parsing, validation, JSON responses and OpenAPI schema with Swagger UI follow from those types. ★ 1
-- **[httpgoose](https://github.com/SorinS/httpgoose)** — HTTP/1.1 and HTTP/2 protocol code with no I/O of its own (parsing, framing, chunked bodies, URLs), so the caller owns the sockets; HTTPS comes from tlsgoose. Also part of gslib. ⚠️ no license · ✅ ✅ ✅
-  `import http from "github.com/SorinS/httpgoose@main";`
-- **[ldapgoose](https://github.com/SorinS/ldapgoose)** — An LDAPv3 client modelled on go-ldap that encodes requests and decodes responses without touching sockets, with command-line tools mirroring the OpenLDAP utilities. ⚠️ no license · ❌ ❌ ❌
-  `import ldap from "github.com/SorinS/ldapgoose@main";`
+- **[httpgoose](https://github.com/SorinS/httpgoose)** — HTTP/1.1 and HTTP/2 protocol code with no I/O of its own (parsing, framing, chunked bodies, URLs), so the caller owns the sockets; HTTPS comes from tlsgoose. Also part of gslib. 🏷 v0.7.0 · ✅ ✅ ✅
+  `import http from "github.com/SorinS/httpgoose@v0.7.0";`
+- **[ldapgoose](https://github.com/SorinS/ldapgoose)** — An LDAPv3 client modelled on go-ldap that encodes requests and decodes responses without touching sockets, with command-line tools mirroring the OpenLDAP utilities. 🏷 v0.7.0 · ✅ ✅ ✅
+  `import ldap from "github.com/SorinS/ldapgoose@v0.7.0";`
 - **[net](https://github.com/jdrobertso/net)** — General networking: TCP clients and servers with client-side TLS, URL handling, and a full-featured HTTP/1.1 client with cookies, redirects and a non-blocking threaded mode. TLS uses Schannel on Windows and OpenSSL elsewhere. 🏷 v0.2.0 · ✅ ✅ ✅
   `import net from "github.com/jdrobertso/net@v0.2.0";`
 - **[plod](https://github.com/kaitk/plod)** — An Actix-inspired REST framework on goose-http with scopes, extractors and middleware, plus a generator that produces types, JSON codecs and a router from an OpenAPI 3.1 spec. ★ 21 · 🏷 v0.5.13 · ✅ ✅ ✅
@@ -81,22 +81,22 @@ _Sockets, HTTP clients and servers, web frameworks, URLs, ACME._
 
 _TLS, hashes, ciphers, X.509, SSH, big-number arithmetic for crypto._
 
-- **[bigmongoose](https://github.com/SorinS/bigmongoose)** — Big-number arithmetic and cryptographic primitives in Goose, modelled on Go's crypto packages and tested against Wycheproof vectors; it underlies the author's TLS stack. ⚠️ no license · ✅ ✅ ✅
-  `import bignum from "github.com/SorinS/bigmongoose@main";`
+- **[bigmongoose](https://github.com/SorinS/bigmongoose)** — Big-number arithmetic and cryptographic primitives in Goose, modelled on Go's crypto packages and tested against Wycheproof vectors; it underlies the author's TLS stack. 🏷 v0.7.0 · ✅ ✅ ✅
+  `import bignum from "github.com/SorinS/bigmongoose@v0.7.0";`
 - **[goose-crypto](https://github.com/Macho0x/goose-crypto)** — Hash functions, ciphers and public-key algorithms implemented in Goose alone, with no foreign calls, each tested against published vectors. ★ 1 · 🏷 v0.18.1 · ✅ ✅ ✅
   `import crypto from "github.com/Macho0x/goose-crypto@v0.18.1";`
 - **[goose-hash](https://github.com/kaitk/goose-hash)** — SHA-1, SHA-256, HMAC, PBKDF2, constant-time comparison and OS random bytes, using CPU SHA instructions where they exist. 🏷 v0.0.4 · ✅ ✅ ✅
   `import hash from "github.com/kaitk/goose-hash@v0.0.4";`
 - **[goose-sha256](https://github.com/clintecker/goose-sha256)** — Incremental SHA-256 in pure Goose with caller-owned state; an optional module hashes files through goose-file. 🏷 v1 · ✅ ✅ ✅
   `import sha256 from "github.com/clintecker/goose-sha256@v1";`
-- **[gslib](https://github.com/SorinS/gslib)** — A batteries-included collection modelled on Go's standard library: big numbers and crypto, X.509, TLS, SSH, Kerberos, HTTP/1.1 and HTTP/2, LDAP, ASN.1, YAML and compression, versioned as one package. Supersedes the author's separate repositories. ★ 3 · ✅ ✅ ✅
-  `import gslib from "github.com/SorinS/gslib@main";`
-- **[sshgoose](https://github.com/SorinS/sshgoose)** — The SSH protocol after Go's x/crypto/ssh, with no I/O of its own, shipped with a client, server, scp, an SFTP server and a key generator built on it. ⚠️ no license · ❌ ❌ ❌
-  `import ssh from "github.com/SorinS/sshgoose@main";`
-- **[tlsgoose](https://github.com/SorinS/tlsgoose)** — TLS 1.3 and 1.2 clients and servers with no I/O of their own: the caller feeds received bytes and sends what comes back; it builds on the same author's bignum, x509 and asn1 packages checked out beside it. ⚠️ no license · ❌ ❌ ❌
-  `import tls from "github.com/SorinS/tlsgoose@main";`
-- **[x509goose](https://github.com/SorinS/x509goose)** — X.509 certificate parsing and chain verification for TLS: names and SANs, host matching, name constraints, policies and CRLs, built on the author's ASN.1 and bignum packages. ⚠️ no license · ❌ ❌ ❌
-  `import x509 from "github.com/SorinS/x509goose@main";`
+- **[gslib](https://github.com/SorinS/gslib)** — A batteries-included collection modelled on Go's standard library: big numbers and crypto, X.509, TLS, SSH, Kerberos, HTTP/1.1 and HTTP/2, LDAP, ASN.1, YAML and compression, versioned as one package. Supersedes the author's separate repositories. ★ 3 · 🏷 v0.7.0 · ✅ ✅ ✅
+  `import gslib from "github.com/SorinS/gslib@v0.7.0";`
+- **[sshgoose](https://github.com/SorinS/sshgoose)** — The SSH protocol after Go's x/crypto/ssh, with no I/O of its own, shipped with a client, server, scp, an SFTP server and a key generator built on it. 🏷 v0.7.0 · ✅ ✅ ✅
+  `import ssh from "github.com/SorinS/sshgoose@v0.7.0";`
+- **[tlsgoose](https://github.com/SorinS/tlsgoose)** — TLS 1.3 and 1.2 clients and servers with no I/O of their own: the caller feeds received bytes and sends what comes back; it builds on the same author's bignum, x509 and asn1 packages checked out beside it. 🏷 v0.7.0 · ✅ ✅ ✅
+  `import tls from "github.com/SorinS/tlsgoose@v0.7.0";`
+- **[x509goose](https://github.com/SorinS/x509goose)** — X.509 certificate parsing and chain verification for TLS: names and SANs, host matching, name constraints, policies and CRLs, built on the author's ASN.1 and bignum packages. 🏷 v0.7.0 · ✅ ✅ ✅
+  `import x509 from "github.com/SorinS/x509goose@v0.7.0";`
 - **[goose-tls](https://github.com/kaitk/goose-tls)** _binding_ — TLS on OpenSSL 3: a TLS 1.3 server whose protocol layer is Goose (with OpenSSL's libcrypto for primitives) and OpenSSL's own client, both byte-in, byte-out with kTLS support. ★ 1 · 🏷 v0.0.6 · ✅ ✅ ✅
   `import tls from "github.com/kaitk/goose-tls@v0.0.6";`
 
@@ -134,8 +134,8 @@ _DEFLATE, gzip, zstd and friends; tar and zip._
 
 _Data formats: JSON, YAML, ASN.1, binary layouts, bit packing._
 
-- **[asn1goose](https://github.com/SorinS/asn1goose)** — A strict, zero-copy ASN.1 DER reader and writer with typed decoders and PEM support; the base of the same author's X.509 and TLS packages. ⚠️ no license · ✅ ✅ ✅
-  `import asn1 from "github.com/SorinS/asn1goose@main";`
+- **[asn1goose](https://github.com/SorinS/asn1goose)** — A strict, zero-copy ASN.1 DER reader and writer with typed decoders and PEM support; the base of the same author's X.509 and TLS packages. 🏷 v0.7.0 · ✅ ✅ ✅
+  `import asn1 from "github.com/SorinS/asn1goose@v0.7.0";`
 - **[goose-layout](https://github.com/clintecker/goose-layout)** — Reads and writes fixed-layout binary headers straight into Goose structs field by field, big- or little-endian, all-or-nothing. 🏷 v1 · ✅ ✅ ✅
   `import layout from "github.com/clintecker/goose-layout@v1";`
 - **[goose-msgpack](https://github.com/Macho0x/goose-msgpack)** — MessagePack reading and writing that picks the shortest integer forms and keeps map pairs in insertion order. 🏷 v0.2.1 · ✅ ✅ ✅
@@ -145,9 +145,9 @@ _Data formats: JSON, YAML, ASN.1, binary layouts, bit packing._
 - **[goose-uuid](https://github.com/Macho0x/goose-uuid)** — Generates, parses and formats RFC 9562 UUIDs of versions 1 through 8, accepting the common text forms including URNs. 🏷 v0.4 · ✅ ✅ ✅
   `import uuid from "github.com/Macho0x/goose-uuid@v0.4";`
 - **[serialize.goose](https://github.com/mas-bandwidth/serialize.goose)** — A bit-packing serializer for game and network messages that produces exactly the same bytes as the C and C++ serialize libraries, covering every field type they support. 🏷 v2.1.3
-- **[yamlgoose](https://github.com/SorinS/yamlgoose)** — A YAML 1.2 reader and writer ported from Go's yaml.v3 (and its libyaml core), accepting and rejecting exactly what yaml.v3 does; the API mirrors the standard json module. ⚠️ no license · ✅ ✅ ✅
-  `import yaml from "github.com/SorinS/yamlgoose@main";`
-- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 50 · 🏷 main-ff26446207dc
+- **[yamlgoose](https://github.com/SorinS/yamlgoose)** — A YAML 1.2 reader and writer ported from Go's yaml.v3 (and its libyaml core), accepting and rejecting exactly what yaml.v3 does; the API mirrors the standard json module. 🏷 v0.7.0 · ✅ ✅ ✅
+  `import yaml from "github.com/SorinS/yamlgoose@v0.7.0";`
+- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 50 · 🏷 main-fcfc6ba02654
 - **[greylag](https://github.com/bearing-research/greylag)** — An early XML parser written in Goose and exported to C through integer handles, compared against libxml2 and expat. ⚠️ no license · ✅ ✅ ✅
 - **[ideatoapp](https://github.com/mg3994/ideatoapp)** — An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript. **repository unavailable**
 
@@ -307,7 +307,7 @@ _Editor plugins, syntax grammars, LSP clients._
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
 - **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 7 · 🏷 v0.1.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3551 · 🏷 v2026.4
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3586 · 🏷 v2026.4
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
 - **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
@@ -366,7 +366,7 @@ _Performance comparisons of Goose against other languages._
 - **[symidx](https://github.com/artsensiva/symidx)** — A symbol index for Python code bases built three ways to compare Goose with Rust on save and near-instant load of a binary image. ★ 1 · 🏷 v1.2.1 · ✅ ✅ 🟡
 - **[goose-evaluations](https://github.com/calpeyser/goose-evaluations)** _learning_ — Four parsing workloads (a Ninja build graph, JSON, YAML and a jq core) written in Goose and measured against common and best-in-class C, C++ and Rust programs, with the generated C and harnesses included. ★ 10
 - **[goose-lab](https://github.com/inuverse44/goose-lab)** _learning_ — Small experiments and two benchmarks against idiomatic Rust (order parsing and totals, a lattice heat simulation), with written notes on the language and the results.
-- **[LangArena](https://github.com/kostya/LangArena)** _learning_ — A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page. ★ 61 · 🏷 2026-11-04
+- **[LangArena](https://github.com/kostya/LangArena)** _learning_ — A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page. ★ 62 · 🏷 2026-11-04
 - **[Multicore Server Challenge](https://github.com/arjaythedev/multicore-server-challenge)** _learning_ — A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers. ★ 89
 
 ## Learning
@@ -398,4 +398,4 @@ Adding a project is one file, `packages/<id>.toml`, in a pull request: see [CONT
 
 The code here (`scripts/`, `web/`, `.github/`) is [MIT](LICENSE); the entry data and descriptions (`packages/`, `data/`, this README and `index.json`) are [CC0 1.0](LICENSE). Listed projects keep their own licenses. Goose is a project of its own authors; this index is not affiliated with it.
 
-<sub>Generated 2026-11-15T12:46:47Z.</sub>
+<sub>Generated 2026-11-16T12:06:44Z.</sub>
