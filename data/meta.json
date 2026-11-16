@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-16T12:06:44Z",
+ "fetched_at": "2026-11-16T13:42:42Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,7 +22,7 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3586,
+   "stars": 3601,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
@@ -647,7 +647,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Unofficial community Goose checks that report to GitHub Code scanning via SARIF. Not made or endorsed by GitHub, the CodeQL team or the Goose authors. https://github.com/marketplace/actions/goose-analyzer-for-code-scanning-unofficial",
-   "last_commit": "2026-11-16T11:18:52Z",
+   "last_commit": "2026-11-16T13:22:52Z",
    "latest_tag_commit": "e02b72bd09abe8e94a724edfd1e8bb5560a949d0"
   },
   "goose-pond-phonelib": {
@@ -1254,13 +1254,13 @@
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
    "latest_tag": "main-fcfc6ba02654",
-   "tag_count": 1434,
+   "tag_count": 1444,
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
-   "last_commit": "2026-11-16T08:08:09Z",
+   "last_commit": "2026-11-16T13:41:12Z",
    "latest_tag_commit": "fcfc6ba02654a1b8d15a8cd57bc6c99e8eac2d54"
   },
   "mas-bandwidth-serialize-goose": {
@@ -1288,7 +1288,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-16T07:49:48Z"
+   "last_commit": "2026-11-16T12:54:13Z"
   },
   "mg3994-ideatoapp": {
    "exists": false
