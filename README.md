@@ -63,7 +63,7 @@ _Sockets, HTTP clients and servers, web frameworks, URLs, ACME._
 
 - **[goose-acme](https://github.com/kaitk/goose-acme)** — Obtains and renews TLS certificates from Let's Encrypt or another ACME authority via TLS-ALPN-01, so a goose-http server can serve HTTPS with no reverse proxy. 🏷 v0.0.5 · ✅ ✅ ✅
   `import acme from "github.com/kaitk/goose-acme@v0.0.5";`
-- **[goose-http](https://github.com/kaitk/goose-http)** — The most complete HTTP server stack for Goose: per-worker event loops on io_uring, epoll, kqueue or IOCP, with WebSockets, HTTP/2, HTTP/3, static files and an outbound client. Upstream benchmarks against it. ★ 22 · 🏷 v0.5.20 · ✅ ✅ ✅
+- **[goose-http](https://github.com/kaitk/goose-http)** — The most complete HTTP server stack for Goose: per-worker event loops on io_uring, epoll, kqueue or IOCP, with WebSockets, HTTP/2, HTTP/3, static files and an outbound client. Upstream benchmarks against it. ★ 23 · 🏷 v0.5.20 · ✅ ✅ ✅
   `import http from "github.com/kaitk/goose-http@v0.5.20";`
 - **[goose-web](https://github.com/aurthurm/goose-web)** — A web framework built on a non-blocking readiness loop, with typed routes, JSON validation, HTML templates, streaming responses and an optional SQLite layer. ★ 2 · 🏷 v0.6.0 · ✅ ✅ ✅
   `import goose_web from "github.com/aurthurm/goose-web@v0.6.0";`
@@ -89,7 +89,7 @@ _TLS, hashes, ciphers, X.509, SSH, big-number arithmetic for crypto._
   `import hash from "github.com/kaitk/goose-hash@v0.0.4";`
 - **[goose-sha256](https://github.com/clintecker/goose-sha256)** — Incremental SHA-256 in pure Goose with caller-owned state; an optional module hashes files through goose-file. 🏷 v1 · ✅ ✅ ✅
   `import sha256 from "github.com/clintecker/goose-sha256@v1";`
-- **[gslib](https://github.com/SorinS/gslib)** — A batteries-included collection modelled on Go's standard library: big numbers and crypto, X.509, TLS, SSH, Kerberos, HTTP/1.1 and HTTP/2, LDAP, ASN.1, YAML and compression, versioned as one package. Supersedes the author's separate repositories. ★ 3 · 🏷 v0.7.0 · ✅ ✅ ✅
+- **[gslib](https://github.com/SorinS/gslib)** — A batteries-included collection modelled on Go's standard library: big numbers and crypto, X.509, TLS, SSH, Kerberos, HTTP/1.1 and HTTP/2, LDAP, ASN.1, YAML and compression, versioned as one package. Supersedes the author's separate repositories. ★ 4 · 🏷 v0.7.0 · ✅ ✅ ✅
   `import gslib from "github.com/SorinS/gslib@v0.7.0";`
 - **[sshgoose](https://github.com/SorinS/sshgoose)** — The SSH protocol after Go's x/crypto/ssh, with no I/O of its own, shipped with a client, server, scp, an SFTP server and a key generator built on it. 🏷 v0.7.0 · ✅ ✅ ✅
   `import ssh from "github.com/SorinS/sshgoose@v0.7.0";`
@@ -147,7 +147,7 @@ _Data formats: JSON, YAML, ASN.1, binary layouts, bit packing._
 - **[serialize.goose](https://github.com/mas-bandwidth/serialize.goose)** — A bit-packing serializer for game and network messages that produces exactly the same bytes as the C and C++ serialize libraries, covering every field type they support. 🏷 v2.1.3
 - **[yamlgoose](https://github.com/SorinS/yamlgoose)** — A YAML 1.2 reader and writer ported from Go's yaml.v3 (and its libyaml core), accepting and rejecting exactly what yaml.v3 does; the API mirrors the standard json module. 🏷 v0.7.0 · ✅ ✅ ✅
   `import yaml from "github.com/SorinS/yamlgoose@v0.7.0";`
-- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 50 · 🏷 main-fcfc6ba02654
+- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 50 · 🏷 main-fbc085cfe58e
 - **[greylag](https://github.com/bearing-research/greylag)** — An early XML parser written in Goose and exported to C through integer handles, compared against libxml2 and expat. ⚠️ no license · ✅ ✅ ✅
 - **[ideatoapp](https://github.com/mg3994/ideatoapp)** — An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript. **repository unavailable**
 
@@ -297,7 +297,7 @@ _Editor plugins, syntax grammars, LSP clients._
 - **[coc-goose](https://github.com/exaroth/coc-goose)** _editor_ — A coc.nvim extension that connects Vim and Neovim to goose lsp for diagnostics, hover and navigation. ★ 2 · 🏷 0.1.1
 - **[fresh-goose](https://github.com/epidemicz/fresh-goose)** _editor_ — Plugin for the Fresh terminal editor that wires up highlighting, the goose lsp language server and goose format. ⚠️ no license
 - **[goose-lang.vim](https://github.com/exaroth/goose-lang.vim)** _editor_ — Vim and Neovim filetype plugin with highlighting, indentation and a compiler setting for running goose from the editor. ★ 3 · 🏷 0.1.5
-- **[goose-zed](https://github.com/ZHENGSY/goose-zed)** _editor_ — A Zed extension with its own grammar packaging, goose lsp integration, snippets and run tasks, published with prebuilt archives. ★ 3
+- **[goose-zed](https://github.com/ZHENGSY/goose-zed)** _editor_ — A Zed extension with its own grammar packaging, goose lsp integration, snippets and run tasks, published with prebuilt archives. ★ 4
 - **[goose-zed-extension](https://github.com/RomanPro100/goose-zed-extension)** _editor_ — A Zed extension for Goose with highlighting from a tree-sitter grammar fork and language-server support through the goose binary on PATH.
 - **[zed-goose](https://github.com/a55uka/zed-goose)** _editor_ — A Zed extension giving Goose files syntax highlighting and snippets, using the grammar from the Goose repository. ★ 1
 - **[zed-goose](https://github.com/VPagani/zed-goose)** _editor_ — A Zed extension using the upstream tree-sitter grammar and goose lsp, adding an outline, bracket and indent rules, comment toggling and Vim text objects.
@@ -307,7 +307,7 @@ _Editor plugins, syntax grammars, LSP clients._
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
 - **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 7 · 🏷 v0.1.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3601 · 🏷 v2026.4
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3654 · 🏷 v2026.4
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
 - **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
@@ -367,7 +367,7 @@ _Performance comparisons of Goose against other languages._
 - **[goose-evaluations](https://github.com/calpeyser/goose-evaluations)** _learning_ — Four parsing workloads (a Ninja build graph, JSON, YAML and a jq core) written in Goose and measured against common and best-in-class C, C++ and Rust programs, with the generated C and harnesses included. ★ 10
 - **[goose-lab](https://github.com/inuverse44/goose-lab)** _learning_ — Small experiments and two benchmarks against idiomatic Rust (order parsing and totals, a lattice heat simulation), with written notes on the language and the results.
 - **[LangArena](https://github.com/kostya/LangArena)** _learning_ — A suite of 50 tasks implemented in 27 languages, Goose among them, comparing run time, memory, compile time and code size, with a published results page. ★ 62 · 🏷 2026-11-04
-- **[Multicore Server Challenge](https://github.com/arjaythedev/multicore-server-challenge)** _learning_ — A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers. ★ 89
+- **[Multicore Server Challenge](https://github.com/arjaythedev/multicore-server-challenge)** _learning_ — A public challenge measuring how many users one 8-core server can carry for a real web app on Postgres, across languages; it includes Goose submissions with hand-written epoll servers. ★ 91
 
 ## Learning
 
@@ -398,4 +398,4 @@ Adding a project is one file, `packages/<id>.toml`, in a pull request: see [CONT
 
 The code here (`scripts/`, `web/`, `.github/`) is [MIT](LICENSE); the entry data and descriptions (`packages/`, `data/`, this README and `index.json`) are [CC0 1.0](LICENSE). Listed projects keep their own licenses. Goose is a project of its own authors; this index is not affiliated with it.
 
-<sub>Generated 2026-11-16T13:42:42Z.</sub>
+<sub>Generated 2026-11-17T14:29:45Z.</sub>
