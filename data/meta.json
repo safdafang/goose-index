@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-17T14:29:45Z",
+ "fetched_at": "2026-11-18T14:04:32Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,11 +22,11 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3654,
+   "stars": 3695,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-16T02:32:22Z",
+   "last_commit": "2026-11-18T01:10:35Z",
    "latest_tag_commit": "6c1fbc788f6eb1f17db4cab998353d7540ed825d"
   },
   "aardappel-goose-gfx": {
@@ -186,7 +186,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-14T13:35:09Z",
-   "stars": 91,
+   "stars": 93,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
@@ -461,7 +461,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-17T02:40:57Z"
+   "last_commit": "2026-11-18T02:03:03Z"
   },
   "dan-stowell-rules-goose": {
    "exists": true,
@@ -647,7 +647,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Unofficial community Goose checks that report to GitHub Code scanning via SARIF. Not made or endorsed by GitHub, the CodeQL team or the Goose authors. https://github.com/marketplace/actions/goose-analyzer-for-code-scanning-unofficial",
-   "last_commit": "2026-11-16T19:41:58Z",
+   "last_commit": "2026-11-17T22:41:58Z",
    "latest_tag_commit": "e02b72bd09abe8e94a724edfd1e8bb5560a949d0"
   },
   "goose-pond-phonelib": {
@@ -1254,13 +1254,13 @@
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
    "latest_tag": "main-fbc085cfe58e",
-   "tag_count": 1615,
+   "tag_count": 1629,
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
-   "last_commit": "2026-11-17T14:06:38Z",
+   "last_commit": "2026-11-17T17:28:18Z",
    "latest_tag_commit": "fbc085cfe58e78d76ca26f1307284586d75a6f6d"
   },
   "mas-bandwidth-serialize-goose": {
@@ -1288,7 +1288,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-17T12:00:21Z"
+   "last_commit": "2026-11-18T13:24:23Z"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1526,7 +1526,7 @@
    "archived": false,
    "license": "MPL-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-17T14:16:06Z"
+   "last_commit": "2026-11-17T23:49:29Z"
   },
   "scottc-goose-roc": {
    "exists": true,
@@ -1552,7 +1552,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-10-28T04:50:55Z",
+   "last_commit": "2026-11-18T03:51:05Z",
    "latest_tag_commit": "d6868658975d41b34a46baa5ea881ac2ded05e0a"
   },
   "shetautnetjer-goose-sqlite": {
@@ -1594,7 +1594,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-17T13:47:03Z",
+   "last_commit": "2026-11-18T09:58:16Z",
    "latest_tag_commit": "65051272b79d3da6652b1b0ab7a1f53171b1d385"
   },
   "sorins-asn1goose": {
@@ -1636,7 +1636,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose Library",
-   "last_commit": "2026-11-16T20:05:31Z",
+   "last_commit": "2026-11-18T08:43:38Z",
    "latest_tag_commit": "dd0567a0a38714418266075cb419d29e6587235c"
   },
   "sorins-httpgoose": {
