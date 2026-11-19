@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-18T14:04:32Z",
+ "fetched_at": "2026-11-19T14:28:24Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,11 +22,11 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3695,
+   "stars": 3725,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-18T01:10:35Z",
+   "last_commit": "2026-11-18T20:49:50Z",
    "latest_tag_commit": "6c1fbc788f6eb1f17db4cab998353d7540ed825d"
   },
   "aardappel-goose-gfx": {
@@ -40,7 +40,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-13T23:51:19Z",
+   "last_commit": "2026-11-18T23:11:56Z",
    "latest_tag_commit": "6cfa3dec2ef2a6cb19ee71548b38151094e947bd"
   },
   "aardappel-goose-physics": {
@@ -461,7 +461,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-18T02:03:03Z"
+   "last_commit": "2026-11-18T21:01:03Z"
   },
   "dan-stowell-rules-goose": {
    "exists": true,
@@ -1253,15 +1253,15 @@
    "exists": true,
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
-   "latest_tag": "main-fbc085cfe58e",
-   "tag_count": 1629,
+   "latest_tag": "main-efbac3e848a5",
+   "tag_count": 1657,
    "created": "2026-08-05T04:40:51Z",
    "stars": 50,
    "archived": false,
    "license": "other",
    "upstream_description": "Your constants, enums, flags, types and tables generated across multiple languages.",
-   "last_commit": "2026-11-17T17:28:18Z",
-   "latest_tag_commit": "fbc085cfe58e78d76ca26f1307284586d75a6f6d"
+   "last_commit": "2026-11-19T13:26:28Z",
+   "latest_tag_commit": "efbac3e848a577551d60be7f52bc75aba6202b67"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
@@ -1288,7 +1288,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-18T13:24:23Z"
+   "last_commit": "2026-11-19T14:19:00Z"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1526,7 +1526,7 @@
    "archived": false,
    "license": "MPL-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-17T23:49:29Z"
+   "last_commit": "2026-11-19T02:08:15Z"
   },
   "scottc-goose-roc": {
    "exists": true,
@@ -1535,7 +1535,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-27T09:26:45Z",
-   "stars": 0,
+   "stars": 1,
    "archived": false,
    "license": "none",
    "upstream_description": "Goose lang as a host implementation for a roc platform.",
@@ -1594,7 +1594,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-18T09:58:16Z",
+   "last_commit": "2026-11-18T23:28:40Z",
    "latest_tag_commit": "65051272b79d3da6652b1b0ab7a1f53171b1d385"
   },
   "sorins-asn1goose": {
@@ -1636,7 +1636,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose Library",
-   "last_commit": "2026-11-18T08:43:38Z",
+   "last_commit": "2026-11-18T23:42:34Z",
    "latest_tag_commit": "dd0567a0a38714418266075cb419d29e6587235c"
   },
   "sorins-httpgoose": {
@@ -1952,7 +1952,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-15T08:03:02Z"
+   "last_commit": "2026-11-19T11:27:42Z"
   },
   "yujieteo-skein": {
    "exists": false
@@ -1985,7 +1985,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose language extension for Zed (grammar, highlighting, Goose LSP integration, snippets, tasks)",
-   "last_commit": "2026-11-07T16:15:14Z"
+   "last_commit": "2026-11-19T08:41:23Z"
   }
  }
 }
