@@ -89,8 +89,8 @@ _TLS, hashes, ciphers, X.509, SSH, big-number arithmetic for crypto._
   `import hash from "github.com/kaitk/goose-hash@v0.0.4";`
 - **[goose-sha256](https://github.com/clintecker/goose-sha256)** — Incremental SHA-256 in pure Goose with caller-owned state; an optional module hashes files through goose-file. 🏷 v1 · ✅ ✅ ✅
   `import sha256 from "github.com/clintecker/goose-sha256@v1";`
-- **[gslib](https://github.com/SorinS/gslib)** — A batteries-included collection modelled on Go's standard library: big numbers and crypto, X.509, TLS, SSH, Kerberos, HTTP/1.1 and HTTP/2, LDAP, ASN.1, YAML and compression, versioned as one package. Supersedes the author's separate repositories. ★ 4 · 🏷 v0.8.0 · ✅ ✅ ✅
-  `import gslib from "github.com/SorinS/gslib@v0.8.0";`
+- **[gslib](https://github.com/SorinS/gslib)** — A batteries-included collection modelled on Go's standard library: big numbers and crypto, X.509, TLS, SSH, Kerberos, HTTP/1.1 and HTTP/2, LDAP, ASN.1, YAML and compression, versioned as one package. Supersedes the author's separate repositories. ★ 4 · 🏷 v0.9.0 · ✅ ✅ ✅
+  `import gslib from "github.com/SorinS/gslib@v0.9.0";`
 - **[sshgoose](https://github.com/SorinS/sshgoose)** — The SSH protocol after Go's x/crypto/ssh, with no I/O of its own, shipped with a client, server, scp, an SFTP server and a key generator built on it. 🏷 v0.7.0 · ✅ ✅ ✅
   `import ssh from "github.com/SorinS/sshgoose@v0.7.0";`
 - **[tlsgoose](https://github.com/SorinS/tlsgoose)** — TLS 1.3 and 1.2 clients and servers with no I/O of their own: the caller feeds received bytes and sends what comes back; it builds on the same author's bignum, x509 and asn1 packages checked out beside it. 🏷 v0.7.0 · ✅ ✅ ✅
@@ -147,7 +147,7 @@ _Data formats: JSON, YAML, ASN.1, binary layouts, bit packing._
 - **[serialize.goose](https://github.com/mas-bandwidth/serialize.goose)** — A bit-packing serializer for game and network messages that produces exactly the same bytes as the C and C++ serialize libraries, covering every field type they support. 🏷 v2.1.3
 - **[yamlgoose](https://github.com/SorinS/yamlgoose)** — A YAML 1.2 reader and writer ported from Go's yaml.v3 (and its libyaml core), accepting and rejecting exactly what yaml.v3 does; the API mirrors the standard json module. 🏷 v0.7.0 · ✅ ✅ ✅
   `import yaml from "github.com/SorinS/yamlgoose@v0.7.0";`
-- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 50 · 🏷 main-f4dd51c66017
+- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 50 · 🏷 v3.0.1
 - **[greylag](https://github.com/bearing-research/greylag)** — An early XML parser written in Goose and exported to C through integer handles, compared against libxml2 and expat. ⚠️ no license · ✅ ✅ ✅
 - **[ideatoapp](https://github.com/mg3994/ideatoapp)** — An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript. **repository unavailable**
 
@@ -307,7 +307,7 @@ _Editor plugins, syntax grammars, LSP clients._
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
 - **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 7 · 🏷 v0.1.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3754 · 🏷 v2026.4
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3769 · 🏷 v2026.4
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
 - **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime.
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
@@ -332,7 +332,7 @@ _Programs written in Goose: tools, games, servers, simulations._
 - **[beads-goose](https://github.com/Swoorup/beads-goose)** — The start of a Goose rewrite of the beads issue tracker: the issue model and its JSON already match the Go version byte for byte, with the storage and most commands still to come. ★ 1 · ⚠️ no license · ❌ ❌ ❌
 - **[brainfuck-goose](https://github.com/xvolks/brainfuck-goose)** — A small hand-written Brainfuck interpreter, a compact example of a complete Goose program. ⚠️ no license · ✅ ✅ ✅
 - **[c4-goose](https://github.com/jesper-olsen/c4-goose)** — John Tromp's Fhourstones Connect Four solver ported to Goose; it reads positions on stdin and reports scores and timing. ✅ ✅ ✅
-- **[Campfire in Goose](https://github.com/aardappel/once-campfire-goose)** — The Goose author's experimental port of the Campfire group chat server onto goose-http, checked against Rust and Jai versions of the same app. ★ 3 · ❌ ❌ ❌
+- **[Campfire in Goose](https://github.com/aardappel/once-campfire-goose)** — The Goose author's experimental port of the Campfire group chat server onto goose-http, checked against Rust and Jai versions of the same app. ★ 4 · ❌ ❌ ❌
 - **[football-scores](https://github.com/salahraja/football-scores)** — A static Serie A results site whose data step is a small Goose program that reshapes the raw feed into the site's JSON, run natively or as WebAssembly.
 - **[gander](https://github.com/AnugunjNaman/gander)** — A telemetry recorder for robots and vehicles that logs IMU, CAN, GNSS and LiDAR events compactly and loses at most two seconds of data on a crash. **repository unavailable**
 - **[gffs](https://github.com/felipecruz/gffs)** — A recursive file searcher with ripgrep-style options, ported to Goose from the author's ffs, using PCRE2 for regular expressions. ⚠️ no license · ✅ ✅ 🟡
@@ -398,4 +398,4 @@ Adding a project is one file, `packages/<id>.toml`, in a pull request: see [CONT
 
 The code here (`scripts/`, `web/`, `.github/`) is [MIT](LICENSE); the entry data and descriptions (`packages/`, `data/`, this README and `index.json`) are [CC0 1.0](LICENSE). Listed projects keep their own licenses. Goose is a project of its own authors; this index is not affiliated with it.
 
-<sub>Generated 2026-11-20T14:04:28Z.</sub>
+<sub>Generated 2026-11-21T13:30:19Z.</sub>
