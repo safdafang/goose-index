@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-23T13:43:17Z",
+ "fetched_at": "2026-11-23T16:02:46Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,7 +22,7 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3822,
+   "stars": 3824,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
@@ -996,7 +996,7 @@
    "latest_tag": "2026-11-04",
    "tag_count": 18,
    "created": "2026-01-25T17:56:43Z",
-   "stars": 63,
+   "stars": 64,
    "archived": false,
    "license": "MIT",
    "upstream_description": "LangArena: Programming Language Evaluation Suite",
@@ -1178,7 +1178,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Process log lines for Goose",
-   "last_commit": "2026-11-03T11:00:14Z",
+   "last_commit": "2026-11-23T14:45:48Z",
    "latest_tag_commit": "50695a3df0eb5a1048a4b183538d59f43f5eb279"
   },
   "macho0x-goose-msgpack": {
@@ -1255,13 +1255,13 @@
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
    "latest_tag": "v3.0.12",
-   "tag_count": 1895,
+   "tag_count": 1903,
    "created": "2026-08-05T04:40:51Z",
    "stars": 51,
    "archived": false,
    "license": "AGPL-3.0",
    "upstream_description": "A schema compiler that generates fast bit-packed serialization code from one definition, for C, C++, C#, Go, Rust, Java, JavaScript, Dart, Elixir, Lua, Luau and more. Game network packets, save files and cooked assets. A better alternative to Protocol Buffers and FlatBuffers.",
-   "last_commit": "2026-11-23T05:28:38Z",
+   "last_commit": "2026-11-23T16:02:20Z",
    "latest_tag_commit": "226d3282acb8ec156dec8d45fd09ed6371b64e23"
   },
   "mas-bandwidth-serialize-goose": {
