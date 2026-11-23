@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-22T13:23:36Z",
+ "fetched_at": "2026-11-23T13:43:17Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,26 +22,26 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3791,
+   "stars": 3822,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-21T19:06:58Z",
+   "last_commit": "2026-11-23T00:37:41Z",
    "latest_tag_commit": "6c1fbc788f6eb1f17db4cab998353d7540ed825d"
   },
   "aardappel-goose-gfx": {
    "exists": true,
    "repo_id": "R_kgDOVEa-5A",
    "default_branch": "main",
-   "latest_tag": "v1",
-   "tag_count": 1,
+   "latest_tag": "v2",
+   "tag_count": 2,
    "created": "2026-10-11T04:29:32Z",
    "stars": 12,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-21T17:27:15Z",
-   "latest_tag_commit": "6cfa3dec2ef2a6cb19ee71548b38151094e947bd"
+   "last_commit": "2026-11-22T21:57:59Z",
+   "latest_tag_commit": "8ee6375b65d6c76e162c5d24ba915d3ecb759cf3"
   },
   "aardappel-goose-physics": {
    "exists": true,
@@ -81,7 +81,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Package manager for Goose, written in Goose",
-   "last_commit": "2026-11-03T20:03:03Z",
+   "last_commit": "2026-11-22T22:34:58Z",
    "latest_tag_commit": "18bb2b32fb1e60c040fc4170a3412844ebd57363"
   },
   "aguspiza-llama-goose": {
@@ -244,7 +244,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Arwad: R, compiled. A statistical programming language that keeps R's syntax and CRAN, and compiles numerical work to native code with deterministic memory.",
-   "last_commit": "2026-11-13T07:59:49Z",
+   "last_commit": "2026-11-23T06:13:00Z",
    "latest_tag_commit": "f005b0885819db99f7645b7f9c2fdb78613f3e9f"
   },
   "bearing-research-greylag": {
@@ -461,7 +461,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-21T20:03:03Z"
+   "last_commit": "2026-11-23T01:03:03Z"
   },
   "dan-stowell-rules-goose": {
    "exists": true,
@@ -647,7 +647,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Unofficial community Goose checks that report to GitHub Code scanning via SARIF. Not made or endorsed by GitHub, the CodeQL team or the Goose authors. https://github.com/marketplace/actions/goose-analyzer-for-code-scanning-unofficial",
-   "last_commit": "2026-11-17T22:41:58Z",
+   "last_commit": "2026-11-22T21:49:47Z",
    "latest_tag_commit": "e02b72bd09abe8e94a724edfd1e8bb5560a949d0"
   },
   "goose-pond-phonelib": {
@@ -808,7 +808,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-20T16:36:23Z",
+   "last_commit": "2026-11-22T14:03:05Z",
    "latest_tag_commit": "8511ae34bdc9aabf77baaab80b4d659ea87835e2"
   },
   "kaitk-goose-acme": {
@@ -1027,7 +1027,8 @@
    "archived": false,
    "license": "none",
    "upstream_description": "A tiny starter repository for the Goose programming language",
-   "last_commit": "2026-10-25T17:52:11Z"
+   "last_commit": "2026-11-23T09:06:00Z",
+   "canonical_repo": "https://github.com/kyambuthia/a-cooked-goose"
   },
   "lamweilun-raygoose": {
    "exists": true,
@@ -1253,15 +1254,15 @@
    "exists": true,
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
-   "latest_tag": "v3.0.6",
-   "tag_count": 1731,
+   "latest_tag": "v3.0.12",
+   "tag_count": 1895,
    "created": "2026-08-05T04:40:51Z",
-   "stars": 50,
+   "stars": 51,
    "archived": false,
    "license": "AGPL-3.0",
    "upstream_description": "A schema compiler that generates fast bit-packed serialization code from one definition, for C, C++, C#, Go, Rust, Java, JavaScript, Dart, Elixir, Lua, Luau and more. Game network packets, save files and cooked assets. A better alternative to Protocol Buffers and FlatBuffers.",
-   "last_commit": "2026-11-22T13:07:57Z",
-   "latest_tag_commit": "28bf74fa2d5216443912a17e2b492158fd42f577"
+   "last_commit": "2026-11-23T05:28:38Z",
+   "latest_tag_commit": "226d3282acb8ec156dec8d45fd09ed6371b64e23"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
@@ -1288,7 +1289,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-22T13:22:53Z"
+   "last_commit": "2026-11-23T04:40:10Z"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1526,7 +1527,7 @@
    "archived": false,
    "license": "MPL-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-21T04:04:16Z"
+   "last_commit": "2026-11-22T18:11:52Z"
   },
   "scottc-goose-roc": {
    "exists": true,
@@ -1632,7 +1633,7 @@
    "latest_tag": "v0.9.1",
    "tag_count": 4,
    "created": "2026-10-31T10:47:22Z",
-   "stars": 4,
+   "stars": 5,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose Library",
@@ -1952,7 +1953,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-22T07:11:55Z"
+   "last_commit": "2026-11-22T22:56:16Z"
   },
   "yujieteo-skein": {
    "exists": false
