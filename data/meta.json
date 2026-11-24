@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-23T16:02:46Z",
+ "fetched_at": "2026-11-24T15:56:16Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,7 +22,7 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3824,
+   "stars": 3851,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
@@ -77,7 +77,7 @@
    "latest_tag": "v0.1.0",
    "tag_count": 1,
    "created": "2026-10-29T21:17:01Z",
-   "stars": 2,
+   "stars": 3,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Package manager for Goose, written in Goose",
@@ -186,7 +186,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-14T13:35:09Z",
-   "stars": 97,
+   "stars": 98,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
@@ -237,15 +237,15 @@
    "exists": true,
    "repo_id": "R_kgDOVVuh0A",
    "default_branch": "main",
-   "latest_tag": "v0.1.0",
-   "tag_count": 1,
+   "latest_tag": "v0.2.0",
+   "tag_count": 2,
    "created": "2026-10-24T10:31:46Z",
    "stars": 7,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Arwad: R, compiled. A statistical programming language that keeps R's syntax and CRAN, and compiles numerical work to native code with deterministic memory.",
-   "last_commit": "2026-11-23T06:13:00Z",
-   "latest_tag_commit": "f005b0885819db99f7645b7f9c2fdb78613f3e9f"
+   "last_commit": "2026-11-24T10:47:19Z",
+   "latest_tag_commit": "93deb4191ca5024120895b2738923309a4af7c86"
   },
   "bearing-research-greylag": {
    "exists": true,
@@ -930,7 +930,7 @@
    "latest_tag": "v0.5.13",
    "tag_count": 26,
    "created": "2026-10-13T15:28:33Z",
-   "stars": 21,
+   "stars": 22,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "A REST framework for Goose, on goose-http: Actix-style scopes, extractors and middleware, with an OpenAPI 3.1 generator. Takes its time, not yours. Mascot: Ari, a banana slug (genus Ariolimax).",
@@ -1254,15 +1254,15 @@
    "exists": true,
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
-   "latest_tag": "v3.0.12",
-   "tag_count": 1903,
+   "latest_tag": "v3.0.13",
+   "tag_count": 1999,
    "created": "2026-08-05T04:40:51Z",
    "stars": 51,
    "archived": false,
    "license": "AGPL-3.0",
    "upstream_description": "A schema compiler that generates fast bit-packed serialization code from one definition, for C, C++, C#, Go, Rust, Java, JavaScript, Dart, Elixir, Lua, Luau and more. Game network packets, save files and cooked assets. A better alternative to Protocol Buffers and FlatBuffers.",
-   "last_commit": "2026-11-23T16:02:20Z",
-   "latest_tag_commit": "226d3282acb8ec156dec8d45fd09ed6371b64e23"
+   "last_commit": "2026-11-24T15:49:37Z",
+   "latest_tag_commit": "27a251c91aa1dd3730177e59b345a19df843b467"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
@@ -1953,7 +1953,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-22T22:56:16Z"
+   "last_commit": "2026-11-24T12:08:01Z"
   },
   "yujieteo-skein": {
    "exists": false
