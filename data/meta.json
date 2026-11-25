@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-24T15:56:16Z",
+ "fetched_at": "2026-11-25T15:39:47Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,11 +22,11 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3851,
+   "stars": 3865,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-23T00:37:41Z",
+   "last_commit": "2026-11-24T17:54:46Z",
    "latest_tag_commit": "6c1fbc788f6eb1f17db4cab998353d7540ed825d"
   },
   "aardappel-goose-gfx": {
@@ -186,7 +186,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-14T13:35:09Z",
-   "stars": 98,
+   "stars": 97,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
@@ -461,7 +461,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-23T01:03:03Z"
+   "last_commit": "2026-11-24T18:04:03Z"
   },
   "dan-stowell-rules-goose": {
    "exists": true,
@@ -528,7 +528,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Goose language support for Fresh - syntax highlighting, LSP and formatting for .goose files",
-   "last_commit": "2026-11-11T15:43:16Z"
+   "last_commit": "2026-11-24T21:12:35Z"
   },
   "exaroth-coc-goose": {
    "exists": true,
@@ -647,7 +647,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Unofficial community Goose checks that report to GitHub Code scanning via SARIF. Not made or endorsed by GitHub, the CodeQL team or the Goose authors. https://github.com/marketplace/actions/goose-analyzer-for-code-scanning-unofficial",
-   "last_commit": "2026-11-22T21:49:47Z",
+   "last_commit": "2026-11-24T19:11:43Z",
    "latest_tag_commit": "e02b72bd09abe8e94a724edfd1e8bb5560a949d0"
   },
   "goose-pond-phonelib": {
@@ -1255,13 +1255,13 @@
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
    "latest_tag": "v3.0.13",
-   "tag_count": 1999,
+   "tag_count": 2008,
    "created": "2026-08-05T04:40:51Z",
-   "stars": 51,
+   "stars": 52,
    "archived": false,
    "license": "AGPL-3.0",
    "upstream_description": "A schema compiler that generates fast bit-packed serialization code from one definition, for C, C++, C#, Go, Rust, Java, JavaScript, Dart, Elixir, Lua, Luau and more. Game network packets, save files and cooked assets. A better alternative to Protocol Buffers and FlatBuffers.",
-   "last_commit": "2026-11-24T15:49:37Z",
+   "last_commit": "2026-11-25T04:26:53Z",
    "latest_tag_commit": "27a251c91aa1dd3730177e59b345a19df843b467"
   },
   "mas-bandwidth-serialize-goose": {
@@ -1282,14 +1282,15 @@
    "exists": true,
    "repo_id": "R_kgDOVXov9w",
    "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v2026.4-5",
+   "tag_count": 5,
    "created": "2026-10-26T07:56:00Z",
    "stars": 0,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-23T04:40:10Z"
+   "last_commit": "2026-11-25T15:33:32Z",
+   "latest_tag_commit": "db90c907d653e7fb51b6614b158248b959fb9499"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1630,15 +1631,15 @@
    "exists": true,
    "repo_id": "R_kgDOVeBBGg",
    "default_branch": "main",
-   "latest_tag": "v0.9.1",
-   "tag_count": 4,
+   "latest_tag": "v0.9.3",
+   "tag_count": 6,
    "created": "2026-10-31T10:47:22Z",
    "stars": 5,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose Library",
-   "last_commit": "2026-11-21T18:39:08Z",
-   "latest_tag_commit": "b22cc7ba5448cd4132d4572c0efb66cb74606532"
+   "last_commit": "2026-11-25T10:42:07Z",
+   "latest_tag_commit": "11fc2f427f64e3ef88d283de7df564ab47f2369a"
   },
   "sorins-httpgoose": {
    "exists": true,
@@ -1819,7 +1820,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-22T13:14:11Z",
-   "stars": 1,
+   "stars": 0,
    "archived": false,
    "license": "none",
    "upstream_description": "beads rewrite in goose",
@@ -1832,7 +1833,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-25T14:54:13Z",
-   "stars": 7,
+   "stars": 6,
    "archived": false,
    "license": "MIT",
    "upstream_description": "Call Rust crates from Goose, or embed Goose in Rust, using generated binding",
@@ -1953,7 +1954,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-24T12:08:01Z"
+   "last_commit": "2026-11-25T02:57:08Z"
   },
   "yujieteo-skein": {
    "exists": false
