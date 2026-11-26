@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-25T15:39:47Z",
+ "fetched_at": "2026-11-26T15:21:53Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,7 +22,7 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3865,
+   "stars": 3893,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
@@ -88,14 +88,15 @@
    "exists": true,
    "repo_id": "R_kgDOVghdgw",
    "default_branch": "main",
-   "latest_tag": null,
-   "tag_count": 0,
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
    "created": "2026-11-02T19:22:29Z",
    "stars": 1,
    "archived": false,
    "license": "none",
    "upstream_description": null,
-   "last_commit": "2026-11-13T20:31:56Z"
+   "last_commit": "2026-11-26T07:13:47Z",
+   "latest_tag_commit": "8932735b83553b299d95741140c5a3af3924600c"
   },
   "aguspiza-raytracing-goose": {
    "exists": true,
@@ -808,7 +809,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-22T14:03:05Z",
+   "last_commit": "2026-11-26T03:21:14Z",
    "latest_tag_commit": "8511ae34bdc9aabf77baaab80b4d659ea87835e2"
   },
   "kaitk-goose-acme": {
@@ -1255,13 +1256,13 @@
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
    "latest_tag": "v3.0.13",
-   "tag_count": 2008,
+   "tag_count": 2009,
    "created": "2026-08-05T04:40:51Z",
    "stars": 52,
    "archived": false,
    "license": "AGPL-3.0",
    "upstream_description": "A schema compiler that generates fast bit-packed serialization code from one definition, for C, C++, C#, Go, Rust, Java, JavaScript, Dart, Elixir, Lua, Luau and more. Game network packets, save files and cooked assets. A better alternative to Protocol Buffers and FlatBuffers.",
-   "last_commit": "2026-11-25T04:26:53Z",
+   "last_commit": "2026-11-26T01:50:40Z",
    "latest_tag_commit": "27a251c91aa1dd3730177e59b345a19df843b467"
   },
   "mas-bandwidth-serialize-goose": {
@@ -1282,15 +1283,15 @@
    "exists": true,
    "repo_id": "R_kgDOVXov9w",
    "default_branch": "main",
-   "latest_tag": "v2026.4-5",
-   "tag_count": 5,
+   "latest_tag": "v2026.4-2",
+   "tag_count": 2,
    "created": "2026-10-26T07:56:00Z",
    "stars": 0,
    "archived": false,
    "license": "Apache-2.0",
-   "upstream_description": null,
-   "last_commit": "2026-11-25T15:33:32Z",
-   "latest_tag_commit": "db90c907d653e7fb51b6614b158248b959fb9499"
+   "upstream_description": "Fast, self-hosted Goose compiler targeting direct WebAssembly and native C",
+   "last_commit": "2026-11-26T14:54:01Z",
+   "latest_tag_commit": "69cfc74b95e4aad8c6e3874c2238b7181ba370cf"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1528,7 +1529,7 @@
    "archived": false,
    "license": "MPL-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-22T18:11:52Z"
+   "last_commit": "2026-11-26T05:08:26Z"
   },
   "scottc-goose-roc": {
    "exists": true,
@@ -1554,7 +1555,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-18T03:51:05Z",
+   "last_commit": "2026-11-26T07:22:06Z",
    "latest_tag_commit": "d6868658975d41b34a46baa5ea881ac2ded05e0a"
   },
   "shetautnetjer-goose-sqlite": {
@@ -1596,7 +1597,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-22T07:32:39Z",
+   "last_commit": "2026-11-26T07:32:00Z",
    "latest_tag_commit": "65051272b79d3da6652b1b0ab7a1f53171b1d385"
   },
   "sorins-asn1goose": {
@@ -1736,7 +1737,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Markdown API references for Goose libraries",
-   "last_commit": "2026-11-14T12:19:21Z",
+   "last_commit": "2026-11-26T12:42:42Z",
    "latest_tag_commit": "bb399143866c0c42268f23c8dfda7a447173f93d",
    "canonical_repo": "https://github.com/sstadick/goose-doc"
   },
@@ -1751,7 +1752,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Placeholder Goose SIMD package for testing proposed c_headers support; implementation will be replaced.",
-   "last_commit": "2026-11-14T12:26:31Z",
+   "last_commit": "2026-11-26T12:43:23Z",
    "latest_tag_commit": "ec7cbc80e5af2af8266a3facb03144bc1c83721a",
    "canonical_repo": "https://github.com/sstadick/goose-simd"
   },
@@ -1766,7 +1767,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Synchronous file I/O, buffered readers and writers, and borrowed lines for Goose",
-   "last_commit": "2026-11-14T13:02:59Z",
+   "last_commit": "2026-11-26T12:43:27Z",
    "latest_tag_commit": "c3554678191cd3e1ff04d2c5207ddd526f3535fe",
    "canonical_repo": "https://github.com/sstadick/goose-io"
   },
@@ -1781,7 +1782,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": "Experimental struct-derived CLI options for Goose",
-   "last_commit": "2026-11-14T12:56:08Z",
+   "last_commit": "2026-11-26T12:43:25Z",
    "latest_tag_commit": "e2149c4d924caf515a4db18882d75b49b99ffb1a",
    "canonical_repo": "https://github.com/sstadick/goose-opts"
   },
@@ -1796,7 +1797,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-14T12:37:09Z",
+   "last_commit": "2026-11-26T12:43:24Z",
    "latest_tag_commit": "436c8a950ca6c0b3bc59d3b195881100c7bc99de",
    "canonical_repo": "https://github.com/sstadick/goose-bstr"
   },
