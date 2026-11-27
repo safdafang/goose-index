@@ -1,0 +1,15 @@
+id = "lemon4ksan-goose-lit"
+name = "goose-lit"
+kind = "package"
+category = "testing"
+tags = ["testing", "lit", "filecheck", "coverage", "fuzzing", "profiler", "benchmarks", "static-analysis"]
+repo = "https://github.com/Lemon4ksan/goose-lit"
+description = "Unit-test library (lit::T assertions, mocks, allocation tracking, benchmarks, wire stream checks) paired with a CLI runner for parallel FileCheck pipelines, source-instrumented branch coverage with LCOV output, SanitizerCoverage fuzzing, and complexity/SLOC gates."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "lit"
+
+[native]
+c = true
+cmake = false
