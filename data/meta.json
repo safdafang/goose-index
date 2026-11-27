@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-26T15:21:53Z",
+ "fetched_at": "2026-11-27T15:09:29Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,11 +22,11 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3893,
+   "stars": 3914,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-24T17:54:46Z",
+   "last_commit": "2026-11-26T23:26:28Z",
    "latest_tag_commit": "6c1fbc788f6eb1f17db4cab998353d7540ed825d"
   },
   "aardappel-goose-gfx": {
@@ -462,7 +462,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-24T18:04:03Z"
+   "last_commit": "2026-11-27T00:02:51Z"
   },
   "dan-stowell-rules-goose": {
    "exists": true,
@@ -809,7 +809,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-26T03:21:14Z",
+   "last_commit": "2026-11-27T13:55:44Z",
    "latest_tag_commit": "8511ae34bdc9aabf77baaab80b4d659ea87835e2"
   },
   "kaitk-goose-acme": {
@@ -931,7 +931,7 @@
    "latest_tag": "v0.5.13",
    "tag_count": 26,
    "created": "2026-10-13T15:28:33Z",
-   "stars": 22,
+   "stars": 23,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "A REST framework for Goose, on goose-http: Actix-style scopes, extractors and middleware, with an OpenAPI 3.1 generator. Takes its time, not yours. Mascot: Ari, a banana slug (genus Ariolimax).",
@@ -1258,7 +1258,7 @@
    "latest_tag": "v3.0.13",
    "tag_count": 2009,
    "created": "2026-08-05T04:40:51Z",
-   "stars": 52,
+   "stars": 53,
    "archived": false,
    "license": "AGPL-3.0",
    "upstream_description": "A schema compiler that generates fast bit-packed serialization code from one definition, for C, C++, C#, Go, Rust, Java, JavaScript, Dart, Elixir, Lua, Luau and more. Game network packets, save files and cooked assets. A better alternative to Protocol Buffers and FlatBuffers.",
@@ -1283,15 +1283,15 @@
    "exists": true,
    "repo_id": "R_kgDOVXov9w",
    "default_branch": "main",
-   "latest_tag": "v2026.4-2",
-   "tag_count": 2,
+   "latest_tag": "v2026.4-4",
+   "tag_count": 4,
    "created": "2026-10-26T07:56:00Z",
    "stars": 0,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Fast, self-hosted Goose compiler targeting direct WebAssembly and native C",
-   "last_commit": "2026-11-26T14:54:01Z",
-   "latest_tag_commit": "69cfc74b95e4aad8c6e3874c2238b7181ba370cf"
+   "last_commit": "2026-11-27T15:01:50Z",
+   "latest_tag_commit": "8cf23ee01ae0f580addcf2857fd1f20e221010d6"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1529,7 +1529,7 @@
    "archived": false,
    "license": "MPL-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-26T05:08:26Z"
+   "last_commit": "2026-11-26T16:45:28Z"
   },
   "scottc-goose-roc": {
    "exists": true,
@@ -1597,7 +1597,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-26T07:32:00Z",
+   "last_commit": "2026-11-27T13:43:52Z",
    "latest_tag_commit": "65051272b79d3da6652b1b0ab7a1f53171b1d385"
   },
   "sorins-asn1goose": {
@@ -1955,7 +1955,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-25T02:57:08Z"
+   "last_commit": "2026-11-27T14:32:51Z"
   },
   "yujieteo-skein": {
    "exists": false
