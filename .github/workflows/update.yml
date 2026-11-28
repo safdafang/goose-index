@@ -37,7 +37,9 @@ jobs:
         run: python scripts/fetch_meta.py
         env:
           GH_TOKEN: ${{ github.token }}
-      - run: python scripts/validate.py
+      # --strict '': a check against GitHub's data (an author copying our description into their
+      # "About", a rename onto another entry's address) warns here instead of stopping the index
+      - run: python scripts/validate.py --strict ''
       - run: python scripts/build.py --site _site
       - name: Commit the generated files
         run: |

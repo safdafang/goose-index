@@ -9,9 +9,21 @@ _last_search = {"repos": 0.0, "code": 0.0}
 _SEARCH_GAP = {"repos": 2.2, "code": 6.5}
 
 
+CALL_TIMEOUT = 90  # seconds; a gh call that hangs would otherwise hold the run until the job's limit
+
+
+def _gh(args, stdin=None):
+    """Run gh; a call that hangs comes back as a failure with a transient-looking error."""
+    try:
+        return subprocess.run(["gh", *args], input=stdin, capture_output=True, text=True, encoding="utf-8",
+                              timeout=CALL_TIMEOUT)
+    except subprocess.TimeoutExpired:
+        return subprocess.CompletedProcess(args, 1, "", f"timeout: no answer in {CALL_TIMEOUT}s")
+
+
 def _run(args, stdin=None):
     for attempt in range(6):
-        p = subprocess.run(["gh", *args], input=stdin, capture_output=True, text=True, encoding="utf-8")
+        p = _gh(args, stdin)
         if p.returncode == 0:
             return p.stdout
         err = p.stderr
@@ -36,7 +48,7 @@ def _run(args, stdin=None):
 
 def _until_reset():
     """Seconds until the rate limit resets."""
-    p = subprocess.run(["gh", "api", "rate_limit"], capture_output=True, text=True, encoding="utf-8")
+    p = _gh(["api", "rate_limit"])
     try:
         res = json.loads(p.stdout)["resources"]
         resets = [r["reset"] for r in res.values() if r.get("remaining") == 0]
@@ -101,7 +113,7 @@ def graphql(query, partial=False, **variables):
         args += ["-F" if isinstance(v, int) else "-f", f"{k}={v}"]
     if partial:
         for attempt in range(6):
-            p = subprocess.run(["gh", *args], capture_output=True, text=True, encoding="utf-8")
+            p = _gh(args)
             try:
                 doc = json.loads(p.stdout)
             except ValueError:

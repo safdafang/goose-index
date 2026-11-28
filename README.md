@@ -391,7 +391,7 @@ _Tutorials, guides, articles, notes, starter templates and example collections._
 
 ## How the index works
 
-- **How entries were found.** Repository, code and topic search across GitHub, every fork of `aardappel/goose`, the upstream issues, pull requests and discussions, and the links in the READMEs of verified Goose projects. Each candidate was kept or dropped by reading its files: projects that merely share the name (the `pressly/goose` migration tool, the `block/goose` agent and others) are excluded. The full record, with a reason for every decision, is in [`discovery/candidates.csv`](discovery/candidates.csv).
+- **How entries were found.** Repository, code and topic search across GitHub, every fork of `aardappel/goose`, the upstream issues, pull requests and discussions, and the links in the READMEs of verified Goose projects. Each candidate was kept or dropped by reading its files: projects that merely share the name (the `pressly/goose` migration tool, the `block/goose` agent and others) are excluded. The full record, with a reason for every decision, is in [`discovery/candidates.csv`](discovery/candidates.csv). A weekly scout repeats the search for what is new and opens an issue with a draft entry for each find, for a person to judge.
 - **What updates by itself.** Tags, stars, last commit, archived state and license are fetched daily; build status is tested weekly. Descriptions and categories change only by pull request.
 - **Data for tools.** [`index.json`](index.json) (also at https://safdafang.github.io/goose-index/index.json) holds every entry with its import line, native requirements and build results. Its format is documented in [docs/index-json.md](docs/index-json.md) and versioned.
 

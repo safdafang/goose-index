@@ -1,0 +1,68 @@
+name: scout
+
+# Once a week: look for Goose projects that appeared since the last look and open an issue with
+# a draft entry for each, for a person to judge. Nothing is added to the index by itself.
+
+on:
+  schedule:
+    - cron: "23 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Look at what changed since this date, YYYY-MM-DD (empty: since the last run)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: scout
+  cancel-in-progress: false
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Look for new projects
+        id: scout
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SINCE: ${{ inputs.since }}
+        run: |
+          python scripts/scout.py --report "$RUNNER_TEMP/scout.md" --json "$RUNNER_TEMP/scout.json" \
+            ${SINCE:+--since "$SINCE"}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: scout
+          path: ${{ runner.temp }}/scout.json
+          if-no-files-found: ignore
+      - name: Open an issue
+        if: steps.scout.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COUNT: ${{ steps.scout.outputs.count }}
+          SINCE: ${{ steps.scout.outputs.since }}
+        run: |
+          gh label create scout --color 5E8C61 --description "New projects found by the weekly scout" 2>/dev/null || true
+          noun=candidates; [ "$COUNT" = 1 ] && noun=candidate
+          gh issue create --label scout --body-file "$RUNNER_TEMP/scout.md" \
+            --title "Scout: $COUNT new $noun since $SINCE"
+      # after the issue, so a run that could not open one reports the same candidates next time
+      - name: Record what was looked at
+        run: |
+          git add discovery/scouted.json
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Record the scout's findings"
+          git pull --rebase origin main
+          git push origin HEAD:main

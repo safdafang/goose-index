@@ -41,12 +41,14 @@ either. They are generated from `packages/` after your pull request merges.
 
 ### Descriptions
 
-Write for someone choosing between alternatives. Don't paste the README or the GitHub description: the
-check fails a description that shares six words in a row with the project's own.
+Write for someone choosing between alternatives. Don't paste the README or the GitHub description.
+`scripts/validate.py` compares your text with the repository's GitHub description and fails it at six
+words in a row in common. It does not read the README: wording lifted from there is caught in review.
 
 ## Checks on your pull request
 
-- `scripts/validate.py` checks the schema, the id, duplicate repositories and the description.
+- `scripts/validate.py` checks the schema, the id, duplicate repositories and the description. The checks
+  that compare an entry with its repository on GitHub fail only the entries your pull request changes.
 - The compatibility workflow build-tests the entries you changed on Linux, macOS and Windows against the
   latest Goose release, and posts the result in the run's summary. A red build doesn't block a listing.
   It shows readers what to expect, and authors find out about it.
