@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-28T06:59:02Z",
+ "fetched_at": "2026-11-28T14:15:00Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,7 +22,7 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3930,
+   "stars": 3935,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
@@ -36,7 +36,7 @@
    "latest_tag": "v2",
    "tag_count": 2,
    "created": "2026-10-11T04:29:32Z",
-   "stars": 12,
+   "stars": 13,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": null,
@@ -95,7 +95,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": null,
-   "last_commit": "2026-11-27T22:16:10Z",
+   "last_commit": "2026-11-28T10:19:50Z",
    "latest_tag_commit": "8932735b83553b299d95741140c5a3af3924600c"
   },
   "aguspiza-raytracing-goose": {
@@ -187,7 +187,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-10-14T13:35:09Z",
-   "stars": 97,
+   "stars": 98,
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
@@ -902,7 +902,7 @@
    "latest_tag": "v0.5.0",
    "tag_count": 7,
    "created": "2026-10-10T14:01:09Z",
-   "stars": 2,
+   "stars": 3,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": " Graphics for Goose programs on NoGraphicsAPI (Metal 4 / Vulkan 1.4), with Slang shaders and four ported samples.",
@@ -1324,15 +1324,15 @@
    "exists": true,
    "repo_id": "R_kgDOVXov9w",
    "default_branch": "main",
-   "latest_tag": "v2026.4-6",
-   "tag_count": 6,
+   "latest_tag": "v2026.4-8",
+   "tag_count": 8,
    "created": "2026-10-26T07:56:00Z",
    "stars": 0,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Fast, self-hosted Goose compiler targeting direct WebAssembly and native C",
-   "last_commit": "2026-11-28T00:04:18Z",
-   "latest_tag_commit": "78028898e6439833cab1d1f2303f4a7cefeea6bd"
+   "last_commit": "2026-11-28T13:41:17Z",
+   "latest_tag_commit": "ccd8e0c9b24b0934959fe027aeef4150ad016c73"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1557,7 +1557,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Test Runner for Goose",
-   "last_commit": "2026-11-07T21:20:10Z"
+   "last_commit": "2026-11-28T04:06:16Z"
   },
   "salahraja-football-scores": {
    "exists": true,
@@ -1680,7 +1680,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Goose Library",
-   "last_commit": "2026-11-25T10:42:07Z",
+   "last_commit": "2026-11-28T12:33:44Z",
    "latest_tag_commit": "11fc2f427f64e3ef88d283de7df564ab47f2369a"
   },
   "sorins-httpgoose": {
@@ -1996,7 +1996,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-27T22:43:36Z"
+   "last_commit": "2026-11-28T12:36:21Z"
   },
   "yujieteo-skein": {
    "exists": false
