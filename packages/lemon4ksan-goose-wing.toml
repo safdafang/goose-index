@@ -1,0 +1,15 @@
+id = "lemon4ksan-goose-wing"
+name = "goose-wing"
+kind = "package"
+category = "networking"
+tags = ["http", "http2", "http3", "quic", "tls", "websocket", "grpc", "server", "client", "sans-io"]
+repo = "https://github.com/Lemon4ksan/goose-wing"
+description = "Fixed-buffer networking stack with client sessions, a non-blocking server reactor (io_uring, epoll, kqueue, Windows RIO), and sans-IO codecs for HTTP (1.1, 2, 3), QUIC, WebSocket, gRPC, and SSE. Uses pure-Goose TLS 1.3 or runtime-loaded OpenSSL/Schannel; also ships core and wing_h1 modules."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "wing"
+
+[native]
+c = true
+cmake = false
