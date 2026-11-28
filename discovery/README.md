@@ -48,6 +48,11 @@ with the reason. Nothing is reported twice. An exclusion that can stop being tru
 Goose source yet, a fork with no commits of its own) is looked at again when a search finds the repository
 again, at most every four weeks. Delete a repository's record to have it looked at on the next run.
 
+A run reads at most 250 repositories, because the workflow's token gets 1,000 API calls an hour. Finds
+from topics, code search, the upstream tracker and README links are read before those from name search,
+which are mostly namesakes. The rest wait in `scouted.json` under `pending`, and the next run starts with
+them, so the first runs work through a backlog over a few weeks.
+
 Run it by hand with `--dry-run` to see the report without recording anything, `--since YYYY-MM-DD` to look
 further back, and `--sources` to pick searches. `--json` writes the candidates with their drafts as data, for
 a later step such as a model writing the descriptions.

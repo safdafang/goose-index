@@ -48,6 +48,15 @@ RECHECKABLE = ("no .goose files", "fork of aardappel/goose with no commits", "em
 SOURCES = ("repos", "topics", "code", "forks", "tracker")
 SELF = "safdafang/goose-index"  # this repository, which has the Goose topics too; GITHUB_REPOSITORY wins in Actions
 INCIDENTAL_FILES, INCIDENTAL_OF = 3, 300  # up to this many .goose files among at least this many files
+# Reading a repository takes 2-10 REST calls, and the workflow's token has 1,000 an hour. A run reads
+# at most this many and queues the rest for the next run, so a backlog drains over a few weeks.
+MAX_INSPECT = 250
+# Sources in the order their finds turn out to be Goose projects; name search is mostly namesakes.
+PRIORITY = ("topic", "code-search", "upstream", "readme-of", "fork-of", "repo-search")
+
+
+def priority(sources):
+    return min((i for i, p in enumerate(PRIORITY) for s in sources if s.startswith(p)), default=len(PRIORITY))
 DETAILED = 40  # candidates shown with their evidence and draft; the rest as one line each
 BODY_LIMIT = 60000  # GitHub refuses an issue body over 65536 characters
 OSES = {"linux": r"\blinux\b|ubuntu|debian", "macos": r"\bmac ?os\b|\bosx\b|darwin|homebrew",
@@ -364,7 +373,7 @@ def detail(r):
     return "\n".join(out)
 
 
-def report(records, since, failed, rechecked):
+def report(records, since, failed, rechecked, queued=0):
     head = [
         f"Repositories with Goose evidence found since {since} that are in neither `packages/` nor "
         "`discovery/candidates.csv`, and were not reported before. Each has a draft entry: fill in `kind`, "
@@ -372,7 +381,8 @@ def report(records, since, failed, rechecked):
         "a pull request with the file. For one that does not belong, do nothing: it will not be reported again.",
         "",
         f"Found by `scripts/scout.py`, run by the weekly scout workflow. {len(records)} to judge"
-        + (f"; {rechecked} earlier exclusions looked at again" if rechecked else "") + ".",
+        + (f"; {rechecked} earlier exclusions looked at again" if rechecked else "") + "."
+        + (f" {queued} more finds wait to be read: the next run starts with them." if queued else ""),
     ]
     if failed:
         head += ["", f"Some searches failed, so this list may be short ({len(failed)}):", ""]
@@ -408,10 +418,17 @@ def main():
     failed = []
     found, forks = collect(since, sources, failed)
     index, known = in_index(), decided()
-    todo = [c["name"] for k, c in found.items() if worth_a_look(k, index, known)]
-    rechecked = sum(1 for n in todo if n.lower() in known)
-    print(f"{len(found)} found, {len(todo)} new or due for another look", flush=True)
-    signals = inspect(todo, forks) if todo else {}
+    # what an earlier run found but had no budget left to read comes first
+    for key, c in state.get("pending", {}).items():
+        e = found.setdefault(key, {"name": c["name"], "sources": []})
+        e["sources"] += [x for x in c["sources"] if x not in e["sources"]]
+    due = [k for k in found if worth_a_look(k, index, known)]
+    due.sort(key=lambda k: (k not in state.get("pending", {}), priority(found[k]["sources"]), k))
+    todo, queued = due[:MAX_INSPECT], due[MAX_INSPECT:]
+    rechecked = sum(1 for k in todo if k in known)
+    print(f"{len(found)} found, {len(due)} new or due for another look"
+          + (f"; reading {len(todo)} now, {len(queued)} queued for the next run" if queued else ""), flush=True)
+    signals = inspect([found[k]["name"] for k in todo], forks) if todo else {}
 
     # one round of README links from the Goose projects just found, as the first discovery did
     linked = {}
@@ -451,7 +468,8 @@ def main():
         pathlib.Path(a.json).write_text(json.dumps({"since": since, "failed": failed, "candidates": records},
                                                    indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     if records:
-        pathlib.Path(a.report).write_text(report(records, since, failed, rechecked), encoding="utf-8")
+        pathlib.Path(a.report).write_text(report(records, since, failed, rechecked, len(queued)), encoding="utf-8")
+    state["pending"] = {k: {"name": found[k]["name"], "sources": found[k]["sources"]} for k in sorted(queued)}
     if not a.dry_run:
         state["last_run"] = stamp
         state["repos"] = dict(sorted(state["repos"].items()))
@@ -461,7 +479,7 @@ def main():
     out = os.environ.get("GITHUB_OUTPUT")
     if out:
         with open(out, "a", encoding="utf-8") as f:
-            f.write(f"count={len(records)}\nsince={since}\nfailed={len(failed)}\n")
+            f.write(f"count={len(records)}\nsince={since}\nfailed={len(failed)}\nqueued={len(queued)}\n")
 
 
 if __name__ == "__main__":
