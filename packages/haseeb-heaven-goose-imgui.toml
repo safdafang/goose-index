@@ -1,0 +1,18 @@
+id = "haseeb-heaven-goose-imgui"
+name = "goose-imgui"
+kind = "binding"
+category = "gui-and-terminal"
+tags = ["imgui", "gui", "immediate-mode", "sdl3", "docking", "gpu"]
+repo = "https://github.com/haseeb-heaven/goose-imgui"
+description = "Dear ImGui with docking, drawn through SDL3's GPU API, behind a typed layer that takes plain Goose strings and f64 or i64 values and closes windows at the end of a block. The whole mechanically bound C surface is in imgui.raw, and frames can be rendered offscreen to PNG for tests."
+platforms = ["linux", "macos", "windows"]
+
+[import]
+name = "imgui"
+modules = ["imgui.raw"]
+
+[native]
+c = false
+cmake = true
+system_libs.linux = ["libsdl3-dev"]
+system_libs.macos = ["sdl3"]

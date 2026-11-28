@@ -1,0 +1,12 @@
+id = "haseeb-heaven-awesome-goose"
+name = "awesome-goose"
+kind = "app"
+category = "applications"
+tags = ["collection", "games", "gui", "tui", "sdl3", "nuklear", "platformer", "system-monitor"]
+repo = "https://github.com/haseeb-heaven/awesome-goose"
+description = "Twelve programs by one author in one repository: desktop apps drawn with goose_gfx (calculator, journal, pixel editor, Pomodoro timer), a terminal system monitor and snake, two command-line tools, and 2D and 3D games including a multi-level platformer. Prebuilt macOS binaries are on the releases page."
+platforms = ["linux", "macos", "windows"]
+
+[native]
+c = true
+cmake = false
