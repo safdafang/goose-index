@@ -280,7 +280,8 @@ def write_readme(cats, entries, compat_doc, at, ref_time):
         "READMEs of verified Goose projects. Each candidate was kept or dropped by reading its files: "
         "projects that merely share the name (the `pressly/goose` migration tool, the `block/goose` "
         "agent and others) are excluded. The full record, with a reason for every decision, is in "
-        "[`discovery/candidates.csv`](discovery/candidates.csv).",
+        "[`discovery/candidates.csv`](discovery/candidates.csv). A weekly scout repeats the search for what "
+        "is new and opens an issue with a draft entry for each find, for a person to judge.",
         "- **What updates by itself.** Tags, stars, last commit, archived state and license are fetched "
         "daily; build status is tested weekly. Descriptions and categories change only by pull request.",
         f"- **Data for tools.** [`index.json`](index.json) (also at {SITE}index.json) holds every entry "
@@ -334,18 +335,59 @@ def owner(x):
     return parts[0]
 
 
-def page(root, title, body, desc="", active=None, cls="", head=""):
+SITE_NAME = "Goose Package Index"
+SITE_DESC = "An index of libraries, tools and programs for the Goose programming language."
+SOCIAL = (".github/assets/social.png", 1280, 640)  # the link preview image, copied to assets/
+GOOSE_LANG = {"@type": "ComputerLanguage", "name": "Goose", "url": UPSTREAM}
+
+
+def json_ld(doc):
+    # "</" inside a string would end the script element early
+    return ('\n<script type="application/ld+json">'
+            + json.dumps(doc, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + "</script>")
+
+
+def crumbs_ld(trail):
+    """schema.org breadcrumbs from [(name, site-relative path)]."""
+    return {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i, "name": n, "item": SITE + p} for i, (n, p) in enumerate(trail, 1)]}
+
+
+def seo_head(title, desc, path, ld):
+    """Canonical address, link previews and structured data. path None: a page not to index."""
+    if path is None:
+        return '\n<meta name="robots" content="noindex">'
+    url = SITE + path
+    img, w, h = SOCIAL
+    tags = [
+        f'<link rel="canonical" href="{esc(url)}">',
+        '<meta property="og:type" content="website">',
+        f'<meta property="og:site_name" content="{SITE_NAME}">',
+        f'<meta property="og:title" content="{esc(title or SITE_NAME)}">',
+        f'<meta property="og:description" content="{esc(desc)}">',
+        f'<meta property="og:url" content="{esc(url)}">',
+        f'<meta property="og:image" content="{SITE}assets/{img.rsplit("/", 1)[-1]}">',
+        f'<meta property="og:image:width" content="{w}">',
+        f'<meta property="og:image:height" content="{h}">',
+        f'<meta property="og:image:alt" content="{SITE_NAME}">',
+        '<meta name="twitter:card" content="summary_large_image">',
+    ]
+    return "\n" + "\n".join(tags) + (json_ld({"@context": "https://schema.org", "@graph": ld}) if ld else "")
+
+
+def page(root, title, body, desc="", active=None, cls="", head="", path=None, ld=None):
     nav = [("", "Index"), ("compat/", "Compatibility"), ("about/", "About")]
     links = "".join(f'<a href="{root}{h}"{" aria-current=page" if active == h else ""}>{t}</a>' for h, t in nav)
     links += f'<a href="{CONTRIBUTE}">Add a project</a>'
-    full = "Goose Package Index" if not title else f"{title} · Goose Package Index"
+    full = SITE_NAME if not title else f"{title} · {SITE_NAME}"
+    desc = desc or SITE_DESC
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(full)}</title>
-<meta name="description" content="{esc(desc or 'An index of libraries, tools and programs for the Goose programming language.')}">
+<meta name="description" content="{esc(desc)}">{seo_head(title, desc, path, ld)}
 <meta name="theme-color" content="#8DB580">
 <link rel="icon" href="{root}assets/icon.svg" type="image/svg+xml">
 <link rel="preload" href="{root}assets/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
@@ -544,7 +586,10 @@ def home(cats, entries, ref_time, compat_doc):
 <nav class="stones" id="pager" aria-label="Pages" hidden></nav>
 </div>
 </section>"""
-    return page(root, "", body, active="", cls="home", head="\n<noscript><style>.card.off { display: flex; }</style></noscript>")
+    ld = [{"@type": "WebSite", "name": SITE_NAME, "url": SITE, "description": SITE_DESC, "inLanguage": "en",
+           "about": GOOSE_LANG}]
+    return page(root, "", body, active="", cls="home", head="\n<noscript><style>.card.off { display: flex; }</style></noscript>",
+                path="", ld=ld)
 
 
 def category_page(c, cats, entries, ref_time, compat_doc):
@@ -556,7 +601,29 @@ def category_page(c, cats, entries, ref_time, compat_doc):
 <p class="sub"><span class="strip">{esc(c['scope'])} {len(items)} {'entry' if len(items) == 1 else 'entries'}.</span></p>
 <div class="board-wrap solo">
 <div class="board"><ol class="cards">{''.join(card(x, root, cats_by_id, ref_time, (compat_doc or {}).get("goose")) for x in items)}</ol></div></div>"""
-    return page(root, c["title"], body, desc=c["scope"], cls="category")
+    path = f"c/{c['id']}/"
+    ld = [{"@type": "CollectionPage", "name": c["title"], "description": c["scope"], "url": SITE + path,
+           "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE}},
+          crumbs_ld([("All entries", ""), (c["title"], path)])]
+    return page(root, c["title"], body, desc=c["scope"], cls="category", path=path, ld=ld)
+
+
+def entry_ld(x, path):
+    """schema.org data for an entry page: what search engines show beside the link."""
+    lic = x["license"] if x["license"] not in (None, "none", "other") else None
+    doc = {
+        "@type": "SoftwareSourceCode" if x["repo"] else "CreativeWork",
+        "name": x["name"], "description": x["description"], "url": SITE + path,
+        "keywords": ", ".join(x["tags"]) or None,
+        "codeRepository": x["repo"],
+        "programmingLanguage": GOOSE_LANG if x["repo"] else None,
+        "sameAs": None if x["repo"] else x["url"],
+        "license": f"https://spdx.org/licenses/{lic}.html" if lic else None,
+        "dateCreated": (x["created"] or "")[:10] or None,
+        "dateModified": (x["last_commit"] or "")[:10] or None,
+        "version": x["latest_tag"],
+    }
+    return {k: v for k, v in doc.items() if v}
 
 
 def entry_page(x, cats, entries, ref_time, compat_doc):
@@ -671,7 +738,9 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
         buttons += (f'<button type="button" class="btn ghost copy" data-copy="{esc(x["import"]["line"])}">'
                     f'{art(root, "i-clip", "i")}<span>Copy import</span></button>')
 
-    tags = "".join(f'<a class="sprout" href="{root}?q={esc(t)}#index">{art(root, "i-sprout", "i")}{esc(t)}</a>' for t in x["tags"])
+    # quoted: a tag may hold "+", which a query string would read as a space ("c++" -> "c  ")
+    tags = "".join(f'<a class="sprout" href="{root}?q={urllib.parse.quote(t, safe="")}#index">'
+                   f'{art(root, "i-sprout", "i")}{esc(t)}</a>' for t in x["tags"])
     similar = [e for e in entries if e["category"] == x["category"] and e["id"] != x["id"]][:4]
     sim = ""
     if similar:
@@ -704,7 +773,10 @@ def entry_page(x, cats, entries, ref_time, compat_doc):
 {sim}
 </aside>
 </article>"""
-    return page(root, x["name"], body, desc=x["description"], cls="entry-page")
+    path = f"p/{x['id']}/"
+    trail = [("All entries", ""), (cat["title"], f"c/{cat['id']}/"), (x["name"], path)]
+    return page(root, x["name"], body, desc=x["description"], cls="entry-page", path=path,
+                ld=[entry_ld(x, path), crumbs_ld(trail)])
 
 
 def compat_page(cats, entries, compat_doc):
@@ -713,7 +785,7 @@ def compat_page(cats, entries, compat_doc):
     if not compat_doc:
         body = """<h1><span class="strip">Compatibility</span></h1><p class="sub"><span class="strip">The first build test has not run yet. It builds every package
 and program against the latest Goose release on Linux, macOS and Windows, weekly.</span></p>"""
-        return page(root, "Compatibility", body, active="compat/", cls="compat")
+        return page(root, "Compatibility", body, active="compat/", cls="compat", path="compat/")
     counts = {o: {s: 0 for s in STATUS} for o in OSES}
     for x in entries:
         for o in OSES:
@@ -756,7 +828,8 @@ on GitHub's Linux, macOS and Windows runners on {esc((compat_doc.get('ran_at') o
 <div class="scroll"><table class="matrix" id="matrix"><thead><tr><th>Entry</th><th>Ref</th><th>Linux</th><th>macOS</th><th>Windows</th><th title="Platforms the author claims">Claims</th></tr></thead>
 <tbody>{''.join(rows)}</tbody></table></div>
 </section>"""
-    return page(root, "Compatibility", body, desc="Which Goose packages build on Linux, macOS and Windows.", active="compat/", cls="compat")
+    return page(root, "Compatibility", body, desc="Which Goose packages build on Linux, macOS and Windows.", active="compat/",
+                cls="compat", path="compat/")
 
 
 def about_page(entries):
@@ -779,11 +852,13 @@ each project's latest git tag.</p>
 verified Goose projects. Each was kept or dropped by reading its files, not its name: the many unrelated projects
 called goose (a Go database migration tool, an AI agent, other small languages) are excluded.
 <a href="{SOURCE}/blob/main/discovery/candidates.csv">The full record</a> gives a reason for every decision.
-{len(entries)} entries made it in. Descriptions are written for this index rather than copied, and a check rejects
-any that repeats the project's own wording.</p>
+{len(entries)} entries made it in. Descriptions are written for this index rather than copied: a check rejects
+any that repeats six words in a row of the repository's GitHub description, and review catches wording taken
+from a README.</p>
 <h2>What updates by itself</h2>
 <ul><li>Daily: latest tag, default branch, last commit, stars, archived state and detected license, from GitHub.</li>
 <li>Weekly: the <a href="{root}compat/">build test</a> on Linux, macOS and Windows against the latest Goose release.</li>
+<li>Weekly: a scout repeats the search for projects that appeared since, and lists them in an issue for a person to read and add.</li>
 <li>By pull request only: what an entry is, its description, category and native requirements.</li></ul>
 <h2>Add or fix an entry</h2>
 <p>Add a file <code>packages/&lt;owner&gt;-&lt;repo&gt;.toml</code> in a pull request; the
@@ -799,7 +874,8 @@ license; entries without one are flagged, because without a license nobody may l
 <p class="muted">Not affiliated with the Goose project or its authors.</p>
 </article>
 </div>"""
-    return page(root, "About", body, active="about/", cls="about-page")
+    return page(root, "About", body, desc="How the Goose Package Index is made, what updates by itself, and how to add a project.",
+                active="about/", cls="about-page", path="about/")
 
 
 def not_found():
@@ -818,6 +894,7 @@ def write_site(out, cats, entries, compat_doc, index_text, ref_time):
         shutil.rmtree(out)
     shutil.copytree(ROOT / "web", out / "assets")
     (out / "assets" / "icon.svg").write_text(ICON, encoding="utf-8")
+    shutil.copy(ROOT / SOCIAL[0], out / "assets" / SOCIAL[0].rsplit("/", 1)[-1])
     (out / "schema").mkdir()
     for f in (ROOT / "schema").glob("*.json"):
         shutil.copy(f, out / "schema" / f.name)
@@ -833,7 +910,17 @@ def write_site(out, cats, entries, compat_doc, index_text, ref_time):
     for x in entries:
         w(f"p/{x['id']}/index.html", entry_page(x, cats, entries, ref_time, compat_doc))
     w("404.html", not_found())
+    w("sitemap.xml", sitemap(cats, entries))
     return sum(1 for _ in out.rglob("*.html"))
+
+
+def sitemap(cats, entries):
+    """Every page worth indexing. No lastmod: stars and dates on every page change daily, so it would
+    say everything changed every day, and search engines learn to ignore such a sitemap."""
+    paths = ["", "compat/", "about/"] + [f"c/{c['id']}/" for c in cats if c["count"]] + [f"p/{x['id']}/" for x in entries]
+    urls = "".join(f"<url><loc>{esc(SITE + p)}</loc></url>\n" for p in paths)
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
 
 
 def main():

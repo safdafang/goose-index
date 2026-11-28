@@ -1,9 +1,20 @@
 """Validate packages/*.toml and data/meta.json.
 
-    python scripts/validate.py
+    python scripts/validate.py                 every check is an error
+    python scripts/validate.py --strict a,b    checks against fetched GitHub data fail only a and b
+    python scripts/validate.py --strict ''     ...fail nothing: they are reported as warnings
+
+Some checks compare an entry with what its repository says today: a description that shares
+six words in a row with the repository's own, or a repository that moved onto the address of
+another entry. Those can turn red without anyone touching this repository, for instance when an
+author copies our description into their GitHub "About". The daily build passes --strict '' so
+that such a change cannot stop the index from updating, and a pull request passes the entries it
+changes, so that it is judged on its own entries only.
 """
 
+import argparse
 import json
+import os
 import pathlib
 import re
 import sys
@@ -23,7 +34,21 @@ def shingles(text, n=RUN):
 
 
 def main():
-    errors, warnings = [], []
+    ap = argparse.ArgumentParser(description="Validate packages/*.toml and data/meta.json.")
+    ap.add_argument("--strict", metavar="IDS", default=None,
+                    help="comma-separated entry ids whose checks against fetched GitHub data are errors; for "
+                         "the rest they are warnings. Omitted: every entry. '': none.")
+    a = ap.parse_args()
+    strict = None if a.strict is None else {i.strip() for i in a.strict.split(",") if i.strip()}
+    errors, warnings, downgraded = [], [], []
+
+    def fetched_problem(stems, msg):
+        """A problem that comes from GitHub's data rather than from the entry files."""
+        if strict is None or strict & set(stems):
+            errors.append(msg)
+        else:
+            downgraded.append(msg)
+
     entry_schema = json.loads((ROOT / "schema" / "entry.schema.json").read_text(encoding="utf-8"))
     validator = jsonschema.Draft202012Validator(entry_schema)
 
@@ -54,17 +79,26 @@ def main():
             errors.append(f"{rel}: id {e.get('id')!r} must equal the file name {stem!r}")
         m = meta.get(stem)
         moved = (m or {}).get("canonical_repo")
-        # a renamed repository answers at both addresses, so both count as taken
-        for repo in {u.lower() for u in (e.get("repo"), moved) if u}:
+        # a renamed repository answers at both addresses, so both count as taken; two entry files
+        # naming one repository is their own mistake, a rename onto another entry's address is not
+        for repo, fetched in (((e.get("repo") or "").lower(), False), ((moved or "").lower(), True)):
+            if not repo:
+                continue
             if repo in repos:
-                errors.append(f"{rel}: repo {repo} is also {repos[repo]}")
-            repos[repo] = rel
+                other_rel, other_stem, other_fetched = repos[repo]
+                msg = f"{rel}: repo {repo} is also {other_rel}"
+                if fetched or other_fetched:
+                    fetched_problem((stem, other_stem), msg)
+                else:
+                    errors.append(msg)
+            repos[repo] = (rel, stem, fetched)
         if moved:
             warnings.append(f"{rel}: the repository moved to {moved}: update repo (the index already links there)")
         if m:
             copied = shingles(e.get("description")) & shingles(m.get("upstream_description"))
             if copied:
-                errors.append(f"{rel}: description copies the project's own words: {sorted(copied)[0]!r}...")
+                fetched_problem((stem,), f"{rel}: description shares six words in a row with the repository's "
+                                         f"GitHub description: {sorted(copied)[0]!r}...")
             if m.get("replaced_by"):
                 warnings.append(f"{rel}: a different repository now answers at this address (deleted and "
                                 f"recreated, or the name was taken over). It is shown as unavailable; after "
@@ -78,9 +112,13 @@ def main():
 
     for w in warnings:
         print(f"warning: {w}")
+    in_actions = os.environ.get("GITHUB_ACTIONS") == "true"
+    for w in downgraded:
+        # these would fail a strict run: put them in the run's summary, where they get read
+        print(f"::warning::{w}" if in_actions else f"warning: {w} (an error for entries passed to --strict)")
     for err in errors:
         print(f"error: {err}")
-    print(f"{len(entries)} entries, {len(errors)} errors, {len(warnings)} warnings")
+    print(f"{len(entries)} entries, {len(errors)} errors, {len(warnings) + len(downgraded)} warnings")
     sys.exit(1 if errors else 0)
 
 

@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -19,5 +22,14 @@ jobs:
         run: python scripts/fetch_meta.py
         env:
           GH_TOKEN: ${{ github.token }}
-      - run: python scripts/validate.py
+      # checks against GitHub's data fail only the entries this pull request adds or changes:
+      # an unrelated entry whose author edited their repository warns instead
+      - name: Validate
+        env:
+          BASE: ${{ github.base_ref }}
+        run: |
+          CHANGED=$(git diff --name-only --diff-filter=AM "origin/$BASE...HEAD" -- 'packages/*.toml' \
+                    | sed 's#^packages/##; s#\.toml$##' | grep -E '^[a-z0-9-]+$' | paste -sd, - || true)
+          echo "entries changed by this pull request: ${CHANGED:-none}"
+          python scripts/validate.py --strict "$CHANGED"
       - run: python scripts/build.py --site _site

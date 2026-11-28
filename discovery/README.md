@@ -29,5 +29,28 @@ All scripts need the GitHub CLI (`gh`), logged in.
 
 ## Looking for new projects
 
-Run steps 1–3 again. `raw/review.txt` then lists every candidate with Goose evidence. Anything in it that
-is in neither `packages/` nor `candidates.csv` is new.
+Every Monday the `scout` workflow runs **`scripts/scout.py`**, the same pipeline cut down to what is new:
+
+- repository and topic search for repositories pushed since the last run, code search for Goose source,
+  forks of `aardappel/goose` made or pushed since, and the upstream issues, pull requests and discussions
+  updated since, then one round of the links in the READMEs of the Goose projects it finds;
+- `verify.py`'s file checks and `triage.py`'s mechanical exclusions on whatever is in neither `packages/`,
+  `candidates.csv` nor `scouted.json`, plus one more: a big project with only a Goose file or two (three at
+  most among 300 or more files, such as a syntax sample in GitHub Linguist) is incidental, not a Goose project.
+
+Anything left needs a person, so the workflow opens an issue labelled `scout` with one checkbox per
+candidate: its evidence (Goose files, sidecars, fork commits, the start of its README) and a draft
+`packages/<id>.toml` with the facts filled in and `kind`, `category`, `tags` and `description` left to write.
+To add a project, finish its draft and open a pull request. To drop one, do nothing.
+
+`scouted.json` records every repository the scout looked at: `review` (reported in an issue) or `excluded`
+with the reason. Nothing is reported twice. An exclusion that can stop being true (an empty repository, no
+Goose source yet, a fork with no commits of its own) is looked at again when a search finds the repository
+again, at most every four weeks. Delete a repository's record to have it looked at on the next run.
+
+Run it by hand with `--dry-run` to see the report without recording anything, `--since YYYY-MM-DD` to look
+further back, and `--sources` to pick searches. `--json` writes the candidates with their drafts as data, for
+a later step such as a model writing the descriptions.
+
+For a full sweep instead, run steps 1–3 again. `raw/review.txt` then lists every candidate with Goose
+evidence. Anything in it that is in neither `packages/` nor `candidates.csv` is new.

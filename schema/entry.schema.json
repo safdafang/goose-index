@@ -47,7 +47,7 @@
       "type": "string", "pattern": "^https://"
     },
     "description": {
-      "description": "One or two sentences in the index's own words, never copied from the project's README or GitHub description. scripts/validate.py rejects six or more words in a row shared with the project's own description.",
+      "description": "One or two sentences in the index's own words, never copied from the project's README or GitHub description. scripts/validate.py rejects six or more words in a row shared with the repository's GitHub description; it does not read the README.",
       "type": "string", "minLength": 20, "maxLength": 320
     },
     "import": {
