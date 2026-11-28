@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-28T06:48:27Z",
+ "fetched_at": "2026-11-28T06:59:02Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -718,6 +718,33 @@
    "upstream_description": "Random number generators and distributions for the Goose programming language, in pure Goose: xoshiro256++, ziggurat normal and exponential, 30-odd exact samplers",
    "last_commit": "2026-10-31T19:18:40Z",
    "latest_tag_commit": "76ec1aa894fe38aee3601005b26258a04db25b66"
+  },
+  "haseeb-heaven-awesome-goose": {
+   "exists": true,
+   "repo_id": "R_kgDOV1BADA",
+   "default_branch": "main",
+   "latest_tag": "v2.2.1",
+   "tag_count": 6,
+   "created": "2026-11-20T02:10:17Z",
+   "stars": 2,
+   "archived": false,
+   "license": "other",
+   "upstream_description": "List of Awesome Goose apps made by Heaven — GUI, CLI, 2D Console, 2D GPU & 3D GPU apps and games in Goose",
+   "last_commit": "2026-11-20T14:58:06Z",
+   "latest_tag_commit": "5e0b90c535dc0b0f3ca15a2a40ff170b5fcc348f"
+  },
+  "haseeb-heaven-goose-imgui": {
+   "exists": true,
+   "repo_id": "R_kgDOV1kr-Q",
+   "default_branch": "develop",
+   "latest_tag": null,
+   "tag_count": 0,
+   "created": "2026-11-20T13:26:41Z",
+   "stars": 1,
+   "archived": false,
+   "license": "other",
+   "upstream_description": "Dear ImGui for the Goose language: immediate-mode GUI on SDL3 + SDL_GPU, with a generated C ABI, typed Goose API, four demos and 77 offscreen self-checks.",
+   "last_commit": "2026-11-20T14:56:25Z"
   },
   "innomon-goose-sql-p2p": {
    "exists": true,

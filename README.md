@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://github.com/safdafang/goose-index/actions/workflows/update.yml"><img alt="update" src="https://github.com/safdafang/goose-index/actions/workflows/update.yml/badge.svg"></a>
   <a href="https://github.com/safdafang/goose-index/actions/workflows/compat.yml"><img alt="compat" src="https://github.com/safdafang/goose-index/actions/workflows/compat.yml/badge.svg"></a>
-  <a href="#contents"><img alt="155 entries" src="https://img.shields.io/badge/entries-155-5E8C61"></a>
+  <a href="#contents"><img alt="157 entries" src="https://img.shields.io/badge/entries-157-5E8C61"></a>
   <a href="https://safdafang.github.io/goose-index/compat/"><img alt="tested against Goose v2026.4" src="https://img.shields.io/badge/goose-v2026.4-F28C28"></a>
   <a href="#licence"><img alt="Licence: MIT and CC0" src="https://img.shields.io/badge/licence-MIT%20%2B%20CC0-blue"></a>
 </p>
@@ -20,7 +20,7 @@ Libraries, tools, editor plugins, programs and guides for the [Goose programming
 
 | Packages | Bindings | Tools | Editors | Apps | Forks | Learning | **Total** |
 |--:|--:|--:|--:|--:|--:|--:|--:|
-| 57 | 9 | 18 | 7 | 39 | 10 | 15 | **155** |
+| 57 | 10 | 18 | 7 | 40 | 10 | 15 | **157** |
 
 ## Legend
 
@@ -42,7 +42,7 @@ Libraries, tools, editor plugins, programs and guides for the [Goose programming
 - [Text and templates](#text-and-templates) (3)
 - [Math and science](#math-and-science) (7)
 - [Graphics, audio and games](#graphics-audio-and-games) (10)
-- [GUI and terminal UI](#gui-and-terminal-ui) (3)
+- [GUI and terminal UI](#gui-and-terminal-ui) (4)
 - [OS, files and time](#os-files-and-time) (7)
 - [Language extensions](#language-extensions) (2)
 - [Interop with other languages](#interop-with-other-languages) (2)
@@ -53,7 +53,7 @@ Libraries, tools, editor plugins, programs and guides for the [Goose programming
 - [Formatting, linting and analysis](#formatting-linting-and-analysis) (4)
 - [Editor support](#editor-support) (8)
 - [Compilers, forks and runtimes](#compilers-forks-and-runtimes) (17)
-- [Applications](#applications) (27)
+- [Applications](#applications) (28)
 - [Benchmarks](#benchmarks) (8)
 - [Learning](#learning) (10)
 
@@ -212,6 +212,8 @@ _Widget toolkits, desktop UI, terminal UI frameworks._
   `import tui from "github.com/ZHENGSY/goose-tui@v0.1.0";`
 - **[mygoose](https://github.com/akeit0/mygoose)** — A retained desktop UI toolkit whose layout, controls, focus handling and text editing are all Goose, drawn by a thin native layer: Direct2D on Windows, Cairo and Pango on Linux, AppKit on macOS. ★ 3 · 🏷 v0.1.0 · ✅ ✅ ✅
   `import mygoose from "github.com/akeit0/mygoose@v0.1.0";`
+- **[goose-imgui](https://github.com/haseeb-heaven/goose-imgui)** _binding_ — Dear ImGui with docking, drawn through SDL3's GPU API, behind a typed layer that takes plain Goose strings and f64 or i64 values and closes windows at the end of a block. The whole mechanically bound C surface is in imgui.raw, and frames can be rendered offscreen to PNG for tests. ★ 1
+  `import imgui from "github.com/haseeb-heaven/goose-imgui@develop";`
 - **[goose-term](https://github.com/tobiolo/goose-term)** — A headless terminal core (VT parser, screen grids, scrollback) that follows alacritty's screen rules and is timed against the terminal cores of alacritty and Neovim, plus a small terminal window built on it.
 
 ## OS, files and time
@@ -331,6 +333,7 @@ _Forks of the Goose compiler, other backends, languages derived from Goose._
 _Programs written in Goose: tools, games, servers, simulations._
 
 - **[AlchemistsSort](https://github.com/noonien/AlchemistsSort)** — A relaxed color-sorting puzzle game with a campaign, seeded levels and a hint solver, drawn with gfx and also playable in the browser; the toolchain comes from a Nix flake. 🟡 🟡 🟡
+- **[awesome-goose](https://github.com/haseeb-heaven/awesome-goose)** — Twelve programs by one author in one repository: desktop apps drawn with goose_gfx (calculator, journal, pixel editor, Pomodoro timer), a terminal system monitor and snake, two command-line tools, and 2D and 3D games including a multi-level platformer. Prebuilt macOS binaries are on the releases page. ★ 2 · 🏷 v2.2.1
 - **[beads-goose](https://github.com/Swoorup/beads-goose)** — The start of a Goose rewrite of the beads issue tracker: the issue model and its JSON already match the Go version byte for byte, with the storage and most commands still to come. ⚠️ no license · ❌ ❌ ❌
 - **[brainfuck-goose](https://github.com/xvolks/brainfuck-goose)** — A small hand-written Brainfuck interpreter, a compact example of a complete Goose program. ⚠️ no license · ✅ ✅ ✅
 - **[c4-goose](https://github.com/jesper-olsen/c4-goose)** — John Tromp's Fhourstones Connect Four solver ported to Goose; it reads positions on stdin and reports scores and timing. ✅ ✅ ✅
@@ -400,4 +403,4 @@ Adding a project is one file, `packages/<id>.toml`, in a pull request: see [CONT
 
 The code here (`scripts/`, `web/`, `.github/`) is [MIT](LICENSE); the entry data and descriptions (`packages/`, `data/`, this README and `index.json`) are [CC0 1.0](LICENSE). Listed projects keep their own licenses. Goose is a project of its own authors; this index is not affiliated with it.
 
-<sub>Generated 2026-11-28T06:48:27Z.</sub>
+<sub>Generated 2026-11-28T06:59:02Z.</sub>

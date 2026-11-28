@@ -2,8 +2,8 @@
  "$schema": "https://safdafang.github.io/goose-index/schema/index.schema.json",
  "format": "goose-index",
  "version": 1,
- "generated_at": "2026-11-28T06:48:27Z",
- "meta_fetched_at": "2026-11-28T06:48:27Z",
+ "generated_at": "2026-11-28T06:59:02Z",
+ "meta_fetched_at": "2026-11-28T06:59:02Z",
  "compat": {
   "goose": "v2026.4",
   "ran_at": "2026-11-23T13:42:38Z",
@@ -64,7 +64,7 @@
    "id": "gui-and-terminal",
    "title": "GUI and terminal UI",
    "scope": "Widget toolkits, desktop UI, terminal UI frameworks.",
-   "count": 3
+   "count": 4
   },
   {
    "id": "os-and-system",
@@ -130,7 +130,7 @@
    "id": "applications",
    "title": "Applications",
    "scope": "Programs written in Goose: tools, games, servers, simulations.",
-   "count": 27
+   "count": 28
   },
   {
    "id": "benchmarks",
@@ -4642,6 +4642,68 @@
    }
   },
   {
+   "id": "haseeb-heaven-goose-imgui",
+   "name": "goose-imgui",
+   "kind": "binding",
+   "category": "gui-and-terminal",
+   "tags": [
+    "imgui",
+    "gui",
+    "immediate-mode",
+    "sdl3",
+    "docking",
+    "gpu"
+   ],
+   "description": "Dear ImGui with docking, drawn through SDL3's GPU API, behind a typed layer that takes plain Goose strings and f64 or i64 values and closes windows at the end of a block. The whole mechanically bound C surface is in imgui.raw, and frames can be rendered offscreen to PNG for tests.",
+   "repo": "https://github.com/haseeb-heaven/goose-imgui",
+   "url": "https://github.com/haseeb-heaven/goose-imgui",
+   "page": "https://safdafang.github.io/goose-index/p/haseeb-heaven-goose-imgui/",
+   "available": true,
+   "archived": false,
+   "latest_tag": null,
+   "tag_count": 0,
+   "default_branch": "develop",
+   "last_commit": "2026-11-20T14:56:25Z",
+   "created": "2026-11-20T13:26:41Z",
+   "stars": 1,
+   "license": "other",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": false,
+    "cmake": true,
+    "system_libs": {
+     "linux": [
+      "libsdl3-dev"
+     ],
+     "macos": [
+      "sdl3"
+     ],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
+   "requires": [],
+   "import": {
+    "name": "imgui",
+    "source": "github.com/haseeb-heaven/goose-imgui",
+    "ref": "develop",
+    "pinned": false,
+    "commit": null,
+    "line": "import imgui from \"github.com/haseeb-heaven/goose-imgui@develop\";",
+    "modules": [
+     "imgui.raw"
+    ],
+    "subdir": null
+   }
+  },
+  {
    "id": "tobiolo-goose-term",
    "name": "goose-term",
    "kind": "app",
@@ -8064,6 +8126,55 @@
      "ran_at": "2026-11-23T13:39:47Z"
     }
    },
+   "requires": [],
+   "import": null
+  },
+  {
+   "id": "haseeb-heaven-awesome-goose",
+   "name": "awesome-goose",
+   "kind": "app",
+   "category": "applications",
+   "tags": [
+    "collection",
+    "games",
+    "gui",
+    "tui",
+    "sdl3",
+    "nuklear",
+    "platformer",
+    "system-monitor"
+   ],
+   "description": "Twelve programs by one author in one repository: desktop apps drawn with goose_gfx (calculator, journal, pixel editor, Pomodoro timer), a terminal system monitor and snake, two command-line tools, and 2D and 3D games including a multi-level platformer. Prebuilt macOS binaries are on the releases page.",
+   "repo": "https://github.com/haseeb-heaven/awesome-goose",
+   "url": "https://github.com/haseeb-heaven/awesome-goose",
+   "page": "https://safdafang.github.io/goose-index/p/haseeb-heaven-awesome-goose/",
+   "available": true,
+   "archived": false,
+   "latest_tag": "v2.2.1",
+   "tag_count": 6,
+   "default_branch": "main",
+   "last_commit": "2026-11-20T14:58:06Z",
+   "created": "2026-11-20T02:10:17Z",
+   "stars": 2,
+   "license": "other",
+   "license_source": "github",
+   "platforms": [
+    "linux",
+    "macos",
+    "windows"
+   ],
+   "native": {
+    "c": true,
+    "cmake": false,
+    "system_libs": {
+     "linux": [],
+     "macos": [],
+     "windows": []
+    },
+    "tools": []
+   },
+   "upstream_fork": null,
+   "compat": null,
    "requires": [],
    "import": null
   },
