@@ -1,6 +1,6 @@
 {
  "version": 1,
- "fetched_at": "2026-11-27T15:09:29Z",
+ "fetched_at": "2026-11-28T06:48:27Z",
  "entries": {
   "a55uka-zed-goose": {
    "exists": true,
@@ -22,11 +22,11 @@
    "latest_tag": "v2026.4",
    "tag_count": 5,
    "created": "2026-08-30T21:10:01Z",
-   "stars": 3914,
+   "stars": 3930,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-26T23:26:28Z",
+   "last_commit": "2026-11-28T00:17:35Z",
    "latest_tag_commit": "6c1fbc788f6eb1f17db4cab998353d7540ed825d"
   },
   "aardappel-goose-gfx": {
@@ -95,7 +95,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": null,
-   "last_commit": "2026-11-26T07:13:47Z",
+   "last_commit": "2026-11-27T22:16:10Z",
    "latest_tag_commit": "8932735b83553b299d95741140c5a3af3924600c"
   },
   "aguspiza-raytracing-goose": {
@@ -462,7 +462,7 @@
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "The Goose Programming Language",
-   "last_commit": "2026-11-27T00:02:51Z"
+   "last_commit": "2026-11-28T01:02:50Z"
   },
   "dan-stowell-rules-goose": {
    "exists": true,
@@ -1058,6 +1058,20 @@
    "upstream_description": "Goose implementations and benchmarks for lazychicken/rust-commands",
    "last_commit": "2026-10-30T06:13:15Z"
   },
+  "lemon4ksan-goose-lit": {
+   "exists": true,
+   "repo_id": "R_kgDOV-cELw",
+   "default_branch": "main",
+   "latest_tag": "v0.1.0",
+   "tag_count": 1,
+   "created": "2026-11-27T18:05:11Z",
+   "stars": 0,
+   "archived": false,
+   "license": "Apache-2.0",
+   "upstream_description": "Testing framework, LIT/FileCheck runner, branch coverage, stage profiler, fuzzer, and G-CRAP/SLOC gate tool for the Goose language",
+   "last_commit": "2026-11-27T18:29:58Z",
+   "latest_tag_commit": "231a5a99d71bfd570ac7aba993a5da456086a233"
+  },
   "lenstr-project-frontier": {
    "exists": true,
    "repo_id": "R_kgDOVX2NAg",
@@ -1255,15 +1269,15 @@
    "exists": true,
    "repo_id": "R_kgDOTuUIgw",
    "default_branch": "main",
-   "latest_tag": "v3.0.13",
-   "tag_count": 2009,
+   "latest_tag": "v3.0.18",
+   "tag_count": 2103,
    "created": "2026-08-05T04:40:51Z",
    "stars": 53,
    "archived": false,
    "license": "AGPL-3.0",
-   "upstream_description": "A schema compiler that generates fast bit-packed serialization code from one definition, for C, C++, C#, Go, Rust, Java, JavaScript, Dart, Elixir, Lua, Luau and more. Game network packets, save files and cooked assets. A better alternative to Protocol Buffers and FlatBuffers.",
-   "last_commit": "2026-11-26T01:50:40Z",
-   "latest_tag_commit": "27a251c91aa1dd3730177e59b345a19df843b467"
+   "upstream_description": "A schema compiler that generates fast bit-packed serialization code from one definition. A better, faster and more complete alternative to Protocol Buffers and FlatBuffers across all languages.",
+   "last_commit": "2026-11-27T19:44:11Z",
+   "latest_tag_commit": "9f0eb99d19ed41a11e1b9a6daf221c42779b0291"
   },
   "mas-bandwidth-serialize-goose": {
    "exists": true,
@@ -1283,15 +1297,15 @@
    "exists": true,
    "repo_id": "R_kgDOVXov9w",
    "default_branch": "main",
-   "latest_tag": "v2026.4-4",
-   "tag_count": 4,
+   "latest_tag": "v2026.4-6",
+   "tag_count": 6,
    "created": "2026-10-26T07:56:00Z",
    "stars": 0,
    "archived": false,
    "license": "Apache-2.0",
    "upstream_description": "Fast, self-hosted Goose compiler targeting direct WebAssembly and native C",
-   "last_commit": "2026-11-27T15:01:50Z",
-   "latest_tag_commit": "8cf23ee01ae0f580addcf2857fd1f20e221010d6"
+   "last_commit": "2026-11-28T00:04:18Z",
+   "latest_tag_commit": "78028898e6439833cab1d1f2303f4a7cefeea6bd"
   },
   "mg3994-ideatoapp": {
    "exists": false
@@ -1499,7 +1513,7 @@
    "latest_tag": null,
    "tag_count": 0,
    "created": "2026-11-01T17:47:42Z",
-   "stars": 1,
+   "stars": 2,
    "archived": false,
    "license": "none",
    "upstream_description": "Formatter & Linter for Goose",
@@ -1529,7 +1543,7 @@
    "archived": false,
    "license": "MPL-2.0",
    "upstream_description": null,
-   "last_commit": "2026-11-26T16:45:28Z"
+   "last_commit": "2026-11-27T22:56:35Z"
   },
   "scottc-goose-roc": {
    "exists": true,
@@ -1597,7 +1611,7 @@
    "archived": false,
    "license": "MIT",
    "upstream_description": null,
-   "last_commit": "2026-11-27T13:43:52Z",
+   "last_commit": "2026-11-27T15:23:07Z",
    "latest_tag_commit": "65051272b79d3da6652b1b0ab7a1f53171b1d385"
   },
   "sorins-asn1goose": {
@@ -1955,7 +1969,7 @@
    "archived": false,
    "license": "none",
    "upstream_description": "Source for teoyujie.org: posts by Yu Jie Teo, built into a static site with Bun.",
-   "last_commit": "2026-11-27T14:32:51Z"
+   "last_commit": "2026-11-27T22:43:36Z"
   },
   "yujieteo-skein": {
    "exists": false

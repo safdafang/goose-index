@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://github.com/safdafang/goose-index/actions/workflows/update.yml"><img alt="update" src="https://github.com/safdafang/goose-index/actions/workflows/update.yml/badge.svg"></a>
   <a href="https://github.com/safdafang/goose-index/actions/workflows/compat.yml"><img alt="compat" src="https://github.com/safdafang/goose-index/actions/workflows/compat.yml/badge.svg"></a>
-  <a href="#contents"><img alt="154 entries" src="https://img.shields.io/badge/entries-154-5E8C61"></a>
+  <a href="#contents"><img alt="155 entries" src="https://img.shields.io/badge/entries-155-5E8C61"></a>
   <a href="https://safdafang.github.io/goose-index/compat/"><img alt="tested against Goose v2026.4" src="https://img.shields.io/badge/goose-v2026.4-F28C28"></a>
   <a href="#licence"><img alt="Licence: MIT and CC0" src="https://img.shields.io/badge/licence-MIT%20%2B%20CC0-blue"></a>
 </p>
@@ -20,7 +20,7 @@ Libraries, tools, editor plugins, programs and guides for the [Goose programming
 
 | Packages | Bindings | Tools | Editors | Apps | Forks | Learning | **Total** |
 |--:|--:|--:|--:|--:|--:|--:|--:|
-| 56 | 9 | 18 | 7 | 39 | 10 | 15 | **154** |
+| 57 | 9 | 18 | 7 | 39 | 10 | 15 | **155** |
 
 ## Legend
 
@@ -48,7 +48,7 @@ Libraries, tools, editor plugins, programs and guides for the [Goose programming
 - [Interop with other languages](#interop-with-other-languages) (2)
 - [Domain-specific](#domain-specific) (4)
 - [Build and package management](#build-and-package-management) (3)
-- [Testing](#testing) (1)
+- [Testing](#testing) (2)
 - [Documentation tools](#documentation-tools) (1)
 - [Formatting, linting and analysis](#formatting-linting-and-analysis) (4)
 - [Editor support](#editor-support) (8)
@@ -147,7 +147,7 @@ _Data formats: JSON, YAML, ASN.1, binary layouts, bit packing._
 - **[serialize.goose](https://github.com/mas-bandwidth/serialize.goose)** — A bit-packing serializer for game and network messages that produces exactly the same bytes as the C and C++ serialize libraries, covering every field type they support. 🏷 v2.1.3
 - **[yamlgoose](https://github.com/SorinS/yamlgoose)** — A YAML 1.2 reader and writer ported from Go's yaml.v3 (and its libyaml core), accepting and rejecting exactly what yaml.v3 does; the API mirrors the standard json module. 🏷 v0.9.1 · ✅ ✅ ✅
   `import yaml from "github.com/SorinS/yamlgoose@v0.9.1";`
-- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 53 · 🏷 v3.0.13
+- **[schema](https://github.com/mas-bandwidth/schema)** _tool_ — A data language for game constants, enums, types and packets that generates code for many languages; Goose is one of its targets, with its own runtime and conformance tests. ★ 53 · 🏷 v3.0.18
 - **[greylag](https://github.com/bearing-research/greylag)** — An early XML parser written in Goose and exported to C through integer handles, compared against libxml2 and expat. ⚠️ no license · ✅ ✅ ✅
 - **[ideatoapp](https://github.com/mg3994/ideatoapp)** — An early Schema.org JSON-LD model written in Goose, meant to be compiled to WebAssembly and used from JavaScript. **repository unavailable**
 
@@ -271,6 +271,8 @@ _Package managers, dependency tools and build-system integrations (Bazel, Nix) f
 
 _Test runners, assertion libraries, property testing, fuzzing._
 
+- **[goose-lit](https://github.com/Lemon4ksan/goose-lit)** — Unit-test library (lit::T assertions, mocks, allocation tracking, benchmarks, wire stream checks) paired with a CLI runner for parallel FileCheck pipelines, source-instrumented branch coverage with LCOV output, SanitizerCoverage fuzzing, and complexity/SLOC gates. 🏷 v0.1.0
+  `import lit from "github.com/Lemon4ksan/goose-lit@v0.1.0";`
 - **[goosetest](https://github.com/rx-bob/goosetest)** _tool_ — Finds test_* functions by convention, generates the runner and runs unit and integration suites, with assertion helpers, fixtures and before and after hooks. ⚠️ no license · ✅ ✅ 🟡
 
 ## Documentation tools
@@ -286,7 +288,7 @@ _Formatters, linters, static analysis outside the compiler._
 - **[goose-treesitter](https://github.com/shetautnetjer/goose-treesitter)** — Structural code search and rewrite over tree-sitter grammars for about fifteen languages, matching ast-grep's pattern results. 🏷 v0.1.4 · ✅ ✅ 🟡
   `import treesitter from "github.com/shetautnetjer/goose-treesitter@v0.1.4";`
 - **[codeql-goose](https://github.com/flisk-sh/codeql-goose)** _tool_ — A GitHub Action that lexes Goose sources, applies a small rule set and uploads findings to Code Scanning as SARIF. Despite the name it does not use CodeQL. ★ 2 · 🏷 v0.2.1
-- **[goosefmt](https://github.com/rx-bob/goosefmt)** _tool_ — A formatter and linter for Goose written in Goose, with format, lint and check commands that walk a directory tree. ★ 1 · ⚠️ no license · ✅ ✅ ✅
+- **[goosefmt](https://github.com/rx-bob/goosefmt)** _tool_ — A formatter and linter for Goose written in Goose, with format, lint and check commands that walk a directory tree. ★ 2 · ⚠️ no license · ✅ ✅ ✅
 - **[Swan](https://github.com/shetautnetjer/Swan)** — A local code-intelligence server for AI agents, speaking MCP: definitions, references, change impact, related tests and live errors, built on goose-sqlite, goose-lsp and goose-treesitter. 🏷 baseline-2026-11-14 · 🟡 🟡 🟡
 
 ## Editor support
@@ -307,9 +309,9 @@ _Editor plugins, syntax grammars, LSP clients._
 _Forks of the Goose compiler, other backends, languages derived from Goose._
 
 - **[arwad](https://github.com/bashar-al-agha/arwad)** _tool_ — An R package that keeps R syntax but compiles numeric kernels to native code through Goose, aimed at faster bootstraps with results identical to R. ★ 7 · 🏷 v0.2.0
-- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3914 · 🏷 v2026.4
+- **[Goose](https://github.com/aardappel/goose)** _tool_ — The Goose compiler, standard library, language server and VS Code extension: the reference implementation every other entry builds on. ★ 3930 · 🏷 v2026.4
 - **[goose-core2](https://github.com/nurupoga/goose-core2)** _tool_ — An experimental port that runs Goose-generated C as ESP-IDF firmware on the M5Stack Core2 (ESP32), with benchmarks against C and no_std Rust on the device. ★ 1 · ⚠️ no license
-- **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime. 🏷 v2026.4-4
+- **[goose-to-wasm](https://github.com/mewhhaha/goose-to-wasm)** _tool_ — A backend that reuses the Goose frontend and emits WebAssembly directly, without C or LLVM, for a documented subset of the language; benchmarked on V8 and Wasmtime. 🏷 v2026.4-6
 - **[goose-wasm](https://github.com/nenaaki/goose-wasm)** _tool_ — An unofficial WebAssembly backend that builds against a pinned upstream Goose checkout kept as a submodule.
 - **[goose.go](https://github.com/robtandy/goose.go)** _tool_ — A backend that keeps the upstream Goose frontend and emits plain Go with a pure-Go data stack runtime, so Goose code can live in Go services without cgo. ★ 3
 - **[skein](https://github.com/yujieteo/skein)** _tool_ — A units-checked modelling language for finite-element and finite-volume simulation whose compiler, written in Goose, emits Goose and can produce a browser page via WebAssembly. **repository unavailable**
@@ -398,4 +400,4 @@ Adding a project is one file, `packages/<id>.toml`, in a pull request: see [CONT
 
 The code here (`scripts/`, `web/`, `.github/`) is [MIT](LICENSE); the entry data and descriptions (`packages/`, `data/`, this README and `index.json`) are [CC0 1.0](LICENSE). Listed projects keep their own licenses. Goose is a project of its own authors; this index is not affiliated with it.
 
-<sub>Generated 2026-11-27T15:09:29Z.</sub>
+<sub>Generated 2026-11-28T06:48:27Z.</sub>
